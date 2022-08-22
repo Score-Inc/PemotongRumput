@@ -13,7 +13,7 @@ import static emu.grasscutter.utils.Language.translate;
 @Command(label = "teleport", aliases = {"tp"}, usage = {"<x> <y> <z> [sceneId]"}, permission = "player.teleport", permissionTargeted = "player.teleport.others")
 public final class TeleportCommand implements CommandHandler {
 
-    private float parseRelative(String input, Float current) {  // TODO: Maybe this will be useful elsewhere later
+    private float parseRelative(String input, Float current) {  // Maybe this will be useful elsewhere later
         if (input.contains("~")) {  // Relative
             if (!input.equals("~")) {  // Relative with offset
                 current += Float.parseFloat(input.replace("~", ""));
