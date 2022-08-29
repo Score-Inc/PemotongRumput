@@ -85,3 +85,6 @@ data/hk4e/announcement/
 # Proxy & Server
 proxy.bat
 run.bat
+
+# temp
+/temp
