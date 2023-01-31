@@ -8,7 +8,7 @@ import emu.grasscutter.data.GameResource;
 import emu.grasscutter.data.ResourceType;
 import emu.grasscutter.game.props.BattlePassMissionRefreshType;
 import emu.grasscutter.game.props.WatcherTriggerType;
-import emu.grasscutter.net.proto.BattlePassMissionOuterClass.BattlePassMission.MissionStatus;
+import emu.grasscutter.net.proto.MissionStatusOuterClass.MissionStatus;
 import lombok.Getter;
 
 @ResourceType(name = {"BattlePassMissionExcelConfigData.json"})

@@ -8,7 +8,7 @@ import emu.grasscutter.game.player.PlayerBuffManager.PlayerBuff;
 import emu.grasscutter.net.packet.BasePacket;
 import emu.grasscutter.net.packet.PacketOpcodes;
 import emu.grasscutter.net.proto.ServerBuffChangeNotifyOuterClass.ServerBuffChangeNotify;
-import emu.grasscutter.net.proto.ServerBuffChangeNotifyOuterClass.ServerBuffChangeNotify.ServerBuffChangeType;
+import emu.grasscutter.net.proto.ServerBuffChangeTypeOuterClass.ServerBuffChangeType;
 
 public class PacketServerBuffChangeNotify extends BasePacket {
 

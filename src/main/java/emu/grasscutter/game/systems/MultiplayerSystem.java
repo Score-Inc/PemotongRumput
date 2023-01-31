@@ -6,7 +6,7 @@ import emu.grasscutter.game.world.World;
 import emu.grasscutter.net.proto.EnterTypeOuterClass.EnterType;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.player.Player.SceneLoadState;
-import emu.grasscutter.net.proto.PlayerApplyEnterMpResultNotifyOuterClass;
+import emu.grasscutter.net.proto.EnterTypeOuterClass.EnterType;
 import emu.grasscutter.server.game.BaseGameSystem;
 import emu.grasscutter.server.game.GameServer;
 import emu.grasscutter.server.packet.send.PacketPlayerApplyEnterMpNotify;
@@ -22,7 +22,7 @@ public class MultiplayerSystem extends BaseGameSystem {
     public void applyEnterMp(Player player, int targetUid) {
         Player target = getServer().getPlayerByUid(targetUid);
         if (target == null) {
-            player.sendPacket(new PacketPlayerApplyEnterMpResultNotify(targetUid, "", false, PlayerApplyEnterMpResultNotifyOuterClass.PlayerApplyEnterMpResultNotify.Reason.REASON_PLAYER_CANNOT_ENTER_MP));
+            player.sendPacket(new PacketPlayerApplyEnterMpResultNotify(targetUid, "", false, emu.grasscutter.net.proto.ReasonOuterClass.Reason.REASON_SELF_MP_UNAVAILABLE));
             return;
         }
 
@@ -67,12 +67,12 @@ public class MultiplayerSystem extends BaseGameSystem {
 
         // Sanity checks - Dont let the requesting player join if they are already in multiplayer
         if (requester.getWorld().isMultiplayer()) {
-            request.getRequester().sendPacket(new PacketPlayerApplyEnterMpResultNotify(hostPlayer, false, PlayerApplyEnterMpResultNotifyOuterClass.PlayerApplyEnterMpResultNotify.Reason.REASON_PLAYER_CANNOT_ENTER_MP));
+            request.getRequester().sendPacket(new PacketPlayerApplyEnterMpResultNotify(hostPlayer, false, emu.grasscutter.net.proto.ReasonOuterClass.Reason.REASON_TARGET_SCENE_CANNOT_ENTER));
             return;
         }
 
         // Response packet
-        request.getRequester().sendPacket(new PacketPlayerApplyEnterMpResultNotify(hostPlayer, isAgreed, PlayerApplyEnterMpResultNotifyOuterClass.PlayerApplyEnterMpResultNotify.Reason.REASON_PLAYER_JUDGE));
+        request.getRequester().sendPacket(new PacketPlayerApplyEnterMpResultNotify(hostPlayer, isAgreed, emu.grasscutter.net.proto.ReasonOuterClass.Reason.REASON_SUCC));
 
         // Declined
         if (!isAgreed) {

@@ -3,12 +3,11 @@ package emu.grasscutter.server.packet.send;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.net.packet.BasePacket;
 import emu.grasscutter.net.packet.PacketOpcodes;
-import emu.grasscutter.net.proto.PlayerApplyEnterMpResultNotifyOuterClass;
 import emu.grasscutter.net.proto.PlayerApplyEnterMpResultNotifyOuterClass.PlayerApplyEnterMpResultNotify;
 
 public class PacketPlayerApplyEnterMpResultNotify extends BasePacket {
 
-	public PacketPlayerApplyEnterMpResultNotify(Player target, boolean isAgreed, PlayerApplyEnterMpResultNotifyOuterClass.PlayerApplyEnterMpResultNotify.Reason reason) {
+	public PacketPlayerApplyEnterMpResultNotify(Player target, boolean isAgreed, emu.grasscutter.net.proto.ReasonOuterClass.Reason reason) {
 		super(PacketOpcodes.PlayerApplyEnterMpResultNotify);
 
 		PlayerApplyEnterMpResultNotify proto = PlayerApplyEnterMpResultNotify.newBuilder()
@@ -21,7 +20,7 @@ public class PacketPlayerApplyEnterMpResultNotify extends BasePacket {
 		this.setData(proto);
 	}
 
-	public PacketPlayerApplyEnterMpResultNotify(int targetId, String targetName, boolean isAgreed, PlayerApplyEnterMpResultNotify.Reason reason) {
+	public PacketPlayerApplyEnterMpResultNotify(int targetId, String targetName, boolean isAgreed, emu.grasscutter.net.proto.ReasonOuterClass.Reason reason) {
 		super(PacketOpcodes.PlayerApplyEnterMpResultNotify);
 
 		PlayerApplyEnterMpResultNotify proto = PlayerApplyEnterMpResultNotify.newBuilder()
