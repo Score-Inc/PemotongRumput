@@ -19,51 +19,41 @@ public final class PlayerApplyEnterMpResultNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.PlayerApplyEnterMpResultNotify.Reason reason = 10;</code>
-     * @return The enum numeric value on the wire for reason.
+     * <code>bool isAgreed = 7;</code>
+     * @return The isAgreed.
      */
-    int getReasonValue();
-    /**
-     * <code>.PlayerApplyEnterMpResultNotify.Reason reason = 10;</code>
-     * @return The reason.
-     */
-    emu.grasscutter.net.proto.PlayerApplyEnterMpResultNotifyOuterClass.PlayerApplyEnterMpResultNotify.Reason getReason();
+    boolean getIsAgreed();
 
     /**
-     * <code>string target_nickname = 5;</code>
+     * <code>string targetNickname = 14;</code>
      * @return The targetNickname.
      */
     java.lang.String getTargetNickname();
     /**
-     * <code>string target_nickname = 5;</code>
+     * <code>string targetNickname = 14;</code>
      * @return The bytes for targetNickname.
      */
     com.google.protobuf.ByteString
         getTargetNicknameBytes();
 
     /**
-     * <code>bool is_agreed = 2;</code>
-     * @return The isAgreed.
+     * <code>.Reason reason = 10;</code>
+     * @return The enum numeric value on the wire for reason.
      */
-    boolean getIsAgreed();
+    int getReasonValue();
+    /**
+     * <code>.Reason reason = 10;</code>
+     * @return The reason.
+     */
+    emu.grasscutter.net.proto.ReasonOuterClass.Reason getReason();
 
     /**
-     * <code>uint32 target_uid = 4;</code>
+     * <code>uint32 targetUid = 1;</code>
      * @return The targetUid.
      */
     int getTargetUid();
   }
   /**
-   * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 1835;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   * }
-   * </pre>
-   *
    * Protobuf type {@code PlayerApplyEnterMpResultNotify}
    */
   public static final class PlayerApplyEnterMpResultNotify extends
@@ -76,8 +66,8 @@ public final class PlayerApplyEnterMpResultNotifyOuterClass {
       super(builder);
     }
     private PlayerApplyEnterMpResultNotify() {
-      reason_ = 0;
       targetNickname_ = "";
+      reason_ = 0;
     }
 
     @java.lang.Override
@@ -91,65 +81,6 @@ public final class PlayerApplyEnterMpResultNotifyOuterClass {
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
-    }
-    private PlayerApplyEnterMpResultNotify(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 16: {
-
-              isAgreed_ = input.readBool();
-              break;
-            }
-            case 32: {
-
-              targetUid_ = input.readUInt32();
-              break;
-            }
-            case 42: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              targetNickname_ = s;
-              break;
-            }
-            case 80: {
-              int rawValue = input.readEnum();
-
-              reason_ = rawValue;
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
@@ -165,129 +96,49 @@ public final class PlayerApplyEnterMpResultNotifyOuterClass {
     }
 
     /**
-     * Protobuf enum {@code PlayerApplyEnterMpResultNotify.Reason}
+     * Protobuf enum {@code PlayerApplyEnterMpResultNotify.AIAPBAMONIJ}
      */
-    public enum Reason
+    public enum AIAPBAMONIJ
         implements com.google.protobuf.ProtocolMessageEnum {
       /**
-       * <code>REASON_PLAYER_JUDGE = 0;</code>
+       * <code>NONE = 0;</code>
        */
-      REASON_PLAYER_JUDGE(0),
+      NONE(0, 0),
       /**
-       * <code>REASON_SCENE_CANNOT_ENTER = 1;</code>
+       * <code>PEPPOHPHJOJ = 1841;</code>
        */
-      REASON_SCENE_CANNOT_ENTER(1),
+      PEPPOHPHJOJ(1, 1841),
       /**
-       * <code>REASON_PLAYER_CANNOT_ENTER_MP = 2;</code>
+       * <code>NNBKOLMPOEA = 1;</code>
        */
-      REASON_PLAYER_CANNOT_ENTER_MP(2),
-      /**
-       * <code>REASON_SYSTEM_JUDGE = 3;</code>
-       */
-      REASON_SYSTEM_JUDGE(3),
-      /**
-       * <code>REASON_ALLOW_ENTER_PLAYER_FULL = 4;</code>
-       */
-      REASON_ALLOW_ENTER_PLAYER_FULL(4),
-      /**
-       * <code>REASON_WORLD_LEVEL_LOWER_THAN_HOST = 5;</code>
-       */
-      REASON_WORLD_LEVEL_LOWER_THAN_HOST(5),
-      /**
-       * <code>REASON_HOST_IN_MATCH = 6;</code>
-       */
-      REASON_HOST_IN_MATCH(6),
-      /**
-       * <code>REASON_PLAYER_IN_BLACKLIST = 7;</code>
-       */
-      REASON_PLAYER_IN_BLACKLIST(7),
-      /**
-       * <code>REASON_PS_PLAYER_NOT_ACCEPT_OTHERS = 8;</code>
-       */
-      REASON_PS_PLAYER_NOT_ACCEPT_OTHERS(8),
-      /**
-       * <code>REASON_HOST_IS_BLOCKED = 9;</code>
-       */
-      REASON_HOST_IS_BLOCKED(9),
-      /**
-       * <code>REASON_OTHER_DATA_VERSION_NOT_LATEST = 10;</code>
-       */
-      REASON_OTHER_DATA_VERSION_NOT_LATEST(10),
-      /**
-       * <code>REASON_DATA_VERSION_NOT_LATEST = 11;</code>
-       */
-      REASON_DATA_VERSION_NOT_LATEST(11),
-      /**
-       * <code>REASON_PLAYER_NOT_IN_PLAYER_WORLD = 12;</code>
-       */
-      REASON_PLAYER_NOT_IN_PLAYER_WORLD(12),
-      /**
-       * <code>REASON_MAX_PLAYER = 13;</code>
-       */
-      REASON_MAX_PLAYER(13),
-      UNRECOGNIZED(-1),
+      NNBKOLMPOEA(3, 1),
+      UNRECOGNIZED(-1, -1),
       ;
 
       /**
-       * <code>REASON_PLAYER_JUDGE = 0;</code>
+       * <code>DCDNILFDFLB = 0;</code>
        */
-      public static final int REASON_PLAYER_JUDGE_VALUE = 0;
+      public static final AIAPBAMONIJ DCDNILFDFLB = NONE;
       /**
-       * <code>REASON_SCENE_CANNOT_ENTER = 1;</code>
+       * <code>NONE = 0;</code>
        */
-      public static final int REASON_SCENE_CANNOT_ENTER_VALUE = 1;
+      public static final int NONE_VALUE = 0;
       /**
-       * <code>REASON_PLAYER_CANNOT_ENTER_MP = 2;</code>
+       * <code>PEPPOHPHJOJ = 1841;</code>
        */
-      public static final int REASON_PLAYER_CANNOT_ENTER_MP_VALUE = 2;
+      public static final int PEPPOHPHJOJ_VALUE = 1841;
       /**
-       * <code>REASON_SYSTEM_JUDGE = 3;</code>
+       * <code>DCDNILFDFLB = 0;</code>
        */
-      public static final int REASON_SYSTEM_JUDGE_VALUE = 3;
+      public static final int DCDNILFDFLB_VALUE = 0;
       /**
-       * <code>REASON_ALLOW_ENTER_PLAYER_FULL = 4;</code>
+       * <code>NNBKOLMPOEA = 1;</code>
        */
-      public static final int REASON_ALLOW_ENTER_PLAYER_FULL_VALUE = 4;
-      /**
-       * <code>REASON_WORLD_LEVEL_LOWER_THAN_HOST = 5;</code>
-       */
-      public static final int REASON_WORLD_LEVEL_LOWER_THAN_HOST_VALUE = 5;
-      /**
-       * <code>REASON_HOST_IN_MATCH = 6;</code>
-       */
-      public static final int REASON_HOST_IN_MATCH_VALUE = 6;
-      /**
-       * <code>REASON_PLAYER_IN_BLACKLIST = 7;</code>
-       */
-      public static final int REASON_PLAYER_IN_BLACKLIST_VALUE = 7;
-      /**
-       * <code>REASON_PS_PLAYER_NOT_ACCEPT_OTHERS = 8;</code>
-       */
-      public static final int REASON_PS_PLAYER_NOT_ACCEPT_OTHERS_VALUE = 8;
-      /**
-       * <code>REASON_HOST_IS_BLOCKED = 9;</code>
-       */
-      public static final int REASON_HOST_IS_BLOCKED_VALUE = 9;
-      /**
-       * <code>REASON_OTHER_DATA_VERSION_NOT_LATEST = 10;</code>
-       */
-      public static final int REASON_OTHER_DATA_VERSION_NOT_LATEST_VALUE = 10;
-      /**
-       * <code>REASON_DATA_VERSION_NOT_LATEST = 11;</code>
-       */
-      public static final int REASON_DATA_VERSION_NOT_LATEST_VALUE = 11;
-      /**
-       * <code>REASON_PLAYER_NOT_IN_PLAYER_WORLD = 12;</code>
-       */
-      public static final int REASON_PLAYER_NOT_IN_PLAYER_WORLD_VALUE = 12;
-      /**
-       * <code>REASON_MAX_PLAYER = 13;</code>
-       */
-      public static final int REASON_MAX_PLAYER_VALUE = 13;
+      public static final int NNBKOLMPOEA_VALUE = 1;
 
 
       public final int getNumber() {
-        if (this == UNRECOGNIZED) {
+        if (index == -1) {
           throw new java.lang.IllegalArgumentException(
               "Can't get the number of an unknown enum value.");
         }
@@ -300,7 +151,7 @@ public final class PlayerApplyEnterMpResultNotifyOuterClass {
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
-      public static Reason valueOf(int value) {
+      public static AIAPBAMONIJ valueOf(int value) {
         return forNumber(value);
       }
 
@@ -308,45 +159,34 @@ public final class PlayerApplyEnterMpResultNotifyOuterClass {
        * @param value The numeric wire value of the corresponding enum entry.
        * @return The enum associated with the given numeric wire value.
        */
-      public static Reason forNumber(int value) {
+      public static AIAPBAMONIJ forNumber(int value) {
         switch (value) {
-          case 0: return REASON_PLAYER_JUDGE;
-          case 1: return REASON_SCENE_CANNOT_ENTER;
-          case 2: return REASON_PLAYER_CANNOT_ENTER_MP;
-          case 3: return REASON_SYSTEM_JUDGE;
-          case 4: return REASON_ALLOW_ENTER_PLAYER_FULL;
-          case 5: return REASON_WORLD_LEVEL_LOWER_THAN_HOST;
-          case 6: return REASON_HOST_IN_MATCH;
-          case 7: return REASON_PLAYER_IN_BLACKLIST;
-          case 8: return REASON_PS_PLAYER_NOT_ACCEPT_OTHERS;
-          case 9: return REASON_HOST_IS_BLOCKED;
-          case 10: return REASON_OTHER_DATA_VERSION_NOT_LATEST;
-          case 11: return REASON_DATA_VERSION_NOT_LATEST;
-          case 12: return REASON_PLAYER_NOT_IN_PLAYER_WORLD;
-          case 13: return REASON_MAX_PLAYER;
+          case 0: return NONE;
+          case 1841: return PEPPOHPHJOJ;
+          case 1: return NNBKOLMPOEA;
           default: return null;
         }
       }
 
-      public static com.google.protobuf.Internal.EnumLiteMap<Reason>
+      public static com.google.protobuf.Internal.EnumLiteMap<AIAPBAMONIJ>
           internalGetValueMap() {
         return internalValueMap;
       }
       private static final com.google.protobuf.Internal.EnumLiteMap<
-          Reason> internalValueMap =
-            new com.google.protobuf.Internal.EnumLiteMap<Reason>() {
-              public Reason findValueByNumber(int number) {
-                return Reason.forNumber(number);
+          AIAPBAMONIJ> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<AIAPBAMONIJ>() {
+              public AIAPBAMONIJ findValueByNumber(int number) {
+                return AIAPBAMONIJ.forNumber(number);
               }
             };
 
       public final com.google.protobuf.Descriptors.EnumValueDescriptor
           getValueDescriptor() {
-        if (this == UNRECOGNIZED) {
+        if (index == -1) {
           throw new java.lang.IllegalStateException(
               "Can't get the descriptor of an unrecognized enum value.");
         }
-        return getDescriptor().getValues().get(ordinal());
+        return getDescriptor().getValues().get(index);
       }
       public final com.google.protobuf.Descriptors.EnumDescriptor
           getDescriptorForType() {
@@ -357,9 +197,13 @@ public final class PlayerApplyEnterMpResultNotifyOuterClass {
         return emu.grasscutter.net.proto.PlayerApplyEnterMpResultNotifyOuterClass.PlayerApplyEnterMpResultNotify.getDescriptor().getEnumTypes().get(0);
       }
 
-      private static final Reason[] VALUES = values();
-
-      public static Reason valueOf(
+      private static final AIAPBAMONIJ[] VALUES = getStaticValuesArray();
+      private static AIAPBAMONIJ[] getStaticValuesArray() {
+        return new AIAPBAMONIJ[] {
+          NONE, PEPPOHPHJOJ, DCDNILFDFLB, NNBKOLMPOEA, 
+        };
+      }
+      public static AIAPBAMONIJ valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
         if (desc.getType() != getDescriptor()) {
           throw new java.lang.IllegalArgumentException(
@@ -371,38 +215,33 @@ public final class PlayerApplyEnterMpResultNotifyOuterClass {
         return VALUES[desc.getIndex()];
       }
 
+      private final int index;
       private final int value;
 
-      private Reason(int value) {
+      private AIAPBAMONIJ(int index, int value) {
+        this.index = index;
         this.value = value;
       }
 
-      // @@protoc_insertion_point(enum_scope:PlayerApplyEnterMpResultNotify.Reason)
+      // @@protoc_insertion_point(enum_scope:PlayerApplyEnterMpResultNotify.AIAPBAMONIJ)
     }
 
-    public static final int REASON_FIELD_NUMBER = 10;
-    private int reason_;
+    public static final int ISAGREED_FIELD_NUMBER = 7;
+    private boolean isAgreed_ = false;
     /**
-     * <code>.PlayerApplyEnterMpResultNotify.Reason reason = 10;</code>
-     * @return The enum numeric value on the wire for reason.
+     * <code>bool isAgreed = 7;</code>
+     * @return The isAgreed.
      */
-    @java.lang.Override public int getReasonValue() {
-      return reason_;
-    }
-    /**
-     * <code>.PlayerApplyEnterMpResultNotify.Reason reason = 10;</code>
-     * @return The reason.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.PlayerApplyEnterMpResultNotifyOuterClass.PlayerApplyEnterMpResultNotify.Reason getReason() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.PlayerApplyEnterMpResultNotifyOuterClass.PlayerApplyEnterMpResultNotify.Reason result = emu.grasscutter.net.proto.PlayerApplyEnterMpResultNotifyOuterClass.PlayerApplyEnterMpResultNotify.Reason.valueOf(reason_);
-      return result == null ? emu.grasscutter.net.proto.PlayerApplyEnterMpResultNotifyOuterClass.PlayerApplyEnterMpResultNotify.Reason.UNRECOGNIZED : result;
+    @java.lang.Override
+    public boolean getIsAgreed() {
+      return isAgreed_;
     }
 
-    public static final int TARGET_NICKNAME_FIELD_NUMBER = 5;
-    private volatile java.lang.Object targetNickname_;
+    public static final int TARGETNICKNAME_FIELD_NUMBER = 14;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object targetNickname_ = "";
     /**
-     * <code>string target_nickname = 5;</code>
+     * <code>string targetNickname = 14;</code>
      * @return The targetNickname.
      */
     @java.lang.Override
@@ -419,7 +258,7 @@ public final class PlayerApplyEnterMpResultNotifyOuterClass {
       }
     }
     /**
-     * <code>string target_nickname = 5;</code>
+     * <code>string targetNickname = 14;</code>
      * @return The bytes for targetNickname.
      */
     @java.lang.Override
@@ -437,21 +276,28 @@ public final class PlayerApplyEnterMpResultNotifyOuterClass {
       }
     }
 
-    public static final int IS_AGREED_FIELD_NUMBER = 2;
-    private boolean isAgreed_;
+    public static final int REASON_FIELD_NUMBER = 10;
+    private int reason_ = 0;
     /**
-     * <code>bool is_agreed = 2;</code>
-     * @return The isAgreed.
+     * <code>.Reason reason = 10;</code>
+     * @return The enum numeric value on the wire for reason.
      */
-    @java.lang.Override
-    public boolean getIsAgreed() {
-      return isAgreed_;
+    @java.lang.Override public int getReasonValue() {
+      return reason_;
+    }
+    /**
+     * <code>.Reason reason = 10;</code>
+     * @return The reason.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.ReasonOuterClass.Reason getReason() {
+      emu.grasscutter.net.proto.ReasonOuterClass.Reason result = emu.grasscutter.net.proto.ReasonOuterClass.Reason.forNumber(reason_);
+      return result == null ? emu.grasscutter.net.proto.ReasonOuterClass.Reason.UNRECOGNIZED : result;
     }
 
-    public static final int TARGET_UID_FIELD_NUMBER = 4;
-    private int targetUid_;
+    public static final int TARGETUID_FIELD_NUMBER = 1;
+    private int targetUid_ = 0;
     /**
-     * <code>uint32 target_uid = 4;</code>
+     * <code>uint32 targetUid = 1;</code>
      * @return The targetUid.
      */
     @java.lang.Override
@@ -473,19 +319,19 @@ public final class PlayerApplyEnterMpResultNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isAgreed_ != false) {
-        output.writeBool(2, isAgreed_);
-      }
       if (targetUid_ != 0) {
-        output.writeUInt32(4, targetUid_);
+        output.writeUInt32(1, targetUid_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(targetNickname_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, targetNickname_);
+      if (isAgreed_ != false) {
+        output.writeBool(7, isAgreed_);
       }
-      if (reason_ != emu.grasscutter.net.proto.PlayerApplyEnterMpResultNotifyOuterClass.PlayerApplyEnterMpResultNotify.Reason.REASON_PLAYER_JUDGE.getNumber()) {
+      if (reason_ != emu.grasscutter.net.proto.ReasonOuterClass.Reason.REASON_SUCC.getNumber()) {
         output.writeEnum(10, reason_);
       }
-      unknownFields.writeTo(output);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(targetNickname_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 14, targetNickname_);
+      }
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -494,22 +340,22 @@ public final class PlayerApplyEnterMpResultNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isAgreed_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, isAgreed_);
-      }
       if (targetUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, targetUid_);
+          .computeUInt32Size(1, targetUid_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(targetNickname_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, targetNickname_);
+      if (isAgreed_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(7, isAgreed_);
       }
-      if (reason_ != emu.grasscutter.net.proto.PlayerApplyEnterMpResultNotifyOuterClass.PlayerApplyEnterMpResultNotify.Reason.REASON_PLAYER_JUDGE.getNumber()) {
+      if (reason_ != emu.grasscutter.net.proto.ReasonOuterClass.Reason.REASON_SUCC.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(10, reason_);
       }
-      size += unknownFields.getSerializedSize();
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(targetNickname_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(14, targetNickname_);
+      }
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -524,14 +370,14 @@ public final class PlayerApplyEnterMpResultNotifyOuterClass {
       }
       emu.grasscutter.net.proto.PlayerApplyEnterMpResultNotifyOuterClass.PlayerApplyEnterMpResultNotify other = (emu.grasscutter.net.proto.PlayerApplyEnterMpResultNotifyOuterClass.PlayerApplyEnterMpResultNotify) obj;
 
-      if (reason_ != other.reason_) return false;
-      if (!getTargetNickname()
-          .equals(other.getTargetNickname())) return false;
       if (getIsAgreed()
           != other.getIsAgreed()) return false;
+      if (!getTargetNickname()
+          .equals(other.getTargetNickname())) return false;
+      if (reason_ != other.reason_) return false;
       if (getTargetUid()
           != other.getTargetUid()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -542,16 +388,16 @@ public final class PlayerApplyEnterMpResultNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + REASON_FIELD_NUMBER;
-      hash = (53 * hash) + reason_;
-      hash = (37 * hash) + TARGET_NICKNAME_FIELD_NUMBER;
-      hash = (53 * hash) + getTargetNickname().hashCode();
-      hash = (37 * hash) + IS_AGREED_FIELD_NUMBER;
+      hash = (37 * hash) + ISAGREED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsAgreed());
-      hash = (37 * hash) + TARGET_UID_FIELD_NUMBER;
+      hash = (37 * hash) + TARGETNICKNAME_FIELD_NUMBER;
+      hash = (53 * hash) + getTargetNickname().hashCode();
+      hash = (37 * hash) + REASON_FIELD_NUMBER;
+      hash = (53 * hash) + reason_;
+      hash = (37 * hash) + TARGETUID_FIELD_NUMBER;
       hash = (53 * hash) + getTargetUid();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -647,16 +493,6 @@ public final class PlayerApplyEnterMpResultNotifyOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 1835;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     * }
-     * </pre>
-     *
      * Protobuf type {@code PlayerApplyEnterMpResultNotify}
      */
     public static final class Builder extends
@@ -678,30 +514,22 @@ public final class PlayerApplyEnterMpResultNotifyOuterClass {
 
       // Construct using emu.grasscutter.net.proto.PlayerApplyEnterMpResultNotifyOuterClass.PlayerApplyEnterMpResultNotify.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        reason_ = 0;
-
-        targetNickname_ = "";
-
+        bitField0_ = 0;
         isAgreed_ = false;
-
+        targetNickname_ = "";
+        reason_ = 0;
         targetUid_ = 0;
-
         return this;
       }
 
@@ -728,12 +556,25 @@ public final class PlayerApplyEnterMpResultNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PlayerApplyEnterMpResultNotifyOuterClass.PlayerApplyEnterMpResultNotify buildPartial() {
         emu.grasscutter.net.proto.PlayerApplyEnterMpResultNotifyOuterClass.PlayerApplyEnterMpResultNotify result = new emu.grasscutter.net.proto.PlayerApplyEnterMpResultNotifyOuterClass.PlayerApplyEnterMpResultNotify(this);
-        result.reason_ = reason_;
-        result.targetNickname_ = targetNickname_;
-        result.isAgreed_ = isAgreed_;
-        result.targetUid_ = targetUid_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.PlayerApplyEnterMpResultNotifyOuterClass.PlayerApplyEnterMpResultNotify result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.isAgreed_ = isAgreed_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.targetNickname_ = targetNickname_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.reason_ = reason_;
+        }
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.targetUid_ = targetUid_;
+        }
       }
 
       @java.lang.Override
@@ -780,20 +621,21 @@ public final class PlayerApplyEnterMpResultNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PlayerApplyEnterMpResultNotifyOuterClass.PlayerApplyEnterMpResultNotify other) {
         if (other == emu.grasscutter.net.proto.PlayerApplyEnterMpResultNotifyOuterClass.PlayerApplyEnterMpResultNotify.getDefaultInstance()) return this;
-        if (other.reason_ != 0) {
-          setReasonValue(other.getReasonValue());
+        if (other.getIsAgreed() != false) {
+          setIsAgreed(other.getIsAgreed());
         }
         if (!other.getTargetNickname().isEmpty()) {
           targetNickname_ = other.targetNickname_;
+          bitField0_ |= 0x00000002;
           onChanged();
         }
-        if (other.getIsAgreed() != false) {
-          setIsAgreed(other.getIsAgreed());
+        if (other.reason_ != 0) {
+          setReasonValue(other.getReasonValue());
         }
         if (other.getTargetUid() != 0) {
           setTargetUid(other.getTargetUid());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -808,77 +650,89 @@ public final class PlayerApplyEnterMpResultNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.PlayerApplyEnterMpResultNotifyOuterClass.PlayerApplyEnterMpResultNotify parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                targetUid_ = input.readUInt32();
+                bitField0_ |= 0x00000008;
+                break;
+              } // case 8
+              case 56: {
+                isAgreed_ = input.readBool();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 56
+              case 80: {
+                reason_ = input.readEnum();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 80
+              case 114: {
+                targetNickname_ = input.readStringRequireUtf8();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 114
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.PlayerApplyEnterMpResultNotifyOuterClass.PlayerApplyEnterMpResultNotify) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
-      private int reason_ = 0;
+      private boolean isAgreed_ ;
       /**
-       * <code>.PlayerApplyEnterMpResultNotify.Reason reason = 10;</code>
-       * @return The enum numeric value on the wire for reason.
-       */
-      @java.lang.Override public int getReasonValue() {
-        return reason_;
-      }
-      /**
-       * <code>.PlayerApplyEnterMpResultNotify.Reason reason = 10;</code>
-       * @param value The enum numeric value on the wire for reason to set.
-       * @return This builder for chaining.
-       */
-      public Builder setReasonValue(int value) {
-        
-        reason_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.PlayerApplyEnterMpResultNotify.Reason reason = 10;</code>
-       * @return The reason.
+       * <code>bool isAgreed = 7;</code>
+       * @return The isAgreed.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.PlayerApplyEnterMpResultNotifyOuterClass.PlayerApplyEnterMpResultNotify.Reason getReason() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.PlayerApplyEnterMpResultNotifyOuterClass.PlayerApplyEnterMpResultNotify.Reason result = emu.grasscutter.net.proto.PlayerApplyEnterMpResultNotifyOuterClass.PlayerApplyEnterMpResultNotify.Reason.valueOf(reason_);
-        return result == null ? emu.grasscutter.net.proto.PlayerApplyEnterMpResultNotifyOuterClass.PlayerApplyEnterMpResultNotify.Reason.UNRECOGNIZED : result;
+      public boolean getIsAgreed() {
+        return isAgreed_;
       }
       /**
-       * <code>.PlayerApplyEnterMpResultNotify.Reason reason = 10;</code>
-       * @param value The reason to set.
+       * <code>bool isAgreed = 7;</code>
+       * @param value The isAgreed to set.
        * @return This builder for chaining.
        */
-      public Builder setReason(emu.grasscutter.net.proto.PlayerApplyEnterMpResultNotifyOuterClass.PlayerApplyEnterMpResultNotify.Reason value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
+      public Builder setIsAgreed(boolean value) {
         
-        reason_ = value.getNumber();
+        isAgreed_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>.PlayerApplyEnterMpResultNotify.Reason reason = 10;</code>
+       * <code>bool isAgreed = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearReason() {
-        
-        reason_ = 0;
+      public Builder clearIsAgreed() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        isAgreed_ = false;
         onChanged();
         return this;
       }
 
       private java.lang.Object targetNickname_ = "";
       /**
-       * <code>string target_nickname = 5;</code>
+       * <code>string targetNickname = 14;</code>
        * @return The targetNickname.
        */
       public java.lang.String getTargetNickname() {
@@ -894,7 +748,7 @@ public final class PlayerApplyEnterMpResultNotifyOuterClass {
         }
       }
       /**
-       * <code>string target_nickname = 5;</code>
+       * <code>string targetNickname = 14;</code>
        * @return The bytes for targetNickname.
        */
       public com.google.protobuf.ByteString
@@ -911,81 +765,99 @@ public final class PlayerApplyEnterMpResultNotifyOuterClass {
         }
       }
       /**
-       * <code>string target_nickname = 5;</code>
+       * <code>string targetNickname = 14;</code>
        * @param value The targetNickname to set.
        * @return This builder for chaining.
        */
       public Builder setTargetNickname(
           java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
+        if (value == null) { throw new NullPointerException(); }
         targetNickname_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>string target_nickname = 5;</code>
+       * <code>string targetNickname = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetNickname() {
-        
         targetNickname_ = getDefaultInstance().getTargetNickname();
+        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
       /**
-       * <code>string target_nickname = 5;</code>
+       * <code>string targetNickname = 14;</code>
        * @param value The bytes for targetNickname to set.
        * @return This builder for chaining.
        */
       public Builder setTargetNicknameBytes(
           com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
+        if (value == null) { throw new NullPointerException(); }
+        checkByteStringIsUtf8(value);
         targetNickname_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
 
-      private boolean isAgreed_ ;
+      private int reason_ = 0;
       /**
-       * <code>bool is_agreed = 2;</code>
-       * @return The isAgreed.
+       * <code>.Reason reason = 10;</code>
+       * @return The enum numeric value on the wire for reason.
        */
-      @java.lang.Override
-      public boolean getIsAgreed() {
-        return isAgreed_;
+      @java.lang.Override public int getReasonValue() {
+        return reason_;
       }
       /**
-       * <code>bool is_agreed = 2;</code>
-       * @param value The isAgreed to set.
+       * <code>.Reason reason = 10;</code>
+       * @param value The enum numeric value on the wire for reason to set.
        * @return This builder for chaining.
        */
-      public Builder setIsAgreed(boolean value) {
-        
-        isAgreed_ = value;
+      public Builder setReasonValue(int value) {
+        reason_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_agreed = 2;</code>
+       * <code>.Reason reason = 10;</code>
+       * @return The reason.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.ReasonOuterClass.Reason getReason() {
+        emu.grasscutter.net.proto.ReasonOuterClass.Reason result = emu.grasscutter.net.proto.ReasonOuterClass.Reason.forNumber(reason_);
+        return result == null ? emu.grasscutter.net.proto.ReasonOuterClass.Reason.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.Reason reason = 10;</code>
+       * @param value The reason to set.
        * @return This builder for chaining.
        */
-      public Builder clearIsAgreed() {
-        
-        isAgreed_ = false;
+      public Builder setReason(emu.grasscutter.net.proto.ReasonOuterClass.Reason value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        bitField0_ |= 0x00000004;
+        reason_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.Reason reason = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearReason() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        reason_ = 0;
         onChanged();
         return this;
       }
 
       private int targetUid_ ;
       /**
-       * <code>uint32 target_uid = 4;</code>
+       * <code>uint32 targetUid = 1;</code>
        * @return The targetUid.
        */
       @java.lang.Override
@@ -993,22 +865,23 @@ public final class PlayerApplyEnterMpResultNotifyOuterClass {
         return targetUid_;
       }
       /**
-       * <code>uint32 target_uid = 4;</code>
+       * <code>uint32 targetUid = 1;</code>
        * @param value The targetUid to set.
        * @return This builder for chaining.
        */
       public Builder setTargetUid(int value) {
         
         targetUid_ = value;
+        bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 target_uid = 4;</code>
+       * <code>uint32 targetUid = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetUid() {
-        
+        bitField0_ = (bitField0_ & ~0x00000008);
         targetUid_ = 0;
         onChanged();
         return this;
@@ -1046,7 +919,18 @@ public final class PlayerApplyEnterMpResultNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new PlayerApplyEnterMpResultNotify(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -1080,35 +964,27 @@ public final class PlayerApplyEnterMpResultNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n$PlayerApplyEnterMpResultNotify.proto\"\355" +
-      "\004\n\036PlayerApplyEnterMpResultNotify\0226\n\006rea" +
-      "son\030\n \001(\0162&.PlayerApplyEnterMpResultNoti" +
-      "fy.Reason\022\027\n\017target_nickname\030\005 \001(\t\022\021\n\tis" +
-      "_agreed\030\002 \001(\010\022\022\n\ntarget_uid\030\004 \001(\r\"\322\003\n\006Re" +
-      "ason\022\027\n\023REASON_PLAYER_JUDGE\020\000\022\035\n\031REASON_" +
-      "SCENE_CANNOT_ENTER\020\001\022!\n\035REASON_PLAYER_CA" +
-      "NNOT_ENTER_MP\020\002\022\027\n\023REASON_SYSTEM_JUDGE\020\003" +
-      "\022\"\n\036REASON_ALLOW_ENTER_PLAYER_FULL\020\004\022&\n\"" +
-      "REASON_WORLD_LEVEL_LOWER_THAN_HOST\020\005\022\030\n\024" +
-      "REASON_HOST_IN_MATCH\020\006\022\036\n\032REASON_PLAYER_" +
-      "IN_BLACKLIST\020\007\022&\n\"REASON_PS_PLAYER_NOT_A" +
-      "CCEPT_OTHERS\020\010\022\032\n\026REASON_HOST_IS_BLOCKED" +
-      "\020\t\022(\n$REASON_OTHER_DATA_VERSION_NOT_LATE" +
-      "ST\020\n\022\"\n\036REASON_DATA_VERSION_NOT_LATEST\020\013" +
-      "\022%\n!REASON_PLAYER_NOT_IN_PLAYER_WORLD\020\014\022" +
-      "\025\n\021REASON_MAX_PLAYER\020\rB\033\n\031emu.grasscutte" +
-      "r.net.protob\006proto3"
+      "\n$PlayerApplyEnterMpResultNotify.proto\032\014" +
+      "Reason.proto\"\307\001\n\036PlayerApplyEnterMpResul" +
+      "tNotify\022\020\n\010isAgreed\030\007 \001(\010\022\026\n\016targetNickn" +
+      "ame\030\016 \001(\t\022\027\n\006reason\030\n \001(\0162\007.Reason\022\021\n\tta" +
+      "rgetUid\030\001 \001(\r\"O\n\013AIAPBAMONIJ\022\010\n\004NONE\020\000\022\020" +
+      "\n\013PEPPOHPHJOJ\020\261\016\022\017\n\013DCDNILFDFLB\020\000\022\017\n\013NNB" +
+      "KOLMPOEA\020\001\032\002\020\001B\033\n\031emu.grasscutter.net.pr" +
+      "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.ReasonOuterClass.getDescriptor(),
         });
     internal_static_PlayerApplyEnterMpResultNotify_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_PlayerApplyEnterMpResultNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerApplyEnterMpResultNotify_descriptor,
-        new java.lang.String[] { "Reason", "TargetNickname", "IsAgreed", "TargetUid", });
+        new java.lang.String[] { "IsAgreed", "TargetNickname", "Reason", "TargetUid", });
+    emu.grasscutter.net.proto.ReasonOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

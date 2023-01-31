@@ -19,29 +19,18 @@ public final class SelectWorktopOptionReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 option_id = 7;</code>
+     * <code>uint32 optionId = 1;</code>
      * @return The optionId.
      */
     int getOptionId();
 
     /**
-     * <code>uint32 gadget_entity_id = 5;</code>
+     * <code>uint32 gadgetEntityId = 15;</code>
      * @return The gadgetEntityId.
      */
     int getGadgetEntityId();
   }
   /**
-   * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 900;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   *   IS_ALLOW_CLIENT = 1;
-   * }
-   * </pre>
-   *
    * Protobuf type {@code SelectWorktopOptionReq}
    */
   public static final class SelectWorktopOptionReq extends
@@ -68,53 +57,6 @@ public final class SelectWorktopOptionReqOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private SelectWorktopOptionReq(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 40: {
-
-              gadgetEntityId_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              optionId_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.SelectWorktopOptionReqOuterClass.internal_static_SelectWorktopOptionReq_descriptor;
@@ -128,10 +70,149 @@ public final class SelectWorktopOptionReqOuterClass {
               emu.grasscutter.net.proto.SelectWorktopOptionReqOuterClass.SelectWorktopOptionReq.class, emu.grasscutter.net.proto.SelectWorktopOptionReqOuterClass.SelectWorktopOptionReq.Builder.class);
     }
 
-    public static final int OPTION_ID_FIELD_NUMBER = 7;
-    private int optionId_;
     /**
-     * <code>uint32 option_id = 7;</code>
+     * Protobuf enum {@code SelectWorktopOptionReq.DBBFFAADANP}
+     */
+    public enum DBBFFAADANP
+        implements com.google.protobuf.ProtocolMessageEnum {
+      /**
+       * <code>NONE = 0;</code>
+       */
+      NONE(0, 0),
+      /**
+       * <code>PEPPOHPHJOJ = 820;</code>
+       */
+      PEPPOHPHJOJ(1, 820),
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      NNBKOLMPOEA(3, 1),
+      UNRECOGNIZED(-1, -1),
+      ;
+
+      /**
+       * <code>DCDNILFDFLB = 0;</code>
+       */
+      public static final DBBFFAADANP DCDNILFDFLB = NONE;
+      /**
+       * <code>EAJIABGAOCI = 1;</code>
+       */
+      public static final DBBFFAADANP EAJIABGAOCI = NNBKOLMPOEA;
+      /**
+       * <code>NONE = 0;</code>
+       */
+      public static final int NONE_VALUE = 0;
+      /**
+       * <code>PEPPOHPHJOJ = 820;</code>
+       */
+      public static final int PEPPOHPHJOJ_VALUE = 820;
+      /**
+       * <code>DCDNILFDFLB = 0;</code>
+       */
+      public static final int DCDNILFDFLB_VALUE = 0;
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      public static final int NNBKOLMPOEA_VALUE = 1;
+      /**
+       * <code>EAJIABGAOCI = 1;</code>
+       */
+      public static final int EAJIABGAOCI_VALUE = 1;
+
+
+      public final int getNumber() {
+        if (index == -1) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static DBBFFAADANP valueOf(int value) {
+        return forNumber(value);
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
+      public static DBBFFAADANP forNumber(int value) {
+        switch (value) {
+          case 0: return NONE;
+          case 820: return PEPPOHPHJOJ;
+          case 1: return NNBKOLMPOEA;
+          default: return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<DBBFFAADANP>
+          internalGetValueMap() {
+        return internalValueMap;
+      }
+      private static final com.google.protobuf.Internal.EnumLiteMap<
+          DBBFFAADANP> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<DBBFFAADANP>() {
+              public DBBFFAADANP findValueByNumber(int number) {
+                return DBBFFAADANP.forNumber(number);
+              }
+            };
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor
+          getValueDescriptor() {
+        if (index == -1) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
+        return getDescriptor().getValues().get(index);
+      }
+      public final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptorForType() {
+        return getDescriptor();
+      }
+      public static final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptor() {
+        return emu.grasscutter.net.proto.SelectWorktopOptionReqOuterClass.SelectWorktopOptionReq.getDescriptor().getEnumTypes().get(0);
+      }
+
+      private static final DBBFFAADANP[] VALUES = getStaticValuesArray();
+      private static DBBFFAADANP[] getStaticValuesArray() {
+        return new DBBFFAADANP[] {
+          NONE, PEPPOHPHJOJ, DCDNILFDFLB, NNBKOLMPOEA, EAJIABGAOCI, 
+        };
+      }
+      public static DBBFFAADANP valueOf(
+          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException(
+            "EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      private final int index;
+      private final int value;
+
+      private DBBFFAADANP(int index, int value) {
+        this.index = index;
+        this.value = value;
+      }
+
+      // @@protoc_insertion_point(enum_scope:SelectWorktopOptionReq.DBBFFAADANP)
+    }
+
+    public static final int OPTIONID_FIELD_NUMBER = 1;
+    private int optionId_ = 0;
+    /**
+     * <code>uint32 optionId = 1;</code>
      * @return The optionId.
      */
     @java.lang.Override
@@ -139,10 +220,10 @@ public final class SelectWorktopOptionReqOuterClass {
       return optionId_;
     }
 
-    public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 5;
-    private int gadgetEntityId_;
+    public static final int GADGETENTITYID_FIELD_NUMBER = 15;
+    private int gadgetEntityId_ = 0;
     /**
-     * <code>uint32 gadget_entity_id = 5;</code>
+     * <code>uint32 gadgetEntityId = 15;</code>
      * @return The gadgetEntityId.
      */
     @java.lang.Override
@@ -164,13 +245,13 @@ public final class SelectWorktopOptionReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (gadgetEntityId_ != 0) {
-        output.writeUInt32(5, gadgetEntityId_);
-      }
       if (optionId_ != 0) {
-        output.writeUInt32(7, optionId_);
+        output.writeUInt32(1, optionId_);
       }
-      unknownFields.writeTo(output);
+      if (gadgetEntityId_ != 0) {
+        output.writeUInt32(15, gadgetEntityId_);
+      }
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -179,15 +260,15 @@ public final class SelectWorktopOptionReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (gadgetEntityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, gadgetEntityId_);
-      }
       if (optionId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, optionId_);
+          .computeUInt32Size(1, optionId_);
       }
-      size += unknownFields.getSerializedSize();
+      if (gadgetEntityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, gadgetEntityId_);
+      }
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -206,7 +287,7 @@ public final class SelectWorktopOptionReqOuterClass {
           != other.getOptionId()) return false;
       if (getGadgetEntityId()
           != other.getGadgetEntityId()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -217,11 +298,11 @@ public final class SelectWorktopOptionReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + OPTION_ID_FIELD_NUMBER;
+      hash = (37 * hash) + OPTIONID_FIELD_NUMBER;
       hash = (53 * hash) + getOptionId();
-      hash = (37 * hash) + GADGET_ENTITY_ID_FIELD_NUMBER;
+      hash = (37 * hash) + GADGETENTITYID_FIELD_NUMBER;
       hash = (53 * hash) + getGadgetEntityId();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -317,17 +398,6 @@ public final class SelectWorktopOptionReqOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 900;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     *   IS_ALLOW_CLIENT = 1;
-     * }
-     * </pre>
-     *
      * Protobuf type {@code SelectWorktopOptionReq}
      */
     public static final class Builder extends
@@ -349,26 +419,20 @@ public final class SelectWorktopOptionReqOuterClass {
 
       // Construct using emu.grasscutter.net.proto.SelectWorktopOptionReqOuterClass.SelectWorktopOptionReq.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         optionId_ = 0;
-
         gadgetEntityId_ = 0;
-
         return this;
       }
 
@@ -395,10 +459,19 @@ public final class SelectWorktopOptionReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SelectWorktopOptionReqOuterClass.SelectWorktopOptionReq buildPartial() {
         emu.grasscutter.net.proto.SelectWorktopOptionReqOuterClass.SelectWorktopOptionReq result = new emu.grasscutter.net.proto.SelectWorktopOptionReqOuterClass.SelectWorktopOptionReq(this);
-        result.optionId_ = optionId_;
-        result.gadgetEntityId_ = gadgetEntityId_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.SelectWorktopOptionReqOuterClass.SelectWorktopOptionReq result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.optionId_ = optionId_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.gadgetEntityId_ = gadgetEntityId_;
+        }
       }
 
       @java.lang.Override
@@ -451,7 +524,7 @@ public final class SelectWorktopOptionReqOuterClass {
         if (other.getGadgetEntityId() != 0) {
           setGadgetEntityId(other.getGadgetEntityId());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -466,23 +539,47 @@ public final class SelectWorktopOptionReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.SelectWorktopOptionReqOuterClass.SelectWorktopOptionReq parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                optionId_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              case 120: {
+                gadgetEntityId_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 120
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.SelectWorktopOptionReqOuterClass.SelectWorktopOptionReq) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private int optionId_ ;
       /**
-       * <code>uint32 option_id = 7;</code>
+       * <code>uint32 optionId = 1;</code>
        * @return The optionId.
        */
       @java.lang.Override
@@ -490,22 +587,23 @@ public final class SelectWorktopOptionReqOuterClass {
         return optionId_;
       }
       /**
-       * <code>uint32 option_id = 7;</code>
+       * <code>uint32 optionId = 1;</code>
        * @param value The optionId to set.
        * @return This builder for chaining.
        */
       public Builder setOptionId(int value) {
         
         optionId_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 option_id = 7;</code>
+       * <code>uint32 optionId = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearOptionId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         optionId_ = 0;
         onChanged();
         return this;
@@ -513,7 +611,7 @@ public final class SelectWorktopOptionReqOuterClass {
 
       private int gadgetEntityId_ ;
       /**
-       * <code>uint32 gadget_entity_id = 5;</code>
+       * <code>uint32 gadgetEntityId = 15;</code>
        * @return The gadgetEntityId.
        */
       @java.lang.Override
@@ -521,22 +619,23 @@ public final class SelectWorktopOptionReqOuterClass {
         return gadgetEntityId_;
       }
       /**
-       * <code>uint32 gadget_entity_id = 5;</code>
+       * <code>uint32 gadgetEntityId = 15;</code>
        * @param value The gadgetEntityId to set.
        * @return This builder for chaining.
        */
       public Builder setGadgetEntityId(int value) {
         
         gadgetEntityId_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 gadget_entity_id = 5;</code>
+       * <code>uint32 gadgetEntityId = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearGadgetEntityId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         gadgetEntityId_ = 0;
         onChanged();
         return this;
@@ -574,7 +673,18 @@ public final class SelectWorktopOptionReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new SelectWorktopOptionReq(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -608,10 +718,12 @@ public final class SelectWorktopOptionReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034SelectWorktopOptionReq.proto\"E\n\026Select" +
-      "WorktopOptionReq\022\021\n\toption_id\030\007 \001(\r\022\030\n\020g" +
-      "adget_entity_id\030\005 \001(\rB\033\n\031emu.grasscutter" +
-      ".net.protob\006proto3"
+      "\n\034SelectWorktopOptionReq.proto\"\244\001\n\026Selec" +
+      "tWorktopOptionReq\022\020\n\010optionId\030\001 \001(\r\022\026\n\016g" +
+      "adgetEntityId\030\017 \001(\r\"`\n\013DBBFFAADANP\022\010\n\004NO" +
+      "NE\020\000\022\020\n\013PEPPOHPHJOJ\020\264\006\022\017\n\013DCDNILFDFLB\020\000\022" +
+      "\017\n\013NNBKOLMPOEA\020\001\022\017\n\013EAJIABGAOCI\020\001\032\002\020\001B\033\n" +
+      "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

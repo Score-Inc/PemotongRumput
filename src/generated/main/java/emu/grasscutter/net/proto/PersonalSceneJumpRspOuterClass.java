@@ -19,43 +19,33 @@ public final class PersonalSceneJumpRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 dest_scene_id = 3;</code>
+     * <code>uint32 destSceneId = 3;</code>
      * @return The destSceneId.
      */
     int getDestSceneId();
 
     /**
-     * <code>.Vector dest_pos = 8;</code>
+     * <code>.Vector destPos = 2;</code>
      * @return Whether the destPos field is set.
      */
     boolean hasDestPos();
     /**
-     * <code>.Vector dest_pos = 8;</code>
+     * <code>.Vector destPos = 2;</code>
      * @return The destPos.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getDestPos();
     /**
-     * <code>.Vector dest_pos = 8;</code>
+     * <code>.Vector destPos = 2;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getDestPosOrBuilder();
 
     /**
-     * <code>int32 retcode = 7;</code>
+     * <code>int32 retcode = 12;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
-   * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 274;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   * }
-   * </pre>
-   *
    * Protobuf type {@code PersonalSceneJumpRsp}
    */
   public static final class PersonalSceneJumpRsp extends
@@ -82,66 +72,6 @@ public final class PersonalSceneJumpRspOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private PersonalSceneJumpRsp(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 24: {
-
-              destSceneId_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 66: {
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
-              if (destPos_ != null) {
-                subBuilder = destPos_.toBuilder();
-              }
-              destPos_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(destPos_);
-                destPos_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.PersonalSceneJumpRspOuterClass.internal_static_PersonalSceneJumpRsp_descriptor;
@@ -155,10 +85,141 @@ public final class PersonalSceneJumpRspOuterClass {
               emu.grasscutter.net.proto.PersonalSceneJumpRspOuterClass.PersonalSceneJumpRsp.class, emu.grasscutter.net.proto.PersonalSceneJumpRspOuterClass.PersonalSceneJumpRsp.Builder.class);
     }
 
-    public static final int DEST_SCENE_ID_FIELD_NUMBER = 3;
-    private int destSceneId_;
     /**
-     * <code>uint32 dest_scene_id = 3;</code>
+     * Protobuf enum {@code PersonalSceneJumpRsp.EGFJPPIMGPO}
+     */
+    public enum EGFJPPIMGPO
+        implements com.google.protobuf.ProtocolMessageEnum {
+      /**
+       * <code>NONE = 0;</code>
+       */
+      NONE(0, 0),
+      /**
+       * <code>PEPPOHPHJOJ = 204;</code>
+       */
+      PEPPOHPHJOJ(1, 204),
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      NNBKOLMPOEA(3, 1),
+      UNRECOGNIZED(-1, -1),
+      ;
+
+      /**
+       * <code>DCDNILFDFLB = 0;</code>
+       */
+      public static final EGFJPPIMGPO DCDNILFDFLB = NONE;
+      /**
+       * <code>NONE = 0;</code>
+       */
+      public static final int NONE_VALUE = 0;
+      /**
+       * <code>PEPPOHPHJOJ = 204;</code>
+       */
+      public static final int PEPPOHPHJOJ_VALUE = 204;
+      /**
+       * <code>DCDNILFDFLB = 0;</code>
+       */
+      public static final int DCDNILFDFLB_VALUE = 0;
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      public static final int NNBKOLMPOEA_VALUE = 1;
+
+
+      public final int getNumber() {
+        if (index == -1) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static EGFJPPIMGPO valueOf(int value) {
+        return forNumber(value);
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
+      public static EGFJPPIMGPO forNumber(int value) {
+        switch (value) {
+          case 0: return NONE;
+          case 204: return PEPPOHPHJOJ;
+          case 1: return NNBKOLMPOEA;
+          default: return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<EGFJPPIMGPO>
+          internalGetValueMap() {
+        return internalValueMap;
+      }
+      private static final com.google.protobuf.Internal.EnumLiteMap<
+          EGFJPPIMGPO> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<EGFJPPIMGPO>() {
+              public EGFJPPIMGPO findValueByNumber(int number) {
+                return EGFJPPIMGPO.forNumber(number);
+              }
+            };
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor
+          getValueDescriptor() {
+        if (index == -1) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
+        return getDescriptor().getValues().get(index);
+      }
+      public final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptorForType() {
+        return getDescriptor();
+      }
+      public static final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptor() {
+        return emu.grasscutter.net.proto.PersonalSceneJumpRspOuterClass.PersonalSceneJumpRsp.getDescriptor().getEnumTypes().get(0);
+      }
+
+      private static final EGFJPPIMGPO[] VALUES = getStaticValuesArray();
+      private static EGFJPPIMGPO[] getStaticValuesArray() {
+        return new EGFJPPIMGPO[] {
+          NONE, PEPPOHPHJOJ, DCDNILFDFLB, NNBKOLMPOEA, 
+        };
+      }
+      public static EGFJPPIMGPO valueOf(
+          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException(
+            "EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      private final int index;
+      private final int value;
+
+      private EGFJPPIMGPO(int index, int value) {
+        this.index = index;
+        this.value = value;
+      }
+
+      // @@protoc_insertion_point(enum_scope:PersonalSceneJumpRsp.EGFJPPIMGPO)
+    }
+
+    public static final int DESTSCENEID_FIELD_NUMBER = 3;
+    private int destSceneId_ = 0;
+    /**
+     * <code>uint32 destSceneId = 3;</code>
      * @return The destSceneId.
      */
     @java.lang.Override
@@ -166,10 +227,10 @@ public final class PersonalSceneJumpRspOuterClass {
       return destSceneId_;
     }
 
-    public static final int DEST_POS_FIELD_NUMBER = 8;
+    public static final int DESTPOS_FIELD_NUMBER = 2;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector destPos_;
     /**
-     * <code>.Vector dest_pos = 8;</code>
+     * <code>.Vector destPos = 2;</code>
      * @return Whether the destPos field is set.
      */
     @java.lang.Override
@@ -177,7 +238,7 @@ public final class PersonalSceneJumpRspOuterClass {
       return destPos_ != null;
     }
     /**
-     * <code>.Vector dest_pos = 8;</code>
+     * <code>.Vector destPos = 2;</code>
      * @return The destPos.
      */
     @java.lang.Override
@@ -185,17 +246,17 @@ public final class PersonalSceneJumpRspOuterClass {
       return destPos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : destPos_;
     }
     /**
-     * <code>.Vector dest_pos = 8;</code>
+     * <code>.Vector destPos = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getDestPosOrBuilder() {
-      return getDestPos();
+      return destPos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : destPos_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 7;
-    private int retcode_;
+    public static final int RETCODE_FIELD_NUMBER = 12;
+    private int retcode_ = 0;
     /**
-     * <code>int32 retcode = 7;</code>
+     * <code>int32 retcode = 12;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -217,16 +278,16 @@ public final class PersonalSceneJumpRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (destPos_ != null) {
+        output.writeMessage(2, getDestPos());
+      }
       if (destSceneId_ != 0) {
         output.writeUInt32(3, destSceneId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(7, retcode_);
+        output.writeInt32(12, retcode_);
       }
-      if (destPos_ != null) {
-        output.writeMessage(8, getDestPos());
-      }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -235,19 +296,19 @@ public final class PersonalSceneJumpRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (destPos_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, getDestPos());
+      }
       if (destSceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(3, destSceneId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, retcode_);
+          .computeInt32Size(12, retcode_);
       }
-      if (destPos_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, getDestPos());
-      }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -271,7 +332,7 @@ public final class PersonalSceneJumpRspOuterClass {
       }
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -282,15 +343,15 @@ public final class PersonalSceneJumpRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + DEST_SCENE_ID_FIELD_NUMBER;
+      hash = (37 * hash) + DESTSCENEID_FIELD_NUMBER;
       hash = (53 * hash) + getDestSceneId();
       if (hasDestPos()) {
-        hash = (37 * hash) + DEST_POS_FIELD_NUMBER;
+        hash = (37 * hash) + DESTPOS_FIELD_NUMBER;
         hash = (53 * hash) + getDestPos().hashCode();
       }
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -386,16 +447,6 @@ public final class PersonalSceneJumpRspOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 274;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     * }
-     * </pre>
-     *
      * Protobuf type {@code PersonalSceneJumpRsp}
      */
     public static final class Builder extends
@@ -417,32 +468,25 @@ public final class PersonalSceneJumpRspOuterClass {
 
       // Construct using emu.grasscutter.net.proto.PersonalSceneJumpRspOuterClass.PersonalSceneJumpRsp.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         destSceneId_ = 0;
-
-        if (destPosBuilder_ == null) {
-          destPos_ = null;
-        } else {
-          destPos_ = null;
+        destPos_ = null;
+        if (destPosBuilder_ != null) {
+          destPosBuilder_.dispose();
           destPosBuilder_ = null;
         }
         retcode_ = 0;
-
         return this;
       }
 
@@ -469,15 +513,24 @@ public final class PersonalSceneJumpRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PersonalSceneJumpRspOuterClass.PersonalSceneJumpRsp buildPartial() {
         emu.grasscutter.net.proto.PersonalSceneJumpRspOuterClass.PersonalSceneJumpRsp result = new emu.grasscutter.net.proto.PersonalSceneJumpRspOuterClass.PersonalSceneJumpRsp(this);
-        result.destSceneId_ = destSceneId_;
-        if (destPosBuilder_ == null) {
-          result.destPos_ = destPos_;
-        } else {
-          result.destPos_ = destPosBuilder_.build();
-        }
-        result.retcode_ = retcode_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.PersonalSceneJumpRspOuterClass.PersonalSceneJumpRsp result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.destSceneId_ = destSceneId_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.destPos_ = destPosBuilder_ == null
+              ? destPos_
+              : destPosBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.retcode_ = retcode_;
+        }
       }
 
       @java.lang.Override
@@ -533,7 +586,7 @@ public final class PersonalSceneJumpRspOuterClass {
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -548,23 +601,54 @@ public final class PersonalSceneJumpRspOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.PersonalSceneJumpRspOuterClass.PersonalSceneJumpRsp parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 18: {
+                input.readMessage(
+                    getDestPosFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 18
+              case 24: {
+                destSceneId_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 24
+              case 96: {
+                retcode_ = input.readInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 96
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.PersonalSceneJumpRspOuterClass.PersonalSceneJumpRsp) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private int destSceneId_ ;
       /**
-       * <code>uint32 dest_scene_id = 3;</code>
+       * <code>uint32 destSceneId = 3;</code>
        * @return The destSceneId.
        */
       @java.lang.Override
@@ -572,22 +656,23 @@ public final class PersonalSceneJumpRspOuterClass {
         return destSceneId_;
       }
       /**
-       * <code>uint32 dest_scene_id = 3;</code>
+       * <code>uint32 destSceneId = 3;</code>
        * @param value The destSceneId to set.
        * @return This builder for chaining.
        */
       public Builder setDestSceneId(int value) {
         
         destSceneId_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 dest_scene_id = 3;</code>
+       * <code>uint32 destSceneId = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearDestSceneId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         destSceneId_ = 0;
         onChanged();
         return this;
@@ -597,14 +682,14 @@ public final class PersonalSceneJumpRspOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> destPosBuilder_;
       /**
-       * <code>.Vector dest_pos = 8;</code>
+       * <code>.Vector destPos = 2;</code>
        * @return Whether the destPos field is set.
        */
       public boolean hasDestPos() {
-        return destPosBuilder_ != null || destPos_ != null;
+        return ((bitField0_ & 0x00000002) != 0);
       }
       /**
-       * <code>.Vector dest_pos = 8;</code>
+       * <code>.Vector destPos = 2;</code>
        * @return The destPos.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getDestPos() {
@@ -615,7 +700,7 @@ public final class PersonalSceneJumpRspOuterClass {
         }
       }
       /**
-       * <code>.Vector dest_pos = 8;</code>
+       * <code>.Vector destPos = 2;</code>
        */
       public Builder setDestPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (destPosBuilder_ == null) {
@@ -623,69 +708,69 @@ public final class PersonalSceneJumpRspOuterClass {
             throw new NullPointerException();
           }
           destPos_ = value;
-          onChanged();
         } else {
           destPosBuilder_.setMessage(value);
         }
-
+        bitField0_ |= 0x00000002;
+        onChanged();
         return this;
       }
       /**
-       * <code>.Vector dest_pos = 8;</code>
+       * <code>.Vector destPos = 2;</code>
        */
       public Builder setDestPos(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
         if (destPosBuilder_ == null) {
           destPos_ = builderForValue.build();
-          onChanged();
         } else {
           destPosBuilder_.setMessage(builderForValue.build());
         }
-
+        bitField0_ |= 0x00000002;
+        onChanged();
         return this;
       }
       /**
-       * <code>.Vector dest_pos = 8;</code>
+       * <code>.Vector destPos = 2;</code>
        */
       public Builder mergeDestPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (destPosBuilder_ == null) {
-          if (destPos_ != null) {
-            destPos_ =
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(destPos_).mergeFrom(value).buildPartial();
+          if (((bitField0_ & 0x00000002) != 0) &&
+            destPos_ != null &&
+            destPos_ != emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance()) {
+            getDestPosBuilder().mergeFrom(value);
           } else {
             destPos_ = value;
           }
-          onChanged();
         } else {
           destPosBuilder_.mergeFrom(value);
         }
-
+        bitField0_ |= 0x00000002;
+        onChanged();
         return this;
       }
       /**
-       * <code>.Vector dest_pos = 8;</code>
+       * <code>.Vector destPos = 2;</code>
        */
       public Builder clearDestPos() {
-        if (destPosBuilder_ == null) {
-          destPos_ = null;
-          onChanged();
-        } else {
-          destPos_ = null;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        destPos_ = null;
+        if (destPosBuilder_ != null) {
+          destPosBuilder_.dispose();
           destPosBuilder_ = null;
         }
-
+        onChanged();
         return this;
       }
       /**
-       * <code>.Vector dest_pos = 8;</code>
+       * <code>.Vector destPos = 2;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getDestPosBuilder() {
-        
+        bitField0_ |= 0x00000002;
         onChanged();
         return getDestPosFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector dest_pos = 8;</code>
+       * <code>.Vector destPos = 2;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getDestPosOrBuilder() {
         if (destPosBuilder_ != null) {
@@ -696,7 +781,7 @@ public final class PersonalSceneJumpRspOuterClass {
         }
       }
       /**
-       * <code>.Vector dest_pos = 8;</code>
+       * <code>.Vector destPos = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -714,7 +799,7 @@ public final class PersonalSceneJumpRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 12;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -722,22 +807,23 @@ public final class PersonalSceneJumpRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 12;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
       public Builder setRetcode(int value) {
         
         retcode_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
-        
+        bitField0_ = (bitField0_ & ~0x00000004);
         retcode_ = 0;
         onChanged();
         return this;
@@ -775,7 +861,18 @@ public final class PersonalSceneJumpRspOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new PersonalSceneJumpRsp(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -810,10 +907,12 @@ public final class PersonalSceneJumpRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032PersonalSceneJumpRsp.proto\032\014Vector.pro" +
-      "to\"Y\n\024PersonalSceneJumpRsp\022\025\n\rdest_scene" +
-      "_id\030\003 \001(\r\022\031\n\010dest_pos\030\010 \001(\0132\007.Vector\022\017\n\007" +
-      "retcode\030\007 \001(\005B\033\n\031emu.grasscutter.net.pro" +
-      "tob\006proto3"
+      "to\"\247\001\n\024PersonalSceneJumpRsp\022\023\n\013destScene" +
+      "Id\030\003 \001(\r\022\030\n\007destPos\030\002 \001(\0132\007.Vector\022\017\n\007re" +
+      "tcode\030\014 \001(\005\"O\n\013EGFJPPIMGPO\022\010\n\004NONE\020\000\022\020\n\013" +
+      "PEPPOHPHJOJ\020\314\001\022\017\n\013DCDNILFDFLB\020\000\022\017\n\013NNBKO" +
+      "LMPOEA\020\001\032\002\020\001B\033\n\031emu.grasscutter.net.prot" +
+      "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

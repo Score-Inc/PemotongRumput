@@ -19,83 +19,72 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.TeamEnterSceneInfo team_enter_info = 6;</code>
+     * <code>.MPLevelEntityInfo mpLevelEntityInfo = 7;</code>
+     * @return Whether the mpLevelEntityInfo field is set.
+     */
+    boolean hasMpLevelEntityInfo();
+    /**
+     * <code>.MPLevelEntityInfo mpLevelEntityInfo = 7;</code>
+     * @return The mpLevelEntityInfo.
+     */
+    emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo getMpLevelEntityInfo();
+    /**
+     * <code>.MPLevelEntityInfo mpLevelEntityInfo = 7;</code>
+     */
+    emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfoOrBuilder getMpLevelEntityInfoOrBuilder();
+
+    /**
+     * <code>.TeamEnterSceneInfo teamEnterInfo = 5;</code>
      * @return Whether the teamEnterInfo field is set.
      */
     boolean hasTeamEnterInfo();
     /**
-     * <code>.TeamEnterSceneInfo team_enter_info = 6;</code>
+     * <code>.TeamEnterSceneInfo teamEnterInfo = 5;</code>
      * @return The teamEnterInfo.
      */
     emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfo getTeamEnterInfo();
     /**
-     * <code>.TeamEnterSceneInfo team_enter_info = 6;</code>
+     * <code>.TeamEnterSceneInfo teamEnterInfo = 5;</code>
      */
     emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfoOrBuilder getTeamEnterInfoOrBuilder();
 
     /**
-     * <code>repeated .AvatarEnterSceneInfo avatar_enter_info = 10;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfo> 
-        getAvatarEnterInfoList();
-    /**
-     * <code>repeated .AvatarEnterSceneInfo avatar_enter_info = 10;</code>
-     */
-    emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfo getAvatarEnterInfo(int index);
-    /**
-     * <code>repeated .AvatarEnterSceneInfo avatar_enter_info = 10;</code>
-     */
-    int getAvatarEnterInfoCount();
-    /**
-     * <code>repeated .AvatarEnterSceneInfo avatar_enter_info = 10;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfoOrBuilder> 
-        getAvatarEnterInfoOrBuilderList();
-    /**
-     * <code>repeated .AvatarEnterSceneInfo avatar_enter_info = 10;</code>
-     */
-    emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfoOrBuilder getAvatarEnterInfoOrBuilder(
-        int index);
-
-    /**
-     * <code>uint32 cur_avatar_entity_id = 4;</code>
+     * <code>uint32 curAvatarEntityId = 8;</code>
      * @return The curAvatarEntityId.
      */
     int getCurAvatarEntityId();
 
     /**
-     * <code>.MPLevelEntityInfo mp_level_entity_info = 15;</code>
-     * @return Whether the mpLevelEntityInfo field is set.
-     */
-    boolean hasMpLevelEntityInfo();
-    /**
-     * <code>.MPLevelEntityInfo mp_level_entity_info = 15;</code>
-     * @return The mpLevelEntityInfo.
-     */
-    emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo getMpLevelEntityInfo();
-    /**
-     * <code>.MPLevelEntityInfo mp_level_entity_info = 15;</code>
-     */
-    emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfoOrBuilder getMpLevelEntityInfoOrBuilder();
-
-    /**
-     * <code>uint32 enter_scene_token = 1;</code>
+     * <code>uint32 enterSceneToken = 13;</code>
      * @return The enterSceneToken.
      */
     int getEnterSceneToken();
+
+    /**
+     * <code>repeated .AvatarEnterSceneInfo avatarEnterInfo = 12;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfo> 
+        getAvatarEnterInfoList();
+    /**
+     * <code>repeated .AvatarEnterSceneInfo avatarEnterInfo = 12;</code>
+     */
+    emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfo getAvatarEnterInfo(int index);
+    /**
+     * <code>repeated .AvatarEnterSceneInfo avatarEnterInfo = 12;</code>
+     */
+    int getAvatarEnterInfoCount();
+    /**
+     * <code>repeated .AvatarEnterSceneInfo avatarEnterInfo = 12;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfoOrBuilder> 
+        getAvatarEnterInfoOrBuilderList();
+    /**
+     * <code>repeated .AvatarEnterSceneInfo avatarEnterInfo = 12;</code>
+     */
+    emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfoOrBuilder getAvatarEnterInfoOrBuilder(
+        int index);
   }
   /**
-   * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 241;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   *   IS_ALLOW_CLIENT = 1;
-   * }
-   * </pre>
-   *
    * Protobuf type {@code PlayerEnterSceneInfoNotify}
    */
   public static final class PlayerEnterSceneInfoNotify extends
@@ -123,92 +112,6 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private PlayerEnterSceneInfoNotify(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              enterSceneToken_ = input.readUInt32();
-              break;
-            }
-            case 32: {
-
-              curAvatarEntityId_ = input.readUInt32();
-              break;
-            }
-            case 50: {
-              emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfo.Builder subBuilder = null;
-              if (teamEnterInfo_ != null) {
-                subBuilder = teamEnterInfo_.toBuilder();
-              }
-              teamEnterInfo_ = input.readMessage(emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(teamEnterInfo_);
-                teamEnterInfo_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 82: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                avatarEnterInfo_ = new java.util.ArrayList<emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfo>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              avatarEnterInfo_.add(
-                  input.readMessage(emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 122: {
-              emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo.Builder subBuilder = null;
-              if (mpLevelEntityInfo_ != null) {
-                subBuilder = mpLevelEntityInfo_.toBuilder();
-              }
-              mpLevelEntityInfo_ = input.readMessage(emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(mpLevelEntityInfo_);
-                mpLevelEntityInfo_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          avatarEnterInfo_ = java.util.Collections.unmodifiableList(avatarEnterInfo_);
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.PlayerEnterSceneInfoNotifyOuterClass.internal_static_PlayerEnterSceneInfoNotify_descriptor;
@@ -222,87 +125,149 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
               emu.grasscutter.net.proto.PlayerEnterSceneInfoNotifyOuterClass.PlayerEnterSceneInfoNotify.class, emu.grasscutter.net.proto.PlayerEnterSceneInfoNotifyOuterClass.PlayerEnterSceneInfoNotify.Builder.class);
     }
 
-    public static final int TEAM_ENTER_INFO_FIELD_NUMBER = 6;
-    private emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfo teamEnterInfo_;
     /**
-     * <code>.TeamEnterSceneInfo team_enter_info = 6;</code>
-     * @return Whether the teamEnterInfo field is set.
+     * Protobuf enum {@code PlayerEnterSceneInfoNotify.EGMIDNPFPJB}
      */
-    @java.lang.Override
-    public boolean hasTeamEnterInfo() {
-      return teamEnterInfo_ != null;
-    }
-    /**
-     * <code>.TeamEnterSceneInfo team_enter_info = 6;</code>
-     * @return The teamEnterInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfo getTeamEnterInfo() {
-      return teamEnterInfo_ == null ? emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfo.getDefaultInstance() : teamEnterInfo_;
-    }
-    /**
-     * <code>.TeamEnterSceneInfo team_enter_info = 6;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfoOrBuilder getTeamEnterInfoOrBuilder() {
-      return getTeamEnterInfo();
+    public enum EGMIDNPFPJB
+        implements com.google.protobuf.ProtocolMessageEnum {
+      /**
+       * <code>NONE = 0;</code>
+       */
+      NONE(0, 0),
+      /**
+       * <code>PEPPOHPHJOJ = 212;</code>
+       */
+      PEPPOHPHJOJ(1, 212),
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      NNBKOLMPOEA(3, 1),
+      UNRECOGNIZED(-1, -1),
+      ;
+
+      /**
+       * <code>DCDNILFDFLB = 0;</code>
+       */
+      public static final EGMIDNPFPJB DCDNILFDFLB = NONE;
+      /**
+       * <code>EAJIABGAOCI = 1;</code>
+       */
+      public static final EGMIDNPFPJB EAJIABGAOCI = NNBKOLMPOEA;
+      /**
+       * <code>NONE = 0;</code>
+       */
+      public static final int NONE_VALUE = 0;
+      /**
+       * <code>PEPPOHPHJOJ = 212;</code>
+       */
+      public static final int PEPPOHPHJOJ_VALUE = 212;
+      /**
+       * <code>DCDNILFDFLB = 0;</code>
+       */
+      public static final int DCDNILFDFLB_VALUE = 0;
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      public static final int NNBKOLMPOEA_VALUE = 1;
+      /**
+       * <code>EAJIABGAOCI = 1;</code>
+       */
+      public static final int EAJIABGAOCI_VALUE = 1;
+
+
+      public final int getNumber() {
+        if (index == -1) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static EGMIDNPFPJB valueOf(int value) {
+        return forNumber(value);
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
+      public static EGMIDNPFPJB forNumber(int value) {
+        switch (value) {
+          case 0: return NONE;
+          case 212: return PEPPOHPHJOJ;
+          case 1: return NNBKOLMPOEA;
+          default: return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<EGMIDNPFPJB>
+          internalGetValueMap() {
+        return internalValueMap;
+      }
+      private static final com.google.protobuf.Internal.EnumLiteMap<
+          EGMIDNPFPJB> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<EGMIDNPFPJB>() {
+              public EGMIDNPFPJB findValueByNumber(int number) {
+                return EGMIDNPFPJB.forNumber(number);
+              }
+            };
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor
+          getValueDescriptor() {
+        if (index == -1) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
+        return getDescriptor().getValues().get(index);
+      }
+      public final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptorForType() {
+        return getDescriptor();
+      }
+      public static final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptor() {
+        return emu.grasscutter.net.proto.PlayerEnterSceneInfoNotifyOuterClass.PlayerEnterSceneInfoNotify.getDescriptor().getEnumTypes().get(0);
+      }
+
+      private static final EGMIDNPFPJB[] VALUES = getStaticValuesArray();
+      private static EGMIDNPFPJB[] getStaticValuesArray() {
+        return new EGMIDNPFPJB[] {
+          NONE, PEPPOHPHJOJ, DCDNILFDFLB, NNBKOLMPOEA, EAJIABGAOCI, 
+        };
+      }
+      public static EGMIDNPFPJB valueOf(
+          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException(
+            "EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      private final int index;
+      private final int value;
+
+      private EGMIDNPFPJB(int index, int value) {
+        this.index = index;
+        this.value = value;
+      }
+
+      // @@protoc_insertion_point(enum_scope:PlayerEnterSceneInfoNotify.EGMIDNPFPJB)
     }
 
-    public static final int AVATAR_ENTER_INFO_FIELD_NUMBER = 10;
-    private java.util.List<emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfo> avatarEnterInfo_;
-    /**
-     * <code>repeated .AvatarEnterSceneInfo avatar_enter_info = 10;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfo> getAvatarEnterInfoList() {
-      return avatarEnterInfo_;
-    }
-    /**
-     * <code>repeated .AvatarEnterSceneInfo avatar_enter_info = 10;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfoOrBuilder> 
-        getAvatarEnterInfoOrBuilderList() {
-      return avatarEnterInfo_;
-    }
-    /**
-     * <code>repeated .AvatarEnterSceneInfo avatar_enter_info = 10;</code>
-     */
-    @java.lang.Override
-    public int getAvatarEnterInfoCount() {
-      return avatarEnterInfo_.size();
-    }
-    /**
-     * <code>repeated .AvatarEnterSceneInfo avatar_enter_info = 10;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfo getAvatarEnterInfo(int index) {
-      return avatarEnterInfo_.get(index);
-    }
-    /**
-     * <code>repeated .AvatarEnterSceneInfo avatar_enter_info = 10;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfoOrBuilder getAvatarEnterInfoOrBuilder(
-        int index) {
-      return avatarEnterInfo_.get(index);
-    }
-
-    public static final int CUR_AVATAR_ENTITY_ID_FIELD_NUMBER = 4;
-    private int curAvatarEntityId_;
-    /**
-     * <code>uint32 cur_avatar_entity_id = 4;</code>
-     * @return The curAvatarEntityId.
-     */
-    @java.lang.Override
-    public int getCurAvatarEntityId() {
-      return curAvatarEntityId_;
-    }
-
-    public static final int MP_LEVEL_ENTITY_INFO_FIELD_NUMBER = 15;
+    public static final int MPLEVELENTITYINFO_FIELD_NUMBER = 7;
     private emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo mpLevelEntityInfo_;
     /**
-     * <code>.MPLevelEntityInfo mp_level_entity_info = 15;</code>
+     * <code>.MPLevelEntityInfo mpLevelEntityInfo = 7;</code>
      * @return Whether the mpLevelEntityInfo field is set.
      */
     @java.lang.Override
@@ -310,7 +275,7 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
       return mpLevelEntityInfo_ != null;
     }
     /**
-     * <code>.MPLevelEntityInfo mp_level_entity_info = 15;</code>
+     * <code>.MPLevelEntityInfo mpLevelEntityInfo = 7;</code>
      * @return The mpLevelEntityInfo.
      */
     @java.lang.Override
@@ -318,22 +283,100 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
       return mpLevelEntityInfo_ == null ? emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo.getDefaultInstance() : mpLevelEntityInfo_;
     }
     /**
-     * <code>.MPLevelEntityInfo mp_level_entity_info = 15;</code>
+     * <code>.MPLevelEntityInfo mpLevelEntityInfo = 7;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfoOrBuilder getMpLevelEntityInfoOrBuilder() {
-      return getMpLevelEntityInfo();
+      return mpLevelEntityInfo_ == null ? emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo.getDefaultInstance() : mpLevelEntityInfo_;
     }
 
-    public static final int ENTER_SCENE_TOKEN_FIELD_NUMBER = 1;
-    private int enterSceneToken_;
+    public static final int TEAMENTERINFO_FIELD_NUMBER = 5;
+    private emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfo teamEnterInfo_;
     /**
-     * <code>uint32 enter_scene_token = 1;</code>
+     * <code>.TeamEnterSceneInfo teamEnterInfo = 5;</code>
+     * @return Whether the teamEnterInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasTeamEnterInfo() {
+      return teamEnterInfo_ != null;
+    }
+    /**
+     * <code>.TeamEnterSceneInfo teamEnterInfo = 5;</code>
+     * @return The teamEnterInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfo getTeamEnterInfo() {
+      return teamEnterInfo_ == null ? emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfo.getDefaultInstance() : teamEnterInfo_;
+    }
+    /**
+     * <code>.TeamEnterSceneInfo teamEnterInfo = 5;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfoOrBuilder getTeamEnterInfoOrBuilder() {
+      return teamEnterInfo_ == null ? emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfo.getDefaultInstance() : teamEnterInfo_;
+    }
+
+    public static final int CURAVATARENTITYID_FIELD_NUMBER = 8;
+    private int curAvatarEntityId_ = 0;
+    /**
+     * <code>uint32 curAvatarEntityId = 8;</code>
+     * @return The curAvatarEntityId.
+     */
+    @java.lang.Override
+    public int getCurAvatarEntityId() {
+      return curAvatarEntityId_;
+    }
+
+    public static final int ENTERSCENETOKEN_FIELD_NUMBER = 13;
+    private int enterSceneToken_ = 0;
+    /**
+     * <code>uint32 enterSceneToken = 13;</code>
      * @return The enterSceneToken.
      */
     @java.lang.Override
     public int getEnterSceneToken() {
       return enterSceneToken_;
+    }
+
+    public static final int AVATARENTERINFO_FIELD_NUMBER = 12;
+    @SuppressWarnings("serial")
+    private java.util.List<emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfo> avatarEnterInfo_;
+    /**
+     * <code>repeated .AvatarEnterSceneInfo avatarEnterInfo = 12;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfo> getAvatarEnterInfoList() {
+      return avatarEnterInfo_;
+    }
+    /**
+     * <code>repeated .AvatarEnterSceneInfo avatarEnterInfo = 12;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfoOrBuilder> 
+        getAvatarEnterInfoOrBuilderList() {
+      return avatarEnterInfo_;
+    }
+    /**
+     * <code>repeated .AvatarEnterSceneInfo avatarEnterInfo = 12;</code>
+     */
+    @java.lang.Override
+    public int getAvatarEnterInfoCount() {
+      return avatarEnterInfo_.size();
+    }
+    /**
+     * <code>repeated .AvatarEnterSceneInfo avatarEnterInfo = 12;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfo getAvatarEnterInfo(int index) {
+      return avatarEnterInfo_.get(index);
+    }
+    /**
+     * <code>repeated .AvatarEnterSceneInfo avatarEnterInfo = 12;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfoOrBuilder getAvatarEnterInfoOrBuilder(
+        int index) {
+      return avatarEnterInfo_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -350,22 +393,22 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (enterSceneToken_ != 0) {
-        output.writeUInt32(1, enterSceneToken_);
-      }
-      if (curAvatarEntityId_ != 0) {
-        output.writeUInt32(4, curAvatarEntityId_);
-      }
       if (teamEnterInfo_ != null) {
-        output.writeMessage(6, getTeamEnterInfo());
-      }
-      for (int i = 0; i < avatarEnterInfo_.size(); i++) {
-        output.writeMessage(10, avatarEnterInfo_.get(i));
+        output.writeMessage(5, getTeamEnterInfo());
       }
       if (mpLevelEntityInfo_ != null) {
-        output.writeMessage(15, getMpLevelEntityInfo());
+        output.writeMessage(7, getMpLevelEntityInfo());
       }
-      unknownFields.writeTo(output);
+      if (curAvatarEntityId_ != 0) {
+        output.writeUInt32(8, curAvatarEntityId_);
+      }
+      for (int i = 0; i < avatarEnterInfo_.size(); i++) {
+        output.writeMessage(12, avatarEnterInfo_.get(i));
+      }
+      if (enterSceneToken_ != 0) {
+        output.writeUInt32(13, enterSceneToken_);
+      }
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -374,27 +417,27 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (enterSceneToken_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, enterSceneToken_);
-      }
-      if (curAvatarEntityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, curAvatarEntityId_);
-      }
       if (teamEnterInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, getTeamEnterInfo());
-      }
-      for (int i = 0; i < avatarEnterInfo_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, avatarEnterInfo_.get(i));
+          .computeMessageSize(5, getTeamEnterInfo());
       }
       if (mpLevelEntityInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, getMpLevelEntityInfo());
+          .computeMessageSize(7, getMpLevelEntityInfo());
       }
-      size += unknownFields.getSerializedSize();
+      if (curAvatarEntityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, curAvatarEntityId_);
+      }
+      for (int i = 0; i < avatarEnterInfo_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(12, avatarEnterInfo_.get(i));
+      }
+      if (enterSceneToken_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, enterSceneToken_);
+      }
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -409,23 +452,23 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
       }
       emu.grasscutter.net.proto.PlayerEnterSceneInfoNotifyOuterClass.PlayerEnterSceneInfoNotify other = (emu.grasscutter.net.proto.PlayerEnterSceneInfoNotifyOuterClass.PlayerEnterSceneInfoNotify) obj;
 
-      if (hasTeamEnterInfo() != other.hasTeamEnterInfo()) return false;
-      if (hasTeamEnterInfo()) {
-        if (!getTeamEnterInfo()
-            .equals(other.getTeamEnterInfo())) return false;
-      }
-      if (!getAvatarEnterInfoList()
-          .equals(other.getAvatarEnterInfoList())) return false;
-      if (getCurAvatarEntityId()
-          != other.getCurAvatarEntityId()) return false;
       if (hasMpLevelEntityInfo() != other.hasMpLevelEntityInfo()) return false;
       if (hasMpLevelEntityInfo()) {
         if (!getMpLevelEntityInfo()
             .equals(other.getMpLevelEntityInfo())) return false;
       }
+      if (hasTeamEnterInfo() != other.hasTeamEnterInfo()) return false;
+      if (hasTeamEnterInfo()) {
+        if (!getTeamEnterInfo()
+            .equals(other.getTeamEnterInfo())) return false;
+      }
+      if (getCurAvatarEntityId()
+          != other.getCurAvatarEntityId()) return false;
       if (getEnterSceneToken()
           != other.getEnterSceneToken()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getAvatarEnterInfoList()
+          .equals(other.getAvatarEnterInfoList())) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -436,23 +479,23 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasTeamEnterInfo()) {
-        hash = (37 * hash) + TEAM_ENTER_INFO_FIELD_NUMBER;
-        hash = (53 * hash) + getTeamEnterInfo().hashCode();
-      }
-      if (getAvatarEnterInfoCount() > 0) {
-        hash = (37 * hash) + AVATAR_ENTER_INFO_FIELD_NUMBER;
-        hash = (53 * hash) + getAvatarEnterInfoList().hashCode();
-      }
-      hash = (37 * hash) + CUR_AVATAR_ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCurAvatarEntityId();
       if (hasMpLevelEntityInfo()) {
-        hash = (37 * hash) + MP_LEVEL_ENTITY_INFO_FIELD_NUMBER;
+        hash = (37 * hash) + MPLEVELENTITYINFO_FIELD_NUMBER;
         hash = (53 * hash) + getMpLevelEntityInfo().hashCode();
       }
-      hash = (37 * hash) + ENTER_SCENE_TOKEN_FIELD_NUMBER;
+      if (hasTeamEnterInfo()) {
+        hash = (37 * hash) + TEAMENTERINFO_FIELD_NUMBER;
+        hash = (53 * hash) + getTeamEnterInfo().hashCode();
+      }
+      hash = (37 * hash) + CURAVATARENTITYID_FIELD_NUMBER;
+      hash = (53 * hash) + getCurAvatarEntityId();
+      hash = (37 * hash) + ENTERSCENETOKEN_FIELD_NUMBER;
       hash = (53 * hash) + getEnterSceneToken();
-      hash = (29 * hash) + unknownFields.hashCode();
+      if (getAvatarEnterInfoCount() > 0) {
+        hash = (37 * hash) + AVATARENTERINFO_FIELD_NUMBER;
+        hash = (53 * hash) + getAvatarEnterInfoList().hashCode();
+      }
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -548,17 +591,6 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 241;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     *   IS_ALLOW_CLIENT = 1;
-     * }
-     * </pre>
-     *
      * Protobuf type {@code PlayerEnterSceneInfoNotify}
      */
     public static final class Builder extends
@@ -580,45 +612,37 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
 
       // Construct using emu.grasscutter.net.proto.PlayerEnterSceneInfoNotifyOuterClass.PlayerEnterSceneInfoNotify.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getAvatarEnterInfoFieldBuilder();
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (teamEnterInfoBuilder_ == null) {
-          teamEnterInfo_ = null;
-        } else {
-          teamEnterInfo_ = null;
-          teamEnterInfoBuilder_ = null;
-        }
-        if (avatarEnterInfoBuilder_ == null) {
-          avatarEnterInfo_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        } else {
-          avatarEnterInfoBuilder_.clear();
-        }
-        curAvatarEntityId_ = 0;
-
-        if (mpLevelEntityInfoBuilder_ == null) {
-          mpLevelEntityInfo_ = null;
-        } else {
-          mpLevelEntityInfo_ = null;
+        bitField0_ = 0;
+        mpLevelEntityInfo_ = null;
+        if (mpLevelEntityInfoBuilder_ != null) {
+          mpLevelEntityInfoBuilder_.dispose();
           mpLevelEntityInfoBuilder_ = null;
         }
+        teamEnterInfo_ = null;
+        if (teamEnterInfoBuilder_ != null) {
+          teamEnterInfoBuilder_.dispose();
+          teamEnterInfoBuilder_ = null;
+        }
+        curAvatarEntityId_ = 0;
         enterSceneToken_ = 0;
-
+        if (avatarEnterInfoBuilder_ == null) {
+          avatarEnterInfo_ = java.util.Collections.emptyList();
+        } else {
+          avatarEnterInfo_ = null;
+          avatarEnterInfoBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000010);
         return this;
       }
 
@@ -645,30 +669,42 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PlayerEnterSceneInfoNotifyOuterClass.PlayerEnterSceneInfoNotify buildPartial() {
         emu.grasscutter.net.proto.PlayerEnterSceneInfoNotifyOuterClass.PlayerEnterSceneInfoNotify result = new emu.grasscutter.net.proto.PlayerEnterSceneInfoNotifyOuterClass.PlayerEnterSceneInfoNotify(this);
-        int from_bitField0_ = bitField0_;
-        if (teamEnterInfoBuilder_ == null) {
-          result.teamEnterInfo_ = teamEnterInfo_;
-        } else {
-          result.teamEnterInfo_ = teamEnterInfoBuilder_.build();
-        }
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.PlayerEnterSceneInfoNotifyOuterClass.PlayerEnterSceneInfoNotify result) {
         if (avatarEnterInfoBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000010) != 0)) {
             avatarEnterInfo_ = java.util.Collections.unmodifiableList(avatarEnterInfo_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000010);
           }
           result.avatarEnterInfo_ = avatarEnterInfo_;
         } else {
           result.avatarEnterInfo_ = avatarEnterInfoBuilder_.build();
         }
-        result.curAvatarEntityId_ = curAvatarEntityId_;
-        if (mpLevelEntityInfoBuilder_ == null) {
-          result.mpLevelEntityInfo_ = mpLevelEntityInfo_;
-        } else {
-          result.mpLevelEntityInfo_ = mpLevelEntityInfoBuilder_.build();
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.PlayerEnterSceneInfoNotifyOuterClass.PlayerEnterSceneInfoNotify result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.mpLevelEntityInfo_ = mpLevelEntityInfoBuilder_ == null
+              ? mpLevelEntityInfo_
+              : mpLevelEntityInfoBuilder_.build();
         }
-        result.enterSceneToken_ = enterSceneToken_;
-        onBuilt();
-        return result;
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.teamEnterInfo_ = teamEnterInfoBuilder_ == null
+              ? teamEnterInfo_
+              : teamEnterInfoBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.curAvatarEntityId_ = curAvatarEntityId_;
+        }
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.enterSceneToken_ = enterSceneToken_;
+        }
       }
 
       @java.lang.Override
@@ -715,14 +751,23 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PlayerEnterSceneInfoNotifyOuterClass.PlayerEnterSceneInfoNotify other) {
         if (other == emu.grasscutter.net.proto.PlayerEnterSceneInfoNotifyOuterClass.PlayerEnterSceneInfoNotify.getDefaultInstance()) return this;
+        if (other.hasMpLevelEntityInfo()) {
+          mergeMpLevelEntityInfo(other.getMpLevelEntityInfo());
+        }
         if (other.hasTeamEnterInfo()) {
           mergeTeamEnterInfo(other.getTeamEnterInfo());
+        }
+        if (other.getCurAvatarEntityId() != 0) {
+          setCurAvatarEntityId(other.getCurAvatarEntityId());
+        }
+        if (other.getEnterSceneToken() != 0) {
+          setEnterSceneToken(other.getEnterSceneToken());
         }
         if (avatarEnterInfoBuilder_ == null) {
           if (!other.avatarEnterInfo_.isEmpty()) {
             if (avatarEnterInfo_.isEmpty()) {
               avatarEnterInfo_ = other.avatarEnterInfo_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000010);
             } else {
               ensureAvatarEnterInfoIsMutable();
               avatarEnterInfo_.addAll(other.avatarEnterInfo_);
@@ -735,7 +780,7 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
               avatarEnterInfoBuilder_.dispose();
               avatarEnterInfoBuilder_ = null;
               avatarEnterInfo_ = other.avatarEnterInfo_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000010);
               avatarEnterInfoBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getAvatarEnterInfoFieldBuilder() : null;
@@ -744,16 +789,7 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
             }
           }
         }
-        if (other.getCurAvatarEntityId() != 0) {
-          setCurAvatarEntityId(other.getCurAvatarEntityId());
-        }
-        if (other.hasMpLevelEntityInfo()) {
-          mergeMpLevelEntityInfo(other.getMpLevelEntityInfo());
-        }
-        if (other.getEnterSceneToken() != 0) {
-          setEnterSceneToken(other.getEnterSceneToken());
-        }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -768,33 +804,202 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.PlayerEnterSceneInfoNotifyOuterClass.PlayerEnterSceneInfoNotify parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 42: {
+                input.readMessage(
+                    getTeamEnterInfoFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 42
+              case 58: {
+                input.readMessage(
+                    getMpLevelEntityInfoFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 58
+              case 64: {
+                curAvatarEntityId_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 64
+              case 98: {
+                emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfo m =
+                    input.readMessage(
+                        emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfo.parser(),
+                        extensionRegistry);
+                if (avatarEnterInfoBuilder_ == null) {
+                  ensureAvatarEnterInfoIsMutable();
+                  avatarEnterInfo_.add(m);
+                } else {
+                  avatarEnterInfoBuilder_.addMessage(m);
+                }
+                break;
+              } // case 98
+              case 104: {
+                enterSceneToken_ = input.readUInt32();
+                bitField0_ |= 0x00000008;
+                break;
+              } // case 104
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.PlayerEnterSceneInfoNotifyOuterClass.PlayerEnterSceneInfoNotify) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
+
+      private emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo mpLevelEntityInfo_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo, emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo.Builder, emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfoOrBuilder> mpLevelEntityInfoBuilder_;
+      /**
+       * <code>.MPLevelEntityInfo mpLevelEntityInfo = 7;</code>
+       * @return Whether the mpLevelEntityInfo field is set.
+       */
+      public boolean hasMpLevelEntityInfo() {
+        return ((bitField0_ & 0x00000001) != 0);
+      }
+      /**
+       * <code>.MPLevelEntityInfo mpLevelEntityInfo = 7;</code>
+       * @return The mpLevelEntityInfo.
+       */
+      public emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo getMpLevelEntityInfo() {
+        if (mpLevelEntityInfoBuilder_ == null) {
+          return mpLevelEntityInfo_ == null ? emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo.getDefaultInstance() : mpLevelEntityInfo_;
+        } else {
+          return mpLevelEntityInfoBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.MPLevelEntityInfo mpLevelEntityInfo = 7;</code>
+       */
+      public Builder setMpLevelEntityInfo(emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo value) {
+        if (mpLevelEntityInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          mpLevelEntityInfo_ = value;
+        } else {
+          mpLevelEntityInfoBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.MPLevelEntityInfo mpLevelEntityInfo = 7;</code>
+       */
+      public Builder setMpLevelEntityInfo(
+          emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo.Builder builderForValue) {
+        if (mpLevelEntityInfoBuilder_ == null) {
+          mpLevelEntityInfo_ = builderForValue.build();
+        } else {
+          mpLevelEntityInfoBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.MPLevelEntityInfo mpLevelEntityInfo = 7;</code>
+       */
+      public Builder mergeMpLevelEntityInfo(emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo value) {
+        if (mpLevelEntityInfoBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) != 0) &&
+            mpLevelEntityInfo_ != null &&
+            mpLevelEntityInfo_ != emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo.getDefaultInstance()) {
+            getMpLevelEntityInfoBuilder().mergeFrom(value);
+          } else {
+            mpLevelEntityInfo_ = value;
+          }
+        } else {
+          mpLevelEntityInfoBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.MPLevelEntityInfo mpLevelEntityInfo = 7;</code>
+       */
+      public Builder clearMpLevelEntityInfo() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        mpLevelEntityInfo_ = null;
+        if (mpLevelEntityInfoBuilder_ != null) {
+          mpLevelEntityInfoBuilder_.dispose();
+          mpLevelEntityInfoBuilder_ = null;
+        }
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.MPLevelEntityInfo mpLevelEntityInfo = 7;</code>
+       */
+      public emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo.Builder getMpLevelEntityInfoBuilder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return getMpLevelEntityInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.MPLevelEntityInfo mpLevelEntityInfo = 7;</code>
+       */
+      public emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfoOrBuilder getMpLevelEntityInfoOrBuilder() {
+        if (mpLevelEntityInfoBuilder_ != null) {
+          return mpLevelEntityInfoBuilder_.getMessageOrBuilder();
+        } else {
+          return mpLevelEntityInfo_ == null ?
+              emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo.getDefaultInstance() : mpLevelEntityInfo_;
+        }
+      }
+      /**
+       * <code>.MPLevelEntityInfo mpLevelEntityInfo = 7;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo, emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo.Builder, emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfoOrBuilder> 
+          getMpLevelEntityInfoFieldBuilder() {
+        if (mpLevelEntityInfoBuilder_ == null) {
+          mpLevelEntityInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo, emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo.Builder, emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfoOrBuilder>(
+                  getMpLevelEntityInfo(),
+                  getParentForChildren(),
+                  isClean());
+          mpLevelEntityInfo_ = null;
+        }
+        return mpLevelEntityInfoBuilder_;
+      }
 
       private emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfo teamEnterInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfo, emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfo.Builder, emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfoOrBuilder> teamEnterInfoBuilder_;
       /**
-       * <code>.TeamEnterSceneInfo team_enter_info = 6;</code>
+       * <code>.TeamEnterSceneInfo teamEnterInfo = 5;</code>
        * @return Whether the teamEnterInfo field is set.
        */
       public boolean hasTeamEnterInfo() {
-        return teamEnterInfoBuilder_ != null || teamEnterInfo_ != null;
+        return ((bitField0_ & 0x00000002) != 0);
       }
       /**
-       * <code>.TeamEnterSceneInfo team_enter_info = 6;</code>
+       * <code>.TeamEnterSceneInfo teamEnterInfo = 5;</code>
        * @return The teamEnterInfo.
        */
       public emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfo getTeamEnterInfo() {
@@ -805,7 +1010,7 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>.TeamEnterSceneInfo team_enter_info = 6;</code>
+       * <code>.TeamEnterSceneInfo teamEnterInfo = 5;</code>
        */
       public Builder setTeamEnterInfo(emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfo value) {
         if (teamEnterInfoBuilder_ == null) {
@@ -813,69 +1018,69 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
             throw new NullPointerException();
           }
           teamEnterInfo_ = value;
-          onChanged();
         } else {
           teamEnterInfoBuilder_.setMessage(value);
         }
-
+        bitField0_ |= 0x00000002;
+        onChanged();
         return this;
       }
       /**
-       * <code>.TeamEnterSceneInfo team_enter_info = 6;</code>
+       * <code>.TeamEnterSceneInfo teamEnterInfo = 5;</code>
        */
       public Builder setTeamEnterInfo(
           emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfo.Builder builderForValue) {
         if (teamEnterInfoBuilder_ == null) {
           teamEnterInfo_ = builderForValue.build();
-          onChanged();
         } else {
           teamEnterInfoBuilder_.setMessage(builderForValue.build());
         }
-
+        bitField0_ |= 0x00000002;
+        onChanged();
         return this;
       }
       /**
-       * <code>.TeamEnterSceneInfo team_enter_info = 6;</code>
+       * <code>.TeamEnterSceneInfo teamEnterInfo = 5;</code>
        */
       public Builder mergeTeamEnterInfo(emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfo value) {
         if (teamEnterInfoBuilder_ == null) {
-          if (teamEnterInfo_ != null) {
-            teamEnterInfo_ =
-              emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfo.newBuilder(teamEnterInfo_).mergeFrom(value).buildPartial();
+          if (((bitField0_ & 0x00000002) != 0) &&
+            teamEnterInfo_ != null &&
+            teamEnterInfo_ != emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfo.getDefaultInstance()) {
+            getTeamEnterInfoBuilder().mergeFrom(value);
           } else {
             teamEnterInfo_ = value;
           }
-          onChanged();
         } else {
           teamEnterInfoBuilder_.mergeFrom(value);
         }
-
+        bitField0_ |= 0x00000002;
+        onChanged();
         return this;
       }
       /**
-       * <code>.TeamEnterSceneInfo team_enter_info = 6;</code>
+       * <code>.TeamEnterSceneInfo teamEnterInfo = 5;</code>
        */
       public Builder clearTeamEnterInfo() {
-        if (teamEnterInfoBuilder_ == null) {
-          teamEnterInfo_ = null;
-          onChanged();
-        } else {
-          teamEnterInfo_ = null;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        teamEnterInfo_ = null;
+        if (teamEnterInfoBuilder_ != null) {
+          teamEnterInfoBuilder_.dispose();
           teamEnterInfoBuilder_ = null;
         }
-
+        onChanged();
         return this;
       }
       /**
-       * <code>.TeamEnterSceneInfo team_enter_info = 6;</code>
+       * <code>.TeamEnterSceneInfo teamEnterInfo = 5;</code>
        */
       public emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfo.Builder getTeamEnterInfoBuilder() {
-        
+        bitField0_ |= 0x00000002;
         onChanged();
         return getTeamEnterInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.TeamEnterSceneInfo team_enter_info = 6;</code>
+       * <code>.TeamEnterSceneInfo teamEnterInfo = 5;</code>
        */
       public emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfoOrBuilder getTeamEnterInfoOrBuilder() {
         if (teamEnterInfoBuilder_ != null) {
@@ -886,7 +1091,7 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>.TeamEnterSceneInfo team_enter_info = 6;</code>
+       * <code>.TeamEnterSceneInfo teamEnterInfo = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfo, emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfo.Builder, emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfoOrBuilder> 
@@ -902,12 +1107,76 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
         return teamEnterInfoBuilder_;
       }
 
+      private int curAvatarEntityId_ ;
+      /**
+       * <code>uint32 curAvatarEntityId = 8;</code>
+       * @return The curAvatarEntityId.
+       */
+      @java.lang.Override
+      public int getCurAvatarEntityId() {
+        return curAvatarEntityId_;
+      }
+      /**
+       * <code>uint32 curAvatarEntityId = 8;</code>
+       * @param value The curAvatarEntityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCurAvatarEntityId(int value) {
+        
+        curAvatarEntityId_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 curAvatarEntityId = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCurAvatarEntityId() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        curAvatarEntityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int enterSceneToken_ ;
+      /**
+       * <code>uint32 enterSceneToken = 13;</code>
+       * @return The enterSceneToken.
+       */
+      @java.lang.Override
+      public int getEnterSceneToken() {
+        return enterSceneToken_;
+      }
+      /**
+       * <code>uint32 enterSceneToken = 13;</code>
+       * @param value The enterSceneToken to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEnterSceneToken(int value) {
+        
+        enterSceneToken_ = value;
+        bitField0_ |= 0x00000008;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 enterSceneToken = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEnterSceneToken() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        enterSceneToken_ = 0;
+        onChanged();
+        return this;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfo> avatarEnterInfo_ =
         java.util.Collections.emptyList();
       private void ensureAvatarEnterInfoIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000010) != 0)) {
           avatarEnterInfo_ = new java.util.ArrayList<emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfo>(avatarEnterInfo_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000010;
          }
       }
 
@@ -915,7 +1184,7 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
           emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfo, emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfo.Builder, emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfoOrBuilder> avatarEnterInfoBuilder_;
 
       /**
-       * <code>repeated .AvatarEnterSceneInfo avatar_enter_info = 10;</code>
+       * <code>repeated .AvatarEnterSceneInfo avatarEnterInfo = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfo> getAvatarEnterInfoList() {
         if (avatarEnterInfoBuilder_ == null) {
@@ -925,7 +1194,7 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .AvatarEnterSceneInfo avatar_enter_info = 10;</code>
+       * <code>repeated .AvatarEnterSceneInfo avatarEnterInfo = 12;</code>
        */
       public int getAvatarEnterInfoCount() {
         if (avatarEnterInfoBuilder_ == null) {
@@ -935,7 +1204,7 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .AvatarEnterSceneInfo avatar_enter_info = 10;</code>
+       * <code>repeated .AvatarEnterSceneInfo avatarEnterInfo = 12;</code>
        */
       public emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfo getAvatarEnterInfo(int index) {
         if (avatarEnterInfoBuilder_ == null) {
@@ -945,7 +1214,7 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .AvatarEnterSceneInfo avatar_enter_info = 10;</code>
+       * <code>repeated .AvatarEnterSceneInfo avatarEnterInfo = 12;</code>
        */
       public Builder setAvatarEnterInfo(
           int index, emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfo value) {
@@ -962,7 +1231,7 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AvatarEnterSceneInfo avatar_enter_info = 10;</code>
+       * <code>repeated .AvatarEnterSceneInfo avatarEnterInfo = 12;</code>
        */
       public Builder setAvatarEnterInfo(
           int index, emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfo.Builder builderForValue) {
@@ -976,7 +1245,7 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AvatarEnterSceneInfo avatar_enter_info = 10;</code>
+       * <code>repeated .AvatarEnterSceneInfo avatarEnterInfo = 12;</code>
        */
       public Builder addAvatarEnterInfo(emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfo value) {
         if (avatarEnterInfoBuilder_ == null) {
@@ -992,7 +1261,7 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AvatarEnterSceneInfo avatar_enter_info = 10;</code>
+       * <code>repeated .AvatarEnterSceneInfo avatarEnterInfo = 12;</code>
        */
       public Builder addAvatarEnterInfo(
           int index, emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfo value) {
@@ -1009,7 +1278,7 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AvatarEnterSceneInfo avatar_enter_info = 10;</code>
+       * <code>repeated .AvatarEnterSceneInfo avatarEnterInfo = 12;</code>
        */
       public Builder addAvatarEnterInfo(
           emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfo.Builder builderForValue) {
@@ -1023,7 +1292,7 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AvatarEnterSceneInfo avatar_enter_info = 10;</code>
+       * <code>repeated .AvatarEnterSceneInfo avatarEnterInfo = 12;</code>
        */
       public Builder addAvatarEnterInfo(
           int index, emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfo.Builder builderForValue) {
@@ -1037,7 +1306,7 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AvatarEnterSceneInfo avatar_enter_info = 10;</code>
+       * <code>repeated .AvatarEnterSceneInfo avatarEnterInfo = 12;</code>
        */
       public Builder addAllAvatarEnterInfo(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfo> values) {
@@ -1052,12 +1321,12 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AvatarEnterSceneInfo avatar_enter_info = 10;</code>
+       * <code>repeated .AvatarEnterSceneInfo avatarEnterInfo = 12;</code>
        */
       public Builder clearAvatarEnterInfo() {
         if (avatarEnterInfoBuilder_ == null) {
           avatarEnterInfo_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000010);
           onChanged();
         } else {
           avatarEnterInfoBuilder_.clear();
@@ -1065,7 +1334,7 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AvatarEnterSceneInfo avatar_enter_info = 10;</code>
+       * <code>repeated .AvatarEnterSceneInfo avatarEnterInfo = 12;</code>
        */
       public Builder removeAvatarEnterInfo(int index) {
         if (avatarEnterInfoBuilder_ == null) {
@@ -1078,14 +1347,14 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AvatarEnterSceneInfo avatar_enter_info = 10;</code>
+       * <code>repeated .AvatarEnterSceneInfo avatarEnterInfo = 12;</code>
        */
       public emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfo.Builder getAvatarEnterInfoBuilder(
           int index) {
         return getAvatarEnterInfoFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .AvatarEnterSceneInfo avatar_enter_info = 10;</code>
+       * <code>repeated .AvatarEnterSceneInfo avatarEnterInfo = 12;</code>
        */
       public emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfoOrBuilder getAvatarEnterInfoOrBuilder(
           int index) {
@@ -1095,7 +1364,7 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .AvatarEnterSceneInfo avatar_enter_info = 10;</code>
+       * <code>repeated .AvatarEnterSceneInfo avatarEnterInfo = 12;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfoOrBuilder> 
            getAvatarEnterInfoOrBuilderList() {
@@ -1106,14 +1375,14 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .AvatarEnterSceneInfo avatar_enter_info = 10;</code>
+       * <code>repeated .AvatarEnterSceneInfo avatarEnterInfo = 12;</code>
        */
       public emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfo.Builder addAvatarEnterInfoBuilder() {
         return getAvatarEnterInfoFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .AvatarEnterSceneInfo avatar_enter_info = 10;</code>
+       * <code>repeated .AvatarEnterSceneInfo avatarEnterInfo = 12;</code>
        */
       public emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfo.Builder addAvatarEnterInfoBuilder(
           int index) {
@@ -1121,7 +1390,7 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
             index, emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .AvatarEnterSceneInfo avatar_enter_info = 10;</code>
+       * <code>repeated .AvatarEnterSceneInfo avatarEnterInfo = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfo.Builder> 
            getAvatarEnterInfoBuilderList() {
@@ -1134,193 +1403,12 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
           avatarEnterInfoBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfo, emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfo.Builder, emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.AvatarEnterSceneInfoOrBuilder>(
                   avatarEnterInfo_,
-                  ((bitField0_ & 0x00000001) != 0),
+                  ((bitField0_ & 0x00000010) != 0),
                   getParentForChildren(),
                   isClean());
           avatarEnterInfo_ = null;
         }
         return avatarEnterInfoBuilder_;
-      }
-
-      private int curAvatarEntityId_ ;
-      /**
-       * <code>uint32 cur_avatar_entity_id = 4;</code>
-       * @return The curAvatarEntityId.
-       */
-      @java.lang.Override
-      public int getCurAvatarEntityId() {
-        return curAvatarEntityId_;
-      }
-      /**
-       * <code>uint32 cur_avatar_entity_id = 4;</code>
-       * @param value The curAvatarEntityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCurAvatarEntityId(int value) {
-        
-        curAvatarEntityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 cur_avatar_entity_id = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCurAvatarEntityId() {
-        
-        curAvatarEntityId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo mpLevelEntityInfo_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo, emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo.Builder, emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfoOrBuilder> mpLevelEntityInfoBuilder_;
-      /**
-       * <code>.MPLevelEntityInfo mp_level_entity_info = 15;</code>
-       * @return Whether the mpLevelEntityInfo field is set.
-       */
-      public boolean hasMpLevelEntityInfo() {
-        return mpLevelEntityInfoBuilder_ != null || mpLevelEntityInfo_ != null;
-      }
-      /**
-       * <code>.MPLevelEntityInfo mp_level_entity_info = 15;</code>
-       * @return The mpLevelEntityInfo.
-       */
-      public emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo getMpLevelEntityInfo() {
-        if (mpLevelEntityInfoBuilder_ == null) {
-          return mpLevelEntityInfo_ == null ? emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo.getDefaultInstance() : mpLevelEntityInfo_;
-        } else {
-          return mpLevelEntityInfoBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.MPLevelEntityInfo mp_level_entity_info = 15;</code>
-       */
-      public Builder setMpLevelEntityInfo(emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo value) {
-        if (mpLevelEntityInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          mpLevelEntityInfo_ = value;
-          onChanged();
-        } else {
-          mpLevelEntityInfoBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.MPLevelEntityInfo mp_level_entity_info = 15;</code>
-       */
-      public Builder setMpLevelEntityInfo(
-          emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo.Builder builderForValue) {
-        if (mpLevelEntityInfoBuilder_ == null) {
-          mpLevelEntityInfo_ = builderForValue.build();
-          onChanged();
-        } else {
-          mpLevelEntityInfoBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.MPLevelEntityInfo mp_level_entity_info = 15;</code>
-       */
-      public Builder mergeMpLevelEntityInfo(emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo value) {
-        if (mpLevelEntityInfoBuilder_ == null) {
-          if (mpLevelEntityInfo_ != null) {
-            mpLevelEntityInfo_ =
-              emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo.newBuilder(mpLevelEntityInfo_).mergeFrom(value).buildPartial();
-          } else {
-            mpLevelEntityInfo_ = value;
-          }
-          onChanged();
-        } else {
-          mpLevelEntityInfoBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.MPLevelEntityInfo mp_level_entity_info = 15;</code>
-       */
-      public Builder clearMpLevelEntityInfo() {
-        if (mpLevelEntityInfoBuilder_ == null) {
-          mpLevelEntityInfo_ = null;
-          onChanged();
-        } else {
-          mpLevelEntityInfo_ = null;
-          mpLevelEntityInfoBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.MPLevelEntityInfo mp_level_entity_info = 15;</code>
-       */
-      public emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo.Builder getMpLevelEntityInfoBuilder() {
-        
-        onChanged();
-        return getMpLevelEntityInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.MPLevelEntityInfo mp_level_entity_info = 15;</code>
-       */
-      public emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfoOrBuilder getMpLevelEntityInfoOrBuilder() {
-        if (mpLevelEntityInfoBuilder_ != null) {
-          return mpLevelEntityInfoBuilder_.getMessageOrBuilder();
-        } else {
-          return mpLevelEntityInfo_ == null ?
-              emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo.getDefaultInstance() : mpLevelEntityInfo_;
-        }
-      }
-      /**
-       * <code>.MPLevelEntityInfo mp_level_entity_info = 15;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo, emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo.Builder, emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfoOrBuilder> 
-          getMpLevelEntityInfoFieldBuilder() {
-        if (mpLevelEntityInfoBuilder_ == null) {
-          mpLevelEntityInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo, emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo.Builder, emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfoOrBuilder>(
-                  getMpLevelEntityInfo(),
-                  getParentForChildren(),
-                  isClean());
-          mpLevelEntityInfo_ = null;
-        }
-        return mpLevelEntityInfoBuilder_;
-      }
-
-      private int enterSceneToken_ ;
-      /**
-       * <code>uint32 enter_scene_token = 1;</code>
-       * @return The enterSceneToken.
-       */
-      @java.lang.Override
-      public int getEnterSceneToken() {
-        return enterSceneToken_;
-      }
-      /**
-       * <code>uint32 enter_scene_token = 1;</code>
-       * @param value The enterSceneToken to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEnterSceneToken(int value) {
-        
-        enterSceneToken_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 enter_scene_token = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEnterSceneToken() {
-        
-        enterSceneToken_ = 0;
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1355,7 +1443,18 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new PlayerEnterSceneInfoNotify(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -1389,33 +1488,35 @@ public final class PlayerEnterSceneInfoNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n PlayerEnterSceneInfoNotify.proto\032\032Avat" +
-      "arEnterSceneInfo.proto\032\027MPLevelEntityInf" +
-      "o.proto\032\030TeamEnterSceneInfo.proto\"\347\001\n\032Pl" +
-      "ayerEnterSceneInfoNotify\022,\n\017team_enter_i" +
-      "nfo\030\006 \001(\0132\023.TeamEnterSceneInfo\0220\n\021avatar" +
-      "_enter_info\030\n \003(\0132\025.AvatarEnterSceneInfo" +
-      "\022\034\n\024cur_avatar_entity_id\030\004 \001(\r\0220\n\024mp_lev" +
-      "el_entity_info\030\017 \001(\0132\022.MPLevelEntityInfo" +
-      "\022\031\n\021enter_scene_token\030\001 \001(\rB\033\n\031emu.grass" +
-      "cutter.net.protob\006proto3"
+      "\n PlayerEnterSceneInfoNotify.proto\032\027MPLe" +
+      "velEntityInfo.proto\032\030TeamEnterSceneInfo." +
+      "proto\032\032AvatarEnterSceneInfo.proto\"\275\002\n\032Pl" +
+      "ayerEnterSceneInfoNotify\022-\n\021mpLevelEntit" +
+      "yInfo\030\007 \001(\0132\022.MPLevelEntityInfo\022*\n\rteamE" +
+      "nterInfo\030\005 \001(\0132\023.TeamEnterSceneInfo\022\031\n\021c" +
+      "urAvatarEntityId\030\010 \001(\r\022\027\n\017enterSceneToke" +
+      "n\030\r \001(\r\022.\n\017avatarEnterInfo\030\014 \003(\0132\025.Avata" +
+      "rEnterSceneInfo\"`\n\013EGMIDNPFPJB\022\010\n\004NONE\020\000" +
+      "\022\020\n\013PEPPOHPHJOJ\020\324\001\022\017\n\013DCDNILFDFLB\020\000\022\017\n\013N" +
+      "NBKOLMPOEA\020\001\022\017\n\013EAJIABGAOCI\020\001\032\002\020\001B\033\n\031emu" +
+      ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.getDescriptor(),
         });
     internal_static_PlayerEnterSceneInfoNotify_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_PlayerEnterSceneInfoNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerEnterSceneInfoNotify_descriptor,
-        new java.lang.String[] { "TeamEnterInfo", "AvatarEnterInfo", "CurAvatarEntityId", "MpLevelEntityInfo", "EnterSceneToken", });
-    emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.getDescriptor();
+        new java.lang.String[] { "MpLevelEntityInfo", "TeamEnterInfo", "CurAvatarEntityId", "EnterSceneToken", "AvatarEnterInfo", });
     emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.AvatarEnterSceneInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

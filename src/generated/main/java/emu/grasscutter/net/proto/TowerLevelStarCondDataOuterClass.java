@@ -19,25 +19,25 @@ public final class TowerLevelStarCondDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool Unk3300_KBCFDFOAJMM = 14;</code>
-     * @return The unk3300KBCFDFOAJMM.
-     */
-    boolean getUnk3300KBCFDFOAJMM();
-
-    /**
-     * <code>bool Unk3300_CPBCNACKAAK = 5;</code>
-     * @return The unk3300CPBCNACKAAK.
-     */
-    boolean getUnk3300CPBCNACKAAK();
-
-    /**
-     * <code>uint32 Unk3300_JGOLBFMJBCL = 11;</code>
+     * <code>uint32 Unk3300_JGOLBFMJBCL = 5;</code>
      * @return The unk3300JGOLBFMJBCL.
      */
     int getUnk3300JGOLBFMJBCL();
 
     /**
-     * <code>uint32 cond_value = 12;</code>
+     * <code>bool Unk3300_KBCFDFOAJMM = 1;</code>
+     * @return The unk3300KBCFDFOAJMM.
+     */
+    boolean getUnk3300KBCFDFOAJMM();
+
+    /**
+     * <code>bool Unk3300_CPBCNACKAAK = 2;</code>
+     * @return The unk3300CPBCNACKAAK.
+     */
+    boolean getUnk3300CPBCNACKAAK();
+
+    /**
+     * <code>uint32 condValue = 8;</code>
      * @return The condValue.
      */
     int getCondValue();
@@ -69,63 +69,6 @@ public final class TowerLevelStarCondDataOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private TowerLevelStarCondData(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 40: {
-
-              unk3300CPBCNACKAAK_ = input.readBool();
-              break;
-            }
-            case 88: {
-
-              unk3300JGOLBFMJBCL_ = input.readUInt32();
-              break;
-            }
-            case 96: {
-
-              condValue_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
-              unk3300KBCFDFOAJMM_ = input.readBool();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.internal_static_TowerLevelStarCondData_descriptor;
@@ -139,32 +82,10 @@ public final class TowerLevelStarCondDataOuterClass {
               emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData.class, emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData.Builder.class);
     }
 
-    public static final int UNK3300_KBCFDFOAJMM_FIELD_NUMBER = 14;
-    private boolean unk3300KBCFDFOAJMM_;
+    public static final int UNK3300_JGOLBFMJBCL_FIELD_NUMBER = 5;
+    private int unk3300JGOLBFMJBCL_ = 0;
     /**
-     * <code>bool Unk3300_KBCFDFOAJMM = 14;</code>
-     * @return The unk3300KBCFDFOAJMM.
-     */
-    @java.lang.Override
-    public boolean getUnk3300KBCFDFOAJMM() {
-      return unk3300KBCFDFOAJMM_;
-    }
-
-    public static final int UNK3300_CPBCNACKAAK_FIELD_NUMBER = 5;
-    private boolean unk3300CPBCNACKAAK_;
-    /**
-     * <code>bool Unk3300_CPBCNACKAAK = 5;</code>
-     * @return The unk3300CPBCNACKAAK.
-     */
-    @java.lang.Override
-    public boolean getUnk3300CPBCNACKAAK() {
-      return unk3300CPBCNACKAAK_;
-    }
-
-    public static final int UNK3300_JGOLBFMJBCL_FIELD_NUMBER = 11;
-    private int unk3300JGOLBFMJBCL_;
-    /**
-     * <code>uint32 Unk3300_JGOLBFMJBCL = 11;</code>
+     * <code>uint32 Unk3300_JGOLBFMJBCL = 5;</code>
      * @return The unk3300JGOLBFMJBCL.
      */
     @java.lang.Override
@@ -172,10 +93,32 @@ public final class TowerLevelStarCondDataOuterClass {
       return unk3300JGOLBFMJBCL_;
     }
 
-    public static final int COND_VALUE_FIELD_NUMBER = 12;
-    private int condValue_;
+    public static final int UNK3300_KBCFDFOAJMM_FIELD_NUMBER = 1;
+    private boolean unk3300KBCFDFOAJMM_ = false;
     /**
-     * <code>uint32 cond_value = 12;</code>
+     * <code>bool Unk3300_KBCFDFOAJMM = 1;</code>
+     * @return The unk3300KBCFDFOAJMM.
+     */
+    @java.lang.Override
+    public boolean getUnk3300KBCFDFOAJMM() {
+      return unk3300KBCFDFOAJMM_;
+    }
+
+    public static final int UNK3300_CPBCNACKAAK_FIELD_NUMBER = 2;
+    private boolean unk3300CPBCNACKAAK_ = false;
+    /**
+     * <code>bool Unk3300_CPBCNACKAAK = 2;</code>
+     * @return The unk3300CPBCNACKAAK.
+     */
+    @java.lang.Override
+    public boolean getUnk3300CPBCNACKAAK() {
+      return unk3300CPBCNACKAAK_;
+    }
+
+    public static final int CONDVALUE_FIELD_NUMBER = 8;
+    private int condValue_ = 0;
+    /**
+     * <code>uint32 condValue = 8;</code>
      * @return The condValue.
      */
     @java.lang.Override
@@ -197,19 +140,19 @@ public final class TowerLevelStarCondDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (unk3300KBCFDFOAJMM_ != false) {
+        output.writeBool(1, unk3300KBCFDFOAJMM_);
+      }
       if (unk3300CPBCNACKAAK_ != false) {
-        output.writeBool(5, unk3300CPBCNACKAAK_);
+        output.writeBool(2, unk3300CPBCNACKAAK_);
       }
       if (unk3300JGOLBFMJBCL_ != 0) {
-        output.writeUInt32(11, unk3300JGOLBFMJBCL_);
+        output.writeUInt32(5, unk3300JGOLBFMJBCL_);
       }
       if (condValue_ != 0) {
-        output.writeUInt32(12, condValue_);
+        output.writeUInt32(8, condValue_);
       }
-      if (unk3300KBCFDFOAJMM_ != false) {
-        output.writeBool(14, unk3300KBCFDFOAJMM_);
-      }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -218,23 +161,23 @@ public final class TowerLevelStarCondDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (unk3300KBCFDFOAJMM_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(1, unk3300KBCFDFOAJMM_);
+      }
       if (unk3300CPBCNACKAAK_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, unk3300CPBCNACKAAK_);
+          .computeBoolSize(2, unk3300CPBCNACKAAK_);
       }
       if (unk3300JGOLBFMJBCL_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, unk3300JGOLBFMJBCL_);
+          .computeUInt32Size(5, unk3300JGOLBFMJBCL_);
       }
       if (condValue_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, condValue_);
+          .computeUInt32Size(8, condValue_);
       }
-      if (unk3300KBCFDFOAJMM_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, unk3300KBCFDFOAJMM_);
-      }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -249,15 +192,15 @@ public final class TowerLevelStarCondDataOuterClass {
       }
       emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData other = (emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData) obj;
 
+      if (getUnk3300JGOLBFMJBCL()
+          != other.getUnk3300JGOLBFMJBCL()) return false;
       if (getUnk3300KBCFDFOAJMM()
           != other.getUnk3300KBCFDFOAJMM()) return false;
       if (getUnk3300CPBCNACKAAK()
           != other.getUnk3300CPBCNACKAAK()) return false;
-      if (getUnk3300JGOLBFMJBCL()
-          != other.getUnk3300JGOLBFMJBCL()) return false;
       if (getCondValue()
           != other.getCondValue()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -268,17 +211,17 @@ public final class TowerLevelStarCondDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + UNK3300_JGOLBFMJBCL_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3300JGOLBFMJBCL();
       hash = (37 * hash) + UNK3300_KBCFDFOAJMM_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getUnk3300KBCFDFOAJMM());
       hash = (37 * hash) + UNK3300_CPBCNACKAAK_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getUnk3300CPBCNACKAAK());
-      hash = (37 * hash) + UNK3300_JGOLBFMJBCL_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk3300JGOLBFMJBCL();
-      hash = (37 * hash) + COND_VALUE_FIELD_NUMBER;
+      hash = (37 * hash) + CONDVALUE_FIELD_NUMBER;
       hash = (53 * hash) + getCondValue();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -395,30 +338,22 @@ public final class TowerLevelStarCondDataOuterClass {
 
       // Construct using emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        unk3300KBCFDFOAJMM_ = false;
-
-        unk3300CPBCNACKAAK_ = false;
-
+        bitField0_ = 0;
         unk3300JGOLBFMJBCL_ = 0;
-
+        unk3300KBCFDFOAJMM_ = false;
+        unk3300CPBCNACKAAK_ = false;
         condValue_ = 0;
-
         return this;
       }
 
@@ -445,12 +380,25 @@ public final class TowerLevelStarCondDataOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData buildPartial() {
         emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData result = new emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData(this);
-        result.unk3300KBCFDFOAJMM_ = unk3300KBCFDFOAJMM_;
-        result.unk3300CPBCNACKAAK_ = unk3300CPBCNACKAAK_;
-        result.unk3300JGOLBFMJBCL_ = unk3300JGOLBFMJBCL_;
-        result.condValue_ = condValue_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.unk3300JGOLBFMJBCL_ = unk3300JGOLBFMJBCL_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.unk3300KBCFDFOAJMM_ = unk3300KBCFDFOAJMM_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.unk3300CPBCNACKAAK_ = unk3300CPBCNACKAAK_;
+        }
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.condValue_ = condValue_;
+        }
       }
 
       @java.lang.Override
@@ -497,19 +445,19 @@ public final class TowerLevelStarCondDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData other) {
         if (other == emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData.getDefaultInstance()) return this;
+        if (other.getUnk3300JGOLBFMJBCL() != 0) {
+          setUnk3300JGOLBFMJBCL(other.getUnk3300JGOLBFMJBCL());
+        }
         if (other.getUnk3300KBCFDFOAJMM() != false) {
           setUnk3300KBCFDFOAJMM(other.getUnk3300KBCFDFOAJMM());
         }
         if (other.getUnk3300CPBCNACKAAK() != false) {
           setUnk3300CPBCNACKAAK(other.getUnk3300CPBCNACKAAK());
         }
-        if (other.getUnk3300JGOLBFMJBCL() != 0) {
-          setUnk3300JGOLBFMJBCL(other.getUnk3300JGOLBFMJBCL());
-        }
         if (other.getCondValue() != 0) {
           setCondValue(other.getCondValue());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -524,85 +472,57 @@ public final class TowerLevelStarCondDataOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                unk3300KBCFDFOAJMM_ = input.readBool();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 8
+              case 16: {
+                unk3300CPBCNACKAAK_ = input.readBool();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 16
+              case 40: {
+                unk3300JGOLBFMJBCL_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 40
+              case 64: {
+                condValue_ = input.readUInt32();
+                bitField0_ |= 0x00000008;
+                break;
+              } // case 64
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
-
-      private boolean unk3300KBCFDFOAJMM_ ;
-      /**
-       * <code>bool Unk3300_KBCFDFOAJMM = 14;</code>
-       * @return The unk3300KBCFDFOAJMM.
-       */
-      @java.lang.Override
-      public boolean getUnk3300KBCFDFOAJMM() {
-        return unk3300KBCFDFOAJMM_;
-      }
-      /**
-       * <code>bool Unk3300_KBCFDFOAJMM = 14;</code>
-       * @param value The unk3300KBCFDFOAJMM to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUnk3300KBCFDFOAJMM(boolean value) {
-        
-        unk3300KBCFDFOAJMM_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool Unk3300_KBCFDFOAJMM = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUnk3300KBCFDFOAJMM() {
-        
-        unk3300KBCFDFOAJMM_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean unk3300CPBCNACKAAK_ ;
-      /**
-       * <code>bool Unk3300_CPBCNACKAAK = 5;</code>
-       * @return The unk3300CPBCNACKAAK.
-       */
-      @java.lang.Override
-      public boolean getUnk3300CPBCNACKAAK() {
-        return unk3300CPBCNACKAAK_;
-      }
-      /**
-       * <code>bool Unk3300_CPBCNACKAAK = 5;</code>
-       * @param value The unk3300CPBCNACKAAK to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUnk3300CPBCNACKAAK(boolean value) {
-        
-        unk3300CPBCNACKAAK_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool Unk3300_CPBCNACKAAK = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUnk3300CPBCNACKAAK() {
-        
-        unk3300CPBCNACKAAK_ = false;
-        onChanged();
-        return this;
-      }
+      private int bitField0_;
 
       private int unk3300JGOLBFMJBCL_ ;
       /**
-       * <code>uint32 Unk3300_JGOLBFMJBCL = 11;</code>
+       * <code>uint32 Unk3300_JGOLBFMJBCL = 5;</code>
        * @return The unk3300JGOLBFMJBCL.
        */
       @java.lang.Override
@@ -610,30 +530,95 @@ public final class TowerLevelStarCondDataOuterClass {
         return unk3300JGOLBFMJBCL_;
       }
       /**
-       * <code>uint32 Unk3300_JGOLBFMJBCL = 11;</code>
+       * <code>uint32 Unk3300_JGOLBFMJBCL = 5;</code>
        * @param value The unk3300JGOLBFMJBCL to set.
        * @return This builder for chaining.
        */
       public Builder setUnk3300JGOLBFMJBCL(int value) {
         
         unk3300JGOLBFMJBCL_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk3300_JGOLBFMJBCL = 11;</code>
+       * <code>uint32 Unk3300_JGOLBFMJBCL = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearUnk3300JGOLBFMJBCL() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         unk3300JGOLBFMJBCL_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean unk3300KBCFDFOAJMM_ ;
+      /**
+       * <code>bool Unk3300_KBCFDFOAJMM = 1;</code>
+       * @return The unk3300KBCFDFOAJMM.
+       */
+      @java.lang.Override
+      public boolean getUnk3300KBCFDFOAJMM() {
+        return unk3300KBCFDFOAJMM_;
+      }
+      /**
+       * <code>bool Unk3300_KBCFDFOAJMM = 1;</code>
+       * @param value The unk3300KBCFDFOAJMM to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300KBCFDFOAJMM(boolean value) {
+        
+        unk3300KBCFDFOAJMM_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool Unk3300_KBCFDFOAJMM = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300KBCFDFOAJMM() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        unk3300KBCFDFOAJMM_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean unk3300CPBCNACKAAK_ ;
+      /**
+       * <code>bool Unk3300_CPBCNACKAAK = 2;</code>
+       * @return The unk3300CPBCNACKAAK.
+       */
+      @java.lang.Override
+      public boolean getUnk3300CPBCNACKAAK() {
+        return unk3300CPBCNACKAAK_;
+      }
+      /**
+       * <code>bool Unk3300_CPBCNACKAAK = 2;</code>
+       * @param value The unk3300CPBCNACKAAK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3300CPBCNACKAAK(boolean value) {
+        
+        unk3300CPBCNACKAAK_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool Unk3300_CPBCNACKAAK = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3300CPBCNACKAAK() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        unk3300CPBCNACKAAK_ = false;
         onChanged();
         return this;
       }
 
       private int condValue_ ;
       /**
-       * <code>uint32 cond_value = 12;</code>
+       * <code>uint32 condValue = 8;</code>
        * @return The condValue.
        */
       @java.lang.Override
@@ -641,22 +626,23 @@ public final class TowerLevelStarCondDataOuterClass {
         return condValue_;
       }
       /**
-       * <code>uint32 cond_value = 12;</code>
+       * <code>uint32 condValue = 8;</code>
        * @param value The condValue to set.
        * @return This builder for chaining.
        */
       public Builder setCondValue(int value) {
         
         condValue_ = value;
+        bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 cond_value = 12;</code>
+       * <code>uint32 condValue = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearCondValue() {
-        
+        bitField0_ = (bitField0_ & ~0x00000008);
         condValue_ = 0;
         onChanged();
         return this;
@@ -694,7 +680,18 @@ public final class TowerLevelStarCondDataOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new TowerLevelStarCondData(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -728,12 +725,11 @@ public final class TowerLevelStarCondDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034TowerLevelStarCondData.proto\"\203\001\n\026Tower" +
-      "LevelStarCondData\022\033\n\023Unk3300_KBCFDFOAJMM" +
-      "\030\016 \001(\010\022\033\n\023Unk3300_CPBCNACKAAK\030\005 \001(\010\022\033\n\023U" +
-      "nk3300_JGOLBFMJBCL\030\013 \001(\r\022\022\n\ncond_value\030\014" +
-      " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
-      "3"
+      "\n\034TowerLevelStarCondData.proto\"\202\001\n\026Tower" +
+      "LevelStarCondData\022\033\n\023Unk3300_JGOLBFMJBCL" +
+      "\030\005 \001(\r\022\033\n\023Unk3300_KBCFDFOAJMM\030\001 \001(\010\022\033\n\023U" +
+      "nk3300_CPBCNACKAAK\030\002 \001(\010\022\021\n\tcondValue\030\010 " +
+      "\001(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -744,7 +740,7 @@ public final class TowerLevelStarCondDataOuterClass {
     internal_static_TowerLevelStarCondData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TowerLevelStarCondData_descriptor,
-        new java.lang.String[] { "Unk3300KBCFDFOAJMM", "Unk3300CPBCNACKAAK", "Unk3300JGOLBFMJBCL", "CondValue", });
+        new java.lang.String[] { "Unk3300JGOLBFMJBCL", "Unk3300KBCFDFOAJMM", "Unk3300CPBCNACKAAK", "CondValue", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

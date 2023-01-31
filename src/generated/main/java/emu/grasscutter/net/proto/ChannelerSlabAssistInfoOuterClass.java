@@ -19,22 +19,22 @@ public final class ChannelerSlabAssistInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 avatar_level = 10;</code>
-     * @return The avatarLevel.
-     */
-    int getAvatarLevel();
-
-    /**
      * <code>uint32 uid = 11;</code>
      * @return The uid.
      */
     int getUid();
 
     /**
-     * <code>uint32 avatar_id = 6;</code>
+     * <code>uint32 avatarId = 15;</code>
      * @return The avatarId.
      */
     int getAvatarId();
+
+    /**
+     * <code>uint32 avatarLevel = 3;</code>
+     * @return The avatarLevel.
+     */
+    int getAvatarLevel();
   }
   /**
    * Protobuf type {@code ChannelerSlabAssistInfo}
@@ -63,58 +63,6 @@ public final class ChannelerSlabAssistInfoOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private ChannelerSlabAssistInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 48: {
-
-              avatarId_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
-              avatarLevel_ = input.readUInt32();
-              break;
-            }
-            case 88: {
-
-              uid_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.ChannelerSlabAssistInfoOuterClass.internal_static_ChannelerSlabAssistInfo_descriptor;
@@ -128,19 +76,8 @@ public final class ChannelerSlabAssistInfoOuterClass {
               emu.grasscutter.net.proto.ChannelerSlabAssistInfoOuterClass.ChannelerSlabAssistInfo.class, emu.grasscutter.net.proto.ChannelerSlabAssistInfoOuterClass.ChannelerSlabAssistInfo.Builder.class);
     }
 
-    public static final int AVATAR_LEVEL_FIELD_NUMBER = 10;
-    private int avatarLevel_;
-    /**
-     * <code>uint32 avatar_level = 10;</code>
-     * @return The avatarLevel.
-     */
-    @java.lang.Override
-    public int getAvatarLevel() {
-      return avatarLevel_;
-    }
-
     public static final int UID_FIELD_NUMBER = 11;
-    private int uid_;
+    private int uid_ = 0;
     /**
      * <code>uint32 uid = 11;</code>
      * @return The uid.
@@ -150,15 +87,26 @@ public final class ChannelerSlabAssistInfoOuterClass {
       return uid_;
     }
 
-    public static final int AVATAR_ID_FIELD_NUMBER = 6;
-    private int avatarId_;
+    public static final int AVATARID_FIELD_NUMBER = 15;
+    private int avatarId_ = 0;
     /**
-     * <code>uint32 avatar_id = 6;</code>
+     * <code>uint32 avatarId = 15;</code>
      * @return The avatarId.
      */
     @java.lang.Override
     public int getAvatarId() {
       return avatarId_;
+    }
+
+    public static final int AVATARLEVEL_FIELD_NUMBER = 3;
+    private int avatarLevel_ = 0;
+    /**
+     * <code>uint32 avatarLevel = 3;</code>
+     * @return The avatarLevel.
+     */
+    @java.lang.Override
+    public int getAvatarLevel() {
+      return avatarLevel_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -175,16 +123,16 @@ public final class ChannelerSlabAssistInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (avatarId_ != 0) {
-        output.writeUInt32(6, avatarId_);
-      }
       if (avatarLevel_ != 0) {
-        output.writeUInt32(10, avatarLevel_);
+        output.writeUInt32(3, avatarLevel_);
       }
       if (uid_ != 0) {
         output.writeUInt32(11, uid_);
       }
-      unknownFields.writeTo(output);
+      if (avatarId_ != 0) {
+        output.writeUInt32(15, avatarId_);
+      }
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -193,19 +141,19 @@ public final class ChannelerSlabAssistInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (avatarId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, avatarId_);
-      }
       if (avatarLevel_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, avatarLevel_);
+          .computeUInt32Size(3, avatarLevel_);
       }
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(11, uid_);
       }
-      size += unknownFields.getSerializedSize();
+      if (avatarId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, avatarId_);
+      }
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -220,13 +168,13 @@ public final class ChannelerSlabAssistInfoOuterClass {
       }
       emu.grasscutter.net.proto.ChannelerSlabAssistInfoOuterClass.ChannelerSlabAssistInfo other = (emu.grasscutter.net.proto.ChannelerSlabAssistInfoOuterClass.ChannelerSlabAssistInfo) obj;
 
-      if (getAvatarLevel()
-          != other.getAvatarLevel()) return false;
       if (getUid()
           != other.getUid()) return false;
       if (getAvatarId()
           != other.getAvatarId()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (getAvatarLevel()
+          != other.getAvatarLevel()) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -237,13 +185,13 @@ public final class ChannelerSlabAssistInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + AVATAR_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getAvatarLevel();
       hash = (37 * hash) + UID_FIELD_NUMBER;
       hash = (53 * hash) + getUid();
-      hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
+      hash = (37 * hash) + AVATARID_FIELD_NUMBER;
       hash = (53 * hash) + getAvatarId();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (37 * hash) + AVATARLEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getAvatarLevel();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -360,28 +308,21 @@ public final class ChannelerSlabAssistInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.ChannelerSlabAssistInfoOuterClass.ChannelerSlabAssistInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        avatarLevel_ = 0;
-
+        bitField0_ = 0;
         uid_ = 0;
-
         avatarId_ = 0;
-
+        avatarLevel_ = 0;
         return this;
       }
 
@@ -408,11 +349,22 @@ public final class ChannelerSlabAssistInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ChannelerSlabAssistInfoOuterClass.ChannelerSlabAssistInfo buildPartial() {
         emu.grasscutter.net.proto.ChannelerSlabAssistInfoOuterClass.ChannelerSlabAssistInfo result = new emu.grasscutter.net.proto.ChannelerSlabAssistInfoOuterClass.ChannelerSlabAssistInfo(this);
-        result.avatarLevel_ = avatarLevel_;
-        result.uid_ = uid_;
-        result.avatarId_ = avatarId_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.ChannelerSlabAssistInfoOuterClass.ChannelerSlabAssistInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.uid_ = uid_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.avatarId_ = avatarId_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.avatarLevel_ = avatarLevel_;
+        }
       }
 
       @java.lang.Override
@@ -459,16 +411,16 @@ public final class ChannelerSlabAssistInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ChannelerSlabAssistInfoOuterClass.ChannelerSlabAssistInfo other) {
         if (other == emu.grasscutter.net.proto.ChannelerSlabAssistInfoOuterClass.ChannelerSlabAssistInfo.getDefaultInstance()) return this;
-        if (other.getAvatarLevel() != 0) {
-          setAvatarLevel(other.getAvatarLevel());
-        }
         if (other.getUid() != 0) {
           setUid(other.getUid());
         }
         if (other.getAvatarId() != 0) {
           setAvatarId(other.getAvatarId());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        if (other.getAvatarLevel() != 0) {
+          setAvatarLevel(other.getAvatarLevel());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -483,50 +435,48 @@ public final class ChannelerSlabAssistInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.ChannelerSlabAssistInfoOuterClass.ChannelerSlabAssistInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 24: {
+                avatarLevel_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 24
+              case 88: {
+                uid_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 88
+              case 120: {
+                avatarId_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 120
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.ChannelerSlabAssistInfoOuterClass.ChannelerSlabAssistInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
-
-      private int avatarLevel_ ;
-      /**
-       * <code>uint32 avatar_level = 10;</code>
-       * @return The avatarLevel.
-       */
-      @java.lang.Override
-      public int getAvatarLevel() {
-        return avatarLevel_;
-      }
-      /**
-       * <code>uint32 avatar_level = 10;</code>
-       * @param value The avatarLevel to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAvatarLevel(int value) {
-        
-        avatarLevel_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 avatar_level = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAvatarLevel() {
-        
-        avatarLevel_ = 0;
-        onChanged();
-        return this;
-      }
+      private int bitField0_;
 
       private int uid_ ;
       /**
@@ -545,6 +495,7 @@ public final class ChannelerSlabAssistInfoOuterClass {
       public Builder setUid(int value) {
         
         uid_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -553,7 +504,7 @@ public final class ChannelerSlabAssistInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearUid() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         uid_ = 0;
         onChanged();
         return this;
@@ -561,7 +512,7 @@ public final class ChannelerSlabAssistInfoOuterClass {
 
       private int avatarId_ ;
       /**
-       * <code>uint32 avatar_id = 6;</code>
+       * <code>uint32 avatarId = 15;</code>
        * @return The avatarId.
        */
       @java.lang.Override
@@ -569,23 +520,56 @@ public final class ChannelerSlabAssistInfoOuterClass {
         return avatarId_;
       }
       /**
-       * <code>uint32 avatar_id = 6;</code>
+       * <code>uint32 avatarId = 15;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
        */
       public Builder setAvatarId(int value) {
         
         avatarId_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 avatar_id = 6;</code>
+       * <code>uint32 avatarId = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         avatarId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int avatarLevel_ ;
+      /**
+       * <code>uint32 avatarLevel = 3;</code>
+       * @return The avatarLevel.
+       */
+      @java.lang.Override
+      public int getAvatarLevel() {
+        return avatarLevel_;
+      }
+      /**
+       * <code>uint32 avatarLevel = 3;</code>
+       * @param value The avatarLevel to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAvatarLevel(int value) {
+        
+        avatarLevel_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 avatarLevel = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAvatarLevel() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        avatarLevel_ = 0;
         onChanged();
         return this;
       }
@@ -622,7 +606,18 @@ public final class ChannelerSlabAssistInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new ChannelerSlabAssistInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -656,10 +651,10 @@ public final class ChannelerSlabAssistInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\035ChannelerSlabAssistInfo.proto\"O\n\027Chann" +
-      "elerSlabAssistInfo\022\024\n\014avatar_level\030\n \001(\r" +
-      "\022\013\n\003uid\030\013 \001(\r\022\021\n\tavatar_id\030\006 \001(\rB\033\n\031emu." +
-      "grasscutter.net.protob\006proto3"
+      "\n\035ChannelerSlabAssistInfo.proto\"M\n\027Chann" +
+      "elerSlabAssistInfo\022\013\n\003uid\030\013 \001(\r\022\020\n\010avata" +
+      "rId\030\017 \001(\r\022\023\n\013avatarLevel\030\003 \001(\rB\033\n\031emu.gr" +
+      "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -670,7 +665,7 @@ public final class ChannelerSlabAssistInfoOuterClass {
     internal_static_ChannelerSlabAssistInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ChannelerSlabAssistInfo_descriptor,
-        new java.lang.String[] { "AvatarLevel", "Uid", "AvatarId", });
+        new java.lang.String[] { "Uid", "AvatarId", "AvatarLevel", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

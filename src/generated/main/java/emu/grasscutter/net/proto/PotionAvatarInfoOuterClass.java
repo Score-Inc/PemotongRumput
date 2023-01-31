@@ -19,16 +19,16 @@ public final class PotionAvatarInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_trial = 15;</code>
-     * @return The isTrial.
-     */
-    boolean getIsTrial();
-
-    /**
-     * <code>uint64 avatar_id = 1;</code>
+     * <code>uint64 avatarId = 10;</code>
      * @return The avatarId.
      */
     long getAvatarId();
+
+    /**
+     * <code>bool isTrial = 3;</code>
+     * @return The isTrial.
+     */
+    boolean getIsTrial();
   }
   /**
    * Protobuf type {@code PotionAvatarInfo}
@@ -57,53 +57,6 @@ public final class PotionAvatarInfoOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private PotionAvatarInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              avatarId_ = input.readUInt64();
-              break;
-            }
-            case 120: {
-
-              isTrial_ = input.readBool();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.internal_static_PotionAvatarInfo_descriptor;
@@ -117,26 +70,26 @@ public final class PotionAvatarInfoOuterClass {
               emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo.class, emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo.Builder.class);
     }
 
-    public static final int IS_TRIAL_FIELD_NUMBER = 15;
-    private boolean isTrial_;
+    public static final int AVATARID_FIELD_NUMBER = 10;
+    private long avatarId_ = 0L;
     /**
-     * <code>bool is_trial = 15;</code>
-     * @return The isTrial.
-     */
-    @java.lang.Override
-    public boolean getIsTrial() {
-      return isTrial_;
-    }
-
-    public static final int AVATAR_ID_FIELD_NUMBER = 1;
-    private long avatarId_;
-    /**
-     * <code>uint64 avatar_id = 1;</code>
+     * <code>uint64 avatarId = 10;</code>
      * @return The avatarId.
      */
     @java.lang.Override
     public long getAvatarId() {
       return avatarId_;
+    }
+
+    public static final int ISTRIAL_FIELD_NUMBER = 3;
+    private boolean isTrial_ = false;
+    /**
+     * <code>bool isTrial = 3;</code>
+     * @return The isTrial.
+     */
+    @java.lang.Override
+    public boolean getIsTrial() {
+      return isTrial_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -153,13 +106,13 @@ public final class PotionAvatarInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (avatarId_ != 0L) {
-        output.writeUInt64(1, avatarId_);
-      }
       if (isTrial_ != false) {
-        output.writeBool(15, isTrial_);
+        output.writeBool(3, isTrial_);
       }
-      unknownFields.writeTo(output);
+      if (avatarId_ != 0L) {
+        output.writeUInt64(10, avatarId_);
+      }
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -168,15 +121,15 @@ public final class PotionAvatarInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (avatarId_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(1, avatarId_);
-      }
       if (isTrial_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isTrial_);
+          .computeBoolSize(3, isTrial_);
       }
-      size += unknownFields.getSerializedSize();
+      if (avatarId_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(10, avatarId_);
+      }
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -191,11 +144,11 @@ public final class PotionAvatarInfoOuterClass {
       }
       emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo other = (emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo) obj;
 
-      if (getIsTrial()
-          != other.getIsTrial()) return false;
       if (getAvatarId()
           != other.getAvatarId()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (getIsTrial()
+          != other.getIsTrial()) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -206,13 +159,13 @@ public final class PotionAvatarInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_TRIAL_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsTrial());
-      hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
+      hash = (37 * hash) + AVATARID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getAvatarId());
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (37 * hash) + ISTRIAL_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsTrial());
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -329,26 +282,20 @@ public final class PotionAvatarInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isTrial_ = false;
-
+        bitField0_ = 0;
         avatarId_ = 0L;
-
+        isTrial_ = false;
         return this;
       }
 
@@ -375,10 +322,19 @@ public final class PotionAvatarInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo buildPartial() {
         emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo result = new emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo(this);
-        result.isTrial_ = isTrial_;
-        result.avatarId_ = avatarId_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.avatarId_ = avatarId_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.isTrial_ = isTrial_;
+        }
       }
 
       @java.lang.Override
@@ -425,13 +381,13 @@ public final class PotionAvatarInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo other) {
         if (other == emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo.getDefaultInstance()) return this;
-        if (other.getIsTrial() != false) {
-          setIsTrial(other.getIsTrial());
-        }
         if (other.getAvatarId() != 0L) {
           setAvatarId(other.getAvatarId());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        if (other.getIsTrial() != false) {
+          setIsTrial(other.getIsTrial());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -446,54 +402,47 @@ public final class PotionAvatarInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 24: {
+                isTrial_ = input.readBool();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 24
+              case 80: {
+                avatarId_ = input.readUInt64();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 80
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
-
-      private boolean isTrial_ ;
-      /**
-       * <code>bool is_trial = 15;</code>
-       * @return The isTrial.
-       */
-      @java.lang.Override
-      public boolean getIsTrial() {
-        return isTrial_;
-      }
-      /**
-       * <code>bool is_trial = 15;</code>
-       * @param value The isTrial to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsTrial(boolean value) {
-        
-        isTrial_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_trial = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsTrial() {
-        
-        isTrial_ = false;
-        onChanged();
-        return this;
-      }
+      private int bitField0_;
 
       private long avatarId_ ;
       /**
-       * <code>uint64 avatar_id = 1;</code>
+       * <code>uint64 avatarId = 10;</code>
        * @return The avatarId.
        */
       @java.lang.Override
@@ -501,23 +450,56 @@ public final class PotionAvatarInfoOuterClass {
         return avatarId_;
       }
       /**
-       * <code>uint64 avatar_id = 1;</code>
+       * <code>uint64 avatarId = 10;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
        */
       public Builder setAvatarId(long value) {
         
         avatarId_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint64 avatar_id = 1;</code>
+       * <code>uint64 avatarId = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         avatarId_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private boolean isTrial_ ;
+      /**
+       * <code>bool isTrial = 3;</code>
+       * @return The isTrial.
+       */
+      @java.lang.Override
+      public boolean getIsTrial() {
+        return isTrial_;
+      }
+      /**
+       * <code>bool isTrial = 3;</code>
+       * @param value The isTrial to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsTrial(boolean value) {
+        
+        isTrial_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool isTrial = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsTrial() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        isTrial_ = false;
         onChanged();
         return this;
       }
@@ -554,7 +536,18 @@ public final class PotionAvatarInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new PotionAvatarInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -588,9 +581,9 @@ public final class PotionAvatarInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026PotionAvatarInfo.proto\"7\n\020PotionAvatar" +
-      "Info\022\020\n\010is_trial\030\017 \001(\010\022\021\n\tavatar_id\030\001 \001(" +
-      "\004B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\026PotionAvatarInfo.proto\"5\n\020PotionAvatar" +
+      "Info\022\020\n\010avatarId\030\n \001(\004\022\017\n\007isTrial\030\003 \001(\010B" +
+      "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -601,7 +594,7 @@ public final class PotionAvatarInfoOuterClass {
     internal_static_PotionAvatarInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PotionAvatarInfo_descriptor,
-        new java.lang.String[] { "IsTrial", "AvatarId", });
+        new java.lang.String[] { "AvatarId", "IsTrial", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

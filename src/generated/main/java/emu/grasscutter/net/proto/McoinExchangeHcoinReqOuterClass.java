@@ -19,29 +19,18 @@ public final class McoinExchangeHcoinReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 hcoin = 1;</code>
-     * @return The hcoin.
-     */
-    int getHcoin();
-
-    /**
-     * <code>uint32 mcoin_cost = 3;</code>
+     * <code>uint32 mcoinCost = 15;</code>
      * @return The mcoinCost.
      */
     int getMcoinCost();
+
+    /**
+     * <code>uint32 hcoin = 13;</code>
+     * @return The hcoin.
+     */
+    int getHcoin();
   }
   /**
-   * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 623;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   *   IS_ALLOW_CLIENT = 1;
-   * }
-   * </pre>
-   *
    * Protobuf type {@code McoinExchangeHcoinReq}
    */
   public static final class McoinExchangeHcoinReq extends
@@ -68,53 +57,6 @@ public final class McoinExchangeHcoinReqOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private McoinExchangeHcoinReq(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              hcoin_ = input.readUInt32();
-              break;
-            }
-            case 24: {
-
-              mcoinCost_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.McoinExchangeHcoinReqOuterClass.internal_static_McoinExchangeHcoinReq_descriptor;
@@ -128,26 +70,165 @@ public final class McoinExchangeHcoinReqOuterClass {
               emu.grasscutter.net.proto.McoinExchangeHcoinReqOuterClass.McoinExchangeHcoinReq.class, emu.grasscutter.net.proto.McoinExchangeHcoinReqOuterClass.McoinExchangeHcoinReq.Builder.class);
     }
 
-    public static final int HCOIN_FIELD_NUMBER = 1;
-    private int hcoin_;
     /**
-     * <code>uint32 hcoin = 1;</code>
-     * @return The hcoin.
+     * Protobuf enum {@code McoinExchangeHcoinReq.OMOIGICKHMH}
      */
-    @java.lang.Override
-    public int getHcoin() {
-      return hcoin_;
+    public enum OMOIGICKHMH
+        implements com.google.protobuf.ProtocolMessageEnum {
+      /**
+       * <code>NONE = 0;</code>
+       */
+      NONE(0, 0),
+      /**
+       * <code>PEPPOHPHJOJ = 695;</code>
+       */
+      PEPPOHPHJOJ(1, 695),
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      NNBKOLMPOEA(3, 1),
+      UNRECOGNIZED(-1, -1),
+      ;
+
+      /**
+       * <code>DCDNILFDFLB = 0;</code>
+       */
+      public static final OMOIGICKHMH DCDNILFDFLB = NONE;
+      /**
+       * <code>EAJIABGAOCI = 1;</code>
+       */
+      public static final OMOIGICKHMH EAJIABGAOCI = NNBKOLMPOEA;
+      /**
+       * <code>NONE = 0;</code>
+       */
+      public static final int NONE_VALUE = 0;
+      /**
+       * <code>PEPPOHPHJOJ = 695;</code>
+       */
+      public static final int PEPPOHPHJOJ_VALUE = 695;
+      /**
+       * <code>DCDNILFDFLB = 0;</code>
+       */
+      public static final int DCDNILFDFLB_VALUE = 0;
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      public static final int NNBKOLMPOEA_VALUE = 1;
+      /**
+       * <code>EAJIABGAOCI = 1;</code>
+       */
+      public static final int EAJIABGAOCI_VALUE = 1;
+
+
+      public final int getNumber() {
+        if (index == -1) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static OMOIGICKHMH valueOf(int value) {
+        return forNumber(value);
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
+      public static OMOIGICKHMH forNumber(int value) {
+        switch (value) {
+          case 0: return NONE;
+          case 695: return PEPPOHPHJOJ;
+          case 1: return NNBKOLMPOEA;
+          default: return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<OMOIGICKHMH>
+          internalGetValueMap() {
+        return internalValueMap;
+      }
+      private static final com.google.protobuf.Internal.EnumLiteMap<
+          OMOIGICKHMH> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<OMOIGICKHMH>() {
+              public OMOIGICKHMH findValueByNumber(int number) {
+                return OMOIGICKHMH.forNumber(number);
+              }
+            };
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor
+          getValueDescriptor() {
+        if (index == -1) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
+        return getDescriptor().getValues().get(index);
+      }
+      public final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptorForType() {
+        return getDescriptor();
+      }
+      public static final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptor() {
+        return emu.grasscutter.net.proto.McoinExchangeHcoinReqOuterClass.McoinExchangeHcoinReq.getDescriptor().getEnumTypes().get(0);
+      }
+
+      private static final OMOIGICKHMH[] VALUES = getStaticValuesArray();
+      private static OMOIGICKHMH[] getStaticValuesArray() {
+        return new OMOIGICKHMH[] {
+          NONE, PEPPOHPHJOJ, DCDNILFDFLB, NNBKOLMPOEA, EAJIABGAOCI, 
+        };
+      }
+      public static OMOIGICKHMH valueOf(
+          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException(
+            "EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      private final int index;
+      private final int value;
+
+      private OMOIGICKHMH(int index, int value) {
+        this.index = index;
+        this.value = value;
+      }
+
+      // @@protoc_insertion_point(enum_scope:McoinExchangeHcoinReq.OMOIGICKHMH)
     }
 
-    public static final int MCOIN_COST_FIELD_NUMBER = 3;
-    private int mcoinCost_;
+    public static final int MCOINCOST_FIELD_NUMBER = 15;
+    private int mcoinCost_ = 0;
     /**
-     * <code>uint32 mcoin_cost = 3;</code>
+     * <code>uint32 mcoinCost = 15;</code>
      * @return The mcoinCost.
      */
     @java.lang.Override
     public int getMcoinCost() {
       return mcoinCost_;
+    }
+
+    public static final int HCOIN_FIELD_NUMBER = 13;
+    private int hcoin_ = 0;
+    /**
+     * <code>uint32 hcoin = 13;</code>
+     * @return The hcoin.
+     */
+    @java.lang.Override
+    public int getHcoin() {
+      return hcoin_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -165,12 +246,12 @@ public final class McoinExchangeHcoinReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (hcoin_ != 0) {
-        output.writeUInt32(1, hcoin_);
+        output.writeUInt32(13, hcoin_);
       }
       if (mcoinCost_ != 0) {
-        output.writeUInt32(3, mcoinCost_);
+        output.writeUInt32(15, mcoinCost_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -181,13 +262,13 @@ public final class McoinExchangeHcoinReqOuterClass {
       size = 0;
       if (hcoin_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, hcoin_);
+          .computeUInt32Size(13, hcoin_);
       }
       if (mcoinCost_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, mcoinCost_);
+          .computeUInt32Size(15, mcoinCost_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -202,11 +283,11 @@ public final class McoinExchangeHcoinReqOuterClass {
       }
       emu.grasscutter.net.proto.McoinExchangeHcoinReqOuterClass.McoinExchangeHcoinReq other = (emu.grasscutter.net.proto.McoinExchangeHcoinReqOuterClass.McoinExchangeHcoinReq) obj;
 
-      if (getHcoin()
-          != other.getHcoin()) return false;
       if (getMcoinCost()
           != other.getMcoinCost()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (getHcoin()
+          != other.getHcoin()) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -217,11 +298,11 @@ public final class McoinExchangeHcoinReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + MCOINCOST_FIELD_NUMBER;
+      hash = (53 * hash) + getMcoinCost();
       hash = (37 * hash) + HCOIN_FIELD_NUMBER;
       hash = (53 * hash) + getHcoin();
-      hash = (37 * hash) + MCOIN_COST_FIELD_NUMBER;
-      hash = (53 * hash) + getMcoinCost();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -317,17 +398,6 @@ public final class McoinExchangeHcoinReqOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 623;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     *   IS_ALLOW_CLIENT = 1;
-     * }
-     * </pre>
-     *
      * Protobuf type {@code McoinExchangeHcoinReq}
      */
     public static final class Builder extends
@@ -349,26 +419,20 @@ public final class McoinExchangeHcoinReqOuterClass {
 
       // Construct using emu.grasscutter.net.proto.McoinExchangeHcoinReqOuterClass.McoinExchangeHcoinReq.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        hcoin_ = 0;
-
+        bitField0_ = 0;
         mcoinCost_ = 0;
-
+        hcoin_ = 0;
         return this;
       }
 
@@ -395,10 +459,19 @@ public final class McoinExchangeHcoinReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.McoinExchangeHcoinReqOuterClass.McoinExchangeHcoinReq buildPartial() {
         emu.grasscutter.net.proto.McoinExchangeHcoinReqOuterClass.McoinExchangeHcoinReq result = new emu.grasscutter.net.proto.McoinExchangeHcoinReqOuterClass.McoinExchangeHcoinReq(this);
-        result.hcoin_ = hcoin_;
-        result.mcoinCost_ = mcoinCost_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.McoinExchangeHcoinReqOuterClass.McoinExchangeHcoinReq result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.mcoinCost_ = mcoinCost_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.hcoin_ = hcoin_;
+        }
       }
 
       @java.lang.Override
@@ -445,13 +518,13 @@ public final class McoinExchangeHcoinReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.McoinExchangeHcoinReqOuterClass.McoinExchangeHcoinReq other) {
         if (other == emu.grasscutter.net.proto.McoinExchangeHcoinReqOuterClass.McoinExchangeHcoinReq.getDefaultInstance()) return this;
-        if (other.getHcoin() != 0) {
-          setHcoin(other.getHcoin());
-        }
         if (other.getMcoinCost() != 0) {
           setMcoinCost(other.getMcoinCost());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        if (other.getHcoin() != 0) {
+          setHcoin(other.getHcoin());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -466,54 +539,47 @@ public final class McoinExchangeHcoinReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.McoinExchangeHcoinReqOuterClass.McoinExchangeHcoinReq parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 104: {
+                hcoin_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 104
+              case 120: {
+                mcoinCost_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 120
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.McoinExchangeHcoinReqOuterClass.McoinExchangeHcoinReq) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
-
-      private int hcoin_ ;
-      /**
-       * <code>uint32 hcoin = 1;</code>
-       * @return The hcoin.
-       */
-      @java.lang.Override
-      public int getHcoin() {
-        return hcoin_;
-      }
-      /**
-       * <code>uint32 hcoin = 1;</code>
-       * @param value The hcoin to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHcoin(int value) {
-        
-        hcoin_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 hcoin = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearHcoin() {
-        
-        hcoin_ = 0;
-        onChanged();
-        return this;
-      }
+      private int bitField0_;
 
       private int mcoinCost_ ;
       /**
-       * <code>uint32 mcoin_cost = 3;</code>
+       * <code>uint32 mcoinCost = 15;</code>
        * @return The mcoinCost.
        */
       @java.lang.Override
@@ -521,23 +587,56 @@ public final class McoinExchangeHcoinReqOuterClass {
         return mcoinCost_;
       }
       /**
-       * <code>uint32 mcoin_cost = 3;</code>
+       * <code>uint32 mcoinCost = 15;</code>
        * @param value The mcoinCost to set.
        * @return This builder for chaining.
        */
       public Builder setMcoinCost(int value) {
         
         mcoinCost_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 mcoin_cost = 3;</code>
+       * <code>uint32 mcoinCost = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearMcoinCost() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         mcoinCost_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int hcoin_ ;
+      /**
+       * <code>uint32 hcoin = 13;</code>
+       * @return The hcoin.
+       */
+      @java.lang.Override
+      public int getHcoin() {
+        return hcoin_;
+      }
+      /**
+       * <code>uint32 hcoin = 13;</code>
+       * @param value The hcoin to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHcoin(int value) {
+        
+        hcoin_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 hcoin = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHcoin() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        hcoin_ = 0;
         onChanged();
         return this;
       }
@@ -574,7 +673,18 @@ public final class McoinExchangeHcoinReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new McoinExchangeHcoinReq(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -608,10 +718,12 @@ public final class McoinExchangeHcoinReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033McoinExchangeHcoinReq.proto\":\n\025McoinEx" +
-      "changeHcoinReq\022\r\n\005hcoin\030\001 \001(\r\022\022\n\nmcoin_c" +
-      "ost\030\003 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
-      "proto3"
+      "\n\033McoinExchangeHcoinReq.proto\"\233\001\n\025McoinE" +
+      "xchangeHcoinReq\022\021\n\tmcoinCost\030\017 \001(\r\022\r\n\005hc" +
+      "oin\030\r \001(\r\"`\n\013OMOIGICKHMH\022\010\n\004NONE\020\000\022\020\n\013PE" +
+      "PPOHPHJOJ\020\267\005\022\017\n\013DCDNILFDFLB\020\000\022\017\n\013NNBKOLM" +
+      "POEA\020\001\022\017\n\013EAJIABGAOCI\020\001\032\002\020\001B\033\n\031emu.grass" +
+      "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -622,7 +734,7 @@ public final class McoinExchangeHcoinReqOuterClass {
     internal_static_McoinExchangeHcoinReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_McoinExchangeHcoinReq_descriptor,
-        new java.lang.String[] { "Hcoin", "McoinCost", });
+        new java.lang.String[] { "McoinCost", "Hcoin", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

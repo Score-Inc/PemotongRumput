@@ -19,32 +19,21 @@ public final class ActivityInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.ActivityInfo activity_info = 12;</code>
+     * <code>.ActivityInfo activityInfo = 3;</code>
      * @return Whether the activityInfo field is set.
      */
     boolean hasActivityInfo();
     /**
-     * <code>.ActivityInfo activity_info = 12;</code>
+     * <code>.ActivityInfo activityInfo = 3;</code>
      * @return The activityInfo.
      */
     emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo getActivityInfo();
     /**
-     * <code>.ActivityInfo activity_info = 12;</code>
+     * <code>.ActivityInfo activityInfo = 3;</code>
      */
     emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfoOrBuilder getActivityInfoOrBuilder();
   }
   /**
-   * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 2119;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   *   IS_ALLOW_CLIENT = 1;
-   * }
-   * </pre>
-   *
    * Protobuf type {@code ActivityInfoNotify}
    */
   public static final class ActivityInfoNotify extends
@@ -71,56 +60,6 @@ public final class ActivityInfoNotifyOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private ActivityInfoNotify(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 98: {
-              emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo.Builder subBuilder = null;
-              if (activityInfo_ != null) {
-                subBuilder = activityInfo_.toBuilder();
-              }
-              activityInfo_ = input.readMessage(emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(activityInfo_);
-                activityInfo_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.ActivityInfoNotifyOuterClass.internal_static_ActivityInfoNotify_descriptor;
@@ -134,10 +73,149 @@ public final class ActivityInfoNotifyOuterClass {
               emu.grasscutter.net.proto.ActivityInfoNotifyOuterClass.ActivityInfoNotify.class, emu.grasscutter.net.proto.ActivityInfoNotifyOuterClass.ActivityInfoNotify.Builder.class);
     }
 
-    public static final int ACTIVITY_INFO_FIELD_NUMBER = 12;
+    /**
+     * Protobuf enum {@code ActivityInfoNotify.KBFOADCMONG}
+     */
+    public enum KBFOADCMONG
+        implements com.google.protobuf.ProtocolMessageEnum {
+      /**
+       * <code>NONE = 0;</code>
+       */
+      NONE(0, 0),
+      /**
+       * <code>PEPPOHPHJOJ = 2136;</code>
+       */
+      PEPPOHPHJOJ(1, 2136),
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      NNBKOLMPOEA(3, 1),
+      UNRECOGNIZED(-1, -1),
+      ;
+
+      /**
+       * <code>DCDNILFDFLB = 0;</code>
+       */
+      public static final KBFOADCMONG DCDNILFDFLB = NONE;
+      /**
+       * <code>EAJIABGAOCI = 1;</code>
+       */
+      public static final KBFOADCMONG EAJIABGAOCI = NNBKOLMPOEA;
+      /**
+       * <code>NONE = 0;</code>
+       */
+      public static final int NONE_VALUE = 0;
+      /**
+       * <code>PEPPOHPHJOJ = 2136;</code>
+       */
+      public static final int PEPPOHPHJOJ_VALUE = 2136;
+      /**
+       * <code>DCDNILFDFLB = 0;</code>
+       */
+      public static final int DCDNILFDFLB_VALUE = 0;
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      public static final int NNBKOLMPOEA_VALUE = 1;
+      /**
+       * <code>EAJIABGAOCI = 1;</code>
+       */
+      public static final int EAJIABGAOCI_VALUE = 1;
+
+
+      public final int getNumber() {
+        if (index == -1) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static KBFOADCMONG valueOf(int value) {
+        return forNumber(value);
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
+      public static KBFOADCMONG forNumber(int value) {
+        switch (value) {
+          case 0: return NONE;
+          case 2136: return PEPPOHPHJOJ;
+          case 1: return NNBKOLMPOEA;
+          default: return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<KBFOADCMONG>
+          internalGetValueMap() {
+        return internalValueMap;
+      }
+      private static final com.google.protobuf.Internal.EnumLiteMap<
+          KBFOADCMONG> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<KBFOADCMONG>() {
+              public KBFOADCMONG findValueByNumber(int number) {
+                return KBFOADCMONG.forNumber(number);
+              }
+            };
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor
+          getValueDescriptor() {
+        if (index == -1) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
+        return getDescriptor().getValues().get(index);
+      }
+      public final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptorForType() {
+        return getDescriptor();
+      }
+      public static final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptor() {
+        return emu.grasscutter.net.proto.ActivityInfoNotifyOuterClass.ActivityInfoNotify.getDescriptor().getEnumTypes().get(0);
+      }
+
+      private static final KBFOADCMONG[] VALUES = getStaticValuesArray();
+      private static KBFOADCMONG[] getStaticValuesArray() {
+        return new KBFOADCMONG[] {
+          NONE, PEPPOHPHJOJ, DCDNILFDFLB, NNBKOLMPOEA, EAJIABGAOCI, 
+        };
+      }
+      public static KBFOADCMONG valueOf(
+          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException(
+            "EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      private final int index;
+      private final int value;
+
+      private KBFOADCMONG(int index, int value) {
+        this.index = index;
+        this.value = value;
+      }
+
+      // @@protoc_insertion_point(enum_scope:ActivityInfoNotify.KBFOADCMONG)
+    }
+
+    public static final int ACTIVITYINFO_FIELD_NUMBER = 3;
     private emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo activityInfo_;
     /**
-     * <code>.ActivityInfo activity_info = 12;</code>
+     * <code>.ActivityInfo activityInfo = 3;</code>
      * @return Whether the activityInfo field is set.
      */
     @java.lang.Override
@@ -145,7 +223,7 @@ public final class ActivityInfoNotifyOuterClass {
       return activityInfo_ != null;
     }
     /**
-     * <code>.ActivityInfo activity_info = 12;</code>
+     * <code>.ActivityInfo activityInfo = 3;</code>
      * @return The activityInfo.
      */
     @java.lang.Override
@@ -153,11 +231,11 @@ public final class ActivityInfoNotifyOuterClass {
       return activityInfo_ == null ? emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo.getDefaultInstance() : activityInfo_;
     }
     /**
-     * <code>.ActivityInfo activity_info = 12;</code>
+     * <code>.ActivityInfo activityInfo = 3;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfoOrBuilder getActivityInfoOrBuilder() {
-      return getActivityInfo();
+      return activityInfo_ == null ? emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo.getDefaultInstance() : activityInfo_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -175,9 +253,9 @@ public final class ActivityInfoNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (activityInfo_ != null) {
-        output.writeMessage(12, getActivityInfo());
+        output.writeMessage(3, getActivityInfo());
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -188,9 +266,9 @@ public final class ActivityInfoNotifyOuterClass {
       size = 0;
       if (activityInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, getActivityInfo());
+          .computeMessageSize(3, getActivityInfo());
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -210,7 +288,7 @@ public final class ActivityInfoNotifyOuterClass {
         if (!getActivityInfo()
             .equals(other.getActivityInfo())) return false;
       }
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -222,10 +300,10 @@ public final class ActivityInfoNotifyOuterClass {
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
       if (hasActivityInfo()) {
-        hash = (37 * hash) + ACTIVITY_INFO_FIELD_NUMBER;
+        hash = (37 * hash) + ACTIVITYINFO_FIELD_NUMBER;
         hash = (53 * hash) + getActivityInfo().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -321,17 +399,6 @@ public final class ActivityInfoNotifyOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 2119;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     *   IS_ALLOW_CLIENT = 1;
-     * }
-     * </pre>
-     *
      * Protobuf type {@code ActivityInfoNotify}
      */
     public static final class Builder extends
@@ -353,26 +420,21 @@ public final class ActivityInfoNotifyOuterClass {
 
       // Construct using emu.grasscutter.net.proto.ActivityInfoNotifyOuterClass.ActivityInfoNotify.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (activityInfoBuilder_ == null) {
-          activityInfo_ = null;
-        } else {
-          activityInfo_ = null;
+        bitField0_ = 0;
+        activityInfo_ = null;
+        if (activityInfoBuilder_ != null) {
+          activityInfoBuilder_.dispose();
           activityInfoBuilder_ = null;
         }
         return this;
@@ -401,13 +463,18 @@ public final class ActivityInfoNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ActivityInfoNotifyOuterClass.ActivityInfoNotify buildPartial() {
         emu.grasscutter.net.proto.ActivityInfoNotifyOuterClass.ActivityInfoNotify result = new emu.grasscutter.net.proto.ActivityInfoNotifyOuterClass.ActivityInfoNotify(this);
-        if (activityInfoBuilder_ == null) {
-          result.activityInfo_ = activityInfo_;
-        } else {
-          result.activityInfo_ = activityInfoBuilder_.build();
-        }
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.ActivityInfoNotifyOuterClass.ActivityInfoNotify result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.activityInfo_ = activityInfoBuilder_ == null
+              ? activityInfo_
+              : activityInfoBuilder_.build();
+        }
       }
 
       @java.lang.Override
@@ -457,7 +524,7 @@ public final class ActivityInfoNotifyOuterClass {
         if (other.hasActivityInfo()) {
           mergeActivityInfo(other.getActivityInfo());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -472,32 +539,53 @@ public final class ActivityInfoNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.ActivityInfoNotifyOuterClass.ActivityInfoNotify parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 26: {
+                input.readMessage(
+                    getActivityInfoFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 26
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.ActivityInfoNotifyOuterClass.ActivityInfoNotify) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo activityInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo, emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo.Builder, emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfoOrBuilder> activityInfoBuilder_;
       /**
-       * <code>.ActivityInfo activity_info = 12;</code>
+       * <code>.ActivityInfo activityInfo = 3;</code>
        * @return Whether the activityInfo field is set.
        */
       public boolean hasActivityInfo() {
-        return activityInfoBuilder_ != null || activityInfo_ != null;
+        return ((bitField0_ & 0x00000001) != 0);
       }
       /**
-       * <code>.ActivityInfo activity_info = 12;</code>
+       * <code>.ActivityInfo activityInfo = 3;</code>
        * @return The activityInfo.
        */
       public emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo getActivityInfo() {
@@ -508,7 +596,7 @@ public final class ActivityInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>.ActivityInfo activity_info = 12;</code>
+       * <code>.ActivityInfo activityInfo = 3;</code>
        */
       public Builder setActivityInfo(emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo value) {
         if (activityInfoBuilder_ == null) {
@@ -516,69 +604,69 @@ public final class ActivityInfoNotifyOuterClass {
             throw new NullPointerException();
           }
           activityInfo_ = value;
-          onChanged();
         } else {
           activityInfoBuilder_.setMessage(value);
         }
-
+        bitField0_ |= 0x00000001;
+        onChanged();
         return this;
       }
       /**
-       * <code>.ActivityInfo activity_info = 12;</code>
+       * <code>.ActivityInfo activityInfo = 3;</code>
        */
       public Builder setActivityInfo(
           emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo.Builder builderForValue) {
         if (activityInfoBuilder_ == null) {
           activityInfo_ = builderForValue.build();
-          onChanged();
         } else {
           activityInfoBuilder_.setMessage(builderForValue.build());
         }
-
+        bitField0_ |= 0x00000001;
+        onChanged();
         return this;
       }
       /**
-       * <code>.ActivityInfo activity_info = 12;</code>
+       * <code>.ActivityInfo activityInfo = 3;</code>
        */
       public Builder mergeActivityInfo(emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo value) {
         if (activityInfoBuilder_ == null) {
-          if (activityInfo_ != null) {
-            activityInfo_ =
-              emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo.newBuilder(activityInfo_).mergeFrom(value).buildPartial();
+          if (((bitField0_ & 0x00000001) != 0) &&
+            activityInfo_ != null &&
+            activityInfo_ != emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo.getDefaultInstance()) {
+            getActivityInfoBuilder().mergeFrom(value);
           } else {
             activityInfo_ = value;
           }
-          onChanged();
         } else {
           activityInfoBuilder_.mergeFrom(value);
         }
-
+        bitField0_ |= 0x00000001;
+        onChanged();
         return this;
       }
       /**
-       * <code>.ActivityInfo activity_info = 12;</code>
+       * <code>.ActivityInfo activityInfo = 3;</code>
        */
       public Builder clearActivityInfo() {
-        if (activityInfoBuilder_ == null) {
-          activityInfo_ = null;
-          onChanged();
-        } else {
-          activityInfo_ = null;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        activityInfo_ = null;
+        if (activityInfoBuilder_ != null) {
+          activityInfoBuilder_.dispose();
           activityInfoBuilder_ = null;
         }
-
+        onChanged();
         return this;
       }
       /**
-       * <code>.ActivityInfo activity_info = 12;</code>
+       * <code>.ActivityInfo activityInfo = 3;</code>
        */
       public emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo.Builder getActivityInfoBuilder() {
-        
+        bitField0_ |= 0x00000001;
         onChanged();
         return getActivityInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.ActivityInfo activity_info = 12;</code>
+       * <code>.ActivityInfo activityInfo = 3;</code>
        */
       public emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfoOrBuilder getActivityInfoOrBuilder() {
         if (activityInfoBuilder_ != null) {
@@ -589,7 +677,7 @@ public final class ActivityInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>.ActivityInfo activity_info = 12;</code>
+       * <code>.ActivityInfo activityInfo = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo, emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo.Builder, emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfoOrBuilder> 
@@ -637,7 +725,18 @@ public final class ActivityInfoNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new ActivityInfoNotify(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -672,9 +771,12 @@ public final class ActivityInfoNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030ActivityInfoNotify.proto\032\022ActivityInfo" +
-      ".proto\":\n\022ActivityInfoNotify\022$\n\ractivity" +
-      "_info\030\014 \001(\0132\r.ActivityInfoB\033\n\031emu.grassc" +
-      "utter.net.protob\006proto3"
+      ".proto\"\233\001\n\022ActivityInfoNotify\022#\n\014activit" +
+      "yInfo\030\003 \001(\0132\r.ActivityInfo\"`\n\013KBFOADCMON" +
+      "G\022\010\n\004NONE\020\000\022\020\n\013PEPPOHPHJOJ\020\330\020\022\017\n\013DCDNILF" +
+      "DFLB\020\000\022\017\n\013NNBKOLMPOEA\020\001\022\017\n\013EAJIABGAOCI\020\001" +
+      "\032\002\020\001B\033\n\031emu.grasscutter.net.protob\006proto" +
+      "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -19,24 +19,24 @@ public final class CustomCommonNodeInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 parent_index = 1;</code>
+     * <code>int32 parentIndex = 1;</code>
      * @return The parentIndex.
      */
     int getParentIndex();
 
     /**
-     * <code>uint32 config_id = 2;</code>
+     * <code>uint32 configId = 2;</code>
      * @return The configId.
      */
     int getConfigId();
 
     /**
-     * <code>string slot_identifier = 3;</code>
+     * <code>string slotIdentifier = 3;</code>
      * @return The slotIdentifier.
      */
     java.lang.String getSlotIdentifier();
     /**
-     * <code>string slot_identifier = 3;</code>
+     * <code>string slotIdentifier = 3;</code>
      * @return The bytes for slotIdentifier.
      */
     com.google.protobuf.ByteString
@@ -70,59 +70,6 @@ public final class CustomCommonNodeInfoOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private CustomCommonNodeInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              parentIndex_ = input.readInt32();
-              break;
-            }
-            case 16: {
-
-              configId_ = input.readUInt32();
-              break;
-            }
-            case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              slotIdentifier_ = s;
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.internal_static_CustomCommonNodeInfo_descriptor;
@@ -136,10 +83,10 @@ public final class CustomCommonNodeInfoOuterClass {
               emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfo.class, emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfo.Builder.class);
     }
 
-    public static final int PARENT_INDEX_FIELD_NUMBER = 1;
-    private int parentIndex_;
+    public static final int PARENTINDEX_FIELD_NUMBER = 1;
+    private int parentIndex_ = 0;
     /**
-     * <code>int32 parent_index = 1;</code>
+     * <code>int32 parentIndex = 1;</code>
      * @return The parentIndex.
      */
     @java.lang.Override
@@ -147,10 +94,10 @@ public final class CustomCommonNodeInfoOuterClass {
       return parentIndex_;
     }
 
-    public static final int CONFIG_ID_FIELD_NUMBER = 2;
-    private int configId_;
+    public static final int CONFIGID_FIELD_NUMBER = 2;
+    private int configId_ = 0;
     /**
-     * <code>uint32 config_id = 2;</code>
+     * <code>uint32 configId = 2;</code>
      * @return The configId.
      */
     @java.lang.Override
@@ -158,10 +105,11 @@ public final class CustomCommonNodeInfoOuterClass {
       return configId_;
     }
 
-    public static final int SLOT_IDENTIFIER_FIELD_NUMBER = 3;
-    private volatile java.lang.Object slotIdentifier_;
+    public static final int SLOTIDENTIFIER_FIELD_NUMBER = 3;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object slotIdentifier_ = "";
     /**
-     * <code>string slot_identifier = 3;</code>
+     * <code>string slotIdentifier = 3;</code>
      * @return The slotIdentifier.
      */
     @java.lang.Override
@@ -178,7 +126,7 @@ public final class CustomCommonNodeInfoOuterClass {
       }
     }
     /**
-     * <code>string slot_identifier = 3;</code>
+     * <code>string slotIdentifier = 3;</code>
      * @return The bytes for slotIdentifier.
      */
     @java.lang.Override
@@ -219,7 +167,7 @@ public final class CustomCommonNodeInfoOuterClass {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(slotIdentifier_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 3, slotIdentifier_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -239,7 +187,7 @@ public final class CustomCommonNodeInfoOuterClass {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(slotIdentifier_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, slotIdentifier_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -260,7 +208,7 @@ public final class CustomCommonNodeInfoOuterClass {
           != other.getConfigId()) return false;
       if (!getSlotIdentifier()
           .equals(other.getSlotIdentifier())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -271,13 +219,13 @@ public final class CustomCommonNodeInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + PARENT_INDEX_FIELD_NUMBER;
+      hash = (37 * hash) + PARENTINDEX_FIELD_NUMBER;
       hash = (53 * hash) + getParentIndex();
-      hash = (37 * hash) + CONFIG_ID_FIELD_NUMBER;
+      hash = (37 * hash) + CONFIGID_FIELD_NUMBER;
       hash = (53 * hash) + getConfigId();
-      hash = (37 * hash) + SLOT_IDENTIFIER_FIELD_NUMBER;
+      hash = (37 * hash) + SLOTIDENTIFIER_FIELD_NUMBER;
       hash = (53 * hash) + getSlotIdentifier().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -394,28 +342,21 @@ public final class CustomCommonNodeInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         parentIndex_ = 0;
-
         configId_ = 0;
-
         slotIdentifier_ = "";
-
         return this;
       }
 
@@ -442,11 +383,22 @@ public final class CustomCommonNodeInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfo buildPartial() {
         emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfo result = new emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfo(this);
-        result.parentIndex_ = parentIndex_;
-        result.configId_ = configId_;
-        result.slotIdentifier_ = slotIdentifier_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.parentIndex_ = parentIndex_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.configId_ = configId_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.slotIdentifier_ = slotIdentifier_;
+        }
       }
 
       @java.lang.Override
@@ -501,9 +453,10 @@ public final class CustomCommonNodeInfoOuterClass {
         }
         if (!other.getSlotIdentifier().isEmpty()) {
           slotIdentifier_ = other.slotIdentifier_;
+          bitField0_ |= 0x00000004;
           onChanged();
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -518,23 +471,52 @@ public final class CustomCommonNodeInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                parentIndex_ = input.readInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              case 16: {
+                configId_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 16
+              case 26: {
+                slotIdentifier_ = input.readStringRequireUtf8();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 26
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.CustomCommonNodeInfoOuterClass.CustomCommonNodeInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private int parentIndex_ ;
       /**
-       * <code>int32 parent_index = 1;</code>
+       * <code>int32 parentIndex = 1;</code>
        * @return The parentIndex.
        */
       @java.lang.Override
@@ -542,22 +524,23 @@ public final class CustomCommonNodeInfoOuterClass {
         return parentIndex_;
       }
       /**
-       * <code>int32 parent_index = 1;</code>
+       * <code>int32 parentIndex = 1;</code>
        * @param value The parentIndex to set.
        * @return This builder for chaining.
        */
       public Builder setParentIndex(int value) {
         
         parentIndex_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 parent_index = 1;</code>
+       * <code>int32 parentIndex = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearParentIndex() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         parentIndex_ = 0;
         onChanged();
         return this;
@@ -565,7 +548,7 @@ public final class CustomCommonNodeInfoOuterClass {
 
       private int configId_ ;
       /**
-       * <code>uint32 config_id = 2;</code>
+       * <code>uint32 configId = 2;</code>
        * @return The configId.
        */
       @java.lang.Override
@@ -573,22 +556,23 @@ public final class CustomCommonNodeInfoOuterClass {
         return configId_;
       }
       /**
-       * <code>uint32 config_id = 2;</code>
+       * <code>uint32 configId = 2;</code>
        * @param value The configId to set.
        * @return This builder for chaining.
        */
       public Builder setConfigId(int value) {
         
         configId_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 config_id = 2;</code>
+       * <code>uint32 configId = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearConfigId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         configId_ = 0;
         onChanged();
         return this;
@@ -596,7 +580,7 @@ public final class CustomCommonNodeInfoOuterClass {
 
       private java.lang.Object slotIdentifier_ = "";
       /**
-       * <code>string slot_identifier = 3;</code>
+       * <code>string slotIdentifier = 3;</code>
        * @return The slotIdentifier.
        */
       public java.lang.String getSlotIdentifier() {
@@ -612,7 +596,7 @@ public final class CustomCommonNodeInfoOuterClass {
         }
       }
       /**
-       * <code>string slot_identifier = 3;</code>
+       * <code>string slotIdentifier = 3;</code>
        * @return The bytes for slotIdentifier.
        */
       public com.google.protobuf.ByteString
@@ -629,43 +613,39 @@ public final class CustomCommonNodeInfoOuterClass {
         }
       }
       /**
-       * <code>string slot_identifier = 3;</code>
+       * <code>string slotIdentifier = 3;</code>
        * @param value The slotIdentifier to set.
        * @return This builder for chaining.
        */
       public Builder setSlotIdentifier(
           java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
+        if (value == null) { throw new NullPointerException(); }
         slotIdentifier_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
       /**
-       * <code>string slot_identifier = 3;</code>
+       * <code>string slotIdentifier = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearSlotIdentifier() {
-        
         slotIdentifier_ = getDefaultInstance().getSlotIdentifier();
+        bitField0_ = (bitField0_ & ~0x00000004);
         onChanged();
         return this;
       }
       /**
-       * <code>string slot_identifier = 3;</code>
+       * <code>string slotIdentifier = 3;</code>
        * @param value The bytes for slotIdentifier to set.
        * @return This builder for chaining.
        */
       public Builder setSlotIdentifierBytes(
           com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
+        if (value == null) { throw new NullPointerException(); }
+        checkByteStringIsUtf8(value);
         slotIdentifier_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
@@ -702,7 +682,18 @@ public final class CustomCommonNodeInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new CustomCommonNodeInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -736,10 +727,10 @@ public final class CustomCommonNodeInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\032CustomCommonNodeInfo.proto\"X\n\024CustomCo" +
-      "mmonNodeInfo\022\024\n\014parent_index\030\001 \001(\005\022\021\n\tco" +
-      "nfig_id\030\002 \001(\r\022\027\n\017slot_identifier\030\003 \001(\tB\033" +
-      "\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\032CustomCommonNodeInfo.proto\"U\n\024CustomCo" +
+      "mmonNodeInfo\022\023\n\013parentIndex\030\001 \001(\005\022\020\n\010con" +
+      "figId\030\002 \001(\r\022\026\n\016slotIdentifier\030\003 \001(\tB\033\n\031e" +
+      "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

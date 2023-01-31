@@ -19,35 +19,24 @@ public final class AvatarExpeditionStartReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 hour_time = 7;</code>
+     * <code>uint32 hourTime = 12;</code>
      * @return The hourTime.
      */
     int getHourTime();
 
     /**
-     * <code>uint64 avatar_guid = 3;</code>
+     * <code>uint64 avatarGuid = 8;</code>
      * @return The avatarGuid.
      */
     long getAvatarGuid();
 
     /**
-     * <code>uint32 exp_id = 2;</code>
+     * <code>uint32 expId = 14;</code>
      * @return The expId.
      */
     int getExpId();
   }
   /**
-   * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 1697;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   *   IS_ALLOW_CLIENT = 1;
-   * }
-   * </pre>
-   *
    * Protobuf type {@code AvatarExpeditionStartReq}
    */
   public static final class AvatarExpeditionStartReq extends
@@ -74,58 +63,6 @@ public final class AvatarExpeditionStartReqOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private AvatarExpeditionStartReq(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 16: {
-
-              expId_ = input.readUInt32();
-              break;
-            }
-            case 24: {
-
-              avatarGuid_ = input.readUInt64();
-              break;
-            }
-            case 56: {
-
-              hourTime_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.AvatarExpeditionStartReqOuterClass.internal_static_AvatarExpeditionStartReq_descriptor;
@@ -139,10 +76,149 @@ public final class AvatarExpeditionStartReqOuterClass {
               emu.grasscutter.net.proto.AvatarExpeditionStartReqOuterClass.AvatarExpeditionStartReq.class, emu.grasscutter.net.proto.AvatarExpeditionStartReqOuterClass.AvatarExpeditionStartReq.Builder.class);
     }
 
-    public static final int HOUR_TIME_FIELD_NUMBER = 7;
-    private int hourTime_;
     /**
-     * <code>uint32 hour_time = 7;</code>
+     * Protobuf enum {@code AvatarExpeditionStartReq.ALMCOHOIHKE}
+     */
+    public enum ALMCOHOIHKE
+        implements com.google.protobuf.ProtocolMessageEnum {
+      /**
+       * <code>NONE = 0;</code>
+       */
+      NONE(0, 0),
+      /**
+       * <code>PEPPOHPHJOJ = 1656;</code>
+       */
+      PEPPOHPHJOJ(1, 1656),
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      NNBKOLMPOEA(3, 1),
+      UNRECOGNIZED(-1, -1),
+      ;
+
+      /**
+       * <code>DCDNILFDFLB = 0;</code>
+       */
+      public static final ALMCOHOIHKE DCDNILFDFLB = NONE;
+      /**
+       * <code>EAJIABGAOCI = 1;</code>
+       */
+      public static final ALMCOHOIHKE EAJIABGAOCI = NNBKOLMPOEA;
+      /**
+       * <code>NONE = 0;</code>
+       */
+      public static final int NONE_VALUE = 0;
+      /**
+       * <code>PEPPOHPHJOJ = 1656;</code>
+       */
+      public static final int PEPPOHPHJOJ_VALUE = 1656;
+      /**
+       * <code>DCDNILFDFLB = 0;</code>
+       */
+      public static final int DCDNILFDFLB_VALUE = 0;
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      public static final int NNBKOLMPOEA_VALUE = 1;
+      /**
+       * <code>EAJIABGAOCI = 1;</code>
+       */
+      public static final int EAJIABGAOCI_VALUE = 1;
+
+
+      public final int getNumber() {
+        if (index == -1) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static ALMCOHOIHKE valueOf(int value) {
+        return forNumber(value);
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
+      public static ALMCOHOIHKE forNumber(int value) {
+        switch (value) {
+          case 0: return NONE;
+          case 1656: return PEPPOHPHJOJ;
+          case 1: return NNBKOLMPOEA;
+          default: return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<ALMCOHOIHKE>
+          internalGetValueMap() {
+        return internalValueMap;
+      }
+      private static final com.google.protobuf.Internal.EnumLiteMap<
+          ALMCOHOIHKE> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<ALMCOHOIHKE>() {
+              public ALMCOHOIHKE findValueByNumber(int number) {
+                return ALMCOHOIHKE.forNumber(number);
+              }
+            };
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor
+          getValueDescriptor() {
+        if (index == -1) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
+        return getDescriptor().getValues().get(index);
+      }
+      public final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptorForType() {
+        return getDescriptor();
+      }
+      public static final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptor() {
+        return emu.grasscutter.net.proto.AvatarExpeditionStartReqOuterClass.AvatarExpeditionStartReq.getDescriptor().getEnumTypes().get(0);
+      }
+
+      private static final ALMCOHOIHKE[] VALUES = getStaticValuesArray();
+      private static ALMCOHOIHKE[] getStaticValuesArray() {
+        return new ALMCOHOIHKE[] {
+          NONE, PEPPOHPHJOJ, DCDNILFDFLB, NNBKOLMPOEA, EAJIABGAOCI, 
+        };
+      }
+      public static ALMCOHOIHKE valueOf(
+          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException(
+            "EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      private final int index;
+      private final int value;
+
+      private ALMCOHOIHKE(int index, int value) {
+        this.index = index;
+        this.value = value;
+      }
+
+      // @@protoc_insertion_point(enum_scope:AvatarExpeditionStartReq.ALMCOHOIHKE)
+    }
+
+    public static final int HOURTIME_FIELD_NUMBER = 12;
+    private int hourTime_ = 0;
+    /**
+     * <code>uint32 hourTime = 12;</code>
      * @return The hourTime.
      */
     @java.lang.Override
@@ -150,10 +226,10 @@ public final class AvatarExpeditionStartReqOuterClass {
       return hourTime_;
     }
 
-    public static final int AVATAR_GUID_FIELD_NUMBER = 3;
-    private long avatarGuid_;
+    public static final int AVATARGUID_FIELD_NUMBER = 8;
+    private long avatarGuid_ = 0L;
     /**
-     * <code>uint64 avatar_guid = 3;</code>
+     * <code>uint64 avatarGuid = 8;</code>
      * @return The avatarGuid.
      */
     @java.lang.Override
@@ -161,10 +237,10 @@ public final class AvatarExpeditionStartReqOuterClass {
       return avatarGuid_;
     }
 
-    public static final int EXP_ID_FIELD_NUMBER = 2;
-    private int expId_;
+    public static final int EXPID_FIELD_NUMBER = 14;
+    private int expId_ = 0;
     /**
-     * <code>uint32 exp_id = 2;</code>
+     * <code>uint32 expId = 14;</code>
      * @return The expId.
      */
     @java.lang.Override
@@ -186,16 +262,16 @@ public final class AvatarExpeditionStartReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (expId_ != 0) {
-        output.writeUInt32(2, expId_);
-      }
       if (avatarGuid_ != 0L) {
-        output.writeUInt64(3, avatarGuid_);
+        output.writeUInt64(8, avatarGuid_);
       }
       if (hourTime_ != 0) {
-        output.writeUInt32(7, hourTime_);
+        output.writeUInt32(12, hourTime_);
       }
-      unknownFields.writeTo(output);
+      if (expId_ != 0) {
+        output.writeUInt32(14, expId_);
+      }
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -204,19 +280,19 @@ public final class AvatarExpeditionStartReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (expId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, expId_);
-      }
       if (avatarGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(3, avatarGuid_);
+          .computeUInt64Size(8, avatarGuid_);
       }
       if (hourTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, hourTime_);
+          .computeUInt32Size(12, hourTime_);
       }
-      size += unknownFields.getSerializedSize();
+      if (expId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, expId_);
+      }
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -237,7 +313,7 @@ public final class AvatarExpeditionStartReqOuterClass {
           != other.getAvatarGuid()) return false;
       if (getExpId()
           != other.getExpId()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -248,14 +324,14 @@ public final class AvatarExpeditionStartReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + HOUR_TIME_FIELD_NUMBER;
+      hash = (37 * hash) + HOURTIME_FIELD_NUMBER;
       hash = (53 * hash) + getHourTime();
-      hash = (37 * hash) + AVATAR_GUID_FIELD_NUMBER;
+      hash = (37 * hash) + AVATARGUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getAvatarGuid());
-      hash = (37 * hash) + EXP_ID_FIELD_NUMBER;
+      hash = (37 * hash) + EXPID_FIELD_NUMBER;
       hash = (53 * hash) + getExpId();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -351,17 +427,6 @@ public final class AvatarExpeditionStartReqOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 1697;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     *   IS_ALLOW_CLIENT = 1;
-     * }
-     * </pre>
-     *
      * Protobuf type {@code AvatarExpeditionStartReq}
      */
     public static final class Builder extends
@@ -383,28 +448,21 @@ public final class AvatarExpeditionStartReqOuterClass {
 
       // Construct using emu.grasscutter.net.proto.AvatarExpeditionStartReqOuterClass.AvatarExpeditionStartReq.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         hourTime_ = 0;
-
         avatarGuid_ = 0L;
-
         expId_ = 0;
-
         return this;
       }
 
@@ -431,11 +489,22 @@ public final class AvatarExpeditionStartReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AvatarExpeditionStartReqOuterClass.AvatarExpeditionStartReq buildPartial() {
         emu.grasscutter.net.proto.AvatarExpeditionStartReqOuterClass.AvatarExpeditionStartReq result = new emu.grasscutter.net.proto.AvatarExpeditionStartReqOuterClass.AvatarExpeditionStartReq(this);
-        result.hourTime_ = hourTime_;
-        result.avatarGuid_ = avatarGuid_;
-        result.expId_ = expId_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.AvatarExpeditionStartReqOuterClass.AvatarExpeditionStartReq result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.hourTime_ = hourTime_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.avatarGuid_ = avatarGuid_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.expId_ = expId_;
+        }
       }
 
       @java.lang.Override
@@ -491,7 +560,7 @@ public final class AvatarExpeditionStartReqOuterClass {
         if (other.getExpId() != 0) {
           setExpId(other.getExpId());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -506,23 +575,52 @@ public final class AvatarExpeditionStartReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.AvatarExpeditionStartReqOuterClass.AvatarExpeditionStartReq parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 64: {
+                avatarGuid_ = input.readUInt64();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 64
+              case 96: {
+                hourTime_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 96
+              case 112: {
+                expId_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 112
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.AvatarExpeditionStartReqOuterClass.AvatarExpeditionStartReq) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private int hourTime_ ;
       /**
-       * <code>uint32 hour_time = 7;</code>
+       * <code>uint32 hourTime = 12;</code>
        * @return The hourTime.
        */
       @java.lang.Override
@@ -530,22 +628,23 @@ public final class AvatarExpeditionStartReqOuterClass {
         return hourTime_;
       }
       /**
-       * <code>uint32 hour_time = 7;</code>
+       * <code>uint32 hourTime = 12;</code>
        * @param value The hourTime to set.
        * @return This builder for chaining.
        */
       public Builder setHourTime(int value) {
         
         hourTime_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 hour_time = 7;</code>
+       * <code>uint32 hourTime = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearHourTime() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         hourTime_ = 0;
         onChanged();
         return this;
@@ -553,7 +652,7 @@ public final class AvatarExpeditionStartReqOuterClass {
 
       private long avatarGuid_ ;
       /**
-       * <code>uint64 avatar_guid = 3;</code>
+       * <code>uint64 avatarGuid = 8;</code>
        * @return The avatarGuid.
        */
       @java.lang.Override
@@ -561,22 +660,23 @@ public final class AvatarExpeditionStartReqOuterClass {
         return avatarGuid_;
       }
       /**
-       * <code>uint64 avatar_guid = 3;</code>
+       * <code>uint64 avatarGuid = 8;</code>
        * @param value The avatarGuid to set.
        * @return This builder for chaining.
        */
       public Builder setAvatarGuid(long value) {
         
         avatarGuid_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>uint64 avatar_guid = 3;</code>
+       * <code>uint64 avatarGuid = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarGuid() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         avatarGuid_ = 0L;
         onChanged();
         return this;
@@ -584,7 +684,7 @@ public final class AvatarExpeditionStartReqOuterClass {
 
       private int expId_ ;
       /**
-       * <code>uint32 exp_id = 2;</code>
+       * <code>uint32 expId = 14;</code>
        * @return The expId.
        */
       @java.lang.Override
@@ -592,22 +692,23 @@ public final class AvatarExpeditionStartReqOuterClass {
         return expId_;
       }
       /**
-       * <code>uint32 exp_id = 2;</code>
+       * <code>uint32 expId = 14;</code>
        * @param value The expId to set.
        * @return This builder for chaining.
        */
       public Builder setExpId(int value) {
         
         expId_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 exp_id = 2;</code>
+       * <code>uint32 expId = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearExpId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000004);
         expId_ = 0;
         onChanged();
         return this;
@@ -645,7 +746,18 @@ public final class AvatarExpeditionStartReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new AvatarExpeditionStartReq(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -679,10 +791,13 @@ public final class AvatarExpeditionStartReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\036AvatarExpeditionStartReq.proto\"R\n\030Avat" +
-      "arExpeditionStartReq\022\021\n\thour_time\030\007 \001(\r\022" +
-      "\023\n\013avatar_guid\030\003 \001(\004\022\016\n\006exp_id\030\002 \001(\rB\033\n\031" +
-      "emu.grasscutter.net.protob\006proto3"
+      "\n\036AvatarExpeditionStartReq.proto\"\261\001\n\030Ava" +
+      "tarExpeditionStartReq\022\020\n\010hourTime\030\014 \001(\r\022" +
+      "\022\n\navatarGuid\030\010 \001(\004\022\r\n\005expId\030\016 \001(\r\"`\n\013AL" +
+      "MCOHOIHKE\022\010\n\004NONE\020\000\022\020\n\013PEPPOHPHJOJ\020\370\014\022\017\n" +
+      "\013DCDNILFDFLB\020\000\022\017\n\013NNBKOLMPOEA\020\001\022\017\n\013EAJIA" +
+      "BGAOCI\020\001\032\002\020\001B\033\n\031emu.grasscutter.net.prot" +
+      "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

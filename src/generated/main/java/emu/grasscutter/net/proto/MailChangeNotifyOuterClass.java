@@ -19,57 +19,47 @@ public final class MailChangeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 del_mail_id_list = 15;</code>
+     * <code>repeated uint32 delMailIdList = 4;</code>
      * @return A list containing the delMailIdList.
      */
     java.util.List<java.lang.Integer> getDelMailIdListList();
     /**
-     * <code>repeated uint32 del_mail_id_list = 15;</code>
+     * <code>repeated uint32 delMailIdList = 4;</code>
      * @return The count of delMailIdList.
      */
     int getDelMailIdListCount();
     /**
-     * <code>repeated uint32 del_mail_id_list = 15;</code>
+     * <code>repeated uint32 delMailIdList = 4;</code>
      * @param index The index of the element to return.
      * @return The delMailIdList at the given index.
      */
     int getDelMailIdList(int index);
 
     /**
-     * <code>repeated .MailData mail_list = 2;</code>
+     * <code>repeated .MailData mailList = 5;</code>
      */
     java.util.List<emu.grasscutter.net.proto.MailDataOuterClass.MailData> 
         getMailListList();
     /**
-     * <code>repeated .MailData mail_list = 2;</code>
+     * <code>repeated .MailData mailList = 5;</code>
      */
     emu.grasscutter.net.proto.MailDataOuterClass.MailData getMailList(int index);
     /**
-     * <code>repeated .MailData mail_list = 2;</code>
+     * <code>repeated .MailData mailList = 5;</code>
      */
     int getMailListCount();
     /**
-     * <code>repeated .MailData mail_list = 2;</code>
+     * <code>repeated .MailData mailList = 5;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.MailDataOuterClass.MailDataOrBuilder> 
         getMailListOrBuilderList();
     /**
-     * <code>repeated .MailData mail_list = 2;</code>
+     * <code>repeated .MailData mailList = 5;</code>
      */
     emu.grasscutter.net.proto.MailDataOuterClass.MailDataOrBuilder getMailListOrBuilder(
         int index);
   }
   /**
-   * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 1430;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   * }
-   * </pre>
-   *
    * Protobuf type {@code MailChangeNotify}
    */
   public static final class MailChangeNotify extends
@@ -98,80 +88,6 @@ public final class MailChangeNotifyOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private MailChangeNotify(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 18: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                mailList_ = new java.util.ArrayList<emu.grasscutter.net.proto.MailDataOuterClass.MailData>();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              mailList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.MailDataOuterClass.MailData.parser(), extensionRegistry));
-              break;
-            }
-            case 120: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                delMailIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              delMailIdList_.addInt(input.readUInt32());
-              break;
-            }
-            case 122: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                delMailIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                delMailIdList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          mailList_ = java.util.Collections.unmodifiableList(mailList_);
-        }
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          delMailIdList_.makeImmutable(); // C
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.MailChangeNotifyOuterClass.internal_static_MailChangeNotify_descriptor;
@@ -185,10 +101,142 @@ public final class MailChangeNotifyOuterClass {
               emu.grasscutter.net.proto.MailChangeNotifyOuterClass.MailChangeNotify.class, emu.grasscutter.net.proto.MailChangeNotifyOuterClass.MailChangeNotify.Builder.class);
     }
 
-    public static final int DEL_MAIL_ID_LIST_FIELD_NUMBER = 15;
+    /**
+     * Protobuf enum {@code MailChangeNotify.MFJGGIBBDLE}
+     */
+    public enum MFJGGIBBDLE
+        implements com.google.protobuf.ProtocolMessageEnum {
+      /**
+       * <code>NONE = 0;</code>
+       */
+      NONE(0, 0),
+      /**
+       * <code>PEPPOHPHJOJ = 1455;</code>
+       */
+      PEPPOHPHJOJ(1, 1455),
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      NNBKOLMPOEA(3, 1),
+      UNRECOGNIZED(-1, -1),
+      ;
+
+      /**
+       * <code>DCDNILFDFLB = 0;</code>
+       */
+      public static final MFJGGIBBDLE DCDNILFDFLB = NONE;
+      /**
+       * <code>NONE = 0;</code>
+       */
+      public static final int NONE_VALUE = 0;
+      /**
+       * <code>PEPPOHPHJOJ = 1455;</code>
+       */
+      public static final int PEPPOHPHJOJ_VALUE = 1455;
+      /**
+       * <code>DCDNILFDFLB = 0;</code>
+       */
+      public static final int DCDNILFDFLB_VALUE = 0;
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      public static final int NNBKOLMPOEA_VALUE = 1;
+
+
+      public final int getNumber() {
+        if (index == -1) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static MFJGGIBBDLE valueOf(int value) {
+        return forNumber(value);
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
+      public static MFJGGIBBDLE forNumber(int value) {
+        switch (value) {
+          case 0: return NONE;
+          case 1455: return PEPPOHPHJOJ;
+          case 1: return NNBKOLMPOEA;
+          default: return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<MFJGGIBBDLE>
+          internalGetValueMap() {
+        return internalValueMap;
+      }
+      private static final com.google.protobuf.Internal.EnumLiteMap<
+          MFJGGIBBDLE> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<MFJGGIBBDLE>() {
+              public MFJGGIBBDLE findValueByNumber(int number) {
+                return MFJGGIBBDLE.forNumber(number);
+              }
+            };
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor
+          getValueDescriptor() {
+        if (index == -1) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
+        return getDescriptor().getValues().get(index);
+      }
+      public final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptorForType() {
+        return getDescriptor();
+      }
+      public static final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptor() {
+        return emu.grasscutter.net.proto.MailChangeNotifyOuterClass.MailChangeNotify.getDescriptor().getEnumTypes().get(0);
+      }
+
+      private static final MFJGGIBBDLE[] VALUES = getStaticValuesArray();
+      private static MFJGGIBBDLE[] getStaticValuesArray() {
+        return new MFJGGIBBDLE[] {
+          NONE, PEPPOHPHJOJ, DCDNILFDFLB, NNBKOLMPOEA, 
+        };
+      }
+      public static MFJGGIBBDLE valueOf(
+          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException(
+            "EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      private final int index;
+      private final int value;
+
+      private MFJGGIBBDLE(int index, int value) {
+        this.index = index;
+        this.value = value;
+      }
+
+      // @@protoc_insertion_point(enum_scope:MailChangeNotify.MFJGGIBBDLE)
+    }
+
+    public static final int DELMAILIDLIST_FIELD_NUMBER = 4;
+    @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList delMailIdList_;
     /**
-     * <code>repeated uint32 del_mail_id_list = 15;</code>
+     * <code>repeated uint32 delMailIdList = 4;</code>
      * @return A list containing the delMailIdList.
      */
     @java.lang.Override
@@ -197,14 +245,14 @@ public final class MailChangeNotifyOuterClass {
       return delMailIdList_;
     }
     /**
-     * <code>repeated uint32 del_mail_id_list = 15;</code>
+     * <code>repeated uint32 delMailIdList = 4;</code>
      * @return The count of delMailIdList.
      */
     public int getDelMailIdListCount() {
       return delMailIdList_.size();
     }
     /**
-     * <code>repeated uint32 del_mail_id_list = 15;</code>
+     * <code>repeated uint32 delMailIdList = 4;</code>
      * @param index The index of the element to return.
      * @return The delMailIdList at the given index.
      */
@@ -213,17 +261,18 @@ public final class MailChangeNotifyOuterClass {
     }
     private int delMailIdListMemoizedSerializedSize = -1;
 
-    public static final int MAIL_LIST_FIELD_NUMBER = 2;
+    public static final int MAILLIST_FIELD_NUMBER = 5;
+    @SuppressWarnings("serial")
     private java.util.List<emu.grasscutter.net.proto.MailDataOuterClass.MailData> mailList_;
     /**
-     * <code>repeated .MailData mail_list = 2;</code>
+     * <code>repeated .MailData mailList = 5;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.MailDataOuterClass.MailData> getMailListList() {
       return mailList_;
     }
     /**
-     * <code>repeated .MailData mail_list = 2;</code>
+     * <code>repeated .MailData mailList = 5;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.MailDataOuterClass.MailDataOrBuilder> 
@@ -231,21 +280,21 @@ public final class MailChangeNotifyOuterClass {
       return mailList_;
     }
     /**
-     * <code>repeated .MailData mail_list = 2;</code>
+     * <code>repeated .MailData mailList = 5;</code>
      */
     @java.lang.Override
     public int getMailListCount() {
       return mailList_.size();
     }
     /**
-     * <code>repeated .MailData mail_list = 2;</code>
+     * <code>repeated .MailData mailList = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.MailDataOuterClass.MailData getMailList(int index) {
       return mailList_.get(index);
     }
     /**
-     * <code>repeated .MailData mail_list = 2;</code>
+     * <code>repeated .MailData mailList = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.MailDataOuterClass.MailDataOrBuilder getMailListOrBuilder(
@@ -268,17 +317,17 @@ public final class MailChangeNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      for (int i = 0; i < mailList_.size(); i++) {
-        output.writeMessage(2, mailList_.get(i));
-      }
       if (getDelMailIdListList().size() > 0) {
-        output.writeUInt32NoTag(122);
+        output.writeUInt32NoTag(34);
         output.writeUInt32NoTag(delMailIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < delMailIdList_.size(); i++) {
         output.writeUInt32NoTag(delMailIdList_.getInt(i));
       }
-      unknownFields.writeTo(output);
+      for (int i = 0; i < mailList_.size(); i++) {
+        output.writeMessage(5, mailList_.get(i));
+      }
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -287,10 +336,6 @@ public final class MailChangeNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < mailList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, mailList_.get(i));
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < delMailIdList_.size(); i++) {
@@ -305,7 +350,11 @@ public final class MailChangeNotifyOuterClass {
         }
         delMailIdListMemoizedSerializedSize = dataSize;
       }
-      size += unknownFields.getSerializedSize();
+      for (int i = 0; i < mailList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(5, mailList_.get(i));
+      }
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -324,7 +373,7 @@ public final class MailChangeNotifyOuterClass {
           .equals(other.getDelMailIdListList())) return false;
       if (!getMailListList()
           .equals(other.getMailListList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -336,14 +385,14 @@ public final class MailChangeNotifyOuterClass {
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
       if (getDelMailIdListCount() > 0) {
-        hash = (37 * hash) + DEL_MAIL_ID_LIST_FIELD_NUMBER;
+        hash = (37 * hash) + DELMAILIDLIST_FIELD_NUMBER;
         hash = (53 * hash) + getDelMailIdListList().hashCode();
       }
       if (getMailListCount() > 0) {
-        hash = (37 * hash) + MAIL_LIST_FIELD_NUMBER;
+        hash = (37 * hash) + MAILLIST_FIELD_NUMBER;
         hash = (53 * hash) + getMailListList().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -439,16 +488,6 @@ public final class MailChangeNotifyOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 1430;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     * }
-     * </pre>
-     *
      * Protobuf type {@code MailChangeNotify}
      */
     public static final class Builder extends
@@ -470,31 +509,26 @@ public final class MailChangeNotifyOuterClass {
 
       // Construct using emu.grasscutter.net.proto.MailChangeNotifyOuterClass.MailChangeNotify.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getMailListFieldBuilder();
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         delMailIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         if (mailListBuilder_ == null) {
           mailList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
         } else {
+          mailList_ = null;
           mailListBuilder_.clear();
         }
+        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
@@ -521,7 +555,13 @@ public final class MailChangeNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.MailChangeNotifyOuterClass.MailChangeNotify buildPartial() {
         emu.grasscutter.net.proto.MailChangeNotifyOuterClass.MailChangeNotify result = new emu.grasscutter.net.proto.MailChangeNotifyOuterClass.MailChangeNotify(this);
-        int from_bitField0_ = bitField0_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.MailChangeNotifyOuterClass.MailChangeNotify result) {
         if (((bitField0_ & 0x00000001) != 0)) {
           delMailIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
@@ -536,8 +576,10 @@ public final class MailChangeNotifyOuterClass {
         } else {
           result.mailList_ = mailListBuilder_.build();
         }
-        onBuilt();
-        return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.MailChangeNotifyOuterClass.MailChangeNotify result) {
+        int from_bitField0_ = bitField0_;
       }
 
       @java.lang.Override
@@ -620,7 +662,7 @@ public final class MailChangeNotifyOuterClass {
             }
           }
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -635,17 +677,59 @@ public final class MailChangeNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.MailChangeNotifyOuterClass.MailChangeNotify parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 32: {
+                int v = input.readUInt32();
+                ensureDelMailIdListIsMutable();
+                delMailIdList_.addInt(v);
+                break;
+              } // case 32
+              case 34: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                ensureDelMailIdListIsMutable();
+                while (input.getBytesUntilLimit() > 0) {
+                  delMailIdList_.addInt(input.readUInt32());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 34
+              case 42: {
+                emu.grasscutter.net.proto.MailDataOuterClass.MailData m =
+                    input.readMessage(
+                        emu.grasscutter.net.proto.MailDataOuterClass.MailData.parser(),
+                        extensionRegistry);
+                if (mailListBuilder_ == null) {
+                  ensureMailListIsMutable();
+                  mailList_.add(m);
+                } else {
+                  mailListBuilder_.addMessage(m);
+                }
+                break;
+              } // case 42
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.MailChangeNotifyOuterClass.MailChangeNotify) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
@@ -655,10 +739,10 @@ public final class MailChangeNotifyOuterClass {
         if (!((bitField0_ & 0x00000001) != 0)) {
           delMailIdList_ = mutableCopy(delMailIdList_);
           bitField0_ |= 0x00000001;
-         }
+        }
       }
       /**
-       * <code>repeated uint32 del_mail_id_list = 15;</code>
+       * <code>repeated uint32 delMailIdList = 4;</code>
        * @return A list containing the delMailIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -667,14 +751,14 @@ public final class MailChangeNotifyOuterClass {
                  java.util.Collections.unmodifiableList(delMailIdList_) : delMailIdList_;
       }
       /**
-       * <code>repeated uint32 del_mail_id_list = 15;</code>
+       * <code>repeated uint32 delMailIdList = 4;</code>
        * @return The count of delMailIdList.
        */
       public int getDelMailIdListCount() {
         return delMailIdList_.size();
       }
       /**
-       * <code>repeated uint32 del_mail_id_list = 15;</code>
+       * <code>repeated uint32 delMailIdList = 4;</code>
        * @param index The index of the element to return.
        * @return The delMailIdList at the given index.
        */
@@ -682,31 +766,33 @@ public final class MailChangeNotifyOuterClass {
         return delMailIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 del_mail_id_list = 15;</code>
+       * <code>repeated uint32 delMailIdList = 4;</code>
        * @param index The index to set the value at.
        * @param value The delMailIdList to set.
        * @return This builder for chaining.
        */
       public Builder setDelMailIdList(
           int index, int value) {
+        
         ensureDelMailIdListIsMutable();
         delMailIdList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 del_mail_id_list = 15;</code>
+       * <code>repeated uint32 delMailIdList = 4;</code>
        * @param value The delMailIdList to add.
        * @return This builder for chaining.
        */
       public Builder addDelMailIdList(int value) {
+        
         ensureDelMailIdListIsMutable();
         delMailIdList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 del_mail_id_list = 15;</code>
+       * <code>repeated uint32 delMailIdList = 4;</code>
        * @param values The delMailIdList to add.
        * @return This builder for chaining.
        */
@@ -719,7 +805,7 @@ public final class MailChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 del_mail_id_list = 15;</code>
+       * <code>repeated uint32 delMailIdList = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearDelMailIdList() {
@@ -742,7 +828,7 @@ public final class MailChangeNotifyOuterClass {
           emu.grasscutter.net.proto.MailDataOuterClass.MailData, emu.grasscutter.net.proto.MailDataOuterClass.MailData.Builder, emu.grasscutter.net.proto.MailDataOuterClass.MailDataOrBuilder> mailListBuilder_;
 
       /**
-       * <code>repeated .MailData mail_list = 2;</code>
+       * <code>repeated .MailData mailList = 5;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.MailDataOuterClass.MailData> getMailListList() {
         if (mailListBuilder_ == null) {
@@ -752,7 +838,7 @@ public final class MailChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .MailData mail_list = 2;</code>
+       * <code>repeated .MailData mailList = 5;</code>
        */
       public int getMailListCount() {
         if (mailListBuilder_ == null) {
@@ -762,7 +848,7 @@ public final class MailChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .MailData mail_list = 2;</code>
+       * <code>repeated .MailData mailList = 5;</code>
        */
       public emu.grasscutter.net.proto.MailDataOuterClass.MailData getMailList(int index) {
         if (mailListBuilder_ == null) {
@@ -772,7 +858,7 @@ public final class MailChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .MailData mail_list = 2;</code>
+       * <code>repeated .MailData mailList = 5;</code>
        */
       public Builder setMailList(
           int index, emu.grasscutter.net.proto.MailDataOuterClass.MailData value) {
@@ -789,7 +875,7 @@ public final class MailChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MailData mail_list = 2;</code>
+       * <code>repeated .MailData mailList = 5;</code>
        */
       public Builder setMailList(
           int index, emu.grasscutter.net.proto.MailDataOuterClass.MailData.Builder builderForValue) {
@@ -803,7 +889,7 @@ public final class MailChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MailData mail_list = 2;</code>
+       * <code>repeated .MailData mailList = 5;</code>
        */
       public Builder addMailList(emu.grasscutter.net.proto.MailDataOuterClass.MailData value) {
         if (mailListBuilder_ == null) {
@@ -819,7 +905,7 @@ public final class MailChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MailData mail_list = 2;</code>
+       * <code>repeated .MailData mailList = 5;</code>
        */
       public Builder addMailList(
           int index, emu.grasscutter.net.proto.MailDataOuterClass.MailData value) {
@@ -836,7 +922,7 @@ public final class MailChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MailData mail_list = 2;</code>
+       * <code>repeated .MailData mailList = 5;</code>
        */
       public Builder addMailList(
           emu.grasscutter.net.proto.MailDataOuterClass.MailData.Builder builderForValue) {
@@ -850,7 +936,7 @@ public final class MailChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MailData mail_list = 2;</code>
+       * <code>repeated .MailData mailList = 5;</code>
        */
       public Builder addMailList(
           int index, emu.grasscutter.net.proto.MailDataOuterClass.MailData.Builder builderForValue) {
@@ -864,7 +950,7 @@ public final class MailChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MailData mail_list = 2;</code>
+       * <code>repeated .MailData mailList = 5;</code>
        */
       public Builder addAllMailList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.MailDataOuterClass.MailData> values) {
@@ -879,7 +965,7 @@ public final class MailChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MailData mail_list = 2;</code>
+       * <code>repeated .MailData mailList = 5;</code>
        */
       public Builder clearMailList() {
         if (mailListBuilder_ == null) {
@@ -892,7 +978,7 @@ public final class MailChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MailData mail_list = 2;</code>
+       * <code>repeated .MailData mailList = 5;</code>
        */
       public Builder removeMailList(int index) {
         if (mailListBuilder_ == null) {
@@ -905,14 +991,14 @@ public final class MailChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MailData mail_list = 2;</code>
+       * <code>repeated .MailData mailList = 5;</code>
        */
       public emu.grasscutter.net.proto.MailDataOuterClass.MailData.Builder getMailListBuilder(
           int index) {
         return getMailListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .MailData mail_list = 2;</code>
+       * <code>repeated .MailData mailList = 5;</code>
        */
       public emu.grasscutter.net.proto.MailDataOuterClass.MailDataOrBuilder getMailListOrBuilder(
           int index) {
@@ -922,7 +1008,7 @@ public final class MailChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .MailData mail_list = 2;</code>
+       * <code>repeated .MailData mailList = 5;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.MailDataOuterClass.MailDataOrBuilder> 
            getMailListOrBuilderList() {
@@ -933,14 +1019,14 @@ public final class MailChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .MailData mail_list = 2;</code>
+       * <code>repeated .MailData mailList = 5;</code>
        */
       public emu.grasscutter.net.proto.MailDataOuterClass.MailData.Builder addMailListBuilder() {
         return getMailListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.MailDataOuterClass.MailData.getDefaultInstance());
       }
       /**
-       * <code>repeated .MailData mail_list = 2;</code>
+       * <code>repeated .MailData mailList = 5;</code>
        */
       public emu.grasscutter.net.proto.MailDataOuterClass.MailData.Builder addMailListBuilder(
           int index) {
@@ -948,7 +1034,7 @@ public final class MailChangeNotifyOuterClass {
             index, emu.grasscutter.net.proto.MailDataOuterClass.MailData.getDefaultInstance());
       }
       /**
-       * <code>repeated .MailData mail_list = 2;</code>
+       * <code>repeated .MailData mailList = 5;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.MailDataOuterClass.MailData.Builder> 
            getMailListBuilderList() {
@@ -1001,7 +1087,18 @@ public final class MailChangeNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new MailChangeNotify(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -1036,9 +1133,11 @@ public final class MailChangeNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026MailChangeNotify.proto\032\016MailData.proto" +
-      "\"J\n\020MailChangeNotify\022\030\n\020del_mail_id_list" +
-      "\030\017 \003(\r\022\034\n\tmail_list\030\002 \003(\0132\t.MailDataB\033\n\031" +
-      "emu.grasscutter.net.protob\006proto3"
+      "\"\227\001\n\020MailChangeNotify\022\025\n\rdelMailIdList\030\004" +
+      " \003(\r\022\033\n\010mailList\030\005 \003(\0132\t.MailData\"O\n\013MFJ" +
+      "GGIBBDLE\022\010\n\004NONE\020\000\022\020\n\013PEPPOHPHJOJ\020\257\013\022\017\n\013" +
+      "DCDNILFDFLB\020\000\022\017\n\013NNBKOLMPOEA\020\001\032\002\020\001B\033\n\031em" +
+      "u.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

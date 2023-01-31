@@ -19,7 +19,7 @@ public final class MaterialDeleteInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool has_delete_config = 1;</code>
+     * <code>bool hasDeleteConfig = 1;</code>
      * @return The hasDeleteConfig.
      */
     boolean getHasDeleteConfig();
@@ -98,90 +98,6 @@ public final class MaterialDeleteInfoOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private MaterialDeleteInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              hasDeleteConfig_ = input.readBool();
-              break;
-            }
-            case 18: {
-              emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.CountDownDelete.Builder subBuilder = null;
-              if (deleteInfoCase_ == 2) {
-                subBuilder = ((emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.CountDownDelete) deleteInfo_).toBuilder();
-              }
-              deleteInfo_ =
-                  input.readMessage(emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.CountDownDelete.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.CountDownDelete) deleteInfo_);
-                deleteInfo_ = subBuilder.buildPartial();
-              }
-              deleteInfoCase_ = 2;
-              break;
-            }
-            case 26: {
-              emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.DateTimeDelete.Builder subBuilder = null;
-              if (deleteInfoCase_ == 3) {
-                subBuilder = ((emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.DateTimeDelete) deleteInfo_).toBuilder();
-              }
-              deleteInfo_ =
-                  input.readMessage(emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.DateTimeDelete.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.DateTimeDelete) deleteInfo_);
-                deleteInfo_ = subBuilder.buildPartial();
-              }
-              deleteInfoCase_ = 3;
-              break;
-            }
-            case 34: {
-              emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.DelayWeekCountDownDelete.Builder subBuilder = null;
-              if (deleteInfoCase_ == 4) {
-                subBuilder = ((emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.DelayWeekCountDownDelete) deleteInfo_).toBuilder();
-              }
-              deleteInfo_ =
-                  input.readMessage(emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.DelayWeekCountDownDelete.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.DelayWeekCountDownDelete) deleteInfo_);
-                deleteInfo_ = subBuilder.buildPartial();
-              }
-              deleteInfoCase_ = 4;
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.internal_static_MaterialDeleteInfo_descriptor;
@@ -200,11 +116,11 @@ public final class MaterialDeleteInfoOuterClass {
         com.google.protobuf.MessageOrBuilder {
 
       /**
-       * <code>map&lt;uint32, uint32&gt; delete_time_num_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; deleteTimeNumMap = 1;</code>
        */
       int getDeleteTimeNumMapCount();
       /**
-       * <code>map&lt;uint32, uint32&gt; delete_time_num_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; deleteTimeNumMap = 1;</code>
        */
       boolean containsDeleteTimeNumMap(
           int key);
@@ -215,26 +131,24 @@ public final class MaterialDeleteInfoOuterClass {
       java.util.Map<java.lang.Integer, java.lang.Integer>
       getDeleteTimeNumMap();
       /**
-       * <code>map&lt;uint32, uint32&gt; delete_time_num_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; deleteTimeNumMap = 1;</code>
        */
       java.util.Map<java.lang.Integer, java.lang.Integer>
       getDeleteTimeNumMapMap();
       /**
-       * <code>map&lt;uint32, uint32&gt; delete_time_num_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; deleteTimeNumMap = 1;</code>
        */
-
       int getDeleteTimeNumMapOrDefault(
           int key,
           int defaultValue);
       /**
-       * <code>map&lt;uint32, uint32&gt; delete_time_num_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; deleteTimeNumMap = 1;</code>
        */
-
       int getDeleteTimeNumMapOrThrow(
           int key);
 
       /**
-       * <code>uint32 config_count_down_time = 2;</code>
+       * <code>uint32 configCountDownTime = 2;</code>
        * @return The configCountDownTime.
        */
       int getConfigCountDownTime();
@@ -266,62 +180,6 @@ public final class MaterialDeleteInfoOuterClass {
       getUnknownFields() {
         return this.unknownFields;
       }
-      private CountDownDelete(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        this();
-        if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
-        }
-        int mutable_bitField0_ = 0;
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
-        try {
-          boolean done = false;
-          while (!done) {
-            int tag = input.readTag();
-            switch (tag) {
-              case 0:
-                done = true;
-                break;
-              case 10: {
-                if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                  deleteTimeNumMap_ = com.google.protobuf.MapField.newMapField(
-                      DeleteTimeNumMapDefaultEntryHolder.defaultEntry);
-                  mutable_bitField0_ |= 0x00000001;
-                }
-                com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-                deleteTimeNumMap__ = input.readMessage(
-                    DeleteTimeNumMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-                deleteTimeNumMap_.getMutableMap().put(
-                    deleteTimeNumMap__.getKey(), deleteTimeNumMap__.getValue());
-                break;
-              }
-              case 16: {
-
-                configCountDownTime_ = input.readUInt32();
-                break;
-              }
-              default: {
-                if (!parseUnknownField(
-                    input, unknownFields, extensionRegistry, tag)) {
-                  done = true;
-                }
-                break;
-              }
-            }
-          }
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          throw e.setUnfinishedMessage(this);
-        } catch (java.io.IOException e) {
-          throw new com.google.protobuf.InvalidProtocolBufferException(
-              e).setUnfinishedMessage(this);
-        } finally {
-          this.unknownFields = unknownFields.build();
-          makeExtensionsImmutable();
-        }
-      }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.internal_static_MaterialDeleteInfo_CountDownDelete_descriptor;
@@ -347,7 +205,7 @@ public final class MaterialDeleteInfoOuterClass {
                 emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.CountDownDelete.class, emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.CountDownDelete.Builder.class);
       }
 
-      public static final int DELETE_TIME_NUM_MAP_FIELD_NUMBER = 1;
+      public static final int DELETETIMENUMMAP_FIELD_NUMBER = 1;
       private static final class DeleteTimeNumMapDefaultEntryHolder {
         static final com.google.protobuf.MapEntry<
             java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -359,6 +217,7 @@ public final class MaterialDeleteInfoOuterClass {
                     com.google.protobuf.WireFormat.FieldType.UINT32,
                     0);
       }
+      @SuppressWarnings("serial")
       private com.google.protobuf.MapField<
           java.lang.Integer, java.lang.Integer> deleteTimeNumMap_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
@@ -369,14 +228,12 @@ public final class MaterialDeleteInfoOuterClass {
         }
         return deleteTimeNumMap_;
       }
-
       public int getDeleteTimeNumMapCount() {
         return internalGetDeleteTimeNumMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; delete_time_num_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; deleteTimeNumMap = 1;</code>
        */
-
       @java.lang.Override
       public boolean containsDeleteTimeNumMap(
           int key) {
@@ -392,18 +249,16 @@ public final class MaterialDeleteInfoOuterClass {
         return getDeleteTimeNumMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; delete_time_num_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; deleteTimeNumMap = 1;</code>
        */
       @java.lang.Override
-
       public java.util.Map<java.lang.Integer, java.lang.Integer> getDeleteTimeNumMapMap() {
         return internalGetDeleteTimeNumMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; delete_time_num_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; deleteTimeNumMap = 1;</code>
        */
       @java.lang.Override
-
       public int getDeleteTimeNumMapOrDefault(
           int key,
           int defaultValue) {
@@ -413,10 +268,9 @@ public final class MaterialDeleteInfoOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; delete_time_num_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; deleteTimeNumMap = 1;</code>
        */
       @java.lang.Override
-
       public int getDeleteTimeNumMapOrThrow(
           int key) {
         
@@ -428,10 +282,10 @@ public final class MaterialDeleteInfoOuterClass {
         return map.get(key);
       }
 
-      public static final int CONFIG_COUNT_DOWN_TIME_FIELD_NUMBER = 2;
-      private int configCountDownTime_;
+      public static final int CONFIGCOUNTDOWNTIME_FIELD_NUMBER = 2;
+      private int configCountDownTime_ = 0;
       /**
-       * <code>uint32 config_count_down_time = 2;</code>
+       * <code>uint32 configCountDownTime = 2;</code>
        * @return The configCountDownTime.
        */
       @java.lang.Override
@@ -462,7 +316,7 @@ public final class MaterialDeleteInfoOuterClass {
         if (configCountDownTime_ != 0) {
           output.writeUInt32(2, configCountDownTime_);
         }
-        unknownFields.writeTo(output);
+        getUnknownFields().writeTo(output);
       }
 
       @java.lang.Override
@@ -485,7 +339,7 @@ public final class MaterialDeleteInfoOuterClass {
           size += com.google.protobuf.CodedOutputStream
             .computeUInt32Size(2, configCountDownTime_);
         }
-        size += unknownFields.getSerializedSize();
+        size += getUnknownFields().getSerializedSize();
         memoizedSize = size;
         return size;
       }
@@ -504,7 +358,7 @@ public final class MaterialDeleteInfoOuterClass {
             other.internalGetDeleteTimeNumMap())) return false;
         if (getConfigCountDownTime()
             != other.getConfigCountDownTime()) return false;
-        if (!unknownFields.equals(other.unknownFields)) return false;
+        if (!getUnknownFields().equals(other.getUnknownFields())) return false;
         return true;
       }
 
@@ -516,12 +370,12 @@ public final class MaterialDeleteInfoOuterClass {
         int hash = 41;
         hash = (19 * hash) + getDescriptor().hashCode();
         if (!internalGetDeleteTimeNumMap().getMap().isEmpty()) {
-          hash = (37 * hash) + DELETE_TIME_NUM_MAP_FIELD_NUMBER;
+          hash = (37 * hash) + DELETETIMENUMMAP_FIELD_NUMBER;
           hash = (53 * hash) + internalGetDeleteTimeNumMap().hashCode();
         }
-        hash = (37 * hash) + CONFIG_COUNT_DOWN_TIME_FIELD_NUMBER;
+        hash = (37 * hash) + CONFIGCOUNTDOWNTIME_FIELD_NUMBER;
         hash = (53 * hash) + getConfigCountDownTime();
-        hash = (29 * hash) + unknownFields.hashCode();
+        hash = (29 * hash) + getUnknownFields().hashCode();
         memoizedHashCode = hash;
         return hash;
       }
@@ -660,25 +514,20 @@ public final class MaterialDeleteInfoOuterClass {
 
         // Construct using emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.CountDownDelete.newBuilder()
         private Builder() {
-          maybeForceBuilderInitialization();
+
         }
 
         private Builder(
             com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
           super(parent);
-          maybeForceBuilderInitialization();
-        }
-        private void maybeForceBuilderInitialization() {
-          if (com.google.protobuf.GeneratedMessageV3
-                  .alwaysUseFieldBuilders) {
-          }
+
         }
         @java.lang.Override
         public Builder clear() {
           super.clear();
+          bitField0_ = 0;
           internalGetMutableDeleteTimeNumMap().clear();
           configCountDownTime_ = 0;
-
           return this;
         }
 
@@ -705,12 +554,20 @@ public final class MaterialDeleteInfoOuterClass {
         @java.lang.Override
         public emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.CountDownDelete buildPartial() {
           emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.CountDownDelete result = new emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.CountDownDelete(this);
-          int from_bitField0_ = bitField0_;
-          result.deleteTimeNumMap_ = internalGetDeleteTimeNumMap();
-          result.deleteTimeNumMap_.makeImmutable();
-          result.configCountDownTime_ = configCountDownTime_;
+          if (bitField0_ != 0) { buildPartial0(result); }
           onBuilt();
           return result;
+        }
+
+        private void buildPartial0(emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.CountDownDelete result) {
+          int from_bitField0_ = bitField0_;
+          if (((from_bitField0_ & 0x00000001) != 0)) {
+            result.deleteTimeNumMap_ = internalGetDeleteTimeNumMap();
+            result.deleteTimeNumMap_.makeImmutable();
+          }
+          if (((from_bitField0_ & 0x00000002) != 0)) {
+            result.configCountDownTime_ = configCountDownTime_;
+          }
         }
 
         @java.lang.Override
@@ -759,10 +616,11 @@ public final class MaterialDeleteInfoOuterClass {
           if (other == emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.CountDownDelete.getDefaultInstance()) return this;
           internalGetMutableDeleteTimeNumMap().mergeFrom(
               other.internalGetDeleteTimeNumMap());
+          bitField0_ |= 0x00000001;
           if (other.getConfigCountDownTime() != 0) {
             setConfigCountDownTime(other.getConfigCountDownTime());
           }
-          this.mergeUnknownFields(other.unknownFields);
+          this.mergeUnknownFields(other.getUnknownFields());
           onChanged();
           return this;
         }
@@ -777,17 +635,44 @@ public final class MaterialDeleteInfoOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
-          emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.CountDownDelete parsedMessage = null;
+          if (extensionRegistry == null) {
+            throw new java.lang.NullPointerException();
+          }
           try {
-            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+            boolean done = false;
+            while (!done) {
+              int tag = input.readTag();
+              switch (tag) {
+                case 0:
+                  done = true;
+                  break;
+                case 10: {
+                  com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+                  deleteTimeNumMap__ = input.readMessage(
+                      DeleteTimeNumMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+                  internalGetMutableDeleteTimeNumMap().getMutableMap().put(
+                      deleteTimeNumMap__.getKey(), deleteTimeNumMap__.getValue());
+                  bitField0_ |= 0x00000001;
+                  break;
+                } // case 10
+                case 16: {
+                  configCountDownTime_ = input.readUInt32();
+                  bitField0_ |= 0x00000002;
+                  break;
+                } // case 16
+                default: {
+                  if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                    done = true; // was an endgroup tag
+                  }
+                  break;
+                } // default:
+              } // switch (tag)
+            } // while (!done)
           } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.CountDownDelete) e.getUnfinishedMessage();
             throw e.unwrapIOException();
           } finally {
-            if (parsedMessage != null) {
-              mergeFrom(parsedMessage);
-            }
-          }
+            onChanged();
+          } // finally
           return this;
         }
         private int bitField0_;
@@ -795,7 +680,7 @@ public final class MaterialDeleteInfoOuterClass {
         private com.google.protobuf.MapField<
             java.lang.Integer, java.lang.Integer> deleteTimeNumMap_;
         private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-        internalGetDeleteTimeNumMap() {
+            internalGetDeleteTimeNumMap() {
           if (deleteTimeNumMap_ == null) {
             return com.google.protobuf.MapField.emptyMapField(
                 DeleteTimeNumMapDefaultEntryHolder.defaultEntry);
@@ -803,8 +688,7 @@ public final class MaterialDeleteInfoOuterClass {
           return deleteTimeNumMap_;
         }
         private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-        internalGetMutableDeleteTimeNumMap() {
-          onChanged();;
+            internalGetMutableDeleteTimeNumMap() {
           if (deleteTimeNumMap_ == null) {
             deleteTimeNumMap_ = com.google.protobuf.MapField.newMapField(
                 DeleteTimeNumMapDefaultEntryHolder.defaultEntry);
@@ -812,16 +696,16 @@ public final class MaterialDeleteInfoOuterClass {
           if (!deleteTimeNumMap_.isMutable()) {
             deleteTimeNumMap_ = deleteTimeNumMap_.copy();
           }
+          bitField0_ |= 0x00000001;
+          onChanged();
           return deleteTimeNumMap_;
         }
-
         public int getDeleteTimeNumMapCount() {
           return internalGetDeleteTimeNumMap().getMap().size();
         }
         /**
-         * <code>map&lt;uint32, uint32&gt; delete_time_num_map = 1;</code>
+         * <code>map&lt;uint32, uint32&gt; deleteTimeNumMap = 1;</code>
          */
-
         @java.lang.Override
         public boolean containsDeleteTimeNumMap(
             int key) {
@@ -837,18 +721,16 @@ public final class MaterialDeleteInfoOuterClass {
           return getDeleteTimeNumMapMap();
         }
         /**
-         * <code>map&lt;uint32, uint32&gt; delete_time_num_map = 1;</code>
+         * <code>map&lt;uint32, uint32&gt; deleteTimeNumMap = 1;</code>
          */
         @java.lang.Override
-
         public java.util.Map<java.lang.Integer, java.lang.Integer> getDeleteTimeNumMapMap() {
           return internalGetDeleteTimeNumMap().getMap();
         }
         /**
-         * <code>map&lt;uint32, uint32&gt; delete_time_num_map = 1;</code>
+         * <code>map&lt;uint32, uint32&gt; deleteTimeNumMap = 1;</code>
          */
         @java.lang.Override
-
         public int getDeleteTimeNumMapOrDefault(
             int key,
             int defaultValue) {
@@ -858,10 +740,9 @@ public final class MaterialDeleteInfoOuterClass {
           return map.containsKey(key) ? map.get(key) : defaultValue;
         }
         /**
-         * <code>map&lt;uint32, uint32&gt; delete_time_num_map = 1;</code>
+         * <code>map&lt;uint32, uint32&gt; deleteTimeNumMap = 1;</code>
          */
         @java.lang.Override
-
         public int getDeleteTimeNumMapOrThrow(
             int key) {
           
@@ -872,16 +753,15 @@ public final class MaterialDeleteInfoOuterClass {
           }
           return map.get(key);
         }
-
         public Builder clearDeleteTimeNumMap() {
+          bitField0_ = (bitField0_ & ~0x00000001);
           internalGetMutableDeleteTimeNumMap().getMutableMap()
               .clear();
           return this;
         }
         /**
-         * <code>map&lt;uint32, uint32&gt; delete_time_num_map = 1;</code>
+         * <code>map&lt;uint32, uint32&gt; deleteTimeNumMap = 1;</code>
          */
-
         public Builder removeDeleteTimeNumMap(
             int key) {
           
@@ -894,11 +774,12 @@ public final class MaterialDeleteInfoOuterClass {
          */
         @java.lang.Deprecated
         public java.util.Map<java.lang.Integer, java.lang.Integer>
-        getMutableDeleteTimeNumMap() {
+            getMutableDeleteTimeNumMap() {
+          bitField0_ |= 0x00000001;
           return internalGetMutableDeleteTimeNumMap().getMutableMap();
         }
         /**
-         * <code>map&lt;uint32, uint32&gt; delete_time_num_map = 1;</code>
+         * <code>map&lt;uint32, uint32&gt; deleteTimeNumMap = 1;</code>
          */
         public Builder putDeleteTimeNumMap(
             int key,
@@ -907,22 +788,23 @@ public final class MaterialDeleteInfoOuterClass {
           
           internalGetMutableDeleteTimeNumMap().getMutableMap()
               .put(key, value);
+          bitField0_ |= 0x00000001;
           return this;
         }
         /**
-         * <code>map&lt;uint32, uint32&gt; delete_time_num_map = 1;</code>
+         * <code>map&lt;uint32, uint32&gt; deleteTimeNumMap = 1;</code>
          */
-
         public Builder putAllDeleteTimeNumMap(
             java.util.Map<java.lang.Integer, java.lang.Integer> values) {
           internalGetMutableDeleteTimeNumMap().getMutableMap()
               .putAll(values);
+          bitField0_ |= 0x00000001;
           return this;
         }
 
         private int configCountDownTime_ ;
         /**
-         * <code>uint32 config_count_down_time = 2;</code>
+         * <code>uint32 configCountDownTime = 2;</code>
          * @return The configCountDownTime.
          */
         @java.lang.Override
@@ -930,22 +812,23 @@ public final class MaterialDeleteInfoOuterClass {
           return configCountDownTime_;
         }
         /**
-         * <code>uint32 config_count_down_time = 2;</code>
+         * <code>uint32 configCountDownTime = 2;</code>
          * @param value The configCountDownTime to set.
          * @return This builder for chaining.
          */
         public Builder setConfigCountDownTime(int value) {
           
           configCountDownTime_ = value;
+          bitField0_ |= 0x00000002;
           onChanged();
           return this;
         }
         /**
-         * <code>uint32 config_count_down_time = 2;</code>
+         * <code>uint32 configCountDownTime = 2;</code>
          * @return This builder for chaining.
          */
         public Builder clearConfigCountDownTime() {
-          
+          bitField0_ = (bitField0_ & ~0x00000002);
           configCountDownTime_ = 0;
           onChanged();
           return this;
@@ -983,7 +866,18 @@ public final class MaterialDeleteInfoOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
-          return new CountDownDelete(input, extensionRegistry);
+          Builder builder = newBuilder();
+          try {
+            builder.mergeFrom(input, extensionRegistry);
+          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+            throw e.setUnfinishedMessage(builder.buildPartial());
+          } catch (com.google.protobuf.UninitializedMessageException e) {
+            throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+          } catch (java.io.IOException e) {
+            throw new com.google.protobuf.InvalidProtocolBufferException(e)
+                .setUnfinishedMessage(builder.buildPartial());
+          }
+          return builder.buildPartial();
         }
       };
 
@@ -1008,7 +902,7 @@ public final class MaterialDeleteInfoOuterClass {
         com.google.protobuf.MessageOrBuilder {
 
       /**
-       * <code>uint32 delete_time = 1;</code>
+       * <code>uint32 deleteTime = 1;</code>
        * @return The deleteTime.
        */
       int getDeleteTime();
@@ -1040,48 +934,6 @@ public final class MaterialDeleteInfoOuterClass {
       getUnknownFields() {
         return this.unknownFields;
       }
-      private DateTimeDelete(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        this();
-        if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
-        }
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
-        try {
-          boolean done = false;
-          while (!done) {
-            int tag = input.readTag();
-            switch (tag) {
-              case 0:
-                done = true;
-                break;
-              case 8: {
-
-                deleteTime_ = input.readUInt32();
-                break;
-              }
-              default: {
-                if (!parseUnknownField(
-                    input, unknownFields, extensionRegistry, tag)) {
-                  done = true;
-                }
-                break;
-              }
-            }
-          }
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          throw e.setUnfinishedMessage(this);
-        } catch (java.io.IOException e) {
-          throw new com.google.protobuf.InvalidProtocolBufferException(
-              e).setUnfinishedMessage(this);
-        } finally {
-          this.unknownFields = unknownFields.build();
-          makeExtensionsImmutable();
-        }
-      }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.internal_static_MaterialDeleteInfo_DateTimeDelete_descriptor;
@@ -1095,10 +947,10 @@ public final class MaterialDeleteInfoOuterClass {
                 emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.DateTimeDelete.class, emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.DateTimeDelete.Builder.class);
       }
 
-      public static final int DELETE_TIME_FIELD_NUMBER = 1;
-      private int deleteTime_;
+      public static final int DELETETIME_FIELD_NUMBER = 1;
+      private int deleteTime_ = 0;
       /**
-       * <code>uint32 delete_time = 1;</code>
+       * <code>uint32 deleteTime = 1;</code>
        * @return The deleteTime.
        */
       @java.lang.Override
@@ -1123,7 +975,7 @@ public final class MaterialDeleteInfoOuterClass {
         if (deleteTime_ != 0) {
           output.writeUInt32(1, deleteTime_);
         }
-        unknownFields.writeTo(output);
+        getUnknownFields().writeTo(output);
       }
 
       @java.lang.Override
@@ -1136,7 +988,7 @@ public final class MaterialDeleteInfoOuterClass {
           size += com.google.protobuf.CodedOutputStream
             .computeUInt32Size(1, deleteTime_);
         }
-        size += unknownFields.getSerializedSize();
+        size += getUnknownFields().getSerializedSize();
         memoizedSize = size;
         return size;
       }
@@ -1153,7 +1005,7 @@ public final class MaterialDeleteInfoOuterClass {
 
         if (getDeleteTime()
             != other.getDeleteTime()) return false;
-        if (!unknownFields.equals(other.unknownFields)) return false;
+        if (!getUnknownFields().equals(other.getUnknownFields())) return false;
         return true;
       }
 
@@ -1164,9 +1016,9 @@ public final class MaterialDeleteInfoOuterClass {
         }
         int hash = 41;
         hash = (19 * hash) + getDescriptor().hashCode();
-        hash = (37 * hash) + DELETE_TIME_FIELD_NUMBER;
+        hash = (37 * hash) + DELETETIME_FIELD_NUMBER;
         hash = (53 * hash) + getDeleteTime();
-        hash = (29 * hash) + unknownFields.hashCode();
+        hash = (29 * hash) + getUnknownFields().hashCode();
         memoizedHashCode = hash;
         return hash;
       }
@@ -1283,24 +1135,19 @@ public final class MaterialDeleteInfoOuterClass {
 
         // Construct using emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.DateTimeDelete.newBuilder()
         private Builder() {
-          maybeForceBuilderInitialization();
+
         }
 
         private Builder(
             com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
           super(parent);
-          maybeForceBuilderInitialization();
-        }
-        private void maybeForceBuilderInitialization() {
-          if (com.google.protobuf.GeneratedMessageV3
-                  .alwaysUseFieldBuilders) {
-          }
+
         }
         @java.lang.Override
         public Builder clear() {
           super.clear();
+          bitField0_ = 0;
           deleteTime_ = 0;
-
           return this;
         }
 
@@ -1327,9 +1174,16 @@ public final class MaterialDeleteInfoOuterClass {
         @java.lang.Override
         public emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.DateTimeDelete buildPartial() {
           emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.DateTimeDelete result = new emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.DateTimeDelete(this);
-          result.deleteTime_ = deleteTime_;
+          if (bitField0_ != 0) { buildPartial0(result); }
           onBuilt();
           return result;
+        }
+
+        private void buildPartial0(emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.DateTimeDelete result) {
+          int from_bitField0_ = bitField0_;
+          if (((from_bitField0_ & 0x00000001) != 0)) {
+            result.deleteTime_ = deleteTime_;
+          }
         }
 
         @java.lang.Override
@@ -1379,7 +1233,7 @@ public final class MaterialDeleteInfoOuterClass {
           if (other.getDeleteTime() != 0) {
             setDeleteTime(other.getDeleteTime());
           }
-          this.mergeUnknownFields(other.unknownFields);
+          this.mergeUnknownFields(other.getUnknownFields());
           onChanged();
           return this;
         }
@@ -1394,23 +1248,42 @@ public final class MaterialDeleteInfoOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
-          emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.DateTimeDelete parsedMessage = null;
+          if (extensionRegistry == null) {
+            throw new java.lang.NullPointerException();
+          }
           try {
-            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+            boolean done = false;
+            while (!done) {
+              int tag = input.readTag();
+              switch (tag) {
+                case 0:
+                  done = true;
+                  break;
+                case 8: {
+                  deleteTime_ = input.readUInt32();
+                  bitField0_ |= 0x00000001;
+                  break;
+                } // case 8
+                default: {
+                  if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                    done = true; // was an endgroup tag
+                  }
+                  break;
+                } // default:
+              } // switch (tag)
+            } // while (!done)
           } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.DateTimeDelete) e.getUnfinishedMessage();
             throw e.unwrapIOException();
           } finally {
-            if (parsedMessage != null) {
-              mergeFrom(parsedMessage);
-            }
-          }
+            onChanged();
+          } // finally
           return this;
         }
+        private int bitField0_;
 
         private int deleteTime_ ;
         /**
-         * <code>uint32 delete_time = 1;</code>
+         * <code>uint32 deleteTime = 1;</code>
          * @return The deleteTime.
          */
         @java.lang.Override
@@ -1418,22 +1291,23 @@ public final class MaterialDeleteInfoOuterClass {
           return deleteTime_;
         }
         /**
-         * <code>uint32 delete_time = 1;</code>
+         * <code>uint32 deleteTime = 1;</code>
          * @param value The deleteTime to set.
          * @return This builder for chaining.
          */
         public Builder setDeleteTime(int value) {
           
           deleteTime_ = value;
+          bitField0_ |= 0x00000001;
           onChanged();
           return this;
         }
         /**
-         * <code>uint32 delete_time = 1;</code>
+         * <code>uint32 deleteTime = 1;</code>
          * @return This builder for chaining.
          */
         public Builder clearDeleteTime() {
-          
+          bitField0_ = (bitField0_ & ~0x00000001);
           deleteTime_ = 0;
           onChanged();
           return this;
@@ -1471,7 +1345,18 @@ public final class MaterialDeleteInfoOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
-          return new DateTimeDelete(input, extensionRegistry);
+          Builder builder = newBuilder();
+          try {
+            builder.mergeFrom(input, extensionRegistry);
+          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+            throw e.setUnfinishedMessage(builder.buildPartial());
+          } catch (com.google.protobuf.UninitializedMessageException e) {
+            throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+          } catch (java.io.IOException e) {
+            throw new com.google.protobuf.InvalidProtocolBufferException(e)
+                .setUnfinishedMessage(builder.buildPartial());
+          }
+          return builder.buildPartial();
         }
       };
 
@@ -1496,11 +1381,11 @@ public final class MaterialDeleteInfoOuterClass {
         com.google.protobuf.MessageOrBuilder {
 
       /**
-       * <code>map&lt;uint32, uint32&gt; delete_time_num_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; deleteTimeNumMap = 1;</code>
        */
       int getDeleteTimeNumMapCount();
       /**
-       * <code>map&lt;uint32, uint32&gt; delete_time_num_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; deleteTimeNumMap = 1;</code>
        */
       boolean containsDeleteTimeNumMap(
           int key);
@@ -1511,32 +1396,30 @@ public final class MaterialDeleteInfoOuterClass {
       java.util.Map<java.lang.Integer, java.lang.Integer>
       getDeleteTimeNumMap();
       /**
-       * <code>map&lt;uint32, uint32&gt; delete_time_num_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; deleteTimeNumMap = 1;</code>
        */
       java.util.Map<java.lang.Integer, java.lang.Integer>
       getDeleteTimeNumMapMap();
       /**
-       * <code>map&lt;uint32, uint32&gt; delete_time_num_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; deleteTimeNumMap = 1;</code>
        */
-
       int getDeleteTimeNumMapOrDefault(
           int key,
           int defaultValue);
       /**
-       * <code>map&lt;uint32, uint32&gt; delete_time_num_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; deleteTimeNumMap = 1;</code>
        */
-
       int getDeleteTimeNumMapOrThrow(
           int key);
 
       /**
-       * <code>uint32 config_delay_week = 2;</code>
+       * <code>uint32 configDelayWeek = 2;</code>
        * @return The configDelayWeek.
        */
       int getConfigDelayWeek();
 
       /**
-       * <code>uint32 config_count_down_time = 3;</code>
+       * <code>uint32 configCountDownTime = 3;</code>
        * @return The configCountDownTime.
        */
       int getConfigCountDownTime();
@@ -1568,67 +1451,6 @@ public final class MaterialDeleteInfoOuterClass {
       getUnknownFields() {
         return this.unknownFields;
       }
-      private DelayWeekCountDownDelete(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        this();
-        if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
-        }
-        int mutable_bitField0_ = 0;
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
-        try {
-          boolean done = false;
-          while (!done) {
-            int tag = input.readTag();
-            switch (tag) {
-              case 0:
-                done = true;
-                break;
-              case 10: {
-                if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                  deleteTimeNumMap_ = com.google.protobuf.MapField.newMapField(
-                      DeleteTimeNumMapDefaultEntryHolder.defaultEntry);
-                  mutable_bitField0_ |= 0x00000001;
-                }
-                com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-                deleteTimeNumMap__ = input.readMessage(
-                    DeleteTimeNumMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-                deleteTimeNumMap_.getMutableMap().put(
-                    deleteTimeNumMap__.getKey(), deleteTimeNumMap__.getValue());
-                break;
-              }
-              case 16: {
-
-                configDelayWeek_ = input.readUInt32();
-                break;
-              }
-              case 24: {
-
-                configCountDownTime_ = input.readUInt32();
-                break;
-              }
-              default: {
-                if (!parseUnknownField(
-                    input, unknownFields, extensionRegistry, tag)) {
-                  done = true;
-                }
-                break;
-              }
-            }
-          }
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          throw e.setUnfinishedMessage(this);
-        } catch (java.io.IOException e) {
-          throw new com.google.protobuf.InvalidProtocolBufferException(
-              e).setUnfinishedMessage(this);
-        } finally {
-          this.unknownFields = unknownFields.build();
-          makeExtensionsImmutable();
-        }
-      }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.internal_static_MaterialDeleteInfo_DelayWeekCountDownDelete_descriptor;
@@ -1654,7 +1476,7 @@ public final class MaterialDeleteInfoOuterClass {
                 emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.DelayWeekCountDownDelete.class, emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.DelayWeekCountDownDelete.Builder.class);
       }
 
-      public static final int DELETE_TIME_NUM_MAP_FIELD_NUMBER = 1;
+      public static final int DELETETIMENUMMAP_FIELD_NUMBER = 1;
       private static final class DeleteTimeNumMapDefaultEntryHolder {
         static final com.google.protobuf.MapEntry<
             java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -1666,6 +1488,7 @@ public final class MaterialDeleteInfoOuterClass {
                     com.google.protobuf.WireFormat.FieldType.UINT32,
                     0);
       }
+      @SuppressWarnings("serial")
       private com.google.protobuf.MapField<
           java.lang.Integer, java.lang.Integer> deleteTimeNumMap_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
@@ -1676,14 +1499,12 @@ public final class MaterialDeleteInfoOuterClass {
         }
         return deleteTimeNumMap_;
       }
-
       public int getDeleteTimeNumMapCount() {
         return internalGetDeleteTimeNumMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; delete_time_num_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; deleteTimeNumMap = 1;</code>
        */
-
       @java.lang.Override
       public boolean containsDeleteTimeNumMap(
           int key) {
@@ -1699,18 +1520,16 @@ public final class MaterialDeleteInfoOuterClass {
         return getDeleteTimeNumMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; delete_time_num_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; deleteTimeNumMap = 1;</code>
        */
       @java.lang.Override
-
       public java.util.Map<java.lang.Integer, java.lang.Integer> getDeleteTimeNumMapMap() {
         return internalGetDeleteTimeNumMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; delete_time_num_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; deleteTimeNumMap = 1;</code>
        */
       @java.lang.Override
-
       public int getDeleteTimeNumMapOrDefault(
           int key,
           int defaultValue) {
@@ -1720,10 +1539,9 @@ public final class MaterialDeleteInfoOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; delete_time_num_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; deleteTimeNumMap = 1;</code>
        */
       @java.lang.Override
-
       public int getDeleteTimeNumMapOrThrow(
           int key) {
         
@@ -1735,10 +1553,10 @@ public final class MaterialDeleteInfoOuterClass {
         return map.get(key);
       }
 
-      public static final int CONFIG_DELAY_WEEK_FIELD_NUMBER = 2;
-      private int configDelayWeek_;
+      public static final int CONFIGDELAYWEEK_FIELD_NUMBER = 2;
+      private int configDelayWeek_ = 0;
       /**
-       * <code>uint32 config_delay_week = 2;</code>
+       * <code>uint32 configDelayWeek = 2;</code>
        * @return The configDelayWeek.
        */
       @java.lang.Override
@@ -1746,10 +1564,10 @@ public final class MaterialDeleteInfoOuterClass {
         return configDelayWeek_;
       }
 
-      public static final int CONFIG_COUNT_DOWN_TIME_FIELD_NUMBER = 3;
-      private int configCountDownTime_;
+      public static final int CONFIGCOUNTDOWNTIME_FIELD_NUMBER = 3;
+      private int configCountDownTime_ = 0;
       /**
-       * <code>uint32 config_count_down_time = 3;</code>
+       * <code>uint32 configCountDownTime = 3;</code>
        * @return The configCountDownTime.
        */
       @java.lang.Override
@@ -1783,7 +1601,7 @@ public final class MaterialDeleteInfoOuterClass {
         if (configCountDownTime_ != 0) {
           output.writeUInt32(3, configCountDownTime_);
         }
-        unknownFields.writeTo(output);
+        getUnknownFields().writeTo(output);
       }
 
       @java.lang.Override
@@ -1810,7 +1628,7 @@ public final class MaterialDeleteInfoOuterClass {
           size += com.google.protobuf.CodedOutputStream
             .computeUInt32Size(3, configCountDownTime_);
         }
-        size += unknownFields.getSerializedSize();
+        size += getUnknownFields().getSerializedSize();
         memoizedSize = size;
         return size;
       }
@@ -1831,7 +1649,7 @@ public final class MaterialDeleteInfoOuterClass {
             != other.getConfigDelayWeek()) return false;
         if (getConfigCountDownTime()
             != other.getConfigCountDownTime()) return false;
-        if (!unknownFields.equals(other.unknownFields)) return false;
+        if (!getUnknownFields().equals(other.getUnknownFields())) return false;
         return true;
       }
 
@@ -1843,14 +1661,14 @@ public final class MaterialDeleteInfoOuterClass {
         int hash = 41;
         hash = (19 * hash) + getDescriptor().hashCode();
         if (!internalGetDeleteTimeNumMap().getMap().isEmpty()) {
-          hash = (37 * hash) + DELETE_TIME_NUM_MAP_FIELD_NUMBER;
+          hash = (37 * hash) + DELETETIMENUMMAP_FIELD_NUMBER;
           hash = (53 * hash) + internalGetDeleteTimeNumMap().hashCode();
         }
-        hash = (37 * hash) + CONFIG_DELAY_WEEK_FIELD_NUMBER;
+        hash = (37 * hash) + CONFIGDELAYWEEK_FIELD_NUMBER;
         hash = (53 * hash) + getConfigDelayWeek();
-        hash = (37 * hash) + CONFIG_COUNT_DOWN_TIME_FIELD_NUMBER;
+        hash = (37 * hash) + CONFIGCOUNTDOWNTIME_FIELD_NUMBER;
         hash = (53 * hash) + getConfigCountDownTime();
-        hash = (29 * hash) + unknownFields.hashCode();
+        hash = (29 * hash) + getUnknownFields().hashCode();
         memoizedHashCode = hash;
         return hash;
       }
@@ -1989,27 +1807,21 @@ public final class MaterialDeleteInfoOuterClass {
 
         // Construct using emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.DelayWeekCountDownDelete.newBuilder()
         private Builder() {
-          maybeForceBuilderInitialization();
+
         }
 
         private Builder(
             com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
           super(parent);
-          maybeForceBuilderInitialization();
-        }
-        private void maybeForceBuilderInitialization() {
-          if (com.google.protobuf.GeneratedMessageV3
-                  .alwaysUseFieldBuilders) {
-          }
+
         }
         @java.lang.Override
         public Builder clear() {
           super.clear();
+          bitField0_ = 0;
           internalGetMutableDeleteTimeNumMap().clear();
           configDelayWeek_ = 0;
-
           configCountDownTime_ = 0;
-
           return this;
         }
 
@@ -2036,13 +1848,23 @@ public final class MaterialDeleteInfoOuterClass {
         @java.lang.Override
         public emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.DelayWeekCountDownDelete buildPartial() {
           emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.DelayWeekCountDownDelete result = new emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.DelayWeekCountDownDelete(this);
-          int from_bitField0_ = bitField0_;
-          result.deleteTimeNumMap_ = internalGetDeleteTimeNumMap();
-          result.deleteTimeNumMap_.makeImmutable();
-          result.configDelayWeek_ = configDelayWeek_;
-          result.configCountDownTime_ = configCountDownTime_;
+          if (bitField0_ != 0) { buildPartial0(result); }
           onBuilt();
           return result;
+        }
+
+        private void buildPartial0(emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.DelayWeekCountDownDelete result) {
+          int from_bitField0_ = bitField0_;
+          if (((from_bitField0_ & 0x00000001) != 0)) {
+            result.deleteTimeNumMap_ = internalGetDeleteTimeNumMap();
+            result.deleteTimeNumMap_.makeImmutable();
+          }
+          if (((from_bitField0_ & 0x00000002) != 0)) {
+            result.configDelayWeek_ = configDelayWeek_;
+          }
+          if (((from_bitField0_ & 0x00000004) != 0)) {
+            result.configCountDownTime_ = configCountDownTime_;
+          }
         }
 
         @java.lang.Override
@@ -2091,13 +1913,14 @@ public final class MaterialDeleteInfoOuterClass {
           if (other == emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.DelayWeekCountDownDelete.getDefaultInstance()) return this;
           internalGetMutableDeleteTimeNumMap().mergeFrom(
               other.internalGetDeleteTimeNumMap());
+          bitField0_ |= 0x00000001;
           if (other.getConfigDelayWeek() != 0) {
             setConfigDelayWeek(other.getConfigDelayWeek());
           }
           if (other.getConfigCountDownTime() != 0) {
             setConfigCountDownTime(other.getConfigCountDownTime());
           }
-          this.mergeUnknownFields(other.unknownFields);
+          this.mergeUnknownFields(other.getUnknownFields());
           onChanged();
           return this;
         }
@@ -2112,17 +1935,49 @@ public final class MaterialDeleteInfoOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
-          emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.DelayWeekCountDownDelete parsedMessage = null;
+          if (extensionRegistry == null) {
+            throw new java.lang.NullPointerException();
+          }
           try {
-            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+            boolean done = false;
+            while (!done) {
+              int tag = input.readTag();
+              switch (tag) {
+                case 0:
+                  done = true;
+                  break;
+                case 10: {
+                  com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+                  deleteTimeNumMap__ = input.readMessage(
+                      DeleteTimeNumMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+                  internalGetMutableDeleteTimeNumMap().getMutableMap().put(
+                      deleteTimeNumMap__.getKey(), deleteTimeNumMap__.getValue());
+                  bitField0_ |= 0x00000001;
+                  break;
+                } // case 10
+                case 16: {
+                  configDelayWeek_ = input.readUInt32();
+                  bitField0_ |= 0x00000002;
+                  break;
+                } // case 16
+                case 24: {
+                  configCountDownTime_ = input.readUInt32();
+                  bitField0_ |= 0x00000004;
+                  break;
+                } // case 24
+                default: {
+                  if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                    done = true; // was an endgroup tag
+                  }
+                  break;
+                } // default:
+              } // switch (tag)
+            } // while (!done)
           } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.DelayWeekCountDownDelete) e.getUnfinishedMessage();
             throw e.unwrapIOException();
           } finally {
-            if (parsedMessage != null) {
-              mergeFrom(parsedMessage);
-            }
-          }
+            onChanged();
+          } // finally
           return this;
         }
         private int bitField0_;
@@ -2130,7 +1985,7 @@ public final class MaterialDeleteInfoOuterClass {
         private com.google.protobuf.MapField<
             java.lang.Integer, java.lang.Integer> deleteTimeNumMap_;
         private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-        internalGetDeleteTimeNumMap() {
+            internalGetDeleteTimeNumMap() {
           if (deleteTimeNumMap_ == null) {
             return com.google.protobuf.MapField.emptyMapField(
                 DeleteTimeNumMapDefaultEntryHolder.defaultEntry);
@@ -2138,8 +1993,7 @@ public final class MaterialDeleteInfoOuterClass {
           return deleteTimeNumMap_;
         }
         private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-        internalGetMutableDeleteTimeNumMap() {
-          onChanged();;
+            internalGetMutableDeleteTimeNumMap() {
           if (deleteTimeNumMap_ == null) {
             deleteTimeNumMap_ = com.google.protobuf.MapField.newMapField(
                 DeleteTimeNumMapDefaultEntryHolder.defaultEntry);
@@ -2147,16 +2001,16 @@ public final class MaterialDeleteInfoOuterClass {
           if (!deleteTimeNumMap_.isMutable()) {
             deleteTimeNumMap_ = deleteTimeNumMap_.copy();
           }
+          bitField0_ |= 0x00000001;
+          onChanged();
           return deleteTimeNumMap_;
         }
-
         public int getDeleteTimeNumMapCount() {
           return internalGetDeleteTimeNumMap().getMap().size();
         }
         /**
-         * <code>map&lt;uint32, uint32&gt; delete_time_num_map = 1;</code>
+         * <code>map&lt;uint32, uint32&gt; deleteTimeNumMap = 1;</code>
          */
-
         @java.lang.Override
         public boolean containsDeleteTimeNumMap(
             int key) {
@@ -2172,18 +2026,16 @@ public final class MaterialDeleteInfoOuterClass {
           return getDeleteTimeNumMapMap();
         }
         /**
-         * <code>map&lt;uint32, uint32&gt; delete_time_num_map = 1;</code>
+         * <code>map&lt;uint32, uint32&gt; deleteTimeNumMap = 1;</code>
          */
         @java.lang.Override
-
         public java.util.Map<java.lang.Integer, java.lang.Integer> getDeleteTimeNumMapMap() {
           return internalGetDeleteTimeNumMap().getMap();
         }
         /**
-         * <code>map&lt;uint32, uint32&gt; delete_time_num_map = 1;</code>
+         * <code>map&lt;uint32, uint32&gt; deleteTimeNumMap = 1;</code>
          */
         @java.lang.Override
-
         public int getDeleteTimeNumMapOrDefault(
             int key,
             int defaultValue) {
@@ -2193,10 +2045,9 @@ public final class MaterialDeleteInfoOuterClass {
           return map.containsKey(key) ? map.get(key) : defaultValue;
         }
         /**
-         * <code>map&lt;uint32, uint32&gt; delete_time_num_map = 1;</code>
+         * <code>map&lt;uint32, uint32&gt; deleteTimeNumMap = 1;</code>
          */
         @java.lang.Override
-
         public int getDeleteTimeNumMapOrThrow(
             int key) {
           
@@ -2207,16 +2058,15 @@ public final class MaterialDeleteInfoOuterClass {
           }
           return map.get(key);
         }
-
         public Builder clearDeleteTimeNumMap() {
+          bitField0_ = (bitField0_ & ~0x00000001);
           internalGetMutableDeleteTimeNumMap().getMutableMap()
               .clear();
           return this;
         }
         /**
-         * <code>map&lt;uint32, uint32&gt; delete_time_num_map = 1;</code>
+         * <code>map&lt;uint32, uint32&gt; deleteTimeNumMap = 1;</code>
          */
-
         public Builder removeDeleteTimeNumMap(
             int key) {
           
@@ -2229,11 +2079,12 @@ public final class MaterialDeleteInfoOuterClass {
          */
         @java.lang.Deprecated
         public java.util.Map<java.lang.Integer, java.lang.Integer>
-        getMutableDeleteTimeNumMap() {
+            getMutableDeleteTimeNumMap() {
+          bitField0_ |= 0x00000001;
           return internalGetMutableDeleteTimeNumMap().getMutableMap();
         }
         /**
-         * <code>map&lt;uint32, uint32&gt; delete_time_num_map = 1;</code>
+         * <code>map&lt;uint32, uint32&gt; deleteTimeNumMap = 1;</code>
          */
         public Builder putDeleteTimeNumMap(
             int key,
@@ -2242,22 +2093,23 @@ public final class MaterialDeleteInfoOuterClass {
           
           internalGetMutableDeleteTimeNumMap().getMutableMap()
               .put(key, value);
+          bitField0_ |= 0x00000001;
           return this;
         }
         /**
-         * <code>map&lt;uint32, uint32&gt; delete_time_num_map = 1;</code>
+         * <code>map&lt;uint32, uint32&gt; deleteTimeNumMap = 1;</code>
          */
-
         public Builder putAllDeleteTimeNumMap(
             java.util.Map<java.lang.Integer, java.lang.Integer> values) {
           internalGetMutableDeleteTimeNumMap().getMutableMap()
               .putAll(values);
+          bitField0_ |= 0x00000001;
           return this;
         }
 
         private int configDelayWeek_ ;
         /**
-         * <code>uint32 config_delay_week = 2;</code>
+         * <code>uint32 configDelayWeek = 2;</code>
          * @return The configDelayWeek.
          */
         @java.lang.Override
@@ -2265,22 +2117,23 @@ public final class MaterialDeleteInfoOuterClass {
           return configDelayWeek_;
         }
         /**
-         * <code>uint32 config_delay_week = 2;</code>
+         * <code>uint32 configDelayWeek = 2;</code>
          * @param value The configDelayWeek to set.
          * @return This builder for chaining.
          */
         public Builder setConfigDelayWeek(int value) {
           
           configDelayWeek_ = value;
+          bitField0_ |= 0x00000002;
           onChanged();
           return this;
         }
         /**
-         * <code>uint32 config_delay_week = 2;</code>
+         * <code>uint32 configDelayWeek = 2;</code>
          * @return This builder for chaining.
          */
         public Builder clearConfigDelayWeek() {
-          
+          bitField0_ = (bitField0_ & ~0x00000002);
           configDelayWeek_ = 0;
           onChanged();
           return this;
@@ -2288,7 +2141,7 @@ public final class MaterialDeleteInfoOuterClass {
 
         private int configCountDownTime_ ;
         /**
-         * <code>uint32 config_count_down_time = 3;</code>
+         * <code>uint32 configCountDownTime = 3;</code>
          * @return The configCountDownTime.
          */
         @java.lang.Override
@@ -2296,22 +2149,23 @@ public final class MaterialDeleteInfoOuterClass {
           return configCountDownTime_;
         }
         /**
-         * <code>uint32 config_count_down_time = 3;</code>
+         * <code>uint32 configCountDownTime = 3;</code>
          * @param value The configCountDownTime to set.
          * @return This builder for chaining.
          */
         public Builder setConfigCountDownTime(int value) {
           
           configCountDownTime_ = value;
+          bitField0_ |= 0x00000004;
           onChanged();
           return this;
         }
         /**
-         * <code>uint32 config_count_down_time = 3;</code>
+         * <code>uint32 configCountDownTime = 3;</code>
          * @return This builder for chaining.
          */
         public Builder clearConfigCountDownTime() {
-          
+          bitField0_ = (bitField0_ & ~0x00000004);
           configCountDownTime_ = 0;
           onChanged();
           return this;
@@ -2349,7 +2203,18 @@ public final class MaterialDeleteInfoOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
-          return new DelayWeekCountDownDelete(input, extensionRegistry);
+          Builder builder = newBuilder();
+          try {
+            builder.mergeFrom(input, extensionRegistry);
+          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+            throw e.setUnfinishedMessage(builder.buildPartial());
+          } catch (com.google.protobuf.UninitializedMessageException e) {
+            throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+          } catch (java.io.IOException e) {
+            throw new com.google.protobuf.InvalidProtocolBufferException(e)
+                .setUnfinishedMessage(builder.buildPartial());
+          }
+          return builder.buildPartial();
         }
       };
 
@@ -2412,10 +2277,10 @@ public final class MaterialDeleteInfoOuterClass {
           deleteInfoCase_);
     }
 
-    public static final int HAS_DELETE_CONFIG_FIELD_NUMBER = 1;
-    private boolean hasDeleteConfig_;
+    public static final int HASDELETECONFIG_FIELD_NUMBER = 1;
+    private boolean hasDeleteConfig_ = false;
     /**
-     * <code>bool has_delete_config = 1;</code>
+     * <code>bool hasDeleteConfig = 1;</code>
      * @return The hasDeleteConfig.
      */
     @java.lang.Override
@@ -2542,7 +2407,7 @@ public final class MaterialDeleteInfoOuterClass {
       if (deleteInfoCase_ == 4) {
         output.writeMessage(4, (emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.DelayWeekCountDownDelete) deleteInfo_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -2567,7 +2432,7 @@ public final class MaterialDeleteInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(4, (emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.DelayWeekCountDownDelete) deleteInfo_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -2601,7 +2466,7 @@ public final class MaterialDeleteInfoOuterClass {
         case 0:
         default:
       }
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -2612,7 +2477,7 @@ public final class MaterialDeleteInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + HAS_DELETE_CONFIG_FIELD_NUMBER;
+      hash = (37 * hash) + HASDELETECONFIG_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getHasDeleteConfig());
       switch (deleteInfoCase_) {
@@ -2631,7 +2496,7 @@ public final class MaterialDeleteInfoOuterClass {
         case 0:
         default:
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -2748,24 +2613,28 @@ public final class MaterialDeleteInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         hasDeleteConfig_ = false;
-
+        if (countDownDeleteBuilder_ != null) {
+          countDownDeleteBuilder_.clear();
+        }
+        if (dateDeleteBuilder_ != null) {
+          dateDeleteBuilder_.clear();
+        }
+        if (delayWeekCountDownDeleteBuilder_ != null) {
+          delayWeekCountDownDeleteBuilder_.clear();
+        }
         deleteInfoCase_ = 0;
         deleteInfo_ = null;
         return this;
@@ -2794,31 +2663,34 @@ public final class MaterialDeleteInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo buildPartial() {
         emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo result = new emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo(this);
-        result.hasDeleteConfig_ = hasDeleteConfig_;
-        if (deleteInfoCase_ == 2) {
-          if (countDownDeleteBuilder_ == null) {
-            result.deleteInfo_ = deleteInfo_;
-          } else {
-            result.deleteInfo_ = countDownDeleteBuilder_.build();
-          }
-        }
-        if (deleteInfoCase_ == 3) {
-          if (dateDeleteBuilder_ == null) {
-            result.deleteInfo_ = deleteInfo_;
-          } else {
-            result.deleteInfo_ = dateDeleteBuilder_.build();
-          }
-        }
-        if (deleteInfoCase_ == 4) {
-          if (delayWeekCountDownDeleteBuilder_ == null) {
-            result.deleteInfo_ = deleteInfo_;
-          } else {
-            result.deleteInfo_ = delayWeekCountDownDeleteBuilder_.build();
-          }
-        }
-        result.deleteInfoCase_ = deleteInfoCase_;
+        if (bitField0_ != 0) { buildPartial0(result); }
+        buildPartialOneofs(result);
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.hasDeleteConfig_ = hasDeleteConfig_;
+        }
+      }
+
+      private void buildPartialOneofs(emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo result) {
+        result.deleteInfoCase_ = deleteInfoCase_;
+        result.deleteInfo_ = this.deleteInfo_;
+        if (deleteInfoCase_ == 2 &&
+            countDownDeleteBuilder_ != null) {
+          result.deleteInfo_ = countDownDeleteBuilder_.build();
+        }
+        if (deleteInfoCase_ == 3 &&
+            dateDeleteBuilder_ != null) {
+          result.deleteInfo_ = dateDeleteBuilder_.build();
+        }
+        if (deleteInfoCase_ == 4 &&
+            delayWeekCountDownDeleteBuilder_ != null) {
+          result.deleteInfo_ = delayWeekCountDownDeleteBuilder_.build();
+        }
       }
 
       @java.lang.Override
@@ -2885,7 +2757,7 @@ public final class MaterialDeleteInfoOuterClass {
             break;
           }
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -2900,17 +2772,56 @@ public final class MaterialDeleteInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                hasDeleteConfig_ = input.readBool();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              case 18: {
+                input.readMessage(
+                    getCountDownDeleteFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                deleteInfoCase_ = 2;
+                break;
+              } // case 18
+              case 26: {
+                input.readMessage(
+                    getDateDeleteFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                deleteInfoCase_ = 3;
+                break;
+              } // case 26
+              case 34: {
+                input.readMessage(
+                    getDelayWeekCountDownDeleteFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                deleteInfoCase_ = 4;
+                break;
+              } // case 34
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int deleteInfoCase_ = 0;
@@ -2928,10 +2839,11 @@ public final class MaterialDeleteInfoOuterClass {
         return this;
       }
 
+      private int bitField0_;
 
       private boolean hasDeleteConfig_ ;
       /**
-       * <code>bool has_delete_config = 1;</code>
+       * <code>bool hasDeleteConfig = 1;</code>
        * @return The hasDeleteConfig.
        */
       @java.lang.Override
@@ -2939,22 +2851,23 @@ public final class MaterialDeleteInfoOuterClass {
         return hasDeleteConfig_;
       }
       /**
-       * <code>bool has_delete_config = 1;</code>
+       * <code>bool hasDeleteConfig = 1;</code>
        * @param value The hasDeleteConfig to set.
        * @return This builder for chaining.
        */
       public Builder setHasDeleteConfig(boolean value) {
         
         hasDeleteConfig_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>bool has_delete_config = 1;</code>
+       * <code>bool hasDeleteConfig = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearHasDeleteConfig() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         hasDeleteConfig_ = false;
         onChanged();
         return this;
@@ -3034,8 +2947,9 @@ public final class MaterialDeleteInfoOuterClass {
         } else {
           if (deleteInfoCase_ == 2) {
             countDownDeleteBuilder_.mergeFrom(value);
+          } else {
+            countDownDeleteBuilder_.setMessage(value);
           }
-          countDownDeleteBuilder_.setMessage(value);
         }
         deleteInfoCase_ = 2;
         return this;
@@ -3097,7 +3011,7 @@ public final class MaterialDeleteInfoOuterClass {
           deleteInfo_ = null;
         }
         deleteInfoCase_ = 2;
-        onChanged();;
+        onChanged();
         return countDownDeleteBuilder_;
       }
 
@@ -3175,8 +3089,9 @@ public final class MaterialDeleteInfoOuterClass {
         } else {
           if (deleteInfoCase_ == 3) {
             dateDeleteBuilder_.mergeFrom(value);
+          } else {
+            dateDeleteBuilder_.setMessage(value);
           }
-          dateDeleteBuilder_.setMessage(value);
         }
         deleteInfoCase_ = 3;
         return this;
@@ -3238,7 +3153,7 @@ public final class MaterialDeleteInfoOuterClass {
           deleteInfo_ = null;
         }
         deleteInfoCase_ = 3;
-        onChanged();;
+        onChanged();
         return dateDeleteBuilder_;
       }
 
@@ -3316,8 +3231,9 @@ public final class MaterialDeleteInfoOuterClass {
         } else {
           if (deleteInfoCase_ == 4) {
             delayWeekCountDownDeleteBuilder_.mergeFrom(value);
+          } else {
+            delayWeekCountDownDeleteBuilder_.setMessage(value);
           }
-          delayWeekCountDownDeleteBuilder_.setMessage(value);
         }
         deleteInfoCase_ = 4;
         return this;
@@ -3379,7 +3295,7 @@ public final class MaterialDeleteInfoOuterClass {
           deleteInfo_ = null;
         }
         deleteInfoCase_ = 4;
-        onChanged();;
+        onChanged();
         return delayWeekCountDownDeleteBuilder_;
       }
       @java.lang.Override
@@ -3415,7 +3331,18 @@ public final class MaterialDeleteInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new MaterialDeleteInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -3474,27 +3401,26 @@ public final class MaterialDeleteInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\030MaterialDeleteInfo.proto\"\357\005\n\022MaterialD" +
-      "eleteInfo\022\031\n\021has_delete_config\030\001 \001(\010\022@\n\021" +
-      "count_down_delete\030\002 \001(\0132#.MaterialDelete" +
-      "Info.CountDownDeleteH\000\0229\n\013date_delete\030\003 " +
-      "\001(\0132\".MaterialDeleteInfo.DateTimeDeleteH" +
-      "\000\022T\n\034delay_week_count_down_delete\030\004 \001(\0132" +
-      ",.MaterialDeleteInfo.DelayWeekCountDownD" +
-      "eleteH\000\032\302\001\n\017CountDownDelete\022V\n\023delete_ti" +
-      "me_num_map\030\001 \003(\01329.MaterialDeleteInfo.Co" +
-      "untDownDelete.DeleteTimeNumMapEntry\022\036\n\026c" +
-      "onfig_count_down_time\030\002 \001(\r\0327\n\025DeleteTim" +
-      "eNumMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r" +
-      ":\0028\001\032%\n\016DateTimeDelete\022\023\n\013delete_time\030\001 " +
-      "\001(\r\032\357\001\n\030DelayWeekCountDownDelete\022_\n\023dele" +
-      "te_time_num_map\030\001 \003(\0132B.MaterialDeleteIn" +
-      "fo.DelayWeekCountDownDelete.DeleteTimeNu" +
-      "mMapEntry\022\031\n\021config_delay_week\030\002 \001(\r\022\036\n\026" +
-      "config_count_down_time\030\003 \001(\r\0327\n\025DeleteTi" +
-      "meNumMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(" +
-      "\r:\0028\001B\r\n\013delete_infoB\033\n\031emu.grasscutter." +
-      "net.protob\006proto3"
+      "\n\030MaterialDeleteInfo.proto\"\336\005\n\022MaterialD" +
+      "eleteInfo\022\027\n\017hasDeleteConfig\030\001 \001(\010\022@\n\021co" +
+      "unt_down_delete\030\002 \001(\0132#.MaterialDeleteIn" +
+      "fo.CountDownDeleteH\000\0229\n\013date_delete\030\003 \001(" +
+      "\0132\".MaterialDeleteInfo.DateTimeDeleteH\000\022" +
+      "T\n\034delay_week_count_down_delete\030\004 \001(\0132,." +
+      "MaterialDeleteInfo.DelayWeekCountDownDel" +
+      "eteH\000\032\274\001\n\017CountDownDelete\022S\n\020deleteTimeN" +
+      "umMap\030\001 \003(\01329.MaterialDeleteInfo.CountDo" +
+      "wnDelete.DeleteTimeNumMapEntry\022\033\n\023config" +
+      "CountDownTime\030\002 \001(\r\0327\n\025DeleteTimeNumMapE" +
+      "ntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001\032$\n\016" +
+      "DateTimeDelete\022\022\n\ndeleteTime\030\001 \001(\r\032\347\001\n\030D" +
+      "elayWeekCountDownDelete\022\\\n\020deleteTimeNum" +
+      "Map\030\001 \003(\0132B.MaterialDeleteInfo.DelayWeek" +
+      "CountDownDelete.DeleteTimeNumMapEntry\022\027\n" +
+      "\017configDelayWeek\030\002 \001(\r\022\033\n\023configCountDow" +
+      "nTime\030\003 \001(\r\0327\n\025DeleteTimeNumMapEntry\022\013\n\003" +
+      "key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B\r\n\013delete_i" +
+      "nfoB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

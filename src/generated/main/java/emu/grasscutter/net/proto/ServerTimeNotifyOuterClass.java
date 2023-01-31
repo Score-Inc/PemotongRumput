@@ -19,22 +19,12 @@ public final class ServerTimeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint64 server_time = 13;</code>
+     * <code>uint64 serverTime = 12;</code>
      * @return The serverTime.
      */
     long getServerTime();
   }
   /**
-   * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 57;
-   *   ENET_CHANNEL_ID = 1;
-   *   ENET_IS_RELIABLE = 1;
-   * }
-   * </pre>
-   *
    * Protobuf type {@code ServerTimeNotify}
    */
   public static final class ServerTimeNotify extends
@@ -61,48 +51,6 @@ public final class ServerTimeNotifyOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private ServerTimeNotify(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 104: {
-
-              serverTime_ = input.readUInt64();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.ServerTimeNotifyOuterClass.internal_static_ServerTimeNotify_descriptor;
@@ -116,10 +64,139 @@ public final class ServerTimeNotifyOuterClass {
               emu.grasscutter.net.proto.ServerTimeNotifyOuterClass.ServerTimeNotify.class, emu.grasscutter.net.proto.ServerTimeNotifyOuterClass.ServerTimeNotify.Builder.class);
     }
 
-    public static final int SERVER_TIME_FIELD_NUMBER = 13;
-    private long serverTime_;
     /**
-     * <code>uint64 server_time = 13;</code>
+     * Protobuf enum {@code ServerTimeNotify.ODMLPFBCGNH}
+     */
+    public enum ODMLPFBCGNH
+        implements com.google.protobuf.ProtocolMessageEnum {
+      /**
+       * <code>NONE = 0;</code>
+       */
+      NONE(0),
+      /**
+       * <code>PEPPOHPHJOJ = 14;</code>
+       */
+      PEPPOHPHJOJ(14),
+      /**
+       * <code>DCDNILFDFLB = 1;</code>
+       */
+      DCDNILFDFLB(1),
+      UNRECOGNIZED(-1),
+      ;
+
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      public static final ODMLPFBCGNH NNBKOLMPOEA = DCDNILFDFLB;
+      /**
+       * <code>NONE = 0;</code>
+       */
+      public static final int NONE_VALUE = 0;
+      /**
+       * <code>PEPPOHPHJOJ = 14;</code>
+       */
+      public static final int PEPPOHPHJOJ_VALUE = 14;
+      /**
+       * <code>DCDNILFDFLB = 1;</code>
+       */
+      public static final int DCDNILFDFLB_VALUE = 1;
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      public static final int NNBKOLMPOEA_VALUE = 1;
+
+
+      public final int getNumber() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static ODMLPFBCGNH valueOf(int value) {
+        return forNumber(value);
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
+      public static ODMLPFBCGNH forNumber(int value) {
+        switch (value) {
+          case 0: return NONE;
+          case 14: return PEPPOHPHJOJ;
+          case 1: return DCDNILFDFLB;
+          default: return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<ODMLPFBCGNH>
+          internalGetValueMap() {
+        return internalValueMap;
+      }
+      private static final com.google.protobuf.Internal.EnumLiteMap<
+          ODMLPFBCGNH> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<ODMLPFBCGNH>() {
+              public ODMLPFBCGNH findValueByNumber(int number) {
+                return ODMLPFBCGNH.forNumber(number);
+              }
+            };
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor
+          getValueDescriptor() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
+        return getDescriptor().getValues().get(ordinal());
+      }
+      public final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptorForType() {
+        return getDescriptor();
+      }
+      public static final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptor() {
+        return emu.grasscutter.net.proto.ServerTimeNotifyOuterClass.ServerTimeNotify.getDescriptor().getEnumTypes().get(0);
+      }
+
+      private static final ODMLPFBCGNH[] VALUES = getStaticValuesArray();
+      private static ODMLPFBCGNH[] getStaticValuesArray() {
+        return new ODMLPFBCGNH[] {
+          NONE, PEPPOHPHJOJ, DCDNILFDFLB, NNBKOLMPOEA, 
+        };
+      }
+      public static ODMLPFBCGNH valueOf(
+          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException(
+            "EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      private final int value;
+
+      private ODMLPFBCGNH(int value) {
+        this.value = value;
+      }
+
+      // @@protoc_insertion_point(enum_scope:ServerTimeNotify.ODMLPFBCGNH)
+    }
+
+    public static final int SERVERTIME_FIELD_NUMBER = 12;
+    private long serverTime_ = 0L;
+    /**
+     * <code>uint64 serverTime = 12;</code>
      * @return The serverTime.
      */
     @java.lang.Override
@@ -142,9 +219,9 @@ public final class ServerTimeNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (serverTime_ != 0L) {
-        output.writeUInt64(13, serverTime_);
+        output.writeUInt64(12, serverTime_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -155,9 +232,9 @@ public final class ServerTimeNotifyOuterClass {
       size = 0;
       if (serverTime_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(13, serverTime_);
+          .computeUInt64Size(12, serverTime_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -174,7 +251,7 @@ public final class ServerTimeNotifyOuterClass {
 
       if (getServerTime()
           != other.getServerTime()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -185,10 +262,10 @@ public final class ServerTimeNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SERVER_TIME_FIELD_NUMBER;
+      hash = (37 * hash) + SERVERTIME_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getServerTime());
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -284,16 +361,6 @@ public final class ServerTimeNotifyOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 57;
-     *   ENET_CHANNEL_ID = 1;
-     *   ENET_IS_RELIABLE = 1;
-     * }
-     * </pre>
-     *
      * Protobuf type {@code ServerTimeNotify}
      */
     public static final class Builder extends
@@ -315,24 +382,19 @@ public final class ServerTimeNotifyOuterClass {
 
       // Construct using emu.grasscutter.net.proto.ServerTimeNotifyOuterClass.ServerTimeNotify.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         serverTime_ = 0L;
-
         return this;
       }
 
@@ -359,9 +421,16 @@ public final class ServerTimeNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ServerTimeNotifyOuterClass.ServerTimeNotify buildPartial() {
         emu.grasscutter.net.proto.ServerTimeNotifyOuterClass.ServerTimeNotify result = new emu.grasscutter.net.proto.ServerTimeNotifyOuterClass.ServerTimeNotify(this);
-        result.serverTime_ = serverTime_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.ServerTimeNotifyOuterClass.ServerTimeNotify result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.serverTime_ = serverTime_;
+        }
       }
 
       @java.lang.Override
@@ -411,7 +480,7 @@ public final class ServerTimeNotifyOuterClass {
         if (other.getServerTime() != 0L) {
           setServerTime(other.getServerTime());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -426,23 +495,42 @@ public final class ServerTimeNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.ServerTimeNotifyOuterClass.ServerTimeNotify parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 96: {
+                serverTime_ = input.readUInt64();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 96
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.ServerTimeNotifyOuterClass.ServerTimeNotify) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private long serverTime_ ;
       /**
-       * <code>uint64 server_time = 13;</code>
+       * <code>uint64 serverTime = 12;</code>
        * @return The serverTime.
        */
       @java.lang.Override
@@ -450,22 +538,23 @@ public final class ServerTimeNotifyOuterClass {
         return serverTime_;
       }
       /**
-       * <code>uint64 server_time = 13;</code>
+       * <code>uint64 serverTime = 12;</code>
        * @param value The serverTime to set.
        * @return This builder for chaining.
        */
       public Builder setServerTime(long value) {
         
         serverTime_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint64 server_time = 13;</code>
+       * <code>uint64 serverTime = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearServerTime() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         serverTime_ = 0L;
         onChanged();
         return this;
@@ -503,7 +592,18 @@ public final class ServerTimeNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new ServerTimeNotify(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -537,9 +637,11 @@ public final class ServerTimeNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026ServerTimeNotify.proto\"\'\n\020ServerTimeNo" +
-      "tify\022\023\n\013server_time\030\r \001(\004B\033\n\031emu.grasscu" +
-      "tter.net.protob\006proto3"
+      "\n\026ServerTimeNotify.proto\"v\n\020ServerTimeNo" +
+      "tify\022\022\n\nserverTime\030\014 \001(\004\"N\n\013ODMLPFBCGNH\022" +
+      "\010\n\004NONE\020\000\022\017\n\013PEPPOHPHJOJ\020\016\022\017\n\013DCDNILFDFL" +
+      "B\020\001\022\017\n\013NNBKOLMPOEA\020\001\032\002\020\001B\033\n\031emu.grasscut" +
+      "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

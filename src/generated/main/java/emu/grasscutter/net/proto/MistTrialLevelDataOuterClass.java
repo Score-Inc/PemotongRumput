@@ -19,67 +19,67 @@ public final class MistTrialLevelDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 open_time = 10;</code>
+     * <code>uint32 openTime = 2;</code>
      * @return The openTime.
      */
     int getOpenTime();
 
     /**
-     * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar> 
-        getBestAvatarListList();
-    /**
-     * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
-     */
-    emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar getBestAvatarList(int index);
-    /**
-     * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
-     */
-    int getBestAvatarListCount();
-    /**
-     * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatarOrBuilder> 
-        getBestAvatarListOrBuilderList();
-    /**
-     * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
-     */
-    emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatarOrBuilder getBestAvatarListOrBuilder(
-        int index);
-
-    /**
-     * <code>uint32 level_id = 14;</code>
-     * @return The levelId.
-     */
-    int getLevelId();
-
-    /**
-     * <code>uint32 first_pass_time = 1;</code>
+     * <code>uint32 firstPassTime = 4;</code>
      * @return The firstPassTime.
      */
     int getFirstPassTime();
 
     /**
-     * <code>.MistTrialBestAvatar best_hit_avatar = 11;</code>
+     * <code>uint32 levelId = 12;</code>
+     * @return The levelId.
+     */
+    int getLevelId();
+
+    /**
+     * <code>bool isOpen = 6;</code>
+     * @return The isOpen.
+     */
+    boolean getIsOpen();
+
+    /**
+     * <code>.MistTrialBestAvatar bestHitAvatar = 14;</code>
      * @return Whether the bestHitAvatar field is set.
      */
     boolean hasBestHitAvatar();
     /**
-     * <code>.MistTrialBestAvatar best_hit_avatar = 11;</code>
+     * <code>.MistTrialBestAvatar bestHitAvatar = 14;</code>
      * @return The bestHitAvatar.
      */
     emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar getBestHitAvatar();
     /**
-     * <code>.MistTrialBestAvatar best_hit_avatar = 11;</code>
+     * <code>.MistTrialBestAvatar bestHitAvatar = 14;</code>
      */
     emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatarOrBuilder getBestHitAvatarOrBuilder();
 
     /**
-     * <code>bool is_open = 9;</code>
-     * @return The isOpen.
+     * <code>repeated .MistTrialBestAvatar bestAvatarList = 13;</code>
      */
-    boolean getIsOpen();
+    java.util.List<emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar> 
+        getBestAvatarListList();
+    /**
+     * <code>repeated .MistTrialBestAvatar bestAvatarList = 13;</code>
+     */
+    emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar getBestAvatarList(int index);
+    /**
+     * <code>repeated .MistTrialBestAvatar bestAvatarList = 13;</code>
+     */
+    int getBestAvatarListCount();
+    /**
+     * <code>repeated .MistTrialBestAvatar bestAvatarList = 13;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatarOrBuilder> 
+        getBestAvatarListOrBuilderList();
+    /**
+     * <code>repeated .MistTrialBestAvatar bestAvatarList = 13;</code>
+     */
+    emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatarOrBuilder getBestAvatarListOrBuilder(
+        int index);
   }
   /**
    * Protobuf type {@code MistTrialLevelData}
@@ -109,89 +109,6 @@ public final class MistTrialLevelDataOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private MistTrialLevelData(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              firstPassTime_ = input.readUInt32();
-              break;
-            }
-            case 26: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                bestAvatarList_ = new java.util.ArrayList<emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              bestAvatarList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.parser(), extensionRegistry));
-              break;
-            }
-            case 72: {
-
-              isOpen_ = input.readBool();
-              break;
-            }
-            case 80: {
-
-              openTime_ = input.readUInt32();
-              break;
-            }
-            case 90: {
-              emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.Builder subBuilder = null;
-              if (bestHitAvatar_ != null) {
-                subBuilder = bestHitAvatar_.toBuilder();
-              }
-              bestHitAvatar_ = input.readMessage(emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(bestHitAvatar_);
-                bestHitAvatar_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 112: {
-
-              levelId_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          bestAvatarList_ = java.util.Collections.unmodifiableList(bestAvatarList_);
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.MistTrialLevelDataOuterClass.internal_static_MistTrialLevelData_descriptor;
@@ -205,10 +122,10 @@ public final class MistTrialLevelDataOuterClass {
               emu.grasscutter.net.proto.MistTrialLevelDataOuterClass.MistTrialLevelData.class, emu.grasscutter.net.proto.MistTrialLevelDataOuterClass.MistTrialLevelData.Builder.class);
     }
 
-    public static final int OPEN_TIME_FIELD_NUMBER = 10;
-    private int openTime_;
+    public static final int OPENTIME_FIELD_NUMBER = 2;
+    private int openTime_ = 0;
     /**
-     * <code>uint32 open_time = 10;</code>
+     * <code>uint32 openTime = 2;</code>
      * @return The openTime.
      */
     @java.lang.Override
@@ -216,61 +133,10 @@ public final class MistTrialLevelDataOuterClass {
       return openTime_;
     }
 
-    public static final int BEST_AVATAR_LIST_FIELD_NUMBER = 3;
-    private java.util.List<emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar> bestAvatarList_;
+    public static final int FIRSTPASSTIME_FIELD_NUMBER = 4;
+    private int firstPassTime_ = 0;
     /**
-     * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar> getBestAvatarListList() {
-      return bestAvatarList_;
-    }
-    /**
-     * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatarOrBuilder> 
-        getBestAvatarListOrBuilderList() {
-      return bestAvatarList_;
-    }
-    /**
-     * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
-     */
-    @java.lang.Override
-    public int getBestAvatarListCount() {
-      return bestAvatarList_.size();
-    }
-    /**
-     * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar getBestAvatarList(int index) {
-      return bestAvatarList_.get(index);
-    }
-    /**
-     * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatarOrBuilder getBestAvatarListOrBuilder(
-        int index) {
-      return bestAvatarList_.get(index);
-    }
-
-    public static final int LEVEL_ID_FIELD_NUMBER = 14;
-    private int levelId_;
-    /**
-     * <code>uint32 level_id = 14;</code>
-     * @return The levelId.
-     */
-    @java.lang.Override
-    public int getLevelId() {
-      return levelId_;
-    }
-
-    public static final int FIRST_PASS_TIME_FIELD_NUMBER = 1;
-    private int firstPassTime_;
-    /**
-     * <code>uint32 first_pass_time = 1;</code>
+     * <code>uint32 firstPassTime = 4;</code>
      * @return The firstPassTime.
      */
     @java.lang.Override
@@ -278,10 +144,32 @@ public final class MistTrialLevelDataOuterClass {
       return firstPassTime_;
     }
 
-    public static final int BEST_HIT_AVATAR_FIELD_NUMBER = 11;
+    public static final int LEVELID_FIELD_NUMBER = 12;
+    private int levelId_ = 0;
+    /**
+     * <code>uint32 levelId = 12;</code>
+     * @return The levelId.
+     */
+    @java.lang.Override
+    public int getLevelId() {
+      return levelId_;
+    }
+
+    public static final int ISOPEN_FIELD_NUMBER = 6;
+    private boolean isOpen_ = false;
+    /**
+     * <code>bool isOpen = 6;</code>
+     * @return The isOpen.
+     */
+    @java.lang.Override
+    public boolean getIsOpen() {
+      return isOpen_;
+    }
+
+    public static final int BESTHITAVATAR_FIELD_NUMBER = 14;
     private emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar bestHitAvatar_;
     /**
-     * <code>.MistTrialBestAvatar best_hit_avatar = 11;</code>
+     * <code>.MistTrialBestAvatar bestHitAvatar = 14;</code>
      * @return Whether the bestHitAvatar field is set.
      */
     @java.lang.Override
@@ -289,7 +177,7 @@ public final class MistTrialLevelDataOuterClass {
       return bestHitAvatar_ != null;
     }
     /**
-     * <code>.MistTrialBestAvatar best_hit_avatar = 11;</code>
+     * <code>.MistTrialBestAvatar bestHitAvatar = 14;</code>
      * @return The bestHitAvatar.
      */
     @java.lang.Override
@@ -297,22 +185,52 @@ public final class MistTrialLevelDataOuterClass {
       return bestHitAvatar_ == null ? emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.getDefaultInstance() : bestHitAvatar_;
     }
     /**
-     * <code>.MistTrialBestAvatar best_hit_avatar = 11;</code>
+     * <code>.MistTrialBestAvatar bestHitAvatar = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatarOrBuilder getBestHitAvatarOrBuilder() {
-      return getBestHitAvatar();
+      return bestHitAvatar_ == null ? emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.getDefaultInstance() : bestHitAvatar_;
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 9;
-    private boolean isOpen_;
+    public static final int BESTAVATARLIST_FIELD_NUMBER = 13;
+    @SuppressWarnings("serial")
+    private java.util.List<emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar> bestAvatarList_;
     /**
-     * <code>bool is_open = 9;</code>
-     * @return The isOpen.
+     * <code>repeated .MistTrialBestAvatar bestAvatarList = 13;</code>
      */
     @java.lang.Override
-    public boolean getIsOpen() {
-      return isOpen_;
+    public java.util.List<emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar> getBestAvatarListList() {
+      return bestAvatarList_;
+    }
+    /**
+     * <code>repeated .MistTrialBestAvatar bestAvatarList = 13;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatarOrBuilder> 
+        getBestAvatarListOrBuilderList() {
+      return bestAvatarList_;
+    }
+    /**
+     * <code>repeated .MistTrialBestAvatar bestAvatarList = 13;</code>
+     */
+    @java.lang.Override
+    public int getBestAvatarListCount() {
+      return bestAvatarList_.size();
+    }
+    /**
+     * <code>repeated .MistTrialBestAvatar bestAvatarList = 13;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar getBestAvatarList(int index) {
+      return bestAvatarList_.get(index);
+    }
+    /**
+     * <code>repeated .MistTrialBestAvatar bestAvatarList = 13;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatarOrBuilder getBestAvatarListOrBuilder(
+        int index) {
+      return bestAvatarList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -329,25 +247,25 @@ public final class MistTrialLevelDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (firstPassTime_ != 0) {
-        output.writeUInt32(1, firstPassTime_);
+      if (openTime_ != 0) {
+        output.writeUInt32(2, openTime_);
       }
-      for (int i = 0; i < bestAvatarList_.size(); i++) {
-        output.writeMessage(3, bestAvatarList_.get(i));
+      if (firstPassTime_ != 0) {
+        output.writeUInt32(4, firstPassTime_);
       }
       if (isOpen_ != false) {
-        output.writeBool(9, isOpen_);
-      }
-      if (openTime_ != 0) {
-        output.writeUInt32(10, openTime_);
-      }
-      if (bestHitAvatar_ != null) {
-        output.writeMessage(11, getBestHitAvatar());
+        output.writeBool(6, isOpen_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(14, levelId_);
+        output.writeUInt32(12, levelId_);
       }
-      unknownFields.writeTo(output);
+      for (int i = 0; i < bestAvatarList_.size(); i++) {
+        output.writeMessage(13, bestAvatarList_.get(i));
+      }
+      if (bestHitAvatar_ != null) {
+        output.writeMessage(14, getBestHitAvatar());
+      }
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -356,31 +274,31 @@ public final class MistTrialLevelDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (openTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, openTime_);
+      }
       if (firstPassTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, firstPassTime_);
-      }
-      for (int i = 0; i < bestAvatarList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, bestAvatarList_.get(i));
+          .computeUInt32Size(4, firstPassTime_);
       }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isOpen_);
-      }
-      if (openTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, openTime_);
-      }
-      if (bestHitAvatar_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, getBestHitAvatar());
+          .computeBoolSize(6, isOpen_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, levelId_);
+          .computeUInt32Size(12, levelId_);
       }
-      size += unknownFields.getSerializedSize();
+      for (int i = 0; i < bestAvatarList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(13, bestAvatarList_.get(i));
+      }
+      if (bestHitAvatar_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(14, getBestHitAvatar());
+      }
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -397,20 +315,20 @@ public final class MistTrialLevelDataOuterClass {
 
       if (getOpenTime()
           != other.getOpenTime()) return false;
-      if (!getBestAvatarListList()
-          .equals(other.getBestAvatarListList())) return false;
-      if (getLevelId()
-          != other.getLevelId()) return false;
       if (getFirstPassTime()
           != other.getFirstPassTime()) return false;
+      if (getLevelId()
+          != other.getLevelId()) return false;
+      if (getIsOpen()
+          != other.getIsOpen()) return false;
       if (hasBestHitAvatar() != other.hasBestHitAvatar()) return false;
       if (hasBestHitAvatar()) {
         if (!getBestHitAvatar()
             .equals(other.getBestHitAvatar())) return false;
       }
-      if (getIsOpen()
-          != other.getIsOpen()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getBestAvatarListList()
+          .equals(other.getBestAvatarListList())) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -421,24 +339,24 @@ public final class MistTrialLevelDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + OPEN_TIME_FIELD_NUMBER;
+      hash = (37 * hash) + OPENTIME_FIELD_NUMBER;
       hash = (53 * hash) + getOpenTime();
-      if (getBestAvatarListCount() > 0) {
-        hash = (37 * hash) + BEST_AVATAR_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getBestAvatarListList().hashCode();
-      }
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
-      hash = (37 * hash) + FIRST_PASS_TIME_FIELD_NUMBER;
+      hash = (37 * hash) + FIRSTPASSTIME_FIELD_NUMBER;
       hash = (53 * hash) + getFirstPassTime();
-      if (hasBestHitAvatar()) {
-        hash = (37 * hash) + BEST_HIT_AVATAR_FIELD_NUMBER;
-        hash = (53 * hash) + getBestHitAvatar().hashCode();
-      }
-      hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
+      hash = (37 * hash) + LEVELID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + ISOPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
-      hash = (29 * hash) + unknownFields.hashCode();
+      if (hasBestHitAvatar()) {
+        hash = (37 * hash) + BESTHITAVATAR_FIELD_NUMBER;
+        hash = (53 * hash) + getBestHitAvatar().hashCode();
+      }
+      if (getBestAvatarListCount() > 0) {
+        hash = (37 * hash) + BESTAVATARLIST_FIELD_NUMBER;
+        hash = (53 * hash) + getBestAvatarListList().hashCode();
+      }
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -555,43 +473,34 @@ public final class MistTrialLevelDataOuterClass {
 
       // Construct using emu.grasscutter.net.proto.MistTrialLevelDataOuterClass.MistTrialLevelData.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getBestAvatarListFieldBuilder();
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         openTime_ = 0;
-
-        if (bestAvatarListBuilder_ == null) {
-          bestAvatarList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        } else {
-          bestAvatarListBuilder_.clear();
-        }
-        levelId_ = 0;
-
         firstPassTime_ = 0;
-
-        if (bestHitAvatarBuilder_ == null) {
-          bestHitAvatar_ = null;
-        } else {
-          bestHitAvatar_ = null;
+        levelId_ = 0;
+        isOpen_ = false;
+        bestHitAvatar_ = null;
+        if (bestHitAvatarBuilder_ != null) {
+          bestHitAvatarBuilder_.dispose();
           bestHitAvatarBuilder_ = null;
         }
-        isOpen_ = false;
-
+        if (bestAvatarListBuilder_ == null) {
+          bestAvatarList_ = java.util.Collections.emptyList();
+        } else {
+          bestAvatarList_ = null;
+          bestAvatarListBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000020);
         return this;
       }
 
@@ -618,27 +527,43 @@ public final class MistTrialLevelDataOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.MistTrialLevelDataOuterClass.MistTrialLevelData buildPartial() {
         emu.grasscutter.net.proto.MistTrialLevelDataOuterClass.MistTrialLevelData result = new emu.grasscutter.net.proto.MistTrialLevelDataOuterClass.MistTrialLevelData(this);
-        int from_bitField0_ = bitField0_;
-        result.openTime_ = openTime_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.MistTrialLevelDataOuterClass.MistTrialLevelData result) {
         if (bestAvatarListBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000020) != 0)) {
             bestAvatarList_ = java.util.Collections.unmodifiableList(bestAvatarList_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000020);
           }
           result.bestAvatarList_ = bestAvatarList_;
         } else {
           result.bestAvatarList_ = bestAvatarListBuilder_.build();
         }
-        result.levelId_ = levelId_;
-        result.firstPassTime_ = firstPassTime_;
-        if (bestHitAvatarBuilder_ == null) {
-          result.bestHitAvatar_ = bestHitAvatar_;
-        } else {
-          result.bestHitAvatar_ = bestHitAvatarBuilder_.build();
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.MistTrialLevelDataOuterClass.MistTrialLevelData result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.openTime_ = openTime_;
         }
-        result.isOpen_ = isOpen_;
-        onBuilt();
-        return result;
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.firstPassTime_ = firstPassTime_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.levelId_ = levelId_;
+        }
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.isOpen_ = isOpen_;
+        }
+        if (((from_bitField0_ & 0x00000010) != 0)) {
+          result.bestHitAvatar_ = bestHitAvatarBuilder_ == null
+              ? bestHitAvatar_
+              : bestHitAvatarBuilder_.build();
+        }
       }
 
       @java.lang.Override
@@ -688,11 +613,23 @@ public final class MistTrialLevelDataOuterClass {
         if (other.getOpenTime() != 0) {
           setOpenTime(other.getOpenTime());
         }
+        if (other.getFirstPassTime() != 0) {
+          setFirstPassTime(other.getFirstPassTime());
+        }
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
+        }
+        if (other.getIsOpen() != false) {
+          setIsOpen(other.getIsOpen());
+        }
+        if (other.hasBestHitAvatar()) {
+          mergeBestHitAvatar(other.getBestHitAvatar());
+        }
         if (bestAvatarListBuilder_ == null) {
           if (!other.bestAvatarList_.isEmpty()) {
             if (bestAvatarList_.isEmpty()) {
               bestAvatarList_ = other.bestAvatarList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000020);
             } else {
               ensureBestAvatarListIsMutable();
               bestAvatarList_.addAll(other.bestAvatarList_);
@@ -705,7 +642,7 @@ public final class MistTrialLevelDataOuterClass {
               bestAvatarListBuilder_.dispose();
               bestAvatarListBuilder_ = null;
               bestAvatarList_ = other.bestAvatarList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000020);
               bestAvatarListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getBestAvatarListFieldBuilder() : null;
@@ -714,19 +651,7 @@ public final class MistTrialLevelDataOuterClass {
             }
           }
         }
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
-        }
-        if (other.getFirstPassTime() != 0) {
-          setFirstPassTime(other.getFirstPassTime());
-        }
-        if (other.hasBestHitAvatar()) {
-          mergeBestHitAvatar(other.getBestHitAvatar());
-        }
-        if (other.getIsOpen() != false) {
-          setIsOpen(other.getIsOpen());
-        }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -741,24 +666,77 @@ public final class MistTrialLevelDataOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.MistTrialLevelDataOuterClass.MistTrialLevelData parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 16: {
+                openTime_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 16
+              case 32: {
+                firstPassTime_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 32
+              case 48: {
+                isOpen_ = input.readBool();
+                bitField0_ |= 0x00000008;
+                break;
+              } // case 48
+              case 96: {
+                levelId_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 96
+              case 106: {
+                emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar m =
+                    input.readMessage(
+                        emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.parser(),
+                        extensionRegistry);
+                if (bestAvatarListBuilder_ == null) {
+                  ensureBestAvatarListIsMutable();
+                  bestAvatarList_.add(m);
+                } else {
+                  bestAvatarListBuilder_.addMessage(m);
+                }
+                break;
+              } // case 106
+              case 114: {
+                input.readMessage(
+                    getBestHitAvatarFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000010;
+                break;
+              } // case 114
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.MistTrialLevelDataOuterClass.MistTrialLevelData) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
 
       private int openTime_ ;
       /**
-       * <code>uint32 open_time = 10;</code>
+       * <code>uint32 openTime = 2;</code>
        * @return The openTime.
        */
       @java.lang.Override
@@ -766,33 +744,249 @@ public final class MistTrialLevelDataOuterClass {
         return openTime_;
       }
       /**
-       * <code>uint32 open_time = 10;</code>
+       * <code>uint32 openTime = 2;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
        */
       public Builder setOpenTime(int value) {
         
         openTime_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 open_time = 10;</code>
+       * <code>uint32 openTime = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearOpenTime() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         openTime_ = 0;
         onChanged();
         return this;
       }
 
+      private int firstPassTime_ ;
+      /**
+       * <code>uint32 firstPassTime = 4;</code>
+       * @return The firstPassTime.
+       */
+      @java.lang.Override
+      public int getFirstPassTime() {
+        return firstPassTime_;
+      }
+      /**
+       * <code>uint32 firstPassTime = 4;</code>
+       * @param value The firstPassTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFirstPassTime(int value) {
+        
+        firstPassTime_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 firstPassTime = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFirstPassTime() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        firstPassTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int levelId_ ;
+      /**
+       * <code>uint32 levelId = 12;</code>
+       * @return The levelId.
+       */
+      @java.lang.Override
+      public int getLevelId() {
+        return levelId_;
+      }
+      /**
+       * <code>uint32 levelId = 12;</code>
+       * @param value The levelId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevelId(int value) {
+        
+        levelId_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 levelId = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevelId() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        levelId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isOpen_ ;
+      /**
+       * <code>bool isOpen = 6;</code>
+       * @return The isOpen.
+       */
+      @java.lang.Override
+      public boolean getIsOpen() {
+        return isOpen_;
+      }
+      /**
+       * <code>bool isOpen = 6;</code>
+       * @param value The isOpen to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsOpen(boolean value) {
+        
+        isOpen_ = value;
+        bitField0_ |= 0x00000008;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool isOpen = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsOpen() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        isOpen_ = false;
+        onChanged();
+        return this;
+      }
+
+      private emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar bestHitAvatar_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar, emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.Builder, emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatarOrBuilder> bestHitAvatarBuilder_;
+      /**
+       * <code>.MistTrialBestAvatar bestHitAvatar = 14;</code>
+       * @return Whether the bestHitAvatar field is set.
+       */
+      public boolean hasBestHitAvatar() {
+        return ((bitField0_ & 0x00000010) != 0);
+      }
+      /**
+       * <code>.MistTrialBestAvatar bestHitAvatar = 14;</code>
+       * @return The bestHitAvatar.
+       */
+      public emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar getBestHitAvatar() {
+        if (bestHitAvatarBuilder_ == null) {
+          return bestHitAvatar_ == null ? emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.getDefaultInstance() : bestHitAvatar_;
+        } else {
+          return bestHitAvatarBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.MistTrialBestAvatar bestHitAvatar = 14;</code>
+       */
+      public Builder setBestHitAvatar(emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar value) {
+        if (bestHitAvatarBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          bestHitAvatar_ = value;
+        } else {
+          bestHitAvatarBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000010;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.MistTrialBestAvatar bestHitAvatar = 14;</code>
+       */
+      public Builder setBestHitAvatar(
+          emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.Builder builderForValue) {
+        if (bestHitAvatarBuilder_ == null) {
+          bestHitAvatar_ = builderForValue.build();
+        } else {
+          bestHitAvatarBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000010;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.MistTrialBestAvatar bestHitAvatar = 14;</code>
+       */
+      public Builder mergeBestHitAvatar(emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar value) {
+        if (bestHitAvatarBuilder_ == null) {
+          if (((bitField0_ & 0x00000010) != 0) &&
+            bestHitAvatar_ != null &&
+            bestHitAvatar_ != emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.getDefaultInstance()) {
+            getBestHitAvatarBuilder().mergeFrom(value);
+          } else {
+            bestHitAvatar_ = value;
+          }
+        } else {
+          bestHitAvatarBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000010;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.MistTrialBestAvatar bestHitAvatar = 14;</code>
+       */
+      public Builder clearBestHitAvatar() {
+        bitField0_ = (bitField0_ & ~0x00000010);
+        bestHitAvatar_ = null;
+        if (bestHitAvatarBuilder_ != null) {
+          bestHitAvatarBuilder_.dispose();
+          bestHitAvatarBuilder_ = null;
+        }
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.MistTrialBestAvatar bestHitAvatar = 14;</code>
+       */
+      public emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.Builder getBestHitAvatarBuilder() {
+        bitField0_ |= 0x00000010;
+        onChanged();
+        return getBestHitAvatarFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.MistTrialBestAvatar bestHitAvatar = 14;</code>
+       */
+      public emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatarOrBuilder getBestHitAvatarOrBuilder() {
+        if (bestHitAvatarBuilder_ != null) {
+          return bestHitAvatarBuilder_.getMessageOrBuilder();
+        } else {
+          return bestHitAvatar_ == null ?
+              emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.getDefaultInstance() : bestHitAvatar_;
+        }
+      }
+      /**
+       * <code>.MistTrialBestAvatar bestHitAvatar = 14;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar, emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.Builder, emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatarOrBuilder> 
+          getBestHitAvatarFieldBuilder() {
+        if (bestHitAvatarBuilder_ == null) {
+          bestHitAvatarBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar, emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.Builder, emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatarOrBuilder>(
+                  getBestHitAvatar(),
+                  getParentForChildren(),
+                  isClean());
+          bestHitAvatar_ = null;
+        }
+        return bestHitAvatarBuilder_;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar> bestAvatarList_ =
         java.util.Collections.emptyList();
       private void ensureBestAvatarListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000020) != 0)) {
           bestAvatarList_ = new java.util.ArrayList<emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar>(bestAvatarList_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000020;
          }
       }
 
@@ -800,7 +994,7 @@ public final class MistTrialLevelDataOuterClass {
           emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar, emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.Builder, emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatarOrBuilder> bestAvatarListBuilder_;
 
       /**
-       * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+       * <code>repeated .MistTrialBestAvatar bestAvatarList = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar> getBestAvatarListList() {
         if (bestAvatarListBuilder_ == null) {
@@ -810,7 +1004,7 @@ public final class MistTrialLevelDataOuterClass {
         }
       }
       /**
-       * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+       * <code>repeated .MistTrialBestAvatar bestAvatarList = 13;</code>
        */
       public int getBestAvatarListCount() {
         if (bestAvatarListBuilder_ == null) {
@@ -820,7 +1014,7 @@ public final class MistTrialLevelDataOuterClass {
         }
       }
       /**
-       * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+       * <code>repeated .MistTrialBestAvatar bestAvatarList = 13;</code>
        */
       public emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar getBestAvatarList(int index) {
         if (bestAvatarListBuilder_ == null) {
@@ -830,7 +1024,7 @@ public final class MistTrialLevelDataOuterClass {
         }
       }
       /**
-       * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+       * <code>repeated .MistTrialBestAvatar bestAvatarList = 13;</code>
        */
       public Builder setBestAvatarList(
           int index, emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar value) {
@@ -847,7 +1041,7 @@ public final class MistTrialLevelDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+       * <code>repeated .MistTrialBestAvatar bestAvatarList = 13;</code>
        */
       public Builder setBestAvatarList(
           int index, emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.Builder builderForValue) {
@@ -861,7 +1055,7 @@ public final class MistTrialLevelDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+       * <code>repeated .MistTrialBestAvatar bestAvatarList = 13;</code>
        */
       public Builder addBestAvatarList(emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar value) {
         if (bestAvatarListBuilder_ == null) {
@@ -877,7 +1071,7 @@ public final class MistTrialLevelDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+       * <code>repeated .MistTrialBestAvatar bestAvatarList = 13;</code>
        */
       public Builder addBestAvatarList(
           int index, emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar value) {
@@ -894,7 +1088,7 @@ public final class MistTrialLevelDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+       * <code>repeated .MistTrialBestAvatar bestAvatarList = 13;</code>
        */
       public Builder addBestAvatarList(
           emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.Builder builderForValue) {
@@ -908,7 +1102,7 @@ public final class MistTrialLevelDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+       * <code>repeated .MistTrialBestAvatar bestAvatarList = 13;</code>
        */
       public Builder addBestAvatarList(
           int index, emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.Builder builderForValue) {
@@ -922,7 +1116,7 @@ public final class MistTrialLevelDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+       * <code>repeated .MistTrialBestAvatar bestAvatarList = 13;</code>
        */
       public Builder addAllBestAvatarList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar> values) {
@@ -937,12 +1131,12 @@ public final class MistTrialLevelDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+       * <code>repeated .MistTrialBestAvatar bestAvatarList = 13;</code>
        */
       public Builder clearBestAvatarList() {
         if (bestAvatarListBuilder_ == null) {
           bestAvatarList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000020);
           onChanged();
         } else {
           bestAvatarListBuilder_.clear();
@@ -950,7 +1144,7 @@ public final class MistTrialLevelDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+       * <code>repeated .MistTrialBestAvatar bestAvatarList = 13;</code>
        */
       public Builder removeBestAvatarList(int index) {
         if (bestAvatarListBuilder_ == null) {
@@ -963,14 +1157,14 @@ public final class MistTrialLevelDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+       * <code>repeated .MistTrialBestAvatar bestAvatarList = 13;</code>
        */
       public emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.Builder getBestAvatarListBuilder(
           int index) {
         return getBestAvatarListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+       * <code>repeated .MistTrialBestAvatar bestAvatarList = 13;</code>
        */
       public emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatarOrBuilder getBestAvatarListOrBuilder(
           int index) {
@@ -980,7 +1174,7 @@ public final class MistTrialLevelDataOuterClass {
         }
       }
       /**
-       * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+       * <code>repeated .MistTrialBestAvatar bestAvatarList = 13;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatarOrBuilder> 
            getBestAvatarListOrBuilderList() {
@@ -991,14 +1185,14 @@ public final class MistTrialLevelDataOuterClass {
         }
       }
       /**
-       * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+       * <code>repeated .MistTrialBestAvatar bestAvatarList = 13;</code>
        */
       public emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.Builder addBestAvatarListBuilder() {
         return getBestAvatarListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.getDefaultInstance());
       }
       /**
-       * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+       * <code>repeated .MistTrialBestAvatar bestAvatarList = 13;</code>
        */
       public emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.Builder addBestAvatarListBuilder(
           int index) {
@@ -1006,7 +1200,7 @@ public final class MistTrialLevelDataOuterClass {
             index, emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.getDefaultInstance());
       }
       /**
-       * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+       * <code>repeated .MistTrialBestAvatar bestAvatarList = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.Builder> 
            getBestAvatarListBuilderList() {
@@ -1019,224 +1213,12 @@ public final class MistTrialLevelDataOuterClass {
           bestAvatarListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar, emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.Builder, emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatarOrBuilder>(
                   bestAvatarList_,
-                  ((bitField0_ & 0x00000001) != 0),
+                  ((bitField0_ & 0x00000020) != 0),
                   getParentForChildren(),
                   isClean());
           bestAvatarList_ = null;
         }
         return bestAvatarListBuilder_;
-      }
-
-      private int levelId_ ;
-      /**
-       * <code>uint32 level_id = 14;</code>
-       * @return The levelId.
-       */
-      @java.lang.Override
-      public int getLevelId() {
-        return levelId_;
-      }
-      /**
-       * <code>uint32 level_id = 14;</code>
-       * @param value The levelId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevelId(int value) {
-        
-        levelId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level_id = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevelId() {
-        
-        levelId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int firstPassTime_ ;
-      /**
-       * <code>uint32 first_pass_time = 1;</code>
-       * @return The firstPassTime.
-       */
-      @java.lang.Override
-      public int getFirstPassTime() {
-        return firstPassTime_;
-      }
-      /**
-       * <code>uint32 first_pass_time = 1;</code>
-       * @param value The firstPassTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFirstPassTime(int value) {
-        
-        firstPassTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 first_pass_time = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFirstPassTime() {
-        
-        firstPassTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar bestHitAvatar_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar, emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.Builder, emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatarOrBuilder> bestHitAvatarBuilder_;
-      /**
-       * <code>.MistTrialBestAvatar best_hit_avatar = 11;</code>
-       * @return Whether the bestHitAvatar field is set.
-       */
-      public boolean hasBestHitAvatar() {
-        return bestHitAvatarBuilder_ != null || bestHitAvatar_ != null;
-      }
-      /**
-       * <code>.MistTrialBestAvatar best_hit_avatar = 11;</code>
-       * @return The bestHitAvatar.
-       */
-      public emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar getBestHitAvatar() {
-        if (bestHitAvatarBuilder_ == null) {
-          return bestHitAvatar_ == null ? emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.getDefaultInstance() : bestHitAvatar_;
-        } else {
-          return bestHitAvatarBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.MistTrialBestAvatar best_hit_avatar = 11;</code>
-       */
-      public Builder setBestHitAvatar(emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar value) {
-        if (bestHitAvatarBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          bestHitAvatar_ = value;
-          onChanged();
-        } else {
-          bestHitAvatarBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.MistTrialBestAvatar best_hit_avatar = 11;</code>
-       */
-      public Builder setBestHitAvatar(
-          emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.Builder builderForValue) {
-        if (bestHitAvatarBuilder_ == null) {
-          bestHitAvatar_ = builderForValue.build();
-          onChanged();
-        } else {
-          bestHitAvatarBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.MistTrialBestAvatar best_hit_avatar = 11;</code>
-       */
-      public Builder mergeBestHitAvatar(emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar value) {
-        if (bestHitAvatarBuilder_ == null) {
-          if (bestHitAvatar_ != null) {
-            bestHitAvatar_ =
-              emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.newBuilder(bestHitAvatar_).mergeFrom(value).buildPartial();
-          } else {
-            bestHitAvatar_ = value;
-          }
-          onChanged();
-        } else {
-          bestHitAvatarBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.MistTrialBestAvatar best_hit_avatar = 11;</code>
-       */
-      public Builder clearBestHitAvatar() {
-        if (bestHitAvatarBuilder_ == null) {
-          bestHitAvatar_ = null;
-          onChanged();
-        } else {
-          bestHitAvatar_ = null;
-          bestHitAvatarBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.MistTrialBestAvatar best_hit_avatar = 11;</code>
-       */
-      public emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.Builder getBestHitAvatarBuilder() {
-        
-        onChanged();
-        return getBestHitAvatarFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.MistTrialBestAvatar best_hit_avatar = 11;</code>
-       */
-      public emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatarOrBuilder getBestHitAvatarOrBuilder() {
-        if (bestHitAvatarBuilder_ != null) {
-          return bestHitAvatarBuilder_.getMessageOrBuilder();
-        } else {
-          return bestHitAvatar_ == null ?
-              emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.getDefaultInstance() : bestHitAvatar_;
-        }
-      }
-      /**
-       * <code>.MistTrialBestAvatar best_hit_avatar = 11;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar, emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.Builder, emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatarOrBuilder> 
-          getBestHitAvatarFieldBuilder() {
-        if (bestHitAvatarBuilder_ == null) {
-          bestHitAvatarBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar, emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.Builder, emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatarOrBuilder>(
-                  getBestHitAvatar(),
-                  getParentForChildren(),
-                  isClean());
-          bestHitAvatar_ = null;
-        }
-        return bestHitAvatarBuilder_;
-      }
-
-      private boolean isOpen_ ;
-      /**
-       * <code>bool is_open = 9;</code>
-       * @return The isOpen.
-       */
-      @java.lang.Override
-      public boolean getIsOpen() {
-        return isOpen_;
-      }
-      /**
-       * <code>bool is_open = 9;</code>
-       * @param value The isOpen to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsOpen(boolean value) {
-        
-        isOpen_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_open = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsOpen() {
-        
-        isOpen_ = false;
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1271,7 +1253,18 @@ public final class MistTrialLevelDataOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new MistTrialLevelData(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -1306,13 +1299,12 @@ public final class MistTrialLevelDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030MistTrialLevelData.proto\032\031MistTrialBes" +
-      "tAvatar.proto\"\302\001\n\022MistTrialLevelData\022\021\n\t" +
-      "open_time\030\n \001(\r\022.\n\020best_avatar_list\030\003 \003(" +
-      "\0132\024.MistTrialBestAvatar\022\020\n\010level_id\030\016 \001(" +
-      "\r\022\027\n\017first_pass_time\030\001 \001(\r\022-\n\017best_hit_a" +
-      "vatar\030\013 \001(\0132\024.MistTrialBestAvatar\022\017\n\007is_" +
-      "open\030\t \001(\010B\033\n\031emu.grasscutter.net.protob" +
-      "\006proto3"
+      "tAvatar.proto\"\271\001\n\022MistTrialLevelData\022\020\n\010" +
+      "openTime\030\002 \001(\r\022\025\n\rfirstPassTime\030\004 \001(\r\022\017\n" +
+      "\007levelId\030\014 \001(\r\022\016\n\006isOpen\030\006 \001(\010\022+\n\rbestHi" +
+      "tAvatar\030\016 \001(\0132\024.MistTrialBestAvatar\022,\n\016b" +
+      "estAvatarList\030\r \003(\0132\024.MistTrialBestAvata" +
+      "rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1324,7 +1316,7 @@ public final class MistTrialLevelDataOuterClass {
     internal_static_MistTrialLevelData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MistTrialLevelData_descriptor,
-        new java.lang.String[] { "OpenTime", "BestAvatarList", "LevelId", "FirstPassTime", "BestHitAvatar", "IsOpen", });
+        new java.lang.String[] { "OpenTime", "FirstPassTime", "LevelId", "IsOpen", "BestHitAvatar", "BestAvatarList", });
     emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.getDescriptor();
   }
 

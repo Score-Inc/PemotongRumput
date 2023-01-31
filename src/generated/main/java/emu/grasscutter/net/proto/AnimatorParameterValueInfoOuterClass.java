@@ -19,7 +19,7 @@ public final class AnimatorParameterValueInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 para_type = 1;</code>
+     * <code>uint32 paraType = 1;</code>
      * @return The paraType.
      */
     int getParaType();
@@ -86,63 +86,6 @@ public final class AnimatorParameterValueInfoOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private AnimatorParameterValueInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              paraType_ = input.readUInt32();
-              break;
-            }
-            case 16: {
-              paraValCase_ = 2;
-              paraVal_ = input.readInt32();
-              break;
-            }
-            case 29: {
-              paraValCase_ = 3;
-              paraVal_ = input.readFloat();
-              break;
-            }
-            case 32: {
-              paraValCase_ = 4;
-              paraVal_ = input.readBool();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.internal_static_AnimatorParameterValueInfo_descriptor;
@@ -199,10 +142,10 @@ public final class AnimatorParameterValueInfoOuterClass {
           paraValCase_);
     }
 
-    public static final int PARA_TYPE_FIELD_NUMBER = 1;
-    private int paraType_;
+    public static final int PARATYPE_FIELD_NUMBER = 1;
+    private int paraType_ = 0;
     /**
-     * <code>uint32 para_type = 1;</code>
+     * <code>uint32 paraType = 1;</code>
      * @return The paraType.
      */
     @java.lang.Override
@@ -302,7 +245,7 @@ public final class AnimatorParameterValueInfoOuterClass {
         output.writeBool(
             4, (boolean)((java.lang.Boolean) paraVal_));
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -330,7 +273,7 @@ public final class AnimatorParameterValueInfoOuterClass {
           .computeBoolSize(
               4, (boolean)((java.lang.Boolean) paraVal_));
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -365,7 +308,7 @@ public final class AnimatorParameterValueInfoOuterClass {
         case 0:
         default:
       }
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -376,7 +319,7 @@ public final class AnimatorParameterValueInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + PARA_TYPE_FIELD_NUMBER;
+      hash = (37 * hash) + PARATYPE_FIELD_NUMBER;
       hash = (53 * hash) + getParaType();
       switch (paraValCase_) {
         case 2:
@@ -396,7 +339,7 @@ public final class AnimatorParameterValueInfoOuterClass {
         case 0:
         default:
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -513,24 +456,19 @@ public final class AnimatorParameterValueInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         paraType_ = 0;
-
         paraValCase_ = 0;
         paraVal_ = null;
         return this;
@@ -559,19 +497,22 @@ public final class AnimatorParameterValueInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo buildPartial() {
         emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo result = new emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo(this);
-        result.paraType_ = paraType_;
-        if (paraValCase_ == 2) {
-          result.paraVal_ = paraVal_;
-        }
-        if (paraValCase_ == 3) {
-          result.paraVal_ = paraVal_;
-        }
-        if (paraValCase_ == 4) {
-          result.paraVal_ = paraVal_;
-        }
-        result.paraValCase_ = paraValCase_;
+        if (bitField0_ != 0) { buildPartial0(result); }
+        buildPartialOneofs(result);
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.paraType_ = paraType_;
+        }
+      }
+
+      private void buildPartialOneofs(emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo result) {
+        result.paraValCase_ = paraValCase_;
+        result.paraVal_ = this.paraVal_;
       }
 
       @java.lang.Override
@@ -638,7 +579,7 @@ public final class AnimatorParameterValueInfoOuterClass {
             break;
           }
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -653,17 +594,50 @@ public final class AnimatorParameterValueInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                paraType_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              case 16: {
+                paraVal_ = input.readInt32();
+                paraValCase_ = 2;
+                break;
+              } // case 16
+              case 29: {
+                paraVal_ = input.readFloat();
+                paraValCase_ = 3;
+                break;
+              } // case 29
+              case 32: {
+                paraVal_ = input.readBool();
+                paraValCase_ = 4;
+                break;
+              } // case 32
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int paraValCase_ = 0;
@@ -681,10 +655,11 @@ public final class AnimatorParameterValueInfoOuterClass {
         return this;
       }
 
+      private int bitField0_;
 
       private int paraType_ ;
       /**
-       * <code>uint32 para_type = 1;</code>
+       * <code>uint32 paraType = 1;</code>
        * @return The paraType.
        */
       @java.lang.Override
@@ -692,22 +667,23 @@ public final class AnimatorParameterValueInfoOuterClass {
         return paraType_;
       }
       /**
-       * <code>uint32 para_type = 1;</code>
+       * <code>uint32 paraType = 1;</code>
        * @param value The paraType to set.
        * @return This builder for chaining.
        */
       public Builder setParaType(int value) {
         
         paraType_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 para_type = 1;</code>
+       * <code>uint32 paraType = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearParaType() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         paraType_ = 0;
         onChanged();
         return this;
@@ -736,6 +712,7 @@ public final class AnimatorParameterValueInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setIntVal(int value) {
+        
         paraValCase_ = 2;
         paraVal_ = value;
         onChanged();
@@ -777,6 +754,7 @@ public final class AnimatorParameterValueInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setFloatVal(float value) {
+        
         paraValCase_ = 3;
         paraVal_ = value;
         onChanged();
@@ -818,6 +796,7 @@ public final class AnimatorParameterValueInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setBoolVal(boolean value) {
+        
         paraValCase_ = 4;
         paraVal_ = value;
         onChanged();
@@ -868,7 +847,18 @@ public final class AnimatorParameterValueInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new AnimatorParameterValueInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -902,11 +892,11 @@ public final class AnimatorParameterValueInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n AnimatorParameterValueInfo.proto\"w\n\032An" +
-      "imatorParameterValueInfo\022\021\n\tpara_type\030\001 " +
-      "\001(\r\022\021\n\007int_val\030\002 \001(\005H\000\022\023\n\tfloat_val\030\003 \001(" +
-      "\002H\000\022\022\n\010bool_val\030\004 \001(\010H\000B\n\n\010para_valB\033\n\031e" +
-      "mu.grasscutter.net.protob\006proto3"
+      "\n AnimatorParameterValueInfo.proto\"v\n\032An" +
+      "imatorParameterValueInfo\022\020\n\010paraType\030\001 \001" +
+      "(\r\022\021\n\007int_val\030\002 \001(\005H\000\022\023\n\tfloat_val\030\003 \001(\002" +
+      "H\000\022\022\n\010bool_val\030\004 \001(\010H\000B\n\n\010para_valB\033\n\031em" +
+      "u.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

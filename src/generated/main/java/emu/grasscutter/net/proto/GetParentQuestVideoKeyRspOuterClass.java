@@ -19,34 +19,24 @@ public final class GetParentQuestVideoKeyRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 parent_quest_id = 15;</code>
-     * @return The parentQuestId.
-     */
-    int getParentQuestId();
-
-    /**
-     * <code>uint64 video_key = 12;</code>
+     * <code>uint64 videoKey = 2;</code>
      * @return The videoKey.
      */
     long getVideoKey();
 
     /**
-     * <code>int32 retcode = 4;</code>
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     int getRetcode();
+
+    /**
+     * <code>uint32 parentQuestId = 11;</code>
+     * @return The parentQuestId.
+     */
+    int getParentQuestId();
   }
   /**
-   * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 491;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   * }
-   * </pre>
-   *
    * Protobuf type {@code GetParentQuestVideoKeyRsp}
    */
   public static final class GetParentQuestVideoKeyRsp extends
@@ -73,58 +63,6 @@ public final class GetParentQuestVideoKeyRspOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private GetParentQuestVideoKeyRsp(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 32: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 96: {
-
-              videoKey_ = input.readUInt64();
-              break;
-            }
-            case 120: {
-
-              parentQuestId_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.GetParentQuestVideoKeyRspOuterClass.internal_static_GetParentQuestVideoKeyRsp_descriptor;
@@ -138,21 +76,141 @@ public final class GetParentQuestVideoKeyRspOuterClass {
               emu.grasscutter.net.proto.GetParentQuestVideoKeyRspOuterClass.GetParentQuestVideoKeyRsp.class, emu.grasscutter.net.proto.GetParentQuestVideoKeyRspOuterClass.GetParentQuestVideoKeyRsp.Builder.class);
     }
 
-    public static final int PARENT_QUEST_ID_FIELD_NUMBER = 15;
-    private int parentQuestId_;
     /**
-     * <code>uint32 parent_quest_id = 15;</code>
-     * @return The parentQuestId.
+     * Protobuf enum {@code GetParentQuestVideoKeyRsp.LIDIFEGCLAB}
      */
-    @java.lang.Override
-    public int getParentQuestId() {
-      return parentQuestId_;
+    public enum LIDIFEGCLAB
+        implements com.google.protobuf.ProtocolMessageEnum {
+      /**
+       * <code>NONE = 0;</code>
+       */
+      NONE(0, 0),
+      /**
+       * <code>PEPPOHPHJOJ = 427;</code>
+       */
+      PEPPOHPHJOJ(1, 427),
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      NNBKOLMPOEA(3, 1),
+      UNRECOGNIZED(-1, -1),
+      ;
+
+      /**
+       * <code>DCDNILFDFLB = 0;</code>
+       */
+      public static final LIDIFEGCLAB DCDNILFDFLB = NONE;
+      /**
+       * <code>NONE = 0;</code>
+       */
+      public static final int NONE_VALUE = 0;
+      /**
+       * <code>PEPPOHPHJOJ = 427;</code>
+       */
+      public static final int PEPPOHPHJOJ_VALUE = 427;
+      /**
+       * <code>DCDNILFDFLB = 0;</code>
+       */
+      public static final int DCDNILFDFLB_VALUE = 0;
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      public static final int NNBKOLMPOEA_VALUE = 1;
+
+
+      public final int getNumber() {
+        if (index == -1) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static LIDIFEGCLAB valueOf(int value) {
+        return forNumber(value);
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
+      public static LIDIFEGCLAB forNumber(int value) {
+        switch (value) {
+          case 0: return NONE;
+          case 427: return PEPPOHPHJOJ;
+          case 1: return NNBKOLMPOEA;
+          default: return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<LIDIFEGCLAB>
+          internalGetValueMap() {
+        return internalValueMap;
+      }
+      private static final com.google.protobuf.Internal.EnumLiteMap<
+          LIDIFEGCLAB> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<LIDIFEGCLAB>() {
+              public LIDIFEGCLAB findValueByNumber(int number) {
+                return LIDIFEGCLAB.forNumber(number);
+              }
+            };
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor
+          getValueDescriptor() {
+        if (index == -1) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
+        return getDescriptor().getValues().get(index);
+      }
+      public final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptorForType() {
+        return getDescriptor();
+      }
+      public static final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptor() {
+        return emu.grasscutter.net.proto.GetParentQuestVideoKeyRspOuterClass.GetParentQuestVideoKeyRsp.getDescriptor().getEnumTypes().get(0);
+      }
+
+      private static final LIDIFEGCLAB[] VALUES = getStaticValuesArray();
+      private static LIDIFEGCLAB[] getStaticValuesArray() {
+        return new LIDIFEGCLAB[] {
+          NONE, PEPPOHPHJOJ, DCDNILFDFLB, NNBKOLMPOEA, 
+        };
+      }
+      public static LIDIFEGCLAB valueOf(
+          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException(
+            "EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      private final int index;
+      private final int value;
+
+      private LIDIFEGCLAB(int index, int value) {
+        this.index = index;
+        this.value = value;
+      }
+
+      // @@protoc_insertion_point(enum_scope:GetParentQuestVideoKeyRsp.LIDIFEGCLAB)
     }
 
-    public static final int VIDEO_KEY_FIELD_NUMBER = 12;
-    private long videoKey_;
+    public static final int VIDEOKEY_FIELD_NUMBER = 2;
+    private long videoKey_ = 0L;
     /**
-     * <code>uint64 video_key = 12;</code>
+     * <code>uint64 videoKey = 2;</code>
      * @return The videoKey.
      */
     @java.lang.Override
@@ -160,15 +218,26 @@ public final class GetParentQuestVideoKeyRspOuterClass {
       return videoKey_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 4;
-    private int retcode_;
+    public static final int RETCODE_FIELD_NUMBER = 9;
+    private int retcode_ = 0;
     /**
-     * <code>int32 retcode = 4;</code>
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
+    }
+
+    public static final int PARENTQUESTID_FIELD_NUMBER = 11;
+    private int parentQuestId_ = 0;
+    /**
+     * <code>uint32 parentQuestId = 11;</code>
+     * @return The parentQuestId.
+     */
+    @java.lang.Override
+    public int getParentQuestId() {
+      return parentQuestId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -185,16 +254,16 @@ public final class GetParentQuestVideoKeyRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(4, retcode_);
-      }
       if (videoKey_ != 0L) {
-        output.writeUInt64(12, videoKey_);
+        output.writeUInt64(2, videoKey_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(9, retcode_);
       }
       if (parentQuestId_ != 0) {
-        output.writeUInt32(15, parentQuestId_);
+        output.writeUInt32(11, parentQuestId_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -203,19 +272,19 @@ public final class GetParentQuestVideoKeyRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, retcode_);
-      }
       if (videoKey_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(12, videoKey_);
+          .computeUInt64Size(2, videoKey_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(9, retcode_);
       }
       if (parentQuestId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, parentQuestId_);
+          .computeUInt32Size(11, parentQuestId_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -230,13 +299,13 @@ public final class GetParentQuestVideoKeyRspOuterClass {
       }
       emu.grasscutter.net.proto.GetParentQuestVideoKeyRspOuterClass.GetParentQuestVideoKeyRsp other = (emu.grasscutter.net.proto.GetParentQuestVideoKeyRspOuterClass.GetParentQuestVideoKeyRsp) obj;
 
-      if (getParentQuestId()
-          != other.getParentQuestId()) return false;
       if (getVideoKey()
           != other.getVideoKey()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (getParentQuestId()
+          != other.getParentQuestId()) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -247,14 +316,14 @@ public final class GetParentQuestVideoKeyRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + PARENT_QUEST_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getParentQuestId();
-      hash = (37 * hash) + VIDEO_KEY_FIELD_NUMBER;
+      hash = (37 * hash) + VIDEOKEY_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getVideoKey());
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (37 * hash) + PARENTQUESTID_FIELD_NUMBER;
+      hash = (53 * hash) + getParentQuestId();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -350,16 +419,6 @@ public final class GetParentQuestVideoKeyRspOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 491;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     * }
-     * </pre>
-     *
      * Protobuf type {@code GetParentQuestVideoKeyRsp}
      */
     public static final class Builder extends
@@ -381,28 +440,21 @@ public final class GetParentQuestVideoKeyRspOuterClass {
 
       // Construct using emu.grasscutter.net.proto.GetParentQuestVideoKeyRspOuterClass.GetParentQuestVideoKeyRsp.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        parentQuestId_ = 0;
-
+        bitField0_ = 0;
         videoKey_ = 0L;
-
         retcode_ = 0;
-
+        parentQuestId_ = 0;
         return this;
       }
 
@@ -429,11 +481,22 @@ public final class GetParentQuestVideoKeyRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GetParentQuestVideoKeyRspOuterClass.GetParentQuestVideoKeyRsp buildPartial() {
         emu.grasscutter.net.proto.GetParentQuestVideoKeyRspOuterClass.GetParentQuestVideoKeyRsp result = new emu.grasscutter.net.proto.GetParentQuestVideoKeyRspOuterClass.GetParentQuestVideoKeyRsp(this);
-        result.parentQuestId_ = parentQuestId_;
-        result.videoKey_ = videoKey_;
-        result.retcode_ = retcode_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.GetParentQuestVideoKeyRspOuterClass.GetParentQuestVideoKeyRsp result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.videoKey_ = videoKey_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.retcode_ = retcode_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.parentQuestId_ = parentQuestId_;
+        }
       }
 
       @java.lang.Override
@@ -480,16 +543,16 @@ public final class GetParentQuestVideoKeyRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GetParentQuestVideoKeyRspOuterClass.GetParentQuestVideoKeyRsp other) {
         if (other == emu.grasscutter.net.proto.GetParentQuestVideoKeyRspOuterClass.GetParentQuestVideoKeyRsp.getDefaultInstance()) return this;
-        if (other.getParentQuestId() != 0) {
-          setParentQuestId(other.getParentQuestId());
-        }
         if (other.getVideoKey() != 0L) {
           setVideoKey(other.getVideoKey());
         }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        if (other.getParentQuestId() != 0) {
+          setParentQuestId(other.getParentQuestId());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -504,54 +567,52 @@ public final class GetParentQuestVideoKeyRspOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.GetParentQuestVideoKeyRspOuterClass.GetParentQuestVideoKeyRsp parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 16: {
+                videoKey_ = input.readUInt64();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 16
+              case 72: {
+                retcode_ = input.readInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 72
+              case 88: {
+                parentQuestId_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 88
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.GetParentQuestVideoKeyRspOuterClass.GetParentQuestVideoKeyRsp) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
-
-      private int parentQuestId_ ;
-      /**
-       * <code>uint32 parent_quest_id = 15;</code>
-       * @return The parentQuestId.
-       */
-      @java.lang.Override
-      public int getParentQuestId() {
-        return parentQuestId_;
-      }
-      /**
-       * <code>uint32 parent_quest_id = 15;</code>
-       * @param value The parentQuestId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setParentQuestId(int value) {
-        
-        parentQuestId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 parent_quest_id = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearParentQuestId() {
-        
-        parentQuestId_ = 0;
-        onChanged();
-        return this;
-      }
+      private int bitField0_;
 
       private long videoKey_ ;
       /**
-       * <code>uint64 video_key = 12;</code>
+       * <code>uint64 videoKey = 2;</code>
        * @return The videoKey.
        */
       @java.lang.Override
@@ -559,22 +620,23 @@ public final class GetParentQuestVideoKeyRspOuterClass {
         return videoKey_;
       }
       /**
-       * <code>uint64 video_key = 12;</code>
+       * <code>uint64 videoKey = 2;</code>
        * @param value The videoKey to set.
        * @return This builder for chaining.
        */
       public Builder setVideoKey(long value) {
         
         videoKey_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint64 video_key = 12;</code>
+       * <code>uint64 videoKey = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearVideoKey() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         videoKey_ = 0L;
         onChanged();
         return this;
@@ -582,7 +644,7 @@ public final class GetParentQuestVideoKeyRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 9;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -590,23 +652,56 @@ public final class GetParentQuestVideoKeyRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 9;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
       public Builder setRetcode(int value) {
         
         retcode_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int parentQuestId_ ;
+      /**
+       * <code>uint32 parentQuestId = 11;</code>
+       * @return The parentQuestId.
+       */
+      @java.lang.Override
+      public int getParentQuestId() {
+        return parentQuestId_;
+      }
+      /**
+       * <code>uint32 parentQuestId = 11;</code>
+       * @param value The parentQuestId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setParentQuestId(int value) {
+        
+        parentQuestId_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 parentQuestId = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearParentQuestId() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        parentQuestId_ = 0;
         onChanged();
         return this;
       }
@@ -643,7 +738,18 @@ public final class GetParentQuestVideoKeyRspOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new GetParentQuestVideoKeyRsp(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -677,10 +783,12 @@ public final class GetParentQuestVideoKeyRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\037GetParentQuestVideoKeyRsp.proto\"X\n\031Get" +
-      "ParentQuestVideoKeyRsp\022\027\n\017parent_quest_i" +
-      "d\030\017 \001(\r\022\021\n\tvideo_key\030\014 \001(\004\022\017\n\007retcode\030\004 " +
-      "\001(\005B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\037GetParentQuestVideoKeyRsp.proto\"\246\001\n\031Ge" +
+      "tParentQuestVideoKeyRsp\022\020\n\010videoKey\030\002 \001(" +
+      "\004\022\017\n\007retcode\030\t \001(\005\022\025\n\rparentQuestId\030\013 \001(" +
+      "\r\"O\n\013LIDIFEGCLAB\022\010\n\004NONE\020\000\022\020\n\013PEPPOHPHJO" +
+      "J\020\253\003\022\017\n\013DCDNILFDFLB\020\000\022\017\n\013NNBKOLMPOEA\020\001\032\002" +
+      "\020\001B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -691,7 +799,7 @@ public final class GetParentQuestVideoKeyRspOuterClass {
     internal_static_GetParentQuestVideoKeyRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetParentQuestVideoKeyRsp_descriptor,
-        new java.lang.String[] { "ParentQuestId", "VideoKey", "Retcode", });
+        new java.lang.String[] { "VideoKey", "Retcode", "ParentQuestId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

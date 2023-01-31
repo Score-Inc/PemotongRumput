@@ -19,88 +19,88 @@ public final class AvatarFetterInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 exp_number = 1;</code>
+     * <code>uint32 expNumber = 1;</code>
      * @return The expNumber.
      */
     int getExpNumber();
 
     /**
-     * <code>uint32 exp_level = 2;</code>
+     * <code>uint32 expLevel = 2;</code>
      * @return The expLevel.
      */
     int getExpLevel();
 
     /**
-     * <code>repeated uint32 open_id_list = 3;</code>
+     * <code>repeated uint32 openIdList = 3;</code>
      * @return A list containing the openIdList.
      */
     java.util.List<java.lang.Integer> getOpenIdListList();
     /**
-     * <code>repeated uint32 open_id_list = 3;</code>
+     * <code>repeated uint32 openIdList = 3;</code>
      * @return The count of openIdList.
      */
     int getOpenIdListCount();
     /**
-     * <code>repeated uint32 open_id_list = 3;</code>
+     * <code>repeated uint32 openIdList = 3;</code>
      * @param index The index of the element to return.
      * @return The openIdList at the given index.
      */
     int getOpenIdList(int index);
 
     /**
-     * <code>repeated uint32 finish_id_list = 4;</code>
+     * <code>repeated uint32 finishIdList = 4;</code>
      * @return A list containing the finishIdList.
      */
     java.util.List<java.lang.Integer> getFinishIdListList();
     /**
-     * <code>repeated uint32 finish_id_list = 4;</code>
+     * <code>repeated uint32 finishIdList = 4;</code>
      * @return The count of finishIdList.
      */
     int getFinishIdListCount();
     /**
-     * <code>repeated uint32 finish_id_list = 4;</code>
+     * <code>repeated uint32 finishIdList = 4;</code>
      * @param index The index of the element to return.
      * @return The finishIdList at the given index.
      */
     int getFinishIdList(int index);
 
     /**
-     * <code>repeated uint32 rewarded_fetter_level_list = 5;</code>
+     * <code>repeated uint32 rewardedFetterLevelList = 5;</code>
      * @return A list containing the rewardedFetterLevelList.
      */
     java.util.List<java.lang.Integer> getRewardedFetterLevelListList();
     /**
-     * <code>repeated uint32 rewarded_fetter_level_list = 5;</code>
+     * <code>repeated uint32 rewardedFetterLevelList = 5;</code>
      * @return The count of rewardedFetterLevelList.
      */
     int getRewardedFetterLevelListCount();
     /**
-     * <code>repeated uint32 rewarded_fetter_level_list = 5;</code>
+     * <code>repeated uint32 rewardedFetterLevelList = 5;</code>
      * @param index The index of the element to return.
      * @return The rewardedFetterLevelList at the given index.
      */
     int getRewardedFetterLevelList(int index);
 
     /**
-     * <code>repeated .FetterData fetter_list = 6;</code>
+     * <code>repeated .FetterData fetterList = 6;</code>
      */
     java.util.List<emu.grasscutter.net.proto.FetterDataOuterClass.FetterData> 
         getFetterListList();
     /**
-     * <code>repeated .FetterData fetter_list = 6;</code>
+     * <code>repeated .FetterData fetterList = 6;</code>
      */
     emu.grasscutter.net.proto.FetterDataOuterClass.FetterData getFetterList(int index);
     /**
-     * <code>repeated .FetterData fetter_list = 6;</code>
+     * <code>repeated .FetterData fetterList = 6;</code>
      */
     int getFetterListCount();
     /**
-     * <code>repeated .FetterData fetter_list = 6;</code>
+     * <code>repeated .FetterData fetterList = 6;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.FetterDataOuterClass.FetterDataOrBuilder> 
         getFetterListOrBuilderList();
     /**
-     * <code>repeated .FetterData fetter_list = 6;</code>
+     * <code>repeated .FetterData fetterList = 6;</code>
      */
     emu.grasscutter.net.proto.FetterDataOuterClass.FetterDataOrBuilder getFetterListOrBuilder(
         int index);
@@ -136,138 +136,6 @@ public final class AvatarFetterInfoOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private AvatarFetterInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              expNumber_ = input.readUInt32();
-              break;
-            }
-            case 16: {
-
-              expLevel_ = input.readUInt32();
-              break;
-            }
-            case 24: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                openIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              openIdList_.addInt(input.readUInt32());
-              break;
-            }
-            case 26: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                openIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                openIdList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 32: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                finishIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              finishIdList_.addInt(input.readUInt32());
-              break;
-            }
-            case 34: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                finishIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                finishIdList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 40: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                rewardedFetterLevelList_ = newIntList();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              rewardedFetterLevelList_.addInt(input.readUInt32());
-              break;
-            }
-            case 42: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
-                rewardedFetterLevelList_ = newIntList();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                rewardedFetterLevelList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 50: {
-              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
-                fetterList_ = new java.util.ArrayList<emu.grasscutter.net.proto.FetterDataOuterClass.FetterData>();
-                mutable_bitField0_ |= 0x00000008;
-              }
-              fetterList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.FetterDataOuterClass.FetterData.parser(), extensionRegistry));
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          openIdList_.makeImmutable(); // C
-        }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          finishIdList_.makeImmutable(); // C
-        }
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          rewardedFetterLevelList_.makeImmutable(); // C
-        }
-        if (((mutable_bitField0_ & 0x00000008) != 0)) {
-          fetterList_ = java.util.Collections.unmodifiableList(fetterList_);
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.internal_static_AvatarFetterInfo_descriptor;
@@ -281,10 +149,10 @@ public final class AvatarFetterInfoOuterClass {
               emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo.class, emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo.Builder.class);
     }
 
-    public static final int EXP_NUMBER_FIELD_NUMBER = 1;
-    private int expNumber_;
+    public static final int EXPNUMBER_FIELD_NUMBER = 1;
+    private int expNumber_ = 0;
     /**
-     * <code>uint32 exp_number = 1;</code>
+     * <code>uint32 expNumber = 1;</code>
      * @return The expNumber.
      */
     @java.lang.Override
@@ -292,10 +160,10 @@ public final class AvatarFetterInfoOuterClass {
       return expNumber_;
     }
 
-    public static final int EXP_LEVEL_FIELD_NUMBER = 2;
-    private int expLevel_;
+    public static final int EXPLEVEL_FIELD_NUMBER = 2;
+    private int expLevel_ = 0;
     /**
-     * <code>uint32 exp_level = 2;</code>
+     * <code>uint32 expLevel = 2;</code>
      * @return The expLevel.
      */
     @java.lang.Override
@@ -303,10 +171,11 @@ public final class AvatarFetterInfoOuterClass {
       return expLevel_;
     }
 
-    public static final int OPEN_ID_LIST_FIELD_NUMBER = 3;
+    public static final int OPENIDLIST_FIELD_NUMBER = 3;
+    @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList openIdList_;
     /**
-     * <code>repeated uint32 open_id_list = 3;</code>
+     * <code>repeated uint32 openIdList = 3;</code>
      * @return A list containing the openIdList.
      */
     @java.lang.Override
@@ -315,14 +184,14 @@ public final class AvatarFetterInfoOuterClass {
       return openIdList_;
     }
     /**
-     * <code>repeated uint32 open_id_list = 3;</code>
+     * <code>repeated uint32 openIdList = 3;</code>
      * @return The count of openIdList.
      */
     public int getOpenIdListCount() {
       return openIdList_.size();
     }
     /**
-     * <code>repeated uint32 open_id_list = 3;</code>
+     * <code>repeated uint32 openIdList = 3;</code>
      * @param index The index of the element to return.
      * @return The openIdList at the given index.
      */
@@ -331,10 +200,11 @@ public final class AvatarFetterInfoOuterClass {
     }
     private int openIdListMemoizedSerializedSize = -1;
 
-    public static final int FINISH_ID_LIST_FIELD_NUMBER = 4;
+    public static final int FINISHIDLIST_FIELD_NUMBER = 4;
+    @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList finishIdList_;
     /**
-     * <code>repeated uint32 finish_id_list = 4;</code>
+     * <code>repeated uint32 finishIdList = 4;</code>
      * @return A list containing the finishIdList.
      */
     @java.lang.Override
@@ -343,14 +213,14 @@ public final class AvatarFetterInfoOuterClass {
       return finishIdList_;
     }
     /**
-     * <code>repeated uint32 finish_id_list = 4;</code>
+     * <code>repeated uint32 finishIdList = 4;</code>
      * @return The count of finishIdList.
      */
     public int getFinishIdListCount() {
       return finishIdList_.size();
     }
     /**
-     * <code>repeated uint32 finish_id_list = 4;</code>
+     * <code>repeated uint32 finishIdList = 4;</code>
      * @param index The index of the element to return.
      * @return The finishIdList at the given index.
      */
@@ -359,10 +229,11 @@ public final class AvatarFetterInfoOuterClass {
     }
     private int finishIdListMemoizedSerializedSize = -1;
 
-    public static final int REWARDED_FETTER_LEVEL_LIST_FIELD_NUMBER = 5;
+    public static final int REWARDEDFETTERLEVELLIST_FIELD_NUMBER = 5;
+    @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList rewardedFetterLevelList_;
     /**
-     * <code>repeated uint32 rewarded_fetter_level_list = 5;</code>
+     * <code>repeated uint32 rewardedFetterLevelList = 5;</code>
      * @return A list containing the rewardedFetterLevelList.
      */
     @java.lang.Override
@@ -371,14 +242,14 @@ public final class AvatarFetterInfoOuterClass {
       return rewardedFetterLevelList_;
     }
     /**
-     * <code>repeated uint32 rewarded_fetter_level_list = 5;</code>
+     * <code>repeated uint32 rewardedFetterLevelList = 5;</code>
      * @return The count of rewardedFetterLevelList.
      */
     public int getRewardedFetterLevelListCount() {
       return rewardedFetterLevelList_.size();
     }
     /**
-     * <code>repeated uint32 rewarded_fetter_level_list = 5;</code>
+     * <code>repeated uint32 rewardedFetterLevelList = 5;</code>
      * @param index The index of the element to return.
      * @return The rewardedFetterLevelList at the given index.
      */
@@ -387,17 +258,18 @@ public final class AvatarFetterInfoOuterClass {
     }
     private int rewardedFetterLevelListMemoizedSerializedSize = -1;
 
-    public static final int FETTER_LIST_FIELD_NUMBER = 6;
+    public static final int FETTERLIST_FIELD_NUMBER = 6;
+    @SuppressWarnings("serial")
     private java.util.List<emu.grasscutter.net.proto.FetterDataOuterClass.FetterData> fetterList_;
     /**
-     * <code>repeated .FetterData fetter_list = 6;</code>
+     * <code>repeated .FetterData fetterList = 6;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.FetterDataOuterClass.FetterData> getFetterListList() {
       return fetterList_;
     }
     /**
-     * <code>repeated .FetterData fetter_list = 6;</code>
+     * <code>repeated .FetterData fetterList = 6;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.FetterDataOuterClass.FetterDataOrBuilder> 
@@ -405,21 +277,21 @@ public final class AvatarFetterInfoOuterClass {
       return fetterList_;
     }
     /**
-     * <code>repeated .FetterData fetter_list = 6;</code>
+     * <code>repeated .FetterData fetterList = 6;</code>
      */
     @java.lang.Override
     public int getFetterListCount() {
       return fetterList_.size();
     }
     /**
-     * <code>repeated .FetterData fetter_list = 6;</code>
+     * <code>repeated .FetterData fetterList = 6;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.FetterDataOuterClass.FetterData getFetterList(int index) {
       return fetterList_.get(index);
     }
     /**
-     * <code>repeated .FetterData fetter_list = 6;</code>
+     * <code>repeated .FetterData fetterList = 6;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.FetterDataOuterClass.FetterDataOrBuilder getFetterListOrBuilder(
@@ -472,7 +344,7 @@ public final class AvatarFetterInfoOuterClass {
       for (int i = 0; i < fetterList_.size(); i++) {
         output.writeMessage(6, fetterList_.get(i));
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -535,7 +407,7 @@ public final class AvatarFetterInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(6, fetterList_.get(i));
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -562,7 +434,7 @@ public final class AvatarFetterInfoOuterClass {
           .equals(other.getRewardedFetterLevelListList())) return false;
       if (!getFetterListList()
           .equals(other.getFetterListList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -573,27 +445,27 @@ public final class AvatarFetterInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + EXP_NUMBER_FIELD_NUMBER;
+      hash = (37 * hash) + EXPNUMBER_FIELD_NUMBER;
       hash = (53 * hash) + getExpNumber();
-      hash = (37 * hash) + EXP_LEVEL_FIELD_NUMBER;
+      hash = (37 * hash) + EXPLEVEL_FIELD_NUMBER;
       hash = (53 * hash) + getExpLevel();
       if (getOpenIdListCount() > 0) {
-        hash = (37 * hash) + OPEN_ID_LIST_FIELD_NUMBER;
+        hash = (37 * hash) + OPENIDLIST_FIELD_NUMBER;
         hash = (53 * hash) + getOpenIdListList().hashCode();
       }
       if (getFinishIdListCount() > 0) {
-        hash = (37 * hash) + FINISH_ID_LIST_FIELD_NUMBER;
+        hash = (37 * hash) + FINISHIDLIST_FIELD_NUMBER;
         hash = (53 * hash) + getFinishIdListList().hashCode();
       }
       if (getRewardedFetterLevelListCount() > 0) {
-        hash = (37 * hash) + REWARDED_FETTER_LEVEL_LIST_FIELD_NUMBER;
+        hash = (37 * hash) + REWARDEDFETTERLEVELLIST_FIELD_NUMBER;
         hash = (53 * hash) + getRewardedFetterLevelListList().hashCode();
       }
       if (getFetterListCount() > 0) {
-        hash = (37 * hash) + FETTER_LIST_FIELD_NUMBER;
+        hash = (37 * hash) + FETTERLIST_FIELD_NUMBER;
         hash = (53 * hash) + getFetterListList().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -710,39 +582,30 @@ public final class AvatarFetterInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getFetterListFieldBuilder();
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         expNumber_ = 0;
-
         expLevel_ = 0;
-
         openIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         finishIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
         rewardedFetterLevelList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000004);
         if (fetterListBuilder_ == null) {
           fetterList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000008);
         } else {
+          fetterList_ = null;
           fetterListBuilder_.clear();
         }
+        bitField0_ = (bitField0_ & ~0x00000020);
         return this;
       }
 
@@ -769,35 +632,47 @@ public final class AvatarFetterInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo buildPartial() {
         emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo result = new emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo(this);
-        int from_bitField0_ = bitField0_;
-        result.expNumber_ = expNumber_;
-        result.expLevel_ = expLevel_;
-        if (((bitField0_ & 0x00000001) != 0)) {
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo result) {
+        if (((bitField0_ & 0x00000004) != 0)) {
           openIdList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000004);
         }
         result.openIdList_ = openIdList_;
-        if (((bitField0_ & 0x00000002) != 0)) {
+        if (((bitField0_ & 0x00000008) != 0)) {
           finishIdList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000008);
         }
         result.finishIdList_ = finishIdList_;
-        if (((bitField0_ & 0x00000004) != 0)) {
+        if (((bitField0_ & 0x00000010) != 0)) {
           rewardedFetterLevelList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000010);
         }
         result.rewardedFetterLevelList_ = rewardedFetterLevelList_;
         if (fetterListBuilder_ == null) {
-          if (((bitField0_ & 0x00000008) != 0)) {
+          if (((bitField0_ & 0x00000020) != 0)) {
             fetterList_ = java.util.Collections.unmodifiableList(fetterList_);
-            bitField0_ = (bitField0_ & ~0x00000008);
+            bitField0_ = (bitField0_ & ~0x00000020);
           }
           result.fetterList_ = fetterList_;
         } else {
           result.fetterList_ = fetterListBuilder_.build();
         }
-        onBuilt();
-        return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.expNumber_ = expNumber_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.expLevel_ = expLevel_;
+        }
       }
 
       @java.lang.Override
@@ -853,7 +728,7 @@ public final class AvatarFetterInfoOuterClass {
         if (!other.openIdList_.isEmpty()) {
           if (openIdList_.isEmpty()) {
             openIdList_ = other.openIdList_;
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000004);
           } else {
             ensureOpenIdListIsMutable();
             openIdList_.addAll(other.openIdList_);
@@ -863,7 +738,7 @@ public final class AvatarFetterInfoOuterClass {
         if (!other.finishIdList_.isEmpty()) {
           if (finishIdList_.isEmpty()) {
             finishIdList_ = other.finishIdList_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000008);
           } else {
             ensureFinishIdListIsMutable();
             finishIdList_.addAll(other.finishIdList_);
@@ -873,7 +748,7 @@ public final class AvatarFetterInfoOuterClass {
         if (!other.rewardedFetterLevelList_.isEmpty()) {
           if (rewardedFetterLevelList_.isEmpty()) {
             rewardedFetterLevelList_ = other.rewardedFetterLevelList_;
-            bitField0_ = (bitField0_ & ~0x00000004);
+            bitField0_ = (bitField0_ & ~0x00000010);
           } else {
             ensureRewardedFetterLevelListIsMutable();
             rewardedFetterLevelList_.addAll(other.rewardedFetterLevelList_);
@@ -884,7 +759,7 @@ public final class AvatarFetterInfoOuterClass {
           if (!other.fetterList_.isEmpty()) {
             if (fetterList_.isEmpty()) {
               fetterList_ = other.fetterList_;
-              bitField0_ = (bitField0_ & ~0x00000008);
+              bitField0_ = (bitField0_ & ~0x00000020);
             } else {
               ensureFetterListIsMutable();
               fetterList_.addAll(other.fetterList_);
@@ -897,7 +772,7 @@ public final class AvatarFetterInfoOuterClass {
               fetterListBuilder_.dispose();
               fetterListBuilder_ = null;
               fetterList_ = other.fetterList_;
-              bitField0_ = (bitField0_ & ~0x00000008);
+              bitField0_ = (bitField0_ & ~0x00000020);
               fetterListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getFetterListFieldBuilder() : null;
@@ -906,7 +781,7 @@ public final class AvatarFetterInfoOuterClass {
             }
           }
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -921,24 +796,108 @@ public final class AvatarFetterInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                expNumber_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              case 16: {
+                expLevel_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 16
+              case 24: {
+                int v = input.readUInt32();
+                ensureOpenIdListIsMutable();
+                openIdList_.addInt(v);
+                break;
+              } // case 24
+              case 26: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                ensureOpenIdListIsMutable();
+                while (input.getBytesUntilLimit() > 0) {
+                  openIdList_.addInt(input.readUInt32());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 26
+              case 32: {
+                int v = input.readUInt32();
+                ensureFinishIdListIsMutable();
+                finishIdList_.addInt(v);
+                break;
+              } // case 32
+              case 34: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                ensureFinishIdListIsMutable();
+                while (input.getBytesUntilLimit() > 0) {
+                  finishIdList_.addInt(input.readUInt32());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 34
+              case 40: {
+                int v = input.readUInt32();
+                ensureRewardedFetterLevelListIsMutable();
+                rewardedFetterLevelList_.addInt(v);
+                break;
+              } // case 40
+              case 42: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                ensureRewardedFetterLevelListIsMutable();
+                while (input.getBytesUntilLimit() > 0) {
+                  rewardedFetterLevelList_.addInt(input.readUInt32());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 42
+              case 50: {
+                emu.grasscutter.net.proto.FetterDataOuterClass.FetterData m =
+                    input.readMessage(
+                        emu.grasscutter.net.proto.FetterDataOuterClass.FetterData.parser(),
+                        extensionRegistry);
+                if (fetterListBuilder_ == null) {
+                  ensureFetterListIsMutable();
+                  fetterList_.add(m);
+                } else {
+                  fetterListBuilder_.addMessage(m);
+                }
+                break;
+              } // case 50
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
 
       private int expNumber_ ;
       /**
-       * <code>uint32 exp_number = 1;</code>
+       * <code>uint32 expNumber = 1;</code>
        * @return The expNumber.
        */
       @java.lang.Override
@@ -946,22 +905,23 @@ public final class AvatarFetterInfoOuterClass {
         return expNumber_;
       }
       /**
-       * <code>uint32 exp_number = 1;</code>
+       * <code>uint32 expNumber = 1;</code>
        * @param value The expNumber to set.
        * @return This builder for chaining.
        */
       public Builder setExpNumber(int value) {
         
         expNumber_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 exp_number = 1;</code>
+       * <code>uint32 expNumber = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearExpNumber() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         expNumber_ = 0;
         onChanged();
         return this;
@@ -969,7 +929,7 @@ public final class AvatarFetterInfoOuterClass {
 
       private int expLevel_ ;
       /**
-       * <code>uint32 exp_level = 2;</code>
+       * <code>uint32 expLevel = 2;</code>
        * @return The expLevel.
        */
       @java.lang.Override
@@ -977,22 +937,23 @@ public final class AvatarFetterInfoOuterClass {
         return expLevel_;
       }
       /**
-       * <code>uint32 exp_level = 2;</code>
+       * <code>uint32 expLevel = 2;</code>
        * @param value The expLevel to set.
        * @return This builder for chaining.
        */
       public Builder setExpLevel(int value) {
         
         expLevel_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 exp_level = 2;</code>
+       * <code>uint32 expLevel = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearExpLevel() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         expLevel_ = 0;
         onChanged();
         return this;
@@ -1000,29 +961,29 @@ public final class AvatarFetterInfoOuterClass {
 
       private com.google.protobuf.Internal.IntList openIdList_ = emptyIntList();
       private void ensureOpenIdListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000004) != 0)) {
           openIdList_ = mutableCopy(openIdList_);
-          bitField0_ |= 0x00000001;
-         }
+          bitField0_ |= 0x00000004;
+        }
       }
       /**
-       * <code>repeated uint32 open_id_list = 3;</code>
+       * <code>repeated uint32 openIdList = 3;</code>
        * @return A list containing the openIdList.
        */
       public java.util.List<java.lang.Integer>
           getOpenIdListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
+        return ((bitField0_ & 0x00000004) != 0) ?
                  java.util.Collections.unmodifiableList(openIdList_) : openIdList_;
       }
       /**
-       * <code>repeated uint32 open_id_list = 3;</code>
+       * <code>repeated uint32 openIdList = 3;</code>
        * @return The count of openIdList.
        */
       public int getOpenIdListCount() {
         return openIdList_.size();
       }
       /**
-       * <code>repeated uint32 open_id_list = 3;</code>
+       * <code>repeated uint32 openIdList = 3;</code>
        * @param index The index of the element to return.
        * @return The openIdList at the given index.
        */
@@ -1030,31 +991,33 @@ public final class AvatarFetterInfoOuterClass {
         return openIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 open_id_list = 3;</code>
+       * <code>repeated uint32 openIdList = 3;</code>
        * @param index The index to set the value at.
        * @param value The openIdList to set.
        * @return This builder for chaining.
        */
       public Builder setOpenIdList(
           int index, int value) {
+        
         ensureOpenIdListIsMutable();
         openIdList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 open_id_list = 3;</code>
+       * <code>repeated uint32 openIdList = 3;</code>
        * @param value The openIdList to add.
        * @return This builder for chaining.
        */
       public Builder addOpenIdList(int value) {
+        
         ensureOpenIdListIsMutable();
         openIdList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 open_id_list = 3;</code>
+       * <code>repeated uint32 openIdList = 3;</code>
        * @param values The openIdList to add.
        * @return This builder for chaining.
        */
@@ -1067,41 +1030,41 @@ public final class AvatarFetterInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 open_id_list = 3;</code>
+       * <code>repeated uint32 openIdList = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearOpenIdList() {
         openIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
+        bitField0_ = (bitField0_ & ~0x00000004);
         onChanged();
         return this;
       }
 
       private com.google.protobuf.Internal.IntList finishIdList_ = emptyIntList();
       private void ensureFinishIdListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
+        if (!((bitField0_ & 0x00000008) != 0)) {
           finishIdList_ = mutableCopy(finishIdList_);
-          bitField0_ |= 0x00000002;
-         }
+          bitField0_ |= 0x00000008;
+        }
       }
       /**
-       * <code>repeated uint32 finish_id_list = 4;</code>
+       * <code>repeated uint32 finishIdList = 4;</code>
        * @return A list containing the finishIdList.
        */
       public java.util.List<java.lang.Integer>
           getFinishIdListList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
+        return ((bitField0_ & 0x00000008) != 0) ?
                  java.util.Collections.unmodifiableList(finishIdList_) : finishIdList_;
       }
       /**
-       * <code>repeated uint32 finish_id_list = 4;</code>
+       * <code>repeated uint32 finishIdList = 4;</code>
        * @return The count of finishIdList.
        */
       public int getFinishIdListCount() {
         return finishIdList_.size();
       }
       /**
-       * <code>repeated uint32 finish_id_list = 4;</code>
+       * <code>repeated uint32 finishIdList = 4;</code>
        * @param index The index of the element to return.
        * @return The finishIdList at the given index.
        */
@@ -1109,31 +1072,33 @@ public final class AvatarFetterInfoOuterClass {
         return finishIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 finish_id_list = 4;</code>
+       * <code>repeated uint32 finishIdList = 4;</code>
        * @param index The index to set the value at.
        * @param value The finishIdList to set.
        * @return This builder for chaining.
        */
       public Builder setFinishIdList(
           int index, int value) {
+        
         ensureFinishIdListIsMutable();
         finishIdList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 finish_id_list = 4;</code>
+       * <code>repeated uint32 finishIdList = 4;</code>
        * @param value The finishIdList to add.
        * @return This builder for chaining.
        */
       public Builder addFinishIdList(int value) {
+        
         ensureFinishIdListIsMutable();
         finishIdList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 finish_id_list = 4;</code>
+       * <code>repeated uint32 finishIdList = 4;</code>
        * @param values The finishIdList to add.
        * @return This builder for chaining.
        */
@@ -1146,41 +1111,41 @@ public final class AvatarFetterInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 finish_id_list = 4;</code>
+       * <code>repeated uint32 finishIdList = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearFinishIdList() {
         finishIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000008);
         onChanged();
         return this;
       }
 
       private com.google.protobuf.Internal.IntList rewardedFetterLevelList_ = emptyIntList();
       private void ensureRewardedFetterLevelListIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
+        if (!((bitField0_ & 0x00000010) != 0)) {
           rewardedFetterLevelList_ = mutableCopy(rewardedFetterLevelList_);
-          bitField0_ |= 0x00000004;
-         }
+          bitField0_ |= 0x00000010;
+        }
       }
       /**
-       * <code>repeated uint32 rewarded_fetter_level_list = 5;</code>
+       * <code>repeated uint32 rewardedFetterLevelList = 5;</code>
        * @return A list containing the rewardedFetterLevelList.
        */
       public java.util.List<java.lang.Integer>
           getRewardedFetterLevelListList() {
-        return ((bitField0_ & 0x00000004) != 0) ?
+        return ((bitField0_ & 0x00000010) != 0) ?
                  java.util.Collections.unmodifiableList(rewardedFetterLevelList_) : rewardedFetterLevelList_;
       }
       /**
-       * <code>repeated uint32 rewarded_fetter_level_list = 5;</code>
+       * <code>repeated uint32 rewardedFetterLevelList = 5;</code>
        * @return The count of rewardedFetterLevelList.
        */
       public int getRewardedFetterLevelListCount() {
         return rewardedFetterLevelList_.size();
       }
       /**
-       * <code>repeated uint32 rewarded_fetter_level_list = 5;</code>
+       * <code>repeated uint32 rewardedFetterLevelList = 5;</code>
        * @param index The index of the element to return.
        * @return The rewardedFetterLevelList at the given index.
        */
@@ -1188,31 +1153,33 @@ public final class AvatarFetterInfoOuterClass {
         return rewardedFetterLevelList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 rewarded_fetter_level_list = 5;</code>
+       * <code>repeated uint32 rewardedFetterLevelList = 5;</code>
        * @param index The index to set the value at.
        * @param value The rewardedFetterLevelList to set.
        * @return This builder for chaining.
        */
       public Builder setRewardedFetterLevelList(
           int index, int value) {
+        
         ensureRewardedFetterLevelListIsMutable();
         rewardedFetterLevelList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 rewarded_fetter_level_list = 5;</code>
+       * <code>repeated uint32 rewardedFetterLevelList = 5;</code>
        * @param value The rewardedFetterLevelList to add.
        * @return This builder for chaining.
        */
       public Builder addRewardedFetterLevelList(int value) {
+        
         ensureRewardedFetterLevelListIsMutable();
         rewardedFetterLevelList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 rewarded_fetter_level_list = 5;</code>
+       * <code>repeated uint32 rewardedFetterLevelList = 5;</code>
        * @param values The rewardedFetterLevelList to add.
        * @return This builder for chaining.
        */
@@ -1225,12 +1192,12 @@ public final class AvatarFetterInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 rewarded_fetter_level_list = 5;</code>
+       * <code>repeated uint32 rewardedFetterLevelList = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearRewardedFetterLevelList() {
         rewardedFetterLevelList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000004);
+        bitField0_ = (bitField0_ & ~0x00000010);
         onChanged();
         return this;
       }
@@ -1238,9 +1205,9 @@ public final class AvatarFetterInfoOuterClass {
       private java.util.List<emu.grasscutter.net.proto.FetterDataOuterClass.FetterData> fetterList_ =
         java.util.Collections.emptyList();
       private void ensureFetterListIsMutable() {
-        if (!((bitField0_ & 0x00000008) != 0)) {
+        if (!((bitField0_ & 0x00000020) != 0)) {
           fetterList_ = new java.util.ArrayList<emu.grasscutter.net.proto.FetterDataOuterClass.FetterData>(fetterList_);
-          bitField0_ |= 0x00000008;
+          bitField0_ |= 0x00000020;
          }
       }
 
@@ -1248,7 +1215,7 @@ public final class AvatarFetterInfoOuterClass {
           emu.grasscutter.net.proto.FetterDataOuterClass.FetterData, emu.grasscutter.net.proto.FetterDataOuterClass.FetterData.Builder, emu.grasscutter.net.proto.FetterDataOuterClass.FetterDataOrBuilder> fetterListBuilder_;
 
       /**
-       * <code>repeated .FetterData fetter_list = 6;</code>
+       * <code>repeated .FetterData fetterList = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.FetterDataOuterClass.FetterData> getFetterListList() {
         if (fetterListBuilder_ == null) {
@@ -1258,7 +1225,7 @@ public final class AvatarFetterInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FetterData fetter_list = 6;</code>
+       * <code>repeated .FetterData fetterList = 6;</code>
        */
       public int getFetterListCount() {
         if (fetterListBuilder_ == null) {
@@ -1268,7 +1235,7 @@ public final class AvatarFetterInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FetterData fetter_list = 6;</code>
+       * <code>repeated .FetterData fetterList = 6;</code>
        */
       public emu.grasscutter.net.proto.FetterDataOuterClass.FetterData getFetterList(int index) {
         if (fetterListBuilder_ == null) {
@@ -1278,7 +1245,7 @@ public final class AvatarFetterInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FetterData fetter_list = 6;</code>
+       * <code>repeated .FetterData fetterList = 6;</code>
        */
       public Builder setFetterList(
           int index, emu.grasscutter.net.proto.FetterDataOuterClass.FetterData value) {
@@ -1295,7 +1262,7 @@ public final class AvatarFetterInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FetterData fetter_list = 6;</code>
+       * <code>repeated .FetterData fetterList = 6;</code>
        */
       public Builder setFetterList(
           int index, emu.grasscutter.net.proto.FetterDataOuterClass.FetterData.Builder builderForValue) {
@@ -1309,7 +1276,7 @@ public final class AvatarFetterInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FetterData fetter_list = 6;</code>
+       * <code>repeated .FetterData fetterList = 6;</code>
        */
       public Builder addFetterList(emu.grasscutter.net.proto.FetterDataOuterClass.FetterData value) {
         if (fetterListBuilder_ == null) {
@@ -1325,7 +1292,7 @@ public final class AvatarFetterInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FetterData fetter_list = 6;</code>
+       * <code>repeated .FetterData fetterList = 6;</code>
        */
       public Builder addFetterList(
           int index, emu.grasscutter.net.proto.FetterDataOuterClass.FetterData value) {
@@ -1342,7 +1309,7 @@ public final class AvatarFetterInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FetterData fetter_list = 6;</code>
+       * <code>repeated .FetterData fetterList = 6;</code>
        */
       public Builder addFetterList(
           emu.grasscutter.net.proto.FetterDataOuterClass.FetterData.Builder builderForValue) {
@@ -1356,7 +1323,7 @@ public final class AvatarFetterInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FetterData fetter_list = 6;</code>
+       * <code>repeated .FetterData fetterList = 6;</code>
        */
       public Builder addFetterList(
           int index, emu.grasscutter.net.proto.FetterDataOuterClass.FetterData.Builder builderForValue) {
@@ -1370,7 +1337,7 @@ public final class AvatarFetterInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FetterData fetter_list = 6;</code>
+       * <code>repeated .FetterData fetterList = 6;</code>
        */
       public Builder addAllFetterList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.FetterDataOuterClass.FetterData> values) {
@@ -1385,12 +1352,12 @@ public final class AvatarFetterInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FetterData fetter_list = 6;</code>
+       * <code>repeated .FetterData fetterList = 6;</code>
        */
       public Builder clearFetterList() {
         if (fetterListBuilder_ == null) {
           fetterList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000008);
+          bitField0_ = (bitField0_ & ~0x00000020);
           onChanged();
         } else {
           fetterListBuilder_.clear();
@@ -1398,7 +1365,7 @@ public final class AvatarFetterInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FetterData fetter_list = 6;</code>
+       * <code>repeated .FetterData fetterList = 6;</code>
        */
       public Builder removeFetterList(int index) {
         if (fetterListBuilder_ == null) {
@@ -1411,14 +1378,14 @@ public final class AvatarFetterInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FetterData fetter_list = 6;</code>
+       * <code>repeated .FetterData fetterList = 6;</code>
        */
       public emu.grasscutter.net.proto.FetterDataOuterClass.FetterData.Builder getFetterListBuilder(
           int index) {
         return getFetterListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .FetterData fetter_list = 6;</code>
+       * <code>repeated .FetterData fetterList = 6;</code>
        */
       public emu.grasscutter.net.proto.FetterDataOuterClass.FetterDataOrBuilder getFetterListOrBuilder(
           int index) {
@@ -1428,7 +1395,7 @@ public final class AvatarFetterInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FetterData fetter_list = 6;</code>
+       * <code>repeated .FetterData fetterList = 6;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.FetterDataOuterClass.FetterDataOrBuilder> 
            getFetterListOrBuilderList() {
@@ -1439,14 +1406,14 @@ public final class AvatarFetterInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FetterData fetter_list = 6;</code>
+       * <code>repeated .FetterData fetterList = 6;</code>
        */
       public emu.grasscutter.net.proto.FetterDataOuterClass.FetterData.Builder addFetterListBuilder() {
         return getFetterListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.FetterDataOuterClass.FetterData.getDefaultInstance());
       }
       /**
-       * <code>repeated .FetterData fetter_list = 6;</code>
+       * <code>repeated .FetterData fetterList = 6;</code>
        */
       public emu.grasscutter.net.proto.FetterDataOuterClass.FetterData.Builder addFetterListBuilder(
           int index) {
@@ -1454,7 +1421,7 @@ public final class AvatarFetterInfoOuterClass {
             index, emu.grasscutter.net.proto.FetterDataOuterClass.FetterData.getDefaultInstance());
       }
       /**
-       * <code>repeated .FetterData fetter_list = 6;</code>
+       * <code>repeated .FetterData fetterList = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.FetterDataOuterClass.FetterData.Builder> 
            getFetterListBuilderList() {
@@ -1467,7 +1434,7 @@ public final class AvatarFetterInfoOuterClass {
           fetterListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.FetterDataOuterClass.FetterData, emu.grasscutter.net.proto.FetterDataOuterClass.FetterData.Builder, emu.grasscutter.net.proto.FetterDataOuterClass.FetterDataOrBuilder>(
                   fetterList_,
-                  ((bitField0_ & 0x00000008) != 0),
+                  ((bitField0_ & 0x00000020) != 0),
                   getParentForChildren(),
                   isClean());
           fetterList_ = null;
@@ -1507,7 +1474,18 @@ public final class AvatarFetterInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new AvatarFetterInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -1542,12 +1520,12 @@ public final class AvatarFetterInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026AvatarFetterInfo.proto\032\020FetterData.pro" +
-      "to\"\255\001\n\020AvatarFetterInfo\022\022\n\nexp_number\030\001 " +
-      "\001(\r\022\021\n\texp_level\030\002 \001(\r\022\024\n\014open_id_list\030\003" +
-      " \003(\r\022\026\n\016finish_id_list\030\004 \003(\r\022\"\n\032rewarded" +
-      "_fetter_level_list\030\005 \003(\r\022 \n\013fetter_list\030" +
-      "\006 \003(\0132\013.FetterDataB\033\n\031emu.grasscutter.ne" +
-      "t.protob\006proto3"
+      "to\"\243\001\n\020AvatarFetterInfo\022\021\n\texpNumber\030\001 \001" +
+      "(\r\022\020\n\010expLevel\030\002 \001(\r\022\022\n\nopenIdList\030\003 \003(\r" +
+      "\022\024\n\014finishIdList\030\004 \003(\r\022\037\n\027rewardedFetter" +
+      "LevelList\030\005 \003(\r\022\037\n\nfetterList\030\006 \003(\0132\013.Fe" +
+      "tterDataB\033\n\031emu.grasscutter.net.protob\006p" +
+      "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

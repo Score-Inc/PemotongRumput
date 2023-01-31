@@ -19,28 +19,28 @@ public final class RockBoardExploreStageDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_finish = 8;</code>
+     * <code>bool isFinish = 1;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <code>bool is_open = 9;</code>
+     * <code>uint32 stageId = 9;</code>
+     * @return The stageId.
+     */
+    int getStageId();
+
+    /**
+     * <code>bool isOpen = 6;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>uint32 open_time = 12;</code>
+     * <code>uint32 openTime = 7;</code>
      * @return The openTime.
      */
     int getOpenTime();
-
-    /**
-     * <code>uint32 stage_id = 13;</code>
-     * @return The stageId.
-     */
-    int getStageId();
   }
   /**
    * Protobuf type {@code RockBoardExploreStageData}
@@ -69,63 +69,6 @@ public final class RockBoardExploreStageDataOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private RockBoardExploreStageData(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 64: {
-
-              isFinish_ = input.readBool();
-              break;
-            }
-            case 72: {
-
-              isOpen_ = input.readBool();
-              break;
-            }
-            case 96: {
-
-              openTime_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
-              stageId_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.internal_static_RockBoardExploreStageData_descriptor;
@@ -139,10 +82,10 @@ public final class RockBoardExploreStageDataOuterClass {
               emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData.class, emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData.Builder.class);
     }
 
-    public static final int IS_FINISH_FIELD_NUMBER = 8;
-    private boolean isFinish_;
+    public static final int ISFINISH_FIELD_NUMBER = 1;
+    private boolean isFinish_ = false;
     /**
-     * <code>bool is_finish = 8;</code>
+     * <code>bool isFinish = 1;</code>
      * @return The isFinish.
      */
     @java.lang.Override
@@ -150,10 +93,21 @@ public final class RockBoardExploreStageDataOuterClass {
       return isFinish_;
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 9;
-    private boolean isOpen_;
+    public static final int STAGEID_FIELD_NUMBER = 9;
+    private int stageId_ = 0;
     /**
-     * <code>bool is_open = 9;</code>
+     * <code>uint32 stageId = 9;</code>
+     * @return The stageId.
+     */
+    @java.lang.Override
+    public int getStageId() {
+      return stageId_;
+    }
+
+    public static final int ISOPEN_FIELD_NUMBER = 6;
+    private boolean isOpen_ = false;
+    /**
+     * <code>bool isOpen = 6;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -161,26 +115,15 @@ public final class RockBoardExploreStageDataOuterClass {
       return isOpen_;
     }
 
-    public static final int OPEN_TIME_FIELD_NUMBER = 12;
-    private int openTime_;
+    public static final int OPENTIME_FIELD_NUMBER = 7;
+    private int openTime_ = 0;
     /**
-     * <code>uint32 open_time = 12;</code>
+     * <code>uint32 openTime = 7;</code>
      * @return The openTime.
      */
     @java.lang.Override
     public int getOpenTime() {
       return openTime_;
-    }
-
-    public static final int STAGE_ID_FIELD_NUMBER = 13;
-    private int stageId_;
-    /**
-     * <code>uint32 stage_id = 13;</code>
-     * @return The stageId.
-     */
-    @java.lang.Override
-    public int getStageId() {
-      return stageId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -198,18 +141,18 @@ public final class RockBoardExploreStageDataOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isFinish_ != false) {
-        output.writeBool(8, isFinish_);
+        output.writeBool(1, isFinish_);
       }
       if (isOpen_ != false) {
-        output.writeBool(9, isOpen_);
+        output.writeBool(6, isOpen_);
       }
       if (openTime_ != 0) {
-        output.writeUInt32(12, openTime_);
+        output.writeUInt32(7, openTime_);
       }
       if (stageId_ != 0) {
-        output.writeUInt32(13, stageId_);
+        output.writeUInt32(9, stageId_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -220,21 +163,21 @@ public final class RockBoardExploreStageDataOuterClass {
       size = 0;
       if (isFinish_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isFinish_);
+          .computeBoolSize(1, isFinish_);
       }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isOpen_);
+          .computeBoolSize(6, isOpen_);
       }
       if (openTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, openTime_);
+          .computeUInt32Size(7, openTime_);
       }
       if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, stageId_);
+          .computeUInt32Size(9, stageId_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -251,13 +194,13 @@ public final class RockBoardExploreStageDataOuterClass {
 
       if (getIsFinish()
           != other.getIsFinish()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
       if (getOpenTime()
           != other.getOpenTime()) return false;
-      if (getStageId()
-          != other.getStageId()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -268,17 +211,17 @@ public final class RockBoardExploreStageDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_FINISH_FIELD_NUMBER;
+      hash = (37 * hash) + ISFINISH_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsFinish());
-      hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
+      hash = (37 * hash) + STAGEID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
+      hash = (37 * hash) + ISOPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
-      hash = (37 * hash) + OPEN_TIME_FIELD_NUMBER;
+      hash = (37 * hash) + OPENTIME_FIELD_NUMBER;
       hash = (53 * hash) + getOpenTime();
-      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getStageId();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -395,30 +338,22 @@ public final class RockBoardExploreStageDataOuterClass {
 
       // Construct using emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         isFinish_ = false;
-
-        isOpen_ = false;
-
-        openTime_ = 0;
-
         stageId_ = 0;
-
+        isOpen_ = false;
+        openTime_ = 0;
         return this;
       }
 
@@ -445,12 +380,25 @@ public final class RockBoardExploreStageDataOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData buildPartial() {
         emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData result = new emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData(this);
-        result.isFinish_ = isFinish_;
-        result.isOpen_ = isOpen_;
-        result.openTime_ = openTime_;
-        result.stageId_ = stageId_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.isFinish_ = isFinish_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.stageId_ = stageId_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.isOpen_ = isOpen_;
+        }
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.openTime_ = openTime_;
+        }
       }
 
       @java.lang.Override
@@ -500,16 +448,16 @@ public final class RockBoardExploreStageDataOuterClass {
         if (other.getIsFinish() != false) {
           setIsFinish(other.getIsFinish());
         }
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
+        }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
         }
         if (other.getOpenTime() != 0) {
           setOpenTime(other.getOpenTime());
         }
-        if (other.getStageId() != 0) {
-          setStageId(other.getStageId());
-        }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -524,23 +472,57 @@ public final class RockBoardExploreStageDataOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                isFinish_ = input.readBool();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              case 48: {
+                isOpen_ = input.readBool();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 48
+              case 56: {
+                openTime_ = input.readUInt32();
+                bitField0_ |= 0x00000008;
+                break;
+              } // case 56
+              case 72: {
+                stageId_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 72
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.RockBoardExploreStageDataOuterClass.RockBoardExploreStageData) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private boolean isFinish_ ;
       /**
-       * <code>bool is_finish = 8;</code>
+       * <code>bool isFinish = 1;</code>
        * @return The isFinish.
        */
       @java.lang.Override
@@ -548,92 +530,31 @@ public final class RockBoardExploreStageDataOuterClass {
         return isFinish_;
       }
       /**
-       * <code>bool is_finish = 8;</code>
+       * <code>bool isFinish = 1;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
        */
       public Builder setIsFinish(boolean value) {
         
         isFinish_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_finish = 8;</code>
+       * <code>bool isFinish = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinish() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         isFinish_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean isOpen_ ;
-      /**
-       * <code>bool is_open = 9;</code>
-       * @return The isOpen.
-       */
-      @java.lang.Override
-      public boolean getIsOpen() {
-        return isOpen_;
-      }
-      /**
-       * <code>bool is_open = 9;</code>
-       * @param value The isOpen to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsOpen(boolean value) {
-        
-        isOpen_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_open = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsOpen() {
-        
-        isOpen_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int openTime_ ;
-      /**
-       * <code>uint32 open_time = 12;</code>
-       * @return The openTime.
-       */
-      @java.lang.Override
-      public int getOpenTime() {
-        return openTime_;
-      }
-      /**
-       * <code>uint32 open_time = 12;</code>
-       * @param value The openTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOpenTime(int value) {
-        
-        openTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 open_time = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOpenTime() {
-        
-        openTime_ = 0;
         onChanged();
         return this;
       }
 
       private int stageId_ ;
       /**
-       * <code>uint32 stage_id = 13;</code>
+       * <code>uint32 stageId = 9;</code>
        * @return The stageId.
        */
       @java.lang.Override
@@ -641,23 +562,88 @@ public final class RockBoardExploreStageDataOuterClass {
         return stageId_;
       }
       /**
-       * <code>uint32 stage_id = 13;</code>
+       * <code>uint32 stageId = 9;</code>
        * @param value The stageId to set.
        * @return This builder for chaining.
        */
       public Builder setStageId(int value) {
         
         stageId_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 stage_id = 13;</code>
+       * <code>uint32 stageId = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearStageId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         stageId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isOpen_ ;
+      /**
+       * <code>bool isOpen = 6;</code>
+       * @return The isOpen.
+       */
+      @java.lang.Override
+      public boolean getIsOpen() {
+        return isOpen_;
+      }
+      /**
+       * <code>bool isOpen = 6;</code>
+       * @param value The isOpen to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsOpen(boolean value) {
+        
+        isOpen_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool isOpen = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsOpen() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        isOpen_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int openTime_ ;
+      /**
+       * <code>uint32 openTime = 7;</code>
+       * @return The openTime.
+       */
+      @java.lang.Override
+      public int getOpenTime() {
+        return openTime_;
+      }
+      /**
+       * <code>uint32 openTime = 7;</code>
+       * @param value The openTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOpenTime(int value) {
+        
+        openTime_ = value;
+        bitField0_ |= 0x00000008;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 openTime = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOpenTime() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        openTime_ = 0;
         onChanged();
         return this;
       }
@@ -694,7 +680,18 @@ public final class RockBoardExploreStageDataOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new RockBoardExploreStageData(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -728,11 +725,11 @@ public final class RockBoardExploreStageDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\037RockBoardExploreStageData.proto\"d\n\031Roc" +
-      "kBoardExploreStageData\022\021\n\tis_finish\030\010 \001(" +
-      "\010\022\017\n\007is_open\030\t \001(\010\022\021\n\topen_time\030\014 \001(\r\022\020\n" +
-      "\010stage_id\030\r \001(\rB\033\n\031emu.grasscutter.net.p" +
-      "rotob\006proto3"
+      "\n\037RockBoardExploreStageData.proto\"`\n\031Roc" +
+      "kBoardExploreStageData\022\020\n\010isFinish\030\001 \001(\010" +
+      "\022\017\n\007stageId\030\t \001(\r\022\016\n\006isOpen\030\006 \001(\010\022\020\n\010ope" +
+      "nTime\030\007 \001(\rB\033\n\031emu.grasscutter.net.proto" +
+      "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -743,7 +740,7 @@ public final class RockBoardExploreStageDataOuterClass {
     internal_static_RockBoardExploreStageData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RockBoardExploreStageData_descriptor,
-        new java.lang.String[] { "IsFinish", "IsOpen", "OpenTime", "StageId", });
+        new java.lang.String[] { "IsFinish", "StageId", "IsOpen", "OpenTime", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

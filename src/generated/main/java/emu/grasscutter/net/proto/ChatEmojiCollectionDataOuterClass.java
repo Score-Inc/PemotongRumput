@@ -19,17 +19,17 @@ public final class ChatEmojiCollectionDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 emoji_id_list = 1;</code>
+     * <code>repeated uint32 emojiIdList = 1;</code>
      * @return A list containing the emojiIdList.
      */
     java.util.List<java.lang.Integer> getEmojiIdListList();
     /**
-     * <code>repeated uint32 emoji_id_list = 1;</code>
+     * <code>repeated uint32 emojiIdList = 1;</code>
      * @return The count of emojiIdList.
      */
     int getEmojiIdListCount();
     /**
-     * <code>repeated uint32 emoji_id_list = 1;</code>
+     * <code>repeated uint32 emojiIdList = 1;</code>
      * @param index The index of the element to return.
      * @return The emojiIdList at the given index.
      */
@@ -63,68 +63,6 @@ public final class ChatEmojiCollectionDataOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private ChatEmojiCollectionData(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                emojiIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              emojiIdList_.addInt(input.readUInt32());
-              break;
-            }
-            case 10: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                emojiIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                emojiIdList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          emojiIdList_.makeImmutable(); // C
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.ChatEmojiCollectionDataOuterClass.internal_static_ChatEmojiCollectionData_descriptor;
@@ -138,10 +76,11 @@ public final class ChatEmojiCollectionDataOuterClass {
               emu.grasscutter.net.proto.ChatEmojiCollectionDataOuterClass.ChatEmojiCollectionData.class, emu.grasscutter.net.proto.ChatEmojiCollectionDataOuterClass.ChatEmojiCollectionData.Builder.class);
     }
 
-    public static final int EMOJI_ID_LIST_FIELD_NUMBER = 1;
+    public static final int EMOJIIDLIST_FIELD_NUMBER = 1;
+    @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList emojiIdList_;
     /**
-     * <code>repeated uint32 emoji_id_list = 1;</code>
+     * <code>repeated uint32 emojiIdList = 1;</code>
      * @return A list containing the emojiIdList.
      */
     @java.lang.Override
@@ -150,14 +89,14 @@ public final class ChatEmojiCollectionDataOuterClass {
       return emojiIdList_;
     }
     /**
-     * <code>repeated uint32 emoji_id_list = 1;</code>
+     * <code>repeated uint32 emojiIdList = 1;</code>
      * @return The count of emojiIdList.
      */
     public int getEmojiIdListCount() {
       return emojiIdList_.size();
     }
     /**
-     * <code>repeated uint32 emoji_id_list = 1;</code>
+     * <code>repeated uint32 emojiIdList = 1;</code>
      * @param index The index of the element to return.
      * @return The emojiIdList at the given index.
      */
@@ -188,7 +127,7 @@ public final class ChatEmojiCollectionDataOuterClass {
       for (int i = 0; i < emojiIdList_.size(); i++) {
         output.writeUInt32NoTag(emojiIdList_.getInt(i));
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -211,7 +150,7 @@ public final class ChatEmojiCollectionDataOuterClass {
         }
         emojiIdListMemoizedSerializedSize = dataSize;
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -228,7 +167,7 @@ public final class ChatEmojiCollectionDataOuterClass {
 
       if (!getEmojiIdListList()
           .equals(other.getEmojiIdListList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -240,10 +179,10 @@ public final class ChatEmojiCollectionDataOuterClass {
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
       if (getEmojiIdListCount() > 0) {
-        hash = (37 * hash) + EMOJI_ID_LIST_FIELD_NUMBER;
+        hash = (37 * hash) + EMOJIIDLIST_FIELD_NUMBER;
         hash = (53 * hash) + getEmojiIdListList().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -360,24 +299,19 @@ public final class ChatEmojiCollectionDataOuterClass {
 
       // Construct using emu.grasscutter.net.proto.ChatEmojiCollectionDataOuterClass.ChatEmojiCollectionData.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         emojiIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -404,14 +338,22 @@ public final class ChatEmojiCollectionDataOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ChatEmojiCollectionDataOuterClass.ChatEmojiCollectionData buildPartial() {
         emu.grasscutter.net.proto.ChatEmojiCollectionDataOuterClass.ChatEmojiCollectionData result = new emu.grasscutter.net.proto.ChatEmojiCollectionDataOuterClass.ChatEmojiCollectionData(this);
-        int from_bitField0_ = bitField0_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.ChatEmojiCollectionDataOuterClass.ChatEmojiCollectionData result) {
         if (((bitField0_ & 0x00000001) != 0)) {
           emojiIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.emojiIdList_ = emojiIdList_;
-        onBuilt();
-        return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.ChatEmojiCollectionDataOuterClass.ChatEmojiCollectionData result) {
+        int from_bitField0_ = bitField0_;
       }
 
       @java.lang.Override
@@ -468,7 +410,7 @@ public final class ChatEmojiCollectionDataOuterClass {
           }
           onChanged();
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -483,17 +425,46 @@ public final class ChatEmojiCollectionDataOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.ChatEmojiCollectionDataOuterClass.ChatEmojiCollectionData parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                int v = input.readUInt32();
+                ensureEmojiIdListIsMutable();
+                emojiIdList_.addInt(v);
+                break;
+              } // case 8
+              case 10: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                ensureEmojiIdListIsMutable();
+                while (input.getBytesUntilLimit() > 0) {
+                  emojiIdList_.addInt(input.readUInt32());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 10
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.ChatEmojiCollectionDataOuterClass.ChatEmojiCollectionData) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
@@ -503,10 +474,10 @@ public final class ChatEmojiCollectionDataOuterClass {
         if (!((bitField0_ & 0x00000001) != 0)) {
           emojiIdList_ = mutableCopy(emojiIdList_);
           bitField0_ |= 0x00000001;
-         }
+        }
       }
       /**
-       * <code>repeated uint32 emoji_id_list = 1;</code>
+       * <code>repeated uint32 emojiIdList = 1;</code>
        * @return A list containing the emojiIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -515,14 +486,14 @@ public final class ChatEmojiCollectionDataOuterClass {
                  java.util.Collections.unmodifiableList(emojiIdList_) : emojiIdList_;
       }
       /**
-       * <code>repeated uint32 emoji_id_list = 1;</code>
+       * <code>repeated uint32 emojiIdList = 1;</code>
        * @return The count of emojiIdList.
        */
       public int getEmojiIdListCount() {
         return emojiIdList_.size();
       }
       /**
-       * <code>repeated uint32 emoji_id_list = 1;</code>
+       * <code>repeated uint32 emojiIdList = 1;</code>
        * @param index The index of the element to return.
        * @return The emojiIdList at the given index.
        */
@@ -530,31 +501,33 @@ public final class ChatEmojiCollectionDataOuterClass {
         return emojiIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 emoji_id_list = 1;</code>
+       * <code>repeated uint32 emojiIdList = 1;</code>
        * @param index The index to set the value at.
        * @param value The emojiIdList to set.
        * @return This builder for chaining.
        */
       public Builder setEmojiIdList(
           int index, int value) {
+        
         ensureEmojiIdListIsMutable();
         emojiIdList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 emoji_id_list = 1;</code>
+       * <code>repeated uint32 emojiIdList = 1;</code>
        * @param value The emojiIdList to add.
        * @return This builder for chaining.
        */
       public Builder addEmojiIdList(int value) {
+        
         ensureEmojiIdListIsMutable();
         emojiIdList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 emoji_id_list = 1;</code>
+       * <code>repeated uint32 emojiIdList = 1;</code>
        * @param values The emojiIdList to add.
        * @return This builder for chaining.
        */
@@ -567,7 +540,7 @@ public final class ChatEmojiCollectionDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 emoji_id_list = 1;</code>
+       * <code>repeated uint32 emojiIdList = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearEmojiIdList() {
@@ -609,7 +582,18 @@ public final class ChatEmojiCollectionDataOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new ChatEmojiCollectionData(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -643,9 +627,9 @@ public final class ChatEmojiCollectionDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\035ChatEmojiCollectionData.proto\"0\n\027ChatE" +
-      "mojiCollectionData\022\025\n\remoji_id_list\030\001 \003(" +
-      "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\035ChatEmojiCollectionData.proto\".\n\027ChatE" +
+      "mojiCollectionData\022\023\n\013emojiIdList\030\001 \003(\rB" +
+      "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

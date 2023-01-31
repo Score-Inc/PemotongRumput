@@ -19,34 +19,24 @@ public final class ChangeAvatarRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint64 cur_guid = 10;</code>
+     * <code>uint64 curGuid = 14;</code>
      * @return The curGuid.
      */
     long getCurGuid();
 
     /**
-     * <code>uint32 skill_id = 1;</code>
+     * <code>uint32 skillId = 6;</code>
      * @return The skillId.
      */
     int getSkillId();
 
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
-   * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 1699;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   * }
-   * </pre>
-   *
    * Protobuf type {@code ChangeAvatarRsp}
    */
   public static final class ChangeAvatarRsp extends
@@ -73,58 +63,6 @@ public final class ChangeAvatarRspOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private ChangeAvatarRsp(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              skillId_ = input.readUInt32();
-              break;
-            }
-            case 40: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 80: {
-
-              curGuid_ = input.readUInt64();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.ChangeAvatarRspOuterClass.internal_static_ChangeAvatarRsp_descriptor;
@@ -138,10 +76,141 @@ public final class ChangeAvatarRspOuterClass {
               emu.grasscutter.net.proto.ChangeAvatarRspOuterClass.ChangeAvatarRsp.class, emu.grasscutter.net.proto.ChangeAvatarRspOuterClass.ChangeAvatarRsp.Builder.class);
     }
 
-    public static final int CUR_GUID_FIELD_NUMBER = 10;
-    private long curGuid_;
     /**
-     * <code>uint64 cur_guid = 10;</code>
+     * Protobuf enum {@code ChangeAvatarRsp.ICFALNBBCJF}
+     */
+    public enum ICFALNBBCJF
+        implements com.google.protobuf.ProtocolMessageEnum {
+      /**
+       * <code>NONE = 0;</code>
+       */
+      NONE(0, 0),
+      /**
+       * <code>PEPPOHPHJOJ = 1780;</code>
+       */
+      PEPPOHPHJOJ(1, 1780),
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      NNBKOLMPOEA(3, 1),
+      UNRECOGNIZED(-1, -1),
+      ;
+
+      /**
+       * <code>DCDNILFDFLB = 0;</code>
+       */
+      public static final ICFALNBBCJF DCDNILFDFLB = NONE;
+      /**
+       * <code>NONE = 0;</code>
+       */
+      public static final int NONE_VALUE = 0;
+      /**
+       * <code>PEPPOHPHJOJ = 1780;</code>
+       */
+      public static final int PEPPOHPHJOJ_VALUE = 1780;
+      /**
+       * <code>DCDNILFDFLB = 0;</code>
+       */
+      public static final int DCDNILFDFLB_VALUE = 0;
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      public static final int NNBKOLMPOEA_VALUE = 1;
+
+
+      public final int getNumber() {
+        if (index == -1) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static ICFALNBBCJF valueOf(int value) {
+        return forNumber(value);
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
+      public static ICFALNBBCJF forNumber(int value) {
+        switch (value) {
+          case 0: return NONE;
+          case 1780: return PEPPOHPHJOJ;
+          case 1: return NNBKOLMPOEA;
+          default: return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<ICFALNBBCJF>
+          internalGetValueMap() {
+        return internalValueMap;
+      }
+      private static final com.google.protobuf.Internal.EnumLiteMap<
+          ICFALNBBCJF> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<ICFALNBBCJF>() {
+              public ICFALNBBCJF findValueByNumber(int number) {
+                return ICFALNBBCJF.forNumber(number);
+              }
+            };
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor
+          getValueDescriptor() {
+        if (index == -1) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
+        return getDescriptor().getValues().get(index);
+      }
+      public final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptorForType() {
+        return getDescriptor();
+      }
+      public static final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptor() {
+        return emu.grasscutter.net.proto.ChangeAvatarRspOuterClass.ChangeAvatarRsp.getDescriptor().getEnumTypes().get(0);
+      }
+
+      private static final ICFALNBBCJF[] VALUES = getStaticValuesArray();
+      private static ICFALNBBCJF[] getStaticValuesArray() {
+        return new ICFALNBBCJF[] {
+          NONE, PEPPOHPHJOJ, DCDNILFDFLB, NNBKOLMPOEA, 
+        };
+      }
+      public static ICFALNBBCJF valueOf(
+          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException(
+            "EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      private final int index;
+      private final int value;
+
+      private ICFALNBBCJF(int index, int value) {
+        this.index = index;
+        this.value = value;
+      }
+
+      // @@protoc_insertion_point(enum_scope:ChangeAvatarRsp.ICFALNBBCJF)
+    }
+
+    public static final int CURGUID_FIELD_NUMBER = 14;
+    private long curGuid_ = 0L;
+    /**
+     * <code>uint64 curGuid = 14;</code>
      * @return The curGuid.
      */
     @java.lang.Override
@@ -149,10 +218,10 @@ public final class ChangeAvatarRspOuterClass {
       return curGuid_;
     }
 
-    public static final int SKILL_ID_FIELD_NUMBER = 1;
-    private int skillId_;
+    public static final int SKILLID_FIELD_NUMBER = 6;
+    private int skillId_ = 0;
     /**
-     * <code>uint32 skill_id = 1;</code>
+     * <code>uint32 skillId = 6;</code>
      * @return The skillId.
      */
     @java.lang.Override
@@ -160,10 +229,10 @@ public final class ChangeAvatarRspOuterClass {
       return skillId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 5;
-    private int retcode_;
+    public static final int RETCODE_FIELD_NUMBER = 15;
+    private int retcode_ = 0;
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -186,15 +255,15 @@ public final class ChangeAvatarRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (skillId_ != 0) {
-        output.writeUInt32(1, skillId_);
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(5, retcode_);
+        output.writeUInt32(6, skillId_);
       }
       if (curGuid_ != 0L) {
-        output.writeUInt64(10, curGuid_);
+        output.writeUInt64(14, curGuid_);
       }
-      unknownFields.writeTo(output);
+      if (retcode_ != 0) {
+        output.writeInt32(15, retcode_);
+      }
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -205,17 +274,17 @@ public final class ChangeAvatarRspOuterClass {
       size = 0;
       if (skillId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, skillId_);
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, retcode_);
+          .computeUInt32Size(6, skillId_);
       }
       if (curGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(10, curGuid_);
+          .computeUInt64Size(14, curGuid_);
       }
-      size += unknownFields.getSerializedSize();
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(15, retcode_);
+      }
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -236,7 +305,7 @@ public final class ChangeAvatarRspOuterClass {
           != other.getSkillId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -247,14 +316,14 @@ public final class ChangeAvatarRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CUR_GUID_FIELD_NUMBER;
+      hash = (37 * hash) + CURGUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getCurGuid());
-      hash = (37 * hash) + SKILL_ID_FIELD_NUMBER;
+      hash = (37 * hash) + SKILLID_FIELD_NUMBER;
       hash = (53 * hash) + getSkillId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -350,16 +419,6 @@ public final class ChangeAvatarRspOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 1699;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     * }
-     * </pre>
-     *
      * Protobuf type {@code ChangeAvatarRsp}
      */
     public static final class Builder extends
@@ -381,28 +440,21 @@ public final class ChangeAvatarRspOuterClass {
 
       // Construct using emu.grasscutter.net.proto.ChangeAvatarRspOuterClass.ChangeAvatarRsp.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         curGuid_ = 0L;
-
         skillId_ = 0;
-
         retcode_ = 0;
-
         return this;
       }
 
@@ -429,11 +481,22 @@ public final class ChangeAvatarRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ChangeAvatarRspOuterClass.ChangeAvatarRsp buildPartial() {
         emu.grasscutter.net.proto.ChangeAvatarRspOuterClass.ChangeAvatarRsp result = new emu.grasscutter.net.proto.ChangeAvatarRspOuterClass.ChangeAvatarRsp(this);
-        result.curGuid_ = curGuid_;
-        result.skillId_ = skillId_;
-        result.retcode_ = retcode_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.ChangeAvatarRspOuterClass.ChangeAvatarRsp result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.curGuid_ = curGuid_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.skillId_ = skillId_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.retcode_ = retcode_;
+        }
       }
 
       @java.lang.Override
@@ -489,7 +552,7 @@ public final class ChangeAvatarRspOuterClass {
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -504,23 +567,52 @@ public final class ChangeAvatarRspOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.ChangeAvatarRspOuterClass.ChangeAvatarRsp parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 48: {
+                skillId_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 48
+              case 112: {
+                curGuid_ = input.readUInt64();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 112
+              case 120: {
+                retcode_ = input.readInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 120
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.ChangeAvatarRspOuterClass.ChangeAvatarRsp) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private long curGuid_ ;
       /**
-       * <code>uint64 cur_guid = 10;</code>
+       * <code>uint64 curGuid = 14;</code>
        * @return The curGuid.
        */
       @java.lang.Override
@@ -528,22 +620,23 @@ public final class ChangeAvatarRspOuterClass {
         return curGuid_;
       }
       /**
-       * <code>uint64 cur_guid = 10;</code>
+       * <code>uint64 curGuid = 14;</code>
        * @param value The curGuid to set.
        * @return This builder for chaining.
        */
       public Builder setCurGuid(long value) {
         
         curGuid_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint64 cur_guid = 10;</code>
+       * <code>uint64 curGuid = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearCurGuid() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         curGuid_ = 0L;
         onChanged();
         return this;
@@ -551,7 +644,7 @@ public final class ChangeAvatarRspOuterClass {
 
       private int skillId_ ;
       /**
-       * <code>uint32 skill_id = 1;</code>
+       * <code>uint32 skillId = 6;</code>
        * @return The skillId.
        */
       @java.lang.Override
@@ -559,22 +652,23 @@ public final class ChangeAvatarRspOuterClass {
         return skillId_;
       }
       /**
-       * <code>uint32 skill_id = 1;</code>
+       * <code>uint32 skillId = 6;</code>
        * @param value The skillId to set.
        * @return This builder for chaining.
        */
       public Builder setSkillId(int value) {
         
         skillId_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 skill_id = 1;</code>
+       * <code>uint32 skillId = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearSkillId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         skillId_ = 0;
         onChanged();
         return this;
@@ -582,7 +676,7 @@ public final class ChangeAvatarRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 15;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -590,22 +684,23 @@ public final class ChangeAvatarRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 15;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
       public Builder setRetcode(int value) {
         
         retcode_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
-        
+        bitField0_ = (bitField0_ & ~0x00000004);
         retcode_ = 0;
         onChanged();
         return this;
@@ -643,7 +738,18 @@ public final class ChangeAvatarRspOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new ChangeAvatarRsp(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -677,9 +783,11 @@ public final class ChangeAvatarRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025ChangeAvatarRsp.proto\"F\n\017ChangeAvatarR" +
-      "sp\022\020\n\010cur_guid\030\n \001(\004\022\020\n\010skill_id\030\001 \001(\r\022\017" +
-      "\n\007retcode\030\005 \001(\005B\033\n\031emu.grasscutter.net.p" +
+      "\n\025ChangeAvatarRsp.proto\"\225\001\n\017ChangeAvatar" +
+      "Rsp\022\017\n\007curGuid\030\016 \001(\004\022\017\n\007skillId\030\006 \001(\r\022\017\n" +
+      "\007retcode\030\017 \001(\005\"O\n\013ICFALNBBCJF\022\010\n\004NONE\020\000\022" +
+      "\020\n\013PEPPOHPHJOJ\020\364\r\022\017\n\013DCDNILFDFLB\020\000\022\017\n\013NN" +
+      "BKOLMPOEA\020\001\032\002\020\001B\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

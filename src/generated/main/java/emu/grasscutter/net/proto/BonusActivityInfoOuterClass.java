@@ -19,13 +19,13 @@ public final class BonusActivityInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 bonus_activity_id = 14;</code>
+     * <code>uint32 bonusActivityId = 5;</code>
      * @return The bonusActivityId.
      */
     int getBonusActivityId();
 
     /**
-     * <code>uint32 state = 8;</code>
+     * <code>uint32 state = 4;</code>
      * @return The state.
      */
     int getState();
@@ -57,53 +57,6 @@ public final class BonusActivityInfoOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private BonusActivityInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 64: {
-
-              state_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
-              bonusActivityId_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.BonusActivityInfoOuterClass.internal_static_BonusActivityInfo_descriptor;
@@ -117,10 +70,10 @@ public final class BonusActivityInfoOuterClass {
               emu.grasscutter.net.proto.BonusActivityInfoOuterClass.BonusActivityInfo.class, emu.grasscutter.net.proto.BonusActivityInfoOuterClass.BonusActivityInfo.Builder.class);
     }
 
-    public static final int BONUS_ACTIVITY_ID_FIELD_NUMBER = 14;
-    private int bonusActivityId_;
+    public static final int BONUSACTIVITYID_FIELD_NUMBER = 5;
+    private int bonusActivityId_ = 0;
     /**
-     * <code>uint32 bonus_activity_id = 14;</code>
+     * <code>uint32 bonusActivityId = 5;</code>
      * @return The bonusActivityId.
      */
     @java.lang.Override
@@ -128,10 +81,10 @@ public final class BonusActivityInfoOuterClass {
       return bonusActivityId_;
     }
 
-    public static final int STATE_FIELD_NUMBER = 8;
-    private int state_;
+    public static final int STATE_FIELD_NUMBER = 4;
+    private int state_ = 0;
     /**
-     * <code>uint32 state = 8;</code>
+     * <code>uint32 state = 4;</code>
      * @return The state.
      */
     @java.lang.Override
@@ -154,12 +107,12 @@ public final class BonusActivityInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (state_ != 0) {
-        output.writeUInt32(8, state_);
+        output.writeUInt32(4, state_);
       }
       if (bonusActivityId_ != 0) {
-        output.writeUInt32(14, bonusActivityId_);
+        output.writeUInt32(5, bonusActivityId_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -170,13 +123,13 @@ public final class BonusActivityInfoOuterClass {
       size = 0;
       if (state_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, state_);
+          .computeUInt32Size(4, state_);
       }
       if (bonusActivityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, bonusActivityId_);
+          .computeUInt32Size(5, bonusActivityId_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -195,7 +148,7 @@ public final class BonusActivityInfoOuterClass {
           != other.getBonusActivityId()) return false;
       if (getState()
           != other.getState()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -206,11 +159,11 @@ public final class BonusActivityInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + BONUS_ACTIVITY_ID_FIELD_NUMBER;
+      hash = (37 * hash) + BONUSACTIVITYID_FIELD_NUMBER;
       hash = (53 * hash) + getBonusActivityId();
       hash = (37 * hash) + STATE_FIELD_NUMBER;
       hash = (53 * hash) + getState();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -327,26 +280,20 @@ public final class BonusActivityInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.BonusActivityInfoOuterClass.BonusActivityInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         bonusActivityId_ = 0;
-
         state_ = 0;
-
         return this;
       }
 
@@ -373,10 +320,19 @@ public final class BonusActivityInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BonusActivityInfoOuterClass.BonusActivityInfo buildPartial() {
         emu.grasscutter.net.proto.BonusActivityInfoOuterClass.BonusActivityInfo result = new emu.grasscutter.net.proto.BonusActivityInfoOuterClass.BonusActivityInfo(this);
-        result.bonusActivityId_ = bonusActivityId_;
-        result.state_ = state_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.BonusActivityInfoOuterClass.BonusActivityInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.bonusActivityId_ = bonusActivityId_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.state_ = state_;
+        }
       }
 
       @java.lang.Override
@@ -429,7 +385,7 @@ public final class BonusActivityInfoOuterClass {
         if (other.getState() != 0) {
           setState(other.getState());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -444,23 +400,47 @@ public final class BonusActivityInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.BonusActivityInfoOuterClass.BonusActivityInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 32: {
+                state_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 32
+              case 40: {
+                bonusActivityId_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 40
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.BonusActivityInfoOuterClass.BonusActivityInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private int bonusActivityId_ ;
       /**
-       * <code>uint32 bonus_activity_id = 14;</code>
+       * <code>uint32 bonusActivityId = 5;</code>
        * @return The bonusActivityId.
        */
       @java.lang.Override
@@ -468,22 +448,23 @@ public final class BonusActivityInfoOuterClass {
         return bonusActivityId_;
       }
       /**
-       * <code>uint32 bonus_activity_id = 14;</code>
+       * <code>uint32 bonusActivityId = 5;</code>
        * @param value The bonusActivityId to set.
        * @return This builder for chaining.
        */
       public Builder setBonusActivityId(int value) {
         
         bonusActivityId_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 bonus_activity_id = 14;</code>
+       * <code>uint32 bonusActivityId = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearBonusActivityId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         bonusActivityId_ = 0;
         onChanged();
         return this;
@@ -491,7 +472,7 @@ public final class BonusActivityInfoOuterClass {
 
       private int state_ ;
       /**
-       * <code>uint32 state = 8;</code>
+       * <code>uint32 state = 4;</code>
        * @return The state.
        */
       @java.lang.Override
@@ -499,22 +480,23 @@ public final class BonusActivityInfoOuterClass {
         return state_;
       }
       /**
-       * <code>uint32 state = 8;</code>
+       * <code>uint32 state = 4;</code>
        * @param value The state to set.
        * @return This builder for chaining.
        */
       public Builder setState(int value) {
         
         state_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 state = 8;</code>
+       * <code>uint32 state = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearState() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         state_ = 0;
         onChanged();
         return this;
@@ -552,7 +534,18 @@ public final class BonusActivityInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new BonusActivityInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -586,10 +579,10 @@ public final class BonusActivityInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\027BonusActivityInfo.proto\"=\n\021BonusActivi" +
-      "tyInfo\022\031\n\021bonus_activity_id\030\016 \001(\r\022\r\n\005sta" +
-      "te\030\010 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
-      "roto3"
+      "\n\027BonusActivityInfo.proto\";\n\021BonusActivi" +
+      "tyInfo\022\027\n\017bonusActivityId\030\005 \001(\r\022\r\n\005state" +
+      "\030\004 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
+      "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -19,34 +19,24 @@ public final class PlayerTimeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_paused = 12;</code>
-     * @return The isPaused.
-     */
-    boolean getIsPaused();
-
-    /**
-     * <code>uint64 player_time = 11;</code>
+     * <code>uint64 playerTime = 13;</code>
      * @return The playerTime.
      */
     long getPlayerTime();
 
     /**
-     * <code>uint64 server_time = 5;</code>
+     * <code>uint64 serverTime = 15;</code>
      * @return The serverTime.
      */
     long getServerTime();
+
+    /**
+     * <code>bool isPaused = 7;</code>
+     * @return The isPaused.
+     */
+    boolean getIsPaused();
   }
   /**
-   * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 121;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   * }
-   * </pre>
-   *
    * Protobuf type {@code PlayerTimeNotify}
    */
   public static final class PlayerTimeNotify extends
@@ -73,58 +63,6 @@ public final class PlayerTimeNotifyOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private PlayerTimeNotify(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 40: {
-
-              serverTime_ = input.readUInt64();
-              break;
-            }
-            case 88: {
-
-              playerTime_ = input.readUInt64();
-              break;
-            }
-            case 96: {
-
-              isPaused_ = input.readBool();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.PlayerTimeNotifyOuterClass.internal_static_PlayerTimeNotify_descriptor;
@@ -138,21 +76,141 @@ public final class PlayerTimeNotifyOuterClass {
               emu.grasscutter.net.proto.PlayerTimeNotifyOuterClass.PlayerTimeNotify.class, emu.grasscutter.net.proto.PlayerTimeNotifyOuterClass.PlayerTimeNotify.Builder.class);
     }
 
-    public static final int IS_PAUSED_FIELD_NUMBER = 12;
-    private boolean isPaused_;
     /**
-     * <code>bool is_paused = 12;</code>
-     * @return The isPaused.
+     * Protobuf enum {@code PlayerTimeNotify.GABKEMDLGGF}
      */
-    @java.lang.Override
-    public boolean getIsPaused() {
-      return isPaused_;
+    public enum GABKEMDLGGF
+        implements com.google.protobuf.ProtocolMessageEnum {
+      /**
+       * <code>NONE = 0;</code>
+       */
+      NONE(0, 0),
+      /**
+       * <code>PEPPOHPHJOJ = 103;</code>
+       */
+      PEPPOHPHJOJ(1, 103),
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      NNBKOLMPOEA(3, 1),
+      UNRECOGNIZED(-1, -1),
+      ;
+
+      /**
+       * <code>DCDNILFDFLB = 0;</code>
+       */
+      public static final GABKEMDLGGF DCDNILFDFLB = NONE;
+      /**
+       * <code>NONE = 0;</code>
+       */
+      public static final int NONE_VALUE = 0;
+      /**
+       * <code>PEPPOHPHJOJ = 103;</code>
+       */
+      public static final int PEPPOHPHJOJ_VALUE = 103;
+      /**
+       * <code>DCDNILFDFLB = 0;</code>
+       */
+      public static final int DCDNILFDFLB_VALUE = 0;
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      public static final int NNBKOLMPOEA_VALUE = 1;
+
+
+      public final int getNumber() {
+        if (index == -1) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static GABKEMDLGGF valueOf(int value) {
+        return forNumber(value);
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
+      public static GABKEMDLGGF forNumber(int value) {
+        switch (value) {
+          case 0: return NONE;
+          case 103: return PEPPOHPHJOJ;
+          case 1: return NNBKOLMPOEA;
+          default: return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<GABKEMDLGGF>
+          internalGetValueMap() {
+        return internalValueMap;
+      }
+      private static final com.google.protobuf.Internal.EnumLiteMap<
+          GABKEMDLGGF> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<GABKEMDLGGF>() {
+              public GABKEMDLGGF findValueByNumber(int number) {
+                return GABKEMDLGGF.forNumber(number);
+              }
+            };
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor
+          getValueDescriptor() {
+        if (index == -1) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
+        return getDescriptor().getValues().get(index);
+      }
+      public final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptorForType() {
+        return getDescriptor();
+      }
+      public static final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptor() {
+        return emu.grasscutter.net.proto.PlayerTimeNotifyOuterClass.PlayerTimeNotify.getDescriptor().getEnumTypes().get(0);
+      }
+
+      private static final GABKEMDLGGF[] VALUES = getStaticValuesArray();
+      private static GABKEMDLGGF[] getStaticValuesArray() {
+        return new GABKEMDLGGF[] {
+          NONE, PEPPOHPHJOJ, DCDNILFDFLB, NNBKOLMPOEA, 
+        };
+      }
+      public static GABKEMDLGGF valueOf(
+          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException(
+            "EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      private final int index;
+      private final int value;
+
+      private GABKEMDLGGF(int index, int value) {
+        this.index = index;
+        this.value = value;
+      }
+
+      // @@protoc_insertion_point(enum_scope:PlayerTimeNotify.GABKEMDLGGF)
     }
 
-    public static final int PLAYER_TIME_FIELD_NUMBER = 11;
-    private long playerTime_;
+    public static final int PLAYERTIME_FIELD_NUMBER = 13;
+    private long playerTime_ = 0L;
     /**
-     * <code>uint64 player_time = 11;</code>
+     * <code>uint64 playerTime = 13;</code>
      * @return The playerTime.
      */
     @java.lang.Override
@@ -160,15 +218,26 @@ public final class PlayerTimeNotifyOuterClass {
       return playerTime_;
     }
 
-    public static final int SERVER_TIME_FIELD_NUMBER = 5;
-    private long serverTime_;
+    public static final int SERVERTIME_FIELD_NUMBER = 15;
+    private long serverTime_ = 0L;
     /**
-     * <code>uint64 server_time = 5;</code>
+     * <code>uint64 serverTime = 15;</code>
      * @return The serverTime.
      */
     @java.lang.Override
     public long getServerTime() {
       return serverTime_;
+    }
+
+    public static final int ISPAUSED_FIELD_NUMBER = 7;
+    private boolean isPaused_ = false;
+    /**
+     * <code>bool isPaused = 7;</code>
+     * @return The isPaused.
+     */
+    @java.lang.Override
+    public boolean getIsPaused() {
+      return isPaused_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -185,16 +254,16 @@ public final class PlayerTimeNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (serverTime_ != 0L) {
-        output.writeUInt64(5, serverTime_);
+      if (isPaused_ != false) {
+        output.writeBool(7, isPaused_);
       }
       if (playerTime_ != 0L) {
-        output.writeUInt64(11, playerTime_);
+        output.writeUInt64(13, playerTime_);
       }
-      if (isPaused_ != false) {
-        output.writeBool(12, isPaused_);
+      if (serverTime_ != 0L) {
+        output.writeUInt64(15, serverTime_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -203,19 +272,19 @@ public final class PlayerTimeNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (serverTime_ != 0L) {
+      if (isPaused_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(5, serverTime_);
+          .computeBoolSize(7, isPaused_);
       }
       if (playerTime_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(11, playerTime_);
+          .computeUInt64Size(13, playerTime_);
       }
-      if (isPaused_ != false) {
+      if (serverTime_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, isPaused_);
+          .computeUInt64Size(15, serverTime_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -230,13 +299,13 @@ public final class PlayerTimeNotifyOuterClass {
       }
       emu.grasscutter.net.proto.PlayerTimeNotifyOuterClass.PlayerTimeNotify other = (emu.grasscutter.net.proto.PlayerTimeNotifyOuterClass.PlayerTimeNotify) obj;
 
-      if (getIsPaused()
-          != other.getIsPaused()) return false;
       if (getPlayerTime()
           != other.getPlayerTime()) return false;
       if (getServerTime()
           != other.getServerTime()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (getIsPaused()
+          != other.getIsPaused()) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -247,16 +316,16 @@ public final class PlayerTimeNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_PAUSED_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsPaused());
-      hash = (37 * hash) + PLAYER_TIME_FIELD_NUMBER;
+      hash = (37 * hash) + PLAYERTIME_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getPlayerTime());
-      hash = (37 * hash) + SERVER_TIME_FIELD_NUMBER;
+      hash = (37 * hash) + SERVERTIME_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getServerTime());
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (37 * hash) + ISPAUSED_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsPaused());
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -352,16 +421,6 @@ public final class PlayerTimeNotifyOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 121;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     * }
-     * </pre>
-     *
      * Protobuf type {@code PlayerTimeNotify}
      */
     public static final class Builder extends
@@ -383,28 +442,21 @@ public final class PlayerTimeNotifyOuterClass {
 
       // Construct using emu.grasscutter.net.proto.PlayerTimeNotifyOuterClass.PlayerTimeNotify.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isPaused_ = false;
-
+        bitField0_ = 0;
         playerTime_ = 0L;
-
         serverTime_ = 0L;
-
+        isPaused_ = false;
         return this;
       }
 
@@ -431,11 +483,22 @@ public final class PlayerTimeNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PlayerTimeNotifyOuterClass.PlayerTimeNotify buildPartial() {
         emu.grasscutter.net.proto.PlayerTimeNotifyOuterClass.PlayerTimeNotify result = new emu.grasscutter.net.proto.PlayerTimeNotifyOuterClass.PlayerTimeNotify(this);
-        result.isPaused_ = isPaused_;
-        result.playerTime_ = playerTime_;
-        result.serverTime_ = serverTime_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.PlayerTimeNotifyOuterClass.PlayerTimeNotify result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.playerTime_ = playerTime_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.serverTime_ = serverTime_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.isPaused_ = isPaused_;
+        }
       }
 
       @java.lang.Override
@@ -482,16 +545,16 @@ public final class PlayerTimeNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PlayerTimeNotifyOuterClass.PlayerTimeNotify other) {
         if (other == emu.grasscutter.net.proto.PlayerTimeNotifyOuterClass.PlayerTimeNotify.getDefaultInstance()) return this;
-        if (other.getIsPaused() != false) {
-          setIsPaused(other.getIsPaused());
-        }
         if (other.getPlayerTime() != 0L) {
           setPlayerTime(other.getPlayerTime());
         }
         if (other.getServerTime() != 0L) {
           setServerTime(other.getServerTime());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        if (other.getIsPaused() != false) {
+          setIsPaused(other.getIsPaused());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -506,54 +569,52 @@ public final class PlayerTimeNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.PlayerTimeNotifyOuterClass.PlayerTimeNotify parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 56: {
+                isPaused_ = input.readBool();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 56
+              case 104: {
+                playerTime_ = input.readUInt64();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 104
+              case 120: {
+                serverTime_ = input.readUInt64();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 120
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.PlayerTimeNotifyOuterClass.PlayerTimeNotify) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
-
-      private boolean isPaused_ ;
-      /**
-       * <code>bool is_paused = 12;</code>
-       * @return The isPaused.
-       */
-      @java.lang.Override
-      public boolean getIsPaused() {
-        return isPaused_;
-      }
-      /**
-       * <code>bool is_paused = 12;</code>
-       * @param value The isPaused to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsPaused(boolean value) {
-        
-        isPaused_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_paused = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsPaused() {
-        
-        isPaused_ = false;
-        onChanged();
-        return this;
-      }
+      private int bitField0_;
 
       private long playerTime_ ;
       /**
-       * <code>uint64 player_time = 11;</code>
+       * <code>uint64 playerTime = 13;</code>
        * @return The playerTime.
        */
       @java.lang.Override
@@ -561,22 +622,23 @@ public final class PlayerTimeNotifyOuterClass {
         return playerTime_;
       }
       /**
-       * <code>uint64 player_time = 11;</code>
+       * <code>uint64 playerTime = 13;</code>
        * @param value The playerTime to set.
        * @return This builder for chaining.
        */
       public Builder setPlayerTime(long value) {
         
         playerTime_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint64 player_time = 11;</code>
+       * <code>uint64 playerTime = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayerTime() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         playerTime_ = 0L;
         onChanged();
         return this;
@@ -584,7 +646,7 @@ public final class PlayerTimeNotifyOuterClass {
 
       private long serverTime_ ;
       /**
-       * <code>uint64 server_time = 5;</code>
+       * <code>uint64 serverTime = 15;</code>
        * @return The serverTime.
        */
       @java.lang.Override
@@ -592,23 +654,56 @@ public final class PlayerTimeNotifyOuterClass {
         return serverTime_;
       }
       /**
-       * <code>uint64 server_time = 5;</code>
+       * <code>uint64 serverTime = 15;</code>
        * @param value The serverTime to set.
        * @return This builder for chaining.
        */
       public Builder setServerTime(long value) {
         
         serverTime_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>uint64 server_time = 5;</code>
+       * <code>uint64 serverTime = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearServerTime() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         serverTime_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private boolean isPaused_ ;
+      /**
+       * <code>bool isPaused = 7;</code>
+       * @return The isPaused.
+       */
+      @java.lang.Override
+      public boolean getIsPaused() {
+        return isPaused_;
+      }
+      /**
+       * <code>bool isPaused = 7;</code>
+       * @param value The isPaused to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsPaused(boolean value) {
+        
+        isPaused_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool isPaused = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsPaused() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        isPaused_ = false;
         onChanged();
         return this;
       }
@@ -645,7 +740,18 @@ public final class PlayerTimeNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new PlayerTimeNotify(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -679,10 +785,12 @@ public final class PlayerTimeNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026PlayerTimeNotify.proto\"O\n\020PlayerTimeNo" +
-      "tify\022\021\n\tis_paused\030\014 \001(\010\022\023\n\013player_time\030\013" +
-      " \001(\004\022\023\n\013server_time\030\005 \001(\004B\033\n\031emu.grasscu" +
-      "tter.net.protob\006proto3"
+      "\n\026PlayerTimeNotify.proto\"\234\001\n\020PlayerTimeN" +
+      "otify\022\022\n\nplayerTime\030\r \001(\004\022\022\n\nserverTime\030" +
+      "\017 \001(\004\022\020\n\010isPaused\030\007 \001(\010\"N\n\013GABKEMDLGGF\022\010" +
+      "\n\004NONE\020\000\022\017\n\013PEPPOHPHJOJ\020g\022\017\n\013DCDNILFDFLB" +
+      "\020\000\022\017\n\013NNBKOLMPOEA\020\001\032\002\020\001B\033\n\031emu.grasscutt" +
+      "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -693,7 +801,7 @@ public final class PlayerTimeNotifyOuterClass {
     internal_static_PlayerTimeNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerTimeNotify_descriptor,
-        new java.lang.String[] { "IsPaused", "PlayerTime", "ServerTime", });
+        new java.lang.String[] { "PlayerTime", "ServerTime", "IsPaused", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

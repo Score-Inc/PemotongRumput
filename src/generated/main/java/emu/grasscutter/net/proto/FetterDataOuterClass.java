@@ -19,29 +19,29 @@ public final class FetterDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 fetter_id = 1;</code>
+     * <code>uint32 fetterId = 1;</code>
      * @return The fetterId.
      */
     int getFetterId();
 
     /**
-     * <code>uint32 fetter_state = 2;</code>
+     * <code>uint32 fetterState = 2;</code>
      * @return The fetterState.
      */
     int getFetterState();
 
     /**
-     * <code>repeated uint32 cond_index_list = 3;</code>
+     * <code>repeated uint32 condIndexList = 3;</code>
      * @return A list containing the condIndexList.
      */
     java.util.List<java.lang.Integer> getCondIndexListList();
     /**
-     * <code>repeated uint32 cond_index_list = 3;</code>
+     * <code>repeated uint32 condIndexList = 3;</code>
      * @return The count of condIndexList.
      */
     int getCondIndexListCount();
     /**
-     * <code>repeated uint32 cond_index_list = 3;</code>
+     * <code>repeated uint32 condIndexList = 3;</code>
      * @param index The index of the element to return.
      * @return The condIndexList at the given index.
      */
@@ -75,78 +75,6 @@ public final class FetterDataOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private FetterData(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              fetterId_ = input.readUInt32();
-              break;
-            }
-            case 16: {
-
-              fetterState_ = input.readUInt32();
-              break;
-            }
-            case 24: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                condIndexList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              condIndexList_.addInt(input.readUInt32());
-              break;
-            }
-            case 26: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                condIndexList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                condIndexList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          condIndexList_.makeImmutable(); // C
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.FetterDataOuterClass.internal_static_FetterData_descriptor;
@@ -160,10 +88,10 @@ public final class FetterDataOuterClass {
               emu.grasscutter.net.proto.FetterDataOuterClass.FetterData.class, emu.grasscutter.net.proto.FetterDataOuterClass.FetterData.Builder.class);
     }
 
-    public static final int FETTER_ID_FIELD_NUMBER = 1;
-    private int fetterId_;
+    public static final int FETTERID_FIELD_NUMBER = 1;
+    private int fetterId_ = 0;
     /**
-     * <code>uint32 fetter_id = 1;</code>
+     * <code>uint32 fetterId = 1;</code>
      * @return The fetterId.
      */
     @java.lang.Override
@@ -171,10 +99,10 @@ public final class FetterDataOuterClass {
       return fetterId_;
     }
 
-    public static final int FETTER_STATE_FIELD_NUMBER = 2;
-    private int fetterState_;
+    public static final int FETTERSTATE_FIELD_NUMBER = 2;
+    private int fetterState_ = 0;
     /**
-     * <code>uint32 fetter_state = 2;</code>
+     * <code>uint32 fetterState = 2;</code>
      * @return The fetterState.
      */
     @java.lang.Override
@@ -182,10 +110,11 @@ public final class FetterDataOuterClass {
       return fetterState_;
     }
 
-    public static final int COND_INDEX_LIST_FIELD_NUMBER = 3;
+    public static final int CONDINDEXLIST_FIELD_NUMBER = 3;
+    @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList condIndexList_;
     /**
-     * <code>repeated uint32 cond_index_list = 3;</code>
+     * <code>repeated uint32 condIndexList = 3;</code>
      * @return A list containing the condIndexList.
      */
     @java.lang.Override
@@ -194,14 +123,14 @@ public final class FetterDataOuterClass {
       return condIndexList_;
     }
     /**
-     * <code>repeated uint32 cond_index_list = 3;</code>
+     * <code>repeated uint32 condIndexList = 3;</code>
      * @return The count of condIndexList.
      */
     public int getCondIndexListCount() {
       return condIndexList_.size();
     }
     /**
-     * <code>repeated uint32 cond_index_list = 3;</code>
+     * <code>repeated uint32 condIndexList = 3;</code>
      * @param index The index of the element to return.
      * @return The condIndexList at the given index.
      */
@@ -238,7 +167,7 @@ public final class FetterDataOuterClass {
       for (int i = 0; i < condIndexList_.size(); i++) {
         output.writeUInt32NoTag(condIndexList_.getInt(i));
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -269,7 +198,7 @@ public final class FetterDataOuterClass {
         }
         condIndexListMemoizedSerializedSize = dataSize;
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -290,7 +219,7 @@ public final class FetterDataOuterClass {
           != other.getFetterState()) return false;
       if (!getCondIndexListList()
           .equals(other.getCondIndexListList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -301,15 +230,15 @@ public final class FetterDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + FETTER_ID_FIELD_NUMBER;
+      hash = (37 * hash) + FETTERID_FIELD_NUMBER;
       hash = (53 * hash) + getFetterId();
-      hash = (37 * hash) + FETTER_STATE_FIELD_NUMBER;
+      hash = (37 * hash) + FETTERSTATE_FIELD_NUMBER;
       hash = (53 * hash) + getFetterState();
       if (getCondIndexListCount() > 0) {
-        hash = (37 * hash) + COND_INDEX_LIST_FIELD_NUMBER;
+        hash = (37 * hash) + CONDINDEXLIST_FIELD_NUMBER;
         hash = (53 * hash) + getCondIndexListList().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -426,28 +355,21 @@ public final class FetterDataOuterClass {
 
       // Construct using emu.grasscutter.net.proto.FetterDataOuterClass.FetterData.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         fetterId_ = 0;
-
         fetterState_ = 0;
-
         condIndexList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -474,16 +396,28 @@ public final class FetterDataOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FetterDataOuterClass.FetterData buildPartial() {
         emu.grasscutter.net.proto.FetterDataOuterClass.FetterData result = new emu.grasscutter.net.proto.FetterDataOuterClass.FetterData(this);
-        int from_bitField0_ = bitField0_;
-        result.fetterId_ = fetterId_;
-        result.fetterState_ = fetterState_;
-        if (((bitField0_ & 0x00000001) != 0)) {
-          condIndexList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        }
-        result.condIndexList_ = condIndexList_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.FetterDataOuterClass.FetterData result) {
+        if (((bitField0_ & 0x00000004) != 0)) {
+          condIndexList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000004);
+        }
+        result.condIndexList_ = condIndexList_;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.FetterDataOuterClass.FetterData result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.fetterId_ = fetterId_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.fetterState_ = fetterState_;
+        }
       }
 
       @java.lang.Override
@@ -539,14 +473,14 @@ public final class FetterDataOuterClass {
         if (!other.condIndexList_.isEmpty()) {
           if (condIndexList_.isEmpty()) {
             condIndexList_ = other.condIndexList_;
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000004);
           } else {
             ensureCondIndexListIsMutable();
             condIndexList_.addAll(other.condIndexList_);
           }
           onChanged();
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -561,24 +495,63 @@ public final class FetterDataOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.FetterDataOuterClass.FetterData parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                fetterId_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              case 16: {
+                fetterState_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 16
+              case 24: {
+                int v = input.readUInt32();
+                ensureCondIndexListIsMutable();
+                condIndexList_.addInt(v);
+                break;
+              } // case 24
+              case 26: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                ensureCondIndexListIsMutable();
+                while (input.getBytesUntilLimit() > 0) {
+                  condIndexList_.addInt(input.readUInt32());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 26
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.FetterDataOuterClass.FetterData) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
 
       private int fetterId_ ;
       /**
-       * <code>uint32 fetter_id = 1;</code>
+       * <code>uint32 fetterId = 1;</code>
        * @return The fetterId.
        */
       @java.lang.Override
@@ -586,22 +559,23 @@ public final class FetterDataOuterClass {
         return fetterId_;
       }
       /**
-       * <code>uint32 fetter_id = 1;</code>
+       * <code>uint32 fetterId = 1;</code>
        * @param value The fetterId to set.
        * @return This builder for chaining.
        */
       public Builder setFetterId(int value) {
         
         fetterId_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 fetter_id = 1;</code>
+       * <code>uint32 fetterId = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearFetterId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         fetterId_ = 0;
         onChanged();
         return this;
@@ -609,7 +583,7 @@ public final class FetterDataOuterClass {
 
       private int fetterState_ ;
       /**
-       * <code>uint32 fetter_state = 2;</code>
+       * <code>uint32 fetterState = 2;</code>
        * @return The fetterState.
        */
       @java.lang.Override
@@ -617,22 +591,23 @@ public final class FetterDataOuterClass {
         return fetterState_;
       }
       /**
-       * <code>uint32 fetter_state = 2;</code>
+       * <code>uint32 fetterState = 2;</code>
        * @param value The fetterState to set.
        * @return This builder for chaining.
        */
       public Builder setFetterState(int value) {
         
         fetterState_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 fetter_state = 2;</code>
+       * <code>uint32 fetterState = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearFetterState() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         fetterState_ = 0;
         onChanged();
         return this;
@@ -640,29 +615,29 @@ public final class FetterDataOuterClass {
 
       private com.google.protobuf.Internal.IntList condIndexList_ = emptyIntList();
       private void ensureCondIndexListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000004) != 0)) {
           condIndexList_ = mutableCopy(condIndexList_);
-          bitField0_ |= 0x00000001;
-         }
+          bitField0_ |= 0x00000004;
+        }
       }
       /**
-       * <code>repeated uint32 cond_index_list = 3;</code>
+       * <code>repeated uint32 condIndexList = 3;</code>
        * @return A list containing the condIndexList.
        */
       public java.util.List<java.lang.Integer>
           getCondIndexListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
+        return ((bitField0_ & 0x00000004) != 0) ?
                  java.util.Collections.unmodifiableList(condIndexList_) : condIndexList_;
       }
       /**
-       * <code>repeated uint32 cond_index_list = 3;</code>
+       * <code>repeated uint32 condIndexList = 3;</code>
        * @return The count of condIndexList.
        */
       public int getCondIndexListCount() {
         return condIndexList_.size();
       }
       /**
-       * <code>repeated uint32 cond_index_list = 3;</code>
+       * <code>repeated uint32 condIndexList = 3;</code>
        * @param index The index of the element to return.
        * @return The condIndexList at the given index.
        */
@@ -670,31 +645,33 @@ public final class FetterDataOuterClass {
         return condIndexList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 cond_index_list = 3;</code>
+       * <code>repeated uint32 condIndexList = 3;</code>
        * @param index The index to set the value at.
        * @param value The condIndexList to set.
        * @return This builder for chaining.
        */
       public Builder setCondIndexList(
           int index, int value) {
+        
         ensureCondIndexListIsMutable();
         condIndexList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 cond_index_list = 3;</code>
+       * <code>repeated uint32 condIndexList = 3;</code>
        * @param value The condIndexList to add.
        * @return This builder for chaining.
        */
       public Builder addCondIndexList(int value) {
+        
         ensureCondIndexListIsMutable();
         condIndexList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 cond_index_list = 3;</code>
+       * <code>repeated uint32 condIndexList = 3;</code>
        * @param values The condIndexList to add.
        * @return This builder for chaining.
        */
@@ -707,12 +684,12 @@ public final class FetterDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 cond_index_list = 3;</code>
+       * <code>repeated uint32 condIndexList = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearCondIndexList() {
         condIndexList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
+        bitField0_ = (bitField0_ & ~0x00000004);
         onChanged();
         return this;
       }
@@ -749,7 +726,18 @@ public final class FetterDataOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new FetterData(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -783,10 +771,10 @@ public final class FetterDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\020FetterData.proto\"N\n\nFetterData\022\021\n\tfett" +
-      "er_id\030\001 \001(\r\022\024\n\014fetter_state\030\002 \001(\r\022\027\n\017con" +
-      "d_index_list\030\003 \003(\rB\033\n\031emu.grasscutter.ne" +
-      "t.protob\006proto3"
+      "\n\020FetterData.proto\"J\n\nFetterData\022\020\n\010fett" +
+      "erId\030\001 \001(\r\022\023\n\013fetterState\030\002 \001(\r\022\025\n\rcondI" +
+      "ndexList\030\003 \003(\rB\033\n\031emu.grasscutter.net.pr" +
+      "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

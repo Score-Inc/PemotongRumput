@@ -19,28 +19,28 @@ public final class JigsawPictureDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 Unk3300_DFGHKDBENED = 10;</code>
+     * <code>uint32 Unk3300_DFGHKDBENED = 12;</code>
      * @return The unk3300DFGHKDBENED.
      */
     int getUnk3300DFGHKDBENED();
 
     /**
-     * <code>uint32 Unk3300_FIKPLGJIBGP = 5;</code>
+     * <code>uint32 Unk3300_FIKPLGJIBGP = 11;</code>
      * @return The unk3300FIKPLGJIBGP.
      */
     int getUnk3300FIKPLGJIBGP();
 
     /**
-     * <code>bool is_finished = 7;</code>
-     * @return The isFinished.
-     */
-    boolean getIsFinished();
-
-    /**
-     * <code>bool is_open = 14;</code>
+     * <code>bool isOpen = 4;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
+
+    /**
+     * <code>bool isFinished = 8;</code>
+     * @return The isFinished.
+     */
+    boolean getIsFinished();
   }
   /**
    * Protobuf type {@code JigsawPictureData}
@@ -69,63 +69,6 @@ public final class JigsawPictureDataOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private JigsawPictureData(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 40: {
-
-              unk3300FIKPLGJIBGP_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              isFinished_ = input.readBool();
-              break;
-            }
-            case 80: {
-
-              unk3300DFGHKDBENED_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
-              isOpen_ = input.readBool();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.JigsawPictureDataOuterClass.internal_static_JigsawPictureData_descriptor;
@@ -139,10 +82,10 @@ public final class JigsawPictureDataOuterClass {
               emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData.class, emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData.Builder.class);
     }
 
-    public static final int UNK3300_DFGHKDBENED_FIELD_NUMBER = 10;
-    private int unk3300DFGHKDBENED_;
+    public static final int UNK3300_DFGHKDBENED_FIELD_NUMBER = 12;
+    private int unk3300DFGHKDBENED_ = 0;
     /**
-     * <code>uint32 Unk3300_DFGHKDBENED = 10;</code>
+     * <code>uint32 Unk3300_DFGHKDBENED = 12;</code>
      * @return The unk3300DFGHKDBENED.
      */
     @java.lang.Override
@@ -150,10 +93,10 @@ public final class JigsawPictureDataOuterClass {
       return unk3300DFGHKDBENED_;
     }
 
-    public static final int UNK3300_FIKPLGJIBGP_FIELD_NUMBER = 5;
-    private int unk3300FIKPLGJIBGP_;
+    public static final int UNK3300_FIKPLGJIBGP_FIELD_NUMBER = 11;
+    private int unk3300FIKPLGJIBGP_ = 0;
     /**
-     * <code>uint32 Unk3300_FIKPLGJIBGP = 5;</code>
+     * <code>uint32 Unk3300_FIKPLGJIBGP = 11;</code>
      * @return The unk3300FIKPLGJIBGP.
      */
     @java.lang.Override
@@ -161,26 +104,26 @@ public final class JigsawPictureDataOuterClass {
       return unk3300FIKPLGJIBGP_;
     }
 
-    public static final int IS_FINISHED_FIELD_NUMBER = 7;
-    private boolean isFinished_;
+    public static final int ISOPEN_FIELD_NUMBER = 4;
+    private boolean isOpen_ = false;
     /**
-     * <code>bool is_finished = 7;</code>
-     * @return The isFinished.
-     */
-    @java.lang.Override
-    public boolean getIsFinished() {
-      return isFinished_;
-    }
-
-    public static final int IS_OPEN_FIELD_NUMBER = 14;
-    private boolean isOpen_;
-    /**
-     * <code>bool is_open = 14;</code>
+     * <code>bool isOpen = 4;</code>
      * @return The isOpen.
      */
     @java.lang.Override
     public boolean getIsOpen() {
       return isOpen_;
+    }
+
+    public static final int ISFINISHED_FIELD_NUMBER = 8;
+    private boolean isFinished_ = false;
+    /**
+     * <code>bool isFinished = 8;</code>
+     * @return The isFinished.
+     */
+    @java.lang.Override
+    public boolean getIsFinished() {
+      return isFinished_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -197,19 +140,19 @@ public final class JigsawPictureDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (unk3300FIKPLGJIBGP_ != 0) {
-        output.writeUInt32(5, unk3300FIKPLGJIBGP_);
+      if (isOpen_ != false) {
+        output.writeBool(4, isOpen_);
       }
       if (isFinished_ != false) {
-        output.writeBool(7, isFinished_);
+        output.writeBool(8, isFinished_);
+      }
+      if (unk3300FIKPLGJIBGP_ != 0) {
+        output.writeUInt32(11, unk3300FIKPLGJIBGP_);
       }
       if (unk3300DFGHKDBENED_ != 0) {
-        output.writeUInt32(10, unk3300DFGHKDBENED_);
+        output.writeUInt32(12, unk3300DFGHKDBENED_);
       }
-      if (isOpen_ != false) {
-        output.writeBool(14, isOpen_);
-      }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -218,23 +161,23 @@ public final class JigsawPictureDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (unk3300FIKPLGJIBGP_ != 0) {
+      if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, unk3300FIKPLGJIBGP_);
+          .computeBoolSize(4, isOpen_);
       }
       if (isFinished_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isFinished_);
+          .computeBoolSize(8, isFinished_);
+      }
+      if (unk3300FIKPLGJIBGP_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, unk3300FIKPLGJIBGP_);
       }
       if (unk3300DFGHKDBENED_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, unk3300DFGHKDBENED_);
+          .computeUInt32Size(12, unk3300DFGHKDBENED_);
       }
-      if (isOpen_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, isOpen_);
-      }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -253,11 +196,11 @@ public final class JigsawPictureDataOuterClass {
           != other.getUnk3300DFGHKDBENED()) return false;
       if (getUnk3300FIKPLGJIBGP()
           != other.getUnk3300FIKPLGJIBGP()) return false;
-      if (getIsFinished()
-          != other.getIsFinished()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (getIsFinished()
+          != other.getIsFinished()) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -272,13 +215,13 @@ public final class JigsawPictureDataOuterClass {
       hash = (53 * hash) + getUnk3300DFGHKDBENED();
       hash = (37 * hash) + UNK3300_FIKPLGJIBGP_FIELD_NUMBER;
       hash = (53 * hash) + getUnk3300FIKPLGJIBGP();
-      hash = (37 * hash) + IS_FINISHED_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsFinished());
-      hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
+      hash = (37 * hash) + ISOPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (37 * hash) + ISFINISHED_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsFinished());
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -395,30 +338,22 @@ public final class JigsawPictureDataOuterClass {
 
       // Construct using emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         unk3300DFGHKDBENED_ = 0;
-
         unk3300FIKPLGJIBGP_ = 0;
-
-        isFinished_ = false;
-
         isOpen_ = false;
-
+        isFinished_ = false;
         return this;
       }
 
@@ -445,12 +380,25 @@ public final class JigsawPictureDataOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData buildPartial() {
         emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData result = new emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData(this);
-        result.unk3300DFGHKDBENED_ = unk3300DFGHKDBENED_;
-        result.unk3300FIKPLGJIBGP_ = unk3300FIKPLGJIBGP_;
-        result.isFinished_ = isFinished_;
-        result.isOpen_ = isOpen_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.unk3300DFGHKDBENED_ = unk3300DFGHKDBENED_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.unk3300FIKPLGJIBGP_ = unk3300FIKPLGJIBGP_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.isOpen_ = isOpen_;
+        }
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.isFinished_ = isFinished_;
+        }
       }
 
       @java.lang.Override
@@ -503,13 +451,13 @@ public final class JigsawPictureDataOuterClass {
         if (other.getUnk3300FIKPLGJIBGP() != 0) {
           setUnk3300FIKPLGJIBGP(other.getUnk3300FIKPLGJIBGP());
         }
-        if (other.getIsFinished() != false) {
-          setIsFinished(other.getIsFinished());
-        }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        if (other.getIsFinished() != false) {
+          setIsFinished(other.getIsFinished());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -524,23 +472,57 @@ public final class JigsawPictureDataOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 32: {
+                isOpen_ = input.readBool();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 32
+              case 64: {
+                isFinished_ = input.readBool();
+                bitField0_ |= 0x00000008;
+                break;
+              } // case 64
+              case 88: {
+                unk3300FIKPLGJIBGP_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 88
+              case 96: {
+                unk3300DFGHKDBENED_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 96
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.JigsawPictureDataOuterClass.JigsawPictureData) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private int unk3300DFGHKDBENED_ ;
       /**
-       * <code>uint32 Unk3300_DFGHKDBENED = 10;</code>
+       * <code>uint32 Unk3300_DFGHKDBENED = 12;</code>
        * @return The unk3300DFGHKDBENED.
        */
       @java.lang.Override
@@ -548,22 +530,23 @@ public final class JigsawPictureDataOuterClass {
         return unk3300DFGHKDBENED_;
       }
       /**
-       * <code>uint32 Unk3300_DFGHKDBENED = 10;</code>
+       * <code>uint32 Unk3300_DFGHKDBENED = 12;</code>
        * @param value The unk3300DFGHKDBENED to set.
        * @return This builder for chaining.
        */
       public Builder setUnk3300DFGHKDBENED(int value) {
         
         unk3300DFGHKDBENED_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk3300_DFGHKDBENED = 10;</code>
+       * <code>uint32 Unk3300_DFGHKDBENED = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearUnk3300DFGHKDBENED() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         unk3300DFGHKDBENED_ = 0;
         onChanged();
         return this;
@@ -571,7 +554,7 @@ public final class JigsawPictureDataOuterClass {
 
       private int unk3300FIKPLGJIBGP_ ;
       /**
-       * <code>uint32 Unk3300_FIKPLGJIBGP = 5;</code>
+       * <code>uint32 Unk3300_FIKPLGJIBGP = 11;</code>
        * @return The unk3300FIKPLGJIBGP.
        */
       @java.lang.Override
@@ -579,61 +562,31 @@ public final class JigsawPictureDataOuterClass {
         return unk3300FIKPLGJIBGP_;
       }
       /**
-       * <code>uint32 Unk3300_FIKPLGJIBGP = 5;</code>
+       * <code>uint32 Unk3300_FIKPLGJIBGP = 11;</code>
        * @param value The unk3300FIKPLGJIBGP to set.
        * @return This builder for chaining.
        */
       public Builder setUnk3300FIKPLGJIBGP(int value) {
         
         unk3300FIKPLGJIBGP_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk3300_FIKPLGJIBGP = 5;</code>
+       * <code>uint32 Unk3300_FIKPLGJIBGP = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearUnk3300FIKPLGJIBGP() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         unk3300FIKPLGJIBGP_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isFinished_ ;
-      /**
-       * <code>bool is_finished = 7;</code>
-       * @return The isFinished.
-       */
-      @java.lang.Override
-      public boolean getIsFinished() {
-        return isFinished_;
-      }
-      /**
-       * <code>bool is_finished = 7;</code>
-       * @param value The isFinished to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsFinished(boolean value) {
-        
-        isFinished_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_finished = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsFinished() {
-        
-        isFinished_ = false;
         onChanged();
         return this;
       }
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 14;</code>
+       * <code>bool isOpen = 4;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -641,23 +594,56 @@ public final class JigsawPictureDataOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 14;</code>
+       * <code>bool isOpen = 4;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
       public Builder setIsOpen(boolean value) {
         
         isOpen_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_open = 14;</code>
+       * <code>bool isOpen = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
-        
+        bitField0_ = (bitField0_ & ~0x00000004);
         isOpen_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean isFinished_ ;
+      /**
+       * <code>bool isFinished = 8;</code>
+       * @return The isFinished.
+       */
+      @java.lang.Override
+      public boolean getIsFinished() {
+        return isFinished_;
+      }
+      /**
+       * <code>bool isFinished = 8;</code>
+       * @param value The isFinished to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsFinished(boolean value) {
+        
+        isFinished_ = value;
+        bitField0_ |= 0x00000008;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool isFinished = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsFinished() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        isFinished_ = false;
         onChanged();
         return this;
       }
@@ -694,7 +680,18 @@ public final class JigsawPictureDataOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new JigsawPictureData(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -728,11 +725,11 @@ public final class JigsawPictureDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\027JigsawPictureData.proto\"s\n\021JigsawPictu" +
-      "reData\022\033\n\023Unk3300_DFGHKDBENED\030\n \001(\r\022\033\n\023U" +
-      "nk3300_FIKPLGJIBGP\030\005 \001(\r\022\023\n\013is_finished\030" +
-      "\007 \001(\010\022\017\n\007is_open\030\016 \001(\010B\033\n\031emu.grasscutte" +
-      "r.net.protob\006proto3"
+      "\n\027JigsawPictureData.proto\"q\n\021JigsawPictu" +
+      "reData\022\033\n\023Unk3300_DFGHKDBENED\030\014 \001(\r\022\033\n\023U" +
+      "nk3300_FIKPLGJIBGP\030\013 \001(\r\022\016\n\006isOpen\030\004 \001(\010" +
+      "\022\022\n\nisFinished\030\010 \001(\010B\033\n\031emu.grasscutter." +
+      "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -743,7 +740,7 @@ public final class JigsawPictureDataOuterClass {
     internal_static_JigsawPictureData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_JigsawPictureData_descriptor,
-        new java.lang.String[] { "Unk3300DFGHKDBENED", "Unk3300FIKPLGJIBGP", "IsFinished", "IsOpen", });
+        new java.lang.String[] { "Unk3300DFGHKDBENED", "Unk3300FIKPLGJIBGP", "IsOpen", "IsFinished", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

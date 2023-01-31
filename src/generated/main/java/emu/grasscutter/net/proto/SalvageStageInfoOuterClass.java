@@ -19,40 +19,40 @@ public final class SalvageStageInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 stage_id = 13;</code>
+     * <code>bool isOpen = 10;</code>
+     * @return The isOpen.
+     */
+    boolean getIsOpen();
+
+    /**
+     * <code>uint32 stageId = 15;</code>
      * @return The stageId.
      */
     int getStageId();
 
     /**
-     * <code>repeated .SalvageChallengeInfo challenge_info_list = 3;</code>
+     * <code>repeated .SalvageChallengeInfo exceededItemTypeList = 6;</code>
      */
     java.util.List<emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo> 
-        getChallengeInfoListList();
+        getExceededItemTypeListList();
     /**
-     * <code>repeated .SalvageChallengeInfo challenge_info_list = 3;</code>
+     * <code>repeated .SalvageChallengeInfo exceededItemTypeList = 6;</code>
      */
-    emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo getChallengeInfoList(int index);
+    emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo getExceededItemTypeList(int index);
     /**
-     * <code>repeated .SalvageChallengeInfo challenge_info_list = 3;</code>
+     * <code>repeated .SalvageChallengeInfo exceededItemTypeList = 6;</code>
      */
-    int getChallengeInfoListCount();
+    int getExceededItemTypeListCount();
     /**
-     * <code>repeated .SalvageChallengeInfo challenge_info_list = 3;</code>
+     * <code>repeated .SalvageChallengeInfo exceededItemTypeList = 6;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfoOrBuilder> 
-        getChallengeInfoListOrBuilderList();
+        getExceededItemTypeListOrBuilderList();
     /**
-     * <code>repeated .SalvageChallengeInfo challenge_info_list = 3;</code>
+     * <code>repeated .SalvageChallengeInfo exceededItemTypeList = 6;</code>
      */
-    emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfoOrBuilder getChallengeInfoListOrBuilder(
+    emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfoOrBuilder getExceededItemTypeListOrBuilder(
         int index);
-
-    /**
-     * <code>bool is_open = 7;</code>
-     * @return The isOpen.
-     */
-    boolean getIsOpen();
   }
   /**
    * Protobuf type {@code SalvageStageInfo}
@@ -67,7 +67,7 @@ public final class SalvageStageInfoOuterClass {
       super(builder);
     }
     private SalvageStageInfo() {
-      challengeInfoList_ = java.util.Collections.emptyList();
+      exceededItemTypeList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -82,66 +82,6 @@ public final class SalvageStageInfoOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private SalvageStageInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 26: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                challengeInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              challengeInfoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 56: {
-
-              isOpen_ = input.readBool();
-              break;
-            }
-            case 104: {
-
-              stageId_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          challengeInfoList_ = java.util.Collections.unmodifiableList(challengeInfoList_);
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.SalvageStageInfoOuterClass.internal_static_SalvageStageInfo_descriptor;
@@ -155,10 +95,21 @@ public final class SalvageStageInfoOuterClass {
               emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo.class, emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo.Builder.class);
     }
 
-    public static final int STAGE_ID_FIELD_NUMBER = 13;
-    private int stageId_;
+    public static final int ISOPEN_FIELD_NUMBER = 10;
+    private boolean isOpen_ = false;
     /**
-     * <code>uint32 stage_id = 13;</code>
+     * <code>bool isOpen = 10;</code>
+     * @return The isOpen.
+     */
+    @java.lang.Override
+    public boolean getIsOpen() {
+      return isOpen_;
+    }
+
+    public static final int STAGEID_FIELD_NUMBER = 15;
+    private int stageId_ = 0;
+    /**
+     * <code>uint32 stageId = 15;</code>
      * @return The stageId.
      */
     @java.lang.Override
@@ -166,55 +117,45 @@ public final class SalvageStageInfoOuterClass {
       return stageId_;
     }
 
-    public static final int CHALLENGE_INFO_LIST_FIELD_NUMBER = 3;
-    private java.util.List<emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo> challengeInfoList_;
+    public static final int EXCEEDEDITEMTYPELIST_FIELD_NUMBER = 6;
+    @SuppressWarnings("serial")
+    private java.util.List<emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo> exceededItemTypeList_;
     /**
-     * <code>repeated .SalvageChallengeInfo challenge_info_list = 3;</code>
+     * <code>repeated .SalvageChallengeInfo exceededItemTypeList = 6;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo> getChallengeInfoListList() {
-      return challengeInfoList_;
+    public java.util.List<emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo> getExceededItemTypeListList() {
+      return exceededItemTypeList_;
     }
     /**
-     * <code>repeated .SalvageChallengeInfo challenge_info_list = 3;</code>
+     * <code>repeated .SalvageChallengeInfo exceededItemTypeList = 6;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfoOrBuilder> 
-        getChallengeInfoListOrBuilderList() {
-      return challengeInfoList_;
+        getExceededItemTypeListOrBuilderList() {
+      return exceededItemTypeList_;
     }
     /**
-     * <code>repeated .SalvageChallengeInfo challenge_info_list = 3;</code>
+     * <code>repeated .SalvageChallengeInfo exceededItemTypeList = 6;</code>
      */
     @java.lang.Override
-    public int getChallengeInfoListCount() {
-      return challengeInfoList_.size();
+    public int getExceededItemTypeListCount() {
+      return exceededItemTypeList_.size();
     }
     /**
-     * <code>repeated .SalvageChallengeInfo challenge_info_list = 3;</code>
+     * <code>repeated .SalvageChallengeInfo exceededItemTypeList = 6;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo getChallengeInfoList(int index) {
-      return challengeInfoList_.get(index);
+    public emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo getExceededItemTypeList(int index) {
+      return exceededItemTypeList_.get(index);
     }
     /**
-     * <code>repeated .SalvageChallengeInfo challenge_info_list = 3;</code>
+     * <code>repeated .SalvageChallengeInfo exceededItemTypeList = 6;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfoOrBuilder getChallengeInfoListOrBuilder(
+    public emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfoOrBuilder getExceededItemTypeListOrBuilder(
         int index) {
-      return challengeInfoList_.get(index);
-    }
-
-    public static final int IS_OPEN_FIELD_NUMBER = 7;
-    private boolean isOpen_;
-    /**
-     * <code>bool is_open = 7;</code>
-     * @return The isOpen.
-     */
-    @java.lang.Override
-    public boolean getIsOpen() {
-      return isOpen_;
+      return exceededItemTypeList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -231,16 +172,16 @@ public final class SalvageStageInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < challengeInfoList_.size(); i++) {
-        output.writeMessage(3, challengeInfoList_.get(i));
+      for (int i = 0; i < exceededItemTypeList_.size(); i++) {
+        output.writeMessage(6, exceededItemTypeList_.get(i));
       }
       if (isOpen_ != false) {
-        output.writeBool(7, isOpen_);
+        output.writeBool(10, isOpen_);
       }
       if (stageId_ != 0) {
-        output.writeUInt32(13, stageId_);
+        output.writeUInt32(15, stageId_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -249,19 +190,19 @@ public final class SalvageStageInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < challengeInfoList_.size(); i++) {
+      for (int i = 0; i < exceededItemTypeList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, challengeInfoList_.get(i));
+          .computeMessageSize(6, exceededItemTypeList_.get(i));
       }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isOpen_);
+          .computeBoolSize(10, isOpen_);
       }
       if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, stageId_);
+          .computeUInt32Size(15, stageId_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -276,13 +217,13 @@ public final class SalvageStageInfoOuterClass {
       }
       emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo other = (emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo) obj;
 
-      if (getStageId()
-          != other.getStageId()) return false;
-      if (!getChallengeInfoListList()
-          .equals(other.getChallengeInfoListList())) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
+      if (!getExceededItemTypeListList()
+          .equals(other.getExceededItemTypeListList())) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -293,16 +234,16 @@ public final class SalvageStageInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getStageId();
-      if (getChallengeInfoListCount() > 0) {
-        hash = (37 * hash) + CHALLENGE_INFO_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getChallengeInfoListList().hashCode();
-      }
-      hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
+      hash = (37 * hash) + ISOPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (37 * hash) + STAGEID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
+      if (getExceededItemTypeListCount() > 0) {
+        hash = (37 * hash) + EXCEEDEDITEMTYPELIST_FIELD_NUMBER;
+        hash = (53 * hash) + getExceededItemTypeListList().hashCode();
+      }
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -419,33 +360,27 @@ public final class SalvageStageInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getChallengeInfoListFieldBuilder();
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        stageId_ = 0;
-
-        if (challengeInfoListBuilder_ == null) {
-          challengeInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        } else {
-          challengeInfoListBuilder_.clear();
-        }
+        bitField0_ = 0;
         isOpen_ = false;
-
+        stageId_ = 0;
+        if (exceededItemTypeListBuilder_ == null) {
+          exceededItemTypeList_ = java.util.Collections.emptyList();
+        } else {
+          exceededItemTypeList_ = null;
+          exceededItemTypeListBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000004);
         return this;
       }
 
@@ -472,20 +407,32 @@ public final class SalvageStageInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo buildPartial() {
         emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo result = new emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo(this);
-        int from_bitField0_ = bitField0_;
-        result.stageId_ = stageId_;
-        if (challengeInfoListBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
-            challengeInfoList_ = java.util.Collections.unmodifiableList(challengeInfoList_);
-            bitField0_ = (bitField0_ & ~0x00000001);
-          }
-          result.challengeInfoList_ = challengeInfoList_;
-        } else {
-          result.challengeInfoList_ = challengeInfoListBuilder_.build();
-        }
-        result.isOpen_ = isOpen_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo result) {
+        if (exceededItemTypeListBuilder_ == null) {
+          if (((bitField0_ & 0x00000004) != 0)) {
+            exceededItemTypeList_ = java.util.Collections.unmodifiableList(exceededItemTypeList_);
+            bitField0_ = (bitField0_ & ~0x00000004);
+          }
+          result.exceededItemTypeList_ = exceededItemTypeList_;
+        } else {
+          result.exceededItemTypeList_ = exceededItemTypeListBuilder_.build();
+        }
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.isOpen_ = isOpen_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.stageId_ = stageId_;
+        }
       }
 
       @java.lang.Override
@@ -532,39 +479,39 @@ public final class SalvageStageInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo other) {
         if (other == emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo.getDefaultInstance()) return this;
+        if (other.getIsOpen() != false) {
+          setIsOpen(other.getIsOpen());
+        }
         if (other.getStageId() != 0) {
           setStageId(other.getStageId());
         }
-        if (challengeInfoListBuilder_ == null) {
-          if (!other.challengeInfoList_.isEmpty()) {
-            if (challengeInfoList_.isEmpty()) {
-              challengeInfoList_ = other.challengeInfoList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+        if (exceededItemTypeListBuilder_ == null) {
+          if (!other.exceededItemTypeList_.isEmpty()) {
+            if (exceededItemTypeList_.isEmpty()) {
+              exceededItemTypeList_ = other.exceededItemTypeList_;
+              bitField0_ = (bitField0_ & ~0x00000004);
             } else {
-              ensureChallengeInfoListIsMutable();
-              challengeInfoList_.addAll(other.challengeInfoList_);
+              ensureExceededItemTypeListIsMutable();
+              exceededItemTypeList_.addAll(other.exceededItemTypeList_);
             }
             onChanged();
           }
         } else {
-          if (!other.challengeInfoList_.isEmpty()) {
-            if (challengeInfoListBuilder_.isEmpty()) {
-              challengeInfoListBuilder_.dispose();
-              challengeInfoListBuilder_ = null;
-              challengeInfoList_ = other.challengeInfoList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
-              challengeInfoListBuilder_ = 
+          if (!other.exceededItemTypeList_.isEmpty()) {
+            if (exceededItemTypeListBuilder_.isEmpty()) {
+              exceededItemTypeListBuilder_.dispose();
+              exceededItemTypeListBuilder_ = null;
+              exceededItemTypeList_ = other.exceededItemTypeList_;
+              bitField0_ = (bitField0_ & ~0x00000004);
+              exceededItemTypeListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getChallengeInfoListFieldBuilder() : null;
+                   getExceededItemTypeListFieldBuilder() : null;
             } else {
-              challengeInfoListBuilder_.addAllMessages(other.challengeInfoList_);
+              exceededItemTypeListBuilder_.addAllMessages(other.exceededItemTypeList_);
             }
           }
         }
-        if (other.getIsOpen() != false) {
-          setIsOpen(other.getIsOpen());
-        }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -579,295 +526,60 @@ public final class SalvageStageInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 50: {
+                emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo m =
+                    input.readMessage(
+                        emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo.parser(),
+                        extensionRegistry);
+                if (exceededItemTypeListBuilder_ == null) {
+                  ensureExceededItemTypeListIsMutable();
+                  exceededItemTypeList_.add(m);
+                } else {
+                  exceededItemTypeListBuilder_.addMessage(m);
+                }
+                break;
+              } // case 50
+              case 80: {
+                isOpen_ = input.readBool();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 80
+              case 120: {
+                stageId_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 120
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
 
-      private int stageId_ ;
-      /**
-       * <code>uint32 stage_id = 13;</code>
-       * @return The stageId.
-       */
-      @java.lang.Override
-      public int getStageId() {
-        return stageId_;
-      }
-      /**
-       * <code>uint32 stage_id = 13;</code>
-       * @param value The stageId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStageId(int value) {
-        
-        stageId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 stage_id = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStageId() {
-        
-        stageId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private java.util.List<emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo> challengeInfoList_ =
-        java.util.Collections.emptyList();
-      private void ensureChallengeInfoListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          challengeInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo>(challengeInfoList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo, emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo.Builder, emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfoOrBuilder> challengeInfoListBuilder_;
-
-      /**
-       * <code>repeated .SalvageChallengeInfo challenge_info_list = 3;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo> getChallengeInfoListList() {
-        if (challengeInfoListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(challengeInfoList_);
-        } else {
-          return challengeInfoListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .SalvageChallengeInfo challenge_info_list = 3;</code>
-       */
-      public int getChallengeInfoListCount() {
-        if (challengeInfoListBuilder_ == null) {
-          return challengeInfoList_.size();
-        } else {
-          return challengeInfoListBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .SalvageChallengeInfo challenge_info_list = 3;</code>
-       */
-      public emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo getChallengeInfoList(int index) {
-        if (challengeInfoListBuilder_ == null) {
-          return challengeInfoList_.get(index);
-        } else {
-          return challengeInfoListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .SalvageChallengeInfo challenge_info_list = 3;</code>
-       */
-      public Builder setChallengeInfoList(
-          int index, emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo value) {
-        if (challengeInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureChallengeInfoListIsMutable();
-          challengeInfoList_.set(index, value);
-          onChanged();
-        } else {
-          challengeInfoListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .SalvageChallengeInfo challenge_info_list = 3;</code>
-       */
-      public Builder setChallengeInfoList(
-          int index, emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo.Builder builderForValue) {
-        if (challengeInfoListBuilder_ == null) {
-          ensureChallengeInfoListIsMutable();
-          challengeInfoList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          challengeInfoListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .SalvageChallengeInfo challenge_info_list = 3;</code>
-       */
-      public Builder addChallengeInfoList(emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo value) {
-        if (challengeInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureChallengeInfoListIsMutable();
-          challengeInfoList_.add(value);
-          onChanged();
-        } else {
-          challengeInfoListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .SalvageChallengeInfo challenge_info_list = 3;</code>
-       */
-      public Builder addChallengeInfoList(
-          int index, emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo value) {
-        if (challengeInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureChallengeInfoListIsMutable();
-          challengeInfoList_.add(index, value);
-          onChanged();
-        } else {
-          challengeInfoListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .SalvageChallengeInfo challenge_info_list = 3;</code>
-       */
-      public Builder addChallengeInfoList(
-          emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo.Builder builderForValue) {
-        if (challengeInfoListBuilder_ == null) {
-          ensureChallengeInfoListIsMutable();
-          challengeInfoList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          challengeInfoListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .SalvageChallengeInfo challenge_info_list = 3;</code>
-       */
-      public Builder addChallengeInfoList(
-          int index, emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo.Builder builderForValue) {
-        if (challengeInfoListBuilder_ == null) {
-          ensureChallengeInfoListIsMutable();
-          challengeInfoList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          challengeInfoListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .SalvageChallengeInfo challenge_info_list = 3;</code>
-       */
-      public Builder addAllChallengeInfoList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo> values) {
-        if (challengeInfoListBuilder_ == null) {
-          ensureChallengeInfoListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, challengeInfoList_);
-          onChanged();
-        } else {
-          challengeInfoListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .SalvageChallengeInfo challenge_info_list = 3;</code>
-       */
-      public Builder clearChallengeInfoList() {
-        if (challengeInfoListBuilder_ == null) {
-          challengeInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-          onChanged();
-        } else {
-          challengeInfoListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .SalvageChallengeInfo challenge_info_list = 3;</code>
-       */
-      public Builder removeChallengeInfoList(int index) {
-        if (challengeInfoListBuilder_ == null) {
-          ensureChallengeInfoListIsMutable();
-          challengeInfoList_.remove(index);
-          onChanged();
-        } else {
-          challengeInfoListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .SalvageChallengeInfo challenge_info_list = 3;</code>
-       */
-      public emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo.Builder getChallengeInfoListBuilder(
-          int index) {
-        return getChallengeInfoListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .SalvageChallengeInfo challenge_info_list = 3;</code>
-       */
-      public emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfoOrBuilder getChallengeInfoListOrBuilder(
-          int index) {
-        if (challengeInfoListBuilder_ == null) {
-          return challengeInfoList_.get(index);  } else {
-          return challengeInfoListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .SalvageChallengeInfo challenge_info_list = 3;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfoOrBuilder> 
-           getChallengeInfoListOrBuilderList() {
-        if (challengeInfoListBuilder_ != null) {
-          return challengeInfoListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(challengeInfoList_);
-        }
-      }
-      /**
-       * <code>repeated .SalvageChallengeInfo challenge_info_list = 3;</code>
-       */
-      public emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo.Builder addChallengeInfoListBuilder() {
-        return getChallengeInfoListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .SalvageChallengeInfo challenge_info_list = 3;</code>
-       */
-      public emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo.Builder addChallengeInfoListBuilder(
-          int index) {
-        return getChallengeInfoListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .SalvageChallengeInfo challenge_info_list = 3;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo.Builder> 
-           getChallengeInfoListBuilderList() {
-        return getChallengeInfoListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo, emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo.Builder, emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfoOrBuilder> 
-          getChallengeInfoListFieldBuilder() {
-        if (challengeInfoListBuilder_ == null) {
-          challengeInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo, emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo.Builder, emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfoOrBuilder>(
-                  challengeInfoList_,
-                  ((bitField0_ & 0x00000001) != 0),
-                  getParentForChildren(),
-                  isClean());
-          challengeInfoList_ = null;
-        }
-        return challengeInfoListBuilder_;
-      }
-
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 7;</code>
+       * <code>bool isOpen = 10;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -875,25 +587,298 @@ public final class SalvageStageInfoOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 7;</code>
+       * <code>bool isOpen = 10;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
       public Builder setIsOpen(boolean value) {
         
         isOpen_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_open = 7;</code>
+       * <code>bool isOpen = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         isOpen_ = false;
         onChanged();
         return this;
+      }
+
+      private int stageId_ ;
+      /**
+       * <code>uint32 stageId = 15;</code>
+       * @return The stageId.
+       */
+      @java.lang.Override
+      public int getStageId() {
+        return stageId_;
+      }
+      /**
+       * <code>uint32 stageId = 15;</code>
+       * @param value The stageId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStageId(int value) {
+        
+        stageId_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 stageId = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStageId() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        stageId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo> exceededItemTypeList_ =
+        java.util.Collections.emptyList();
+      private void ensureExceededItemTypeListIsMutable() {
+        if (!((bitField0_ & 0x00000004) != 0)) {
+          exceededItemTypeList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo>(exceededItemTypeList_);
+          bitField0_ |= 0x00000004;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo, emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo.Builder, emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfoOrBuilder> exceededItemTypeListBuilder_;
+
+      /**
+       * <code>repeated .SalvageChallengeInfo exceededItemTypeList = 6;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo> getExceededItemTypeListList() {
+        if (exceededItemTypeListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(exceededItemTypeList_);
+        } else {
+          return exceededItemTypeListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .SalvageChallengeInfo exceededItemTypeList = 6;</code>
+       */
+      public int getExceededItemTypeListCount() {
+        if (exceededItemTypeListBuilder_ == null) {
+          return exceededItemTypeList_.size();
+        } else {
+          return exceededItemTypeListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .SalvageChallengeInfo exceededItemTypeList = 6;</code>
+       */
+      public emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo getExceededItemTypeList(int index) {
+        if (exceededItemTypeListBuilder_ == null) {
+          return exceededItemTypeList_.get(index);
+        } else {
+          return exceededItemTypeListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .SalvageChallengeInfo exceededItemTypeList = 6;</code>
+       */
+      public Builder setExceededItemTypeList(
+          int index, emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo value) {
+        if (exceededItemTypeListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureExceededItemTypeListIsMutable();
+          exceededItemTypeList_.set(index, value);
+          onChanged();
+        } else {
+          exceededItemTypeListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .SalvageChallengeInfo exceededItemTypeList = 6;</code>
+       */
+      public Builder setExceededItemTypeList(
+          int index, emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo.Builder builderForValue) {
+        if (exceededItemTypeListBuilder_ == null) {
+          ensureExceededItemTypeListIsMutable();
+          exceededItemTypeList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          exceededItemTypeListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .SalvageChallengeInfo exceededItemTypeList = 6;</code>
+       */
+      public Builder addExceededItemTypeList(emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo value) {
+        if (exceededItemTypeListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureExceededItemTypeListIsMutable();
+          exceededItemTypeList_.add(value);
+          onChanged();
+        } else {
+          exceededItemTypeListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .SalvageChallengeInfo exceededItemTypeList = 6;</code>
+       */
+      public Builder addExceededItemTypeList(
+          int index, emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo value) {
+        if (exceededItemTypeListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureExceededItemTypeListIsMutable();
+          exceededItemTypeList_.add(index, value);
+          onChanged();
+        } else {
+          exceededItemTypeListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .SalvageChallengeInfo exceededItemTypeList = 6;</code>
+       */
+      public Builder addExceededItemTypeList(
+          emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo.Builder builderForValue) {
+        if (exceededItemTypeListBuilder_ == null) {
+          ensureExceededItemTypeListIsMutable();
+          exceededItemTypeList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          exceededItemTypeListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .SalvageChallengeInfo exceededItemTypeList = 6;</code>
+       */
+      public Builder addExceededItemTypeList(
+          int index, emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo.Builder builderForValue) {
+        if (exceededItemTypeListBuilder_ == null) {
+          ensureExceededItemTypeListIsMutable();
+          exceededItemTypeList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          exceededItemTypeListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .SalvageChallengeInfo exceededItemTypeList = 6;</code>
+       */
+      public Builder addAllExceededItemTypeList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo> values) {
+        if (exceededItemTypeListBuilder_ == null) {
+          ensureExceededItemTypeListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, exceededItemTypeList_);
+          onChanged();
+        } else {
+          exceededItemTypeListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .SalvageChallengeInfo exceededItemTypeList = 6;</code>
+       */
+      public Builder clearExceededItemTypeList() {
+        if (exceededItemTypeListBuilder_ == null) {
+          exceededItemTypeList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000004);
+          onChanged();
+        } else {
+          exceededItemTypeListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .SalvageChallengeInfo exceededItemTypeList = 6;</code>
+       */
+      public Builder removeExceededItemTypeList(int index) {
+        if (exceededItemTypeListBuilder_ == null) {
+          ensureExceededItemTypeListIsMutable();
+          exceededItemTypeList_.remove(index);
+          onChanged();
+        } else {
+          exceededItemTypeListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .SalvageChallengeInfo exceededItemTypeList = 6;</code>
+       */
+      public emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo.Builder getExceededItemTypeListBuilder(
+          int index) {
+        return getExceededItemTypeListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .SalvageChallengeInfo exceededItemTypeList = 6;</code>
+       */
+      public emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfoOrBuilder getExceededItemTypeListOrBuilder(
+          int index) {
+        if (exceededItemTypeListBuilder_ == null) {
+          return exceededItemTypeList_.get(index);  } else {
+          return exceededItemTypeListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .SalvageChallengeInfo exceededItemTypeList = 6;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfoOrBuilder> 
+           getExceededItemTypeListOrBuilderList() {
+        if (exceededItemTypeListBuilder_ != null) {
+          return exceededItemTypeListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(exceededItemTypeList_);
+        }
+      }
+      /**
+       * <code>repeated .SalvageChallengeInfo exceededItemTypeList = 6;</code>
+       */
+      public emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo.Builder addExceededItemTypeListBuilder() {
+        return getExceededItemTypeListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .SalvageChallengeInfo exceededItemTypeList = 6;</code>
+       */
+      public emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo.Builder addExceededItemTypeListBuilder(
+          int index) {
+        return getExceededItemTypeListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .SalvageChallengeInfo exceededItemTypeList = 6;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo.Builder> 
+           getExceededItemTypeListBuilderList() {
+        return getExceededItemTypeListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo, emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo.Builder, emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfoOrBuilder> 
+          getExceededItemTypeListFieldBuilder() {
+        if (exceededItemTypeListBuilder_ == null) {
+          exceededItemTypeListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo, emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfo.Builder, emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.SalvageChallengeInfoOrBuilder>(
+                  exceededItemTypeList_,
+                  ((bitField0_ & 0x00000004) != 0),
+                  getParentForChildren(),
+                  isClean());
+          exceededItemTypeList_ = null;
+        }
+        return exceededItemTypeListBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -928,7 +913,18 @@ public final class SalvageStageInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new SalvageStageInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -963,10 +959,10 @@ public final class SalvageStageInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026SalvageStageInfo.proto\032\032SalvageChallen" +
-      "geInfo.proto\"i\n\020SalvageStageInfo\022\020\n\010stag" +
-      "e_id\030\r \001(\r\0222\n\023challenge_info_list\030\003 \003(\0132" +
-      "\025.SalvageChallengeInfo\022\017\n\007is_open\030\007 \001(\010B" +
-      "\033\n\031emu.grasscutter.net.protob\006proto3"
+      "geInfo.proto\"h\n\020SalvageStageInfo\022\016\n\006isOp" +
+      "en\030\n \001(\010\022\017\n\007stageId\030\017 \001(\r\0223\n\024exceededIte" +
+      "mTypeList\030\006 \003(\0132\025.SalvageChallengeInfoB\033" +
+      "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -978,7 +974,7 @@ public final class SalvageStageInfoOuterClass {
     internal_static_SalvageStageInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SalvageStageInfo_descriptor,
-        new java.lang.String[] { "StageId", "ChallengeInfoList", "IsOpen", });
+        new java.lang.String[] { "IsOpen", "StageId", "ExceededItemTypeList", });
     emu.grasscutter.net.proto.SalvageChallengeInfoOuterClass.getDescriptor();
   }
 

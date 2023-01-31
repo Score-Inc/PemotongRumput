@@ -19,23 +19,12 @@ public final class HomeChangeEditModeReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_enter_edit_mode = 15;</code>
+     * <code>bool isEnterEditMode = 2;</code>
      * @return The isEnterEditMode.
      */
     boolean getIsEnterEditMode();
   }
   /**
-   * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 4719;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   *   IS_ALLOW_CLIENT = 1;
-   * }
-   * </pre>
-   *
    * Protobuf type {@code HomeChangeEditModeReq}
    */
   public static final class HomeChangeEditModeReq extends
@@ -62,48 +51,6 @@ public final class HomeChangeEditModeReqOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private HomeChangeEditModeReq(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 120: {
-
-              isEnterEditMode_ = input.readBool();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.HomeChangeEditModeReqOuterClass.internal_static_HomeChangeEditModeReq_descriptor;
@@ -117,10 +64,149 @@ public final class HomeChangeEditModeReqOuterClass {
               emu.grasscutter.net.proto.HomeChangeEditModeReqOuterClass.HomeChangeEditModeReq.class, emu.grasscutter.net.proto.HomeChangeEditModeReqOuterClass.HomeChangeEditModeReq.Builder.class);
     }
 
-    public static final int IS_ENTER_EDIT_MODE_FIELD_NUMBER = 15;
-    private boolean isEnterEditMode_;
     /**
-     * <code>bool is_enter_edit_mode = 15;</code>
+     * Protobuf enum {@code HomeChangeEditModeReq.OMEOHHNAGLP}
+     */
+    public enum OMEOHHNAGLP
+        implements com.google.protobuf.ProtocolMessageEnum {
+      /**
+       * <code>NONE = 0;</code>
+       */
+      NONE(0, 0),
+      /**
+       * <code>PEPPOHPHJOJ = 4702;</code>
+       */
+      PEPPOHPHJOJ(1, 4702),
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      NNBKOLMPOEA(3, 1),
+      UNRECOGNIZED(-1, -1),
+      ;
+
+      /**
+       * <code>DCDNILFDFLB = 0;</code>
+       */
+      public static final OMEOHHNAGLP DCDNILFDFLB = NONE;
+      /**
+       * <code>EAJIABGAOCI = 1;</code>
+       */
+      public static final OMEOHHNAGLP EAJIABGAOCI = NNBKOLMPOEA;
+      /**
+       * <code>NONE = 0;</code>
+       */
+      public static final int NONE_VALUE = 0;
+      /**
+       * <code>PEPPOHPHJOJ = 4702;</code>
+       */
+      public static final int PEPPOHPHJOJ_VALUE = 4702;
+      /**
+       * <code>DCDNILFDFLB = 0;</code>
+       */
+      public static final int DCDNILFDFLB_VALUE = 0;
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      public static final int NNBKOLMPOEA_VALUE = 1;
+      /**
+       * <code>EAJIABGAOCI = 1;</code>
+       */
+      public static final int EAJIABGAOCI_VALUE = 1;
+
+
+      public final int getNumber() {
+        if (index == -1) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static OMEOHHNAGLP valueOf(int value) {
+        return forNumber(value);
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
+      public static OMEOHHNAGLP forNumber(int value) {
+        switch (value) {
+          case 0: return NONE;
+          case 4702: return PEPPOHPHJOJ;
+          case 1: return NNBKOLMPOEA;
+          default: return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<OMEOHHNAGLP>
+          internalGetValueMap() {
+        return internalValueMap;
+      }
+      private static final com.google.protobuf.Internal.EnumLiteMap<
+          OMEOHHNAGLP> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<OMEOHHNAGLP>() {
+              public OMEOHHNAGLP findValueByNumber(int number) {
+                return OMEOHHNAGLP.forNumber(number);
+              }
+            };
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor
+          getValueDescriptor() {
+        if (index == -1) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
+        return getDescriptor().getValues().get(index);
+      }
+      public final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptorForType() {
+        return getDescriptor();
+      }
+      public static final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptor() {
+        return emu.grasscutter.net.proto.HomeChangeEditModeReqOuterClass.HomeChangeEditModeReq.getDescriptor().getEnumTypes().get(0);
+      }
+
+      private static final OMEOHHNAGLP[] VALUES = getStaticValuesArray();
+      private static OMEOHHNAGLP[] getStaticValuesArray() {
+        return new OMEOHHNAGLP[] {
+          NONE, PEPPOHPHJOJ, DCDNILFDFLB, NNBKOLMPOEA, EAJIABGAOCI, 
+        };
+      }
+      public static OMEOHHNAGLP valueOf(
+          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException(
+            "EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      private final int index;
+      private final int value;
+
+      private OMEOHHNAGLP(int index, int value) {
+        this.index = index;
+        this.value = value;
+      }
+
+      // @@protoc_insertion_point(enum_scope:HomeChangeEditModeReq.OMEOHHNAGLP)
+    }
+
+    public static final int ISENTEREDITMODE_FIELD_NUMBER = 2;
+    private boolean isEnterEditMode_ = false;
+    /**
+     * <code>bool isEnterEditMode = 2;</code>
      * @return The isEnterEditMode.
      */
     @java.lang.Override
@@ -143,9 +229,9 @@ public final class HomeChangeEditModeReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isEnterEditMode_ != false) {
-        output.writeBool(15, isEnterEditMode_);
+        output.writeBool(2, isEnterEditMode_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -156,9 +242,9 @@ public final class HomeChangeEditModeReqOuterClass {
       size = 0;
       if (isEnterEditMode_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isEnterEditMode_);
+          .computeBoolSize(2, isEnterEditMode_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -175,7 +261,7 @@ public final class HomeChangeEditModeReqOuterClass {
 
       if (getIsEnterEditMode()
           != other.getIsEnterEditMode()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -186,10 +272,10 @@ public final class HomeChangeEditModeReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_ENTER_EDIT_MODE_FIELD_NUMBER;
+      hash = (37 * hash) + ISENTEREDITMODE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsEnterEditMode());
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -285,17 +371,6 @@ public final class HomeChangeEditModeReqOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 4719;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     *   IS_ALLOW_CLIENT = 1;
-     * }
-     * </pre>
-     *
      * Protobuf type {@code HomeChangeEditModeReq}
      */
     public static final class Builder extends
@@ -317,24 +392,19 @@ public final class HomeChangeEditModeReqOuterClass {
 
       // Construct using emu.grasscutter.net.proto.HomeChangeEditModeReqOuterClass.HomeChangeEditModeReq.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         isEnterEditMode_ = false;
-
         return this;
       }
 
@@ -361,9 +431,16 @@ public final class HomeChangeEditModeReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeChangeEditModeReqOuterClass.HomeChangeEditModeReq buildPartial() {
         emu.grasscutter.net.proto.HomeChangeEditModeReqOuterClass.HomeChangeEditModeReq result = new emu.grasscutter.net.proto.HomeChangeEditModeReqOuterClass.HomeChangeEditModeReq(this);
-        result.isEnterEditMode_ = isEnterEditMode_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.HomeChangeEditModeReqOuterClass.HomeChangeEditModeReq result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.isEnterEditMode_ = isEnterEditMode_;
+        }
       }
 
       @java.lang.Override
@@ -413,7 +490,7 @@ public final class HomeChangeEditModeReqOuterClass {
         if (other.getIsEnterEditMode() != false) {
           setIsEnterEditMode(other.getIsEnterEditMode());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -428,23 +505,42 @@ public final class HomeChangeEditModeReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.HomeChangeEditModeReqOuterClass.HomeChangeEditModeReq parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 16: {
+                isEnterEditMode_ = input.readBool();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 16
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.HomeChangeEditModeReqOuterClass.HomeChangeEditModeReq) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private boolean isEnterEditMode_ ;
       /**
-       * <code>bool is_enter_edit_mode = 15;</code>
+       * <code>bool isEnterEditMode = 2;</code>
        * @return The isEnterEditMode.
        */
       @java.lang.Override
@@ -452,22 +548,23 @@ public final class HomeChangeEditModeReqOuterClass {
         return isEnterEditMode_;
       }
       /**
-       * <code>bool is_enter_edit_mode = 15;</code>
+       * <code>bool isEnterEditMode = 2;</code>
        * @param value The isEnterEditMode to set.
        * @return This builder for chaining.
        */
       public Builder setIsEnterEditMode(boolean value) {
         
         isEnterEditMode_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_enter_edit_mode = 15;</code>
+       * <code>bool isEnterEditMode = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsEnterEditMode() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         isEnterEditMode_ = false;
         onChanged();
         return this;
@@ -505,7 +602,18 @@ public final class HomeChangeEditModeReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new HomeChangeEditModeReq(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -539,9 +647,12 @@ public final class HomeChangeEditModeReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033HomeChangeEditModeReq.proto\"3\n\025HomeCha" +
-      "ngeEditModeReq\022\032\n\022is_enter_edit_mode\030\017 \001" +
-      "(\010B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\033HomeChangeEditModeReq.proto\"\222\001\n\025HomeCh" +
+      "angeEditModeReq\022\027\n\017isEnterEditMode\030\002 \001(\010" +
+      "\"`\n\013OMEOHHNAGLP\022\010\n\004NONE\020\000\022\020\n\013PEPPOHPHJOJ" +
+      "\020\336$\022\017\n\013DCDNILFDFLB\020\000\022\017\n\013NNBKOLMPOEA\020\001\022\017\n" +
+      "\013EAJIABGAOCI\020\001\032\002\020\001B\033\n\031emu.grasscutter.ne" +
+      "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

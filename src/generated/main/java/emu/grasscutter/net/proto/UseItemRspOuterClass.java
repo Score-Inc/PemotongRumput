@@ -19,46 +19,36 @@ public final class UseItemRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 option_idx = 9;</code>
-     * @return The optionIdx.
-     */
-    int getOptionIdx();
-
-    /**
-     * <code>uint32 item_id = 13;</code>
-     * @return The itemId.
-     */
-    int getItemId();
-
-    /**
-     * <code>int32 retcode = 1;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>uint64 guid = 14;</code>
+     * <code>uint64 guid = 12;</code>
      * @return The guid.
      */
     long getGuid();
 
     /**
-     * <code>uint64 target_guid = 10;</code>
+     * <code>int32 retcode = 7;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
+
+    /**
+     * <code>uint32 itemId = 4;</code>
+     * @return The itemId.
+     */
+    int getItemId();
+
+    /**
+     * <code>uint64 targetGuid = 11;</code>
      * @return The targetGuid.
      */
     long getTargetGuid();
+
+    /**
+     * <code>uint32 optionIdx = 3;</code>
+     * @return The optionIdx.
+     */
+    int getOptionIdx();
   }
   /**
-   * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 678;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   * }
-   * </pre>
-   *
    * Protobuf type {@code UseItemRsp}
    */
   public static final class UseItemRsp extends
@@ -85,68 +75,6 @@ public final class UseItemRspOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private UseItemRsp(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 72: {
-
-              optionIdx_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
-              targetGuid_ = input.readUInt64();
-              break;
-            }
-            case 104: {
-
-              itemId_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
-              guid_ = input.readUInt64();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.UseItemRspOuterClass.internal_static_UseItemRsp_descriptor;
@@ -160,43 +88,141 @@ public final class UseItemRspOuterClass {
               emu.grasscutter.net.proto.UseItemRspOuterClass.UseItemRsp.class, emu.grasscutter.net.proto.UseItemRspOuterClass.UseItemRsp.Builder.class);
     }
 
-    public static final int OPTION_IDX_FIELD_NUMBER = 9;
-    private int optionIdx_;
     /**
-     * <code>uint32 option_idx = 9;</code>
-     * @return The optionIdx.
+     * Protobuf enum {@code UseItemRsp.JBAEIJMIGAH}
      */
-    @java.lang.Override
-    public int getOptionIdx() {
-      return optionIdx_;
+    public enum JBAEIJMIGAH
+        implements com.google.protobuf.ProtocolMessageEnum {
+      /**
+       * <code>NONE = 0;</code>
+       */
+      NONE(0, 0),
+      /**
+       * <code>PEPPOHPHJOJ = 662;</code>
+       */
+      PEPPOHPHJOJ(1, 662),
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      NNBKOLMPOEA(3, 1),
+      UNRECOGNIZED(-1, -1),
+      ;
+
+      /**
+       * <code>DCDNILFDFLB = 0;</code>
+       */
+      public static final JBAEIJMIGAH DCDNILFDFLB = NONE;
+      /**
+       * <code>NONE = 0;</code>
+       */
+      public static final int NONE_VALUE = 0;
+      /**
+       * <code>PEPPOHPHJOJ = 662;</code>
+       */
+      public static final int PEPPOHPHJOJ_VALUE = 662;
+      /**
+       * <code>DCDNILFDFLB = 0;</code>
+       */
+      public static final int DCDNILFDFLB_VALUE = 0;
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      public static final int NNBKOLMPOEA_VALUE = 1;
+
+
+      public final int getNumber() {
+        if (index == -1) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static JBAEIJMIGAH valueOf(int value) {
+        return forNumber(value);
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
+      public static JBAEIJMIGAH forNumber(int value) {
+        switch (value) {
+          case 0: return NONE;
+          case 662: return PEPPOHPHJOJ;
+          case 1: return NNBKOLMPOEA;
+          default: return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<JBAEIJMIGAH>
+          internalGetValueMap() {
+        return internalValueMap;
+      }
+      private static final com.google.protobuf.Internal.EnumLiteMap<
+          JBAEIJMIGAH> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<JBAEIJMIGAH>() {
+              public JBAEIJMIGAH findValueByNumber(int number) {
+                return JBAEIJMIGAH.forNumber(number);
+              }
+            };
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor
+          getValueDescriptor() {
+        if (index == -1) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
+        return getDescriptor().getValues().get(index);
+      }
+      public final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptorForType() {
+        return getDescriptor();
+      }
+      public static final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptor() {
+        return emu.grasscutter.net.proto.UseItemRspOuterClass.UseItemRsp.getDescriptor().getEnumTypes().get(0);
+      }
+
+      private static final JBAEIJMIGAH[] VALUES = getStaticValuesArray();
+      private static JBAEIJMIGAH[] getStaticValuesArray() {
+        return new JBAEIJMIGAH[] {
+          NONE, PEPPOHPHJOJ, DCDNILFDFLB, NNBKOLMPOEA, 
+        };
+      }
+      public static JBAEIJMIGAH valueOf(
+          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException(
+            "EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      private final int index;
+      private final int value;
+
+      private JBAEIJMIGAH(int index, int value) {
+        this.index = index;
+        this.value = value;
+      }
+
+      // @@protoc_insertion_point(enum_scope:UseItemRsp.JBAEIJMIGAH)
     }
 
-    public static final int ITEM_ID_FIELD_NUMBER = 13;
-    private int itemId_;
+    public static final int GUID_FIELD_NUMBER = 12;
+    private long guid_ = 0L;
     /**
-     * <code>uint32 item_id = 13;</code>
-     * @return The itemId.
-     */
-    @java.lang.Override
-    public int getItemId() {
-      return itemId_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 1;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 1;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int GUID_FIELD_NUMBER = 14;
-    private long guid_;
-    /**
-     * <code>uint64 guid = 14;</code>
+     * <code>uint64 guid = 12;</code>
      * @return The guid.
      */
     @java.lang.Override
@@ -204,15 +230,48 @@ public final class UseItemRspOuterClass {
       return guid_;
     }
 
-    public static final int TARGET_GUID_FIELD_NUMBER = 10;
-    private long targetGuid_;
+    public static final int RETCODE_FIELD_NUMBER = 7;
+    private int retcode_ = 0;
     /**
-     * <code>uint64 target_guid = 10;</code>
+     * <code>int32 retcode = 7;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
+    public static final int ITEMID_FIELD_NUMBER = 4;
+    private int itemId_ = 0;
+    /**
+     * <code>uint32 itemId = 4;</code>
+     * @return The itemId.
+     */
+    @java.lang.Override
+    public int getItemId() {
+      return itemId_;
+    }
+
+    public static final int TARGETGUID_FIELD_NUMBER = 11;
+    private long targetGuid_ = 0L;
+    /**
+     * <code>uint64 targetGuid = 11;</code>
      * @return The targetGuid.
      */
     @java.lang.Override
     public long getTargetGuid() {
       return targetGuid_;
+    }
+
+    public static final int OPTIONIDX_FIELD_NUMBER = 3;
+    private int optionIdx_ = 0;
+    /**
+     * <code>uint32 optionIdx = 3;</code>
+     * @return The optionIdx.
+     */
+    @java.lang.Override
+    public int getOptionIdx() {
+      return optionIdx_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -229,22 +288,22 @@ public final class UseItemRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(1, retcode_);
-      }
       if (optionIdx_ != 0) {
-        output.writeUInt32(9, optionIdx_);
-      }
-      if (targetGuid_ != 0L) {
-        output.writeUInt64(10, targetGuid_);
+        output.writeUInt32(3, optionIdx_);
       }
       if (itemId_ != 0) {
-        output.writeUInt32(13, itemId_);
+        output.writeUInt32(4, itemId_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(7, retcode_);
+      }
+      if (targetGuid_ != 0L) {
+        output.writeUInt64(11, targetGuid_);
       }
       if (guid_ != 0L) {
-        output.writeUInt64(14, guid_);
+        output.writeUInt64(12, guid_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -253,27 +312,27 @@ public final class UseItemRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, retcode_);
-      }
       if (optionIdx_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, optionIdx_);
-      }
-      if (targetGuid_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(10, targetGuid_);
+          .computeUInt32Size(3, optionIdx_);
       }
       if (itemId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, itemId_);
+          .computeUInt32Size(4, itemId_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(7, retcode_);
+      }
+      if (targetGuid_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(11, targetGuid_);
       }
       if (guid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(14, guid_);
+          .computeUInt64Size(12, guid_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -288,17 +347,17 @@ public final class UseItemRspOuterClass {
       }
       emu.grasscutter.net.proto.UseItemRspOuterClass.UseItemRsp other = (emu.grasscutter.net.proto.UseItemRspOuterClass.UseItemRsp) obj;
 
-      if (getOptionIdx()
-          != other.getOptionIdx()) return false;
-      if (getItemId()
-          != other.getItemId()) return false;
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getGuid()
           != other.getGuid()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
+      if (getItemId()
+          != other.getItemId()) return false;
       if (getTargetGuid()
           != other.getTargetGuid()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (getOptionIdx()
+          != other.getOptionIdx()) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -309,19 +368,19 @@ public final class UseItemRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + OPTION_IDX_FIELD_NUMBER;
-      hash = (53 * hash) + getOptionIdx();
-      hash = (37 * hash) + ITEM_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getItemId();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + GUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getGuid());
-      hash = (37 * hash) + TARGET_GUID_FIELD_NUMBER;
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + ITEMID_FIELD_NUMBER;
+      hash = (53 * hash) + getItemId();
+      hash = (37 * hash) + TARGETGUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getTargetGuid());
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (37 * hash) + OPTIONIDX_FIELD_NUMBER;
+      hash = (53 * hash) + getOptionIdx();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -417,16 +476,6 @@ public final class UseItemRspOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 678;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     * }
-     * </pre>
-     *
      * Protobuf type {@code UseItemRsp}
      */
     public static final class Builder extends
@@ -448,32 +497,23 @@ public final class UseItemRspOuterClass {
 
       // Construct using emu.grasscutter.net.proto.UseItemRspOuterClass.UseItemRsp.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        optionIdx_ = 0;
-
-        itemId_ = 0;
-
-        retcode_ = 0;
-
+        bitField0_ = 0;
         guid_ = 0L;
-
+        retcode_ = 0;
+        itemId_ = 0;
         targetGuid_ = 0L;
-
+        optionIdx_ = 0;
         return this;
       }
 
@@ -500,13 +540,28 @@ public final class UseItemRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.UseItemRspOuterClass.UseItemRsp buildPartial() {
         emu.grasscutter.net.proto.UseItemRspOuterClass.UseItemRsp result = new emu.grasscutter.net.proto.UseItemRspOuterClass.UseItemRsp(this);
-        result.optionIdx_ = optionIdx_;
-        result.itemId_ = itemId_;
-        result.retcode_ = retcode_;
-        result.guid_ = guid_;
-        result.targetGuid_ = targetGuid_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.UseItemRspOuterClass.UseItemRsp result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.guid_ = guid_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.retcode_ = retcode_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.itemId_ = itemId_;
+        }
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.targetGuid_ = targetGuid_;
+        }
+        if (((from_bitField0_ & 0x00000010) != 0)) {
+          result.optionIdx_ = optionIdx_;
+        }
       }
 
       @java.lang.Override
@@ -553,22 +608,22 @@ public final class UseItemRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.UseItemRspOuterClass.UseItemRsp other) {
         if (other == emu.grasscutter.net.proto.UseItemRspOuterClass.UseItemRsp.getDefaultInstance()) return this;
-        if (other.getOptionIdx() != 0) {
-          setOptionIdx(other.getOptionIdx());
-        }
-        if (other.getItemId() != 0) {
-          setItemId(other.getItemId());
+        if (other.getGuid() != 0L) {
+          setGuid(other.getGuid());
         }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
-        if (other.getGuid() != 0L) {
-          setGuid(other.getGuid());
+        if (other.getItemId() != 0) {
+          setItemId(other.getItemId());
         }
         if (other.getTargetGuid() != 0L) {
           setTargetGuid(other.getTargetGuid());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        if (other.getOptionIdx() != 0) {
+          setOptionIdx(other.getOptionIdx());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -583,116 +638,62 @@ public final class UseItemRspOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.UseItemRspOuterClass.UseItemRsp parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 24: {
+                optionIdx_ = input.readUInt32();
+                bitField0_ |= 0x00000010;
+                break;
+              } // case 24
+              case 32: {
+                itemId_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 32
+              case 56: {
+                retcode_ = input.readInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 56
+              case 88: {
+                targetGuid_ = input.readUInt64();
+                bitField0_ |= 0x00000008;
+                break;
+              } // case 88
+              case 96: {
+                guid_ = input.readUInt64();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 96
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.UseItemRspOuterClass.UseItemRsp) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
-
-      private int optionIdx_ ;
-      /**
-       * <code>uint32 option_idx = 9;</code>
-       * @return The optionIdx.
-       */
-      @java.lang.Override
-      public int getOptionIdx() {
-        return optionIdx_;
-      }
-      /**
-       * <code>uint32 option_idx = 9;</code>
-       * @param value The optionIdx to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOptionIdx(int value) {
-        
-        optionIdx_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 option_idx = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOptionIdx() {
-        
-        optionIdx_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int itemId_ ;
-      /**
-       * <code>uint32 item_id = 13;</code>
-       * @return The itemId.
-       */
-      @java.lang.Override
-      public int getItemId() {
-        return itemId_;
-      }
-      /**
-       * <code>uint32 item_id = 13;</code>
-       * @param value The itemId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setItemId(int value) {
-        
-        itemId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 item_id = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearItemId() {
-        
-        itemId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 1;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 1;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
+      private int bitField0_;
 
       private long guid_ ;
       /**
-       * <code>uint64 guid = 14;</code>
+       * <code>uint64 guid = 12;</code>
        * @return The guid.
        */
       @java.lang.Override
@@ -700,30 +701,95 @@ public final class UseItemRspOuterClass {
         return guid_;
       }
       /**
-       * <code>uint64 guid = 14;</code>
+       * <code>uint64 guid = 12;</code>
        * @param value The guid to set.
        * @return This builder for chaining.
        */
       public Builder setGuid(long value) {
         
         guid_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint64 guid = 14;</code>
+       * <code>uint64 guid = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearGuid() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         guid_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 7;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 7;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int itemId_ ;
+      /**
+       * <code>uint32 itemId = 4;</code>
+       * @return The itemId.
+       */
+      @java.lang.Override
+      public int getItemId() {
+        return itemId_;
+      }
+      /**
+       * <code>uint32 itemId = 4;</code>
+       * @param value The itemId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setItemId(int value) {
+        
+        itemId_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 itemId = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearItemId() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        itemId_ = 0;
         onChanged();
         return this;
       }
 
       private long targetGuid_ ;
       /**
-       * <code>uint64 target_guid = 10;</code>
+       * <code>uint64 targetGuid = 11;</code>
        * @return The targetGuid.
        */
       @java.lang.Override
@@ -731,23 +797,56 @@ public final class UseItemRspOuterClass {
         return targetGuid_;
       }
       /**
-       * <code>uint64 target_guid = 10;</code>
+       * <code>uint64 targetGuid = 11;</code>
        * @param value The targetGuid to set.
        * @return This builder for chaining.
        */
       public Builder setTargetGuid(long value) {
         
         targetGuid_ = value;
+        bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
       /**
-       * <code>uint64 target_guid = 10;</code>
+       * <code>uint64 targetGuid = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetGuid() {
-        
+        bitField0_ = (bitField0_ & ~0x00000008);
         targetGuid_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private int optionIdx_ ;
+      /**
+       * <code>uint32 optionIdx = 3;</code>
+       * @return The optionIdx.
+       */
+      @java.lang.Override
+      public int getOptionIdx() {
+        return optionIdx_;
+      }
+      /**
+       * <code>uint32 optionIdx = 3;</code>
+       * @param value The optionIdx to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOptionIdx(int value) {
+        
+        optionIdx_ = value;
+        bitField0_ |= 0x00000010;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 optionIdx = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOptionIdx() {
+        bitField0_ = (bitField0_ & ~0x00000010);
+        optionIdx_ = 0;
         onChanged();
         return this;
       }
@@ -784,7 +883,18 @@ public final class UseItemRspOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new UseItemRsp(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -818,10 +928,12 @@ public final class UseItemRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\020UseItemRsp.proto\"e\n\nUseItemRsp\022\022\n\nopti" +
-      "on_idx\030\t \001(\r\022\017\n\007item_id\030\r \001(\r\022\017\n\007retcode" +
-      "\030\001 \001(\005\022\014\n\004guid\030\016 \001(\004\022\023\n\013target_guid\030\n \001(" +
-      "\004B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\020UseItemRsp.proto\"\263\001\n\nUseItemRsp\022\014\n\004gui" +
+      "d\030\014 \001(\004\022\017\n\007retcode\030\007 \001(\005\022\016\n\006itemId\030\004 \001(\r" +
+      "\022\022\n\ntargetGuid\030\013 \001(\004\022\021\n\toptionIdx\030\003 \001(\r\"" +
+      "O\n\013JBAEIJMIGAH\022\010\n\004NONE\020\000\022\020\n\013PEPPOHPHJOJ\020" +
+      "\226\005\022\017\n\013DCDNILFDFLB\020\000\022\017\n\013NNBKOLMPOEA\020\001\032\002\020\001" +
+      "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -832,7 +944,7 @@ public final class UseItemRspOuterClass {
     internal_static_UseItemRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_UseItemRsp_descriptor,
-        new java.lang.String[] { "OptionIdx", "ItemId", "Retcode", "Guid", "TargetGuid", });
+        new java.lang.String[] { "Guid", "Retcode", "ItemId", "TargetGuid", "OptionIdx", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

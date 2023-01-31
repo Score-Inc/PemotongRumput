@@ -25,7 +25,7 @@ public final class SceneAvatarInfoOuterClass {
     int getUid();
 
     /**
-     * <code>uint32 avatar_id = 2;</code>
+     * <code>uint32 avatarId = 2;</code>
      * @return The avatarId.
      */
     int getAvatarId();
@@ -37,46 +37,46 @@ public final class SceneAvatarInfoOuterClass {
     long getGuid();
 
     /**
-     * <code>uint32 peer_id = 4;</code>
+     * <code>uint32 peerId = 4;</code>
      * @return The peerId.
      */
     int getPeerId();
 
     /**
-     * <code>repeated uint32 equip_id_list = 5;</code>
+     * <code>repeated uint32 equipIdList = 5;</code>
      * @return A list containing the equipIdList.
      */
     java.util.List<java.lang.Integer> getEquipIdListList();
     /**
-     * <code>repeated uint32 equip_id_list = 5;</code>
+     * <code>repeated uint32 equipIdList = 5;</code>
      * @return The count of equipIdList.
      */
     int getEquipIdListCount();
     /**
-     * <code>repeated uint32 equip_id_list = 5;</code>
+     * <code>repeated uint32 equipIdList = 5;</code>
      * @param index The index of the element to return.
      * @return The equipIdList at the given index.
      */
     int getEquipIdList(int index);
 
     /**
-     * <code>uint32 skill_depot_id = 6;</code>
+     * <code>uint32 skillDepotId = 6;</code>
      * @return The skillDepotId.
      */
     int getSkillDepotId();
 
     /**
-     * <code>repeated uint32 talent_id_list = 7;</code>
+     * <code>repeated uint32 talentIdList = 7;</code>
      * @return A list containing the talentIdList.
      */
     java.util.List<java.lang.Integer> getTalentIdListList();
     /**
-     * <code>repeated uint32 talent_id_list = 7;</code>
+     * <code>repeated uint32 talentIdList = 7;</code>
      * @return The count of talentIdList.
      */
     int getTalentIdListCount();
     /**
-     * <code>repeated uint32 talent_id_list = 7;</code>
+     * <code>repeated uint32 talentIdList = 7;</code>
      * @param index The index of the element to return.
      * @return The talentIdList at the given index.
      */
@@ -98,58 +98,58 @@ public final class SceneAvatarInfoOuterClass {
     emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfoOrBuilder getWeaponOrBuilder();
 
     /**
-     * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+     * <code>repeated .SceneReliquaryInfo reliquaryList = 9;</code>
      */
     java.util.List<emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo> 
         getReliquaryListList();
     /**
-     * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+     * <code>repeated .SceneReliquaryInfo reliquaryList = 9;</code>
      */
     emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo getReliquaryList(int index);
     /**
-     * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+     * <code>repeated .SceneReliquaryInfo reliquaryList = 9;</code>
      */
     int getReliquaryListCount();
     /**
-     * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+     * <code>repeated .SceneReliquaryInfo reliquaryList = 9;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfoOrBuilder> 
         getReliquaryListOrBuilderList();
     /**
-     * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+     * <code>repeated .SceneReliquaryInfo reliquaryList = 9;</code>
      */
     emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfoOrBuilder getReliquaryListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 core_proud_skill_level = 11;</code>
+     * <code>uint32 coreProudSkillLevel = 11;</code>
      * @return The coreProudSkillLevel.
      */
     int getCoreProudSkillLevel();
 
     /**
-     * <code>repeated uint32 inherent_proud_skill_list = 12;</code>
+     * <code>repeated uint32 inherentProudSkillList = 12;</code>
      * @return A list containing the inherentProudSkillList.
      */
     java.util.List<java.lang.Integer> getInherentProudSkillListList();
     /**
-     * <code>repeated uint32 inherent_proud_skill_list = 12;</code>
+     * <code>repeated uint32 inherentProudSkillList = 12;</code>
      * @return The count of inherentProudSkillList.
      */
     int getInherentProudSkillListCount();
     /**
-     * <code>repeated uint32 inherent_proud_skill_list = 12;</code>
+     * <code>repeated uint32 inherentProudSkillList = 12;</code>
      * @param index The index of the element to return.
      * @return The inherentProudSkillList at the given index.
      */
     int getInherentProudSkillList(int index);
 
     /**
-     * <code>map&lt;uint32, uint32&gt; skill_level_map = 13;</code>
+     * <code>map&lt;uint32, uint32&gt; skillLevelMap = 13;</code>
      */
     int getSkillLevelMapCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; skill_level_map = 13;</code>
+     * <code>map&lt;uint32, uint32&gt; skillLevelMap = 13;</code>
      */
     boolean containsSkillLevelMap(
         int key);
@@ -160,30 +160,28 @@ public final class SceneAvatarInfoOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getSkillLevelMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; skill_level_map = 13;</code>
+     * <code>map&lt;uint32, uint32&gt; skillLevelMap = 13;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getSkillLevelMapMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; skill_level_map = 13;</code>
+     * <code>map&lt;uint32, uint32&gt; skillLevelMap = 13;</code>
      */
-
     int getSkillLevelMapOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; skill_level_map = 13;</code>
+     * <code>map&lt;uint32, uint32&gt; skillLevelMap = 13;</code>
      */
-
     int getSkillLevelMapOrThrow(
         int key);
 
     /**
-     * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 14;</code>
+     * <code>map&lt;uint32, uint32&gt; proudSkillExtraLevelMap = 14;</code>
      */
     int getProudSkillExtraLevelMapCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 14;</code>
+     * <code>map&lt;uint32, uint32&gt; proudSkillExtraLevelMap = 14;</code>
      */
     boolean containsProudSkillExtraLevelMap(
         int key);
@@ -194,115 +192,113 @@ public final class SceneAvatarInfoOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getProudSkillExtraLevelMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 14;</code>
+     * <code>map&lt;uint32, uint32&gt; proudSkillExtraLevelMap = 14;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getProudSkillExtraLevelMapMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 14;</code>
+     * <code>map&lt;uint32, uint32&gt; proudSkillExtraLevelMap = 14;</code>
      */
-
     int getProudSkillExtraLevelMapOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 14;</code>
+     * <code>map&lt;uint32, uint32&gt; proudSkillExtraLevelMap = 14;</code>
      */
-
     int getProudSkillExtraLevelMapOrThrow(
         int key);
 
     /**
-     * <code>repeated .ServerBuff server_buff_list = 15;</code>
+     * <code>repeated .ServerBuff serverBuffList = 15;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff> 
         getServerBuffListList();
     /**
-     * <code>repeated .ServerBuff server_buff_list = 15;</code>
+     * <code>repeated .ServerBuff serverBuffList = 15;</code>
      */
     emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff getServerBuffList(int index);
     /**
-     * <code>repeated .ServerBuff server_buff_list = 15;</code>
+     * <code>repeated .ServerBuff serverBuffList = 15;</code>
      */
     int getServerBuffListCount();
     /**
-     * <code>repeated .ServerBuff server_buff_list = 15;</code>
+     * <code>repeated .ServerBuff serverBuffList = 15;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder> 
         getServerBuffListOrBuilderList();
     /**
-     * <code>repeated .ServerBuff server_buff_list = 15;</code>
+     * <code>repeated .ServerBuff serverBuffList = 15;</code>
      */
     emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder getServerBuffListOrBuilder(
         int index);
 
     /**
-     * <code>repeated uint32 team_resonance_list = 16;</code>
+     * <code>repeated uint32 teamResonanceList = 16;</code>
      * @return A list containing the teamResonanceList.
      */
     java.util.List<java.lang.Integer> getTeamResonanceListList();
     /**
-     * <code>repeated uint32 team_resonance_list = 16;</code>
+     * <code>repeated uint32 teamResonanceList = 16;</code>
      * @return The count of teamResonanceList.
      */
     int getTeamResonanceListCount();
     /**
-     * <code>repeated uint32 team_resonance_list = 16;</code>
+     * <code>repeated uint32 teamResonanceList = 16;</code>
      * @param index The index of the element to return.
      * @return The teamResonanceList at the given index.
      */
     int getTeamResonanceList(int index);
 
     /**
-     * <code>uint32 wearing_flycloak_id = 17;</code>
+     * <code>uint32 wearingFlycloakId = 17;</code>
      * @return The wearingFlycloakId.
      */
     int getWearingFlycloakId();
 
     /**
-     * <code>uint32 born_time = 18;</code>
+     * <code>uint32 bornTime = 18;</code>
      * @return The bornTime.
      */
     int getBornTime();
 
     /**
-     * <code>uint32 costume_id = 19;</code>
+     * <code>uint32 costumeId = 19;</code>
      * @return The costumeId.
      */
     int getCostumeId();
 
     /**
-     * <code>.CurVehicleInfo cur_vehicle_info = 20;</code>
+     * <code>.CurVehicleInfo curVehicleInfo = 20;</code>
      * @return Whether the curVehicleInfo field is set.
      */
     boolean hasCurVehicleInfo();
     /**
-     * <code>.CurVehicleInfo cur_vehicle_info = 20;</code>
+     * <code>.CurVehicleInfo curVehicleInfo = 20;</code>
      * @return The curVehicleInfo.
      */
     emu.grasscutter.net.proto.CurVehicleInfoOuterClass.CurVehicleInfo getCurVehicleInfo();
     /**
-     * <code>.CurVehicleInfo cur_vehicle_info = 20;</code>
+     * <code>.CurVehicleInfo curVehicleInfo = 20;</code>
      */
     emu.grasscutter.net.proto.CurVehicleInfoOuterClass.CurVehicleInfoOrBuilder getCurVehicleInfoOrBuilder();
 
     /**
-     * <code>.AvatarExcelInfo excel_info = 21;</code>
+     * <code>.AvatarExcelInfo excelInfo = 21;</code>
      * @return Whether the excelInfo field is set.
      */
     boolean hasExcelInfo();
     /**
-     * <code>.AvatarExcelInfo excel_info = 21;</code>
+     * <code>.AvatarExcelInfo excelInfo = 21;</code>
      * @return The excelInfo.
      */
     emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfo getExcelInfo();
     /**
-     * <code>.AvatarExcelInfo excel_info = 21;</code>
+     * <code>.AvatarExcelInfo excelInfo = 21;</code>
      */
     emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfoOrBuilder getExcelInfoOrBuilder();
 
     /**
-     * <code>uint32 anim_hash = 22;</code>
+     * <code>uint32 animHash = 22;</code>
      * @return The animHash.
      */
     int getAnimHash();
@@ -340,279 +336,6 @@ public final class SceneAvatarInfoOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private SceneAvatarInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              uid_ = input.readUInt32();
-              break;
-            }
-            case 16: {
-
-              avatarId_ = input.readUInt32();
-              break;
-            }
-            case 24: {
-
-              guid_ = input.readUInt64();
-              break;
-            }
-            case 32: {
-
-              peerId_ = input.readUInt32();
-              break;
-            }
-            case 40: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                equipIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              equipIdList_.addInt(input.readUInt32());
-              break;
-            }
-            case 42: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                equipIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                equipIdList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 48: {
-
-              skillDepotId_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                talentIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              talentIdList_.addInt(input.readUInt32());
-              break;
-            }
-            case 58: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                talentIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                talentIdList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 66: {
-              emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo.Builder subBuilder = null;
-              if (weapon_ != null) {
-                subBuilder = weapon_.toBuilder();
-              }
-              weapon_ = input.readMessage(emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(weapon_);
-                weapon_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 74: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                reliquaryList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo>();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              reliquaryList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 88: {
-
-              coreProudSkillLevel_ = input.readUInt32();
-              break;
-            }
-            case 96: {
-              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
-                inherentProudSkillList_ = newIntList();
-                mutable_bitField0_ |= 0x00000008;
-              }
-              inherentProudSkillList_.addInt(input.readUInt32());
-              break;
-            }
-            case 98: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000008) != 0) && input.getBytesUntilLimit() > 0) {
-                inherentProudSkillList_ = newIntList();
-                mutable_bitField0_ |= 0x00000008;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                inherentProudSkillList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 106: {
-              if (!((mutable_bitField0_ & 0x00000010) != 0)) {
-                skillLevelMap_ = com.google.protobuf.MapField.newMapField(
-                    SkillLevelMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000010;
-              }
-              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              skillLevelMap__ = input.readMessage(
-                  SkillLevelMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              skillLevelMap_.getMutableMap().put(
-                  skillLevelMap__.getKey(), skillLevelMap__.getValue());
-              break;
-            }
-            case 114: {
-              if (!((mutable_bitField0_ & 0x00000020) != 0)) {
-                proudSkillExtraLevelMap_ = com.google.protobuf.MapField.newMapField(
-                    ProudSkillExtraLevelMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000020;
-              }
-              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              proudSkillExtraLevelMap__ = input.readMessage(
-                  ProudSkillExtraLevelMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              proudSkillExtraLevelMap_.getMutableMap().put(
-                  proudSkillExtraLevelMap__.getKey(), proudSkillExtraLevelMap__.getValue());
-              break;
-            }
-            case 122: {
-              if (!((mutable_bitField0_ & 0x00000040) != 0)) {
-                serverBuffList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff>();
-                mutable_bitField0_ |= 0x00000040;
-              }
-              serverBuffList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.parser(), extensionRegistry));
-              break;
-            }
-            case 128: {
-              if (!((mutable_bitField0_ & 0x00000080) != 0)) {
-                teamResonanceList_ = newIntList();
-                mutable_bitField0_ |= 0x00000080;
-              }
-              teamResonanceList_.addInt(input.readUInt32());
-              break;
-            }
-            case 130: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000080) != 0) && input.getBytesUntilLimit() > 0) {
-                teamResonanceList_ = newIntList();
-                mutable_bitField0_ |= 0x00000080;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                teamResonanceList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 136: {
-
-              wearingFlycloakId_ = input.readUInt32();
-              break;
-            }
-            case 144: {
-
-              bornTime_ = input.readUInt32();
-              break;
-            }
-            case 152: {
-
-              costumeId_ = input.readUInt32();
-              break;
-            }
-            case 162: {
-              emu.grasscutter.net.proto.CurVehicleInfoOuterClass.CurVehicleInfo.Builder subBuilder = null;
-              if (curVehicleInfo_ != null) {
-                subBuilder = curVehicleInfo_.toBuilder();
-              }
-              curVehicleInfo_ = input.readMessage(emu.grasscutter.net.proto.CurVehicleInfoOuterClass.CurVehicleInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(curVehicleInfo_);
-                curVehicleInfo_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 170: {
-              emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfo.Builder subBuilder = null;
-              if (excelInfo_ != null) {
-                subBuilder = excelInfo_.toBuilder();
-              }
-              excelInfo_ = input.readMessage(emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(excelInfo_);
-                excelInfo_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 176: {
-
-              animHash_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          equipIdList_.makeImmutable(); // C
-        }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          talentIdList_.makeImmutable(); // C
-        }
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          reliquaryList_ = java.util.Collections.unmodifiableList(reliquaryList_);
-        }
-        if (((mutable_bitField0_ & 0x00000008) != 0)) {
-          inherentProudSkillList_.makeImmutable(); // C
-        }
-        if (((mutable_bitField0_ & 0x00000040) != 0)) {
-          serverBuffList_ = java.util.Collections.unmodifiableList(serverBuffList_);
-        }
-        if (((mutable_bitField0_ & 0x00000080) != 0)) {
-          teamResonanceList_.makeImmutable(); // C
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.SceneAvatarInfoOuterClass.internal_static_SceneAvatarInfo_descriptor;
@@ -641,7 +364,7 @@ public final class SceneAvatarInfoOuterClass {
     }
 
     public static final int UID_FIELD_NUMBER = 1;
-    private int uid_;
+    private int uid_ = 0;
     /**
      * <code>uint32 uid = 1;</code>
      * @return The uid.
@@ -651,10 +374,10 @@ public final class SceneAvatarInfoOuterClass {
       return uid_;
     }
 
-    public static final int AVATAR_ID_FIELD_NUMBER = 2;
-    private int avatarId_;
+    public static final int AVATARID_FIELD_NUMBER = 2;
+    private int avatarId_ = 0;
     /**
-     * <code>uint32 avatar_id = 2;</code>
+     * <code>uint32 avatarId = 2;</code>
      * @return The avatarId.
      */
     @java.lang.Override
@@ -663,7 +386,7 @@ public final class SceneAvatarInfoOuterClass {
     }
 
     public static final int GUID_FIELD_NUMBER = 3;
-    private long guid_;
+    private long guid_ = 0L;
     /**
      * <code>uint64 guid = 3;</code>
      * @return The guid.
@@ -673,10 +396,10 @@ public final class SceneAvatarInfoOuterClass {
       return guid_;
     }
 
-    public static final int PEER_ID_FIELD_NUMBER = 4;
-    private int peerId_;
+    public static final int PEERID_FIELD_NUMBER = 4;
+    private int peerId_ = 0;
     /**
-     * <code>uint32 peer_id = 4;</code>
+     * <code>uint32 peerId = 4;</code>
      * @return The peerId.
      */
     @java.lang.Override
@@ -684,10 +407,11 @@ public final class SceneAvatarInfoOuterClass {
       return peerId_;
     }
 
-    public static final int EQUIP_ID_LIST_FIELD_NUMBER = 5;
+    public static final int EQUIPIDLIST_FIELD_NUMBER = 5;
+    @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList equipIdList_;
     /**
-     * <code>repeated uint32 equip_id_list = 5;</code>
+     * <code>repeated uint32 equipIdList = 5;</code>
      * @return A list containing the equipIdList.
      */
     @java.lang.Override
@@ -696,14 +420,14 @@ public final class SceneAvatarInfoOuterClass {
       return equipIdList_;
     }
     /**
-     * <code>repeated uint32 equip_id_list = 5;</code>
+     * <code>repeated uint32 equipIdList = 5;</code>
      * @return The count of equipIdList.
      */
     public int getEquipIdListCount() {
       return equipIdList_.size();
     }
     /**
-     * <code>repeated uint32 equip_id_list = 5;</code>
+     * <code>repeated uint32 equipIdList = 5;</code>
      * @param index The index of the element to return.
      * @return The equipIdList at the given index.
      */
@@ -712,10 +436,10 @@ public final class SceneAvatarInfoOuterClass {
     }
     private int equipIdListMemoizedSerializedSize = -1;
 
-    public static final int SKILL_DEPOT_ID_FIELD_NUMBER = 6;
-    private int skillDepotId_;
+    public static final int SKILLDEPOTID_FIELD_NUMBER = 6;
+    private int skillDepotId_ = 0;
     /**
-     * <code>uint32 skill_depot_id = 6;</code>
+     * <code>uint32 skillDepotId = 6;</code>
      * @return The skillDepotId.
      */
     @java.lang.Override
@@ -723,10 +447,11 @@ public final class SceneAvatarInfoOuterClass {
       return skillDepotId_;
     }
 
-    public static final int TALENT_ID_LIST_FIELD_NUMBER = 7;
+    public static final int TALENTIDLIST_FIELD_NUMBER = 7;
+    @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList talentIdList_;
     /**
-     * <code>repeated uint32 talent_id_list = 7;</code>
+     * <code>repeated uint32 talentIdList = 7;</code>
      * @return A list containing the talentIdList.
      */
     @java.lang.Override
@@ -735,14 +460,14 @@ public final class SceneAvatarInfoOuterClass {
       return talentIdList_;
     }
     /**
-     * <code>repeated uint32 talent_id_list = 7;</code>
+     * <code>repeated uint32 talentIdList = 7;</code>
      * @return The count of talentIdList.
      */
     public int getTalentIdListCount() {
       return talentIdList_.size();
     }
     /**
-     * <code>repeated uint32 talent_id_list = 7;</code>
+     * <code>repeated uint32 talentIdList = 7;</code>
      * @param index The index of the element to return.
      * @return The talentIdList at the given index.
      */
@@ -774,20 +499,21 @@ public final class SceneAvatarInfoOuterClass {
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfoOrBuilder getWeaponOrBuilder() {
-      return getWeapon();
+      return weapon_ == null ? emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo.getDefaultInstance() : weapon_;
     }
 
-    public static final int RELIQUARY_LIST_FIELD_NUMBER = 9;
+    public static final int RELIQUARYLIST_FIELD_NUMBER = 9;
+    @SuppressWarnings("serial")
     private java.util.List<emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo> reliquaryList_;
     /**
-     * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+     * <code>repeated .SceneReliquaryInfo reliquaryList = 9;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo> getReliquaryListList() {
       return reliquaryList_;
     }
     /**
-     * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+     * <code>repeated .SceneReliquaryInfo reliquaryList = 9;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfoOrBuilder> 
@@ -795,21 +521,21 @@ public final class SceneAvatarInfoOuterClass {
       return reliquaryList_;
     }
     /**
-     * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+     * <code>repeated .SceneReliquaryInfo reliquaryList = 9;</code>
      */
     @java.lang.Override
     public int getReliquaryListCount() {
       return reliquaryList_.size();
     }
     /**
-     * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+     * <code>repeated .SceneReliquaryInfo reliquaryList = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo getReliquaryList(int index) {
       return reliquaryList_.get(index);
     }
     /**
-     * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+     * <code>repeated .SceneReliquaryInfo reliquaryList = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfoOrBuilder getReliquaryListOrBuilder(
@@ -817,10 +543,10 @@ public final class SceneAvatarInfoOuterClass {
       return reliquaryList_.get(index);
     }
 
-    public static final int CORE_PROUD_SKILL_LEVEL_FIELD_NUMBER = 11;
-    private int coreProudSkillLevel_;
+    public static final int COREPROUDSKILLLEVEL_FIELD_NUMBER = 11;
+    private int coreProudSkillLevel_ = 0;
     /**
-     * <code>uint32 core_proud_skill_level = 11;</code>
+     * <code>uint32 coreProudSkillLevel = 11;</code>
      * @return The coreProudSkillLevel.
      */
     @java.lang.Override
@@ -828,10 +554,11 @@ public final class SceneAvatarInfoOuterClass {
       return coreProudSkillLevel_;
     }
 
-    public static final int INHERENT_PROUD_SKILL_LIST_FIELD_NUMBER = 12;
+    public static final int INHERENTPROUDSKILLLIST_FIELD_NUMBER = 12;
+    @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList inherentProudSkillList_;
     /**
-     * <code>repeated uint32 inherent_proud_skill_list = 12;</code>
+     * <code>repeated uint32 inherentProudSkillList = 12;</code>
      * @return A list containing the inherentProudSkillList.
      */
     @java.lang.Override
@@ -840,14 +567,14 @@ public final class SceneAvatarInfoOuterClass {
       return inherentProudSkillList_;
     }
     /**
-     * <code>repeated uint32 inherent_proud_skill_list = 12;</code>
+     * <code>repeated uint32 inherentProudSkillList = 12;</code>
      * @return The count of inherentProudSkillList.
      */
     public int getInherentProudSkillListCount() {
       return inherentProudSkillList_.size();
     }
     /**
-     * <code>repeated uint32 inherent_proud_skill_list = 12;</code>
+     * <code>repeated uint32 inherentProudSkillList = 12;</code>
      * @param index The index of the element to return.
      * @return The inherentProudSkillList at the given index.
      */
@@ -856,7 +583,7 @@ public final class SceneAvatarInfoOuterClass {
     }
     private int inherentProudSkillListMemoizedSerializedSize = -1;
 
-    public static final int SKILL_LEVEL_MAP_FIELD_NUMBER = 13;
+    public static final int SKILLLEVELMAP_FIELD_NUMBER = 13;
     private static final class SkillLevelMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -868,6 +595,7 @@ public final class SceneAvatarInfoOuterClass {
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0);
     }
+    @SuppressWarnings("serial")
     private com.google.protobuf.MapField<
         java.lang.Integer, java.lang.Integer> skillLevelMap_;
     private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
@@ -878,14 +606,12 @@ public final class SceneAvatarInfoOuterClass {
       }
       return skillLevelMap_;
     }
-
     public int getSkillLevelMapCount() {
       return internalGetSkillLevelMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; skill_level_map = 13;</code>
+     * <code>map&lt;uint32, uint32&gt; skillLevelMap = 13;</code>
      */
-
     @java.lang.Override
     public boolean containsSkillLevelMap(
         int key) {
@@ -901,18 +627,16 @@ public final class SceneAvatarInfoOuterClass {
       return getSkillLevelMapMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; skill_level_map = 13;</code>
+     * <code>map&lt;uint32, uint32&gt; skillLevelMap = 13;</code>
      */
     @java.lang.Override
-
     public java.util.Map<java.lang.Integer, java.lang.Integer> getSkillLevelMapMap() {
       return internalGetSkillLevelMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; skill_level_map = 13;</code>
+     * <code>map&lt;uint32, uint32&gt; skillLevelMap = 13;</code>
      */
     @java.lang.Override
-
     public int getSkillLevelMapOrDefault(
         int key,
         int defaultValue) {
@@ -922,10 +646,9 @@ public final class SceneAvatarInfoOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; skill_level_map = 13;</code>
+     * <code>map&lt;uint32, uint32&gt; skillLevelMap = 13;</code>
      */
     @java.lang.Override
-
     public int getSkillLevelMapOrThrow(
         int key) {
       
@@ -937,7 +660,7 @@ public final class SceneAvatarInfoOuterClass {
       return map.get(key);
     }
 
-    public static final int PROUD_SKILL_EXTRA_LEVEL_MAP_FIELD_NUMBER = 14;
+    public static final int PROUDSKILLEXTRALEVELMAP_FIELD_NUMBER = 14;
     private static final class ProudSkillExtraLevelMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -949,6 +672,7 @@ public final class SceneAvatarInfoOuterClass {
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0);
     }
+    @SuppressWarnings("serial")
     private com.google.protobuf.MapField<
         java.lang.Integer, java.lang.Integer> proudSkillExtraLevelMap_;
     private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
@@ -959,14 +683,12 @@ public final class SceneAvatarInfoOuterClass {
       }
       return proudSkillExtraLevelMap_;
     }
-
     public int getProudSkillExtraLevelMapCount() {
       return internalGetProudSkillExtraLevelMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 14;</code>
+     * <code>map&lt;uint32, uint32&gt; proudSkillExtraLevelMap = 14;</code>
      */
-
     @java.lang.Override
     public boolean containsProudSkillExtraLevelMap(
         int key) {
@@ -982,18 +704,16 @@ public final class SceneAvatarInfoOuterClass {
       return getProudSkillExtraLevelMapMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 14;</code>
+     * <code>map&lt;uint32, uint32&gt; proudSkillExtraLevelMap = 14;</code>
      */
     @java.lang.Override
-
     public java.util.Map<java.lang.Integer, java.lang.Integer> getProudSkillExtraLevelMapMap() {
       return internalGetProudSkillExtraLevelMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 14;</code>
+     * <code>map&lt;uint32, uint32&gt; proudSkillExtraLevelMap = 14;</code>
      */
     @java.lang.Override
-
     public int getProudSkillExtraLevelMapOrDefault(
         int key,
         int defaultValue) {
@@ -1003,10 +723,9 @@ public final class SceneAvatarInfoOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 14;</code>
+     * <code>map&lt;uint32, uint32&gt; proudSkillExtraLevelMap = 14;</code>
      */
     @java.lang.Override
-
     public int getProudSkillExtraLevelMapOrThrow(
         int key) {
       
@@ -1018,17 +737,18 @@ public final class SceneAvatarInfoOuterClass {
       return map.get(key);
     }
 
-    public static final int SERVER_BUFF_LIST_FIELD_NUMBER = 15;
+    public static final int SERVERBUFFLIST_FIELD_NUMBER = 15;
+    @SuppressWarnings("serial")
     private java.util.List<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff> serverBuffList_;
     /**
-     * <code>repeated .ServerBuff server_buff_list = 15;</code>
+     * <code>repeated .ServerBuff serverBuffList = 15;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff> getServerBuffListList() {
       return serverBuffList_;
     }
     /**
-     * <code>repeated .ServerBuff server_buff_list = 15;</code>
+     * <code>repeated .ServerBuff serverBuffList = 15;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder> 
@@ -1036,21 +756,21 @@ public final class SceneAvatarInfoOuterClass {
       return serverBuffList_;
     }
     /**
-     * <code>repeated .ServerBuff server_buff_list = 15;</code>
+     * <code>repeated .ServerBuff serverBuffList = 15;</code>
      */
     @java.lang.Override
     public int getServerBuffListCount() {
       return serverBuffList_.size();
     }
     /**
-     * <code>repeated .ServerBuff server_buff_list = 15;</code>
+     * <code>repeated .ServerBuff serverBuffList = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff getServerBuffList(int index) {
       return serverBuffList_.get(index);
     }
     /**
-     * <code>repeated .ServerBuff server_buff_list = 15;</code>
+     * <code>repeated .ServerBuff serverBuffList = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder getServerBuffListOrBuilder(
@@ -1058,10 +778,11 @@ public final class SceneAvatarInfoOuterClass {
       return serverBuffList_.get(index);
     }
 
-    public static final int TEAM_RESONANCE_LIST_FIELD_NUMBER = 16;
+    public static final int TEAMRESONANCELIST_FIELD_NUMBER = 16;
+    @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList teamResonanceList_;
     /**
-     * <code>repeated uint32 team_resonance_list = 16;</code>
+     * <code>repeated uint32 teamResonanceList = 16;</code>
      * @return A list containing the teamResonanceList.
      */
     @java.lang.Override
@@ -1070,14 +791,14 @@ public final class SceneAvatarInfoOuterClass {
       return teamResonanceList_;
     }
     /**
-     * <code>repeated uint32 team_resonance_list = 16;</code>
+     * <code>repeated uint32 teamResonanceList = 16;</code>
      * @return The count of teamResonanceList.
      */
     public int getTeamResonanceListCount() {
       return teamResonanceList_.size();
     }
     /**
-     * <code>repeated uint32 team_resonance_list = 16;</code>
+     * <code>repeated uint32 teamResonanceList = 16;</code>
      * @param index The index of the element to return.
      * @return The teamResonanceList at the given index.
      */
@@ -1086,10 +807,10 @@ public final class SceneAvatarInfoOuterClass {
     }
     private int teamResonanceListMemoizedSerializedSize = -1;
 
-    public static final int WEARING_FLYCLOAK_ID_FIELD_NUMBER = 17;
-    private int wearingFlycloakId_;
+    public static final int WEARINGFLYCLOAKID_FIELD_NUMBER = 17;
+    private int wearingFlycloakId_ = 0;
     /**
-     * <code>uint32 wearing_flycloak_id = 17;</code>
+     * <code>uint32 wearingFlycloakId = 17;</code>
      * @return The wearingFlycloakId.
      */
     @java.lang.Override
@@ -1097,10 +818,10 @@ public final class SceneAvatarInfoOuterClass {
       return wearingFlycloakId_;
     }
 
-    public static final int BORN_TIME_FIELD_NUMBER = 18;
-    private int bornTime_;
+    public static final int BORNTIME_FIELD_NUMBER = 18;
+    private int bornTime_ = 0;
     /**
-     * <code>uint32 born_time = 18;</code>
+     * <code>uint32 bornTime = 18;</code>
      * @return The bornTime.
      */
     @java.lang.Override
@@ -1108,10 +829,10 @@ public final class SceneAvatarInfoOuterClass {
       return bornTime_;
     }
 
-    public static final int COSTUME_ID_FIELD_NUMBER = 19;
-    private int costumeId_;
+    public static final int COSTUMEID_FIELD_NUMBER = 19;
+    private int costumeId_ = 0;
     /**
-     * <code>uint32 costume_id = 19;</code>
+     * <code>uint32 costumeId = 19;</code>
      * @return The costumeId.
      */
     @java.lang.Override
@@ -1119,10 +840,10 @@ public final class SceneAvatarInfoOuterClass {
       return costumeId_;
     }
 
-    public static final int CUR_VEHICLE_INFO_FIELD_NUMBER = 20;
+    public static final int CURVEHICLEINFO_FIELD_NUMBER = 20;
     private emu.grasscutter.net.proto.CurVehicleInfoOuterClass.CurVehicleInfo curVehicleInfo_;
     /**
-     * <code>.CurVehicleInfo cur_vehicle_info = 20;</code>
+     * <code>.CurVehicleInfo curVehicleInfo = 20;</code>
      * @return Whether the curVehicleInfo field is set.
      */
     @java.lang.Override
@@ -1130,7 +851,7 @@ public final class SceneAvatarInfoOuterClass {
       return curVehicleInfo_ != null;
     }
     /**
-     * <code>.CurVehicleInfo cur_vehicle_info = 20;</code>
+     * <code>.CurVehicleInfo curVehicleInfo = 20;</code>
      * @return The curVehicleInfo.
      */
     @java.lang.Override
@@ -1138,17 +859,17 @@ public final class SceneAvatarInfoOuterClass {
       return curVehicleInfo_ == null ? emu.grasscutter.net.proto.CurVehicleInfoOuterClass.CurVehicleInfo.getDefaultInstance() : curVehicleInfo_;
     }
     /**
-     * <code>.CurVehicleInfo cur_vehicle_info = 20;</code>
+     * <code>.CurVehicleInfo curVehicleInfo = 20;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.CurVehicleInfoOuterClass.CurVehicleInfoOrBuilder getCurVehicleInfoOrBuilder() {
-      return getCurVehicleInfo();
+      return curVehicleInfo_ == null ? emu.grasscutter.net.proto.CurVehicleInfoOuterClass.CurVehicleInfo.getDefaultInstance() : curVehicleInfo_;
     }
 
-    public static final int EXCEL_INFO_FIELD_NUMBER = 21;
+    public static final int EXCELINFO_FIELD_NUMBER = 21;
     private emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfo excelInfo_;
     /**
-     * <code>.AvatarExcelInfo excel_info = 21;</code>
+     * <code>.AvatarExcelInfo excelInfo = 21;</code>
      * @return Whether the excelInfo field is set.
      */
     @java.lang.Override
@@ -1156,7 +877,7 @@ public final class SceneAvatarInfoOuterClass {
       return excelInfo_ != null;
     }
     /**
-     * <code>.AvatarExcelInfo excel_info = 21;</code>
+     * <code>.AvatarExcelInfo excelInfo = 21;</code>
      * @return The excelInfo.
      */
     @java.lang.Override
@@ -1164,17 +885,17 @@ public final class SceneAvatarInfoOuterClass {
       return excelInfo_ == null ? emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfo.getDefaultInstance() : excelInfo_;
     }
     /**
-     * <code>.AvatarExcelInfo excel_info = 21;</code>
+     * <code>.AvatarExcelInfo excelInfo = 21;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfoOrBuilder getExcelInfoOrBuilder() {
-      return getExcelInfo();
+      return excelInfo_ == null ? emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfo.getDefaultInstance() : excelInfo_;
     }
 
-    public static final int ANIM_HASH_FIELD_NUMBER = 22;
-    private int animHash_;
+    public static final int ANIMHASH_FIELD_NUMBER = 22;
+    private int animHash_ = 0;
     /**
-     * <code>uint32 anim_hash = 22;</code>
+     * <code>uint32 animHash = 22;</code>
      * @return The animHash.
      */
     @java.lang.Override
@@ -1282,7 +1003,7 @@ public final class SceneAvatarInfoOuterClass {
       if (animHash_ != 0) {
         output.writeUInt32(22, animHash_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -1427,7 +1148,7 @@ public final class SceneAvatarInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(22, animHash_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -1493,7 +1214,7 @@ public final class SceneAvatarInfoOuterClass {
       }
       if (getAnimHash()
           != other.getAnimHash()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -1506,21 +1227,21 @@ public final class SceneAvatarInfoOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + UID_FIELD_NUMBER;
       hash = (53 * hash) + getUid();
-      hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
+      hash = (37 * hash) + AVATARID_FIELD_NUMBER;
       hash = (53 * hash) + getAvatarId();
       hash = (37 * hash) + GUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getGuid());
-      hash = (37 * hash) + PEER_ID_FIELD_NUMBER;
+      hash = (37 * hash) + PEERID_FIELD_NUMBER;
       hash = (53 * hash) + getPeerId();
       if (getEquipIdListCount() > 0) {
-        hash = (37 * hash) + EQUIP_ID_LIST_FIELD_NUMBER;
+        hash = (37 * hash) + EQUIPIDLIST_FIELD_NUMBER;
         hash = (53 * hash) + getEquipIdListList().hashCode();
       }
-      hash = (37 * hash) + SKILL_DEPOT_ID_FIELD_NUMBER;
+      hash = (37 * hash) + SKILLDEPOTID_FIELD_NUMBER;
       hash = (53 * hash) + getSkillDepotId();
       if (getTalentIdListCount() > 0) {
-        hash = (37 * hash) + TALENT_ID_LIST_FIELD_NUMBER;
+        hash = (37 * hash) + TALENTIDLIST_FIELD_NUMBER;
         hash = (53 * hash) + getTalentIdListList().hashCode();
       }
       if (hasWeapon()) {
@@ -1528,48 +1249,48 @@ public final class SceneAvatarInfoOuterClass {
         hash = (53 * hash) + getWeapon().hashCode();
       }
       if (getReliquaryListCount() > 0) {
-        hash = (37 * hash) + RELIQUARY_LIST_FIELD_NUMBER;
+        hash = (37 * hash) + RELIQUARYLIST_FIELD_NUMBER;
         hash = (53 * hash) + getReliquaryListList().hashCode();
       }
-      hash = (37 * hash) + CORE_PROUD_SKILL_LEVEL_FIELD_NUMBER;
+      hash = (37 * hash) + COREPROUDSKILLLEVEL_FIELD_NUMBER;
       hash = (53 * hash) + getCoreProudSkillLevel();
       if (getInherentProudSkillListCount() > 0) {
-        hash = (37 * hash) + INHERENT_PROUD_SKILL_LIST_FIELD_NUMBER;
+        hash = (37 * hash) + INHERENTPROUDSKILLLIST_FIELD_NUMBER;
         hash = (53 * hash) + getInherentProudSkillListList().hashCode();
       }
       if (!internalGetSkillLevelMap().getMap().isEmpty()) {
-        hash = (37 * hash) + SKILL_LEVEL_MAP_FIELD_NUMBER;
+        hash = (37 * hash) + SKILLLEVELMAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetSkillLevelMap().hashCode();
       }
       if (!internalGetProudSkillExtraLevelMap().getMap().isEmpty()) {
-        hash = (37 * hash) + PROUD_SKILL_EXTRA_LEVEL_MAP_FIELD_NUMBER;
+        hash = (37 * hash) + PROUDSKILLEXTRALEVELMAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetProudSkillExtraLevelMap().hashCode();
       }
       if (getServerBuffListCount() > 0) {
-        hash = (37 * hash) + SERVER_BUFF_LIST_FIELD_NUMBER;
+        hash = (37 * hash) + SERVERBUFFLIST_FIELD_NUMBER;
         hash = (53 * hash) + getServerBuffListList().hashCode();
       }
       if (getTeamResonanceListCount() > 0) {
-        hash = (37 * hash) + TEAM_RESONANCE_LIST_FIELD_NUMBER;
+        hash = (37 * hash) + TEAMRESONANCELIST_FIELD_NUMBER;
         hash = (53 * hash) + getTeamResonanceListList().hashCode();
       }
-      hash = (37 * hash) + WEARING_FLYCLOAK_ID_FIELD_NUMBER;
+      hash = (37 * hash) + WEARINGFLYCLOAKID_FIELD_NUMBER;
       hash = (53 * hash) + getWearingFlycloakId();
-      hash = (37 * hash) + BORN_TIME_FIELD_NUMBER;
+      hash = (37 * hash) + BORNTIME_FIELD_NUMBER;
       hash = (53 * hash) + getBornTime();
-      hash = (37 * hash) + COSTUME_ID_FIELD_NUMBER;
+      hash = (37 * hash) + COSTUMEID_FIELD_NUMBER;
       hash = (53 * hash) + getCostumeId();
       if (hasCurVehicleInfo()) {
-        hash = (37 * hash) + CUR_VEHICLE_INFO_FIELD_NUMBER;
+        hash = (37 * hash) + CURVEHICLEINFO_FIELD_NUMBER;
         hash = (53 * hash) + getCurVehicleInfo().hashCode();
       }
       if (hasExcelInfo()) {
-        hash = (37 * hash) + EXCEL_INFO_FIELD_NUMBER;
+        hash = (37 * hash) + EXCELINFO_FIELD_NUMBER;
         hash = (53 * hash) + getExcelInfo().hashCode();
       }
-      hash = (37 * hash) + ANIM_HASH_FIELD_NUMBER;
+      hash = (37 * hash) + ANIMHASH_FIELD_NUMBER;
       hash = (53 * hash) + getAnimHash();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -1712,84 +1433,63 @@ public final class SceneAvatarInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.SceneAvatarInfoOuterClass.SceneAvatarInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getReliquaryListFieldBuilder();
-          getServerBuffListFieldBuilder();
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         uid_ = 0;
-
         avatarId_ = 0;
-
         guid_ = 0L;
-
         peerId_ = 0;
-
         equipIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         skillDepotId_ = 0;
-
         talentIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        if (weaponBuilder_ == null) {
-          weapon_ = null;
-        } else {
-          weapon_ = null;
+        weapon_ = null;
+        if (weaponBuilder_ != null) {
+          weaponBuilder_.dispose();
           weaponBuilder_ = null;
         }
         if (reliquaryListBuilder_ == null) {
           reliquaryList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
         } else {
+          reliquaryList_ = null;
           reliquaryListBuilder_.clear();
         }
+        bitField0_ = (bitField0_ & ~0x00000100);
         coreProudSkillLevel_ = 0;
-
         inherentProudSkillList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000008);
         internalGetMutableSkillLevelMap().clear();
         internalGetMutableProudSkillExtraLevelMap().clear();
         if (serverBuffListBuilder_ == null) {
           serverBuffList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000040);
         } else {
+          serverBuffList_ = null;
           serverBuffListBuilder_.clear();
         }
+        bitField0_ = (bitField0_ & ~0x00002000);
         teamResonanceList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000080);
         wearingFlycloakId_ = 0;
-
         bornTime_ = 0;
-
         costumeId_ = 0;
-
-        if (curVehicleInfoBuilder_ == null) {
-          curVehicleInfo_ = null;
-        } else {
-          curVehicleInfo_ = null;
+        curVehicleInfo_ = null;
+        if (curVehicleInfoBuilder_ != null) {
+          curVehicleInfoBuilder_.dispose();
           curVehicleInfoBuilder_ = null;
         }
-        if (excelInfoBuilder_ == null) {
-          excelInfo_ = null;
-        } else {
-          excelInfo_ = null;
+        excelInfo_ = null;
+        if (excelInfoBuilder_ != null) {
+          excelInfoBuilder_.dispose();
           excelInfoBuilder_ = null;
         }
         animHash_ = 0;
-
         return this;
       }
 
@@ -1816,76 +1516,108 @@ public final class SceneAvatarInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneAvatarInfoOuterClass.SceneAvatarInfo buildPartial() {
         emu.grasscutter.net.proto.SceneAvatarInfoOuterClass.SceneAvatarInfo result = new emu.grasscutter.net.proto.SceneAvatarInfoOuterClass.SceneAvatarInfo(this);
-        int from_bitField0_ = bitField0_;
-        result.uid_ = uid_;
-        result.avatarId_ = avatarId_;
-        result.guid_ = guid_;
-        result.peerId_ = peerId_;
-        if (((bitField0_ & 0x00000001) != 0)) {
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.SceneAvatarInfoOuterClass.SceneAvatarInfo result) {
+        if (((bitField0_ & 0x00000010) != 0)) {
           equipIdList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000010);
         }
         result.equipIdList_ = equipIdList_;
-        result.skillDepotId_ = skillDepotId_;
-        if (((bitField0_ & 0x00000002) != 0)) {
+        if (((bitField0_ & 0x00000040) != 0)) {
           talentIdList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000040);
         }
         result.talentIdList_ = talentIdList_;
-        if (weaponBuilder_ == null) {
-          result.weapon_ = weapon_;
-        } else {
-          result.weapon_ = weaponBuilder_.build();
-        }
         if (reliquaryListBuilder_ == null) {
-          if (((bitField0_ & 0x00000004) != 0)) {
+          if (((bitField0_ & 0x00000100) != 0)) {
             reliquaryList_ = java.util.Collections.unmodifiableList(reliquaryList_);
-            bitField0_ = (bitField0_ & ~0x00000004);
+            bitField0_ = (bitField0_ & ~0x00000100);
           }
           result.reliquaryList_ = reliquaryList_;
         } else {
           result.reliquaryList_ = reliquaryListBuilder_.build();
         }
-        result.coreProudSkillLevel_ = coreProudSkillLevel_;
-        if (((bitField0_ & 0x00000008) != 0)) {
+        if (((bitField0_ & 0x00000400) != 0)) {
           inherentProudSkillList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000008);
+          bitField0_ = (bitField0_ & ~0x00000400);
         }
         result.inherentProudSkillList_ = inherentProudSkillList_;
-        result.skillLevelMap_ = internalGetSkillLevelMap();
-        result.skillLevelMap_.makeImmutable();
-        result.proudSkillExtraLevelMap_ = internalGetProudSkillExtraLevelMap();
-        result.proudSkillExtraLevelMap_.makeImmutable();
         if (serverBuffListBuilder_ == null) {
-          if (((bitField0_ & 0x00000040) != 0)) {
+          if (((bitField0_ & 0x00002000) != 0)) {
             serverBuffList_ = java.util.Collections.unmodifiableList(serverBuffList_);
-            bitField0_ = (bitField0_ & ~0x00000040);
+            bitField0_ = (bitField0_ & ~0x00002000);
           }
           result.serverBuffList_ = serverBuffList_;
         } else {
           result.serverBuffList_ = serverBuffListBuilder_.build();
         }
-        if (((bitField0_ & 0x00000080) != 0)) {
+        if (((bitField0_ & 0x00004000) != 0)) {
           teamResonanceList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000080);
+          bitField0_ = (bitField0_ & ~0x00004000);
         }
         result.teamResonanceList_ = teamResonanceList_;
-        result.wearingFlycloakId_ = wearingFlycloakId_;
-        result.bornTime_ = bornTime_;
-        result.costumeId_ = costumeId_;
-        if (curVehicleInfoBuilder_ == null) {
-          result.curVehicleInfo_ = curVehicleInfo_;
-        } else {
-          result.curVehicleInfo_ = curVehicleInfoBuilder_.build();
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.SceneAvatarInfoOuterClass.SceneAvatarInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.uid_ = uid_;
         }
-        if (excelInfoBuilder_ == null) {
-          result.excelInfo_ = excelInfo_;
-        } else {
-          result.excelInfo_ = excelInfoBuilder_.build();
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.avatarId_ = avatarId_;
         }
-        result.animHash_ = animHash_;
-        onBuilt();
-        return result;
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.guid_ = guid_;
+        }
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.peerId_ = peerId_;
+        }
+        if (((from_bitField0_ & 0x00000020) != 0)) {
+          result.skillDepotId_ = skillDepotId_;
+        }
+        if (((from_bitField0_ & 0x00000080) != 0)) {
+          result.weapon_ = weaponBuilder_ == null
+              ? weapon_
+              : weaponBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000200) != 0)) {
+          result.coreProudSkillLevel_ = coreProudSkillLevel_;
+        }
+        if (((from_bitField0_ & 0x00000800) != 0)) {
+          result.skillLevelMap_ = internalGetSkillLevelMap();
+          result.skillLevelMap_.makeImmutable();
+        }
+        if (((from_bitField0_ & 0x00001000) != 0)) {
+          result.proudSkillExtraLevelMap_ = internalGetProudSkillExtraLevelMap();
+          result.proudSkillExtraLevelMap_.makeImmutable();
+        }
+        if (((from_bitField0_ & 0x00008000) != 0)) {
+          result.wearingFlycloakId_ = wearingFlycloakId_;
+        }
+        if (((from_bitField0_ & 0x00010000) != 0)) {
+          result.bornTime_ = bornTime_;
+        }
+        if (((from_bitField0_ & 0x00020000) != 0)) {
+          result.costumeId_ = costumeId_;
+        }
+        if (((from_bitField0_ & 0x00040000) != 0)) {
+          result.curVehicleInfo_ = curVehicleInfoBuilder_ == null
+              ? curVehicleInfo_
+              : curVehicleInfoBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00080000) != 0)) {
+          result.excelInfo_ = excelInfoBuilder_ == null
+              ? excelInfo_
+              : excelInfoBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00100000) != 0)) {
+          result.animHash_ = animHash_;
+        }
       }
 
       @java.lang.Override
@@ -1947,7 +1679,7 @@ public final class SceneAvatarInfoOuterClass {
         if (!other.equipIdList_.isEmpty()) {
           if (equipIdList_.isEmpty()) {
             equipIdList_ = other.equipIdList_;
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000010);
           } else {
             ensureEquipIdListIsMutable();
             equipIdList_.addAll(other.equipIdList_);
@@ -1960,7 +1692,7 @@ public final class SceneAvatarInfoOuterClass {
         if (!other.talentIdList_.isEmpty()) {
           if (talentIdList_.isEmpty()) {
             talentIdList_ = other.talentIdList_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000040);
           } else {
             ensureTalentIdListIsMutable();
             talentIdList_.addAll(other.talentIdList_);
@@ -1974,7 +1706,7 @@ public final class SceneAvatarInfoOuterClass {
           if (!other.reliquaryList_.isEmpty()) {
             if (reliquaryList_.isEmpty()) {
               reliquaryList_ = other.reliquaryList_;
-              bitField0_ = (bitField0_ & ~0x00000004);
+              bitField0_ = (bitField0_ & ~0x00000100);
             } else {
               ensureReliquaryListIsMutable();
               reliquaryList_.addAll(other.reliquaryList_);
@@ -1987,7 +1719,7 @@ public final class SceneAvatarInfoOuterClass {
               reliquaryListBuilder_.dispose();
               reliquaryListBuilder_ = null;
               reliquaryList_ = other.reliquaryList_;
-              bitField0_ = (bitField0_ & ~0x00000004);
+              bitField0_ = (bitField0_ & ~0x00000100);
               reliquaryListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getReliquaryListFieldBuilder() : null;
@@ -2002,7 +1734,7 @@ public final class SceneAvatarInfoOuterClass {
         if (!other.inherentProudSkillList_.isEmpty()) {
           if (inherentProudSkillList_.isEmpty()) {
             inherentProudSkillList_ = other.inherentProudSkillList_;
-            bitField0_ = (bitField0_ & ~0x00000008);
+            bitField0_ = (bitField0_ & ~0x00000400);
           } else {
             ensureInherentProudSkillListIsMutable();
             inherentProudSkillList_.addAll(other.inherentProudSkillList_);
@@ -2011,13 +1743,15 @@ public final class SceneAvatarInfoOuterClass {
         }
         internalGetMutableSkillLevelMap().mergeFrom(
             other.internalGetSkillLevelMap());
+        bitField0_ |= 0x00000800;
         internalGetMutableProudSkillExtraLevelMap().mergeFrom(
             other.internalGetProudSkillExtraLevelMap());
+        bitField0_ |= 0x00001000;
         if (serverBuffListBuilder_ == null) {
           if (!other.serverBuffList_.isEmpty()) {
             if (serverBuffList_.isEmpty()) {
               serverBuffList_ = other.serverBuffList_;
-              bitField0_ = (bitField0_ & ~0x00000040);
+              bitField0_ = (bitField0_ & ~0x00002000);
             } else {
               ensureServerBuffListIsMutable();
               serverBuffList_.addAll(other.serverBuffList_);
@@ -2030,7 +1764,7 @@ public final class SceneAvatarInfoOuterClass {
               serverBuffListBuilder_.dispose();
               serverBuffListBuilder_ = null;
               serverBuffList_ = other.serverBuffList_;
-              bitField0_ = (bitField0_ & ~0x00000040);
+              bitField0_ = (bitField0_ & ~0x00002000);
               serverBuffListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getServerBuffListFieldBuilder() : null;
@@ -2042,7 +1776,7 @@ public final class SceneAvatarInfoOuterClass {
         if (!other.teamResonanceList_.isEmpty()) {
           if (teamResonanceList_.isEmpty()) {
             teamResonanceList_ = other.teamResonanceList_;
-            bitField0_ = (bitField0_ & ~0x00000080);
+            bitField0_ = (bitField0_ & ~0x00004000);
           } else {
             ensureTeamResonanceListIsMutable();
             teamResonanceList_.addAll(other.teamResonanceList_);
@@ -2067,7 +1801,7 @@ public final class SceneAvatarInfoOuterClass {
         if (other.getAnimHash() != 0) {
           setAnimHash(other.getAnimHash());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -2082,17 +1816,209 @@ public final class SceneAvatarInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.SceneAvatarInfoOuterClass.SceneAvatarInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                uid_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              case 16: {
+                avatarId_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 16
+              case 24: {
+                guid_ = input.readUInt64();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 24
+              case 32: {
+                peerId_ = input.readUInt32();
+                bitField0_ |= 0x00000008;
+                break;
+              } // case 32
+              case 40: {
+                int v = input.readUInt32();
+                ensureEquipIdListIsMutable();
+                equipIdList_.addInt(v);
+                break;
+              } // case 40
+              case 42: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                ensureEquipIdListIsMutable();
+                while (input.getBytesUntilLimit() > 0) {
+                  equipIdList_.addInt(input.readUInt32());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 42
+              case 48: {
+                skillDepotId_ = input.readUInt32();
+                bitField0_ |= 0x00000020;
+                break;
+              } // case 48
+              case 56: {
+                int v = input.readUInt32();
+                ensureTalentIdListIsMutable();
+                talentIdList_.addInt(v);
+                break;
+              } // case 56
+              case 58: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                ensureTalentIdListIsMutable();
+                while (input.getBytesUntilLimit() > 0) {
+                  talentIdList_.addInt(input.readUInt32());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 58
+              case 66: {
+                input.readMessage(
+                    getWeaponFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000080;
+                break;
+              } // case 66
+              case 74: {
+                emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo m =
+                    input.readMessage(
+                        emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.parser(),
+                        extensionRegistry);
+                if (reliquaryListBuilder_ == null) {
+                  ensureReliquaryListIsMutable();
+                  reliquaryList_.add(m);
+                } else {
+                  reliquaryListBuilder_.addMessage(m);
+                }
+                break;
+              } // case 74
+              case 88: {
+                coreProudSkillLevel_ = input.readUInt32();
+                bitField0_ |= 0x00000200;
+                break;
+              } // case 88
+              case 96: {
+                int v = input.readUInt32();
+                ensureInherentProudSkillListIsMutable();
+                inherentProudSkillList_.addInt(v);
+                break;
+              } // case 96
+              case 98: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                ensureInherentProudSkillListIsMutable();
+                while (input.getBytesUntilLimit() > 0) {
+                  inherentProudSkillList_.addInt(input.readUInt32());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 98
+              case 106: {
+                com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+                skillLevelMap__ = input.readMessage(
+                    SkillLevelMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+                internalGetMutableSkillLevelMap().getMutableMap().put(
+                    skillLevelMap__.getKey(), skillLevelMap__.getValue());
+                bitField0_ |= 0x00000800;
+                break;
+              } // case 106
+              case 114: {
+                com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+                proudSkillExtraLevelMap__ = input.readMessage(
+                    ProudSkillExtraLevelMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+                internalGetMutableProudSkillExtraLevelMap().getMutableMap().put(
+                    proudSkillExtraLevelMap__.getKey(), proudSkillExtraLevelMap__.getValue());
+                bitField0_ |= 0x00001000;
+                break;
+              } // case 114
+              case 122: {
+                emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff m =
+                    input.readMessage(
+                        emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.parser(),
+                        extensionRegistry);
+                if (serverBuffListBuilder_ == null) {
+                  ensureServerBuffListIsMutable();
+                  serverBuffList_.add(m);
+                } else {
+                  serverBuffListBuilder_.addMessage(m);
+                }
+                break;
+              } // case 122
+              case 128: {
+                int v = input.readUInt32();
+                ensureTeamResonanceListIsMutable();
+                teamResonanceList_.addInt(v);
+                break;
+              } // case 128
+              case 130: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                ensureTeamResonanceListIsMutable();
+                while (input.getBytesUntilLimit() > 0) {
+                  teamResonanceList_.addInt(input.readUInt32());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 130
+              case 136: {
+                wearingFlycloakId_ = input.readUInt32();
+                bitField0_ |= 0x00008000;
+                break;
+              } // case 136
+              case 144: {
+                bornTime_ = input.readUInt32();
+                bitField0_ |= 0x00010000;
+                break;
+              } // case 144
+              case 152: {
+                costumeId_ = input.readUInt32();
+                bitField0_ |= 0x00020000;
+                break;
+              } // case 152
+              case 162: {
+                input.readMessage(
+                    getCurVehicleInfoFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00040000;
+                break;
+              } // case 162
+              case 170: {
+                input.readMessage(
+                    getExcelInfoFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00080000;
+                break;
+              } // case 170
+              case 176: {
+                animHash_ = input.readUInt32();
+                bitField0_ |= 0x00100000;
+                break;
+              } // case 176
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.SceneAvatarInfoOuterClass.SceneAvatarInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
@@ -2114,6 +2040,7 @@ public final class SceneAvatarInfoOuterClass {
       public Builder setUid(int value) {
         
         uid_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -2122,7 +2049,7 @@ public final class SceneAvatarInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearUid() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         uid_ = 0;
         onChanged();
         return this;
@@ -2130,7 +2057,7 @@ public final class SceneAvatarInfoOuterClass {
 
       private int avatarId_ ;
       /**
-       * <code>uint32 avatar_id = 2;</code>
+       * <code>uint32 avatarId = 2;</code>
        * @return The avatarId.
        */
       @java.lang.Override
@@ -2138,22 +2065,23 @@ public final class SceneAvatarInfoOuterClass {
         return avatarId_;
       }
       /**
-       * <code>uint32 avatar_id = 2;</code>
+       * <code>uint32 avatarId = 2;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
        */
       public Builder setAvatarId(int value) {
         
         avatarId_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 avatar_id = 2;</code>
+       * <code>uint32 avatarId = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         avatarId_ = 0;
         onChanged();
         return this;
@@ -2176,6 +2104,7 @@ public final class SceneAvatarInfoOuterClass {
       public Builder setGuid(long value) {
         
         guid_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
@@ -2184,7 +2113,7 @@ public final class SceneAvatarInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearGuid() {
-        
+        bitField0_ = (bitField0_ & ~0x00000004);
         guid_ = 0L;
         onChanged();
         return this;
@@ -2192,7 +2121,7 @@ public final class SceneAvatarInfoOuterClass {
 
       private int peerId_ ;
       /**
-       * <code>uint32 peer_id = 4;</code>
+       * <code>uint32 peerId = 4;</code>
        * @return The peerId.
        */
       @java.lang.Override
@@ -2200,22 +2129,23 @@ public final class SceneAvatarInfoOuterClass {
         return peerId_;
       }
       /**
-       * <code>uint32 peer_id = 4;</code>
+       * <code>uint32 peerId = 4;</code>
        * @param value The peerId to set.
        * @return This builder for chaining.
        */
       public Builder setPeerId(int value) {
         
         peerId_ = value;
+        bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 peer_id = 4;</code>
+       * <code>uint32 peerId = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearPeerId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000008);
         peerId_ = 0;
         onChanged();
         return this;
@@ -2223,29 +2153,29 @@ public final class SceneAvatarInfoOuterClass {
 
       private com.google.protobuf.Internal.IntList equipIdList_ = emptyIntList();
       private void ensureEquipIdListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000010) != 0)) {
           equipIdList_ = mutableCopy(equipIdList_);
-          bitField0_ |= 0x00000001;
-         }
+          bitField0_ |= 0x00000010;
+        }
       }
       /**
-       * <code>repeated uint32 equip_id_list = 5;</code>
+       * <code>repeated uint32 equipIdList = 5;</code>
        * @return A list containing the equipIdList.
        */
       public java.util.List<java.lang.Integer>
           getEquipIdListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
+        return ((bitField0_ & 0x00000010) != 0) ?
                  java.util.Collections.unmodifiableList(equipIdList_) : equipIdList_;
       }
       /**
-       * <code>repeated uint32 equip_id_list = 5;</code>
+       * <code>repeated uint32 equipIdList = 5;</code>
        * @return The count of equipIdList.
        */
       public int getEquipIdListCount() {
         return equipIdList_.size();
       }
       /**
-       * <code>repeated uint32 equip_id_list = 5;</code>
+       * <code>repeated uint32 equipIdList = 5;</code>
        * @param index The index of the element to return.
        * @return The equipIdList at the given index.
        */
@@ -2253,31 +2183,33 @@ public final class SceneAvatarInfoOuterClass {
         return equipIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 equip_id_list = 5;</code>
+       * <code>repeated uint32 equipIdList = 5;</code>
        * @param index The index to set the value at.
        * @param value The equipIdList to set.
        * @return This builder for chaining.
        */
       public Builder setEquipIdList(
           int index, int value) {
+        
         ensureEquipIdListIsMutable();
         equipIdList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 equip_id_list = 5;</code>
+       * <code>repeated uint32 equipIdList = 5;</code>
        * @param value The equipIdList to add.
        * @return This builder for chaining.
        */
       public Builder addEquipIdList(int value) {
+        
         ensureEquipIdListIsMutable();
         equipIdList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 equip_id_list = 5;</code>
+       * <code>repeated uint32 equipIdList = 5;</code>
        * @param values The equipIdList to add.
        * @return This builder for chaining.
        */
@@ -2290,19 +2222,19 @@ public final class SceneAvatarInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 equip_id_list = 5;</code>
+       * <code>repeated uint32 equipIdList = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearEquipIdList() {
         equipIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
+        bitField0_ = (bitField0_ & ~0x00000010);
         onChanged();
         return this;
       }
 
       private int skillDepotId_ ;
       /**
-       * <code>uint32 skill_depot_id = 6;</code>
+       * <code>uint32 skillDepotId = 6;</code>
        * @return The skillDepotId.
        */
       @java.lang.Override
@@ -2310,22 +2242,23 @@ public final class SceneAvatarInfoOuterClass {
         return skillDepotId_;
       }
       /**
-       * <code>uint32 skill_depot_id = 6;</code>
+       * <code>uint32 skillDepotId = 6;</code>
        * @param value The skillDepotId to set.
        * @return This builder for chaining.
        */
       public Builder setSkillDepotId(int value) {
         
         skillDepotId_ = value;
+        bitField0_ |= 0x00000020;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 skill_depot_id = 6;</code>
+       * <code>uint32 skillDepotId = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearSkillDepotId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000020);
         skillDepotId_ = 0;
         onChanged();
         return this;
@@ -2333,29 +2266,29 @@ public final class SceneAvatarInfoOuterClass {
 
       private com.google.protobuf.Internal.IntList talentIdList_ = emptyIntList();
       private void ensureTalentIdListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
+        if (!((bitField0_ & 0x00000040) != 0)) {
           talentIdList_ = mutableCopy(talentIdList_);
-          bitField0_ |= 0x00000002;
-         }
+          bitField0_ |= 0x00000040;
+        }
       }
       /**
-       * <code>repeated uint32 talent_id_list = 7;</code>
+       * <code>repeated uint32 talentIdList = 7;</code>
        * @return A list containing the talentIdList.
        */
       public java.util.List<java.lang.Integer>
           getTalentIdListList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
+        return ((bitField0_ & 0x00000040) != 0) ?
                  java.util.Collections.unmodifiableList(talentIdList_) : talentIdList_;
       }
       /**
-       * <code>repeated uint32 talent_id_list = 7;</code>
+       * <code>repeated uint32 talentIdList = 7;</code>
        * @return The count of talentIdList.
        */
       public int getTalentIdListCount() {
         return talentIdList_.size();
       }
       /**
-       * <code>repeated uint32 talent_id_list = 7;</code>
+       * <code>repeated uint32 talentIdList = 7;</code>
        * @param index The index of the element to return.
        * @return The talentIdList at the given index.
        */
@@ -2363,31 +2296,33 @@ public final class SceneAvatarInfoOuterClass {
         return talentIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 talent_id_list = 7;</code>
+       * <code>repeated uint32 talentIdList = 7;</code>
        * @param index The index to set the value at.
        * @param value The talentIdList to set.
        * @return This builder for chaining.
        */
       public Builder setTalentIdList(
           int index, int value) {
+        
         ensureTalentIdListIsMutable();
         talentIdList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 talent_id_list = 7;</code>
+       * <code>repeated uint32 talentIdList = 7;</code>
        * @param value The talentIdList to add.
        * @return This builder for chaining.
        */
       public Builder addTalentIdList(int value) {
+        
         ensureTalentIdListIsMutable();
         talentIdList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 talent_id_list = 7;</code>
+       * <code>repeated uint32 talentIdList = 7;</code>
        * @param values The talentIdList to add.
        * @return This builder for chaining.
        */
@@ -2400,12 +2335,12 @@ public final class SceneAvatarInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 talent_id_list = 7;</code>
+       * <code>repeated uint32 talentIdList = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearTalentIdList() {
         talentIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000040);
         onChanged();
         return this;
       }
@@ -2418,7 +2353,7 @@ public final class SceneAvatarInfoOuterClass {
        * @return Whether the weapon field is set.
        */
       public boolean hasWeapon() {
-        return weaponBuilder_ != null || weapon_ != null;
+        return ((bitField0_ & 0x00000080) != 0);
       }
       /**
        * <code>.SceneWeaponInfo weapon = 8;</code>
@@ -2440,11 +2375,11 @@ public final class SceneAvatarInfoOuterClass {
             throw new NullPointerException();
           }
           weapon_ = value;
-          onChanged();
         } else {
           weaponBuilder_.setMessage(value);
         }
-
+        bitField0_ |= 0x00000080;
+        onChanged();
         return this;
       }
       /**
@@ -2454,11 +2389,11 @@ public final class SceneAvatarInfoOuterClass {
           emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo.Builder builderForValue) {
         if (weaponBuilder_ == null) {
           weapon_ = builderForValue.build();
-          onChanged();
         } else {
           weaponBuilder_.setMessage(builderForValue.build());
         }
-
+        bitField0_ |= 0x00000080;
+        onChanged();
         return this;
       }
       /**
@@ -2466,38 +2401,38 @@ public final class SceneAvatarInfoOuterClass {
        */
       public Builder mergeWeapon(emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo value) {
         if (weaponBuilder_ == null) {
-          if (weapon_ != null) {
-            weapon_ =
-              emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo.newBuilder(weapon_).mergeFrom(value).buildPartial();
+          if (((bitField0_ & 0x00000080) != 0) &&
+            weapon_ != null &&
+            weapon_ != emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo.getDefaultInstance()) {
+            getWeaponBuilder().mergeFrom(value);
           } else {
             weapon_ = value;
           }
-          onChanged();
         } else {
           weaponBuilder_.mergeFrom(value);
         }
-
+        bitField0_ |= 0x00000080;
+        onChanged();
         return this;
       }
       /**
        * <code>.SceneWeaponInfo weapon = 8;</code>
        */
       public Builder clearWeapon() {
-        if (weaponBuilder_ == null) {
-          weapon_ = null;
-          onChanged();
-        } else {
-          weapon_ = null;
+        bitField0_ = (bitField0_ & ~0x00000080);
+        weapon_ = null;
+        if (weaponBuilder_ != null) {
+          weaponBuilder_.dispose();
           weaponBuilder_ = null;
         }
-
+        onChanged();
         return this;
       }
       /**
        * <code>.SceneWeaponInfo weapon = 8;</code>
        */
       public emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo.Builder getWeaponBuilder() {
-        
+        bitField0_ |= 0x00000080;
         onChanged();
         return getWeaponFieldBuilder().getBuilder();
       }
@@ -2532,9 +2467,9 @@ public final class SceneAvatarInfoOuterClass {
       private java.util.List<emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo> reliquaryList_ =
         java.util.Collections.emptyList();
       private void ensureReliquaryListIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
+        if (!((bitField0_ & 0x00000100) != 0)) {
           reliquaryList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo>(reliquaryList_);
-          bitField0_ |= 0x00000004;
+          bitField0_ |= 0x00000100;
          }
       }
 
@@ -2542,7 +2477,7 @@ public final class SceneAvatarInfoOuterClass {
           emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo, emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.Builder, emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfoOrBuilder> reliquaryListBuilder_;
 
       /**
-       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+       * <code>repeated .SceneReliquaryInfo reliquaryList = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo> getReliquaryListList() {
         if (reliquaryListBuilder_ == null) {
@@ -2552,7 +2487,7 @@ public final class SceneAvatarInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+       * <code>repeated .SceneReliquaryInfo reliquaryList = 9;</code>
        */
       public int getReliquaryListCount() {
         if (reliquaryListBuilder_ == null) {
@@ -2562,7 +2497,7 @@ public final class SceneAvatarInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+       * <code>repeated .SceneReliquaryInfo reliquaryList = 9;</code>
        */
       public emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo getReliquaryList(int index) {
         if (reliquaryListBuilder_ == null) {
@@ -2572,7 +2507,7 @@ public final class SceneAvatarInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+       * <code>repeated .SceneReliquaryInfo reliquaryList = 9;</code>
        */
       public Builder setReliquaryList(
           int index, emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo value) {
@@ -2589,7 +2524,7 @@ public final class SceneAvatarInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+       * <code>repeated .SceneReliquaryInfo reliquaryList = 9;</code>
        */
       public Builder setReliquaryList(
           int index, emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.Builder builderForValue) {
@@ -2603,7 +2538,7 @@ public final class SceneAvatarInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+       * <code>repeated .SceneReliquaryInfo reliquaryList = 9;</code>
        */
       public Builder addReliquaryList(emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo value) {
         if (reliquaryListBuilder_ == null) {
@@ -2619,7 +2554,7 @@ public final class SceneAvatarInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+       * <code>repeated .SceneReliquaryInfo reliquaryList = 9;</code>
        */
       public Builder addReliquaryList(
           int index, emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo value) {
@@ -2636,7 +2571,7 @@ public final class SceneAvatarInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+       * <code>repeated .SceneReliquaryInfo reliquaryList = 9;</code>
        */
       public Builder addReliquaryList(
           emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.Builder builderForValue) {
@@ -2650,7 +2585,7 @@ public final class SceneAvatarInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+       * <code>repeated .SceneReliquaryInfo reliquaryList = 9;</code>
        */
       public Builder addReliquaryList(
           int index, emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.Builder builderForValue) {
@@ -2664,7 +2599,7 @@ public final class SceneAvatarInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+       * <code>repeated .SceneReliquaryInfo reliquaryList = 9;</code>
        */
       public Builder addAllReliquaryList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo> values) {
@@ -2679,12 +2614,12 @@ public final class SceneAvatarInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+       * <code>repeated .SceneReliquaryInfo reliquaryList = 9;</code>
        */
       public Builder clearReliquaryList() {
         if (reliquaryListBuilder_ == null) {
           reliquaryList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000100);
           onChanged();
         } else {
           reliquaryListBuilder_.clear();
@@ -2692,7 +2627,7 @@ public final class SceneAvatarInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+       * <code>repeated .SceneReliquaryInfo reliquaryList = 9;</code>
        */
       public Builder removeReliquaryList(int index) {
         if (reliquaryListBuilder_ == null) {
@@ -2705,14 +2640,14 @@ public final class SceneAvatarInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+       * <code>repeated .SceneReliquaryInfo reliquaryList = 9;</code>
        */
       public emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.Builder getReliquaryListBuilder(
           int index) {
         return getReliquaryListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+       * <code>repeated .SceneReliquaryInfo reliquaryList = 9;</code>
        */
       public emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfoOrBuilder getReliquaryListOrBuilder(
           int index) {
@@ -2722,7 +2657,7 @@ public final class SceneAvatarInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+       * <code>repeated .SceneReliquaryInfo reliquaryList = 9;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfoOrBuilder> 
            getReliquaryListOrBuilderList() {
@@ -2733,14 +2668,14 @@ public final class SceneAvatarInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+       * <code>repeated .SceneReliquaryInfo reliquaryList = 9;</code>
        */
       public emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.Builder addReliquaryListBuilder() {
         return getReliquaryListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+       * <code>repeated .SceneReliquaryInfo reliquaryList = 9;</code>
        */
       public emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.Builder addReliquaryListBuilder(
           int index) {
@@ -2748,7 +2683,7 @@ public final class SceneAvatarInfoOuterClass {
             index, emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+       * <code>repeated .SceneReliquaryInfo reliquaryList = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.Builder> 
            getReliquaryListBuilderList() {
@@ -2761,7 +2696,7 @@ public final class SceneAvatarInfoOuterClass {
           reliquaryListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo, emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.Builder, emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfoOrBuilder>(
                   reliquaryList_,
-                  ((bitField0_ & 0x00000004) != 0),
+                  ((bitField0_ & 0x00000100) != 0),
                   getParentForChildren(),
                   isClean());
           reliquaryList_ = null;
@@ -2771,7 +2706,7 @@ public final class SceneAvatarInfoOuterClass {
 
       private int coreProudSkillLevel_ ;
       /**
-       * <code>uint32 core_proud_skill_level = 11;</code>
+       * <code>uint32 coreProudSkillLevel = 11;</code>
        * @return The coreProudSkillLevel.
        */
       @java.lang.Override
@@ -2779,22 +2714,23 @@ public final class SceneAvatarInfoOuterClass {
         return coreProudSkillLevel_;
       }
       /**
-       * <code>uint32 core_proud_skill_level = 11;</code>
+       * <code>uint32 coreProudSkillLevel = 11;</code>
        * @param value The coreProudSkillLevel to set.
        * @return This builder for chaining.
        */
       public Builder setCoreProudSkillLevel(int value) {
         
         coreProudSkillLevel_ = value;
+        bitField0_ |= 0x00000200;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 core_proud_skill_level = 11;</code>
+       * <code>uint32 coreProudSkillLevel = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearCoreProudSkillLevel() {
-        
+        bitField0_ = (bitField0_ & ~0x00000200);
         coreProudSkillLevel_ = 0;
         onChanged();
         return this;
@@ -2802,29 +2738,29 @@ public final class SceneAvatarInfoOuterClass {
 
       private com.google.protobuf.Internal.IntList inherentProudSkillList_ = emptyIntList();
       private void ensureInherentProudSkillListIsMutable() {
-        if (!((bitField0_ & 0x00000008) != 0)) {
+        if (!((bitField0_ & 0x00000400) != 0)) {
           inherentProudSkillList_ = mutableCopy(inherentProudSkillList_);
-          bitField0_ |= 0x00000008;
-         }
+          bitField0_ |= 0x00000400;
+        }
       }
       /**
-       * <code>repeated uint32 inherent_proud_skill_list = 12;</code>
+       * <code>repeated uint32 inherentProudSkillList = 12;</code>
        * @return A list containing the inherentProudSkillList.
        */
       public java.util.List<java.lang.Integer>
           getInherentProudSkillListList() {
-        return ((bitField0_ & 0x00000008) != 0) ?
+        return ((bitField0_ & 0x00000400) != 0) ?
                  java.util.Collections.unmodifiableList(inherentProudSkillList_) : inherentProudSkillList_;
       }
       /**
-       * <code>repeated uint32 inherent_proud_skill_list = 12;</code>
+       * <code>repeated uint32 inherentProudSkillList = 12;</code>
        * @return The count of inherentProudSkillList.
        */
       public int getInherentProudSkillListCount() {
         return inherentProudSkillList_.size();
       }
       /**
-       * <code>repeated uint32 inherent_proud_skill_list = 12;</code>
+       * <code>repeated uint32 inherentProudSkillList = 12;</code>
        * @param index The index of the element to return.
        * @return The inherentProudSkillList at the given index.
        */
@@ -2832,31 +2768,33 @@ public final class SceneAvatarInfoOuterClass {
         return inherentProudSkillList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 inherent_proud_skill_list = 12;</code>
+       * <code>repeated uint32 inherentProudSkillList = 12;</code>
        * @param index The index to set the value at.
        * @param value The inherentProudSkillList to set.
        * @return This builder for chaining.
        */
       public Builder setInherentProudSkillList(
           int index, int value) {
+        
         ensureInherentProudSkillListIsMutable();
         inherentProudSkillList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 inherent_proud_skill_list = 12;</code>
+       * <code>repeated uint32 inherentProudSkillList = 12;</code>
        * @param value The inherentProudSkillList to add.
        * @return This builder for chaining.
        */
       public Builder addInherentProudSkillList(int value) {
+        
         ensureInherentProudSkillListIsMutable();
         inherentProudSkillList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 inherent_proud_skill_list = 12;</code>
+       * <code>repeated uint32 inherentProudSkillList = 12;</code>
        * @param values The inherentProudSkillList to add.
        * @return This builder for chaining.
        */
@@ -2869,12 +2807,12 @@ public final class SceneAvatarInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 inherent_proud_skill_list = 12;</code>
+       * <code>repeated uint32 inherentProudSkillList = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearInherentProudSkillList() {
         inherentProudSkillList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000008);
+        bitField0_ = (bitField0_ & ~0x00000400);
         onChanged();
         return this;
       }
@@ -2882,7 +2820,7 @@ public final class SceneAvatarInfoOuterClass {
       private com.google.protobuf.MapField<
           java.lang.Integer, java.lang.Integer> skillLevelMap_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetSkillLevelMap() {
+          internalGetSkillLevelMap() {
         if (skillLevelMap_ == null) {
           return com.google.protobuf.MapField.emptyMapField(
               SkillLevelMapDefaultEntryHolder.defaultEntry);
@@ -2890,8 +2828,7 @@ public final class SceneAvatarInfoOuterClass {
         return skillLevelMap_;
       }
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableSkillLevelMap() {
-        onChanged();;
+          internalGetMutableSkillLevelMap() {
         if (skillLevelMap_ == null) {
           skillLevelMap_ = com.google.protobuf.MapField.newMapField(
               SkillLevelMapDefaultEntryHolder.defaultEntry);
@@ -2899,16 +2836,16 @@ public final class SceneAvatarInfoOuterClass {
         if (!skillLevelMap_.isMutable()) {
           skillLevelMap_ = skillLevelMap_.copy();
         }
+        bitField0_ |= 0x00000800;
+        onChanged();
         return skillLevelMap_;
       }
-
       public int getSkillLevelMapCount() {
         return internalGetSkillLevelMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; skill_level_map = 13;</code>
+       * <code>map&lt;uint32, uint32&gt; skillLevelMap = 13;</code>
        */
-
       @java.lang.Override
       public boolean containsSkillLevelMap(
           int key) {
@@ -2924,18 +2861,16 @@ public final class SceneAvatarInfoOuterClass {
         return getSkillLevelMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; skill_level_map = 13;</code>
+       * <code>map&lt;uint32, uint32&gt; skillLevelMap = 13;</code>
        */
       @java.lang.Override
-
       public java.util.Map<java.lang.Integer, java.lang.Integer> getSkillLevelMapMap() {
         return internalGetSkillLevelMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; skill_level_map = 13;</code>
+       * <code>map&lt;uint32, uint32&gt; skillLevelMap = 13;</code>
        */
       @java.lang.Override
-
       public int getSkillLevelMapOrDefault(
           int key,
           int defaultValue) {
@@ -2945,10 +2880,9 @@ public final class SceneAvatarInfoOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; skill_level_map = 13;</code>
+       * <code>map&lt;uint32, uint32&gt; skillLevelMap = 13;</code>
        */
       @java.lang.Override
-
       public int getSkillLevelMapOrThrow(
           int key) {
         
@@ -2959,16 +2893,15 @@ public final class SceneAvatarInfoOuterClass {
         }
         return map.get(key);
       }
-
       public Builder clearSkillLevelMap() {
+        bitField0_ = (bitField0_ & ~0x00000800);
         internalGetMutableSkillLevelMap().getMutableMap()
             .clear();
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; skill_level_map = 13;</code>
+       * <code>map&lt;uint32, uint32&gt; skillLevelMap = 13;</code>
        */
-
       public Builder removeSkillLevelMap(
           int key) {
         
@@ -2981,11 +2914,12 @@ public final class SceneAvatarInfoOuterClass {
        */
       @java.lang.Deprecated
       public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableSkillLevelMap() {
+          getMutableSkillLevelMap() {
+        bitField0_ |= 0x00000800;
         return internalGetMutableSkillLevelMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; skill_level_map = 13;</code>
+       * <code>map&lt;uint32, uint32&gt; skillLevelMap = 13;</code>
        */
       public Builder putSkillLevelMap(
           int key,
@@ -2994,23 +2928,24 @@ public final class SceneAvatarInfoOuterClass {
         
         internalGetMutableSkillLevelMap().getMutableMap()
             .put(key, value);
+        bitField0_ |= 0x00000800;
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; skill_level_map = 13;</code>
+       * <code>map&lt;uint32, uint32&gt; skillLevelMap = 13;</code>
        */
-
       public Builder putAllSkillLevelMap(
           java.util.Map<java.lang.Integer, java.lang.Integer> values) {
         internalGetMutableSkillLevelMap().getMutableMap()
             .putAll(values);
+        bitField0_ |= 0x00000800;
         return this;
       }
 
       private com.google.protobuf.MapField<
           java.lang.Integer, java.lang.Integer> proudSkillExtraLevelMap_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetProudSkillExtraLevelMap() {
+          internalGetProudSkillExtraLevelMap() {
         if (proudSkillExtraLevelMap_ == null) {
           return com.google.protobuf.MapField.emptyMapField(
               ProudSkillExtraLevelMapDefaultEntryHolder.defaultEntry);
@@ -3018,8 +2953,7 @@ public final class SceneAvatarInfoOuterClass {
         return proudSkillExtraLevelMap_;
       }
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableProudSkillExtraLevelMap() {
-        onChanged();;
+          internalGetMutableProudSkillExtraLevelMap() {
         if (proudSkillExtraLevelMap_ == null) {
           proudSkillExtraLevelMap_ = com.google.protobuf.MapField.newMapField(
               ProudSkillExtraLevelMapDefaultEntryHolder.defaultEntry);
@@ -3027,16 +2961,16 @@ public final class SceneAvatarInfoOuterClass {
         if (!proudSkillExtraLevelMap_.isMutable()) {
           proudSkillExtraLevelMap_ = proudSkillExtraLevelMap_.copy();
         }
+        bitField0_ |= 0x00001000;
+        onChanged();
         return proudSkillExtraLevelMap_;
       }
-
       public int getProudSkillExtraLevelMapCount() {
         return internalGetProudSkillExtraLevelMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 14;</code>
+       * <code>map&lt;uint32, uint32&gt; proudSkillExtraLevelMap = 14;</code>
        */
-
       @java.lang.Override
       public boolean containsProudSkillExtraLevelMap(
           int key) {
@@ -3052,18 +2986,16 @@ public final class SceneAvatarInfoOuterClass {
         return getProudSkillExtraLevelMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 14;</code>
+       * <code>map&lt;uint32, uint32&gt; proudSkillExtraLevelMap = 14;</code>
        */
       @java.lang.Override
-
       public java.util.Map<java.lang.Integer, java.lang.Integer> getProudSkillExtraLevelMapMap() {
         return internalGetProudSkillExtraLevelMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 14;</code>
+       * <code>map&lt;uint32, uint32&gt; proudSkillExtraLevelMap = 14;</code>
        */
       @java.lang.Override
-
       public int getProudSkillExtraLevelMapOrDefault(
           int key,
           int defaultValue) {
@@ -3073,10 +3005,9 @@ public final class SceneAvatarInfoOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 14;</code>
+       * <code>map&lt;uint32, uint32&gt; proudSkillExtraLevelMap = 14;</code>
        */
       @java.lang.Override
-
       public int getProudSkillExtraLevelMapOrThrow(
           int key) {
         
@@ -3087,16 +3018,15 @@ public final class SceneAvatarInfoOuterClass {
         }
         return map.get(key);
       }
-
       public Builder clearProudSkillExtraLevelMap() {
+        bitField0_ = (bitField0_ & ~0x00001000);
         internalGetMutableProudSkillExtraLevelMap().getMutableMap()
             .clear();
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 14;</code>
+       * <code>map&lt;uint32, uint32&gt; proudSkillExtraLevelMap = 14;</code>
        */
-
       public Builder removeProudSkillExtraLevelMap(
           int key) {
         
@@ -3109,11 +3039,12 @@ public final class SceneAvatarInfoOuterClass {
        */
       @java.lang.Deprecated
       public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableProudSkillExtraLevelMap() {
+          getMutableProudSkillExtraLevelMap() {
+        bitField0_ |= 0x00001000;
         return internalGetMutableProudSkillExtraLevelMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 14;</code>
+       * <code>map&lt;uint32, uint32&gt; proudSkillExtraLevelMap = 14;</code>
        */
       public Builder putProudSkillExtraLevelMap(
           int key,
@@ -3122,25 +3053,26 @@ public final class SceneAvatarInfoOuterClass {
         
         internalGetMutableProudSkillExtraLevelMap().getMutableMap()
             .put(key, value);
+        bitField0_ |= 0x00001000;
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 14;</code>
+       * <code>map&lt;uint32, uint32&gt; proudSkillExtraLevelMap = 14;</code>
        */
-
       public Builder putAllProudSkillExtraLevelMap(
           java.util.Map<java.lang.Integer, java.lang.Integer> values) {
         internalGetMutableProudSkillExtraLevelMap().getMutableMap()
             .putAll(values);
+        bitField0_ |= 0x00001000;
         return this;
       }
 
       private java.util.List<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff> serverBuffList_ =
         java.util.Collections.emptyList();
       private void ensureServerBuffListIsMutable() {
-        if (!((bitField0_ & 0x00000040) != 0)) {
+        if (!((bitField0_ & 0x00002000) != 0)) {
           serverBuffList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff>(serverBuffList_);
-          bitField0_ |= 0x00000040;
+          bitField0_ |= 0x00002000;
          }
       }
 
@@ -3148,7 +3080,7 @@ public final class SceneAvatarInfoOuterClass {
           emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder> serverBuffListBuilder_;
 
       /**
-       * <code>repeated .ServerBuff server_buff_list = 15;</code>
+       * <code>repeated .ServerBuff serverBuffList = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff> getServerBuffListList() {
         if (serverBuffListBuilder_ == null) {
@@ -3158,7 +3090,7 @@ public final class SceneAvatarInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 15;</code>
+       * <code>repeated .ServerBuff serverBuffList = 15;</code>
        */
       public int getServerBuffListCount() {
         if (serverBuffListBuilder_ == null) {
@@ -3168,7 +3100,7 @@ public final class SceneAvatarInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 15;</code>
+       * <code>repeated .ServerBuff serverBuffList = 15;</code>
        */
       public emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff getServerBuffList(int index) {
         if (serverBuffListBuilder_ == null) {
@@ -3178,7 +3110,7 @@ public final class SceneAvatarInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 15;</code>
+       * <code>repeated .ServerBuff serverBuffList = 15;</code>
        */
       public Builder setServerBuffList(
           int index, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff value) {
@@ -3195,7 +3127,7 @@ public final class SceneAvatarInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 15;</code>
+       * <code>repeated .ServerBuff serverBuffList = 15;</code>
        */
       public Builder setServerBuffList(
           int index, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder builderForValue) {
@@ -3209,7 +3141,7 @@ public final class SceneAvatarInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 15;</code>
+       * <code>repeated .ServerBuff serverBuffList = 15;</code>
        */
       public Builder addServerBuffList(emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff value) {
         if (serverBuffListBuilder_ == null) {
@@ -3225,7 +3157,7 @@ public final class SceneAvatarInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 15;</code>
+       * <code>repeated .ServerBuff serverBuffList = 15;</code>
        */
       public Builder addServerBuffList(
           int index, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff value) {
@@ -3242,7 +3174,7 @@ public final class SceneAvatarInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 15;</code>
+       * <code>repeated .ServerBuff serverBuffList = 15;</code>
        */
       public Builder addServerBuffList(
           emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder builderForValue) {
@@ -3256,7 +3188,7 @@ public final class SceneAvatarInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 15;</code>
+       * <code>repeated .ServerBuff serverBuffList = 15;</code>
        */
       public Builder addServerBuffList(
           int index, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder builderForValue) {
@@ -3270,7 +3202,7 @@ public final class SceneAvatarInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 15;</code>
+       * <code>repeated .ServerBuff serverBuffList = 15;</code>
        */
       public Builder addAllServerBuffList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff> values) {
@@ -3285,12 +3217,12 @@ public final class SceneAvatarInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 15;</code>
+       * <code>repeated .ServerBuff serverBuffList = 15;</code>
        */
       public Builder clearServerBuffList() {
         if (serverBuffListBuilder_ == null) {
           serverBuffList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000040);
+          bitField0_ = (bitField0_ & ~0x00002000);
           onChanged();
         } else {
           serverBuffListBuilder_.clear();
@@ -3298,7 +3230,7 @@ public final class SceneAvatarInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 15;</code>
+       * <code>repeated .ServerBuff serverBuffList = 15;</code>
        */
       public Builder removeServerBuffList(int index) {
         if (serverBuffListBuilder_ == null) {
@@ -3311,14 +3243,14 @@ public final class SceneAvatarInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 15;</code>
+       * <code>repeated .ServerBuff serverBuffList = 15;</code>
        */
       public emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder getServerBuffListBuilder(
           int index) {
         return getServerBuffListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 15;</code>
+       * <code>repeated .ServerBuff serverBuffList = 15;</code>
        */
       public emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder getServerBuffListOrBuilder(
           int index) {
@@ -3328,7 +3260,7 @@ public final class SceneAvatarInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 15;</code>
+       * <code>repeated .ServerBuff serverBuffList = 15;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder> 
            getServerBuffListOrBuilderList() {
@@ -3339,14 +3271,14 @@ public final class SceneAvatarInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 15;</code>
+       * <code>repeated .ServerBuff serverBuffList = 15;</code>
        */
       public emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder addServerBuffListBuilder() {
         return getServerBuffListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.getDefaultInstance());
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 15;</code>
+       * <code>repeated .ServerBuff serverBuffList = 15;</code>
        */
       public emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder addServerBuffListBuilder(
           int index) {
@@ -3354,7 +3286,7 @@ public final class SceneAvatarInfoOuterClass {
             index, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.getDefaultInstance());
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 15;</code>
+       * <code>repeated .ServerBuff serverBuffList = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder> 
            getServerBuffListBuilderList() {
@@ -3367,7 +3299,7 @@ public final class SceneAvatarInfoOuterClass {
           serverBuffListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder>(
                   serverBuffList_,
-                  ((bitField0_ & 0x00000040) != 0),
+                  ((bitField0_ & 0x00002000) != 0),
                   getParentForChildren(),
                   isClean());
           serverBuffList_ = null;
@@ -3377,29 +3309,29 @@ public final class SceneAvatarInfoOuterClass {
 
       private com.google.protobuf.Internal.IntList teamResonanceList_ = emptyIntList();
       private void ensureTeamResonanceListIsMutable() {
-        if (!((bitField0_ & 0x00000080) != 0)) {
+        if (!((bitField0_ & 0x00004000) != 0)) {
           teamResonanceList_ = mutableCopy(teamResonanceList_);
-          bitField0_ |= 0x00000080;
-         }
+          bitField0_ |= 0x00004000;
+        }
       }
       /**
-       * <code>repeated uint32 team_resonance_list = 16;</code>
+       * <code>repeated uint32 teamResonanceList = 16;</code>
        * @return A list containing the teamResonanceList.
        */
       public java.util.List<java.lang.Integer>
           getTeamResonanceListList() {
-        return ((bitField0_ & 0x00000080) != 0) ?
+        return ((bitField0_ & 0x00004000) != 0) ?
                  java.util.Collections.unmodifiableList(teamResonanceList_) : teamResonanceList_;
       }
       /**
-       * <code>repeated uint32 team_resonance_list = 16;</code>
+       * <code>repeated uint32 teamResonanceList = 16;</code>
        * @return The count of teamResonanceList.
        */
       public int getTeamResonanceListCount() {
         return teamResonanceList_.size();
       }
       /**
-       * <code>repeated uint32 team_resonance_list = 16;</code>
+       * <code>repeated uint32 teamResonanceList = 16;</code>
        * @param index The index of the element to return.
        * @return The teamResonanceList at the given index.
        */
@@ -3407,31 +3339,33 @@ public final class SceneAvatarInfoOuterClass {
         return teamResonanceList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 team_resonance_list = 16;</code>
+       * <code>repeated uint32 teamResonanceList = 16;</code>
        * @param index The index to set the value at.
        * @param value The teamResonanceList to set.
        * @return This builder for chaining.
        */
       public Builder setTeamResonanceList(
           int index, int value) {
+        
         ensureTeamResonanceListIsMutable();
         teamResonanceList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 team_resonance_list = 16;</code>
+       * <code>repeated uint32 teamResonanceList = 16;</code>
        * @param value The teamResonanceList to add.
        * @return This builder for chaining.
        */
       public Builder addTeamResonanceList(int value) {
+        
         ensureTeamResonanceListIsMutable();
         teamResonanceList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 team_resonance_list = 16;</code>
+       * <code>repeated uint32 teamResonanceList = 16;</code>
        * @param values The teamResonanceList to add.
        * @return This builder for chaining.
        */
@@ -3444,19 +3378,19 @@ public final class SceneAvatarInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 team_resonance_list = 16;</code>
+       * <code>repeated uint32 teamResonanceList = 16;</code>
        * @return This builder for chaining.
        */
       public Builder clearTeamResonanceList() {
         teamResonanceList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000080);
+        bitField0_ = (bitField0_ & ~0x00004000);
         onChanged();
         return this;
       }
 
       private int wearingFlycloakId_ ;
       /**
-       * <code>uint32 wearing_flycloak_id = 17;</code>
+       * <code>uint32 wearingFlycloakId = 17;</code>
        * @return The wearingFlycloakId.
        */
       @java.lang.Override
@@ -3464,22 +3398,23 @@ public final class SceneAvatarInfoOuterClass {
         return wearingFlycloakId_;
       }
       /**
-       * <code>uint32 wearing_flycloak_id = 17;</code>
+       * <code>uint32 wearingFlycloakId = 17;</code>
        * @param value The wearingFlycloakId to set.
        * @return This builder for chaining.
        */
       public Builder setWearingFlycloakId(int value) {
         
         wearingFlycloakId_ = value;
+        bitField0_ |= 0x00008000;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 wearing_flycloak_id = 17;</code>
+       * <code>uint32 wearingFlycloakId = 17;</code>
        * @return This builder for chaining.
        */
       public Builder clearWearingFlycloakId() {
-        
+        bitField0_ = (bitField0_ & ~0x00008000);
         wearingFlycloakId_ = 0;
         onChanged();
         return this;
@@ -3487,7 +3422,7 @@ public final class SceneAvatarInfoOuterClass {
 
       private int bornTime_ ;
       /**
-       * <code>uint32 born_time = 18;</code>
+       * <code>uint32 bornTime = 18;</code>
        * @return The bornTime.
        */
       @java.lang.Override
@@ -3495,22 +3430,23 @@ public final class SceneAvatarInfoOuterClass {
         return bornTime_;
       }
       /**
-       * <code>uint32 born_time = 18;</code>
+       * <code>uint32 bornTime = 18;</code>
        * @param value The bornTime to set.
        * @return This builder for chaining.
        */
       public Builder setBornTime(int value) {
         
         bornTime_ = value;
+        bitField0_ |= 0x00010000;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 born_time = 18;</code>
+       * <code>uint32 bornTime = 18;</code>
        * @return This builder for chaining.
        */
       public Builder clearBornTime() {
-        
+        bitField0_ = (bitField0_ & ~0x00010000);
         bornTime_ = 0;
         onChanged();
         return this;
@@ -3518,7 +3454,7 @@ public final class SceneAvatarInfoOuterClass {
 
       private int costumeId_ ;
       /**
-       * <code>uint32 costume_id = 19;</code>
+       * <code>uint32 costumeId = 19;</code>
        * @return The costumeId.
        */
       @java.lang.Override
@@ -3526,22 +3462,23 @@ public final class SceneAvatarInfoOuterClass {
         return costumeId_;
       }
       /**
-       * <code>uint32 costume_id = 19;</code>
+       * <code>uint32 costumeId = 19;</code>
        * @param value The costumeId to set.
        * @return This builder for chaining.
        */
       public Builder setCostumeId(int value) {
         
         costumeId_ = value;
+        bitField0_ |= 0x00020000;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 costume_id = 19;</code>
+       * <code>uint32 costumeId = 19;</code>
        * @return This builder for chaining.
        */
       public Builder clearCostumeId() {
-        
+        bitField0_ = (bitField0_ & ~0x00020000);
         costumeId_ = 0;
         onChanged();
         return this;
@@ -3551,14 +3488,14 @@ public final class SceneAvatarInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.CurVehicleInfoOuterClass.CurVehicleInfo, emu.grasscutter.net.proto.CurVehicleInfoOuterClass.CurVehicleInfo.Builder, emu.grasscutter.net.proto.CurVehicleInfoOuterClass.CurVehicleInfoOrBuilder> curVehicleInfoBuilder_;
       /**
-       * <code>.CurVehicleInfo cur_vehicle_info = 20;</code>
+       * <code>.CurVehicleInfo curVehicleInfo = 20;</code>
        * @return Whether the curVehicleInfo field is set.
        */
       public boolean hasCurVehicleInfo() {
-        return curVehicleInfoBuilder_ != null || curVehicleInfo_ != null;
+        return ((bitField0_ & 0x00040000) != 0);
       }
       /**
-       * <code>.CurVehicleInfo cur_vehicle_info = 20;</code>
+       * <code>.CurVehicleInfo curVehicleInfo = 20;</code>
        * @return The curVehicleInfo.
        */
       public emu.grasscutter.net.proto.CurVehicleInfoOuterClass.CurVehicleInfo getCurVehicleInfo() {
@@ -3569,7 +3506,7 @@ public final class SceneAvatarInfoOuterClass {
         }
       }
       /**
-       * <code>.CurVehicleInfo cur_vehicle_info = 20;</code>
+       * <code>.CurVehicleInfo curVehicleInfo = 20;</code>
        */
       public Builder setCurVehicleInfo(emu.grasscutter.net.proto.CurVehicleInfoOuterClass.CurVehicleInfo value) {
         if (curVehicleInfoBuilder_ == null) {
@@ -3577,69 +3514,69 @@ public final class SceneAvatarInfoOuterClass {
             throw new NullPointerException();
           }
           curVehicleInfo_ = value;
-          onChanged();
         } else {
           curVehicleInfoBuilder_.setMessage(value);
         }
-
+        bitField0_ |= 0x00040000;
+        onChanged();
         return this;
       }
       /**
-       * <code>.CurVehicleInfo cur_vehicle_info = 20;</code>
+       * <code>.CurVehicleInfo curVehicleInfo = 20;</code>
        */
       public Builder setCurVehicleInfo(
           emu.grasscutter.net.proto.CurVehicleInfoOuterClass.CurVehicleInfo.Builder builderForValue) {
         if (curVehicleInfoBuilder_ == null) {
           curVehicleInfo_ = builderForValue.build();
-          onChanged();
         } else {
           curVehicleInfoBuilder_.setMessage(builderForValue.build());
         }
-
+        bitField0_ |= 0x00040000;
+        onChanged();
         return this;
       }
       /**
-       * <code>.CurVehicleInfo cur_vehicle_info = 20;</code>
+       * <code>.CurVehicleInfo curVehicleInfo = 20;</code>
        */
       public Builder mergeCurVehicleInfo(emu.grasscutter.net.proto.CurVehicleInfoOuterClass.CurVehicleInfo value) {
         if (curVehicleInfoBuilder_ == null) {
-          if (curVehicleInfo_ != null) {
-            curVehicleInfo_ =
-              emu.grasscutter.net.proto.CurVehicleInfoOuterClass.CurVehicleInfo.newBuilder(curVehicleInfo_).mergeFrom(value).buildPartial();
+          if (((bitField0_ & 0x00040000) != 0) &&
+            curVehicleInfo_ != null &&
+            curVehicleInfo_ != emu.grasscutter.net.proto.CurVehicleInfoOuterClass.CurVehicleInfo.getDefaultInstance()) {
+            getCurVehicleInfoBuilder().mergeFrom(value);
           } else {
             curVehicleInfo_ = value;
           }
-          onChanged();
         } else {
           curVehicleInfoBuilder_.mergeFrom(value);
         }
-
+        bitField0_ |= 0x00040000;
+        onChanged();
         return this;
       }
       /**
-       * <code>.CurVehicleInfo cur_vehicle_info = 20;</code>
+       * <code>.CurVehicleInfo curVehicleInfo = 20;</code>
        */
       public Builder clearCurVehicleInfo() {
-        if (curVehicleInfoBuilder_ == null) {
-          curVehicleInfo_ = null;
-          onChanged();
-        } else {
-          curVehicleInfo_ = null;
+        bitField0_ = (bitField0_ & ~0x00040000);
+        curVehicleInfo_ = null;
+        if (curVehicleInfoBuilder_ != null) {
+          curVehicleInfoBuilder_.dispose();
           curVehicleInfoBuilder_ = null;
         }
-
+        onChanged();
         return this;
       }
       /**
-       * <code>.CurVehicleInfo cur_vehicle_info = 20;</code>
+       * <code>.CurVehicleInfo curVehicleInfo = 20;</code>
        */
       public emu.grasscutter.net.proto.CurVehicleInfoOuterClass.CurVehicleInfo.Builder getCurVehicleInfoBuilder() {
-        
+        bitField0_ |= 0x00040000;
         onChanged();
         return getCurVehicleInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.CurVehicleInfo cur_vehicle_info = 20;</code>
+       * <code>.CurVehicleInfo curVehicleInfo = 20;</code>
        */
       public emu.grasscutter.net.proto.CurVehicleInfoOuterClass.CurVehicleInfoOrBuilder getCurVehicleInfoOrBuilder() {
         if (curVehicleInfoBuilder_ != null) {
@@ -3650,7 +3587,7 @@ public final class SceneAvatarInfoOuterClass {
         }
       }
       /**
-       * <code>.CurVehicleInfo cur_vehicle_info = 20;</code>
+       * <code>.CurVehicleInfo curVehicleInfo = 20;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.CurVehicleInfoOuterClass.CurVehicleInfo, emu.grasscutter.net.proto.CurVehicleInfoOuterClass.CurVehicleInfo.Builder, emu.grasscutter.net.proto.CurVehicleInfoOuterClass.CurVehicleInfoOrBuilder> 
@@ -3670,14 +3607,14 @@ public final class SceneAvatarInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfo, emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfo.Builder, emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfoOrBuilder> excelInfoBuilder_;
       /**
-       * <code>.AvatarExcelInfo excel_info = 21;</code>
+       * <code>.AvatarExcelInfo excelInfo = 21;</code>
        * @return Whether the excelInfo field is set.
        */
       public boolean hasExcelInfo() {
-        return excelInfoBuilder_ != null || excelInfo_ != null;
+        return ((bitField0_ & 0x00080000) != 0);
       }
       /**
-       * <code>.AvatarExcelInfo excel_info = 21;</code>
+       * <code>.AvatarExcelInfo excelInfo = 21;</code>
        * @return The excelInfo.
        */
       public emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfo getExcelInfo() {
@@ -3688,7 +3625,7 @@ public final class SceneAvatarInfoOuterClass {
         }
       }
       /**
-       * <code>.AvatarExcelInfo excel_info = 21;</code>
+       * <code>.AvatarExcelInfo excelInfo = 21;</code>
        */
       public Builder setExcelInfo(emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfo value) {
         if (excelInfoBuilder_ == null) {
@@ -3696,69 +3633,69 @@ public final class SceneAvatarInfoOuterClass {
             throw new NullPointerException();
           }
           excelInfo_ = value;
-          onChanged();
         } else {
           excelInfoBuilder_.setMessage(value);
         }
-
+        bitField0_ |= 0x00080000;
+        onChanged();
         return this;
       }
       /**
-       * <code>.AvatarExcelInfo excel_info = 21;</code>
+       * <code>.AvatarExcelInfo excelInfo = 21;</code>
        */
       public Builder setExcelInfo(
           emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfo.Builder builderForValue) {
         if (excelInfoBuilder_ == null) {
           excelInfo_ = builderForValue.build();
-          onChanged();
         } else {
           excelInfoBuilder_.setMessage(builderForValue.build());
         }
-
+        bitField0_ |= 0x00080000;
+        onChanged();
         return this;
       }
       /**
-       * <code>.AvatarExcelInfo excel_info = 21;</code>
+       * <code>.AvatarExcelInfo excelInfo = 21;</code>
        */
       public Builder mergeExcelInfo(emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfo value) {
         if (excelInfoBuilder_ == null) {
-          if (excelInfo_ != null) {
-            excelInfo_ =
-              emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfo.newBuilder(excelInfo_).mergeFrom(value).buildPartial();
+          if (((bitField0_ & 0x00080000) != 0) &&
+            excelInfo_ != null &&
+            excelInfo_ != emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfo.getDefaultInstance()) {
+            getExcelInfoBuilder().mergeFrom(value);
           } else {
             excelInfo_ = value;
           }
-          onChanged();
         } else {
           excelInfoBuilder_.mergeFrom(value);
         }
-
+        bitField0_ |= 0x00080000;
+        onChanged();
         return this;
       }
       /**
-       * <code>.AvatarExcelInfo excel_info = 21;</code>
+       * <code>.AvatarExcelInfo excelInfo = 21;</code>
        */
       public Builder clearExcelInfo() {
-        if (excelInfoBuilder_ == null) {
-          excelInfo_ = null;
-          onChanged();
-        } else {
-          excelInfo_ = null;
+        bitField0_ = (bitField0_ & ~0x00080000);
+        excelInfo_ = null;
+        if (excelInfoBuilder_ != null) {
+          excelInfoBuilder_.dispose();
           excelInfoBuilder_ = null;
         }
-
+        onChanged();
         return this;
       }
       /**
-       * <code>.AvatarExcelInfo excel_info = 21;</code>
+       * <code>.AvatarExcelInfo excelInfo = 21;</code>
        */
       public emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfo.Builder getExcelInfoBuilder() {
-        
+        bitField0_ |= 0x00080000;
         onChanged();
         return getExcelInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.AvatarExcelInfo excel_info = 21;</code>
+       * <code>.AvatarExcelInfo excelInfo = 21;</code>
        */
       public emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfoOrBuilder getExcelInfoOrBuilder() {
         if (excelInfoBuilder_ != null) {
@@ -3769,7 +3706,7 @@ public final class SceneAvatarInfoOuterClass {
         }
       }
       /**
-       * <code>.AvatarExcelInfo excel_info = 21;</code>
+       * <code>.AvatarExcelInfo excelInfo = 21;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfo, emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfo.Builder, emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfoOrBuilder> 
@@ -3787,7 +3724,7 @@ public final class SceneAvatarInfoOuterClass {
 
       private int animHash_ ;
       /**
-       * <code>uint32 anim_hash = 22;</code>
+       * <code>uint32 animHash = 22;</code>
        * @return The animHash.
        */
       @java.lang.Override
@@ -3795,22 +3732,23 @@ public final class SceneAvatarInfoOuterClass {
         return animHash_;
       }
       /**
-       * <code>uint32 anim_hash = 22;</code>
+       * <code>uint32 animHash = 22;</code>
        * @param value The animHash to set.
        * @return This builder for chaining.
        */
       public Builder setAnimHash(int value) {
         
         animHash_ = value;
+        bitField0_ |= 0x00100000;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 anim_hash = 22;</code>
+       * <code>uint32 animHash = 22;</code>
        * @return This builder for chaining.
        */
       public Builder clearAnimHash() {
-        
+        bitField0_ = (bitField0_ & ~0x00100000);
         animHash_ = 0;
         onChanged();
         return this;
@@ -3848,7 +3786,18 @@ public final class SceneAvatarInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new SceneAvatarInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -3892,39 +3841,38 @@ public final class SceneAvatarInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025SceneAvatarInfo.proto\032\025AvatarExcelInfo" +
-      ".proto\032\024CurVehicleInfo.proto\032\030SceneReliq" +
-      "uaryInfo.proto\032\025SceneWeaponInfo.proto\032\020S" +
-      "erverBuff.proto\"\235\006\n\017SceneAvatarInfo\022\013\n\003u" +
-      "id\030\001 \001(\r\022\021\n\tavatar_id\030\002 \001(\r\022\014\n\004guid\030\003 \001(" +
-      "\004\022\017\n\007peer_id\030\004 \001(\r\022\025\n\requip_id_list\030\005 \003(" +
-      "\r\022\026\n\016skill_depot_id\030\006 \001(\r\022\026\n\016talent_id_l" +
-      "ist\030\007 \003(\r\022 \n\006weapon\030\010 \001(\0132\020.SceneWeaponI" +
-      "nfo\022+\n\016reliquary_list\030\t \003(\0132\023.SceneReliq" +
-      "uaryInfo\022\036\n\026core_proud_skill_level\030\013 \001(\r" +
-      "\022!\n\031inherent_proud_skill_list\030\014 \003(\r\022<\n\017s" +
-      "kill_level_map\030\r \003(\0132#.SceneAvatarInfo.S" +
-      "killLevelMapEntry\022R\n\033proud_skill_extra_l" +
-      "evel_map\030\016 \003(\0132-.SceneAvatarInfo.ProudSk" +
-      "illExtraLevelMapEntry\022%\n\020server_buff_lis" +
-      "t\030\017 \003(\0132\013.ServerBuff\022\033\n\023team_resonance_l" +
-      "ist\030\020 \003(\r\022\033\n\023wearing_flycloak_id\030\021 \001(\r\022\021" +
-      "\n\tborn_time\030\022 \001(\r\022\022\n\ncostume_id\030\023 \001(\r\022)\n" +
-      "\020cur_vehicle_info\030\024 \001(\0132\017.CurVehicleInfo" +
-      "\022$\n\nexcel_info\030\025 \001(\0132\020.AvatarExcelInfo\022\021" +
-      "\n\tanim_hash\030\026 \001(\r\0324\n\022SkillLevelMapEntry\022" +
-      "\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001\032>\n\034Proud" +
-      "SkillExtraLevelMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005" +
-      "value\030\002 \001(\r:\0028\001B\033\n\031emu.grasscutter.net.p" +
-      "rotob\006proto3"
+      "\n\025SceneAvatarInfo.proto\032\025SceneWeaponInfo" +
+      ".proto\032\024CurVehicleInfo.proto\032\025AvatarExce" +
+      "lInfo.proto\032\030SceneReliquaryInfo.proto\032\020S" +
+      "erverBuff.proto\"\374\005\n\017SceneAvatarInfo\022\013\n\003u" +
+      "id\030\001 \001(\r\022\020\n\010avatarId\030\002 \001(\r\022\014\n\004guid\030\003 \001(\004" +
+      "\022\016\n\006peerId\030\004 \001(\r\022\023\n\013equipIdList\030\005 \003(\r\022\024\n" +
+      "\014skillDepotId\030\006 \001(\r\022\024\n\014talentIdList\030\007 \003(" +
+      "\r\022 \n\006weapon\030\010 \001(\0132\020.SceneWeaponInfo\022*\n\rr" +
+      "eliquaryList\030\t \003(\0132\023.SceneReliquaryInfo\022" +
+      "\033\n\023coreProudSkillLevel\030\013 \001(\r\022\036\n\026inherent" +
+      "ProudSkillList\030\014 \003(\r\022:\n\rskillLevelMap\030\r " +
+      "\003(\0132#.SceneAvatarInfo.SkillLevelMapEntry" +
+      "\022N\n\027proudSkillExtraLevelMap\030\016 \003(\0132-.Scen" +
+      "eAvatarInfo.ProudSkillExtraLevelMapEntry" +
+      "\022#\n\016serverBuffList\030\017 \003(\0132\013.ServerBuff\022\031\n" +
+      "\021teamResonanceList\030\020 \003(\r\022\031\n\021wearingFlycl" +
+      "oakId\030\021 \001(\r\022\020\n\010bornTime\030\022 \001(\r\022\021\n\tcostume" +
+      "Id\030\023 \001(\r\022\'\n\016curVehicleInfo\030\024 \001(\0132\017.CurVe" +
+      "hicleInfo\022#\n\texcelInfo\030\025 \001(\0132\020.AvatarExc" +
+      "elInfo\022\020\n\010animHash\030\026 \001(\r\0324\n\022SkillLevelMa" +
+      "pEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001\032>" +
+      "\n\034ProudSkillExtraLevelMapEntry\022\013\n\003key\030\001 " +
+      "\001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu.grasscutte" +
+      "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.CurVehicleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.CurVehicleInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.ServerBuffOuterClass.getDescriptor(),
         });
     internal_static_SceneAvatarInfo_descriptor =
@@ -3945,10 +3893,10 @@ public final class SceneAvatarInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneAvatarInfo_ProudSkillExtraLevelMapEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
-    emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.CurVehicleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.CurVehicleInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.ServerBuffOuterClass.getDescriptor();
   }
 

@@ -34,12 +34,12 @@ public final class AbilityScalarValueEntryOuterClass {
     emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getKeyOrBuilder();
 
     /**
-     * <code>.AbilityScalarType value_type = 2;</code>
+     * <code>.AbilityScalarType valueType = 2;</code>
      * @return The enum numeric value on the wire for valueType.
      */
     int getValueTypeValue();
     /**
-     * <code>.AbilityScalarType value_type = 2;</code>
+     * <code>.AbilityScalarType valueType = 2;</code>
      * @return The valueType.
      */
     emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType getValueType();
@@ -124,83 +124,6 @@ public final class AbilityScalarValueEntryOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private AbilityScalarValueEntry(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 10: {
-              emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder subBuilder = null;
-              if (key_ != null) {
-                subBuilder = key_.toBuilder();
-              }
-              key_ = input.readMessage(emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(key_);
-                key_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 16: {
-              int rawValue = input.readEnum();
-
-              valueType_ = rawValue;
-              break;
-            }
-            case 29: {
-              valueCase_ = 3;
-              value_ = input.readFloat();
-              break;
-            }
-            case 34: {
-              java.lang.String s = input.readStringRequireUtf8();
-              valueCase_ = 4;
-              value_ = s;
-              break;
-            }
-            case 40: {
-              valueCase_ = 5;
-              value_ = input.readInt32();
-              break;
-            }
-            case 48: {
-              valueCase_ = 6;
-              value_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.internal_static_AbilityScalarValueEntry_descriptor;
@@ -282,25 +205,24 @@ public final class AbilityScalarValueEntryOuterClass {
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getKeyOrBuilder() {
-      return getKey();
+      return key_ == null ? emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : key_;
     }
 
-    public static final int VALUE_TYPE_FIELD_NUMBER = 2;
-    private int valueType_;
+    public static final int VALUETYPE_FIELD_NUMBER = 2;
+    private int valueType_ = 0;
     /**
-     * <code>.AbilityScalarType value_type = 2;</code>
+     * <code>.AbilityScalarType valueType = 2;</code>
      * @return The enum numeric value on the wire for valueType.
      */
     @java.lang.Override public int getValueTypeValue() {
       return valueType_;
     }
     /**
-     * <code>.AbilityScalarType value_type = 2;</code>
+     * <code>.AbilityScalarType valueType = 2;</code>
      * @return The valueType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType getValueType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType result = emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType.valueOf(valueType_);
+      emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType result = emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType.forNumber(valueType_);
       return result == null ? emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType.UNRECOGNIZED : result;
     }
 
@@ -454,7 +376,7 @@ public final class AbilityScalarValueEntryOuterClass {
         output.writeUInt32(
             6, (int)((java.lang.Integer) value_));
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -489,7 +411,7 @@ public final class AbilityScalarValueEntryOuterClass {
           .computeUInt32Size(
               6, (int)((java.lang.Integer) value_));
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -532,7 +454,7 @@ public final class AbilityScalarValueEntryOuterClass {
         case 0:
         default:
       }
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -547,7 +469,7 @@ public final class AbilityScalarValueEntryOuterClass {
         hash = (37 * hash) + KEY_FIELD_NUMBER;
         hash = (53 * hash) + getKey().hashCode();
       }
-      hash = (37 * hash) + VALUE_TYPE_FIELD_NUMBER;
+      hash = (37 * hash) + VALUETYPE_FIELD_NUMBER;
       hash = (53 * hash) + valueType_;
       switch (valueCase_) {
         case 3:
@@ -570,7 +492,7 @@ public final class AbilityScalarValueEntryOuterClass {
         case 0:
         default:
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -687,30 +609,24 @@ public final class AbilityScalarValueEntryOuterClass {
 
       // Construct using emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (keyBuilder_ == null) {
-          key_ = null;
-        } else {
-          key_ = null;
+        bitField0_ = 0;
+        key_ = null;
+        if (keyBuilder_ != null) {
+          keyBuilder_.dispose();
           keyBuilder_ = null;
         }
         valueType_ = 0;
-
         valueCase_ = 0;
         value_ = null;
         return this;
@@ -739,27 +655,27 @@ public final class AbilityScalarValueEntryOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry buildPartial() {
         emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry result = new emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry(this);
-        if (keyBuilder_ == null) {
-          result.key_ = key_;
-        } else {
-          result.key_ = keyBuilder_.build();
-        }
-        result.valueType_ = valueType_;
-        if (valueCase_ == 3) {
-          result.value_ = value_;
-        }
-        if (valueCase_ == 4) {
-          result.value_ = value_;
-        }
-        if (valueCase_ == 5) {
-          result.value_ = value_;
-        }
-        if (valueCase_ == 6) {
-          result.value_ = value_;
-        }
-        result.valueCase_ = valueCase_;
+        if (bitField0_ != 0) { buildPartial0(result); }
+        buildPartialOneofs(result);
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.key_ = keyBuilder_ == null
+              ? key_
+              : keyBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.valueType_ = valueType_;
+        }
+      }
+
+      private void buildPartialOneofs(emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry result) {
+        result.valueCase_ = valueCase_;
+        result.value_ = this.value_;
       }
 
       @java.lang.Override
@@ -835,7 +751,7 @@ public final class AbilityScalarValueEntryOuterClass {
             break;
           }
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -850,17 +766,63 @@ public final class AbilityScalarValueEntryOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 10: {
+                input.readMessage(
+                    getKeyFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 10
+              case 16: {
+                valueType_ = input.readEnum();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 16
+              case 29: {
+                value_ = input.readFloat();
+                valueCase_ = 3;
+                break;
+              } // case 29
+              case 34: {
+                java.lang.String s = input.readStringRequireUtf8();
+                valueCase_ = 4;
+                value_ = s;
+                break;
+              } // case 34
+              case 40: {
+                value_ = input.readInt32();
+                valueCase_ = 5;
+                break;
+              } // case 40
+              case 48: {
+                value_ = input.readUInt32();
+                valueCase_ = 6;
+                break;
+              } // case 48
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int valueCase_ = 0;
@@ -878,6 +840,7 @@ public final class AbilityScalarValueEntryOuterClass {
         return this;
       }
 
+      private int bitField0_;
 
       private emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString key_;
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -887,7 +850,7 @@ public final class AbilityScalarValueEntryOuterClass {
        * @return Whether the key field is set.
        */
       public boolean hasKey() {
-        return keyBuilder_ != null || key_ != null;
+        return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>.AbilityString key = 1;</code>
@@ -909,11 +872,11 @@ public final class AbilityScalarValueEntryOuterClass {
             throw new NullPointerException();
           }
           key_ = value;
-          onChanged();
         } else {
           keyBuilder_.setMessage(value);
         }
-
+        bitField0_ |= 0x00000001;
+        onChanged();
         return this;
       }
       /**
@@ -923,11 +886,11 @@ public final class AbilityScalarValueEntryOuterClass {
           emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder builderForValue) {
         if (keyBuilder_ == null) {
           key_ = builderForValue.build();
-          onChanged();
         } else {
           keyBuilder_.setMessage(builderForValue.build());
         }
-
+        bitField0_ |= 0x00000001;
+        onChanged();
         return this;
       }
       /**
@@ -935,38 +898,38 @@ public final class AbilityScalarValueEntryOuterClass {
        */
       public Builder mergeKey(emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString value) {
         if (keyBuilder_ == null) {
-          if (key_ != null) {
-            key_ =
-              emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.newBuilder(key_).mergeFrom(value).buildPartial();
+          if (((bitField0_ & 0x00000001) != 0) &&
+            key_ != null &&
+            key_ != emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance()) {
+            getKeyBuilder().mergeFrom(value);
           } else {
             key_ = value;
           }
-          onChanged();
         } else {
           keyBuilder_.mergeFrom(value);
         }
-
+        bitField0_ |= 0x00000001;
+        onChanged();
         return this;
       }
       /**
        * <code>.AbilityString key = 1;</code>
        */
       public Builder clearKey() {
-        if (keyBuilder_ == null) {
-          key_ = null;
-          onChanged();
-        } else {
-          key_ = null;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        key_ = null;
+        if (keyBuilder_ != null) {
+          keyBuilder_.dispose();
           keyBuilder_ = null;
         }
-
+        onChanged();
         return this;
       }
       /**
        * <code>.AbilityString key = 1;</code>
        */
       public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder getKeyBuilder() {
-        
+        bitField0_ |= 0x00000001;
         onChanged();
         return getKeyFieldBuilder().getBuilder();
       }
@@ -1000,35 +963,34 @@ public final class AbilityScalarValueEntryOuterClass {
 
       private int valueType_ = 0;
       /**
-       * <code>.AbilityScalarType value_type = 2;</code>
+       * <code>.AbilityScalarType valueType = 2;</code>
        * @return The enum numeric value on the wire for valueType.
        */
       @java.lang.Override public int getValueTypeValue() {
         return valueType_;
       }
       /**
-       * <code>.AbilityScalarType value_type = 2;</code>
+       * <code>.AbilityScalarType valueType = 2;</code>
        * @param value The enum numeric value on the wire for valueType to set.
        * @return This builder for chaining.
        */
       public Builder setValueTypeValue(int value) {
-        
         valueType_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>.AbilityScalarType value_type = 2;</code>
+       * <code>.AbilityScalarType valueType = 2;</code>
        * @return The valueType.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType getValueType() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType result = emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType.valueOf(valueType_);
+        emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType result = emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType.forNumber(valueType_);
         return result == null ? emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.AbilityScalarType value_type = 2;</code>
+       * <code>.AbilityScalarType valueType = 2;</code>
        * @param value The valueType to set.
        * @return This builder for chaining.
        */
@@ -1036,17 +998,17 @@ public final class AbilityScalarValueEntryOuterClass {
         if (value == null) {
           throw new NullPointerException();
         }
-        
+        bitField0_ |= 0x00000002;
         valueType_ = value.getNumber();
         onChanged();
         return this;
       }
       /**
-       * <code>.AbilityScalarType value_type = 2;</code>
+       * <code>.AbilityScalarType valueType = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearValueType() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         valueType_ = 0;
         onChanged();
         return this;
@@ -1075,6 +1037,7 @@ public final class AbilityScalarValueEntryOuterClass {
        * @return This builder for chaining.
        */
       public Builder setFloatValue(float value) {
+        
         valueCase_ = 3;
         value_ = value;
         onChanged();
@@ -1153,10 +1116,8 @@ public final class AbilityScalarValueEntryOuterClass {
        */
       public Builder setStringValue(
           java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  valueCase_ = 4;
+        if (value == null) { throw new NullPointerException(); }
+        valueCase_ = 4;
         value_ = value;
         onChanged();
         return this;
@@ -1180,10 +1141,8 @@ public final class AbilityScalarValueEntryOuterClass {
        */
       public Builder setStringValueBytes(
           com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
+        if (value == null) { throw new NullPointerException(); }
+        checkByteStringIsUtf8(value);
         valueCase_ = 4;
         value_ = value;
         onChanged();
@@ -1213,6 +1172,7 @@ public final class AbilityScalarValueEntryOuterClass {
        * @return This builder for chaining.
        */
       public Builder setIntValue(int value) {
+        
         valueCase_ = 5;
         value_ = value;
         onChanged();
@@ -1254,6 +1214,7 @@ public final class AbilityScalarValueEntryOuterClass {
        * @return This builder for chaining.
        */
       public Builder setUintValue(int value) {
+        
         valueCase_ = 6;
         value_ = value;
         onChanged();
@@ -1304,7 +1265,18 @@ public final class AbilityScalarValueEntryOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new AbilityScalarValueEntry(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -1338,20 +1310,20 @@ public final class AbilityScalarValueEntryOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\035AbilityScalarValueEntry.proto\032\027Ability" +
-      "ScalarType.proto\032\023AbilityString.proto\"\301\001" +
+      "\n\035AbilityScalarValueEntry.proto\032\023Ability" +
+      "String.proto\032\027AbilityScalarType.proto\"\300\001" +
       "\n\027AbilityScalarValueEntry\022\033\n\003key\030\001 \001(\0132\016" +
-      ".AbilityString\022&\n\nvalue_type\030\002 \001(\0162\022.Abi" +
-      "lityScalarType\022\025\n\013float_value\030\003 \001(\002H\000\022\026\n" +
-      "\014string_value\030\004 \001(\tH\000\022\023\n\tint_value\030\005 \001(\005" +
-      "H\000\022\024\n\nuint_value\030\006 \001(\rH\000B\007\n\005valueB\033\n\031emu" +
-      ".grasscutter.net.protob\006proto3"
+      ".AbilityString\022%\n\tvalueType\030\002 \001(\0162\022.Abil" +
+      "ityScalarType\022\025\n\013float_value\030\003 \001(\002H\000\022\026\n\014" +
+      "string_value\030\004 \001(\tH\000\022\023\n\tint_value\030\005 \001(\005H" +
+      "\000\022\024\n\nuint_value\030\006 \001(\rH\000B\007\n\005valueB\033\n\031emu." +
+      "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.AbilityStringOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.getDescriptor(),
         });
     internal_static_AbilityScalarValueEntry_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -1359,8 +1331,8 @@ public final class AbilityScalarValueEntryOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilityScalarValueEntry_descriptor,
         new java.lang.String[] { "Key", "ValueType", "FloatValue", "StringValue", "IntValue", "UintValue", "Value", });
-    emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.getDescriptor();
     emu.grasscutter.net.proto.AbilityStringOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

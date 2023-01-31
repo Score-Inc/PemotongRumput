@@ -19,13 +19,13 @@ public final class ServantInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 master_entity_id = 1;</code>
+     * <code>uint32 masterEntityId = 1;</code>
      * @return The masterEntityId.
      */
     int getMasterEntityId();
 
     /**
-     * <code>uint32 born_slot_index = 2;</code>
+     * <code>uint32 bornSlotIndex = 2;</code>
      * @return The bornSlotIndex.
      */
     int getBornSlotIndex();
@@ -57,53 +57,6 @@ public final class ServantInfoOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private ServantInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              masterEntityId_ = input.readUInt32();
-              break;
-            }
-            case 16: {
-
-              bornSlotIndex_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.ServantInfoOuterClass.internal_static_ServantInfo_descriptor;
@@ -117,10 +70,10 @@ public final class ServantInfoOuterClass {
               emu.grasscutter.net.proto.ServantInfoOuterClass.ServantInfo.class, emu.grasscutter.net.proto.ServantInfoOuterClass.ServantInfo.Builder.class);
     }
 
-    public static final int MASTER_ENTITY_ID_FIELD_NUMBER = 1;
-    private int masterEntityId_;
+    public static final int MASTERENTITYID_FIELD_NUMBER = 1;
+    private int masterEntityId_ = 0;
     /**
-     * <code>uint32 master_entity_id = 1;</code>
+     * <code>uint32 masterEntityId = 1;</code>
      * @return The masterEntityId.
      */
     @java.lang.Override
@@ -128,10 +81,10 @@ public final class ServantInfoOuterClass {
       return masterEntityId_;
     }
 
-    public static final int BORN_SLOT_INDEX_FIELD_NUMBER = 2;
-    private int bornSlotIndex_;
+    public static final int BORNSLOTINDEX_FIELD_NUMBER = 2;
+    private int bornSlotIndex_ = 0;
     /**
-     * <code>uint32 born_slot_index = 2;</code>
+     * <code>uint32 bornSlotIndex = 2;</code>
      * @return The bornSlotIndex.
      */
     @java.lang.Override
@@ -159,7 +112,7 @@ public final class ServantInfoOuterClass {
       if (bornSlotIndex_ != 0) {
         output.writeUInt32(2, bornSlotIndex_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -176,7 +129,7 @@ public final class ServantInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(2, bornSlotIndex_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -195,7 +148,7 @@ public final class ServantInfoOuterClass {
           != other.getMasterEntityId()) return false;
       if (getBornSlotIndex()
           != other.getBornSlotIndex()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -206,11 +159,11 @@ public final class ServantInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MASTER_ENTITY_ID_FIELD_NUMBER;
+      hash = (37 * hash) + MASTERENTITYID_FIELD_NUMBER;
       hash = (53 * hash) + getMasterEntityId();
-      hash = (37 * hash) + BORN_SLOT_INDEX_FIELD_NUMBER;
+      hash = (37 * hash) + BORNSLOTINDEX_FIELD_NUMBER;
       hash = (53 * hash) + getBornSlotIndex();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -327,26 +280,20 @@ public final class ServantInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.ServantInfoOuterClass.ServantInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         masterEntityId_ = 0;
-
         bornSlotIndex_ = 0;
-
         return this;
       }
 
@@ -373,10 +320,19 @@ public final class ServantInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ServantInfoOuterClass.ServantInfo buildPartial() {
         emu.grasscutter.net.proto.ServantInfoOuterClass.ServantInfo result = new emu.grasscutter.net.proto.ServantInfoOuterClass.ServantInfo(this);
-        result.masterEntityId_ = masterEntityId_;
-        result.bornSlotIndex_ = bornSlotIndex_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.ServantInfoOuterClass.ServantInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.masterEntityId_ = masterEntityId_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.bornSlotIndex_ = bornSlotIndex_;
+        }
       }
 
       @java.lang.Override
@@ -429,7 +385,7 @@ public final class ServantInfoOuterClass {
         if (other.getBornSlotIndex() != 0) {
           setBornSlotIndex(other.getBornSlotIndex());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -444,23 +400,47 @@ public final class ServantInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.ServantInfoOuterClass.ServantInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                masterEntityId_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              case 16: {
+                bornSlotIndex_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 16
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.ServantInfoOuterClass.ServantInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private int masterEntityId_ ;
       /**
-       * <code>uint32 master_entity_id = 1;</code>
+       * <code>uint32 masterEntityId = 1;</code>
        * @return The masterEntityId.
        */
       @java.lang.Override
@@ -468,22 +448,23 @@ public final class ServantInfoOuterClass {
         return masterEntityId_;
       }
       /**
-       * <code>uint32 master_entity_id = 1;</code>
+       * <code>uint32 masterEntityId = 1;</code>
        * @param value The masterEntityId to set.
        * @return This builder for chaining.
        */
       public Builder setMasterEntityId(int value) {
         
         masterEntityId_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 master_entity_id = 1;</code>
+       * <code>uint32 masterEntityId = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearMasterEntityId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         masterEntityId_ = 0;
         onChanged();
         return this;
@@ -491,7 +472,7 @@ public final class ServantInfoOuterClass {
 
       private int bornSlotIndex_ ;
       /**
-       * <code>uint32 born_slot_index = 2;</code>
+       * <code>uint32 bornSlotIndex = 2;</code>
        * @return The bornSlotIndex.
        */
       @java.lang.Override
@@ -499,22 +480,23 @@ public final class ServantInfoOuterClass {
         return bornSlotIndex_;
       }
       /**
-       * <code>uint32 born_slot_index = 2;</code>
+       * <code>uint32 bornSlotIndex = 2;</code>
        * @param value The bornSlotIndex to set.
        * @return This builder for chaining.
        */
       public Builder setBornSlotIndex(int value) {
         
         bornSlotIndex_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 born_slot_index = 2;</code>
+       * <code>uint32 bornSlotIndex = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearBornSlotIndex() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         bornSlotIndex_ = 0;
         onChanged();
         return this;
@@ -552,7 +534,18 @@ public final class ServantInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new ServantInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -586,10 +579,9 @@ public final class ServantInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021ServantInfo.proto\"@\n\013ServantInfo\022\030\n\020ma" +
-      "ster_entity_id\030\001 \001(\r\022\027\n\017born_slot_index\030" +
-      "\002 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
-      "o3"
+      "\n\021ServantInfo.proto\"<\n\013ServantInfo\022\026\n\016ma" +
+      "sterEntityId\030\001 \001(\r\022\025\n\rbornSlotIndex\030\002 \001(" +
+      "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

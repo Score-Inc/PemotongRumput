@@ -19,34 +19,24 @@ public final class SetOpenStateRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 4;</code>
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 value = 5;</code>
+     * <code>uint32 value = 15;</code>
      * @return The value.
      */
     int getValue();
 
     /**
-     * <code>uint32 key = 12;</code>
+     * <code>uint32 key = 10;</code>
      * @return The key.
      */
     int getKey();
   }
   /**
-   * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 144;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   * }
-   * </pre>
-   *
    * Protobuf type {@code SetOpenStateRsp}
    */
   public static final class SetOpenStateRsp extends
@@ -73,58 +63,6 @@ public final class SetOpenStateRspOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private SetOpenStateRsp(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 32: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 40: {
-
-              value_ = input.readUInt32();
-              break;
-            }
-            case 96: {
-
-              key_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.SetOpenStateRspOuterClass.internal_static_SetOpenStateRsp_descriptor;
@@ -138,10 +76,141 @@ public final class SetOpenStateRspOuterClass {
               emu.grasscutter.net.proto.SetOpenStateRspOuterClass.SetOpenStateRsp.class, emu.grasscutter.net.proto.SetOpenStateRspOuterClass.SetOpenStateRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 4;
-    private int retcode_;
     /**
-     * <code>int32 retcode = 4;</code>
+     * Protobuf enum {@code SetOpenStateRsp.CLODPODDKLK}
+     */
+    public enum CLODPODDKLK
+        implements com.google.protobuf.ProtocolMessageEnum {
+      /**
+       * <code>NONE = 0;</code>
+       */
+      NONE(0, 0),
+      /**
+       * <code>PEPPOHPHJOJ = 125;</code>
+       */
+      PEPPOHPHJOJ(1, 125),
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      NNBKOLMPOEA(3, 1),
+      UNRECOGNIZED(-1, -1),
+      ;
+
+      /**
+       * <code>DCDNILFDFLB = 0;</code>
+       */
+      public static final CLODPODDKLK DCDNILFDFLB = NONE;
+      /**
+       * <code>NONE = 0;</code>
+       */
+      public static final int NONE_VALUE = 0;
+      /**
+       * <code>PEPPOHPHJOJ = 125;</code>
+       */
+      public static final int PEPPOHPHJOJ_VALUE = 125;
+      /**
+       * <code>DCDNILFDFLB = 0;</code>
+       */
+      public static final int DCDNILFDFLB_VALUE = 0;
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      public static final int NNBKOLMPOEA_VALUE = 1;
+
+
+      public final int getNumber() {
+        if (index == -1) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static CLODPODDKLK valueOf(int value) {
+        return forNumber(value);
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
+      public static CLODPODDKLK forNumber(int value) {
+        switch (value) {
+          case 0: return NONE;
+          case 125: return PEPPOHPHJOJ;
+          case 1: return NNBKOLMPOEA;
+          default: return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<CLODPODDKLK>
+          internalGetValueMap() {
+        return internalValueMap;
+      }
+      private static final com.google.protobuf.Internal.EnumLiteMap<
+          CLODPODDKLK> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<CLODPODDKLK>() {
+              public CLODPODDKLK findValueByNumber(int number) {
+                return CLODPODDKLK.forNumber(number);
+              }
+            };
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor
+          getValueDescriptor() {
+        if (index == -1) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
+        return getDescriptor().getValues().get(index);
+      }
+      public final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptorForType() {
+        return getDescriptor();
+      }
+      public static final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptor() {
+        return emu.grasscutter.net.proto.SetOpenStateRspOuterClass.SetOpenStateRsp.getDescriptor().getEnumTypes().get(0);
+      }
+
+      private static final CLODPODDKLK[] VALUES = getStaticValuesArray();
+      private static CLODPODDKLK[] getStaticValuesArray() {
+        return new CLODPODDKLK[] {
+          NONE, PEPPOHPHJOJ, DCDNILFDFLB, NNBKOLMPOEA, 
+        };
+      }
+      public static CLODPODDKLK valueOf(
+          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException(
+            "EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      private final int index;
+      private final int value;
+
+      private CLODPODDKLK(int index, int value) {
+        this.index = index;
+        this.value = value;
+      }
+
+      // @@protoc_insertion_point(enum_scope:SetOpenStateRsp.CLODPODDKLK)
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 9;
+    private int retcode_ = 0;
+    /**
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -149,10 +218,10 @@ public final class SetOpenStateRspOuterClass {
       return retcode_;
     }
 
-    public static final int VALUE_FIELD_NUMBER = 5;
-    private int value_;
+    public static final int VALUE_FIELD_NUMBER = 15;
+    private int value_ = 0;
     /**
-     * <code>uint32 value = 5;</code>
+     * <code>uint32 value = 15;</code>
      * @return The value.
      */
     @java.lang.Override
@@ -160,10 +229,10 @@ public final class SetOpenStateRspOuterClass {
       return value_;
     }
 
-    public static final int KEY_FIELD_NUMBER = 12;
-    private int key_;
+    public static final int KEY_FIELD_NUMBER = 10;
+    private int key_ = 0;
     /**
-     * <code>uint32 key = 12;</code>
+     * <code>uint32 key = 10;</code>
      * @return The key.
      */
     @java.lang.Override
@@ -186,15 +255,15 @@ public final class SetOpenStateRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(4, retcode_);
-      }
-      if (value_ != 0) {
-        output.writeUInt32(5, value_);
+        output.writeInt32(9, retcode_);
       }
       if (key_ != 0) {
-        output.writeUInt32(12, key_);
+        output.writeUInt32(10, key_);
       }
-      unknownFields.writeTo(output);
+      if (value_ != 0) {
+        output.writeUInt32(15, value_);
+      }
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -205,17 +274,17 @@ public final class SetOpenStateRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, retcode_);
-      }
-      if (value_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, value_);
+          .computeInt32Size(9, retcode_);
       }
       if (key_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, key_);
+          .computeUInt32Size(10, key_);
       }
-      size += unknownFields.getSerializedSize();
+      if (value_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, value_);
+      }
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -236,7 +305,7 @@ public final class SetOpenStateRspOuterClass {
           != other.getValue()) return false;
       if (getKey()
           != other.getKey()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -253,7 +322,7 @@ public final class SetOpenStateRspOuterClass {
       hash = (53 * hash) + getValue();
       hash = (37 * hash) + KEY_FIELD_NUMBER;
       hash = (53 * hash) + getKey();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -349,16 +418,6 @@ public final class SetOpenStateRspOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 144;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     * }
-     * </pre>
-     *
      * Protobuf type {@code SetOpenStateRsp}
      */
     public static final class Builder extends
@@ -380,28 +439,21 @@ public final class SetOpenStateRspOuterClass {
 
       // Construct using emu.grasscutter.net.proto.SetOpenStateRspOuterClass.SetOpenStateRsp.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         retcode_ = 0;
-
         value_ = 0;
-
         key_ = 0;
-
         return this;
       }
 
@@ -428,11 +480,22 @@ public final class SetOpenStateRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SetOpenStateRspOuterClass.SetOpenStateRsp buildPartial() {
         emu.grasscutter.net.proto.SetOpenStateRspOuterClass.SetOpenStateRsp result = new emu.grasscutter.net.proto.SetOpenStateRspOuterClass.SetOpenStateRsp(this);
-        result.retcode_ = retcode_;
-        result.value_ = value_;
-        result.key_ = key_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.SetOpenStateRspOuterClass.SetOpenStateRsp result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.retcode_ = retcode_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.value_ = value_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.key_ = key_;
+        }
       }
 
       @java.lang.Override
@@ -488,7 +551,7 @@ public final class SetOpenStateRspOuterClass {
         if (other.getKey() != 0) {
           setKey(other.getKey());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -503,23 +566,52 @@ public final class SetOpenStateRspOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.SetOpenStateRspOuterClass.SetOpenStateRsp parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 72: {
+                retcode_ = input.readInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 72
+              case 80: {
+                key_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 80
+              case 120: {
+                value_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 120
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.SetOpenStateRspOuterClass.SetOpenStateRsp) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 9;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -527,22 +619,23 @@ public final class SetOpenStateRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 9;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
       public Builder setRetcode(int value) {
         
         retcode_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         retcode_ = 0;
         onChanged();
         return this;
@@ -550,7 +643,7 @@ public final class SetOpenStateRspOuterClass {
 
       private int value_ ;
       /**
-       * <code>uint32 value = 5;</code>
+       * <code>uint32 value = 15;</code>
        * @return The value.
        */
       @java.lang.Override
@@ -558,22 +651,23 @@ public final class SetOpenStateRspOuterClass {
         return value_;
       }
       /**
-       * <code>uint32 value = 5;</code>
+       * <code>uint32 value = 15;</code>
        * @param value The value to set.
        * @return This builder for chaining.
        */
       public Builder setValue(int value) {
         
         value_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 value = 5;</code>
+       * <code>uint32 value = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearValue() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         value_ = 0;
         onChanged();
         return this;
@@ -581,7 +675,7 @@ public final class SetOpenStateRspOuterClass {
 
       private int key_ ;
       /**
-       * <code>uint32 key = 12;</code>
+       * <code>uint32 key = 10;</code>
        * @return The key.
        */
       @java.lang.Override
@@ -589,22 +683,23 @@ public final class SetOpenStateRspOuterClass {
         return key_;
       }
       /**
-       * <code>uint32 key = 12;</code>
+       * <code>uint32 key = 10;</code>
        * @param value The key to set.
        * @return This builder for chaining.
        */
       public Builder setKey(int value) {
         
         key_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 key = 12;</code>
+       * <code>uint32 key = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearKey() {
-        
+        bitField0_ = (bitField0_ & ~0x00000004);
         key_ = 0;
         onChanged();
         return this;
@@ -642,7 +737,18 @@ public final class SetOpenStateRspOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new SetOpenStateRsp(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -676,10 +782,12 @@ public final class SetOpenStateRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025SetOpenStateRsp.proto\">\n\017SetOpenStateR" +
-      "sp\022\017\n\007retcode\030\004 \001(\005\022\r\n\005value\030\005 \001(\r\022\013\n\003ke" +
-      "y\030\014 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
-      "oto3"
+      "\n\025SetOpenStateRsp.proto\"\216\001\n\017SetOpenState" +
+      "Rsp\022\017\n\007retcode\030\t \001(\005\022\r\n\005value\030\017 \001(\r\022\013\n\003k" +
+      "ey\030\n \001(\r\"N\n\013CLODPODDKLK\022\010\n\004NONE\020\000\022\017\n\013PEP" +
+      "POHPHJOJ\020}\022\017\n\013DCDNILFDFLB\020\000\022\017\n\013NNBKOLMPO" +
+      "EA\020\001\032\002\020\001B\033\n\031emu.grasscutter.net.protob\006p" +
+      "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

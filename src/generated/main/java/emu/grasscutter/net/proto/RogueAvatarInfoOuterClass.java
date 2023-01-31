@@ -19,22 +19,22 @@ public final class RogueAvatarInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_onstage = 2;</code>
-     * @return The isOnstage.
+     * <code>uint32 avatarId = 15;</code>
+     * @return The avatarId.
      */
-    boolean getIsOnstage();
+    int getAvatarId();
 
     /**
-     * <code>bool is_alive = 8;</code>
+     * <code>bool isAlive = 5;</code>
      * @return The isAlive.
      */
     boolean getIsAlive();
 
     /**
-     * <code>uint32 avatar_id = 5;</code>
-     * @return The avatarId.
+     * <code>bool egkmacmbgbe = 1;</code>
+     * @return The egkmacmbgbe.
      */
-    int getAvatarId();
+    boolean getEgkmacmbgbe();
   }
   /**
    * Protobuf type {@code RogueAvatarInfo}
@@ -63,58 +63,6 @@ public final class RogueAvatarInfoOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private RogueAvatarInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 16: {
-
-              isOnstage_ = input.readBool();
-              break;
-            }
-            case 40: {
-
-              avatarId_ = input.readUInt32();
-              break;
-            }
-            case 64: {
-
-              isAlive_ = input.readBool();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.internal_static_RogueAvatarInfo_descriptor;
@@ -128,21 +76,21 @@ public final class RogueAvatarInfoOuterClass {
               emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo.class, emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo.Builder.class);
     }
 
-    public static final int IS_ONSTAGE_FIELD_NUMBER = 2;
-    private boolean isOnstage_;
+    public static final int AVATARID_FIELD_NUMBER = 15;
+    private int avatarId_ = 0;
     /**
-     * <code>bool is_onstage = 2;</code>
-     * @return The isOnstage.
+     * <code>uint32 avatarId = 15;</code>
+     * @return The avatarId.
      */
     @java.lang.Override
-    public boolean getIsOnstage() {
-      return isOnstage_;
+    public int getAvatarId() {
+      return avatarId_;
     }
 
-    public static final int IS_ALIVE_FIELD_NUMBER = 8;
-    private boolean isAlive_;
+    public static final int ISALIVE_FIELD_NUMBER = 5;
+    private boolean isAlive_ = false;
     /**
-     * <code>bool is_alive = 8;</code>
+     * <code>bool isAlive = 5;</code>
      * @return The isAlive.
      */
     @java.lang.Override
@@ -150,15 +98,15 @@ public final class RogueAvatarInfoOuterClass {
       return isAlive_;
     }
 
-    public static final int AVATAR_ID_FIELD_NUMBER = 5;
-    private int avatarId_;
+    public static final int EGKMACMBGBE_FIELD_NUMBER = 1;
+    private boolean egkmacmbgbe_ = false;
     /**
-     * <code>uint32 avatar_id = 5;</code>
-     * @return The avatarId.
+     * <code>bool egkmacmbgbe = 1;</code>
+     * @return The egkmacmbgbe.
      */
     @java.lang.Override
-    public int getAvatarId() {
-      return avatarId_;
+    public boolean getEgkmacmbgbe() {
+      return egkmacmbgbe_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -175,16 +123,16 @@ public final class RogueAvatarInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isOnstage_ != false) {
-        output.writeBool(2, isOnstage_);
-      }
-      if (avatarId_ != 0) {
-        output.writeUInt32(5, avatarId_);
+      if (egkmacmbgbe_ != false) {
+        output.writeBool(1, egkmacmbgbe_);
       }
       if (isAlive_ != false) {
-        output.writeBool(8, isAlive_);
+        output.writeBool(5, isAlive_);
       }
-      unknownFields.writeTo(output);
+      if (avatarId_ != 0) {
+        output.writeUInt32(15, avatarId_);
+      }
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -193,19 +141,19 @@ public final class RogueAvatarInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isOnstage_ != false) {
+      if (egkmacmbgbe_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, isOnstage_);
-      }
-      if (avatarId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, avatarId_);
+          .computeBoolSize(1, egkmacmbgbe_);
       }
       if (isAlive_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isAlive_);
+          .computeBoolSize(5, isAlive_);
       }
-      size += unknownFields.getSerializedSize();
+      if (avatarId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, avatarId_);
+      }
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -220,13 +168,13 @@ public final class RogueAvatarInfoOuterClass {
       }
       emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo other = (emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo) obj;
 
-      if (getIsOnstage()
-          != other.getIsOnstage()) return false;
-      if (getIsAlive()
-          != other.getIsAlive()) return false;
       if (getAvatarId()
           != other.getAvatarId()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (getIsAlive()
+          != other.getIsAlive()) return false;
+      if (getEgkmacmbgbe()
+          != other.getEgkmacmbgbe()) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -237,15 +185,15 @@ public final class RogueAvatarInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_ONSTAGE_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsOnstage());
-      hash = (37 * hash) + IS_ALIVE_FIELD_NUMBER;
+      hash = (37 * hash) + AVATARID_FIELD_NUMBER;
+      hash = (53 * hash) + getAvatarId();
+      hash = (37 * hash) + ISALIVE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsAlive());
-      hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getAvatarId();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (37 * hash) + EGKMACMBGBE_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getEgkmacmbgbe());
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -362,28 +310,21 @@ public final class RogueAvatarInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isOnstage_ = false;
-
-        isAlive_ = false;
-
+        bitField0_ = 0;
         avatarId_ = 0;
-
+        isAlive_ = false;
+        egkmacmbgbe_ = false;
         return this;
       }
 
@@ -410,11 +351,22 @@ public final class RogueAvatarInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo buildPartial() {
         emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo result = new emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo(this);
-        result.isOnstage_ = isOnstage_;
-        result.isAlive_ = isAlive_;
-        result.avatarId_ = avatarId_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.avatarId_ = avatarId_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.isAlive_ = isAlive_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.egkmacmbgbe_ = egkmacmbgbe_;
+        }
       }
 
       @java.lang.Override
@@ -461,16 +413,16 @@ public final class RogueAvatarInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo other) {
         if (other == emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo.getDefaultInstance()) return this;
-        if (other.getIsOnstage() != false) {
-          setIsOnstage(other.getIsOnstage());
+        if (other.getAvatarId() != 0) {
+          setAvatarId(other.getAvatarId());
         }
         if (other.getIsAlive() != false) {
           setIsAlive(other.getIsAlive());
         }
-        if (other.getAvatarId() != 0) {
-          setAvatarId(other.getAvatarId());
+        if (other.getEgkmacmbgbe() != false) {
+          setEgkmacmbgbe(other.getEgkmacmbgbe());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -485,85 +437,52 @@ public final class RogueAvatarInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                egkmacmbgbe_ = input.readBool();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 8
+              case 40: {
+                isAlive_ = input.readBool();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 40
+              case 120: {
+                avatarId_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 120
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
-
-      private boolean isOnstage_ ;
-      /**
-       * <code>bool is_onstage = 2;</code>
-       * @return The isOnstage.
-       */
-      @java.lang.Override
-      public boolean getIsOnstage() {
-        return isOnstage_;
-      }
-      /**
-       * <code>bool is_onstage = 2;</code>
-       * @param value The isOnstage to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsOnstage(boolean value) {
-        
-        isOnstage_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_onstage = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsOnstage() {
-        
-        isOnstage_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean isAlive_ ;
-      /**
-       * <code>bool is_alive = 8;</code>
-       * @return The isAlive.
-       */
-      @java.lang.Override
-      public boolean getIsAlive() {
-        return isAlive_;
-      }
-      /**
-       * <code>bool is_alive = 8;</code>
-       * @param value The isAlive to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsAlive(boolean value) {
-        
-        isAlive_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_alive = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsAlive() {
-        
-        isAlive_ = false;
-        onChanged();
-        return this;
-      }
+      private int bitField0_;
 
       private int avatarId_ ;
       /**
-       * <code>uint32 avatar_id = 5;</code>
+       * <code>uint32 avatarId = 15;</code>
        * @return The avatarId.
        */
       @java.lang.Override
@@ -571,23 +490,88 @@ public final class RogueAvatarInfoOuterClass {
         return avatarId_;
       }
       /**
-       * <code>uint32 avatar_id = 5;</code>
+       * <code>uint32 avatarId = 15;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
        */
       public Builder setAvatarId(int value) {
         
         avatarId_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 avatar_id = 5;</code>
+       * <code>uint32 avatarId = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         avatarId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isAlive_ ;
+      /**
+       * <code>bool isAlive = 5;</code>
+       * @return The isAlive.
+       */
+      @java.lang.Override
+      public boolean getIsAlive() {
+        return isAlive_;
+      }
+      /**
+       * <code>bool isAlive = 5;</code>
+       * @param value The isAlive to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsAlive(boolean value) {
+        
+        isAlive_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool isAlive = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsAlive() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        isAlive_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean egkmacmbgbe_ ;
+      /**
+       * <code>bool egkmacmbgbe = 1;</code>
+       * @return The egkmacmbgbe.
+       */
+      @java.lang.Override
+      public boolean getEgkmacmbgbe() {
+        return egkmacmbgbe_;
+      }
+      /**
+       * <code>bool egkmacmbgbe = 1;</code>
+       * @param value The egkmacmbgbe to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEgkmacmbgbe(boolean value) {
+        
+        egkmacmbgbe_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool egkmacmbgbe = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEgkmacmbgbe() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        egkmacmbgbe_ = false;
         onChanged();
         return this;
       }
@@ -624,7 +608,18 @@ public final class RogueAvatarInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new RogueAvatarInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -658,10 +653,10 @@ public final class RogueAvatarInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025RogueAvatarInfo.proto\"J\n\017RogueAvatarIn" +
-      "fo\022\022\n\nis_onstage\030\002 \001(\010\022\020\n\010is_alive\030\010 \001(\010" +
-      "\022\021\n\tavatar_id\030\005 \001(\rB\033\n\031emu.grasscutter.n" +
-      "et.protob\006proto3"
+      "\n\025RogueAvatarInfo.proto\"I\n\017RogueAvatarIn" +
+      "fo\022\020\n\010avatarId\030\017 \001(\r\022\017\n\007isAlive\030\005 \001(\010\022\023\n" +
+      "\013egkmacmbgbe\030\001 \001(\010B\033\n\031emu.grasscutter.ne" +
+      "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -672,7 +667,7 @@ public final class RogueAvatarInfoOuterClass {
     internal_static_RogueAvatarInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RogueAvatarInfo_descriptor,
-        new java.lang.String[] { "IsOnstage", "IsAlive", "AvatarId", });
+        new java.lang.String[] { "AvatarId", "IsAlive", "Egkmacmbgbe", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

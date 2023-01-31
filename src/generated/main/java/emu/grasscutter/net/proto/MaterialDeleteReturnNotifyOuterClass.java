@@ -19,22 +19,11 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.MaterialDeleteReturnType type = 7;</code>
-     * @return The enum numeric value on the wire for type.
-     */
-    int getTypeValue();
-    /**
-     * <code>.MaterialDeleteReturnType type = 7;</code>
-     * @return The type.
-     */
-    emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType getType();
-
-    /**
-     * <code>map&lt;uint32, uint32&gt; Unk3300_OFOKFKBALJD = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; Unk3300_OFOKFKBALJD = 7;</code>
      */
     int getUnk3300OFOKFKBALJDCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; Unk3300_OFOKFKBALJD = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; Unk3300_OFOKFKBALJD = 7;</code>
      */
     boolean containsUnk3300OFOKFKBALJD(
         int key);
@@ -45,30 +34,28 @@ public final class MaterialDeleteReturnNotifyOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getUnk3300OFOKFKBALJD();
     /**
-     * <code>map&lt;uint32, uint32&gt; Unk3300_OFOKFKBALJD = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; Unk3300_OFOKFKBALJD = 7;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getUnk3300OFOKFKBALJDMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; Unk3300_OFOKFKBALJD = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; Unk3300_OFOKFKBALJD = 7;</code>
      */
-
     int getUnk3300OFOKFKBALJDOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; Unk3300_OFOKFKBALJD = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; Unk3300_OFOKFKBALJD = 7;</code>
      */
-
     int getUnk3300OFOKFKBALJDOrThrow(
         int key);
 
     /**
-     * <code>map&lt;uint32, uint32&gt; Unk3300_LAIHDKJAHAF = 8;</code>
+     * <code>map&lt;uint32, uint32&gt; Unk3300_LAIHDKJAHAF = 10;</code>
      */
     int getUnk3300LAIHDKJAHAFCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; Unk3300_LAIHDKJAHAF = 8;</code>
+     * <code>map&lt;uint32, uint32&gt; Unk3300_LAIHDKJAHAF = 10;</code>
      */
     boolean containsUnk3300LAIHDKJAHAF(
         int key);
@@ -79,35 +66,34 @@ public final class MaterialDeleteReturnNotifyOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getUnk3300LAIHDKJAHAF();
     /**
-     * <code>map&lt;uint32, uint32&gt; Unk3300_LAIHDKJAHAF = 8;</code>
+     * <code>map&lt;uint32, uint32&gt; Unk3300_LAIHDKJAHAF = 10;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getUnk3300LAIHDKJAHAFMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; Unk3300_LAIHDKJAHAF = 8;</code>
+     * <code>map&lt;uint32, uint32&gt; Unk3300_LAIHDKJAHAF = 10;</code>
      */
-
     int getUnk3300LAIHDKJAHAFOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; Unk3300_LAIHDKJAHAF = 8;</code>
+     * <code>map&lt;uint32, uint32&gt; Unk3300_LAIHDKJAHAF = 10;</code>
      */
-
     int getUnk3300LAIHDKJAHAFOrThrow(
         int key);
+
+    /**
+     * <code>.MaterialDeleteReturnType type = 11;</code>
+     * @return The enum numeric value on the wire for type.
+     */
+    int getTypeValue();
+    /**
+     * <code>.MaterialDeleteReturnType type = 11;</code>
+     * @return The type.
+     */
+    emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType getType();
   }
   /**
-   * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 698;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   * }
-   * </pre>
-   *
    * Protobuf type {@code MaterialDeleteReturnNotify}
    */
   public static final class MaterialDeleteReturnNotify extends
@@ -135,76 +121,6 @@ public final class MaterialDeleteReturnNotifyOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private MaterialDeleteReturnNotify(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 56: {
-              int rawValue = input.readEnum();
-
-              type_ = rawValue;
-              break;
-            }
-            case 66: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                unk3300LAIHDKJAHAF_ = com.google.protobuf.MapField.newMapField(
-                    Unk3300LAIHDKJAHAFDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000002;
-              }
-              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              unk3300LAIHDKJAHAF__ = input.readMessage(
-                  Unk3300LAIHDKJAHAFDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              unk3300LAIHDKJAHAF_.getMutableMap().put(
-                  unk3300LAIHDKJAHAF__.getKey(), unk3300LAIHDKJAHAF__.getValue());
-              break;
-            }
-            case 98: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                unk3300OFOKFKBALJD_ = com.google.protobuf.MapField.newMapField(
-                    Unk3300OFOKFKBALJDDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000001;
-              }
-              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              unk3300OFOKFKBALJD__ = input.readMessage(
-                  Unk3300OFOKFKBALJDDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              unk3300OFOKFKBALJD_.getMutableMap().put(
-                  unk3300OFOKFKBALJD__.getKey(), unk3300OFOKFKBALJD__.getValue());
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.MaterialDeleteReturnNotifyOuterClass.internal_static_MaterialDeleteReturnNotify_descriptor;
@@ -215,9 +131,9 @@ public final class MaterialDeleteReturnNotifyOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 12:
+        case 7:
           return internalGetUnk3300OFOKFKBALJD();
-        case 8:
+        case 10:
           return internalGetUnk3300LAIHDKJAHAF();
         default:
           throw new RuntimeException(
@@ -232,26 +148,138 @@ public final class MaterialDeleteReturnNotifyOuterClass {
               emu.grasscutter.net.proto.MaterialDeleteReturnNotifyOuterClass.MaterialDeleteReturnNotify.class, emu.grasscutter.net.proto.MaterialDeleteReturnNotifyOuterClass.MaterialDeleteReturnNotify.Builder.class);
     }
 
-    public static final int TYPE_FIELD_NUMBER = 7;
-    private int type_;
     /**
-     * <code>.MaterialDeleteReturnType type = 7;</code>
-     * @return The enum numeric value on the wire for type.
+     * Protobuf enum {@code MaterialDeleteReturnNotify.AMMCMEKCDML}
      */
-    @java.lang.Override public int getTypeValue() {
-      return type_;
-    }
-    /**
-     * <code>.MaterialDeleteReturnType type = 7;</code>
-     * @return The type.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType getType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType result = emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType.valueOf(type_);
-      return result == null ? emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType.UNRECOGNIZED : result;
+    public enum AMMCMEKCDML
+        implements com.google.protobuf.ProtocolMessageEnum {
+      /**
+       * <code>NONE = 0;</code>
+       */
+      NONE(0, 0),
+      /**
+       * <code>PEPPOHPHJOJ = 615;</code>
+       */
+      PEPPOHPHJOJ(1, 615),
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      NNBKOLMPOEA(3, 1),
+      UNRECOGNIZED(-1, -1),
+      ;
+
+      /**
+       * <code>DCDNILFDFLB = 0;</code>
+       */
+      public static final AMMCMEKCDML DCDNILFDFLB = NONE;
+      /**
+       * <code>NONE = 0;</code>
+       */
+      public static final int NONE_VALUE = 0;
+      /**
+       * <code>PEPPOHPHJOJ = 615;</code>
+       */
+      public static final int PEPPOHPHJOJ_VALUE = 615;
+      /**
+       * <code>DCDNILFDFLB = 0;</code>
+       */
+      public static final int DCDNILFDFLB_VALUE = 0;
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      public static final int NNBKOLMPOEA_VALUE = 1;
+
+
+      public final int getNumber() {
+        if (index == -1) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static AMMCMEKCDML valueOf(int value) {
+        return forNumber(value);
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
+      public static AMMCMEKCDML forNumber(int value) {
+        switch (value) {
+          case 0: return NONE;
+          case 615: return PEPPOHPHJOJ;
+          case 1: return NNBKOLMPOEA;
+          default: return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<AMMCMEKCDML>
+          internalGetValueMap() {
+        return internalValueMap;
+      }
+      private static final com.google.protobuf.Internal.EnumLiteMap<
+          AMMCMEKCDML> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<AMMCMEKCDML>() {
+              public AMMCMEKCDML findValueByNumber(int number) {
+                return AMMCMEKCDML.forNumber(number);
+              }
+            };
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor
+          getValueDescriptor() {
+        if (index == -1) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
+        return getDescriptor().getValues().get(index);
+      }
+      public final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptorForType() {
+        return getDescriptor();
+      }
+      public static final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptor() {
+        return emu.grasscutter.net.proto.MaterialDeleteReturnNotifyOuterClass.MaterialDeleteReturnNotify.getDescriptor().getEnumTypes().get(0);
+      }
+
+      private static final AMMCMEKCDML[] VALUES = getStaticValuesArray();
+      private static AMMCMEKCDML[] getStaticValuesArray() {
+        return new AMMCMEKCDML[] {
+          NONE, PEPPOHPHJOJ, DCDNILFDFLB, NNBKOLMPOEA, 
+        };
+      }
+      public static AMMCMEKCDML valueOf(
+          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException(
+            "EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      private final int index;
+      private final int value;
+
+      private AMMCMEKCDML(int index, int value) {
+        this.index = index;
+        this.value = value;
+      }
+
+      // @@protoc_insertion_point(enum_scope:MaterialDeleteReturnNotify.AMMCMEKCDML)
     }
 
-    public static final int UNK3300_OFOKFKBALJD_FIELD_NUMBER = 12;
+    public static final int UNK3300_OFOKFKBALJD_FIELD_NUMBER = 7;
     private static final class Unk3300OFOKFKBALJDDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -263,6 +291,7 @@ public final class MaterialDeleteReturnNotifyOuterClass {
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0);
     }
+    @SuppressWarnings("serial")
     private com.google.protobuf.MapField<
         java.lang.Integer, java.lang.Integer> unk3300OFOKFKBALJD_;
     private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
@@ -273,14 +302,12 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       }
       return unk3300OFOKFKBALJD_;
     }
-
     public int getUnk3300OFOKFKBALJDCount() {
       return internalGetUnk3300OFOKFKBALJD().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; Unk3300_OFOKFKBALJD = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; Unk3300_OFOKFKBALJD = 7;</code>
      */
-
     @java.lang.Override
     public boolean containsUnk3300OFOKFKBALJD(
         int key) {
@@ -296,18 +323,16 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       return getUnk3300OFOKFKBALJDMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; Unk3300_OFOKFKBALJD = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; Unk3300_OFOKFKBALJD = 7;</code>
      */
     @java.lang.Override
-
     public java.util.Map<java.lang.Integer, java.lang.Integer> getUnk3300OFOKFKBALJDMap() {
       return internalGetUnk3300OFOKFKBALJD().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; Unk3300_OFOKFKBALJD = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; Unk3300_OFOKFKBALJD = 7;</code>
      */
     @java.lang.Override
-
     public int getUnk3300OFOKFKBALJDOrDefault(
         int key,
         int defaultValue) {
@@ -317,10 +342,9 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; Unk3300_OFOKFKBALJD = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; Unk3300_OFOKFKBALJD = 7;</code>
      */
     @java.lang.Override
-
     public int getUnk3300OFOKFKBALJDOrThrow(
         int key) {
       
@@ -332,7 +356,7 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       return map.get(key);
     }
 
-    public static final int UNK3300_LAIHDKJAHAF_FIELD_NUMBER = 8;
+    public static final int UNK3300_LAIHDKJAHAF_FIELD_NUMBER = 10;
     private static final class Unk3300LAIHDKJAHAFDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -344,6 +368,7 @@ public final class MaterialDeleteReturnNotifyOuterClass {
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0);
     }
+    @SuppressWarnings("serial")
     private com.google.protobuf.MapField<
         java.lang.Integer, java.lang.Integer> unk3300LAIHDKJAHAF_;
     private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
@@ -354,14 +379,12 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       }
       return unk3300LAIHDKJAHAF_;
     }
-
     public int getUnk3300LAIHDKJAHAFCount() {
       return internalGetUnk3300LAIHDKJAHAF().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; Unk3300_LAIHDKJAHAF = 8;</code>
+     * <code>map&lt;uint32, uint32&gt; Unk3300_LAIHDKJAHAF = 10;</code>
      */
-
     @java.lang.Override
     public boolean containsUnk3300LAIHDKJAHAF(
         int key) {
@@ -377,18 +400,16 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       return getUnk3300LAIHDKJAHAFMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; Unk3300_LAIHDKJAHAF = 8;</code>
+     * <code>map&lt;uint32, uint32&gt; Unk3300_LAIHDKJAHAF = 10;</code>
      */
     @java.lang.Override
-
     public java.util.Map<java.lang.Integer, java.lang.Integer> getUnk3300LAIHDKJAHAFMap() {
       return internalGetUnk3300LAIHDKJAHAF().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; Unk3300_LAIHDKJAHAF = 8;</code>
+     * <code>map&lt;uint32, uint32&gt; Unk3300_LAIHDKJAHAF = 10;</code>
      */
     @java.lang.Override
-
     public int getUnk3300LAIHDKJAHAFOrDefault(
         int key,
         int defaultValue) {
@@ -398,10 +419,9 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; Unk3300_LAIHDKJAHAF = 8;</code>
+     * <code>map&lt;uint32, uint32&gt; Unk3300_LAIHDKJAHAF = 10;</code>
      */
     @java.lang.Override
-
     public int getUnk3300LAIHDKJAHAFOrThrow(
         int key) {
       
@@ -411,6 +431,24 @@ public final class MaterialDeleteReturnNotifyOuterClass {
         throw new java.lang.IllegalArgumentException();
       }
       return map.get(key);
+    }
+
+    public static final int TYPE_FIELD_NUMBER = 11;
+    private int type_ = 0;
+    /**
+     * <code>.MaterialDeleteReturnType type = 11;</code>
+     * @return The enum numeric value on the wire for type.
+     */
+    @java.lang.Override public int getTypeValue() {
+      return type_;
+    }
+    /**
+     * <code>.MaterialDeleteReturnType type = 11;</code>
+     * @return The type.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType getType() {
+      emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType result = emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType.forNumber(type_);
+      return result == null ? emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType.UNRECOGNIZED : result;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -427,22 +465,22 @@ public final class MaterialDeleteReturnNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (type_ != emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType.MATERIAL_DELETE_RETURN_TYPE_BAG.getNumber()) {
-        output.writeEnum(7, type_);
-      }
-      com.google.protobuf.GeneratedMessageV3
-        .serializeIntegerMapTo(
-          output,
-          internalGetUnk3300LAIHDKJAHAF(),
-          Unk3300LAIHDKJAHAFDefaultEntryHolder.defaultEntry,
-          8);
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetUnk3300OFOKFKBALJD(),
           Unk3300OFOKFKBALJDDefaultEntryHolder.defaultEntry,
-          12);
-      unknownFields.writeTo(output);
+          7);
+      com.google.protobuf.GeneratedMessageV3
+        .serializeIntegerMapTo(
+          output,
+          internalGetUnk3300LAIHDKJAHAF(),
+          Unk3300LAIHDKJAHAFDefaultEntryHolder.defaultEntry,
+          10);
+      if (type_ != emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType.MATERIAL_DELETE_RETURN_TYPE_BAG.getNumber()) {
+        output.writeEnum(11, type_);
+      }
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -451,9 +489,15 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (type_ != emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType.MATERIAL_DELETE_RETURN_TYPE_BAG.getNumber()) {
+      for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
+           : internalGetUnk3300OFOKFKBALJD().getMap().entrySet()) {
+        com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+        unk3300OFOKFKBALJD__ = Unk3300OFOKFKBALJDDefaultEntryHolder.defaultEntry.newBuilderForType()
+            .setKey(entry.getKey())
+            .setValue(entry.getValue())
+            .build();
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(7, type_);
+            .computeMessageSize(7, unk3300OFOKFKBALJD__);
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
            : internalGetUnk3300LAIHDKJAHAF().getMap().entrySet()) {
@@ -463,19 +507,13 @@ public final class MaterialDeleteReturnNotifyOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(8, unk3300LAIHDKJAHAF__);
+            .computeMessageSize(10, unk3300LAIHDKJAHAF__);
       }
-      for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetUnk3300OFOKFKBALJD().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        unk3300OFOKFKBALJD__ = Unk3300OFOKFKBALJDDefaultEntryHolder.defaultEntry.newBuilderForType()
-            .setKey(entry.getKey())
-            .setValue(entry.getValue())
-            .build();
+      if (type_ != emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType.MATERIAL_DELETE_RETURN_TYPE_BAG.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(12, unk3300OFOKFKBALJD__);
+          .computeEnumSize(11, type_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -490,12 +528,12 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       }
       emu.grasscutter.net.proto.MaterialDeleteReturnNotifyOuterClass.MaterialDeleteReturnNotify other = (emu.grasscutter.net.proto.MaterialDeleteReturnNotifyOuterClass.MaterialDeleteReturnNotify) obj;
 
-      if (type_ != other.type_) return false;
       if (!internalGetUnk3300OFOKFKBALJD().equals(
           other.internalGetUnk3300OFOKFKBALJD())) return false;
       if (!internalGetUnk3300LAIHDKJAHAF().equals(
           other.internalGetUnk3300LAIHDKJAHAF())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (type_ != other.type_) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -506,8 +544,6 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + type_;
       if (!internalGetUnk3300OFOKFKBALJD().getMap().isEmpty()) {
         hash = (37 * hash) + UNK3300_OFOKFKBALJD_FIELD_NUMBER;
         hash = (53 * hash) + internalGetUnk3300OFOKFKBALJD().hashCode();
@@ -516,7 +552,9 @@ public final class MaterialDeleteReturnNotifyOuterClass {
         hash = (37 * hash) + UNK3300_LAIHDKJAHAF_FIELD_NUMBER;
         hash = (53 * hash) + internalGetUnk3300LAIHDKJAHAF().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (37 * hash) + TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + type_;
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -612,16 +650,6 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 698;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     * }
-     * </pre>
-     *
      * Protobuf type {@code MaterialDeleteReturnNotify}
      */
     public static final class Builder extends
@@ -637,9 +665,9 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 12:
+          case 7:
             return internalGetUnk3300OFOKFKBALJD();
-          case 8:
+          case 10:
             return internalGetUnk3300LAIHDKJAHAF();
           default:
             throw new RuntimeException(
@@ -650,9 +678,9 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 12:
+          case 7:
             return internalGetMutableUnk3300OFOKFKBALJD();
-          case 8:
+          case 10:
             return internalGetMutableUnk3300LAIHDKJAHAF();
           default:
             throw new RuntimeException(
@@ -669,26 +697,21 @@ public final class MaterialDeleteReturnNotifyOuterClass {
 
       // Construct using emu.grasscutter.net.proto.MaterialDeleteReturnNotifyOuterClass.MaterialDeleteReturnNotify.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        type_ = 0;
-
+        bitField0_ = 0;
         internalGetMutableUnk3300OFOKFKBALJD().clear();
         internalGetMutableUnk3300LAIHDKJAHAF().clear();
+        type_ = 0;
         return this;
       }
 
@@ -715,14 +738,24 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.MaterialDeleteReturnNotifyOuterClass.MaterialDeleteReturnNotify buildPartial() {
         emu.grasscutter.net.proto.MaterialDeleteReturnNotifyOuterClass.MaterialDeleteReturnNotify result = new emu.grasscutter.net.proto.MaterialDeleteReturnNotifyOuterClass.MaterialDeleteReturnNotify(this);
-        int from_bitField0_ = bitField0_;
-        result.type_ = type_;
-        result.unk3300OFOKFKBALJD_ = internalGetUnk3300OFOKFKBALJD();
-        result.unk3300OFOKFKBALJD_.makeImmutable();
-        result.unk3300LAIHDKJAHAF_ = internalGetUnk3300LAIHDKJAHAF();
-        result.unk3300LAIHDKJAHAF_.makeImmutable();
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.MaterialDeleteReturnNotifyOuterClass.MaterialDeleteReturnNotify result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.unk3300OFOKFKBALJD_ = internalGetUnk3300OFOKFKBALJD();
+          result.unk3300OFOKFKBALJD_.makeImmutable();
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.unk3300LAIHDKJAHAF_ = internalGetUnk3300LAIHDKJAHAF();
+          result.unk3300LAIHDKJAHAF_.makeImmutable();
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.type_ = type_;
+        }
       }
 
       @java.lang.Override
@@ -769,14 +802,16 @@ public final class MaterialDeleteReturnNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MaterialDeleteReturnNotifyOuterClass.MaterialDeleteReturnNotify other) {
         if (other == emu.grasscutter.net.proto.MaterialDeleteReturnNotifyOuterClass.MaterialDeleteReturnNotify.getDefaultInstance()) return this;
+        internalGetMutableUnk3300OFOKFKBALJD().mergeFrom(
+            other.internalGetUnk3300OFOKFKBALJD());
+        bitField0_ |= 0x00000001;
+        internalGetMutableUnk3300LAIHDKJAHAF().mergeFrom(
+            other.internalGetUnk3300LAIHDKJAHAF());
+        bitField0_ |= 0x00000002;
         if (other.type_ != 0) {
           setTypeValue(other.getTypeValue());
         }
-        internalGetMutableUnk3300OFOKFKBALJD().mergeFrom(
-            other.internalGetUnk3300OFOKFKBALJD());
-        internalGetMutableUnk3300LAIHDKJAHAF().mergeFrom(
-            other.internalGetUnk3300LAIHDKJAHAF());
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -791,79 +826,61 @@ public final class MaterialDeleteReturnNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.MaterialDeleteReturnNotifyOuterClass.MaterialDeleteReturnNotify parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 58: {
+                com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+                unk3300OFOKFKBALJD__ = input.readMessage(
+                    Unk3300OFOKFKBALJDDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+                internalGetMutableUnk3300OFOKFKBALJD().getMutableMap().put(
+                    unk3300OFOKFKBALJD__.getKey(), unk3300OFOKFKBALJD__.getValue());
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 58
+              case 82: {
+                com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+                unk3300LAIHDKJAHAF__ = input.readMessage(
+                    Unk3300LAIHDKJAHAFDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+                internalGetMutableUnk3300LAIHDKJAHAF().getMutableMap().put(
+                    unk3300LAIHDKJAHAF__.getKey(), unk3300LAIHDKJAHAF__.getValue());
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 82
+              case 88: {
+                type_ = input.readEnum();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 88
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.MaterialDeleteReturnNotifyOuterClass.MaterialDeleteReturnNotify) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
 
-      private int type_ = 0;
-      /**
-       * <code>.MaterialDeleteReturnType type = 7;</code>
-       * @return The enum numeric value on the wire for type.
-       */
-      @java.lang.Override public int getTypeValue() {
-        return type_;
-      }
-      /**
-       * <code>.MaterialDeleteReturnType type = 7;</code>
-       * @param value The enum numeric value on the wire for type to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTypeValue(int value) {
-        
-        type_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.MaterialDeleteReturnType type = 7;</code>
-       * @return The type.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType getType() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType result = emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType.valueOf(type_);
-        return result == null ? emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.MaterialDeleteReturnType type = 7;</code>
-       * @param value The type to set.
-       * @return This builder for chaining.
-       */
-      public Builder setType(emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        type_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.MaterialDeleteReturnType type = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearType() {
-        
-        type_ = 0;
-        onChanged();
-        return this;
-      }
-
       private com.google.protobuf.MapField<
           java.lang.Integer, java.lang.Integer> unk3300OFOKFKBALJD_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetUnk3300OFOKFKBALJD() {
+          internalGetUnk3300OFOKFKBALJD() {
         if (unk3300OFOKFKBALJD_ == null) {
           return com.google.protobuf.MapField.emptyMapField(
               Unk3300OFOKFKBALJDDefaultEntryHolder.defaultEntry);
@@ -871,8 +888,7 @@ public final class MaterialDeleteReturnNotifyOuterClass {
         return unk3300OFOKFKBALJD_;
       }
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableUnk3300OFOKFKBALJD() {
-        onChanged();;
+          internalGetMutableUnk3300OFOKFKBALJD() {
         if (unk3300OFOKFKBALJD_ == null) {
           unk3300OFOKFKBALJD_ = com.google.protobuf.MapField.newMapField(
               Unk3300OFOKFKBALJDDefaultEntryHolder.defaultEntry);
@@ -880,16 +896,16 @@ public final class MaterialDeleteReturnNotifyOuterClass {
         if (!unk3300OFOKFKBALJD_.isMutable()) {
           unk3300OFOKFKBALJD_ = unk3300OFOKFKBALJD_.copy();
         }
+        bitField0_ |= 0x00000001;
+        onChanged();
         return unk3300OFOKFKBALJD_;
       }
-
       public int getUnk3300OFOKFKBALJDCount() {
         return internalGetUnk3300OFOKFKBALJD().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; Unk3300_OFOKFKBALJD = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; Unk3300_OFOKFKBALJD = 7;</code>
        */
-
       @java.lang.Override
       public boolean containsUnk3300OFOKFKBALJD(
           int key) {
@@ -905,18 +921,16 @@ public final class MaterialDeleteReturnNotifyOuterClass {
         return getUnk3300OFOKFKBALJDMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; Unk3300_OFOKFKBALJD = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; Unk3300_OFOKFKBALJD = 7;</code>
        */
       @java.lang.Override
-
       public java.util.Map<java.lang.Integer, java.lang.Integer> getUnk3300OFOKFKBALJDMap() {
         return internalGetUnk3300OFOKFKBALJD().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; Unk3300_OFOKFKBALJD = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; Unk3300_OFOKFKBALJD = 7;</code>
        */
       @java.lang.Override
-
       public int getUnk3300OFOKFKBALJDOrDefault(
           int key,
           int defaultValue) {
@@ -926,10 +940,9 @@ public final class MaterialDeleteReturnNotifyOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; Unk3300_OFOKFKBALJD = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; Unk3300_OFOKFKBALJD = 7;</code>
        */
       @java.lang.Override
-
       public int getUnk3300OFOKFKBALJDOrThrow(
           int key) {
         
@@ -940,16 +953,15 @@ public final class MaterialDeleteReturnNotifyOuterClass {
         }
         return map.get(key);
       }
-
       public Builder clearUnk3300OFOKFKBALJD() {
+        bitField0_ = (bitField0_ & ~0x00000001);
         internalGetMutableUnk3300OFOKFKBALJD().getMutableMap()
             .clear();
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; Unk3300_OFOKFKBALJD = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; Unk3300_OFOKFKBALJD = 7;</code>
        */
-
       public Builder removeUnk3300OFOKFKBALJD(
           int key) {
         
@@ -962,11 +974,12 @@ public final class MaterialDeleteReturnNotifyOuterClass {
        */
       @java.lang.Deprecated
       public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableUnk3300OFOKFKBALJD() {
+          getMutableUnk3300OFOKFKBALJD() {
+        bitField0_ |= 0x00000001;
         return internalGetMutableUnk3300OFOKFKBALJD().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; Unk3300_OFOKFKBALJD = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; Unk3300_OFOKFKBALJD = 7;</code>
        */
       public Builder putUnk3300OFOKFKBALJD(
           int key,
@@ -975,23 +988,24 @@ public final class MaterialDeleteReturnNotifyOuterClass {
         
         internalGetMutableUnk3300OFOKFKBALJD().getMutableMap()
             .put(key, value);
+        bitField0_ |= 0x00000001;
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; Unk3300_OFOKFKBALJD = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; Unk3300_OFOKFKBALJD = 7;</code>
        */
-
       public Builder putAllUnk3300OFOKFKBALJD(
           java.util.Map<java.lang.Integer, java.lang.Integer> values) {
         internalGetMutableUnk3300OFOKFKBALJD().getMutableMap()
             .putAll(values);
+        bitField0_ |= 0x00000001;
         return this;
       }
 
       private com.google.protobuf.MapField<
           java.lang.Integer, java.lang.Integer> unk3300LAIHDKJAHAF_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetUnk3300LAIHDKJAHAF() {
+          internalGetUnk3300LAIHDKJAHAF() {
         if (unk3300LAIHDKJAHAF_ == null) {
           return com.google.protobuf.MapField.emptyMapField(
               Unk3300LAIHDKJAHAFDefaultEntryHolder.defaultEntry);
@@ -999,8 +1013,7 @@ public final class MaterialDeleteReturnNotifyOuterClass {
         return unk3300LAIHDKJAHAF_;
       }
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableUnk3300LAIHDKJAHAF() {
-        onChanged();;
+          internalGetMutableUnk3300LAIHDKJAHAF() {
         if (unk3300LAIHDKJAHAF_ == null) {
           unk3300LAIHDKJAHAF_ = com.google.protobuf.MapField.newMapField(
               Unk3300LAIHDKJAHAFDefaultEntryHolder.defaultEntry);
@@ -1008,16 +1021,16 @@ public final class MaterialDeleteReturnNotifyOuterClass {
         if (!unk3300LAIHDKJAHAF_.isMutable()) {
           unk3300LAIHDKJAHAF_ = unk3300LAIHDKJAHAF_.copy();
         }
+        bitField0_ |= 0x00000002;
+        onChanged();
         return unk3300LAIHDKJAHAF_;
       }
-
       public int getUnk3300LAIHDKJAHAFCount() {
         return internalGetUnk3300LAIHDKJAHAF().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; Unk3300_LAIHDKJAHAF = 8;</code>
+       * <code>map&lt;uint32, uint32&gt; Unk3300_LAIHDKJAHAF = 10;</code>
        */
-
       @java.lang.Override
       public boolean containsUnk3300LAIHDKJAHAF(
           int key) {
@@ -1033,18 +1046,16 @@ public final class MaterialDeleteReturnNotifyOuterClass {
         return getUnk3300LAIHDKJAHAFMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; Unk3300_LAIHDKJAHAF = 8;</code>
+       * <code>map&lt;uint32, uint32&gt; Unk3300_LAIHDKJAHAF = 10;</code>
        */
       @java.lang.Override
-
       public java.util.Map<java.lang.Integer, java.lang.Integer> getUnk3300LAIHDKJAHAFMap() {
         return internalGetUnk3300LAIHDKJAHAF().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; Unk3300_LAIHDKJAHAF = 8;</code>
+       * <code>map&lt;uint32, uint32&gt; Unk3300_LAIHDKJAHAF = 10;</code>
        */
       @java.lang.Override
-
       public int getUnk3300LAIHDKJAHAFOrDefault(
           int key,
           int defaultValue) {
@@ -1054,10 +1065,9 @@ public final class MaterialDeleteReturnNotifyOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; Unk3300_LAIHDKJAHAF = 8;</code>
+       * <code>map&lt;uint32, uint32&gt; Unk3300_LAIHDKJAHAF = 10;</code>
        */
       @java.lang.Override
-
       public int getUnk3300LAIHDKJAHAFOrThrow(
           int key) {
         
@@ -1068,16 +1078,15 @@ public final class MaterialDeleteReturnNotifyOuterClass {
         }
         return map.get(key);
       }
-
       public Builder clearUnk3300LAIHDKJAHAF() {
+        bitField0_ = (bitField0_ & ~0x00000002);
         internalGetMutableUnk3300LAIHDKJAHAF().getMutableMap()
             .clear();
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; Unk3300_LAIHDKJAHAF = 8;</code>
+       * <code>map&lt;uint32, uint32&gt; Unk3300_LAIHDKJAHAF = 10;</code>
        */
-
       public Builder removeUnk3300LAIHDKJAHAF(
           int key) {
         
@@ -1090,11 +1099,12 @@ public final class MaterialDeleteReturnNotifyOuterClass {
        */
       @java.lang.Deprecated
       public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableUnk3300LAIHDKJAHAF() {
+          getMutableUnk3300LAIHDKJAHAF() {
+        bitField0_ |= 0x00000002;
         return internalGetMutableUnk3300LAIHDKJAHAF().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; Unk3300_LAIHDKJAHAF = 8;</code>
+       * <code>map&lt;uint32, uint32&gt; Unk3300_LAIHDKJAHAF = 10;</code>
        */
       public Builder putUnk3300LAIHDKJAHAF(
           int key,
@@ -1103,16 +1113,70 @@ public final class MaterialDeleteReturnNotifyOuterClass {
         
         internalGetMutableUnk3300LAIHDKJAHAF().getMutableMap()
             .put(key, value);
+        bitField0_ |= 0x00000002;
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; Unk3300_LAIHDKJAHAF = 8;</code>
+       * <code>map&lt;uint32, uint32&gt; Unk3300_LAIHDKJAHAF = 10;</code>
        */
-
       public Builder putAllUnk3300LAIHDKJAHAF(
           java.util.Map<java.lang.Integer, java.lang.Integer> values) {
         internalGetMutableUnk3300LAIHDKJAHAF().getMutableMap()
             .putAll(values);
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+
+      private int type_ = 0;
+      /**
+       * <code>.MaterialDeleteReturnType type = 11;</code>
+       * @return The enum numeric value on the wire for type.
+       */
+      @java.lang.Override public int getTypeValue() {
+        return type_;
+      }
+      /**
+       * <code>.MaterialDeleteReturnType type = 11;</code>
+       * @param value The enum numeric value on the wire for type to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTypeValue(int value) {
+        type_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.MaterialDeleteReturnType type = 11;</code>
+       * @return The type.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType getType() {
+        emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType result = emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType.forNumber(type_);
+        return result == null ? emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.MaterialDeleteReturnType type = 11;</code>
+       * @param value The type to set.
+       * @return This builder for chaining.
+       */
+      public Builder setType(emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        bitField0_ |= 0x00000004;
+        type_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.MaterialDeleteReturnType type = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearType() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        type_ = 0;
+        onChanged();
         return this;
       }
       @java.lang.Override
@@ -1148,7 +1212,18 @@ public final class MaterialDeleteReturnNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new MaterialDeleteReturnNotify(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -1193,17 +1268,19 @@ public final class MaterialDeleteReturnNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n MaterialDeleteReturnNotify.proto\032\036Mate" +
-      "rialDeleteReturnType.proto\"\337\002\n\032MaterialD" +
-      "eleteReturnNotify\022\'\n\004type\030\007 \001(\0162\031.Materi" +
-      "alDeleteReturnType\022P\n\023Unk3300_OFOKFKBALJ" +
-      "D\030\014 \003(\01323.MaterialDeleteReturnNotify.Unk" +
-      "3300OFOKFKBALJDEntry\022P\n\023Unk3300_LAIHDKJA" +
-      "HAF\030\010 \003(\01323.MaterialDeleteReturnNotify.U" +
-      "nk3300LAIHDKJAHAFEntry\0329\n\027Unk3300OFOKFKB" +
+      "rialDeleteReturnType.proto\"\260\003\n\032MaterialD" +
+      "eleteReturnNotify\022P\n\023Unk3300_OFOKFKBALJD" +
+      "\030\007 \003(\01323.MaterialDeleteReturnNotify.Unk3" +
+      "300OFOKFKBALJDEntry\022P\n\023Unk3300_LAIHDKJAH" +
+      "AF\030\n \003(\01323.MaterialDeleteReturnNotify.Un" +
+      "k3300LAIHDKJAHAFEntry\022\'\n\004type\030\013 \001(\0162\031.Ma" +
+      "terialDeleteReturnType\0329\n\027Unk3300OFOKFKB" +
       "ALJDEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028" +
       "\001\0329\n\027Unk3300LAIHDKJAHAFEntry\022\013\n\003key\030\001 \001(" +
-      "\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu.grasscutter." +
-      "net.protob\006proto3"
+      "\r\022\r\n\005value\030\002 \001(\r:\0028\001\"O\n\013AMMCMEKCDML\022\010\n\004N" +
+      "ONE\020\000\022\020\n\013PEPPOHPHJOJ\020\347\004\022\017\n\013DCDNILFDFLB\020\000" +
+      "\022\017\n\013NNBKOLMPOEA\020\001\032\002\020\001B\033\n\031emu.grasscutter" +
+      ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1215,7 +1292,7 @@ public final class MaterialDeleteReturnNotifyOuterClass {
     internal_static_MaterialDeleteReturnNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MaterialDeleteReturnNotify_descriptor,
-        new java.lang.String[] { "Type", "Unk3300OFOKFKBALJD", "Unk3300LAIHDKJAHAF", });
+        new java.lang.String[] { "Unk3300OFOKFKBALJD", "Unk3300LAIHDKJAHAF", "Type", });
     internal_static_MaterialDeleteReturnNotify_Unk3300OFOKFKBALJDEntry_descriptor =
       internal_static_MaterialDeleteReturnNotify_descriptor.getNestedTypes().get(0);
     internal_static_MaterialDeleteReturnNotify_Unk3300OFOKFKBALJDEntry_fieldAccessorTable = new

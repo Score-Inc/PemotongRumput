@@ -19,70 +19,70 @@ public final class HomeMarkPointSceneDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.Vector teapot_spirit_pos = 9;</code>
-     * @return Whether the teapotSpiritPos field is set.
+     * <code>repeated .HomeMarkPointFurnitureData furnitureList = 14;</code>
      */
-    boolean hasTeapotSpiritPos();
+    java.util.List<emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureData> 
+        getFurnitureListList();
     /**
-     * <code>.Vector teapot_spirit_pos = 9;</code>
-     * @return The teapotSpiritPos.
+     * <code>repeated .HomeMarkPointFurnitureData furnitureList = 14;</code>
      */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getTeapotSpiritPos();
+    emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureData getFurnitureList(int index);
     /**
-     * <code>.Vector teapot_spirit_pos = 9;</code>
+     * <code>repeated .HomeMarkPointFurnitureData furnitureList = 14;</code>
      */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getTeapotSpiritPosOrBuilder();
+    int getFurnitureListCount();
+    /**
+     * <code>repeated .HomeMarkPointFurnitureData furnitureList = 14;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureDataOrBuilder> 
+        getFurnitureListOrBuilderList();
+    /**
+     * <code>repeated .HomeMarkPointFurnitureData furnitureList = 14;</code>
+     */
+    emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureDataOrBuilder getFurnitureListOrBuilder(
+        int index);
 
     /**
-     * <code>uint32 scene_id = 6;</code>
-     * @return The sceneId.
-     */
-    int getSceneId();
-
-    /**
-     * <code>.Vector safe_point_pos = 11;</code>
-     * @return Whether the safePointPos field is set.
-     */
-    boolean hasSafePointPos();
-    /**
-     * <code>.Vector safe_point_pos = 11;</code>
-     * @return The safePointPos.
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getSafePointPos();
-    /**
-     * <code>.Vector safe_point_pos = 11;</code>
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getSafePointPosOrBuilder();
-
-    /**
-     * <code>uint32 module_id = 8;</code>
+     * <code>uint32 moduleId = 5;</code>
      * @return The moduleId.
      */
     int getModuleId();
 
     /**
-     * <code>repeated .HomeMarkPointFurnitureData furniture_list = 13;</code>
+     * <code>uint32 sceneId = 15;</code>
+     * @return The sceneId.
      */
-    java.util.List<emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureData> 
-        getFurnitureListList();
+    int getSceneId();
+
     /**
-     * <code>repeated .HomeMarkPointFurnitureData furniture_list = 13;</code>
+     * <code>.Vector safePointPos = 10;</code>
+     * @return Whether the safePointPos field is set.
      */
-    emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureData getFurnitureList(int index);
+    boolean hasSafePointPos();
     /**
-     * <code>repeated .HomeMarkPointFurnitureData furniture_list = 13;</code>
+     * <code>.Vector safePointPos = 10;</code>
+     * @return The safePointPos.
      */
-    int getFurnitureListCount();
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getSafePointPos();
     /**
-     * <code>repeated .HomeMarkPointFurnitureData furniture_list = 13;</code>
+     * <code>.Vector safePointPos = 10;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureDataOrBuilder> 
-        getFurnitureListOrBuilderList();
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getSafePointPosOrBuilder();
+
     /**
-     * <code>repeated .HomeMarkPointFurnitureData furniture_list = 13;</code>
+     * <code>.Vector teapotSpiritPos = 8;</code>
+     * @return Whether the teapotSpiritPos field is set.
      */
-    emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureDataOrBuilder getFurnitureListOrBuilder(
-        int index);
+    boolean hasTeapotSpiritPos();
+    /**
+     * <code>.Vector teapotSpiritPos = 8;</code>
+     * @return The teapotSpiritPos.
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getTeapotSpiritPos();
+    /**
+     * <code>.Vector teapotSpiritPos = 8;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getTeapotSpiritPosOrBuilder();
   }
   /**
    * Protobuf type {@code HomeMarkPointSceneData}
@@ -112,92 +112,6 @@ public final class HomeMarkPointSceneDataOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private HomeMarkPointSceneData(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 48: {
-
-              sceneId_ = input.readUInt32();
-              break;
-            }
-            case 64: {
-
-              moduleId_ = input.readUInt32();
-              break;
-            }
-            case 74: {
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
-              if (teapotSpiritPos_ != null) {
-                subBuilder = teapotSpiritPos_.toBuilder();
-              }
-              teapotSpiritPos_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(teapotSpiritPos_);
-                teapotSpiritPos_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 90: {
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
-              if (safePointPos_ != null) {
-                subBuilder = safePointPos_.toBuilder();
-              }
-              safePointPos_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(safePointPos_);
-                safePointPos_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 106: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                furnitureList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureData>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              furnitureList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureData.parser(), extensionRegistry));
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          furnitureList_ = java.util.Collections.unmodifiableList(furnitureList_);
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.internal_static_HomeMarkPointSceneData_descriptor;
@@ -211,91 +125,18 @@ public final class HomeMarkPointSceneDataOuterClass {
               emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData.class, emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData.Builder.class);
     }
 
-    public static final int TEAPOT_SPIRIT_POS_FIELD_NUMBER = 9;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector teapotSpiritPos_;
-    /**
-     * <code>.Vector teapot_spirit_pos = 9;</code>
-     * @return Whether the teapotSpiritPos field is set.
-     */
-    @java.lang.Override
-    public boolean hasTeapotSpiritPos() {
-      return teapotSpiritPos_ != null;
-    }
-    /**
-     * <code>.Vector teapot_spirit_pos = 9;</code>
-     * @return The teapotSpiritPos.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getTeapotSpiritPos() {
-      return teapotSpiritPos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : teapotSpiritPos_;
-    }
-    /**
-     * <code>.Vector teapot_spirit_pos = 9;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getTeapotSpiritPosOrBuilder() {
-      return getTeapotSpiritPos();
-    }
-
-    public static final int SCENE_ID_FIELD_NUMBER = 6;
-    private int sceneId_;
-    /**
-     * <code>uint32 scene_id = 6;</code>
-     * @return The sceneId.
-     */
-    @java.lang.Override
-    public int getSceneId() {
-      return sceneId_;
-    }
-
-    public static final int SAFE_POINT_POS_FIELD_NUMBER = 11;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector safePointPos_;
-    /**
-     * <code>.Vector safe_point_pos = 11;</code>
-     * @return Whether the safePointPos field is set.
-     */
-    @java.lang.Override
-    public boolean hasSafePointPos() {
-      return safePointPos_ != null;
-    }
-    /**
-     * <code>.Vector safe_point_pos = 11;</code>
-     * @return The safePointPos.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getSafePointPos() {
-      return safePointPos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : safePointPos_;
-    }
-    /**
-     * <code>.Vector safe_point_pos = 11;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getSafePointPosOrBuilder() {
-      return getSafePointPos();
-    }
-
-    public static final int MODULE_ID_FIELD_NUMBER = 8;
-    private int moduleId_;
-    /**
-     * <code>uint32 module_id = 8;</code>
-     * @return The moduleId.
-     */
-    @java.lang.Override
-    public int getModuleId() {
-      return moduleId_;
-    }
-
-    public static final int FURNITURE_LIST_FIELD_NUMBER = 13;
+    public static final int FURNITURELIST_FIELD_NUMBER = 14;
+    @SuppressWarnings("serial")
     private java.util.List<emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureData> furnitureList_;
     /**
-     * <code>repeated .HomeMarkPointFurnitureData furniture_list = 13;</code>
+     * <code>repeated .HomeMarkPointFurnitureData furnitureList = 14;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureData> getFurnitureListList() {
       return furnitureList_;
     }
     /**
-     * <code>repeated .HomeMarkPointFurnitureData furniture_list = 13;</code>
+     * <code>repeated .HomeMarkPointFurnitureData furnitureList = 14;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureDataOrBuilder> 
@@ -303,26 +144,100 @@ public final class HomeMarkPointSceneDataOuterClass {
       return furnitureList_;
     }
     /**
-     * <code>repeated .HomeMarkPointFurnitureData furniture_list = 13;</code>
+     * <code>repeated .HomeMarkPointFurnitureData furnitureList = 14;</code>
      */
     @java.lang.Override
     public int getFurnitureListCount() {
       return furnitureList_.size();
     }
     /**
-     * <code>repeated .HomeMarkPointFurnitureData furniture_list = 13;</code>
+     * <code>repeated .HomeMarkPointFurnitureData furnitureList = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureData getFurnitureList(int index) {
       return furnitureList_.get(index);
     }
     /**
-     * <code>repeated .HomeMarkPointFurnitureData furniture_list = 13;</code>
+     * <code>repeated .HomeMarkPointFurnitureData furnitureList = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureDataOrBuilder getFurnitureListOrBuilder(
         int index) {
       return furnitureList_.get(index);
+    }
+
+    public static final int MODULEID_FIELD_NUMBER = 5;
+    private int moduleId_ = 0;
+    /**
+     * <code>uint32 moduleId = 5;</code>
+     * @return The moduleId.
+     */
+    @java.lang.Override
+    public int getModuleId() {
+      return moduleId_;
+    }
+
+    public static final int SCENEID_FIELD_NUMBER = 15;
+    private int sceneId_ = 0;
+    /**
+     * <code>uint32 sceneId = 15;</code>
+     * @return The sceneId.
+     */
+    @java.lang.Override
+    public int getSceneId() {
+      return sceneId_;
+    }
+
+    public static final int SAFEPOINTPOS_FIELD_NUMBER = 10;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector safePointPos_;
+    /**
+     * <code>.Vector safePointPos = 10;</code>
+     * @return Whether the safePointPos field is set.
+     */
+    @java.lang.Override
+    public boolean hasSafePointPos() {
+      return safePointPos_ != null;
+    }
+    /**
+     * <code>.Vector safePointPos = 10;</code>
+     * @return The safePointPos.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getSafePointPos() {
+      return safePointPos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : safePointPos_;
+    }
+    /**
+     * <code>.Vector safePointPos = 10;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getSafePointPosOrBuilder() {
+      return safePointPos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : safePointPos_;
+    }
+
+    public static final int TEAPOTSPIRITPOS_FIELD_NUMBER = 8;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector teapotSpiritPos_;
+    /**
+     * <code>.Vector teapotSpiritPos = 8;</code>
+     * @return Whether the teapotSpiritPos field is set.
+     */
+    @java.lang.Override
+    public boolean hasTeapotSpiritPos() {
+      return teapotSpiritPos_ != null;
+    }
+    /**
+     * <code>.Vector teapotSpiritPos = 8;</code>
+     * @return The teapotSpiritPos.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getTeapotSpiritPos() {
+      return teapotSpiritPos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : teapotSpiritPos_;
+    }
+    /**
+     * <code>.Vector teapotSpiritPos = 8;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getTeapotSpiritPosOrBuilder() {
+      return teapotSpiritPos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : teapotSpiritPos_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -339,22 +254,22 @@ public final class HomeMarkPointSceneDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (sceneId_ != 0) {
-        output.writeUInt32(6, sceneId_);
-      }
       if (moduleId_ != 0) {
-        output.writeUInt32(8, moduleId_);
+        output.writeUInt32(5, moduleId_);
       }
       if (teapotSpiritPos_ != null) {
-        output.writeMessage(9, getTeapotSpiritPos());
+        output.writeMessage(8, getTeapotSpiritPos());
       }
       if (safePointPos_ != null) {
-        output.writeMessage(11, getSafePointPos());
+        output.writeMessage(10, getSafePointPos());
       }
       for (int i = 0; i < furnitureList_.size(); i++) {
-        output.writeMessage(13, furnitureList_.get(i));
+        output.writeMessage(14, furnitureList_.get(i));
       }
-      unknownFields.writeTo(output);
+      if (sceneId_ != 0) {
+        output.writeUInt32(15, sceneId_);
+      }
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -363,27 +278,27 @@ public final class HomeMarkPointSceneDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (sceneId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, sceneId_);
-      }
       if (moduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, moduleId_);
+          .computeUInt32Size(5, moduleId_);
       }
       if (teapotSpiritPos_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, getTeapotSpiritPos());
+          .computeMessageSize(8, getTeapotSpiritPos());
       }
       if (safePointPos_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, getSafePointPos());
+          .computeMessageSize(10, getSafePointPos());
       }
       for (int i = 0; i < furnitureList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, furnitureList_.get(i));
+          .computeMessageSize(14, furnitureList_.get(i));
       }
-      size += unknownFields.getSerializedSize();
+      if (sceneId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, sceneId_);
+      }
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -398,11 +313,10 @@ public final class HomeMarkPointSceneDataOuterClass {
       }
       emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData other = (emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData) obj;
 
-      if (hasTeapotSpiritPos() != other.hasTeapotSpiritPos()) return false;
-      if (hasTeapotSpiritPos()) {
-        if (!getTeapotSpiritPos()
-            .equals(other.getTeapotSpiritPos())) return false;
-      }
+      if (!getFurnitureListList()
+          .equals(other.getFurnitureListList())) return false;
+      if (getModuleId()
+          != other.getModuleId()) return false;
       if (getSceneId()
           != other.getSceneId()) return false;
       if (hasSafePointPos() != other.hasSafePointPos()) return false;
@@ -410,11 +324,12 @@ public final class HomeMarkPointSceneDataOuterClass {
         if (!getSafePointPos()
             .equals(other.getSafePointPos())) return false;
       }
-      if (getModuleId()
-          != other.getModuleId()) return false;
-      if (!getFurnitureListList()
-          .equals(other.getFurnitureListList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (hasTeapotSpiritPos() != other.hasTeapotSpiritPos()) return false;
+      if (hasTeapotSpiritPos()) {
+        if (!getTeapotSpiritPos()
+            .equals(other.getTeapotSpiritPos())) return false;
+      }
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -425,23 +340,23 @@ public final class HomeMarkPointSceneDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasTeapotSpiritPos()) {
-        hash = (37 * hash) + TEAPOT_SPIRIT_POS_FIELD_NUMBER;
-        hash = (53 * hash) + getTeapotSpiritPos().hashCode();
-      }
-      hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSceneId();
-      if (hasSafePointPos()) {
-        hash = (37 * hash) + SAFE_POINT_POS_FIELD_NUMBER;
-        hash = (53 * hash) + getSafePointPos().hashCode();
-      }
-      hash = (37 * hash) + MODULE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getModuleId();
       if (getFurnitureListCount() > 0) {
-        hash = (37 * hash) + FURNITURE_LIST_FIELD_NUMBER;
+        hash = (37 * hash) + FURNITURELIST_FIELD_NUMBER;
         hash = (53 * hash) + getFurnitureListList().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (37 * hash) + MODULEID_FIELD_NUMBER;
+      hash = (53 * hash) + getModuleId();
+      hash = (37 * hash) + SCENEID_FIELD_NUMBER;
+      hash = (53 * hash) + getSceneId();
+      if (hasSafePointPos()) {
+        hash = (37 * hash) + SAFEPOINTPOS_FIELD_NUMBER;
+        hash = (53 * hash) + getSafePointPos().hashCode();
+      }
+      if (hasTeapotSpiritPos()) {
+        hash = (37 * hash) + TEAPOTSPIRITPOS_FIELD_NUMBER;
+        hash = (53 * hash) + getTeapotSpiritPos().hashCode();
+      }
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -558,44 +473,36 @@ public final class HomeMarkPointSceneDataOuterClass {
 
       // Construct using emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getFurnitureListFieldBuilder();
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (teapotSpiritPosBuilder_ == null) {
-          teapotSpiritPos_ = null;
-        } else {
-          teapotSpiritPos_ = null;
-          teapotSpiritPosBuilder_ = null;
-        }
-        sceneId_ = 0;
-
-        if (safePointPosBuilder_ == null) {
-          safePointPos_ = null;
-        } else {
-          safePointPos_ = null;
-          safePointPosBuilder_ = null;
-        }
-        moduleId_ = 0;
-
+        bitField0_ = 0;
         if (furnitureListBuilder_ == null) {
           furnitureList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
         } else {
+          furnitureList_ = null;
           furnitureListBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
+        moduleId_ = 0;
+        sceneId_ = 0;
+        safePointPos_ = null;
+        if (safePointPosBuilder_ != null) {
+          safePointPosBuilder_.dispose();
+          safePointPosBuilder_ = null;
+        }
+        teapotSpiritPos_ = null;
+        if (teapotSpiritPosBuilder_ != null) {
+          teapotSpiritPosBuilder_.dispose();
+          teapotSpiritPosBuilder_ = null;
         }
         return this;
       }
@@ -623,19 +530,13 @@ public final class HomeMarkPointSceneDataOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData buildPartial() {
         emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData result = new emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData(this);
-        int from_bitField0_ = bitField0_;
-        if (teapotSpiritPosBuilder_ == null) {
-          result.teapotSpiritPos_ = teapotSpiritPos_;
-        } else {
-          result.teapotSpiritPos_ = teapotSpiritPosBuilder_.build();
-        }
-        result.sceneId_ = sceneId_;
-        if (safePointPosBuilder_ == null) {
-          result.safePointPos_ = safePointPos_;
-        } else {
-          result.safePointPos_ = safePointPosBuilder_.build();
-        }
-        result.moduleId_ = moduleId_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData result) {
         if (furnitureListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             furnitureList_ = java.util.Collections.unmodifiableList(furnitureList_);
@@ -645,8 +546,26 @@ public final class HomeMarkPointSceneDataOuterClass {
         } else {
           result.furnitureList_ = furnitureListBuilder_.build();
         }
-        onBuilt();
-        return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.moduleId_ = moduleId_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.sceneId_ = sceneId_;
+        }
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.safePointPos_ = safePointPosBuilder_ == null
+              ? safePointPos_
+              : safePointPosBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000010) != 0)) {
+          result.teapotSpiritPos_ = teapotSpiritPosBuilder_ == null
+              ? teapotSpiritPos_
+              : teapotSpiritPosBuilder_.build();
+        }
       }
 
       @java.lang.Override
@@ -693,18 +612,6 @@ public final class HomeMarkPointSceneDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData other) {
         if (other == emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData.getDefaultInstance()) return this;
-        if (other.hasTeapotSpiritPos()) {
-          mergeTeapotSpiritPos(other.getTeapotSpiritPos());
-        }
-        if (other.getSceneId() != 0) {
-          setSceneId(other.getSceneId());
-        }
-        if (other.hasSafePointPos()) {
-          mergeSafePointPos(other.getSafePointPos());
-        }
-        if (other.getModuleId() != 0) {
-          setModuleId(other.getModuleId());
-        }
         if (furnitureListBuilder_ == null) {
           if (!other.furnitureList_.isEmpty()) {
             if (furnitureList_.isEmpty()) {
@@ -731,7 +638,19 @@ public final class HomeMarkPointSceneDataOuterClass {
             }
           }
         }
-        this.mergeUnknownFields(other.unknownFields);
+        if (other.getModuleId() != 0) {
+          setModuleId(other.getModuleId());
+        }
+        if (other.getSceneId() != 0) {
+          setSceneId(other.getSceneId());
+        }
+        if (other.hasSafePointPos()) {
+          mergeSafePointPos(other.getSafePointPos());
+        }
+        if (other.hasTeapotSpiritPos()) {
+          mergeTeapotSpiritPos(other.getTeapotSpiritPos());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -746,320 +665,70 @@ public final class HomeMarkPointSceneDataOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 40: {
+                moduleId_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 40
+              case 66: {
+                input.readMessage(
+                    getTeapotSpiritPosFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000010;
+                break;
+              } // case 66
+              case 82: {
+                input.readMessage(
+                    getSafePointPosFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000008;
+                break;
+              } // case 82
+              case 114: {
+                emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureData m =
+                    input.readMessage(
+                        emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureData.parser(),
+                        extensionRegistry);
+                if (furnitureListBuilder_ == null) {
+                  ensureFurnitureListIsMutable();
+                  furnitureList_.add(m);
+                } else {
+                  furnitureListBuilder_.addMessage(m);
+                }
+                break;
+              } // case 114
+              case 120: {
+                sceneId_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 120
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
-
-      private emu.grasscutter.net.proto.VectorOuterClass.Vector teapotSpiritPos_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> teapotSpiritPosBuilder_;
-      /**
-       * <code>.Vector teapot_spirit_pos = 9;</code>
-       * @return Whether the teapotSpiritPos field is set.
-       */
-      public boolean hasTeapotSpiritPos() {
-        return teapotSpiritPosBuilder_ != null || teapotSpiritPos_ != null;
-      }
-      /**
-       * <code>.Vector teapot_spirit_pos = 9;</code>
-       * @return The teapotSpiritPos.
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector getTeapotSpiritPos() {
-        if (teapotSpiritPosBuilder_ == null) {
-          return teapotSpiritPos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : teapotSpiritPos_;
-        } else {
-          return teapotSpiritPosBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.Vector teapot_spirit_pos = 9;</code>
-       */
-      public Builder setTeapotSpiritPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (teapotSpiritPosBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          teapotSpiritPos_ = value;
-          onChanged();
-        } else {
-          teapotSpiritPosBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector teapot_spirit_pos = 9;</code>
-       */
-      public Builder setTeapotSpiritPos(
-          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
-        if (teapotSpiritPosBuilder_ == null) {
-          teapotSpiritPos_ = builderForValue.build();
-          onChanged();
-        } else {
-          teapotSpiritPosBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector teapot_spirit_pos = 9;</code>
-       */
-      public Builder mergeTeapotSpiritPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (teapotSpiritPosBuilder_ == null) {
-          if (teapotSpiritPos_ != null) {
-            teapotSpiritPos_ =
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(teapotSpiritPos_).mergeFrom(value).buildPartial();
-          } else {
-            teapotSpiritPos_ = value;
-          }
-          onChanged();
-        } else {
-          teapotSpiritPosBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector teapot_spirit_pos = 9;</code>
-       */
-      public Builder clearTeapotSpiritPos() {
-        if (teapotSpiritPosBuilder_ == null) {
-          teapotSpiritPos_ = null;
-          onChanged();
-        } else {
-          teapotSpiritPos_ = null;
-          teapotSpiritPosBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector teapot_spirit_pos = 9;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getTeapotSpiritPosBuilder() {
-        
-        onChanged();
-        return getTeapotSpiritPosFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.Vector teapot_spirit_pos = 9;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getTeapotSpiritPosOrBuilder() {
-        if (teapotSpiritPosBuilder_ != null) {
-          return teapotSpiritPosBuilder_.getMessageOrBuilder();
-        } else {
-          return teapotSpiritPos_ == null ?
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : teapotSpiritPos_;
-        }
-      }
-      /**
-       * <code>.Vector teapot_spirit_pos = 9;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
-          getTeapotSpiritPosFieldBuilder() {
-        if (teapotSpiritPosBuilder_ == null) {
-          teapotSpiritPosBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
-                  getTeapotSpiritPos(),
-                  getParentForChildren(),
-                  isClean());
-          teapotSpiritPos_ = null;
-        }
-        return teapotSpiritPosBuilder_;
-      }
-
-      private int sceneId_ ;
-      /**
-       * <code>uint32 scene_id = 6;</code>
-       * @return The sceneId.
-       */
-      @java.lang.Override
-      public int getSceneId() {
-        return sceneId_;
-      }
-      /**
-       * <code>uint32 scene_id = 6;</code>
-       * @param value The sceneId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSceneId(int value) {
-        
-        sceneId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 scene_id = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSceneId() {
-        
-        sceneId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private emu.grasscutter.net.proto.VectorOuterClass.Vector safePointPos_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> safePointPosBuilder_;
-      /**
-       * <code>.Vector safe_point_pos = 11;</code>
-       * @return Whether the safePointPos field is set.
-       */
-      public boolean hasSafePointPos() {
-        return safePointPosBuilder_ != null || safePointPos_ != null;
-      }
-      /**
-       * <code>.Vector safe_point_pos = 11;</code>
-       * @return The safePointPos.
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector getSafePointPos() {
-        if (safePointPosBuilder_ == null) {
-          return safePointPos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : safePointPos_;
-        } else {
-          return safePointPosBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.Vector safe_point_pos = 11;</code>
-       */
-      public Builder setSafePointPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (safePointPosBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          safePointPos_ = value;
-          onChanged();
-        } else {
-          safePointPosBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector safe_point_pos = 11;</code>
-       */
-      public Builder setSafePointPos(
-          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
-        if (safePointPosBuilder_ == null) {
-          safePointPos_ = builderForValue.build();
-          onChanged();
-        } else {
-          safePointPosBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector safe_point_pos = 11;</code>
-       */
-      public Builder mergeSafePointPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (safePointPosBuilder_ == null) {
-          if (safePointPos_ != null) {
-            safePointPos_ =
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(safePointPos_).mergeFrom(value).buildPartial();
-          } else {
-            safePointPos_ = value;
-          }
-          onChanged();
-        } else {
-          safePointPosBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector safe_point_pos = 11;</code>
-       */
-      public Builder clearSafePointPos() {
-        if (safePointPosBuilder_ == null) {
-          safePointPos_ = null;
-          onChanged();
-        } else {
-          safePointPos_ = null;
-          safePointPosBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector safe_point_pos = 11;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getSafePointPosBuilder() {
-        
-        onChanged();
-        return getSafePointPosFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.Vector safe_point_pos = 11;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getSafePointPosOrBuilder() {
-        if (safePointPosBuilder_ != null) {
-          return safePointPosBuilder_.getMessageOrBuilder();
-        } else {
-          return safePointPos_ == null ?
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : safePointPos_;
-        }
-      }
-      /**
-       * <code>.Vector safe_point_pos = 11;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
-          getSafePointPosFieldBuilder() {
-        if (safePointPosBuilder_ == null) {
-          safePointPosBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
-                  getSafePointPos(),
-                  getParentForChildren(),
-                  isClean());
-          safePointPos_ = null;
-        }
-        return safePointPosBuilder_;
-      }
-
-      private int moduleId_ ;
-      /**
-       * <code>uint32 module_id = 8;</code>
-       * @return The moduleId.
-       */
-      @java.lang.Override
-      public int getModuleId() {
-        return moduleId_;
-      }
-      /**
-       * <code>uint32 module_id = 8;</code>
-       * @param value The moduleId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setModuleId(int value) {
-        
-        moduleId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 module_id = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearModuleId() {
-        
-        moduleId_ = 0;
-        onChanged();
-        return this;
-      }
 
       private java.util.List<emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureData> furnitureList_ =
         java.util.Collections.emptyList();
@@ -1074,7 +743,7 @@ public final class HomeMarkPointSceneDataOuterClass {
           emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureData, emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureData.Builder, emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureDataOrBuilder> furnitureListBuilder_;
 
       /**
-       * <code>repeated .HomeMarkPointFurnitureData furniture_list = 13;</code>
+       * <code>repeated .HomeMarkPointFurnitureData furnitureList = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureData> getFurnitureListList() {
         if (furnitureListBuilder_ == null) {
@@ -1084,7 +753,7 @@ public final class HomeMarkPointSceneDataOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeMarkPointFurnitureData furniture_list = 13;</code>
+       * <code>repeated .HomeMarkPointFurnitureData furnitureList = 14;</code>
        */
       public int getFurnitureListCount() {
         if (furnitureListBuilder_ == null) {
@@ -1094,7 +763,7 @@ public final class HomeMarkPointSceneDataOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeMarkPointFurnitureData furniture_list = 13;</code>
+       * <code>repeated .HomeMarkPointFurnitureData furnitureList = 14;</code>
        */
       public emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureData getFurnitureList(int index) {
         if (furnitureListBuilder_ == null) {
@@ -1104,7 +773,7 @@ public final class HomeMarkPointSceneDataOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeMarkPointFurnitureData furniture_list = 13;</code>
+       * <code>repeated .HomeMarkPointFurnitureData furnitureList = 14;</code>
        */
       public Builder setFurnitureList(
           int index, emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureData value) {
@@ -1121,7 +790,7 @@ public final class HomeMarkPointSceneDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeMarkPointFurnitureData furniture_list = 13;</code>
+       * <code>repeated .HomeMarkPointFurnitureData furnitureList = 14;</code>
        */
       public Builder setFurnitureList(
           int index, emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureData.Builder builderForValue) {
@@ -1135,7 +804,7 @@ public final class HomeMarkPointSceneDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeMarkPointFurnitureData furniture_list = 13;</code>
+       * <code>repeated .HomeMarkPointFurnitureData furnitureList = 14;</code>
        */
       public Builder addFurnitureList(emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureData value) {
         if (furnitureListBuilder_ == null) {
@@ -1151,7 +820,7 @@ public final class HomeMarkPointSceneDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeMarkPointFurnitureData furniture_list = 13;</code>
+       * <code>repeated .HomeMarkPointFurnitureData furnitureList = 14;</code>
        */
       public Builder addFurnitureList(
           int index, emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureData value) {
@@ -1168,7 +837,7 @@ public final class HomeMarkPointSceneDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeMarkPointFurnitureData furniture_list = 13;</code>
+       * <code>repeated .HomeMarkPointFurnitureData furnitureList = 14;</code>
        */
       public Builder addFurnitureList(
           emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureData.Builder builderForValue) {
@@ -1182,7 +851,7 @@ public final class HomeMarkPointSceneDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeMarkPointFurnitureData furniture_list = 13;</code>
+       * <code>repeated .HomeMarkPointFurnitureData furnitureList = 14;</code>
        */
       public Builder addFurnitureList(
           int index, emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureData.Builder builderForValue) {
@@ -1196,7 +865,7 @@ public final class HomeMarkPointSceneDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeMarkPointFurnitureData furniture_list = 13;</code>
+       * <code>repeated .HomeMarkPointFurnitureData furnitureList = 14;</code>
        */
       public Builder addAllFurnitureList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureData> values) {
@@ -1211,7 +880,7 @@ public final class HomeMarkPointSceneDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeMarkPointFurnitureData furniture_list = 13;</code>
+       * <code>repeated .HomeMarkPointFurnitureData furnitureList = 14;</code>
        */
       public Builder clearFurnitureList() {
         if (furnitureListBuilder_ == null) {
@@ -1224,7 +893,7 @@ public final class HomeMarkPointSceneDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeMarkPointFurnitureData furniture_list = 13;</code>
+       * <code>repeated .HomeMarkPointFurnitureData furnitureList = 14;</code>
        */
       public Builder removeFurnitureList(int index) {
         if (furnitureListBuilder_ == null) {
@@ -1237,14 +906,14 @@ public final class HomeMarkPointSceneDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeMarkPointFurnitureData furniture_list = 13;</code>
+       * <code>repeated .HomeMarkPointFurnitureData furnitureList = 14;</code>
        */
       public emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureData.Builder getFurnitureListBuilder(
           int index) {
         return getFurnitureListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .HomeMarkPointFurnitureData furniture_list = 13;</code>
+       * <code>repeated .HomeMarkPointFurnitureData furnitureList = 14;</code>
        */
       public emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureDataOrBuilder getFurnitureListOrBuilder(
           int index) {
@@ -1254,7 +923,7 @@ public final class HomeMarkPointSceneDataOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeMarkPointFurnitureData furniture_list = 13;</code>
+       * <code>repeated .HomeMarkPointFurnitureData furnitureList = 14;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureDataOrBuilder> 
            getFurnitureListOrBuilderList() {
@@ -1265,14 +934,14 @@ public final class HomeMarkPointSceneDataOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeMarkPointFurnitureData furniture_list = 13;</code>
+       * <code>repeated .HomeMarkPointFurnitureData furnitureList = 14;</code>
        */
       public emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureData.Builder addFurnitureListBuilder() {
         return getFurnitureListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureData.getDefaultInstance());
       }
       /**
-       * <code>repeated .HomeMarkPointFurnitureData furniture_list = 13;</code>
+       * <code>repeated .HomeMarkPointFurnitureData furnitureList = 14;</code>
        */
       public emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureData.Builder addFurnitureListBuilder(
           int index) {
@@ -1280,7 +949,7 @@ public final class HomeMarkPointSceneDataOuterClass {
             index, emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureData.getDefaultInstance());
       }
       /**
-       * <code>repeated .HomeMarkPointFurnitureData furniture_list = 13;</code>
+       * <code>repeated .HomeMarkPointFurnitureData furnitureList = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureData.Builder> 
            getFurnitureListBuilderList() {
@@ -1299,6 +968,308 @@ public final class HomeMarkPointSceneDataOuterClass {
           furnitureList_ = null;
         }
         return furnitureListBuilder_;
+      }
+
+      private int moduleId_ ;
+      /**
+       * <code>uint32 moduleId = 5;</code>
+       * @return The moduleId.
+       */
+      @java.lang.Override
+      public int getModuleId() {
+        return moduleId_;
+      }
+      /**
+       * <code>uint32 moduleId = 5;</code>
+       * @param value The moduleId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setModuleId(int value) {
+        
+        moduleId_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 moduleId = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearModuleId() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        moduleId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int sceneId_ ;
+      /**
+       * <code>uint32 sceneId = 15;</code>
+       * @return The sceneId.
+       */
+      @java.lang.Override
+      public int getSceneId() {
+        return sceneId_;
+      }
+      /**
+       * <code>uint32 sceneId = 15;</code>
+       * @param value The sceneId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSceneId(int value) {
+        
+        sceneId_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 sceneId = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSceneId() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        sceneId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private emu.grasscutter.net.proto.VectorOuterClass.Vector safePointPos_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> safePointPosBuilder_;
+      /**
+       * <code>.Vector safePointPos = 10;</code>
+       * @return Whether the safePointPos field is set.
+       */
+      public boolean hasSafePointPos() {
+        return ((bitField0_ & 0x00000008) != 0);
+      }
+      /**
+       * <code>.Vector safePointPos = 10;</code>
+       * @return The safePointPos.
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector getSafePointPos() {
+        if (safePointPosBuilder_ == null) {
+          return safePointPos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : safePointPos_;
+        } else {
+          return safePointPosBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.Vector safePointPos = 10;</code>
+       */
+      public Builder setSafePointPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (safePointPosBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          safePointPos_ = value;
+        } else {
+          safePointPosBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000008;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.Vector safePointPos = 10;</code>
+       */
+      public Builder setSafePointPos(
+          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
+        if (safePointPosBuilder_ == null) {
+          safePointPos_ = builderForValue.build();
+        } else {
+          safePointPosBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000008;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.Vector safePointPos = 10;</code>
+       */
+      public Builder mergeSafePointPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (safePointPosBuilder_ == null) {
+          if (((bitField0_ & 0x00000008) != 0) &&
+            safePointPos_ != null &&
+            safePointPos_ != emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance()) {
+            getSafePointPosBuilder().mergeFrom(value);
+          } else {
+            safePointPos_ = value;
+          }
+        } else {
+          safePointPosBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000008;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.Vector safePointPos = 10;</code>
+       */
+      public Builder clearSafePointPos() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        safePointPos_ = null;
+        if (safePointPosBuilder_ != null) {
+          safePointPosBuilder_.dispose();
+          safePointPosBuilder_ = null;
+        }
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.Vector safePointPos = 10;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getSafePointPosBuilder() {
+        bitField0_ |= 0x00000008;
+        onChanged();
+        return getSafePointPosFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.Vector safePointPos = 10;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getSafePointPosOrBuilder() {
+        if (safePointPosBuilder_ != null) {
+          return safePointPosBuilder_.getMessageOrBuilder();
+        } else {
+          return safePointPos_ == null ?
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : safePointPos_;
+        }
+      }
+      /**
+       * <code>.Vector safePointPos = 10;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
+          getSafePointPosFieldBuilder() {
+        if (safePointPosBuilder_ == null) {
+          safePointPosBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
+                  getSafePointPos(),
+                  getParentForChildren(),
+                  isClean());
+          safePointPos_ = null;
+        }
+        return safePointPosBuilder_;
+      }
+
+      private emu.grasscutter.net.proto.VectorOuterClass.Vector teapotSpiritPos_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> teapotSpiritPosBuilder_;
+      /**
+       * <code>.Vector teapotSpiritPos = 8;</code>
+       * @return Whether the teapotSpiritPos field is set.
+       */
+      public boolean hasTeapotSpiritPos() {
+        return ((bitField0_ & 0x00000010) != 0);
+      }
+      /**
+       * <code>.Vector teapotSpiritPos = 8;</code>
+       * @return The teapotSpiritPos.
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector getTeapotSpiritPos() {
+        if (teapotSpiritPosBuilder_ == null) {
+          return teapotSpiritPos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : teapotSpiritPos_;
+        } else {
+          return teapotSpiritPosBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.Vector teapotSpiritPos = 8;</code>
+       */
+      public Builder setTeapotSpiritPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (teapotSpiritPosBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          teapotSpiritPos_ = value;
+        } else {
+          teapotSpiritPosBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000010;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.Vector teapotSpiritPos = 8;</code>
+       */
+      public Builder setTeapotSpiritPos(
+          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
+        if (teapotSpiritPosBuilder_ == null) {
+          teapotSpiritPos_ = builderForValue.build();
+        } else {
+          teapotSpiritPosBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000010;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.Vector teapotSpiritPos = 8;</code>
+       */
+      public Builder mergeTeapotSpiritPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (teapotSpiritPosBuilder_ == null) {
+          if (((bitField0_ & 0x00000010) != 0) &&
+            teapotSpiritPos_ != null &&
+            teapotSpiritPos_ != emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance()) {
+            getTeapotSpiritPosBuilder().mergeFrom(value);
+          } else {
+            teapotSpiritPos_ = value;
+          }
+        } else {
+          teapotSpiritPosBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000010;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.Vector teapotSpiritPos = 8;</code>
+       */
+      public Builder clearTeapotSpiritPos() {
+        bitField0_ = (bitField0_ & ~0x00000010);
+        teapotSpiritPos_ = null;
+        if (teapotSpiritPosBuilder_ != null) {
+          teapotSpiritPosBuilder_.dispose();
+          teapotSpiritPosBuilder_ = null;
+        }
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.Vector teapotSpiritPos = 8;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getTeapotSpiritPosBuilder() {
+        bitField0_ |= 0x00000010;
+        onChanged();
+        return getTeapotSpiritPosFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.Vector teapotSpiritPos = 8;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getTeapotSpiritPosOrBuilder() {
+        if (teapotSpiritPosBuilder_ != null) {
+          return teapotSpiritPosBuilder_.getMessageOrBuilder();
+        } else {
+          return teapotSpiritPos_ == null ?
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : teapotSpiritPos_;
+        }
+      }
+      /**
+       * <code>.Vector teapotSpiritPos = 8;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
+          getTeapotSpiritPosFieldBuilder() {
+        if (teapotSpiritPosBuilder_ == null) {
+          teapotSpiritPosBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
+                  getTeapotSpiritPos(),
+                  getParentForChildren(),
+                  isClean());
+          teapotSpiritPos_ = null;
+        }
+        return teapotSpiritPosBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1333,7 +1304,18 @@ public final class HomeMarkPointSceneDataOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new HomeMarkPointSceneData(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -1367,29 +1349,29 @@ public final class HomeMarkPointSceneDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034HomeMarkPointSceneData.proto\032 HomeMark" +
-      "PointFurnitureData.proto\032\014Vector.proto\"\267" +
-      "\001\n\026HomeMarkPointSceneData\022\"\n\021teapot_spir" +
-      "it_pos\030\t \001(\0132\007.Vector\022\020\n\010scene_id\030\006 \001(\r\022" +
-      "\037\n\016safe_point_pos\030\013 \001(\0132\007.Vector\022\021\n\tmodu" +
-      "le_id\030\010 \001(\r\0223\n\016furniture_list\030\r \003(\0132\033.Ho" +
-      "meMarkPointFurnitureDataB\033\n\031emu.grasscut" +
-      "ter.net.protob\006proto3"
+      "\n\034HomeMarkPointSceneData.proto\032\014Vector.p" +
+      "roto\032 HomeMarkPointFurnitureData.proto\"\260" +
+      "\001\n\026HomeMarkPointSceneData\0222\n\rfurnitureLi" +
+      "st\030\016 \003(\0132\033.HomeMarkPointFurnitureData\022\020\n" +
+      "\010moduleId\030\005 \001(\r\022\017\n\007sceneId\030\017 \001(\r\022\035\n\014safe" +
+      "PointPos\030\n \001(\0132\007.Vector\022 \n\017teapotSpiritP" +
+      "os\030\010 \001(\0132\007.VectorB\033\n\031emu.grasscutter.net" +
+      ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.VectorOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.getDescriptor(),
         });
     internal_static_HomeMarkPointSceneData_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_HomeMarkPointSceneData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeMarkPointSceneData_descriptor,
-        new java.lang.String[] { "TeapotSpiritPos", "SceneId", "SafePointPos", "ModuleId", "FurnitureList", });
-    emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.getDescriptor();
+        new java.lang.String[] { "FurnitureList", "ModuleId", "SceneId", "SafePointPos", "TeapotSpiritPos", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

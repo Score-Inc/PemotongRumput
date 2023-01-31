@@ -19,32 +19,32 @@ public final class MailItemOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.EquipParam equip_param = 1;</code>
+     * <code>.EquipParam equipParam = 1;</code>
      * @return Whether the equipParam field is set.
      */
     boolean hasEquipParam();
     /**
-     * <code>.EquipParam equip_param = 1;</code>
+     * <code>.EquipParam equipParam = 1;</code>
      * @return The equipParam.
      */
     emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam getEquipParam();
     /**
-     * <code>.EquipParam equip_param = 1;</code>
+     * <code>.EquipParam equipParam = 1;</code>
      */
     emu.grasscutter.net.proto.EquipParamOuterClass.EquipParamOrBuilder getEquipParamOrBuilder();
 
     /**
-     * <code>.MaterialDeleteInfo delete_info = 2;</code>
+     * <code>.MaterialDeleteInfo deleteInfo = 2;</code>
      * @return Whether the deleteInfo field is set.
      */
     boolean hasDeleteInfo();
     /**
-     * <code>.MaterialDeleteInfo delete_info = 2;</code>
+     * <code>.MaterialDeleteInfo deleteInfo = 2;</code>
      * @return The deleteInfo.
      */
     emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo getDeleteInfo();
     /**
-     * <code>.MaterialDeleteInfo delete_info = 2;</code>
+     * <code>.MaterialDeleteInfo deleteInfo = 2;</code>
      */
     emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfoOrBuilder getDeleteInfoOrBuilder();
   }
@@ -75,69 +75,6 @@ public final class MailItemOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private MailItem(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 10: {
-              emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam.Builder subBuilder = null;
-              if (equipParam_ != null) {
-                subBuilder = equipParam_.toBuilder();
-              }
-              equipParam_ = input.readMessage(emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(equipParam_);
-                equipParam_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 18: {
-              emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.Builder subBuilder = null;
-              if (deleteInfo_ != null) {
-                subBuilder = deleteInfo_.toBuilder();
-              }
-              deleteInfo_ = input.readMessage(emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(deleteInfo_);
-                deleteInfo_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.MailItemOuterClass.internal_static_MailItem_descriptor;
@@ -151,10 +88,10 @@ public final class MailItemOuterClass {
               emu.grasscutter.net.proto.MailItemOuterClass.MailItem.class, emu.grasscutter.net.proto.MailItemOuterClass.MailItem.Builder.class);
     }
 
-    public static final int EQUIP_PARAM_FIELD_NUMBER = 1;
+    public static final int EQUIPPARAM_FIELD_NUMBER = 1;
     private emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam equipParam_;
     /**
-     * <code>.EquipParam equip_param = 1;</code>
+     * <code>.EquipParam equipParam = 1;</code>
      * @return Whether the equipParam field is set.
      */
     @java.lang.Override
@@ -162,7 +99,7 @@ public final class MailItemOuterClass {
       return equipParam_ != null;
     }
     /**
-     * <code>.EquipParam equip_param = 1;</code>
+     * <code>.EquipParam equipParam = 1;</code>
      * @return The equipParam.
      */
     @java.lang.Override
@@ -170,17 +107,17 @@ public final class MailItemOuterClass {
       return equipParam_ == null ? emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam.getDefaultInstance() : equipParam_;
     }
     /**
-     * <code>.EquipParam equip_param = 1;</code>
+     * <code>.EquipParam equipParam = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.EquipParamOuterClass.EquipParamOrBuilder getEquipParamOrBuilder() {
-      return getEquipParam();
+      return equipParam_ == null ? emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam.getDefaultInstance() : equipParam_;
     }
 
-    public static final int DELETE_INFO_FIELD_NUMBER = 2;
+    public static final int DELETEINFO_FIELD_NUMBER = 2;
     private emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo deleteInfo_;
     /**
-     * <code>.MaterialDeleteInfo delete_info = 2;</code>
+     * <code>.MaterialDeleteInfo deleteInfo = 2;</code>
      * @return Whether the deleteInfo field is set.
      */
     @java.lang.Override
@@ -188,7 +125,7 @@ public final class MailItemOuterClass {
       return deleteInfo_ != null;
     }
     /**
-     * <code>.MaterialDeleteInfo delete_info = 2;</code>
+     * <code>.MaterialDeleteInfo deleteInfo = 2;</code>
      * @return The deleteInfo.
      */
     @java.lang.Override
@@ -196,11 +133,11 @@ public final class MailItemOuterClass {
       return deleteInfo_ == null ? emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.getDefaultInstance() : deleteInfo_;
     }
     /**
-     * <code>.MaterialDeleteInfo delete_info = 2;</code>
+     * <code>.MaterialDeleteInfo deleteInfo = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfoOrBuilder getDeleteInfoOrBuilder() {
-      return getDeleteInfo();
+      return deleteInfo_ == null ? emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.getDefaultInstance() : deleteInfo_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -223,7 +160,7 @@ public final class MailItemOuterClass {
       if (deleteInfo_ != null) {
         output.writeMessage(2, getDeleteInfo());
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -240,7 +177,7 @@ public final class MailItemOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(2, getDeleteInfo());
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -265,7 +202,7 @@ public final class MailItemOuterClass {
         if (!getDeleteInfo()
             .equals(other.getDeleteInfo())) return false;
       }
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -277,14 +214,14 @@ public final class MailItemOuterClass {
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
       if (hasEquipParam()) {
-        hash = (37 * hash) + EQUIP_PARAM_FIELD_NUMBER;
+        hash = (37 * hash) + EQUIPPARAM_FIELD_NUMBER;
         hash = (53 * hash) + getEquipParam().hashCode();
       }
       if (hasDeleteInfo()) {
-        hash = (37 * hash) + DELETE_INFO_FIELD_NUMBER;
+        hash = (37 * hash) + DELETEINFO_FIELD_NUMBER;
         hash = (53 * hash) + getDeleteInfo().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -401,32 +338,26 @@ public final class MailItemOuterClass {
 
       // Construct using emu.grasscutter.net.proto.MailItemOuterClass.MailItem.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (equipParamBuilder_ == null) {
-          equipParam_ = null;
-        } else {
-          equipParam_ = null;
+        bitField0_ = 0;
+        equipParam_ = null;
+        if (equipParamBuilder_ != null) {
+          equipParamBuilder_.dispose();
           equipParamBuilder_ = null;
         }
-        if (deleteInfoBuilder_ == null) {
-          deleteInfo_ = null;
-        } else {
-          deleteInfo_ = null;
+        deleteInfo_ = null;
+        if (deleteInfoBuilder_ != null) {
+          deleteInfoBuilder_.dispose();
           deleteInfoBuilder_ = null;
         }
         return this;
@@ -455,18 +386,23 @@ public final class MailItemOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.MailItemOuterClass.MailItem buildPartial() {
         emu.grasscutter.net.proto.MailItemOuterClass.MailItem result = new emu.grasscutter.net.proto.MailItemOuterClass.MailItem(this);
-        if (equipParamBuilder_ == null) {
-          result.equipParam_ = equipParam_;
-        } else {
-          result.equipParam_ = equipParamBuilder_.build();
-        }
-        if (deleteInfoBuilder_ == null) {
-          result.deleteInfo_ = deleteInfo_;
-        } else {
-          result.deleteInfo_ = deleteInfoBuilder_.build();
-        }
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.MailItemOuterClass.MailItem result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.equipParam_ = equipParamBuilder_ == null
+              ? equipParam_
+              : equipParamBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.deleteInfo_ = deleteInfoBuilder_ == null
+              ? deleteInfo_
+              : deleteInfoBuilder_.build();
+        }
       }
 
       @java.lang.Override
@@ -519,7 +455,7 @@ public final class MailItemOuterClass {
         if (other.hasDeleteInfo()) {
           mergeDeleteInfo(other.getDeleteInfo());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -534,32 +470,60 @@ public final class MailItemOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.MailItemOuterClass.MailItem parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 10: {
+                input.readMessage(
+                    getEquipParamFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 10
+              case 18: {
+                input.readMessage(
+                    getDeleteInfoFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 18
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.MailItemOuterClass.MailItem) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam equipParam_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam, emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam.Builder, emu.grasscutter.net.proto.EquipParamOuterClass.EquipParamOrBuilder> equipParamBuilder_;
       /**
-       * <code>.EquipParam equip_param = 1;</code>
+       * <code>.EquipParam equipParam = 1;</code>
        * @return Whether the equipParam field is set.
        */
       public boolean hasEquipParam() {
-        return equipParamBuilder_ != null || equipParam_ != null;
+        return ((bitField0_ & 0x00000001) != 0);
       }
       /**
-       * <code>.EquipParam equip_param = 1;</code>
+       * <code>.EquipParam equipParam = 1;</code>
        * @return The equipParam.
        */
       public emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam getEquipParam() {
@@ -570,7 +534,7 @@ public final class MailItemOuterClass {
         }
       }
       /**
-       * <code>.EquipParam equip_param = 1;</code>
+       * <code>.EquipParam equipParam = 1;</code>
        */
       public Builder setEquipParam(emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam value) {
         if (equipParamBuilder_ == null) {
@@ -578,69 +542,69 @@ public final class MailItemOuterClass {
             throw new NullPointerException();
           }
           equipParam_ = value;
-          onChanged();
         } else {
           equipParamBuilder_.setMessage(value);
         }
-
+        bitField0_ |= 0x00000001;
+        onChanged();
         return this;
       }
       /**
-       * <code>.EquipParam equip_param = 1;</code>
+       * <code>.EquipParam equipParam = 1;</code>
        */
       public Builder setEquipParam(
           emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam.Builder builderForValue) {
         if (equipParamBuilder_ == null) {
           equipParam_ = builderForValue.build();
-          onChanged();
         } else {
           equipParamBuilder_.setMessage(builderForValue.build());
         }
-
+        bitField0_ |= 0x00000001;
+        onChanged();
         return this;
       }
       /**
-       * <code>.EquipParam equip_param = 1;</code>
+       * <code>.EquipParam equipParam = 1;</code>
        */
       public Builder mergeEquipParam(emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam value) {
         if (equipParamBuilder_ == null) {
-          if (equipParam_ != null) {
-            equipParam_ =
-              emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam.newBuilder(equipParam_).mergeFrom(value).buildPartial();
+          if (((bitField0_ & 0x00000001) != 0) &&
+            equipParam_ != null &&
+            equipParam_ != emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam.getDefaultInstance()) {
+            getEquipParamBuilder().mergeFrom(value);
           } else {
             equipParam_ = value;
           }
-          onChanged();
         } else {
           equipParamBuilder_.mergeFrom(value);
         }
-
+        bitField0_ |= 0x00000001;
+        onChanged();
         return this;
       }
       /**
-       * <code>.EquipParam equip_param = 1;</code>
+       * <code>.EquipParam equipParam = 1;</code>
        */
       public Builder clearEquipParam() {
-        if (equipParamBuilder_ == null) {
-          equipParam_ = null;
-          onChanged();
-        } else {
-          equipParam_ = null;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        equipParam_ = null;
+        if (equipParamBuilder_ != null) {
+          equipParamBuilder_.dispose();
           equipParamBuilder_ = null;
         }
-
+        onChanged();
         return this;
       }
       /**
-       * <code>.EquipParam equip_param = 1;</code>
+       * <code>.EquipParam equipParam = 1;</code>
        */
       public emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam.Builder getEquipParamBuilder() {
-        
+        bitField0_ |= 0x00000001;
         onChanged();
         return getEquipParamFieldBuilder().getBuilder();
       }
       /**
-       * <code>.EquipParam equip_param = 1;</code>
+       * <code>.EquipParam equipParam = 1;</code>
        */
       public emu.grasscutter.net.proto.EquipParamOuterClass.EquipParamOrBuilder getEquipParamOrBuilder() {
         if (equipParamBuilder_ != null) {
@@ -651,7 +615,7 @@ public final class MailItemOuterClass {
         }
       }
       /**
-       * <code>.EquipParam equip_param = 1;</code>
+       * <code>.EquipParam equipParam = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam, emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam.Builder, emu.grasscutter.net.proto.EquipParamOuterClass.EquipParamOrBuilder> 
@@ -671,14 +635,14 @@ public final class MailItemOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo, emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.Builder, emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfoOrBuilder> deleteInfoBuilder_;
       /**
-       * <code>.MaterialDeleteInfo delete_info = 2;</code>
+       * <code>.MaterialDeleteInfo deleteInfo = 2;</code>
        * @return Whether the deleteInfo field is set.
        */
       public boolean hasDeleteInfo() {
-        return deleteInfoBuilder_ != null || deleteInfo_ != null;
+        return ((bitField0_ & 0x00000002) != 0);
       }
       /**
-       * <code>.MaterialDeleteInfo delete_info = 2;</code>
+       * <code>.MaterialDeleteInfo deleteInfo = 2;</code>
        * @return The deleteInfo.
        */
       public emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo getDeleteInfo() {
@@ -689,7 +653,7 @@ public final class MailItemOuterClass {
         }
       }
       /**
-       * <code>.MaterialDeleteInfo delete_info = 2;</code>
+       * <code>.MaterialDeleteInfo deleteInfo = 2;</code>
        */
       public Builder setDeleteInfo(emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo value) {
         if (deleteInfoBuilder_ == null) {
@@ -697,69 +661,69 @@ public final class MailItemOuterClass {
             throw new NullPointerException();
           }
           deleteInfo_ = value;
-          onChanged();
         } else {
           deleteInfoBuilder_.setMessage(value);
         }
-
+        bitField0_ |= 0x00000002;
+        onChanged();
         return this;
       }
       /**
-       * <code>.MaterialDeleteInfo delete_info = 2;</code>
+       * <code>.MaterialDeleteInfo deleteInfo = 2;</code>
        */
       public Builder setDeleteInfo(
           emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.Builder builderForValue) {
         if (deleteInfoBuilder_ == null) {
           deleteInfo_ = builderForValue.build();
-          onChanged();
         } else {
           deleteInfoBuilder_.setMessage(builderForValue.build());
         }
-
+        bitField0_ |= 0x00000002;
+        onChanged();
         return this;
       }
       /**
-       * <code>.MaterialDeleteInfo delete_info = 2;</code>
+       * <code>.MaterialDeleteInfo deleteInfo = 2;</code>
        */
       public Builder mergeDeleteInfo(emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo value) {
         if (deleteInfoBuilder_ == null) {
-          if (deleteInfo_ != null) {
-            deleteInfo_ =
-              emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.newBuilder(deleteInfo_).mergeFrom(value).buildPartial();
+          if (((bitField0_ & 0x00000002) != 0) &&
+            deleteInfo_ != null &&
+            deleteInfo_ != emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.getDefaultInstance()) {
+            getDeleteInfoBuilder().mergeFrom(value);
           } else {
             deleteInfo_ = value;
           }
-          onChanged();
         } else {
           deleteInfoBuilder_.mergeFrom(value);
         }
-
+        bitField0_ |= 0x00000002;
+        onChanged();
         return this;
       }
       /**
-       * <code>.MaterialDeleteInfo delete_info = 2;</code>
+       * <code>.MaterialDeleteInfo deleteInfo = 2;</code>
        */
       public Builder clearDeleteInfo() {
-        if (deleteInfoBuilder_ == null) {
-          deleteInfo_ = null;
-          onChanged();
-        } else {
-          deleteInfo_ = null;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        deleteInfo_ = null;
+        if (deleteInfoBuilder_ != null) {
+          deleteInfoBuilder_.dispose();
           deleteInfoBuilder_ = null;
         }
-
+        onChanged();
         return this;
       }
       /**
-       * <code>.MaterialDeleteInfo delete_info = 2;</code>
+       * <code>.MaterialDeleteInfo deleteInfo = 2;</code>
        */
       public emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.Builder getDeleteInfoBuilder() {
-        
+        bitField0_ |= 0x00000002;
         onChanged();
         return getDeleteInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.MaterialDeleteInfo delete_info = 2;</code>
+       * <code>.MaterialDeleteInfo deleteInfo = 2;</code>
        */
       public emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfoOrBuilder getDeleteInfoOrBuilder() {
         if (deleteInfoBuilder_ != null) {
@@ -770,7 +734,7 @@ public final class MailItemOuterClass {
         }
       }
       /**
-       * <code>.MaterialDeleteInfo delete_info = 2;</code>
+       * <code>.MaterialDeleteInfo deleteInfo = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo, emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.Builder, emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfoOrBuilder> 
@@ -818,7 +782,18 @@ public final class MailItemOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new MailItem(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -853,10 +828,10 @@ public final class MailItemOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\016MailItem.proto\032\020EquipParam.proto\032\030Mate" +
-      "rialDeleteInfo.proto\"V\n\010MailItem\022 \n\013equi" +
-      "p_param\030\001 \001(\0132\013.EquipParam\022(\n\013delete_inf" +
-      "o\030\002 \001(\0132\023.MaterialDeleteInfoB\033\n\031emu.gras" +
-      "scutter.net.protob\006proto3"
+      "rialDeleteInfo.proto\"T\n\010MailItem\022\037\n\nequi" +
+      "pParam\030\001 \001(\0132\013.EquipParam\022\'\n\ndeleteInfo\030" +
+      "\002 \001(\0132\023.MaterialDeleteInfoB\033\n\031emu.grassc" +
+      "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

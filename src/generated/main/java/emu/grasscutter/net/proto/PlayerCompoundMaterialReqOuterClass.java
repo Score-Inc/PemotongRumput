@@ -19,29 +19,18 @@ public final class PlayerCompoundMaterialReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 compound_id = 4;</code>
-     * @return The compoundId.
-     */
-    int getCompoundId();
-
-    /**
      * <code>uint32 count = 3;</code>
      * @return The count.
      */
     int getCount();
+
+    /**
+     * <code>uint32 compoundId = 2;</code>
+     * @return The compoundId.
+     */
+    int getCompoundId();
   }
   /**
-   * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 146;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   *   IS_ALLOW_CLIENT = 1;
-   * }
-   * </pre>
-   *
    * Protobuf type {@code PlayerCompoundMaterialReq}
    */
   public static final class PlayerCompoundMaterialReq extends
@@ -68,53 +57,6 @@ public final class PlayerCompoundMaterialReqOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private PlayerCompoundMaterialReq(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 24: {
-
-              count_ = input.readUInt32();
-              break;
-            }
-            case 32: {
-
-              compoundId_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.PlayerCompoundMaterialReqOuterClass.internal_static_PlayerCompoundMaterialReq_descriptor;
@@ -128,19 +70,147 @@ public final class PlayerCompoundMaterialReqOuterClass {
               emu.grasscutter.net.proto.PlayerCompoundMaterialReqOuterClass.PlayerCompoundMaterialReq.class, emu.grasscutter.net.proto.PlayerCompoundMaterialReqOuterClass.PlayerCompoundMaterialReq.Builder.class);
     }
 
-    public static final int COMPOUND_ID_FIELD_NUMBER = 4;
-    private int compoundId_;
     /**
-     * <code>uint32 compound_id = 4;</code>
-     * @return The compoundId.
+     * Protobuf enum {@code PlayerCompoundMaterialReq.DOKCKPLIHDM}
      */
-    @java.lang.Override
-    public int getCompoundId() {
-      return compoundId_;
+    public enum DOKCKPLIHDM
+        implements com.google.protobuf.ProtocolMessageEnum {
+      /**
+       * <code>NONE = 0;</code>
+       */
+      NONE(0, 0),
+      /**
+       * <code>PEPPOHPHJOJ = 142;</code>
+       */
+      PEPPOHPHJOJ(1, 142),
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      NNBKOLMPOEA(3, 1),
+      UNRECOGNIZED(-1, -1),
+      ;
+
+      /**
+       * <code>DCDNILFDFLB = 0;</code>
+       */
+      public static final DOKCKPLIHDM DCDNILFDFLB = NONE;
+      /**
+       * <code>EAJIABGAOCI = 1;</code>
+       */
+      public static final DOKCKPLIHDM EAJIABGAOCI = NNBKOLMPOEA;
+      /**
+       * <code>NONE = 0;</code>
+       */
+      public static final int NONE_VALUE = 0;
+      /**
+       * <code>PEPPOHPHJOJ = 142;</code>
+       */
+      public static final int PEPPOHPHJOJ_VALUE = 142;
+      /**
+       * <code>DCDNILFDFLB = 0;</code>
+       */
+      public static final int DCDNILFDFLB_VALUE = 0;
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      public static final int NNBKOLMPOEA_VALUE = 1;
+      /**
+       * <code>EAJIABGAOCI = 1;</code>
+       */
+      public static final int EAJIABGAOCI_VALUE = 1;
+
+
+      public final int getNumber() {
+        if (index == -1) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static DOKCKPLIHDM valueOf(int value) {
+        return forNumber(value);
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
+      public static DOKCKPLIHDM forNumber(int value) {
+        switch (value) {
+          case 0: return NONE;
+          case 142: return PEPPOHPHJOJ;
+          case 1: return NNBKOLMPOEA;
+          default: return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<DOKCKPLIHDM>
+          internalGetValueMap() {
+        return internalValueMap;
+      }
+      private static final com.google.protobuf.Internal.EnumLiteMap<
+          DOKCKPLIHDM> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<DOKCKPLIHDM>() {
+              public DOKCKPLIHDM findValueByNumber(int number) {
+                return DOKCKPLIHDM.forNumber(number);
+              }
+            };
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor
+          getValueDescriptor() {
+        if (index == -1) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
+        return getDescriptor().getValues().get(index);
+      }
+      public final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptorForType() {
+        return getDescriptor();
+      }
+      public static final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptor() {
+        return emu.grasscutter.net.proto.PlayerCompoundMaterialReqOuterClass.PlayerCompoundMaterialReq.getDescriptor().getEnumTypes().get(0);
+      }
+
+      private static final DOKCKPLIHDM[] VALUES = getStaticValuesArray();
+      private static DOKCKPLIHDM[] getStaticValuesArray() {
+        return new DOKCKPLIHDM[] {
+          NONE, PEPPOHPHJOJ, DCDNILFDFLB, NNBKOLMPOEA, EAJIABGAOCI, 
+        };
+      }
+      public static DOKCKPLIHDM valueOf(
+          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException(
+            "EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      private final int index;
+      private final int value;
+
+      private DOKCKPLIHDM(int index, int value) {
+        this.index = index;
+        this.value = value;
+      }
+
+      // @@protoc_insertion_point(enum_scope:PlayerCompoundMaterialReq.DOKCKPLIHDM)
     }
 
     public static final int COUNT_FIELD_NUMBER = 3;
-    private int count_;
+    private int count_ = 0;
     /**
      * <code>uint32 count = 3;</code>
      * @return The count.
@@ -148,6 +218,17 @@ public final class PlayerCompoundMaterialReqOuterClass {
     @java.lang.Override
     public int getCount() {
       return count_;
+    }
+
+    public static final int COMPOUNDID_FIELD_NUMBER = 2;
+    private int compoundId_ = 0;
+    /**
+     * <code>uint32 compoundId = 2;</code>
+     * @return The compoundId.
+     */
+    @java.lang.Override
+    public int getCompoundId() {
+      return compoundId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -164,13 +245,13 @@ public final class PlayerCompoundMaterialReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (compoundId_ != 0) {
+        output.writeUInt32(2, compoundId_);
+      }
       if (count_ != 0) {
         output.writeUInt32(3, count_);
       }
-      if (compoundId_ != 0) {
-        output.writeUInt32(4, compoundId_);
-      }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -179,15 +260,15 @@ public final class PlayerCompoundMaterialReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (compoundId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, compoundId_);
+      }
       if (count_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(3, count_);
       }
-      if (compoundId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, compoundId_);
-      }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -202,11 +283,11 @@ public final class PlayerCompoundMaterialReqOuterClass {
       }
       emu.grasscutter.net.proto.PlayerCompoundMaterialReqOuterClass.PlayerCompoundMaterialReq other = (emu.grasscutter.net.proto.PlayerCompoundMaterialReqOuterClass.PlayerCompoundMaterialReq) obj;
 
-      if (getCompoundId()
-          != other.getCompoundId()) return false;
       if (getCount()
           != other.getCount()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (getCompoundId()
+          != other.getCompoundId()) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -217,11 +298,11 @@ public final class PlayerCompoundMaterialReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + COMPOUND_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCompoundId();
       hash = (37 * hash) + COUNT_FIELD_NUMBER;
       hash = (53 * hash) + getCount();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (37 * hash) + COMPOUNDID_FIELD_NUMBER;
+      hash = (53 * hash) + getCompoundId();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -317,17 +398,6 @@ public final class PlayerCompoundMaterialReqOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 146;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     *   IS_ALLOW_CLIENT = 1;
-     * }
-     * </pre>
-     *
      * Protobuf type {@code PlayerCompoundMaterialReq}
      */
     public static final class Builder extends
@@ -349,26 +419,20 @@ public final class PlayerCompoundMaterialReqOuterClass {
 
       // Construct using emu.grasscutter.net.proto.PlayerCompoundMaterialReqOuterClass.PlayerCompoundMaterialReq.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        compoundId_ = 0;
-
+        bitField0_ = 0;
         count_ = 0;
-
+        compoundId_ = 0;
         return this;
       }
 
@@ -395,10 +459,19 @@ public final class PlayerCompoundMaterialReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PlayerCompoundMaterialReqOuterClass.PlayerCompoundMaterialReq buildPartial() {
         emu.grasscutter.net.proto.PlayerCompoundMaterialReqOuterClass.PlayerCompoundMaterialReq result = new emu.grasscutter.net.proto.PlayerCompoundMaterialReqOuterClass.PlayerCompoundMaterialReq(this);
-        result.compoundId_ = compoundId_;
-        result.count_ = count_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.PlayerCompoundMaterialReqOuterClass.PlayerCompoundMaterialReq result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.count_ = count_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.compoundId_ = compoundId_;
+        }
       }
 
       @java.lang.Override
@@ -445,13 +518,13 @@ public final class PlayerCompoundMaterialReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PlayerCompoundMaterialReqOuterClass.PlayerCompoundMaterialReq other) {
         if (other == emu.grasscutter.net.proto.PlayerCompoundMaterialReqOuterClass.PlayerCompoundMaterialReq.getDefaultInstance()) return this;
-        if (other.getCompoundId() != 0) {
-          setCompoundId(other.getCompoundId());
-        }
         if (other.getCount() != 0) {
           setCount(other.getCount());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        if (other.getCompoundId() != 0) {
+          setCompoundId(other.getCompoundId());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -466,50 +539,43 @@ public final class PlayerCompoundMaterialReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.PlayerCompoundMaterialReqOuterClass.PlayerCompoundMaterialReq parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 16: {
+                compoundId_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 16
+              case 24: {
+                count_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 24
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.PlayerCompoundMaterialReqOuterClass.PlayerCompoundMaterialReq) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
-
-      private int compoundId_ ;
-      /**
-       * <code>uint32 compound_id = 4;</code>
-       * @return The compoundId.
-       */
-      @java.lang.Override
-      public int getCompoundId() {
-        return compoundId_;
-      }
-      /**
-       * <code>uint32 compound_id = 4;</code>
-       * @param value The compoundId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCompoundId(int value) {
-        
-        compoundId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 compound_id = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCompoundId() {
-        
-        compoundId_ = 0;
-        onChanged();
-        return this;
-      }
+      private int bitField0_;
 
       private int count_ ;
       /**
@@ -528,6 +594,7 @@ public final class PlayerCompoundMaterialReqOuterClass {
       public Builder setCount(int value) {
         
         count_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -536,8 +603,40 @@ public final class PlayerCompoundMaterialReqOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearCount() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         count_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int compoundId_ ;
+      /**
+       * <code>uint32 compoundId = 2;</code>
+       * @return The compoundId.
+       */
+      @java.lang.Override
+      public int getCompoundId() {
+        return compoundId_;
+      }
+      /**
+       * <code>uint32 compoundId = 2;</code>
+       * @param value The compoundId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCompoundId(int value) {
+        
+        compoundId_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 compoundId = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCompoundId() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        compoundId_ = 0;
         onChanged();
         return this;
       }
@@ -574,7 +673,18 @@ public final class PlayerCompoundMaterialReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new PlayerCompoundMaterialReq(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -608,10 +718,12 @@ public final class PlayerCompoundMaterialReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\037PlayerCompoundMaterialReq.proto\"?\n\031Pla" +
-      "yerCompoundMaterialReq\022\023\n\013compound_id\030\004 " +
-      "\001(\r\022\r\n\005count\030\003 \001(\rB\033\n\031emu.grasscutter.ne" +
-      "t.protob\006proto3"
+      "\n\037PlayerCompoundMaterialReq.proto\"\240\001\n\031Pl" +
+      "ayerCompoundMaterialReq\022\r\n\005count\030\003 \001(\r\022\022" +
+      "\n\ncompoundId\030\002 \001(\r\"`\n\013DOKCKPLIHDM\022\010\n\004NON" +
+      "E\020\000\022\020\n\013PEPPOHPHJOJ\020\216\001\022\017\n\013DCDNILFDFLB\020\000\022\017" +
+      "\n\013NNBKOLMPOEA\020\001\022\017\n\013EAJIABGAOCI\020\001\032\002\020\001B\033\n\031" +
+      "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -622,7 +734,7 @@ public final class PlayerCompoundMaterialReqOuterClass {
     internal_static_PlayerCompoundMaterialReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerCompoundMaterialReq_descriptor,
-        new java.lang.String[] { "CompoundId", "Count", });
+        new java.lang.String[] { "Count", "CompoundId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

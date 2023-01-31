@@ -19,49 +19,49 @@ public final class OpActivityInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 activity_id = 15;</code>
-     * @return The activityId.
-     */
-    int getActivityId();
-
-    /**
-     * <code>uint32 schedule_id = 14;</code>
+     * <code>uint32 scheduleId = 1;</code>
      * @return The scheduleId.
      */
     int getScheduleId();
 
     /**
-     * <code>uint32 end_time = 4;</code>
-     * @return The endTime.
-     */
-    int getEndTime();
-
-    /**
-     * <code>uint32 begin_time = 13;</code>
+     * <code>uint32 beginTime = 8;</code>
      * @return The beginTime.
      */
     int getBeginTime();
 
     /**
-     * <code>bool is_has_change = 7;</code>
+     * <code>uint32 activityId = 15;</code>
+     * @return The activityId.
+     */
+    int getActivityId();
+
+    /**
+     * <code>bool isHasChange = 3;</code>
      * @return The isHasChange.
      */
     boolean getIsHasChange();
 
     /**
-     * <code>.BonusOpActivityInfo bonus_info = 6;</code>
+     * <code>.BonusInfo bonus_info = 11;</code>
      * @return Whether the bonusInfo field is set.
      */
     boolean hasBonusInfo();
     /**
-     * <code>.BonusOpActivityInfo bonus_info = 6;</code>
+     * <code>.BonusInfo bonus_info = 11;</code>
      * @return The bonusInfo.
      */
-    emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfo getBonusInfo();
+    emu.grasscutter.net.proto.BonusInfoOuterClass.BonusInfo getBonusInfo();
     /**
-     * <code>.BonusOpActivityInfo bonus_info = 6;</code>
+     * <code>.BonusInfo bonus_info = 11;</code>
      */
-    emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfoOrBuilder getBonusInfoOrBuilder();
+    emu.grasscutter.net.proto.BonusInfoOuterClass.BonusInfoOrBuilder getBonusInfoOrBuilder();
+
+    /**
+     * <code>uint32 endTime = 10;</code>
+     * @return The endTime.
+     */
+    int getEndTime();
 
     public emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo.DetailCase getDetailCase();
   }
@@ -92,82 +92,6 @@ public final class OpActivityInfoOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private OpActivityInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 32: {
-
-              endTime_ = input.readUInt32();
-              break;
-            }
-            case 50: {
-              emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfo.Builder subBuilder = null;
-              if (detailCase_ == 6) {
-                subBuilder = ((emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfo) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfo) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 6;
-              break;
-            }
-            case 56: {
-
-              isHasChange_ = input.readBool();
-              break;
-            }
-            case 104: {
-
-              beginTime_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
-              scheduleId_ = input.readUInt32();
-              break;
-            }
-            case 120: {
-
-              activityId_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.OpActivityInfoOuterClass.internal_static_OpActivityInfo_descriptor;
@@ -186,7 +110,7 @@ public final class OpActivityInfoOuterClass {
     public enum DetailCase
         implements com.google.protobuf.Internal.EnumLite,
             com.google.protobuf.AbstractMessage.InternalOneOfEnum {
-      BONUS_INFO(6),
+      BONUS_INFO(11),
       DETAIL_NOT_SET(0);
       private final int value;
       private DetailCase(int value) {
@@ -204,7 +128,7 @@ public final class OpActivityInfoOuterClass {
 
       public static DetailCase forNumber(int value) {
         switch (value) {
-          case 6: return BONUS_INFO;
+          case 11: return BONUS_INFO;
           case 0: return DETAIL_NOT_SET;
           default: return null;
         }
@@ -220,21 +144,10 @@ public final class OpActivityInfoOuterClass {
           detailCase_);
     }
 
-    public static final int ACTIVITY_ID_FIELD_NUMBER = 15;
-    private int activityId_;
+    public static final int SCHEDULEID_FIELD_NUMBER = 1;
+    private int scheduleId_ = 0;
     /**
-     * <code>uint32 activity_id = 15;</code>
-     * @return The activityId.
-     */
-    @java.lang.Override
-    public int getActivityId() {
-      return activityId_;
-    }
-
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 14;
-    private int scheduleId_;
-    /**
-     * <code>uint32 schedule_id = 14;</code>
+     * <code>uint32 scheduleId = 1;</code>
      * @return The scheduleId.
      */
     @java.lang.Override
@@ -242,21 +155,10 @@ public final class OpActivityInfoOuterClass {
       return scheduleId_;
     }
 
-    public static final int END_TIME_FIELD_NUMBER = 4;
-    private int endTime_;
+    public static final int BEGINTIME_FIELD_NUMBER = 8;
+    private int beginTime_ = 0;
     /**
-     * <code>uint32 end_time = 4;</code>
-     * @return The endTime.
-     */
-    @java.lang.Override
-    public int getEndTime() {
-      return endTime_;
-    }
-
-    public static final int BEGIN_TIME_FIELD_NUMBER = 13;
-    private int beginTime_;
-    /**
-     * <code>uint32 begin_time = 13;</code>
+     * <code>uint32 beginTime = 8;</code>
      * @return The beginTime.
      */
     @java.lang.Override
@@ -264,10 +166,21 @@ public final class OpActivityInfoOuterClass {
       return beginTime_;
     }
 
-    public static final int IS_HAS_CHANGE_FIELD_NUMBER = 7;
-    private boolean isHasChange_;
+    public static final int ACTIVITYID_FIELD_NUMBER = 15;
+    private int activityId_ = 0;
     /**
-     * <code>bool is_has_change = 7;</code>
+     * <code>uint32 activityId = 15;</code>
+     * @return The activityId.
+     */
+    @java.lang.Override
+    public int getActivityId() {
+      return activityId_;
+    }
+
+    public static final int ISHASCHANGE_FIELD_NUMBER = 3;
+    private boolean isHasChange_ = false;
+    /**
+     * <code>bool isHasChange = 3;</code>
      * @return The isHasChange.
      */
     @java.lang.Override
@@ -275,35 +188,46 @@ public final class OpActivityInfoOuterClass {
       return isHasChange_;
     }
 
-    public static final int BONUS_INFO_FIELD_NUMBER = 6;
+    public static final int BONUS_INFO_FIELD_NUMBER = 11;
     /**
-     * <code>.BonusOpActivityInfo bonus_info = 6;</code>
+     * <code>.BonusInfo bonus_info = 11;</code>
      * @return Whether the bonusInfo field is set.
      */
     @java.lang.Override
     public boolean hasBonusInfo() {
-      return detailCase_ == 6;
+      return detailCase_ == 11;
     }
     /**
-     * <code>.BonusOpActivityInfo bonus_info = 6;</code>
+     * <code>.BonusInfo bonus_info = 11;</code>
      * @return The bonusInfo.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfo getBonusInfo() {
-      if (detailCase_ == 6) {
-         return (emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfo) detail_;
+    public emu.grasscutter.net.proto.BonusInfoOuterClass.BonusInfo getBonusInfo() {
+      if (detailCase_ == 11) {
+         return (emu.grasscutter.net.proto.BonusInfoOuterClass.BonusInfo) detail_;
       }
-      return emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfo.getDefaultInstance();
+      return emu.grasscutter.net.proto.BonusInfoOuterClass.BonusInfo.getDefaultInstance();
     }
     /**
-     * <code>.BonusOpActivityInfo bonus_info = 6;</code>
+     * <code>.BonusInfo bonus_info = 11;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfoOrBuilder getBonusInfoOrBuilder() {
-      if (detailCase_ == 6) {
-         return (emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfo) detail_;
+    public emu.grasscutter.net.proto.BonusInfoOuterClass.BonusInfoOrBuilder getBonusInfoOrBuilder() {
+      if (detailCase_ == 11) {
+         return (emu.grasscutter.net.proto.BonusInfoOuterClass.BonusInfo) detail_;
       }
-      return emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfo.getDefaultInstance();
+      return emu.grasscutter.net.proto.BonusInfoOuterClass.BonusInfo.getDefaultInstance();
+    }
+
+    public static final int ENDTIME_FIELD_NUMBER = 10;
+    private int endTime_ = 0;
+    /**
+     * <code>uint32 endTime = 10;</code>
+     * @return The endTime.
+     */
+    @java.lang.Override
+    public int getEndTime() {
+      return endTime_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -320,25 +244,25 @@ public final class OpActivityInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (endTime_ != 0) {
-        output.writeUInt32(4, endTime_);
-      }
-      if (detailCase_ == 6) {
-        output.writeMessage(6, (emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfo) detail_);
+      if (scheduleId_ != 0) {
+        output.writeUInt32(1, scheduleId_);
       }
       if (isHasChange_ != false) {
-        output.writeBool(7, isHasChange_);
+        output.writeBool(3, isHasChange_);
       }
       if (beginTime_ != 0) {
-        output.writeUInt32(13, beginTime_);
+        output.writeUInt32(8, beginTime_);
       }
-      if (scheduleId_ != 0) {
-        output.writeUInt32(14, scheduleId_);
+      if (endTime_ != 0) {
+        output.writeUInt32(10, endTime_);
+      }
+      if (detailCase_ == 11) {
+        output.writeMessage(11, (emu.grasscutter.net.proto.BonusInfoOuterClass.BonusInfo) detail_);
       }
       if (activityId_ != 0) {
         output.writeUInt32(15, activityId_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -347,31 +271,31 @@ public final class OpActivityInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (endTime_ != 0) {
+      if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, endTime_);
-      }
-      if (detailCase_ == 6) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, (emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfo) detail_);
+          .computeUInt32Size(1, scheduleId_);
       }
       if (isHasChange_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isHasChange_);
+          .computeBoolSize(3, isHasChange_);
       }
       if (beginTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, beginTime_);
+          .computeUInt32Size(8, beginTime_);
       }
-      if (scheduleId_ != 0) {
+      if (endTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, scheduleId_);
+          .computeUInt32Size(10, endTime_);
+      }
+      if (detailCase_ == 11) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(11, (emu.grasscutter.net.proto.BonusInfoOuterClass.BonusInfo) detail_);
       }
       if (activityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(15, activityId_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -386,26 +310,26 @@ public final class OpActivityInfoOuterClass {
       }
       emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo other = (emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo) obj;
 
-      if (getActivityId()
-          != other.getActivityId()) return false;
       if (getScheduleId()
           != other.getScheduleId()) return false;
-      if (getEndTime()
-          != other.getEndTime()) return false;
       if (getBeginTime()
           != other.getBeginTime()) return false;
+      if (getActivityId()
+          != other.getActivityId()) return false;
       if (getIsHasChange()
           != other.getIsHasChange()) return false;
+      if (getEndTime()
+          != other.getEndTime()) return false;
       if (!getDetailCase().equals(other.getDetailCase())) return false;
       switch (detailCase_) {
-        case 6:
+        case 11:
           if (!getBonusInfo()
               .equals(other.getBonusInfo())) return false;
           break;
         case 0:
         default:
       }
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -416,26 +340,26 @@ public final class OpActivityInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ACTIVITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getActivityId();
-      hash = (37 * hash) + SCHEDULE_ID_FIELD_NUMBER;
+      hash = (37 * hash) + SCHEDULEID_FIELD_NUMBER;
       hash = (53 * hash) + getScheduleId();
-      hash = (37 * hash) + END_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getEndTime();
-      hash = (37 * hash) + BEGIN_TIME_FIELD_NUMBER;
+      hash = (37 * hash) + BEGINTIME_FIELD_NUMBER;
       hash = (53 * hash) + getBeginTime();
-      hash = (37 * hash) + IS_HAS_CHANGE_FIELD_NUMBER;
+      hash = (37 * hash) + ACTIVITYID_FIELD_NUMBER;
+      hash = (53 * hash) + getActivityId();
+      hash = (37 * hash) + ISHASCHANGE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsHasChange());
+      hash = (37 * hash) + ENDTIME_FIELD_NUMBER;
+      hash = (53 * hash) + getEndTime();
       switch (detailCase_) {
-        case 6:
+        case 11:
           hash = (37 * hash) + BONUS_INFO_FIELD_NUMBER;
           hash = (53 * hash) + getBonusInfo().hashCode();
           break;
         case 0:
         default:
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -552,32 +476,26 @@ public final class OpActivityInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        activityId_ = 0;
-
+        bitField0_ = 0;
         scheduleId_ = 0;
-
-        endTime_ = 0;
-
         beginTime_ = 0;
-
+        activityId_ = 0;
         isHasChange_ = false;
-
+        if (bonusInfoBuilder_ != null) {
+          bonusInfoBuilder_.clear();
+        }
+        endTime_ = 0;
         detailCase_ = 0;
         detail_ = null;
         return this;
@@ -606,21 +524,38 @@ public final class OpActivityInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo buildPartial() {
         emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo result = new emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo(this);
-        result.activityId_ = activityId_;
-        result.scheduleId_ = scheduleId_;
-        result.endTime_ = endTime_;
-        result.beginTime_ = beginTime_;
-        result.isHasChange_ = isHasChange_;
-        if (detailCase_ == 6) {
-          if (bonusInfoBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = bonusInfoBuilder_.build();
-          }
-        }
-        result.detailCase_ = detailCase_;
+        if (bitField0_ != 0) { buildPartial0(result); }
+        buildPartialOneofs(result);
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.scheduleId_ = scheduleId_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.beginTime_ = beginTime_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.activityId_ = activityId_;
+        }
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.isHasChange_ = isHasChange_;
+        }
+        if (((from_bitField0_ & 0x00000020) != 0)) {
+          result.endTime_ = endTime_;
+        }
+      }
+
+      private void buildPartialOneofs(emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo result) {
+        result.detailCase_ = detailCase_;
+        result.detail_ = this.detail_;
+        if (detailCase_ == 11 &&
+            bonusInfoBuilder_ != null) {
+          result.detail_ = bonusInfoBuilder_.build();
+        }
       }
 
       @java.lang.Override
@@ -667,20 +602,20 @@ public final class OpActivityInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo other) {
         if (other == emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo.getDefaultInstance()) return this;
-        if (other.getActivityId() != 0) {
-          setActivityId(other.getActivityId());
-        }
         if (other.getScheduleId() != 0) {
           setScheduleId(other.getScheduleId());
-        }
-        if (other.getEndTime() != 0) {
-          setEndTime(other.getEndTime());
         }
         if (other.getBeginTime() != 0) {
           setBeginTime(other.getBeginTime());
         }
+        if (other.getActivityId() != 0) {
+          setActivityId(other.getActivityId());
+        }
         if (other.getIsHasChange() != false) {
           setIsHasChange(other.getIsHasChange());
+        }
+        if (other.getEndTime() != 0) {
+          setEndTime(other.getEndTime());
         }
         switch (other.getDetailCase()) {
           case BONUS_INFO: {
@@ -691,7 +626,7 @@ public final class OpActivityInfoOuterClass {
             break;
           }
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -706,17 +641,62 @@ public final class OpActivityInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                scheduleId_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              case 24: {
+                isHasChange_ = input.readBool();
+                bitField0_ |= 0x00000008;
+                break;
+              } // case 24
+              case 64: {
+                beginTime_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 64
+              case 80: {
+                endTime_ = input.readUInt32();
+                bitField0_ |= 0x00000020;
+                break;
+              } // case 80
+              case 90: {
+                input.readMessage(
+                    getBonusInfoFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                detailCase_ = 11;
+                break;
+              } // case 90
+              case 120: {
+                activityId_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 120
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.OpActivityInfoOuterClass.OpActivityInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int detailCase_ = 0;
@@ -734,41 +714,11 @@ public final class OpActivityInfoOuterClass {
         return this;
       }
 
-
-      private int activityId_ ;
-      /**
-       * <code>uint32 activity_id = 15;</code>
-       * @return The activityId.
-       */
-      @java.lang.Override
-      public int getActivityId() {
-        return activityId_;
-      }
-      /**
-       * <code>uint32 activity_id = 15;</code>
-       * @param value The activityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setActivityId(int value) {
-        
-        activityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 activity_id = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearActivityId() {
-        
-        activityId_ = 0;
-        onChanged();
-        return this;
-      }
+      private int bitField0_;
 
       private int scheduleId_ ;
       /**
-       * <code>uint32 schedule_id = 14;</code>
+       * <code>uint32 scheduleId = 1;</code>
        * @return The scheduleId.
        */
       @java.lang.Override
@@ -776,61 +726,31 @@ public final class OpActivityInfoOuterClass {
         return scheduleId_;
       }
       /**
-       * <code>uint32 schedule_id = 14;</code>
+       * <code>uint32 scheduleId = 1;</code>
        * @param value The scheduleId to set.
        * @return This builder for chaining.
        */
       public Builder setScheduleId(int value) {
         
         scheduleId_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 schedule_id = 14;</code>
+       * <code>uint32 scheduleId = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearScheduleId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         scheduleId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int endTime_ ;
-      /**
-       * <code>uint32 end_time = 4;</code>
-       * @return The endTime.
-       */
-      @java.lang.Override
-      public int getEndTime() {
-        return endTime_;
-      }
-      /**
-       * <code>uint32 end_time = 4;</code>
-       * @param value The endTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEndTime(int value) {
-        
-        endTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 end_time = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEndTime() {
-        
-        endTime_ = 0;
         onChanged();
         return this;
       }
 
       private int beginTime_ ;
       /**
-       * <code>uint32 begin_time = 13;</code>
+       * <code>uint32 beginTime = 8;</code>
        * @return The beginTime.
        */
       @java.lang.Override
@@ -838,30 +758,63 @@ public final class OpActivityInfoOuterClass {
         return beginTime_;
       }
       /**
-       * <code>uint32 begin_time = 13;</code>
+       * <code>uint32 beginTime = 8;</code>
        * @param value The beginTime to set.
        * @return This builder for chaining.
        */
       public Builder setBeginTime(int value) {
         
         beginTime_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 begin_time = 13;</code>
+       * <code>uint32 beginTime = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearBeginTime() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         beginTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int activityId_ ;
+      /**
+       * <code>uint32 activityId = 15;</code>
+       * @return The activityId.
+       */
+      @java.lang.Override
+      public int getActivityId() {
+        return activityId_;
+      }
+      /**
+       * <code>uint32 activityId = 15;</code>
+       * @param value The activityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setActivityId(int value) {
+        
+        activityId_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 activityId = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearActivityId() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        activityId_ = 0;
         onChanged();
         return this;
       }
 
       private boolean isHasChange_ ;
       /**
-       * <code>bool is_has_change = 7;</code>
+       * <code>bool isHasChange = 3;</code>
        * @return The isHasChange.
        */
       @java.lang.Override
@@ -869,59 +822,60 @@ public final class OpActivityInfoOuterClass {
         return isHasChange_;
       }
       /**
-       * <code>bool is_has_change = 7;</code>
+       * <code>bool isHasChange = 3;</code>
        * @param value The isHasChange to set.
        * @return This builder for chaining.
        */
       public Builder setIsHasChange(boolean value) {
         
         isHasChange_ = value;
+        bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_has_change = 7;</code>
+       * <code>bool isHasChange = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsHasChange() {
-        
+        bitField0_ = (bitField0_ & ~0x00000008);
         isHasChange_ = false;
         onChanged();
         return this;
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfo, emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfo.Builder, emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfoOrBuilder> bonusInfoBuilder_;
+          emu.grasscutter.net.proto.BonusInfoOuterClass.BonusInfo, emu.grasscutter.net.proto.BonusInfoOuterClass.BonusInfo.Builder, emu.grasscutter.net.proto.BonusInfoOuterClass.BonusInfoOrBuilder> bonusInfoBuilder_;
       /**
-       * <code>.BonusOpActivityInfo bonus_info = 6;</code>
+       * <code>.BonusInfo bonus_info = 11;</code>
        * @return Whether the bonusInfo field is set.
        */
       @java.lang.Override
       public boolean hasBonusInfo() {
-        return detailCase_ == 6;
+        return detailCase_ == 11;
       }
       /**
-       * <code>.BonusOpActivityInfo bonus_info = 6;</code>
+       * <code>.BonusInfo bonus_info = 11;</code>
        * @return The bonusInfo.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfo getBonusInfo() {
+      public emu.grasscutter.net.proto.BonusInfoOuterClass.BonusInfo getBonusInfo() {
         if (bonusInfoBuilder_ == null) {
-          if (detailCase_ == 6) {
-            return (emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfo) detail_;
+          if (detailCase_ == 11) {
+            return (emu.grasscutter.net.proto.BonusInfoOuterClass.BonusInfo) detail_;
           }
-          return emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfo.getDefaultInstance();
+          return emu.grasscutter.net.proto.BonusInfoOuterClass.BonusInfo.getDefaultInstance();
         } else {
-          if (detailCase_ == 6) {
+          if (detailCase_ == 11) {
             return bonusInfoBuilder_.getMessage();
           }
-          return emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfo.getDefaultInstance();
+          return emu.grasscutter.net.proto.BonusInfoOuterClass.BonusInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.BonusOpActivityInfo bonus_info = 6;</code>
+       * <code>.BonusInfo bonus_info = 11;</code>
        */
-      public Builder setBonusInfo(emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfo value) {
+      public Builder setBonusInfo(emu.grasscutter.net.proto.BonusInfoOuterClass.BonusInfo value) {
         if (bonusInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -931,57 +885,58 @@ public final class OpActivityInfoOuterClass {
         } else {
           bonusInfoBuilder_.setMessage(value);
         }
-        detailCase_ = 6;
+        detailCase_ = 11;
         return this;
       }
       /**
-       * <code>.BonusOpActivityInfo bonus_info = 6;</code>
+       * <code>.BonusInfo bonus_info = 11;</code>
        */
       public Builder setBonusInfo(
-          emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfo.Builder builderForValue) {
+          emu.grasscutter.net.proto.BonusInfoOuterClass.BonusInfo.Builder builderForValue) {
         if (bonusInfoBuilder_ == null) {
           detail_ = builderForValue.build();
           onChanged();
         } else {
           bonusInfoBuilder_.setMessage(builderForValue.build());
         }
-        detailCase_ = 6;
+        detailCase_ = 11;
         return this;
       }
       /**
-       * <code>.BonusOpActivityInfo bonus_info = 6;</code>
+       * <code>.BonusInfo bonus_info = 11;</code>
        */
-      public Builder mergeBonusInfo(emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfo value) {
+      public Builder mergeBonusInfo(emu.grasscutter.net.proto.BonusInfoOuterClass.BonusInfo value) {
         if (bonusInfoBuilder_ == null) {
-          if (detailCase_ == 6 &&
-              detail_ != emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfo.newBuilder((emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfo) detail_)
+          if (detailCase_ == 11 &&
+              detail_ != emu.grasscutter.net.proto.BonusInfoOuterClass.BonusInfo.getDefaultInstance()) {
+            detail_ = emu.grasscutter.net.proto.BonusInfoOuterClass.BonusInfo.newBuilder((emu.grasscutter.net.proto.BonusInfoOuterClass.BonusInfo) detail_)
                 .mergeFrom(value).buildPartial();
           } else {
             detail_ = value;
           }
           onChanged();
         } else {
-          if (detailCase_ == 6) {
+          if (detailCase_ == 11) {
             bonusInfoBuilder_.mergeFrom(value);
+          } else {
+            bonusInfoBuilder_.setMessage(value);
           }
-          bonusInfoBuilder_.setMessage(value);
         }
-        detailCase_ = 6;
+        detailCase_ = 11;
         return this;
       }
       /**
-       * <code>.BonusOpActivityInfo bonus_info = 6;</code>
+       * <code>.BonusInfo bonus_info = 11;</code>
        */
       public Builder clearBonusInfo() {
         if (bonusInfoBuilder_ == null) {
-          if (detailCase_ == 6) {
+          if (detailCase_ == 11) {
             detailCase_ = 0;
             detail_ = null;
             onChanged();
           }
         } else {
-          if (detailCase_ == 6) {
+          if (detailCase_ == 11) {
             detailCase_ = 0;
             detail_ = null;
           }
@@ -990,45 +945,77 @@ public final class OpActivityInfoOuterClass {
         return this;
       }
       /**
-       * <code>.BonusOpActivityInfo bonus_info = 6;</code>
+       * <code>.BonusInfo bonus_info = 11;</code>
        */
-      public emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfo.Builder getBonusInfoBuilder() {
+      public emu.grasscutter.net.proto.BonusInfoOuterClass.BonusInfo.Builder getBonusInfoBuilder() {
         return getBonusInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.BonusOpActivityInfo bonus_info = 6;</code>
+       * <code>.BonusInfo bonus_info = 11;</code>
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfoOrBuilder getBonusInfoOrBuilder() {
-        if ((detailCase_ == 6) && (bonusInfoBuilder_ != null)) {
+      public emu.grasscutter.net.proto.BonusInfoOuterClass.BonusInfoOrBuilder getBonusInfoOrBuilder() {
+        if ((detailCase_ == 11) && (bonusInfoBuilder_ != null)) {
           return bonusInfoBuilder_.getMessageOrBuilder();
         } else {
-          if (detailCase_ == 6) {
-            return (emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfo) detail_;
+          if (detailCase_ == 11) {
+            return (emu.grasscutter.net.proto.BonusInfoOuterClass.BonusInfo) detail_;
           }
-          return emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfo.getDefaultInstance();
+          return emu.grasscutter.net.proto.BonusInfoOuterClass.BonusInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.BonusOpActivityInfo bonus_info = 6;</code>
+       * <code>.BonusInfo bonus_info = 11;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfo, emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfo.Builder, emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfoOrBuilder> 
+          emu.grasscutter.net.proto.BonusInfoOuterClass.BonusInfo, emu.grasscutter.net.proto.BonusInfoOuterClass.BonusInfo.Builder, emu.grasscutter.net.proto.BonusInfoOuterClass.BonusInfoOrBuilder> 
           getBonusInfoFieldBuilder() {
         if (bonusInfoBuilder_ == null) {
-          if (!(detailCase_ == 6)) {
-            detail_ = emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfo.getDefaultInstance();
+          if (!(detailCase_ == 11)) {
+            detail_ = emu.grasscutter.net.proto.BonusInfoOuterClass.BonusInfo.getDefaultInstance();
           }
           bonusInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfo, emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfo.Builder, emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.BonusOpActivityInfo) detail_,
+              emu.grasscutter.net.proto.BonusInfoOuterClass.BonusInfo, emu.grasscutter.net.proto.BonusInfoOuterClass.BonusInfo.Builder, emu.grasscutter.net.proto.BonusInfoOuterClass.BonusInfoOrBuilder>(
+                  (emu.grasscutter.net.proto.BonusInfoOuterClass.BonusInfo) detail_,
                   getParentForChildren(),
                   isClean());
           detail_ = null;
         }
-        detailCase_ = 6;
-        onChanged();;
+        detailCase_ = 11;
+        onChanged();
         return bonusInfoBuilder_;
+      }
+
+      private int endTime_ ;
+      /**
+       * <code>uint32 endTime = 10;</code>
+       * @return The endTime.
+       */
+      @java.lang.Override
+      public int getEndTime() {
+        return endTime_;
+      }
+      /**
+       * <code>uint32 endTime = 10;</code>
+       * @param value The endTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEndTime(int value) {
+        
+        endTime_ = value;
+        bitField0_ |= 0x00000020;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 endTime = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEndTime() {
+        bitField0_ = (bitField0_ & ~0x00000020);
+        endTime_ = 0;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1063,7 +1050,18 @@ public final class OpActivityInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new OpActivityInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -1097,26 +1095,25 @@ public final class OpActivityInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\024OpActivityInfo.proto\032\031BonusOpActivityI" +
-      "nfo.proto\"\255\001\n\016OpActivityInfo\022\023\n\013activity" +
-      "_id\030\017 \001(\r\022\023\n\013schedule_id\030\016 \001(\r\022\020\n\010end_ti" +
-      "me\030\004 \001(\r\022\022\n\nbegin_time\030\r \001(\r\022\025\n\ris_has_c" +
-      "hange\030\007 \001(\010\022*\n\nbonus_info\030\006 \001(\0132\024.BonusO" +
-      "pActivityInfoH\000B\010\n\006detailB\033\n\031emu.grasscu" +
-      "tter.net.protob\006proto3"
+      "\n\024OpActivityInfo.proto\032\017BonusInfo.proto\"" +
+      "\235\001\n\016OpActivityInfo\022\022\n\nscheduleId\030\001 \001(\r\022\021" +
+      "\n\tbeginTime\030\010 \001(\r\022\022\n\nactivityId\030\017 \001(\r\022\023\n" +
+      "\013isHasChange\030\003 \001(\010\022 \n\nbonus_info\030\013 \001(\0132\n" +
+      ".BonusInfoH\000\022\017\n\007endTime\030\n \001(\rB\010\n\006detailB" +
+      "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.BonusInfoOuterClass.getDescriptor(),
         });
     internal_static_OpActivityInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_OpActivityInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_OpActivityInfo_descriptor,
-        new java.lang.String[] { "ActivityId", "ScheduleId", "EndTime", "BeginTime", "IsHasChange", "BonusInfo", "Detail", });
-    emu.grasscutter.net.proto.BonusOpActivityInfoOuterClass.getDescriptor();
+        new java.lang.String[] { "ScheduleId", "BeginTime", "ActivityId", "IsHasChange", "BonusInfo", "EndTime", "Detail", });
+    emu.grasscutter.net.proto.BonusInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

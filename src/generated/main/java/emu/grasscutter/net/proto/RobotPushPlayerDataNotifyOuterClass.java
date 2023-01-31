@@ -19,22 +19,12 @@ public final class RobotPushPlayerDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bytes bin = 7;</code>
+     * <code>bytes bin = 6;</code>
      * @return The bin.
      */
     com.google.protobuf.ByteString getBin();
   }
   /**
-   * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 99;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   * }
-   * </pre>
-   *
    * Protobuf type {@code RobotPushPlayerDataNotify}
    */
   public static final class RobotPushPlayerDataNotify extends
@@ -62,48 +52,6 @@ public final class RobotPushPlayerDataNotifyOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private RobotPushPlayerDataNotify(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 58: {
-
-              bin_ = input.readBytes();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.RobotPushPlayerDataNotifyOuterClass.internal_static_RobotPushPlayerDataNotify_descriptor;
@@ -117,10 +65,141 @@ public final class RobotPushPlayerDataNotifyOuterClass {
               emu.grasscutter.net.proto.RobotPushPlayerDataNotifyOuterClass.RobotPushPlayerDataNotify.class, emu.grasscutter.net.proto.RobotPushPlayerDataNotifyOuterClass.RobotPushPlayerDataNotify.Builder.class);
     }
 
-    public static final int BIN_FIELD_NUMBER = 7;
-    private com.google.protobuf.ByteString bin_;
     /**
-     * <code>bytes bin = 7;</code>
+     * Protobuf enum {@code RobotPushPlayerDataNotify.DELIFMCIALG}
+     */
+    public enum DELIFMCIALG
+        implements com.google.protobuf.ProtocolMessageEnum {
+      /**
+       * <code>NONE = 0;</code>
+       */
+      NONE(0, 0),
+      /**
+       * <code>PEPPOHPHJOJ = 16;</code>
+       */
+      PEPPOHPHJOJ(1, 16),
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      NNBKOLMPOEA(3, 1),
+      UNRECOGNIZED(-1, -1),
+      ;
+
+      /**
+       * <code>DCDNILFDFLB = 0;</code>
+       */
+      public static final DELIFMCIALG DCDNILFDFLB = NONE;
+      /**
+       * <code>NONE = 0;</code>
+       */
+      public static final int NONE_VALUE = 0;
+      /**
+       * <code>PEPPOHPHJOJ = 16;</code>
+       */
+      public static final int PEPPOHPHJOJ_VALUE = 16;
+      /**
+       * <code>DCDNILFDFLB = 0;</code>
+       */
+      public static final int DCDNILFDFLB_VALUE = 0;
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      public static final int NNBKOLMPOEA_VALUE = 1;
+
+
+      public final int getNumber() {
+        if (index == -1) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static DELIFMCIALG valueOf(int value) {
+        return forNumber(value);
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
+      public static DELIFMCIALG forNumber(int value) {
+        switch (value) {
+          case 0: return NONE;
+          case 16: return PEPPOHPHJOJ;
+          case 1: return NNBKOLMPOEA;
+          default: return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<DELIFMCIALG>
+          internalGetValueMap() {
+        return internalValueMap;
+      }
+      private static final com.google.protobuf.Internal.EnumLiteMap<
+          DELIFMCIALG> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<DELIFMCIALG>() {
+              public DELIFMCIALG findValueByNumber(int number) {
+                return DELIFMCIALG.forNumber(number);
+              }
+            };
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor
+          getValueDescriptor() {
+        if (index == -1) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
+        return getDescriptor().getValues().get(index);
+      }
+      public final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptorForType() {
+        return getDescriptor();
+      }
+      public static final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptor() {
+        return emu.grasscutter.net.proto.RobotPushPlayerDataNotifyOuterClass.RobotPushPlayerDataNotify.getDescriptor().getEnumTypes().get(0);
+      }
+
+      private static final DELIFMCIALG[] VALUES = getStaticValuesArray();
+      private static DELIFMCIALG[] getStaticValuesArray() {
+        return new DELIFMCIALG[] {
+          NONE, PEPPOHPHJOJ, DCDNILFDFLB, NNBKOLMPOEA, 
+        };
+      }
+      public static DELIFMCIALG valueOf(
+          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException(
+            "EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      private final int index;
+      private final int value;
+
+      private DELIFMCIALG(int index, int value) {
+        this.index = index;
+        this.value = value;
+      }
+
+      // @@protoc_insertion_point(enum_scope:RobotPushPlayerDataNotify.DELIFMCIALG)
+    }
+
+    public static final int BIN_FIELD_NUMBER = 6;
+    private com.google.protobuf.ByteString bin_ = com.google.protobuf.ByteString.EMPTY;
+    /**
+     * <code>bytes bin = 6;</code>
      * @return The bin.
      */
     @java.lang.Override
@@ -143,9 +222,9 @@ public final class RobotPushPlayerDataNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (!bin_.isEmpty()) {
-        output.writeBytes(7, bin_);
+        output.writeBytes(6, bin_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -156,9 +235,9 @@ public final class RobotPushPlayerDataNotifyOuterClass {
       size = 0;
       if (!bin_.isEmpty()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(7, bin_);
+          .computeBytesSize(6, bin_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -175,7 +254,7 @@ public final class RobotPushPlayerDataNotifyOuterClass {
 
       if (!getBin()
           .equals(other.getBin())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -188,7 +267,7 @@ public final class RobotPushPlayerDataNotifyOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + BIN_FIELD_NUMBER;
       hash = (53 * hash) + getBin().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -284,16 +363,6 @@ public final class RobotPushPlayerDataNotifyOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 99;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     * }
-     * </pre>
-     *
      * Protobuf type {@code RobotPushPlayerDataNotify}
      */
     public static final class Builder extends
@@ -315,24 +384,19 @@ public final class RobotPushPlayerDataNotifyOuterClass {
 
       // Construct using emu.grasscutter.net.proto.RobotPushPlayerDataNotifyOuterClass.RobotPushPlayerDataNotify.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         bin_ = com.google.protobuf.ByteString.EMPTY;
-
         return this;
       }
 
@@ -359,9 +423,16 @@ public final class RobotPushPlayerDataNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.RobotPushPlayerDataNotifyOuterClass.RobotPushPlayerDataNotify buildPartial() {
         emu.grasscutter.net.proto.RobotPushPlayerDataNotifyOuterClass.RobotPushPlayerDataNotify result = new emu.grasscutter.net.proto.RobotPushPlayerDataNotifyOuterClass.RobotPushPlayerDataNotify(this);
-        result.bin_ = bin_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.RobotPushPlayerDataNotifyOuterClass.RobotPushPlayerDataNotify result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.bin_ = bin_;
+        }
       }
 
       @java.lang.Override
@@ -411,7 +482,7 @@ public final class RobotPushPlayerDataNotifyOuterClass {
         if (other.getBin() != com.google.protobuf.ByteString.EMPTY) {
           setBin(other.getBin());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -426,23 +497,42 @@ public final class RobotPushPlayerDataNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.RobotPushPlayerDataNotifyOuterClass.RobotPushPlayerDataNotify parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 50: {
+                bin_ = input.readBytes();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 50
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.RobotPushPlayerDataNotifyOuterClass.RobotPushPlayerDataNotify) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private com.google.protobuf.ByteString bin_ = com.google.protobuf.ByteString.EMPTY;
       /**
-       * <code>bytes bin = 7;</code>
+       * <code>bytes bin = 6;</code>
        * @return The bin.
        */
       @java.lang.Override
@@ -450,25 +540,23 @@ public final class RobotPushPlayerDataNotifyOuterClass {
         return bin_;
       }
       /**
-       * <code>bytes bin = 7;</code>
+       * <code>bytes bin = 6;</code>
        * @param value The bin to set.
        * @return This builder for chaining.
        */
       public Builder setBin(com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
+        if (value == null) { throw new NullPointerException(); }
         bin_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>bytes bin = 7;</code>
+       * <code>bytes bin = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearBin() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         bin_ = getDefaultInstance().getBin();
         onChanged();
         return this;
@@ -506,7 +594,18 @@ public final class RobotPushPlayerDataNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new RobotPushPlayerDataNotify(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -540,8 +639,10 @@ public final class RobotPushPlayerDataNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\037RobotPushPlayerDataNotify.proto\"(\n\031Rob" +
-      "otPushPlayerDataNotify\022\013\n\003bin\030\007 \001(\014B\033\n\031e" +
+      "\n\037RobotPushPlayerDataNotify.proto\"x\n\031Rob" +
+      "otPushPlayerDataNotify\022\013\n\003bin\030\006 \001(\014\"N\n\013D" +
+      "ELIFMCIALG\022\010\n\004NONE\020\000\022\017\n\013PEPPOHPHJOJ\020\020\022\017\n" +
+      "\013DCDNILFDFLB\020\000\022\017\n\013NNBKOLMPOEA\020\001\032\002\020\001B\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

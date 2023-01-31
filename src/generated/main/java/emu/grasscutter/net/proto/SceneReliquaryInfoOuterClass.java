@@ -19,7 +19,7 @@ public final class SceneReliquaryInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 item_id = 1;</code>
+     * <code>uint32 itemId = 1;</code>
      * @return The itemId.
      */
     int getItemId();
@@ -37,7 +37,7 @@ public final class SceneReliquaryInfoOuterClass {
     int getLevel();
 
     /**
-     * <code>uint32 promote_level = 4;</code>
+     * <code>uint32 promoteLevel = 4;</code>
      * @return The promoteLevel.
      */
     int getPromoteLevel();
@@ -69,63 +69,6 @@ public final class SceneReliquaryInfoOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private SceneReliquaryInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              itemId_ = input.readUInt32();
-              break;
-            }
-            case 16: {
-
-              guid_ = input.readUInt64();
-              break;
-            }
-            case 24: {
-
-              level_ = input.readUInt32();
-              break;
-            }
-            case 32: {
-
-              promoteLevel_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.internal_static_SceneReliquaryInfo_descriptor;
@@ -139,10 +82,10 @@ public final class SceneReliquaryInfoOuterClass {
               emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.class, emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.Builder.class);
     }
 
-    public static final int ITEM_ID_FIELD_NUMBER = 1;
-    private int itemId_;
+    public static final int ITEMID_FIELD_NUMBER = 1;
+    private int itemId_ = 0;
     /**
-     * <code>uint32 item_id = 1;</code>
+     * <code>uint32 itemId = 1;</code>
      * @return The itemId.
      */
     @java.lang.Override
@@ -151,7 +94,7 @@ public final class SceneReliquaryInfoOuterClass {
     }
 
     public static final int GUID_FIELD_NUMBER = 2;
-    private long guid_;
+    private long guid_ = 0L;
     /**
      * <code>uint64 guid = 2;</code>
      * @return The guid.
@@ -162,7 +105,7 @@ public final class SceneReliquaryInfoOuterClass {
     }
 
     public static final int LEVEL_FIELD_NUMBER = 3;
-    private int level_;
+    private int level_ = 0;
     /**
      * <code>uint32 level = 3;</code>
      * @return The level.
@@ -172,10 +115,10 @@ public final class SceneReliquaryInfoOuterClass {
       return level_;
     }
 
-    public static final int PROMOTE_LEVEL_FIELD_NUMBER = 4;
-    private int promoteLevel_;
+    public static final int PROMOTELEVEL_FIELD_NUMBER = 4;
+    private int promoteLevel_ = 0;
     /**
-     * <code>uint32 promote_level = 4;</code>
+     * <code>uint32 promoteLevel = 4;</code>
      * @return The promoteLevel.
      */
     @java.lang.Override
@@ -209,7 +152,7 @@ public final class SceneReliquaryInfoOuterClass {
       if (promoteLevel_ != 0) {
         output.writeUInt32(4, promoteLevel_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -234,7 +177,7 @@ public final class SceneReliquaryInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(4, promoteLevel_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -257,7 +200,7 @@ public final class SceneReliquaryInfoOuterClass {
           != other.getLevel()) return false;
       if (getPromoteLevel()
           != other.getPromoteLevel()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -268,16 +211,16 @@ public final class SceneReliquaryInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ITEM_ID_FIELD_NUMBER;
+      hash = (37 * hash) + ITEMID_FIELD_NUMBER;
       hash = (53 * hash) + getItemId();
       hash = (37 * hash) + GUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getGuid());
       hash = (37 * hash) + LEVEL_FIELD_NUMBER;
       hash = (53 * hash) + getLevel();
-      hash = (37 * hash) + PROMOTE_LEVEL_FIELD_NUMBER;
+      hash = (37 * hash) + PROMOTELEVEL_FIELD_NUMBER;
       hash = (53 * hash) + getPromoteLevel();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -394,30 +337,22 @@ public final class SceneReliquaryInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         itemId_ = 0;
-
         guid_ = 0L;
-
         level_ = 0;
-
         promoteLevel_ = 0;
-
         return this;
       }
 
@@ -444,12 +379,25 @@ public final class SceneReliquaryInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo buildPartial() {
         emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo result = new emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo(this);
-        result.itemId_ = itemId_;
-        result.guid_ = guid_;
-        result.level_ = level_;
-        result.promoteLevel_ = promoteLevel_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.itemId_ = itemId_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.guid_ = guid_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.level_ = level_;
+        }
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.promoteLevel_ = promoteLevel_;
+        }
       }
 
       @java.lang.Override
@@ -508,7 +456,7 @@ public final class SceneReliquaryInfoOuterClass {
         if (other.getPromoteLevel() != 0) {
           setPromoteLevel(other.getPromoteLevel());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -523,23 +471,57 @@ public final class SceneReliquaryInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                itemId_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              case 16: {
+                guid_ = input.readUInt64();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 16
+              case 24: {
+                level_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 24
+              case 32: {
+                promoteLevel_ = input.readUInt32();
+                bitField0_ |= 0x00000008;
+                break;
+              } // case 32
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private int itemId_ ;
       /**
-       * <code>uint32 item_id = 1;</code>
+       * <code>uint32 itemId = 1;</code>
        * @return The itemId.
        */
       @java.lang.Override
@@ -547,22 +529,23 @@ public final class SceneReliquaryInfoOuterClass {
         return itemId_;
       }
       /**
-       * <code>uint32 item_id = 1;</code>
+       * <code>uint32 itemId = 1;</code>
        * @param value The itemId to set.
        * @return This builder for chaining.
        */
       public Builder setItemId(int value) {
         
         itemId_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 item_id = 1;</code>
+       * <code>uint32 itemId = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearItemId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         itemId_ = 0;
         onChanged();
         return this;
@@ -585,6 +568,7 @@ public final class SceneReliquaryInfoOuterClass {
       public Builder setGuid(long value) {
         
         guid_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -593,7 +577,7 @@ public final class SceneReliquaryInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearGuid() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         guid_ = 0L;
         onChanged();
         return this;
@@ -616,6 +600,7 @@ public final class SceneReliquaryInfoOuterClass {
       public Builder setLevel(int value) {
         
         level_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
@@ -624,7 +609,7 @@ public final class SceneReliquaryInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearLevel() {
-        
+        bitField0_ = (bitField0_ & ~0x00000004);
         level_ = 0;
         onChanged();
         return this;
@@ -632,7 +617,7 @@ public final class SceneReliquaryInfoOuterClass {
 
       private int promoteLevel_ ;
       /**
-       * <code>uint32 promote_level = 4;</code>
+       * <code>uint32 promoteLevel = 4;</code>
        * @return The promoteLevel.
        */
       @java.lang.Override
@@ -640,22 +625,23 @@ public final class SceneReliquaryInfoOuterClass {
         return promoteLevel_;
       }
       /**
-       * <code>uint32 promote_level = 4;</code>
+       * <code>uint32 promoteLevel = 4;</code>
        * @param value The promoteLevel to set.
        * @return This builder for chaining.
        */
       public Builder setPromoteLevel(int value) {
         
         promoteLevel_ = value;
+        bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 promote_level = 4;</code>
+       * <code>uint32 promoteLevel = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearPromoteLevel() {
-        
+        bitField0_ = (bitField0_ & ~0x00000008);
         promoteLevel_ = 0;
         onChanged();
         return this;
@@ -693,7 +679,18 @@ public final class SceneReliquaryInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new SceneReliquaryInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -727,10 +724,10 @@ public final class SceneReliquaryInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\030SceneReliquaryInfo.proto\"Y\n\022SceneReliq" +
-      "uaryInfo\022\017\n\007item_id\030\001 \001(\r\022\014\n\004guid\030\002 \001(\004\022" +
-      "\r\n\005level\030\003 \001(\r\022\025\n\rpromote_level\030\004 \001(\rB\033\n" +
-      "\031emu.grasscutter.net.protob\006proto3"
+      "\n\030SceneReliquaryInfo.proto\"W\n\022SceneReliq" +
+      "uaryInfo\022\016\n\006itemId\030\001 \001(\r\022\014\n\004guid\030\002 \001(\004\022\r" +
+      "\n\005level\030\003 \001(\r\022\024\n\014promoteLevel\030\004 \001(\rB\033\n\031e" +
+      "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

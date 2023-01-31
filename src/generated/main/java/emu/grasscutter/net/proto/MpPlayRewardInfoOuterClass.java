@@ -25,34 +25,34 @@ public final class MpPlayRewardInfoOuterClass {
     int getResin();
 
     /**
-     * <code>repeated uint32 remain_uid_list = 2;</code>
+     * <code>repeated uint32 remainUidList = 2;</code>
      * @return A list containing the remainUidList.
      */
     java.util.List<java.lang.Integer> getRemainUidListList();
     /**
-     * <code>repeated uint32 remain_uid_list = 2;</code>
+     * <code>repeated uint32 remainUidList = 2;</code>
      * @return The count of remainUidList.
      */
     int getRemainUidListCount();
     /**
-     * <code>repeated uint32 remain_uid_list = 2;</code>
+     * <code>repeated uint32 remainUidList = 2;</code>
      * @param index The index of the element to return.
      * @return The remainUidList at the given index.
      */
     int getRemainUidList(int index);
 
     /**
-     * <code>repeated uint32 qualify_uid_list = 3;</code>
+     * <code>repeated uint32 qualifyUidList = 3;</code>
      * @return A list containing the qualifyUidList.
      */
     java.util.List<java.lang.Integer> getQualifyUidListList();
     /**
-     * <code>repeated uint32 qualify_uid_list = 3;</code>
+     * <code>repeated uint32 qualifyUidList = 3;</code>
      * @return The count of qualifyUidList.
      */
     int getQualifyUidListCount();
     /**
-     * <code>repeated uint32 qualify_uid_list = 3;</code>
+     * <code>repeated uint32 qualifyUidList = 3;</code>
      * @param index The index of the element to return.
      * @return The qualifyUidList at the given index.
      */
@@ -87,97 +87,6 @@ public final class MpPlayRewardInfoOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private MpPlayRewardInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              resin_ = input.readUInt32();
-              break;
-            }
-            case 16: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                remainUidList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              remainUidList_.addInt(input.readUInt32());
-              break;
-            }
-            case 18: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                remainUidList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                remainUidList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 24: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                qualifyUidList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              qualifyUidList_.addInt(input.readUInt32());
-              break;
-            }
-            case 26: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                qualifyUidList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                qualifyUidList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          remainUidList_.makeImmutable(); // C
-        }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          qualifyUidList_.makeImmutable(); // C
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.MpPlayRewardInfoOuterClass.internal_static_MpPlayRewardInfo_descriptor;
@@ -192,7 +101,7 @@ public final class MpPlayRewardInfoOuterClass {
     }
 
     public static final int RESIN_FIELD_NUMBER = 1;
-    private int resin_;
+    private int resin_ = 0;
     /**
      * <code>uint32 resin = 1;</code>
      * @return The resin.
@@ -202,10 +111,11 @@ public final class MpPlayRewardInfoOuterClass {
       return resin_;
     }
 
-    public static final int REMAIN_UID_LIST_FIELD_NUMBER = 2;
+    public static final int REMAINUIDLIST_FIELD_NUMBER = 2;
+    @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList remainUidList_;
     /**
-     * <code>repeated uint32 remain_uid_list = 2;</code>
+     * <code>repeated uint32 remainUidList = 2;</code>
      * @return A list containing the remainUidList.
      */
     @java.lang.Override
@@ -214,14 +124,14 @@ public final class MpPlayRewardInfoOuterClass {
       return remainUidList_;
     }
     /**
-     * <code>repeated uint32 remain_uid_list = 2;</code>
+     * <code>repeated uint32 remainUidList = 2;</code>
      * @return The count of remainUidList.
      */
     public int getRemainUidListCount() {
       return remainUidList_.size();
     }
     /**
-     * <code>repeated uint32 remain_uid_list = 2;</code>
+     * <code>repeated uint32 remainUidList = 2;</code>
      * @param index The index of the element to return.
      * @return The remainUidList at the given index.
      */
@@ -230,10 +140,11 @@ public final class MpPlayRewardInfoOuterClass {
     }
     private int remainUidListMemoizedSerializedSize = -1;
 
-    public static final int QUALIFY_UID_LIST_FIELD_NUMBER = 3;
+    public static final int QUALIFYUIDLIST_FIELD_NUMBER = 3;
+    @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList qualifyUidList_;
     /**
-     * <code>repeated uint32 qualify_uid_list = 3;</code>
+     * <code>repeated uint32 qualifyUidList = 3;</code>
      * @return A list containing the qualifyUidList.
      */
     @java.lang.Override
@@ -242,14 +153,14 @@ public final class MpPlayRewardInfoOuterClass {
       return qualifyUidList_;
     }
     /**
-     * <code>repeated uint32 qualify_uid_list = 3;</code>
+     * <code>repeated uint32 qualifyUidList = 3;</code>
      * @return The count of qualifyUidList.
      */
     public int getQualifyUidListCount() {
       return qualifyUidList_.size();
     }
     /**
-     * <code>repeated uint32 qualify_uid_list = 3;</code>
+     * <code>repeated uint32 qualifyUidList = 3;</code>
      * @param index The index of the element to return.
      * @return The qualifyUidList at the given index.
      */
@@ -290,7 +201,7 @@ public final class MpPlayRewardInfoOuterClass {
       for (int i = 0; i < qualifyUidList_.size(); i++) {
         output.writeUInt32NoTag(qualifyUidList_.getInt(i));
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -331,7 +242,7 @@ public final class MpPlayRewardInfoOuterClass {
         }
         qualifyUidListMemoizedSerializedSize = dataSize;
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -352,7 +263,7 @@ public final class MpPlayRewardInfoOuterClass {
           .equals(other.getRemainUidListList())) return false;
       if (!getQualifyUidListList()
           .equals(other.getQualifyUidListList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -366,14 +277,14 @@ public final class MpPlayRewardInfoOuterClass {
       hash = (37 * hash) + RESIN_FIELD_NUMBER;
       hash = (53 * hash) + getResin();
       if (getRemainUidListCount() > 0) {
-        hash = (37 * hash) + REMAIN_UID_LIST_FIELD_NUMBER;
+        hash = (37 * hash) + REMAINUIDLIST_FIELD_NUMBER;
         hash = (53 * hash) + getRemainUidListList().hashCode();
       }
       if (getQualifyUidListCount() > 0) {
-        hash = (37 * hash) + QUALIFY_UID_LIST_FIELD_NUMBER;
+        hash = (37 * hash) + QUALIFYUIDLIST_FIELD_NUMBER;
         hash = (53 * hash) + getQualifyUidListList().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -490,28 +401,21 @@ public final class MpPlayRewardInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.MpPlayRewardInfoOuterClass.MpPlayRewardInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         resin_ = 0;
-
         remainUidList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         qualifyUidList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
@@ -538,20 +442,30 @@ public final class MpPlayRewardInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.MpPlayRewardInfoOuterClass.MpPlayRewardInfo buildPartial() {
         emu.grasscutter.net.proto.MpPlayRewardInfoOuterClass.MpPlayRewardInfo result = new emu.grasscutter.net.proto.MpPlayRewardInfoOuterClass.MpPlayRewardInfo(this);
-        int from_bitField0_ = bitField0_;
-        result.resin_ = resin_;
-        if (((bitField0_ & 0x00000001) != 0)) {
-          remainUidList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        }
-        result.remainUidList_ = remainUidList_;
-        if (((bitField0_ & 0x00000002) != 0)) {
-          qualifyUidList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000002);
-        }
-        result.qualifyUidList_ = qualifyUidList_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.MpPlayRewardInfoOuterClass.MpPlayRewardInfo result) {
+        if (((bitField0_ & 0x00000002) != 0)) {
+          remainUidList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        }
+        result.remainUidList_ = remainUidList_;
+        if (((bitField0_ & 0x00000004) != 0)) {
+          qualifyUidList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000004);
+        }
+        result.qualifyUidList_ = qualifyUidList_;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.MpPlayRewardInfoOuterClass.MpPlayRewardInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.resin_ = resin_;
+        }
       }
 
       @java.lang.Override
@@ -604,7 +518,7 @@ public final class MpPlayRewardInfoOuterClass {
         if (!other.remainUidList_.isEmpty()) {
           if (remainUidList_.isEmpty()) {
             remainUidList_ = other.remainUidList_;
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000002);
           } else {
             ensureRemainUidListIsMutable();
             remainUidList_.addAll(other.remainUidList_);
@@ -614,14 +528,14 @@ public final class MpPlayRewardInfoOuterClass {
         if (!other.qualifyUidList_.isEmpty()) {
           if (qualifyUidList_.isEmpty()) {
             qualifyUidList_ = other.qualifyUidList_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000004);
           } else {
             ensureQualifyUidListIsMutable();
             qualifyUidList_.addAll(other.qualifyUidList_);
           }
           onChanged();
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -636,17 +550,67 @@ public final class MpPlayRewardInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.MpPlayRewardInfoOuterClass.MpPlayRewardInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                resin_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              case 16: {
+                int v = input.readUInt32();
+                ensureRemainUidListIsMutable();
+                remainUidList_.addInt(v);
+                break;
+              } // case 16
+              case 18: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                ensureRemainUidListIsMutable();
+                while (input.getBytesUntilLimit() > 0) {
+                  remainUidList_.addInt(input.readUInt32());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 18
+              case 24: {
+                int v = input.readUInt32();
+                ensureQualifyUidListIsMutable();
+                qualifyUidList_.addInt(v);
+                break;
+              } // case 24
+              case 26: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                ensureQualifyUidListIsMutable();
+                while (input.getBytesUntilLimit() > 0) {
+                  qualifyUidList_.addInt(input.readUInt32());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 26
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.MpPlayRewardInfoOuterClass.MpPlayRewardInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
@@ -668,6 +632,7 @@ public final class MpPlayRewardInfoOuterClass {
       public Builder setResin(int value) {
         
         resin_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -676,7 +641,7 @@ public final class MpPlayRewardInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearResin() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         resin_ = 0;
         onChanged();
         return this;
@@ -684,29 +649,29 @@ public final class MpPlayRewardInfoOuterClass {
 
       private com.google.protobuf.Internal.IntList remainUidList_ = emptyIntList();
       private void ensureRemainUidListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000002) != 0)) {
           remainUidList_ = mutableCopy(remainUidList_);
-          bitField0_ |= 0x00000001;
-         }
+          bitField0_ |= 0x00000002;
+        }
       }
       /**
-       * <code>repeated uint32 remain_uid_list = 2;</code>
+       * <code>repeated uint32 remainUidList = 2;</code>
        * @return A list containing the remainUidList.
        */
       public java.util.List<java.lang.Integer>
           getRemainUidListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
+        return ((bitField0_ & 0x00000002) != 0) ?
                  java.util.Collections.unmodifiableList(remainUidList_) : remainUidList_;
       }
       /**
-       * <code>repeated uint32 remain_uid_list = 2;</code>
+       * <code>repeated uint32 remainUidList = 2;</code>
        * @return The count of remainUidList.
        */
       public int getRemainUidListCount() {
         return remainUidList_.size();
       }
       /**
-       * <code>repeated uint32 remain_uid_list = 2;</code>
+       * <code>repeated uint32 remainUidList = 2;</code>
        * @param index The index of the element to return.
        * @return The remainUidList at the given index.
        */
@@ -714,31 +679,33 @@ public final class MpPlayRewardInfoOuterClass {
         return remainUidList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 remain_uid_list = 2;</code>
+       * <code>repeated uint32 remainUidList = 2;</code>
        * @param index The index to set the value at.
        * @param value The remainUidList to set.
        * @return This builder for chaining.
        */
       public Builder setRemainUidList(
           int index, int value) {
+        
         ensureRemainUidListIsMutable();
         remainUidList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 remain_uid_list = 2;</code>
+       * <code>repeated uint32 remainUidList = 2;</code>
        * @param value The remainUidList to add.
        * @return This builder for chaining.
        */
       public Builder addRemainUidList(int value) {
+        
         ensureRemainUidListIsMutable();
         remainUidList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 remain_uid_list = 2;</code>
+       * <code>repeated uint32 remainUidList = 2;</code>
        * @param values The remainUidList to add.
        * @return This builder for chaining.
        */
@@ -751,41 +718,41 @@ public final class MpPlayRewardInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 remain_uid_list = 2;</code>
+       * <code>repeated uint32 remainUidList = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearRemainUidList() {
         remainUidList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
+        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
 
       private com.google.protobuf.Internal.IntList qualifyUidList_ = emptyIntList();
       private void ensureQualifyUidListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
+        if (!((bitField0_ & 0x00000004) != 0)) {
           qualifyUidList_ = mutableCopy(qualifyUidList_);
-          bitField0_ |= 0x00000002;
-         }
+          bitField0_ |= 0x00000004;
+        }
       }
       /**
-       * <code>repeated uint32 qualify_uid_list = 3;</code>
+       * <code>repeated uint32 qualifyUidList = 3;</code>
        * @return A list containing the qualifyUidList.
        */
       public java.util.List<java.lang.Integer>
           getQualifyUidListList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
+        return ((bitField0_ & 0x00000004) != 0) ?
                  java.util.Collections.unmodifiableList(qualifyUidList_) : qualifyUidList_;
       }
       /**
-       * <code>repeated uint32 qualify_uid_list = 3;</code>
+       * <code>repeated uint32 qualifyUidList = 3;</code>
        * @return The count of qualifyUidList.
        */
       public int getQualifyUidListCount() {
         return qualifyUidList_.size();
       }
       /**
-       * <code>repeated uint32 qualify_uid_list = 3;</code>
+       * <code>repeated uint32 qualifyUidList = 3;</code>
        * @param index The index of the element to return.
        * @return The qualifyUidList at the given index.
        */
@@ -793,31 +760,33 @@ public final class MpPlayRewardInfoOuterClass {
         return qualifyUidList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 qualify_uid_list = 3;</code>
+       * <code>repeated uint32 qualifyUidList = 3;</code>
        * @param index The index to set the value at.
        * @param value The qualifyUidList to set.
        * @return This builder for chaining.
        */
       public Builder setQualifyUidList(
           int index, int value) {
+        
         ensureQualifyUidListIsMutable();
         qualifyUidList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 qualify_uid_list = 3;</code>
+       * <code>repeated uint32 qualifyUidList = 3;</code>
        * @param value The qualifyUidList to add.
        * @return This builder for chaining.
        */
       public Builder addQualifyUidList(int value) {
+        
         ensureQualifyUidListIsMutable();
         qualifyUidList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 qualify_uid_list = 3;</code>
+       * <code>repeated uint32 qualifyUidList = 3;</code>
        * @param values The qualifyUidList to add.
        * @return This builder for chaining.
        */
@@ -830,12 +799,12 @@ public final class MpPlayRewardInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 qualify_uid_list = 3;</code>
+       * <code>repeated uint32 qualifyUidList = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearQualifyUidList() {
         qualifyUidList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000004);
         onChanged();
         return this;
       }
@@ -872,7 +841,18 @@ public final class MpPlayRewardInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new MpPlayRewardInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -906,10 +886,10 @@ public final class MpPlayRewardInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026MpPlayRewardInfo.proto\"T\n\020MpPlayReward" +
-      "Info\022\r\n\005resin\030\001 \001(\r\022\027\n\017remain_uid_list\030\002" +
-      " \003(\r\022\030\n\020qualify_uid_list\030\003 \003(\rB\033\n\031emu.gr" +
-      "asscutter.net.protob\006proto3"
+      "\n\026MpPlayRewardInfo.proto\"P\n\020MpPlayReward" +
+      "Info\022\r\n\005resin\030\001 \001(\r\022\025\n\rremainUidList\030\002 \003" +
+      "(\r\022\026\n\016qualifyUidList\030\003 \003(\rB\033\n\031emu.grassc" +
+      "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

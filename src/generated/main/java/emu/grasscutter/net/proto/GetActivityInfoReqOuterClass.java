@@ -19,34 +19,23 @@ public final class GetActivityInfoReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 activity_id_list = 1;</code>
+     * <code>repeated uint32 activityIdList = 15;</code>
      * @return A list containing the activityIdList.
      */
     java.util.List<java.lang.Integer> getActivityIdListList();
     /**
-     * <code>repeated uint32 activity_id_list = 1;</code>
+     * <code>repeated uint32 activityIdList = 15;</code>
      * @return The count of activityIdList.
      */
     int getActivityIdListCount();
     /**
-     * <code>repeated uint32 activity_id_list = 1;</code>
+     * <code>repeated uint32 activityIdList = 15;</code>
      * @param index The index of the element to return.
      * @return The activityIdList at the given index.
      */
     int getActivityIdList(int index);
   }
   /**
-   * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 2011;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   *   IS_ALLOW_CLIENT = 1;
-   * }
-   * </pre>
-   *
    * Protobuf type {@code GetActivityInfoReq}
    */
   public static final class GetActivityInfoReq extends
@@ -74,68 +63,6 @@ public final class GetActivityInfoReqOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private GetActivityInfoReq(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                activityIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              activityIdList_.addInt(input.readUInt32());
-              break;
-            }
-            case 10: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                activityIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                activityIdList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          activityIdList_.makeImmutable(); // C
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.GetActivityInfoReqOuterClass.internal_static_GetActivityInfoReq_descriptor;
@@ -149,10 +76,150 @@ public final class GetActivityInfoReqOuterClass {
               emu.grasscutter.net.proto.GetActivityInfoReqOuterClass.GetActivityInfoReq.class, emu.grasscutter.net.proto.GetActivityInfoReqOuterClass.GetActivityInfoReq.Builder.class);
     }
 
-    public static final int ACTIVITY_ID_LIST_FIELD_NUMBER = 1;
+    /**
+     * Protobuf enum {@code GetActivityInfoReq.GEGMHGCIBDO}
+     */
+    public enum GEGMHGCIBDO
+        implements com.google.protobuf.ProtocolMessageEnum {
+      /**
+       * <code>NONE = 0;</code>
+       */
+      NONE(0, 0),
+      /**
+       * <code>PEPPOHPHJOJ = 2098;</code>
+       */
+      PEPPOHPHJOJ(1, 2098),
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      NNBKOLMPOEA(3, 1),
+      UNRECOGNIZED(-1, -1),
+      ;
+
+      /**
+       * <code>DCDNILFDFLB = 0;</code>
+       */
+      public static final GEGMHGCIBDO DCDNILFDFLB = NONE;
+      /**
+       * <code>EAJIABGAOCI = 1;</code>
+       */
+      public static final GEGMHGCIBDO EAJIABGAOCI = NNBKOLMPOEA;
+      /**
+       * <code>NONE = 0;</code>
+       */
+      public static final int NONE_VALUE = 0;
+      /**
+       * <code>PEPPOHPHJOJ = 2098;</code>
+       */
+      public static final int PEPPOHPHJOJ_VALUE = 2098;
+      /**
+       * <code>DCDNILFDFLB = 0;</code>
+       */
+      public static final int DCDNILFDFLB_VALUE = 0;
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      public static final int NNBKOLMPOEA_VALUE = 1;
+      /**
+       * <code>EAJIABGAOCI = 1;</code>
+       */
+      public static final int EAJIABGAOCI_VALUE = 1;
+
+
+      public final int getNumber() {
+        if (index == -1) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static GEGMHGCIBDO valueOf(int value) {
+        return forNumber(value);
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
+      public static GEGMHGCIBDO forNumber(int value) {
+        switch (value) {
+          case 0: return NONE;
+          case 2098: return PEPPOHPHJOJ;
+          case 1: return NNBKOLMPOEA;
+          default: return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<GEGMHGCIBDO>
+          internalGetValueMap() {
+        return internalValueMap;
+      }
+      private static final com.google.protobuf.Internal.EnumLiteMap<
+          GEGMHGCIBDO> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<GEGMHGCIBDO>() {
+              public GEGMHGCIBDO findValueByNumber(int number) {
+                return GEGMHGCIBDO.forNumber(number);
+              }
+            };
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor
+          getValueDescriptor() {
+        if (index == -1) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
+        return getDescriptor().getValues().get(index);
+      }
+      public final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptorForType() {
+        return getDescriptor();
+      }
+      public static final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptor() {
+        return emu.grasscutter.net.proto.GetActivityInfoReqOuterClass.GetActivityInfoReq.getDescriptor().getEnumTypes().get(0);
+      }
+
+      private static final GEGMHGCIBDO[] VALUES = getStaticValuesArray();
+      private static GEGMHGCIBDO[] getStaticValuesArray() {
+        return new GEGMHGCIBDO[] {
+          NONE, PEPPOHPHJOJ, DCDNILFDFLB, NNBKOLMPOEA, EAJIABGAOCI, 
+        };
+      }
+      public static GEGMHGCIBDO valueOf(
+          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException(
+            "EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      private final int index;
+      private final int value;
+
+      private GEGMHGCIBDO(int index, int value) {
+        this.index = index;
+        this.value = value;
+      }
+
+      // @@protoc_insertion_point(enum_scope:GetActivityInfoReq.GEGMHGCIBDO)
+    }
+
+    public static final int ACTIVITYIDLIST_FIELD_NUMBER = 15;
+    @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList activityIdList_;
     /**
-     * <code>repeated uint32 activity_id_list = 1;</code>
+     * <code>repeated uint32 activityIdList = 15;</code>
      * @return A list containing the activityIdList.
      */
     @java.lang.Override
@@ -161,14 +228,14 @@ public final class GetActivityInfoReqOuterClass {
       return activityIdList_;
     }
     /**
-     * <code>repeated uint32 activity_id_list = 1;</code>
+     * <code>repeated uint32 activityIdList = 15;</code>
      * @return The count of activityIdList.
      */
     public int getActivityIdListCount() {
       return activityIdList_.size();
     }
     /**
-     * <code>repeated uint32 activity_id_list = 1;</code>
+     * <code>repeated uint32 activityIdList = 15;</code>
      * @param index The index of the element to return.
      * @return The activityIdList at the given index.
      */
@@ -193,13 +260,13 @@ public final class GetActivityInfoReqOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getActivityIdListList().size() > 0) {
-        output.writeUInt32NoTag(10);
+        output.writeUInt32NoTag(122);
         output.writeUInt32NoTag(activityIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < activityIdList_.size(); i++) {
         output.writeUInt32NoTag(activityIdList_.getInt(i));
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -222,7 +289,7 @@ public final class GetActivityInfoReqOuterClass {
         }
         activityIdListMemoizedSerializedSize = dataSize;
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -239,7 +306,7 @@ public final class GetActivityInfoReqOuterClass {
 
       if (!getActivityIdListList()
           .equals(other.getActivityIdListList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -251,10 +318,10 @@ public final class GetActivityInfoReqOuterClass {
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
       if (getActivityIdListCount() > 0) {
-        hash = (37 * hash) + ACTIVITY_ID_LIST_FIELD_NUMBER;
+        hash = (37 * hash) + ACTIVITYIDLIST_FIELD_NUMBER;
         hash = (53 * hash) + getActivityIdListList().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -350,17 +417,6 @@ public final class GetActivityInfoReqOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 2011;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     *   IS_ALLOW_CLIENT = 1;
-     * }
-     * </pre>
-     *
      * Protobuf type {@code GetActivityInfoReq}
      */
     public static final class Builder extends
@@ -382,24 +438,19 @@ public final class GetActivityInfoReqOuterClass {
 
       // Construct using emu.grasscutter.net.proto.GetActivityInfoReqOuterClass.GetActivityInfoReq.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         activityIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -426,14 +477,22 @@ public final class GetActivityInfoReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GetActivityInfoReqOuterClass.GetActivityInfoReq buildPartial() {
         emu.grasscutter.net.proto.GetActivityInfoReqOuterClass.GetActivityInfoReq result = new emu.grasscutter.net.proto.GetActivityInfoReqOuterClass.GetActivityInfoReq(this);
-        int from_bitField0_ = bitField0_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.GetActivityInfoReqOuterClass.GetActivityInfoReq result) {
         if (((bitField0_ & 0x00000001) != 0)) {
           activityIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.activityIdList_ = activityIdList_;
-        onBuilt();
-        return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.GetActivityInfoReqOuterClass.GetActivityInfoReq result) {
+        int from_bitField0_ = bitField0_;
       }
 
       @java.lang.Override
@@ -490,7 +549,7 @@ public final class GetActivityInfoReqOuterClass {
           }
           onChanged();
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -505,17 +564,46 @@ public final class GetActivityInfoReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.GetActivityInfoReqOuterClass.GetActivityInfoReq parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 120: {
+                int v = input.readUInt32();
+                ensureActivityIdListIsMutable();
+                activityIdList_.addInt(v);
+                break;
+              } // case 120
+              case 122: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                ensureActivityIdListIsMutable();
+                while (input.getBytesUntilLimit() > 0) {
+                  activityIdList_.addInt(input.readUInt32());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 122
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.GetActivityInfoReqOuterClass.GetActivityInfoReq) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
@@ -525,10 +613,10 @@ public final class GetActivityInfoReqOuterClass {
         if (!((bitField0_ & 0x00000001) != 0)) {
           activityIdList_ = mutableCopy(activityIdList_);
           bitField0_ |= 0x00000001;
-         }
+        }
       }
       /**
-       * <code>repeated uint32 activity_id_list = 1;</code>
+       * <code>repeated uint32 activityIdList = 15;</code>
        * @return A list containing the activityIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -537,14 +625,14 @@ public final class GetActivityInfoReqOuterClass {
                  java.util.Collections.unmodifiableList(activityIdList_) : activityIdList_;
       }
       /**
-       * <code>repeated uint32 activity_id_list = 1;</code>
+       * <code>repeated uint32 activityIdList = 15;</code>
        * @return The count of activityIdList.
        */
       public int getActivityIdListCount() {
         return activityIdList_.size();
       }
       /**
-       * <code>repeated uint32 activity_id_list = 1;</code>
+       * <code>repeated uint32 activityIdList = 15;</code>
        * @param index The index of the element to return.
        * @return The activityIdList at the given index.
        */
@@ -552,31 +640,33 @@ public final class GetActivityInfoReqOuterClass {
         return activityIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 activity_id_list = 1;</code>
+       * <code>repeated uint32 activityIdList = 15;</code>
        * @param index The index to set the value at.
        * @param value The activityIdList to set.
        * @return This builder for chaining.
        */
       public Builder setActivityIdList(
           int index, int value) {
+        
         ensureActivityIdListIsMutable();
         activityIdList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 activity_id_list = 1;</code>
+       * <code>repeated uint32 activityIdList = 15;</code>
        * @param value The activityIdList to add.
        * @return This builder for chaining.
        */
       public Builder addActivityIdList(int value) {
+        
         ensureActivityIdListIsMutable();
         activityIdList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 activity_id_list = 1;</code>
+       * <code>repeated uint32 activityIdList = 15;</code>
        * @param values The activityIdList to add.
        * @return This builder for chaining.
        */
@@ -589,7 +679,7 @@ public final class GetActivityInfoReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 activity_id_list = 1;</code>
+       * <code>repeated uint32 activityIdList = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearActivityIdList() {
@@ -631,7 +721,18 @@ public final class GetActivityInfoReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new GetActivityInfoReq(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -665,9 +766,12 @@ public final class GetActivityInfoReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\030GetActivityInfoReq.proto\".\n\022GetActivit" +
-      "yInfoReq\022\030\n\020activity_id_list\030\001 \003(\rB\033\n\031em" +
-      "u.grasscutter.net.protob\006proto3"
+      "\n\030GetActivityInfoReq.proto\"\216\001\n\022GetActivi" +
+      "tyInfoReq\022\026\n\016activityIdList\030\017 \003(\r\"`\n\013GEG" +
+      "MHGCIBDO\022\010\n\004NONE\020\000\022\020\n\013PEPPOHPHJOJ\020\262\020\022\017\n\013" +
+      "DCDNILFDFLB\020\000\022\017\n\013NNBKOLMPOEA\020\001\022\017\n\013EAJIAB" +
+      "GAOCI\020\001\032\002\020\001B\033\n\031emu.grasscutter.net.proto" +
+      "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

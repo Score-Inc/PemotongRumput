@@ -19,46 +19,36 @@ public final class QuestRenameAvatarRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 11;</code>
-     * @return The retcode.
+     * <code>string avatarName = 15;</code>
+     * @return The avatarName.
      */
-    int getRetcode();
+    java.lang.String getAvatarName();
+    /**
+     * <code>string avatarName = 15;</code>
+     * @return The bytes for avatarName.
+     */
+    com.google.protobuf.ByteString
+        getAvatarNameBytes();
 
     /**
-     * <code>bool is_check = 4;</code>
+     * <code>bool isCheck = 2;</code>
      * @return The isCheck.
      */
     boolean getIsCheck();
 
     /**
-     * <code>uint32 rename_id = 15;</code>
+     * <code>uint32 renameId = 13;</code>
      * @return The renameId.
      */
     int getRenameId();
 
     /**
-     * <code>string avatar_name = 8;</code>
-     * @return The avatarName.
+     * <code>int32 retcode = 10;</code>
+     * @return The retcode.
      */
-    java.lang.String getAvatarName();
-    /**
-     * <code>string avatar_name = 8;</code>
-     * @return The bytes for avatarName.
-     */
-    com.google.protobuf.ByteString
-        getAvatarNameBytes();
+    int getRetcode();
   }
   /**
-   * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 485;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   * }
-   * </pre>
-   *
    * Protobuf type {@code QuestRenameAvatarRsp}
    */
   public static final class QuestRenameAvatarRsp extends
@@ -86,64 +76,6 @@ public final class QuestRenameAvatarRspOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private QuestRenameAvatarRsp(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 32: {
-
-              isCheck_ = input.readBool();
-              break;
-            }
-            case 66: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              avatarName_ = s;
-              break;
-            }
-            case 88: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 120: {
-
-              renameId_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.QuestRenameAvatarRspOuterClass.internal_static_QuestRenameAvatarRsp_descriptor;
@@ -157,43 +89,142 @@ public final class QuestRenameAvatarRspOuterClass {
               emu.grasscutter.net.proto.QuestRenameAvatarRspOuterClass.QuestRenameAvatarRsp.class, emu.grasscutter.net.proto.QuestRenameAvatarRspOuterClass.QuestRenameAvatarRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 11;
-    private int retcode_;
     /**
-     * <code>int32 retcode = 11;</code>
-     * @return The retcode.
+     * Protobuf enum {@code QuestRenameAvatarRsp.LLGBKAMNLLC}
      */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
+    public enum LLGBKAMNLLC
+        implements com.google.protobuf.ProtocolMessageEnum {
+      /**
+       * <code>NONE = 0;</code>
+       */
+      NONE(0, 0),
+      /**
+       * <code>PEPPOHPHJOJ = 401;</code>
+       */
+      PEPPOHPHJOJ(1, 401),
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      NNBKOLMPOEA(3, 1),
+      UNRECOGNIZED(-1, -1),
+      ;
+
+      /**
+       * <code>DCDNILFDFLB = 0;</code>
+       */
+      public static final LLGBKAMNLLC DCDNILFDFLB = NONE;
+      /**
+       * <code>NONE = 0;</code>
+       */
+      public static final int NONE_VALUE = 0;
+      /**
+       * <code>PEPPOHPHJOJ = 401;</code>
+       */
+      public static final int PEPPOHPHJOJ_VALUE = 401;
+      /**
+       * <code>DCDNILFDFLB = 0;</code>
+       */
+      public static final int DCDNILFDFLB_VALUE = 0;
+      /**
+       * <code>NNBKOLMPOEA = 1;</code>
+       */
+      public static final int NNBKOLMPOEA_VALUE = 1;
+
+
+      public final int getNumber() {
+        if (index == -1) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static LLGBKAMNLLC valueOf(int value) {
+        return forNumber(value);
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
+      public static LLGBKAMNLLC forNumber(int value) {
+        switch (value) {
+          case 0: return NONE;
+          case 401: return PEPPOHPHJOJ;
+          case 1: return NNBKOLMPOEA;
+          default: return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<LLGBKAMNLLC>
+          internalGetValueMap() {
+        return internalValueMap;
+      }
+      private static final com.google.protobuf.Internal.EnumLiteMap<
+          LLGBKAMNLLC> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<LLGBKAMNLLC>() {
+              public LLGBKAMNLLC findValueByNumber(int number) {
+                return LLGBKAMNLLC.forNumber(number);
+              }
+            };
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor
+          getValueDescriptor() {
+        if (index == -1) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
+        return getDescriptor().getValues().get(index);
+      }
+      public final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptorForType() {
+        return getDescriptor();
+      }
+      public static final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptor() {
+        return emu.grasscutter.net.proto.QuestRenameAvatarRspOuterClass.QuestRenameAvatarRsp.getDescriptor().getEnumTypes().get(0);
+      }
+
+      private static final LLGBKAMNLLC[] VALUES = getStaticValuesArray();
+      private static LLGBKAMNLLC[] getStaticValuesArray() {
+        return new LLGBKAMNLLC[] {
+          NONE, PEPPOHPHJOJ, DCDNILFDFLB, NNBKOLMPOEA, 
+        };
+      }
+      public static LLGBKAMNLLC valueOf(
+          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException(
+            "EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      private final int index;
+      private final int value;
+
+      private LLGBKAMNLLC(int index, int value) {
+        this.index = index;
+        this.value = value;
+      }
+
+      // @@protoc_insertion_point(enum_scope:QuestRenameAvatarRsp.LLGBKAMNLLC)
     }
 
-    public static final int IS_CHECK_FIELD_NUMBER = 4;
-    private boolean isCheck_;
+    public static final int AVATARNAME_FIELD_NUMBER = 15;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object avatarName_ = "";
     /**
-     * <code>bool is_check = 4;</code>
-     * @return The isCheck.
-     */
-    @java.lang.Override
-    public boolean getIsCheck() {
-      return isCheck_;
-    }
-
-    public static final int RENAME_ID_FIELD_NUMBER = 15;
-    private int renameId_;
-    /**
-     * <code>uint32 rename_id = 15;</code>
-     * @return The renameId.
-     */
-    @java.lang.Override
-    public int getRenameId() {
-      return renameId_;
-    }
-
-    public static final int AVATAR_NAME_FIELD_NUMBER = 8;
-    private volatile java.lang.Object avatarName_;
-    /**
-     * <code>string avatar_name = 8;</code>
+     * <code>string avatarName = 15;</code>
      * @return The avatarName.
      */
     @java.lang.Override
@@ -210,7 +241,7 @@ public final class QuestRenameAvatarRspOuterClass {
       }
     }
     /**
-     * <code>string avatar_name = 8;</code>
+     * <code>string avatarName = 15;</code>
      * @return The bytes for avatarName.
      */
     @java.lang.Override
@@ -228,6 +259,39 @@ public final class QuestRenameAvatarRspOuterClass {
       }
     }
 
+    public static final int ISCHECK_FIELD_NUMBER = 2;
+    private boolean isCheck_ = false;
+    /**
+     * <code>bool isCheck = 2;</code>
+     * @return The isCheck.
+     */
+    @java.lang.Override
+    public boolean getIsCheck() {
+      return isCheck_;
+    }
+
+    public static final int RENAMEID_FIELD_NUMBER = 13;
+    private int renameId_ = 0;
+    /**
+     * <code>uint32 renameId = 13;</code>
+     * @return The renameId.
+     */
+    @java.lang.Override
+    public int getRenameId() {
+      return renameId_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 10;
+    private int retcode_ = 0;
+    /**
+     * <code>int32 retcode = 10;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -243,18 +307,18 @@ public final class QuestRenameAvatarRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isCheck_ != false) {
-        output.writeBool(4, isCheck_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(avatarName_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 8, avatarName_);
+        output.writeBool(2, isCheck_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(11, retcode_);
+        output.writeInt32(10, retcode_);
       }
       if (renameId_ != 0) {
-        output.writeUInt32(15, renameId_);
+        output.writeUInt32(13, renameId_);
       }
-      unknownFields.writeTo(output);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(avatarName_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 15, avatarName_);
+      }
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -265,20 +329,20 @@ public final class QuestRenameAvatarRspOuterClass {
       size = 0;
       if (isCheck_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, isCheck_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(avatarName_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, avatarName_);
+          .computeBoolSize(2, isCheck_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(11, retcode_);
+          .computeInt32Size(10, retcode_);
       }
       if (renameId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, renameId_);
+          .computeUInt32Size(13, renameId_);
       }
-      size += unknownFields.getSerializedSize();
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(avatarName_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(15, avatarName_);
+      }
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -293,15 +357,15 @@ public final class QuestRenameAvatarRspOuterClass {
       }
       emu.grasscutter.net.proto.QuestRenameAvatarRspOuterClass.QuestRenameAvatarRsp other = (emu.grasscutter.net.proto.QuestRenameAvatarRspOuterClass.QuestRenameAvatarRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
+      if (!getAvatarName()
+          .equals(other.getAvatarName())) return false;
       if (getIsCheck()
           != other.getIsCheck()) return false;
       if (getRenameId()
           != other.getRenameId()) return false;
-      if (!getAvatarName()
-          .equals(other.getAvatarName())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -312,16 +376,16 @@ public final class QuestRenameAvatarRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + IS_CHECK_FIELD_NUMBER;
+      hash = (37 * hash) + AVATARNAME_FIELD_NUMBER;
+      hash = (53 * hash) + getAvatarName().hashCode();
+      hash = (37 * hash) + ISCHECK_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsCheck());
-      hash = (37 * hash) + RENAME_ID_FIELD_NUMBER;
+      hash = (37 * hash) + RENAMEID_FIELD_NUMBER;
       hash = (53 * hash) + getRenameId();
-      hash = (37 * hash) + AVATAR_NAME_FIELD_NUMBER;
-      hash = (53 * hash) + getAvatarName().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -417,16 +481,6 @@ public final class QuestRenameAvatarRspOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 485;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     * }
-     * </pre>
-     *
      * Protobuf type {@code QuestRenameAvatarRsp}
      */
     public static final class Builder extends
@@ -448,30 +502,22 @@ public final class QuestRenameAvatarRspOuterClass {
 
       // Construct using emu.grasscutter.net.proto.QuestRenameAvatarRspOuterClass.QuestRenameAvatarRsp.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
-        isCheck_ = false;
-
-        renameId_ = 0;
-
+        bitField0_ = 0;
         avatarName_ = "";
-
+        isCheck_ = false;
+        renameId_ = 0;
+        retcode_ = 0;
         return this;
       }
 
@@ -498,12 +544,25 @@ public final class QuestRenameAvatarRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.QuestRenameAvatarRspOuterClass.QuestRenameAvatarRsp buildPartial() {
         emu.grasscutter.net.proto.QuestRenameAvatarRspOuterClass.QuestRenameAvatarRsp result = new emu.grasscutter.net.proto.QuestRenameAvatarRspOuterClass.QuestRenameAvatarRsp(this);
-        result.retcode_ = retcode_;
-        result.isCheck_ = isCheck_;
-        result.renameId_ = renameId_;
-        result.avatarName_ = avatarName_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.QuestRenameAvatarRspOuterClass.QuestRenameAvatarRsp result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.avatarName_ = avatarName_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.isCheck_ = isCheck_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.renameId_ = renameId_;
+        }
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.retcode_ = retcode_;
+        }
       }
 
       @java.lang.Override
@@ -550,8 +609,10 @@ public final class QuestRenameAvatarRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.QuestRenameAvatarRspOuterClass.QuestRenameAvatarRsp other) {
         if (other == emu.grasscutter.net.proto.QuestRenameAvatarRspOuterClass.QuestRenameAvatarRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
+        if (!other.getAvatarName().isEmpty()) {
+          avatarName_ = other.avatarName_;
+          bitField0_ |= 0x00000001;
+          onChanged();
         }
         if (other.getIsCheck() != false) {
           setIsCheck(other.getIsCheck());
@@ -559,11 +620,10 @@ public final class QuestRenameAvatarRspOuterClass {
         if (other.getRenameId() != 0) {
           setRenameId(other.getRenameId());
         }
-        if (!other.getAvatarName().isEmpty()) {
-          avatarName_ = other.avatarName_;
-          onChanged();
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -578,116 +638,57 @@ public final class QuestRenameAvatarRspOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.QuestRenameAvatarRspOuterClass.QuestRenameAvatarRsp parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 16: {
+                isCheck_ = input.readBool();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 16
+              case 80: {
+                retcode_ = input.readInt32();
+                bitField0_ |= 0x00000008;
+                break;
+              } // case 80
+              case 104: {
+                renameId_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 104
+              case 122: {
+                avatarName_ = input.readStringRequireUtf8();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 122
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.QuestRenameAvatarRspOuterClass.QuestRenameAvatarRsp) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 11;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 11;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isCheck_ ;
-      /**
-       * <code>bool is_check = 4;</code>
-       * @return The isCheck.
-       */
-      @java.lang.Override
-      public boolean getIsCheck() {
-        return isCheck_;
-      }
-      /**
-       * <code>bool is_check = 4;</code>
-       * @param value The isCheck to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsCheck(boolean value) {
-        
-        isCheck_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_check = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsCheck() {
-        
-        isCheck_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int renameId_ ;
-      /**
-       * <code>uint32 rename_id = 15;</code>
-       * @return The renameId.
-       */
-      @java.lang.Override
-      public int getRenameId() {
-        return renameId_;
-      }
-      /**
-       * <code>uint32 rename_id = 15;</code>
-       * @param value The renameId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRenameId(int value) {
-        
-        renameId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 rename_id = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRenameId() {
-        
-        renameId_ = 0;
-        onChanged();
-        return this;
-      }
+      private int bitField0_;
 
       private java.lang.Object avatarName_ = "";
       /**
-       * <code>string avatar_name = 8;</code>
+       * <code>string avatarName = 15;</code>
        * @return The avatarName.
        */
       public java.lang.String getAvatarName() {
@@ -703,7 +704,7 @@ public final class QuestRenameAvatarRspOuterClass {
         }
       }
       /**
-       * <code>string avatar_name = 8;</code>
+       * <code>string avatarName = 15;</code>
        * @return The bytes for avatarName.
        */
       public com.google.protobuf.ByteString
@@ -720,43 +721,135 @@ public final class QuestRenameAvatarRspOuterClass {
         }
       }
       /**
-       * <code>string avatar_name = 8;</code>
+       * <code>string avatarName = 15;</code>
        * @param value The avatarName to set.
        * @return This builder for chaining.
        */
       public Builder setAvatarName(
           java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
+        if (value == null) { throw new NullPointerException(); }
         avatarName_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>string avatar_name = 8;</code>
+       * <code>string avatarName = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarName() {
-        
         avatarName_ = getDefaultInstance().getAvatarName();
+        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
       }
       /**
-       * <code>string avatar_name = 8;</code>
+       * <code>string avatarName = 15;</code>
        * @param value The bytes for avatarName to set.
        * @return This builder for chaining.
        */
       public Builder setAvatarNameBytes(
           com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
+        if (value == null) { throw new NullPointerException(); }
+        checkByteStringIsUtf8(value);
         avatarName_ = value;
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+
+      private boolean isCheck_ ;
+      /**
+       * <code>bool isCheck = 2;</code>
+       * @return The isCheck.
+       */
+      @java.lang.Override
+      public boolean getIsCheck() {
+        return isCheck_;
+      }
+      /**
+       * <code>bool isCheck = 2;</code>
+       * @param value The isCheck to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsCheck(boolean value) {
+        
+        isCheck_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool isCheck = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsCheck() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        isCheck_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int renameId_ ;
+      /**
+       * <code>uint32 renameId = 13;</code>
+       * @return The renameId.
+       */
+      @java.lang.Override
+      public int getRenameId() {
+        return renameId_;
+      }
+      /**
+       * <code>uint32 renameId = 13;</code>
+       * @param value The renameId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRenameId(int value) {
+        
+        renameId_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 renameId = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRenameId() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        renameId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 10;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 10;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        bitField0_ |= 0x00000008;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -793,7 +886,18 @@ public final class QuestRenameAvatarRspOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new QuestRenameAvatarRsp(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -827,11 +931,13 @@ public final class QuestRenameAvatarRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\032QuestRenameAvatarRsp.proto\"a\n\024QuestRen" +
-      "ameAvatarRsp\022\017\n\007retcode\030\013 \001(\005\022\020\n\010is_chec" +
-      "k\030\004 \001(\010\022\021\n\trename_id\030\017 \001(\r\022\023\n\013avatar_nam" +
-      "e\030\010 \001(\tB\033\n\031emu.grasscutter.net.protob\006pr" +
-      "oto3"
+      "\n\032QuestRenameAvatarRsp.proto\"\257\001\n\024QuestRe" +
+      "nameAvatarRsp\022\022\n\navatarName\030\017 \001(\t\022\017\n\007isC" +
+      "heck\030\002 \001(\010\022\020\n\010renameId\030\r \001(\r\022\017\n\007retcode\030" +
+      "\n \001(\005\"O\n\013LLGBKAMNLLC\022\010\n\004NONE\020\000\022\020\n\013PEPPOH" +
+      "PHJOJ\020\221\003\022\017\n\013DCDNILFDFLB\020\000\022\017\n\013NNBKOLMPOEA" +
+      "\020\001\032\002\020\001B\033\n\031emu.grasscutter.net.protob\006pro" +
+      "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -842,7 +948,7 @@ public final class QuestRenameAvatarRspOuterClass {
     internal_static_QuestRenameAvatarRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_QuestRenameAvatarRsp_descriptor,
-        new java.lang.String[] { "Retcode", "IsCheck", "RenameId", "AvatarName", });
+        new java.lang.String[] { "AvatarName", "IsCheck", "RenameId", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
